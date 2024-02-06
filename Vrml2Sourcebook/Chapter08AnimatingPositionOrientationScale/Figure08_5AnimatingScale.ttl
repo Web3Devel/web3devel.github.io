@@ -1,0 +1,125 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08AnimatingPositionOrientationScale/Figure08_5AnimatingScale.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure08_5AnimatingScale.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 8.5, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch08/08fig05.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Kevin S. Anderson' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '8 August 2000' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Animation that scales a coordinate system and the ball built within it.' ;
+  x3do:name 'description' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08AnimatingPositionOrientationScale/Figure08_5AnimatingScale.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure08_5AnimatingScale.x3d" .
+:meta dcterms:creator "Figure 8.5, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch08/08fig05.htm" .
+:meta dcterms:translator "Kevin S. Anderson" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "8 August 2000" .
+:meta dcterms:modified "1 July 2023" .
+:meta dcterms:description "Animation that scales a coordinate system and the ball built within it." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08AnimatingPositionOrientationScale/Figure08_5AnimatingScale.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_2 ;
+  x3do:hasROUTE :ROUTE_2_3, :ROUTE_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure08_5AnimatingScale.x3d' .
+:Group_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BallTransform, :CLOCK, :BALLSIZE .
+:BallTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:hasChildren :Shape_2_2_1_1 ;
+  x3do:DEF 'BallTransform' .
+:Shape_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BallTransform ;
+  x3do:hasGeometry :Sphere_2_2_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_1_2 .
+:Sphere_2_2_1_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_2_1_1 .
+:Appearance_2_2_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasMaterial :Material_2_2_1_1_2_1 .
+:Material_2_2_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1_2 ;
+  x3do:ambientIntensity 1 ;
+  x3do:diffuseColor ( 1 0 0 ) ;
+  x3do:shininess 1 ;
+  x3do:specularColor ( 1 0 0 ) .
+:CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:DEF 'CLOCK' ;
+  x3do:cycleInterval '2.0' ;
+  x3do:loop true .
+:BALLSIZE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:DEF 'BALLSIZE' ;
+  x3do:key ( 0.0 0.2 0.65 1.0 ) ;
+  x3do:keyValue ( 1.0 1.0 1.0 1.5 1.5 1.5 1.1 1.1 1.1 1.0 1.0 1.0 ) .
+:ROUTE_2_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BALLSIZE' .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BALLSIZE' ;
+  x3do:toField 'set_scale' ;
+  x3do:toNode 'BallTransform' .

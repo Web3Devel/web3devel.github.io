@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 25 Level Of Detail</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter25LevelOfDetail/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter26Viewpoint/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 25 Level Of Detail</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Level of detail (LOD) allows an overall world become very large by letting an author provide 
+						high-fidelity models when a viewer is nearby, and simpler geometry when the viewer is far away.
+                    </p>
+                    
+
+
+                    <p>
+                        The further the viewer can see, the more there is to draw.
+                        Note that if a shape is distant, the shape is smaller and the viewer can't see as much detail.
+                        So... draw it with less detail.
+                        Varying detail with distance reduces initial download time and increases drawing speed.
+                    </p>
+                    
+
+
+                    <p>
+                        Increase performance by making multiple levels of shapes: high detail for close up viewing, 
+                        progressively lower detail for more distant viewing.
+                        Group the levels in an LOD node, ordered from high detail to low detail, and using an array of range values to select switching distances .
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch25.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0387.htm" target="_Vrml2SourcebookCourse">VRML 2.0 Sourcebook course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 25.04 Three Torches Side By Side" title="Figure 25.04 Three Torches Side By Side" hspace="10" 
+                          src="_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Torch_(medium_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 25.12 Dungeon Rooms With Sliding Doors" title="Figure 25.12 Dungeon Rooms With Sliding Doors" hspace="10" 
+                          src="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Torch_(high_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;12 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_01TorchHighDetail"/>
+               <a href="Figure25_01TorchHighDetailIndex.html">
+                  <img src="_thumbnails/Figure25_01TorchHighDetailThumbnail.png"
+                        height="48"
+                        alt="Figure25_01TorchHighDetail"
+                        title="Figure25_01TorchHighDetail"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_01TorchHighDetailIndex.html">Figure 25 01 Torch High Detail</a>
+            </td>
+            <td>A high-detail torch.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_02TorchMediumDetail"/>
+               <a href="Figure25_02TorchMediumDetailIndex.html">
+                  <img src="_thumbnails/Figure25_02TorchMediumDetailThumbnail.png"
+                        height="48"
+                        alt="Figure25_02TorchMediumDetail"
+                        title="Figure25_02TorchMediumDetail"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_02TorchMediumDetailIndex.html">Figure 25 02 Torch Medium Detail</a>
+            </td>
+            <td>A medium-detail torch.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_03TorchLowDetail"/>
+               <a href="Figure25_03TorchLowDetailIndex.html">
+                  <img src="_thumbnails/Figure25_03TorchLowDetailThumbnail.png"
+                        height="48"
+                        alt="Figure25_03TorchLowDetail"
+                        title="Figure25_03TorchLowDetail"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_03TorchLowDetailIndex.html">Figure 25 03 Torch Low Detail</a>
+            </td>
+            <td>A low-detail torch.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_04ThreeTorchesSideBySide"/>
+               <a href="Figure25_04ThreeTorchesSideBySideIndex.html">
+                  <img src="_thumbnails/Figure25_04ThreeTorchesSideBySideThumbnail.png"
+                        height="48"
+                        alt="Figure25_04ThreeTorchesSideBySide"
+                        title="Figure25_04ThreeTorchesSideBySide"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_04ThreeTorchesSideBySideIndex.html">Figure 25 04 Three Torches Side By Side</a>
+            </td>
+            <td>The three torches side by side.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_05ThreeTorchesSingleLOD"/>
+               <a href="Figure25_05ThreeTorchesSingleLODIndex.html">
+                  <img src="_thumbnails/Figure25_05ThreeTorchesSingleLODThumbnail.png"
+                        height="48"
+                        alt="Figure25_05ThreeTorchesSingleLOD"
+                        title="Figure25_05ThreeTorchesSingleLOD"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_05ThreeTorchesSingleLODIndex.html">Figure 25 05 Three Torches Single LOD</a>
+            </td>
+            <td>Three torches within an LOD node. First you must change viewpoints or fly in to watch levels shift. Ordinarily transitions are hard to discern, these transitions are designed to be noticeable.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_06DungeonRoomFloor"/>
+               <a href="Figure25_06DungeonRoomFloorIndex.html">
+                  <img src="_thumbnails/Figure25_06DungeonRoomFloorThumbnail.png"
+                        height="48"
+                        alt="Figure25_06DungeonRoomFloor"
+                        title="Figure25_06DungeonRoomFloor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_06DungeonRoomFloorIndex.html">Figure 25 06 Dungeon Room Floor</a>
+            </td>
+            <td>A dungeon-room floor.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_07DungeonRoomWall"/>
+               <a href="Figure25_07DungeonRoomWallIndex.html">
+                  <img src="_thumbnails/Figure25_07DungeonRoomWallThumbnail.png"
+                        height="48"
+                        alt="Figure25_07DungeonRoomWall"
+                        title="Figure25_07DungeonRoomWall"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_07DungeonRoomWallIndex.html">Figure 25 07 Dungeon Room Wall</a>
+            </td>
+            <td>A dungeon-room wall.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_08DungeonRoom"/>
+               <a href="Figure25_08DungeonRoomIndex.html">
+                  <img src="_thumbnails/Figure25_08DungeonRoomThumbnail.png"
+                        height="48"
+                        alt="Figure25_08DungeonRoom"
+                        title="Figure25_08DungeonRoom"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_08DungeonRoomIndex.html">Figure 25 08 Dungeon Room</a>
+            </td>
+            <td>A dungeon room.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_09TwoDungeonRoomsWithLODHiding"/>
+               <a href="Figure25_09TwoDungeonRoomsWithLODHidingIndex.html">
+                  <img src="_thumbnails/Figure25_09TwoDungeonRoomsWithLODHidingThumbnail.png"
+                        height="48"
+                        alt="Figure25_09TwoDungeonRoomsWithLODHiding"
+                        title="Figure25_09TwoDungeonRoomsWithLODHiding"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_09TwoDungeonRoomsWithLODHidingIndex.html">Figure 25 09 Two Dungeon Rooms With LODHiding</a>
+            </td>
+            <td>Two dungeon rooms controlled by LOD nodes, move forward to see second room.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_10DungeonWallWithDoorway"/>
+               <a href="Figure25_10DungeonWallWithDoorwayIndex.html">
+                  <img src="_thumbnails/Figure25_10DungeonWallWithDoorwayThumbnail.png"
+                        height="48"
+                        alt="Figure25_10DungeonWallWithDoorway"
+                        title="Figure25_10DungeonWallWithDoorway"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_10DungeonWallWithDoorwayIndex.html">Figure 25 10 Dungeon Wall With Doorway</a>
+            </td>
+            <td>A dungeon wall with a doorway, created using Coordinate and TextureCoordinate.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_11DungeonDoor"/>
+               <a href="Figure25_11DungeonDoorIndex.html">
+                  <img src="_thumbnails/Figure25_11DungeonDoorThumbnail.png"
+                        height="48"
+                        alt="Figure25_11DungeonDoor"
+                        title="Figure25_11DungeonDoor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_11DungeonDoorIndex.html">Figure 25 11 Dungeon Door</a>
+            </td>
+            <td>A dungeon door.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure25_12DungeonRoomsWithSlidingDoors"/>
+               <a href="Figure25_12DungeonRoomsWithSlidingDoorsIndex.html">
+                  <img src="_thumbnails/Figure25_12DungeonRoomsWithSlidingDoorsThumbnail.png"
+                        height="48"
+                        alt="Figure25_12DungeonRoomsWithSlidingDoors"
+                        title="Figure25_12DungeonRoomsWithSlidingDoors"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure25_12DungeonRoomsWithSlidingDoorsIndex.html">Figure 25 1 2Dungeon Rooms With Sliding Doors</a>
+            </td>
+            <td>Two dungeon rooms controlled by LOD nodes and separated by a wall and a pair of sliding doors.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter25LevelOfDetail/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter26Viewpoint/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

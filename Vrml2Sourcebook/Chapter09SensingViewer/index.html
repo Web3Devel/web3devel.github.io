@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 09 Sensing Viewer</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08AnimatingPositionOrientationScale/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter09SensingViewer/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Materials/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 09 Sensing Viewer</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter09SensingViewer/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Authors can design interactivity into a scene that responds to user actions.
+                    </p>
+                    
+
+					
+                    <p>
+                        A scene can sense when the viewer's cursor is over a shape, has touched a shape, or is dragging atop a shape.
+                        A scene can also trigger animations on a viewer's touch, enabling the viewer to move and rotate shapes.
+                        There are four main action sensor types:
+                        TouchSensor senses touch,
+                        SphereSensor senses drags in a spherical way,
+                        CylinderSensor senses drags cylindrically, and
+                        PlaneSensor senses drags around a plane.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch09.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0161.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 09.6 Sphere Sensor With Axes" title="Figure 09.6 Sphere Sensor With Axes" hspace="10" 
+                          src="_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;18 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_1SpinningCubeTouchSensor"/>
+               <a href="Figure09_1SpinningCubeTouchSensorIndex.html">
+                  <img src="_thumbnails/Figure09_1SpinningCubeTouchSensorThumbnail.png"
+                        height="48"
+                        alt="Figure09_1SpinningCubeTouchSensor"
+                        title="Figure09_1SpinningCubeTouchSensor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_1SpinningCubeTouchSensorIndex.html">Figure 09 1 Spinning Cube Touch Sensor</a>
+            </td>
+            <td>A cube that spins when the cursor moves over it. Also see Figure 9.2 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_1SpinningCubeTouchSensorWithAxes"/>
+               <a href="Figure09_1SpinningCubeTouchSensorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_1SpinningCubeTouchSensorWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_1SpinningCubeTouchSensorWithAxes"
+                        title="Figure09_1SpinningCubeTouchSensorWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_1SpinningCubeTouchSensorWithAxesIndex.html">Figure 09 1 Spinning Cube Touch Sensor With Axes</a>
+            </td>
+            <td>A cube that spins when the cursor moves over it, with coordinate axes superimposed to show X3D/VRML directions. Also see Figure 9.2 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_2SpinningCubeTouchSensorClicked"/>
+               <a href="Figure09_2SpinningCubeTouchSensorClickedIndex.html">
+                  <img src="_thumbnails/Figure09_2SpinningCubeTouchSensorClickedThumbnail.png"
+                        height="48"
+                        alt="Figure09_2SpinningCubeTouchSensorClicked"
+                        title="Figure09_2SpinningCubeTouchSensorClicked"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_2SpinningCubeTouchSensorClickedIndex.html">Figure 09 2 Spinning Cube Touch Sensor Clicked</a>
+            </td>
+            <td>A cube that spins when the viewer touches it. Also see Figure 9.1 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_2SpinningCubeTouchSensorClickedWithAxes"/>
+               <a href="Figure09_2SpinningCubeTouchSensorClickedWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_2SpinningCubeTouchSensorClickedWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_2SpinningCubeTouchSensorClickedWithAxes"
+                        title="Figure09_2SpinningCubeTouchSensorClickedWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_2SpinningCubeTouchSensorClickedWithAxesIndex.html">Figure 09 2 Spinning Cube Touch Sensor Clicked With Axes</a>
+            </td>
+            <td>A cube that spins when the viewer touches it, with coordinate axes superimposed to show X3D/VRML directions. Also see Figure 9.1 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_3ConePlaneSensor"/>
+               <a href="Figure09_3ConePlaneSensorIndex.html">
+                  <img src="_thumbnails/Figure09_3ConePlaneSensorThumbnail.png"
+                        height="48"
+                        alt="Figure09_3ConePlaneSensor"
+                        title="Figure09_3ConePlaneSensor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_3ConePlaneSensorIndex.html">Figure 09 3 Cone Plane Sensor</a>
+            </td>
+            <td>A Cone that translates in the vertical XY plane when the viewer drags it. Also see Figure 9.4 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_3ConePlaneSensorWithAxes"/>
+               <a href="Figure09_3ConePlaneSensorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_3ConePlaneSensorWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_3ConePlaneSensorWithAxes"
+                        title="Figure09_3ConePlaneSensorWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_3ConePlaneSensorWithAxesIndex.html">Figure 09 3 Cone Plane Sensor With Axes</a>
+            </td>
+            <td>A Cone that translates in the vertical XY plane when the viewer drags it, with coordinate axes superimposed to show X3D/VRML directions. Also see Figure 9.4 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_4ConePlaneSensorConstrained"/>
+               <a href="Figure09_4ConePlaneSensorConstrainedIndex.html">
+                  <img src="_thumbnails/Figure09_4ConePlaneSensorConstrainedThumbnail.png"
+                        height="48"
+                        alt="Figure09_4ConePlaneSensorConstrained"
+                        title="Figure09_4ConePlaneSensorConstrained"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_4ConePlaneSensorConstrainedIndex.html">Figure 09 4 Cone Plane Sensor Constrained</a>
+            </td>
+            <td>A cone that translates within a limited range of the XZ plane when the viewer drags it. Also see Figure 9.3 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_4ConePlaneSensorConstrainedWithAxes"/>
+               <a href="Figure09_4ConePlaneSensorConstrainedWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_4ConePlaneSensorConstrainedWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_4ConePlaneSensorConstrainedWithAxes"
+                        title="Figure09_4ConePlaneSensorConstrainedWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_4ConePlaneSensorConstrainedWithAxesIndex.html">Figure 09 4 Cone Plane Sensor Constrained With Axes</a>
+            </td>
+            <td>A cone that translates within a limited range of the XZ plane when the viewer drags it, with coordinate axes superimposed to show X3D/VRML directions. Also see Figure 9.3 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_5FourStackingBlocks"/>
+               <a href="Figure09_5FourStackingBlocksIndex.html">
+                  <img src="_thumbnails/Figure09_5FourStackingBlocksThumbnail.png"
+                        height="48"
+                        alt="Figure09_5FourStackingBlocks"
+                        title="Figure09_5FourStackingBlocks"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_5FourStackingBlocksIndex.html">Figure 09 5 Four Stacking Blocks</a>
+            </td>
+            <td>Four stacking blocks, select and drag to see each of them.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_5FourStackingBlocksWithAxes"/>
+               <a href="Figure09_5FourStackingBlocksWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_5FourStackingBlocksWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_5FourStackingBlocksWithAxes"
+                        title="Figure09_5FourStackingBlocksWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_5FourStackingBlocksWithAxesIndex.html">Figure 09 5 Four Stacking Blocks With Axes</a>
+            </td>
+            <td>Four stacking blocks, select and drag to see each of them. Coordinate axes are superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_6SphereSensor"/>
+               <a href="Figure09_6SphereSensorIndex.html">
+                  <img src="_thumbnails/Figure09_6SphereSensorThumbnail.png"
+                        height="48"
+                        alt="Figure09_6SphereSensor"
+                        title="Figure09_6SphereSensor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_6SphereSensorIndex.html">Figure 09 6 Sphere Sensor</a>
+            </td>
+            <td>Two shapes that rotate when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_6SphereSensorWithAxes"/>
+               <a href="Figure09_6SphereSensorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_6SphereSensorWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_6SphereSensorWithAxes"
+                        title="Figure09_6SphereSensorWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_6SphereSensorWithAxesIndex.html">Figure 09 6 Sphere Sensor With Axes</a>
+            </td>
+            <td>Two shapes that rotate when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_7CylinderSensor"/>
+               <a href="Figure09_7CylinderSensorIndex.html">
+                  <img src="_thumbnails/Figure09_7CylinderSensorThumbnail.png"
+                        height="48"
+                        alt="Figure09_7CylinderSensor"
+                        title="Figure09_7CylinderSensor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_7CylinderSensorIndex.html">Figure 09 7 Cylinder Sensor</a>
+            </td>
+            <td>Two shapes that rotate about an axis when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_7CylinderSensorWithAxes"/>
+               <a href="Figure09_7CylinderSensorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_7CylinderSensorWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_7CylinderSensorWithAxes"
+                        title="Figure09_7CylinderSensorWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_7CylinderSensorWithAxesIndex.html">Figure 09 7 Cylinder Sensor With Axes</a>
+            </td>
+            <td>Two shapes that rotate about an axis when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_8ClickDragTouchSensorPlaneSensor"/>
+               <a href="Figure09_8ClickDragTouchSensorPlaneSensorIndex.html">
+                  <img src="_thumbnails/Figure09_8ClickDragTouchSensorPlaneSensorThumbnail.png"
+                        height="48"
+                        alt="Figure09_8ClickDragTouchSensorPlaneSensor"
+                        title="Figure09_8ClickDragTouchSensorPlaneSensor"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_8ClickDragTouchSensorPlaneSensorIndex.html">Figure 09 8 Click Drag Touch Sensor Plane Sensor</a>
+            </td>
+            <td>Two shapes that rotate about an axis when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_8ClickDragTouchSensorPlaneSensorWithAxes"/>
+               <a href="Figure09_8ClickDragTouchSensorPlaneSensorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_8ClickDragTouchSensorPlaneSensorWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_8ClickDragTouchSensorPlaneSensorWithAxes"
+                        title="Figure09_8ClickDragTouchSensorPlaneSensorWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_8ClickDragTouchSensorPlaneSensorWithAxesIndex.html">Figure 09 8 Click Drag Touch Sensor Plane Sensor With Axes</a>
+            </td>
+            <td>A cube that spins when the cursor moves over it and translates when the cursor drags it, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_9DeskLamp"/>
+               <a href="Figure09_9DeskLampIndex.html">
+                  <img src="_thumbnails/Figure09_9DeskLampThumbnail.png"
+                        height="48"
+                        alt="Figure09_9DeskLamp"
+                        title="Figure09_9DeskLamp"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_9DeskLampIndex.html">Figure 09 9 Desk Lamp</a>
+            </td>
+            <td>A desk lamp with arm angles that can be adjusted using nested sensors.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure09_9DeskLampWithAxes"/>
+               <a href="Figure09_9DeskLampWithAxesIndex.html">
+                  <img src="_thumbnails/Figure09_9DeskLampWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure09_9DeskLampWithAxes"
+                        title="Figure09_9DeskLampWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure09_9DeskLampWithAxesIndex.html">Figure 09 9 Desk Lamp With Axes</a>
+            </td>
+            <td>A desk lamp with arm angles that can be adjusted using nested sensors, with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08AnimatingPositionOrientationScale/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter09SensingViewer/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Materials/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

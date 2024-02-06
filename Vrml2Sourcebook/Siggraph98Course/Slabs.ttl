@@ -1,0 +1,244 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Slabs.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Slabs.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Slab World example illustrates use of Appearance and Material nodes to set the main shading color (diffuseColor), glow color (emissiveColor), and transparency level of a shape.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/slabs.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0080.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Slabs.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Slabs.x3d" .
+:meta dcterms:description "Slab World example illustrates use of Appearance and Material nodes to set the main shading color (diffuseColor), glow color (emissiveColor), and transparency level of a shape." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/slabs.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0080.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Slabs.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Entry, :NavigationInfo_2_3, :Transform_2_4, :Transform_2_5, :Transform_2_6, :Transform_2_7, :Transform_2_8, :Transform_2_9, :Transform_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1996, David R. Nadeau"' ;
+  x3do:title 'Slab World' .
+:Entry a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Entry' ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 1.66 15.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:translation ( 0.0 2.0 4.0 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasAppearance :Appearance_2_4_1_1 ;
+  x3do:hasGeometry :Slab .
+:Appearance_2_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1 .
+:Material_2_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:Slab a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:DEF 'Slab' ;
+  x3do:size ( 2.0 4.0 0.3 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:translation ( 0.0 2.0 0.0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasAppearance :Appearance_2_5_1_1 ;
+  x3do:hasGeometry :Slab-USE-1 .
+:Appearance_2_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :Material_2_5_1_1_1 .
+:Material_2_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1 ;
+  x3do:diffuseColor ( 0.0 0.0 0.0 ) ;
+  x3do:emissiveColor ( 1.0 0.0 0.0 ) .
+:Slab-USE-1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_1 ;
+  owl:sameAs :Slab . # DEF matching this USE
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 ;
+  x3do:translation ( -3.0 2.0 2.0 ) .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :Slab-USE-2 .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:diffuseColor ( 0.0 1.0 0.0 ) ;
+  x3do:transparency 0.5 .
+:Slab-USE-2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_1 ;
+  owl:sameAs :Slab . # DEF matching this USE
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_7_1 ;
+  x3do:translation ( 4.0 2.0 -2.0 ) .
+:Shape_2_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :Appearance_2_7_1_1 ;
+  x3do:hasGeometry :Slab-USE-3 .
+:Appearance_2_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_1 .
+:Material_2_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_1 ;
+  x3do:diffuseColor ( 0.2 0.2 0.2 ) ;
+  x3do:emissiveColor ( 0.0 0.0 0.8 ) ;
+  x3do:transparency 0.25 .
+:Slab-USE-3 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_1 ;
+  owl:sameAs :Slab . # DEF matching this USE
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_8_1 ;
+  x3do:translation ( 4.5 2.0 3.0 ) .
+:Shape_2_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasAppearance :Appearance_2_8_1_1 ;
+  x3do:hasGeometry :Slab-USE-4 .
+:Appearance_2_8_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasMaterial :Material_2_8_1_1_1 .
+:Material_2_8_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 0.0 ) ;
+  x3do:transparency 0.5 .
+:Slab-USE-4 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_8_1 ;
+  owl:sameAs :Slab . # DEF matching this USE
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_9_1 ;
+  x3do:translation ( -3.5 2.0 -5.0 ) .
+:Shape_2_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasAppearance :Appearance_2_9_1_1 ;
+  x3do:hasGeometry :Slab-USE-5 .
+:Appearance_2_9_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_1 ;
+  x3do:hasMaterial :Material_2_9_1_1_1 .
+:Material_2_9_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_9_1_1 ;
+  x3do:diffuseColor ( 0.0 1.0 1.0 ) .
+:Slab-USE-5 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_9_1 ;
+  owl:sameAs :Slab . # DEF matching this USE
+:Transform_2_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_10_1 ;
+  x3do:translation ( 2.0 2.0 -6.0 ) .
+:Shape_2_10_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_10 ;
+  x3do:hasAppearance :Appearance_2_10_1_1 ;
+  x3do:hasGeometry :Slab-USE-6 .
+:Appearance_2_10_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_1 ;
+  x3do:hasMaterial :Material_2_10_1_1_1 .
+:Material_2_10_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_1_1 ;
+  x3do:diffuseColor ( 0.5 0.0 0.0 ) ;
+  x3do:emissiveColor ( 0.5 0.0 0.5 ) .
+:Slab-USE-6 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_10_1 ;
+  owl:sameAs :Slab . # DEF matching this USE

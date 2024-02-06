@@ -1,0 +1,147 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/MountainColor.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'MountainColor.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple colored mountain illustrates the use of an ElevationGrid to build a colored mountain. Use a very small grid so the code is easy to read and modify.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/cmount.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0223.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0236.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0240.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/MountainColor.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "MountainColor.x3d" .
+:meta dcterms:description "Simple colored mountain illustrates the use of an ElevationGrid to build a colored mountain. Use a very small grid so the code is easy to read and modify." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/cmount.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0223.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0236.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0240.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/MountainColor.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Shape_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, Andrea L. Ames, David R. Nadeau, John L. Moreland"' ;
+  x3do:title 'Simple colored mountain' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 -0.2 ) ;
+  x3do:position ( 4.5 4.0 15.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Shape_2_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_4_1 ;
+  x3do:hasGeometry :ElevationGrid_2_4_2 .
+:Appearance_2_4_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasMaterial :Material_2_4_1_1 .
+:Material_2_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1 .
+:ElevationGrid_2_4_2 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasColor :Color_2_4_2_1 ;
+  x3do:height ( 0.0 0.0 0.5 1.0 0.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 2.5 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.5 3.0 1.0 0.5 0.0 1.0 0.0 0.0 0.5 2.0 4.5 2.5 1.0 1.5 0.5 1.0 2.5 3.0 4.5 5.5 3.5 3.0 1.0 0.0 0.5 2.0 2.0 2.5 3.5 4.0 2.0 0.5 0.0 0.0 0.0 0.5 1.5 1.0 2.0 3.0 1.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 2.0 1.5 0.5 0.0 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 ) ;
+  x3do:solid false ;
+  x3do:xDimension 9 ;
+  x3do:zDimension 9 .
+:Color_2_4_2_1 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :ElevationGrid_2_4_2 ;
+  x3do:color ( 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.5 0.1 0.2 0.6 0.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.5 0.4 0.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.5 0.1 0.0 0.5 0.1 0.5 0.4 0.0 0.2 0.6 0.0 0.0 0.5 0.1 0.0 0.3 1.0 0.2 0.6 0.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.5 0.1 0.4 0.3 0.1 0.7 0.7 0.7 0.5 0.4 0.0 0.2 0.6 0.1 0.3 0.6 0.6 0.0 0.5 0.1 0.2 0.6 0.0 0.5 0.4 0.0 0.5 0.4 0.0 0.7 0.7 0.7 0.8 0.8 0.8 0.5 0.5 0.7 0.5 0.5 0.7 0.2 0.6 0.0 0.0 0.3 1.0 0.0 0.5 0.1 0.2 0.6 0.1 0.2 0.6 0.1 0.2 0.6 0.1 0.5 0.5 0.7 0.7 0.7 0.7 0.5 0.4 0.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.5 0.1 0.2 0.6 0.1 0.2 0.6 0.0 0.5 0.4 0.0 0.5 0.5 0.7 0.2 0.6 0.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.5 0.1 0.5 0.4 0.0 0.2 0.6 0.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.3 1.0 0.0 0.5 0.1 0.0 0.3 1.0 0.0 0.3 1.0 ) .

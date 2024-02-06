@@ -1,0 +1,2 @@
+<TouchSensor DEF='CLICK_SENSOR'/> has peer pointing-device sensor nodes which may make which selection of geometry difficult [/X3D/Scene/Group/TouchSensor, warning]
+<PlaneSensor DEF='DRAG_SENSOR'/> has peer pointing-device sensor nodes which may make which selection of geometry difficult [/X3D/Scene/Group/PlaneSensor, warning]

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 18 - Texture Mapping</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+            content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="7 March 2017"/>
+      <meta name="reference" content="http://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         http://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <style type="text/css">
+// can further set slideshow parameters here, see FAQ.
+      
+.slideshow-captions {
+  height: 465px;
+  width: 792px;
+}  
+.slideshow-images {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}  
+.slideshow {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}
+</style>
+      <link rel="stylesheet" type="text/css" href="../slideshow/css/slideshow.css"
+            media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+
+
+
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure18.19TextureCoordinateTest.x3d._VP_Testing_1_2_3.png': { 'caption': '[1] Figure18.19TextureCoordinateTest.x3d - Testing 1 2 3' },
+      'Figure18.19TextureCoordinateTest.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure18.19TextureCoordinateTest.x3d - (default X3D view from 0 0 10)' },
+<!--not found:       'Figure18.20bTextureCoordinatePizzaSlice.x3d._VP_Hey_got_more?.png': { 'caption': '[3] Figure18.20bTextureCoordinatePizzaSlice.x3d - Hey got more?' },-->
+<!--not found:       'Figure18.20bTextureCoordinatePizzaSlice.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure18.20bTextureCoordinatePizzaSlice.x3d - (default X3D view)' },-->
+      'Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Hey_pepperoni.png': { 'caption': '[5] Figure18.21TextureCoordinatePizzaSlice.x3d - Hey pepperoni' },
+      'Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure18.21TextureCoordinatePizzaSlice.x3d - (default X3D view)' },
+      'Figure18.22bTextureCoordinateVideoWall.x3d._VP_Transformed_texture_window.png': { 'caption': '[7] Figure18.22bTextureCoordinateVideoWall.x3d - Transformed texture window' },
+      'Figure18.22bTextureCoordinateVideoWall.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure18.22bTextureCoordinateVideoWall.x3d - (default X3D view)' },
+      'Figure18.23bTextureCoordinateGrillwork.x3d._VP_Transformed_texture_grillwork.png': { 'caption': '[9] Figure18.23bTextureCoordinateGrillwork.x3d - Transformed texture grillwork' },
+      'Figure18.23bTextureCoordinateGrillwork.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure18.23bTextureCoordinateGrillwork.x3d - (default X3D view)' },
+      'Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Fence_made_of_rotated_translated_texture_grillwork.png': { 'caption': '[11] Figure18.24TextureCoordinateRotatedGrillworkFence.x3d - Fence made of rotated translated texture grillwork' },
+      'Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure18.24TextureCoordinateRotatedGrillworkFence.x3d -' },
+      'Figure18.25bTextureTransformBrickBox.x3d._VP_Brick_Box.png': { 'caption': '[13] Figure18.25bTextureTransformBrickBox.x3d - Brick Box' },
+      'Figure18.25bTextureTransformBrickBox.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure18.25bTextureTransformBrickBox.x3d - (default X3D view)' },
+      'Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png': { 'caption': '[15] Figure18.26bUncorrectedTextureSanDiegoBay.x3d - Uncorrected texture, San Diego Bay' },
+      'Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure18.26bUncorrectedTextureSanDiegoBay.x3d - (default X3D view)' },
+      'Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png': { 'caption': '[17] Figure18.26cCorrectedTextureSanDiegoBay.x3d - Uncorrected texture, San Diego Bay' },
+      'Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure18.26cCorrectedTextureSanDiegoBay.x3d - (default X3D view)' },
+      'Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_That_feels_good.png': { 'caption': '[19] Figure18.27RotatingFanAnimatedTextureTransform.x3d - That feels good' },
+      'Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_Default_viewpoint.png': { 'caption': '[20] Figure18.27RotatingFanAnimatedTextureTransform.x3d -' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter17-Textures/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19-NormalsShading/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 18 - Texture Mapping</h2>
+      <table align="center" border="0" width="792">
+         <tr style="align:left; text-align: left;">
+            <td style="align:left; text-align: left; left:-100px; ">
+               <div id="show" class="slideshow"
+                    style="align: center; float: none; position: relative; left:-200px; width:792;">
+                  <div class="slideshow-images"
+                       style="align: center; float: none; position: relative; width:792;">
+                     <img src="_viewpoints/Figure18.19TextureCoordinateTest.x3d._VP_Testing_1_2_3.png"
+                          alt="[1] Figure18.19TextureCoordinateTest.x3d - Testing 1 2 3"
+                          height="465"
+                          width="792"
+                          align=""
+                          float=""
+                          position=""/>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary=""
+             style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Chapter Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 18.27 Rotating Fan Animated Texture Transform" title="Figure 18.27 Rotating Fan Animated Texture Transform" hspace="10" 
+                          src="_viewpoints/Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_That_feels_good.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                            Texture images are in a texture coordinate system.
+                            By default, an entire texture image is mapped once around the shape.
+                            You can also extract only pieces of interest, or create repeating patterns.
+                            Texture coordinates and indexes describe a texture cookie cutter.
+                            Texture transforms translate, rotate, and scale place the cookie cutter.
+                            Texture indexes bind the cut-out cookie texture to a face on a shape.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch18.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0276.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center" summary=""
+                      style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="right" style="background-color:lightgrey">
+10 X3D Scenes &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey">
+ &nbsp;18 Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.19TextureCoordinateTestIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.19TextureCoordinateTestThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.19TextureCoordinateTestIndex.html" title="X3D scene">Figure 18.19 Texture Coordinate Test</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.19TextureCoordinateTest.x3d._VP_Testing_1_2_3.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.19TextureCoordinateTest.x3d._VP_Testing_1_2_3.png"
+                                align="left"
+                                height="24"/>[1] Figure18.19TextureCoordinateTest.x3d - Testing 1 2 3</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.19TextureCoordinateTest.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.19TextureCoordinateTest.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[2] Figure18.19TextureCoordinateTest.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.20bTextureCoordinatePizzaSliceIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.20bTextureCoordinatePizzaSliceThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.20bTextureCoordinatePizzaSliceIndex.html" title="X3D scene">Figure 18.20b Texture Coordinate Pizza Slice</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<!--file not found: _viewpoints/Figure18.20bTextureCoordinatePizzaSlice.x3d._VP_Hey_got_more?.png--><span title="viewpoint image file not found">[3] Figure18.20bTextureCoordinatePizzaSlice.x3d - Hey got more?</span>
+                        <br/> &nbsp;<!--file not found: _viewpoints/Figure18.20bTextureCoordinatePizzaSlice.x3d._VP_Default_viewpoint.png--><span title="viewpoint image file not found">[4] Figure18.20bTextureCoordinatePizzaSlice.x3d - (default X3D view)</span>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.21TextureCoordinatePizzaSliceIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.21TextureCoordinatePizzaSliceThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.21TextureCoordinatePizzaSliceIndex.html" title="X3D scene">Figure 18.21 Texture Coordinate Pizza Slice</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Hey_pepperoni.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Hey_pepperoni.png"
+                                align="left"
+                                height="24"/>[5] Figure18.21TextureCoordinatePizzaSlice.x3d - Hey pepperoni</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.21TextureCoordinatePizzaSlice.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[6] Figure18.21TextureCoordinatePizzaSlice.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.22bTextureCoordinateVideoWallIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.22bTextureCoordinateVideoWallThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.22bTextureCoordinateVideoWallIndex.html" title="X3D scene">Figure 18.22b Texture Coordinate Video Wall</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.22bTextureCoordinateVideoWall.x3d._VP_Transformed_texture_window.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.22bTextureCoordinateVideoWall.x3d._VP_Transformed_texture_window.png"
+                                align="left"
+                                height="24"/>[7] Figure18.22bTextureCoordinateVideoWall.x3d - Transformed texture window</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.22bTextureCoordinateVideoWall.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.22bTextureCoordinateVideoWall.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[8] Figure18.22bTextureCoordinateVideoWall.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.23bTextureCoordinateGrillworkIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.23bTextureCoordinateGrillworkThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.23bTextureCoordinateGrillworkIndex.html" title="X3D scene">Figure 18.23b Texture Coordinate Grillwork</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.23bTextureCoordinateGrillwork.x3d._VP_Transformed_texture_grillwork.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.23bTextureCoordinateGrillwork.x3d._VP_Transformed_texture_grillwork.png"
+                                align="left"
+                                height="24"/>[9] Figure18.23bTextureCoordinateGrillwork.x3d - Transformed texture grillwork</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.23bTextureCoordinateGrillwork.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.23bTextureCoordinateGrillwork.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[10] Figure18.23bTextureCoordinateGrillwork.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.24TextureCoordinateRotatedGrillworkFenceIndex.html"
+                           title="X3D scene">
+                           <img src="_thumbnails/Figure18.24TextureCoordinateRotatedGrillworkFenceThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.24TextureCoordinateRotatedGrillworkFenceIndex.html"
+                           title="X3D scene">Figure 18.24 Texture Coordinate Rotated Grillwork Fence</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Fence_made_of_rotated_translated_texture_grillwork.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Fence_made_of_rotated_translated_texture_grillwork.png"
+                                align="left"
+                                height="24"/>[11] Figure18.24TextureCoordinateRotatedGrillworkFence.x3d - Fence made of rotated translated texture grillwork</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.24TextureCoordinateRotatedGrillworkFence.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[12] Figure18.24TextureCoordinateRotatedGrillworkFence.x3d -</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.25bTextureTransformBrickBoxIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.25bTextureTransformBrickBoxThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.25bTextureTransformBrickBoxIndex.html" title="X3D scene">Figure 18.25b Texture Transform Brick Box</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.25bTextureTransformBrickBox.x3d._VP_Brick_Box.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.25bTextureTransformBrickBox.x3d._VP_Brick_Box.png"
+                                align="left"
+                                height="24"/>[13] Figure18.25bTextureTransformBrickBox.x3d - Brick Box</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.25bTextureTransformBrickBox.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.25bTextureTransformBrickBox.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[14] Figure18.25bTextureTransformBrickBox.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.26bUncorrectedTextureSanDiegoBayIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.26bUncorrectedTextureSanDiegoBayThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.26bUncorrectedTextureSanDiegoBayIndex.html" title="X3D scene">Figure 18.26b Uncorrected Texture San Diego Bay</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png"
+                                align="left"
+                                height="24"/>[15] Figure18.26bUncorrectedTextureSanDiegoBay.x3d - Uncorrected texture, San Diego Bay</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.26bUncorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[16] Figure18.26bUncorrectedTextureSanDiegoBay.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.26cCorrectedTextureSanDiegoBayIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure18.26cCorrectedTextureSanDiegoBayThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.26cCorrectedTextureSanDiegoBayIndex.html" title="X3D scene">Figure 18.26c Corrected Texture San Diego Bay</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Uncorrected_texture,_San_Diego_Bay.png"
+                                align="left"
+                                height="24"/>[17] Figure18.26cCorrectedTextureSanDiegoBay.x3d - Uncorrected texture, San Diego Bay</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.26cCorrectedTextureSanDiegoBay.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[18] Figure18.26cCorrectedTextureSanDiegoBay.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure18.27RotatingFanAnimatedTextureTransformIndex.html"
+                           title="X3D scene">
+                           <img src="_thumbnails/Figure18.27RotatingFanAnimatedTextureTransformThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure18.27RotatingFanAnimatedTextureTransformIndex.html"
+                           title="X3D scene">Figure 18.27 Rotating Fan Animated Texture Transform</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_That_feels_good.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_That_feels_good.png"
+                                align="left"
+                                height="24"/>[19] Figure18.27RotatingFanAnimatedTextureTransform.x3d - That feels good</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure18.27RotatingFanAnimatedTextureTransform.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[20] Figure18.27RotatingFanAnimatedTextureTransform.x3d -</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/viewpointSlideshow.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/viewpointSlideshow.html"
+                     target="_blank">
+                     <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                          alt="Validate XHTML 1.1"
+                          height="31"
+                          width="88"
+                          border="0"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/_viewpoints/"
+                     target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18-TextureMapping/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter17-Textures/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19-NormalsShading/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

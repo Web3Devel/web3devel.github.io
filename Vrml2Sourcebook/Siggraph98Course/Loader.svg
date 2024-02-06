@@ -1,0 +1,17 @@
+
+      
+ecmascript:
+
+function loadUrl( str, ts )
+{
+        lastUrl = str;
+        Browser.createVrmlFromURL( str, myself, 'vrmlLoaded' );
+        string_changed[0] = 'Loading...';
+}
+function vrmlLoaded( nd, ts )
+{
+        node_changed = nd;
+        string_changed[0] = lastUrl[0];
+}
+
+    

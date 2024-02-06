@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 13 - Points Lines Faces</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12-Inline/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14-ElevationGrid/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 13 - Points Lines Faces</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Complex shapes are hard to build with primitive shapes (for example: terrain, animals, plants, machinery).
+                        Instead, build shapes out of atomic components: points, lines, and polygon faces.
+                        Shape building is like a 3D connect-the-dots game: place dots at 3D locations, and connect-the-dots to form shapes
+                        A coordinate specifies a 3D dot location, measured relative to a coordinate system origin.
+                        A geometry node then specifies how to connect the dots: for example,
+                        PointSet, IndexedLineSet, or IndexedFaceSet.
+                        Animation is accomplished using a CoordinateInterpolator node.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch13.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0175.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 13.16 Vaulted Ceiling" title="Figure 13.16 Vaulted Ceiling" hspace="10" 
+                          src="_viewpoints/Figure13.16VaultedCeiling.x3d._VP_Vaulted_ceiling.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;9 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.10PointSetBoxCorners"/>
+               <a href="Figure13.10PointSetBoxCornersIndex.html">
+                  <img src="_thumbnails/Figure13.10PointSetBoxCornersThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.10PointSetBoxCornersIndex.html">Figure 13.10 Point Set Box Corners</a>
+            </td>
+            <td>Points in an IndexedPointSet mark the eight corners of a box. Point size is always 1 pixel regardless of distance.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.11IndexedLineSetBoxWireframe"/>
+               <a href="Figure13.11IndexedLineSetBoxWireframeIndex.html">
+                  <img src="_thumbnails/Figure13.11IndexedLineSetBoxWireframeThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.11IndexedLineSetBoxWireframeIndex.html">Figure 13.11 Indexed Line Set Box Wireframe</a>
+            </td>
+            <td>A simple wireframe cube drawn with IndexedLineSet.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.12IndexedFaceSetCube"/>
+               <a href="Figure13.12IndexedFaceSetCubeIndex.html">
+                  <img src="_thumbnails/Figure13.12IndexedFaceSetCubeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.12IndexedFaceSetCubeIndex.html">Figure 13.12 Indexed Face Set Cube</a>
+            </td>
+            <td>A simple solid cube drawn with IndexedFaceSet.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.13IndexedFaceSetLightningBolt"/>
+               <a href="Figure13.13IndexedFaceSetLightningBoltIndex.html">
+                  <img src="_thumbnails/Figure13.13IndexedFaceSetLightningBoltThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.13IndexedFaceSetLightningBoltIndex.html">Figure 13.13 Indexed Face Set Lightning Bolt</a>
+            </td>
+            <td>A 3D lightning bolt using concave faces. Compare Figures 13.13 and 17.7b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.14VaultedCeilingPieceCreased"/>
+               <a href="Figure13.14VaultedCeilingPieceCreasedIndex.html">
+                  <img src="_thumbnails/Figure13.14VaultedCeilingPieceCreasedThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.14VaultedCeilingPieceCreasedIndex.html">Figure 13.14 Vaulted Ceiling Piece Creased</a>
+            </td>
+            <td>A nonsolid vaulted ceiling piece.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.15VaultedCeilingPiece"/>
+               <a href="Figure13.15VaultedCeilingPieceIndex.html">
+                  <img src="_thumbnails/Figure13.15VaultedCeilingPieceThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.15VaultedCeilingPieceIndex.html">Figure 13.15 Vaulted Ceiling Piece</a>
+            </td>
+            <td>A smoothly shaded vaulted ceiling piece.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.16VaultedCeiling"/>
+               <a href="Figure13.16VaultedCeilingIndex.html">
+                  <img src="_thumbnails/Figure13.16VaultedCeilingThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.16VaultedCeilingIndex.html">Figure 13.16 Vaulted Ceiling</a>
+            </td>
+            <td>A vaulted ceiling piece used repeatedly to build part of a medieval building.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.17aMorphingCube"/>
+               <a href="Figure13.17aMorphingCubeIndex.html">
+                  <img src="_thumbnails/Figure13.17aMorphingCubeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.17aMorphingCubeIndex.html">Figure 13.17a Morphing Cube</a>
+            </td>
+            <td>A morphing cube shape using IndexedFaceSet and CoordinateInterpolator.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure13.17bMorphingCubeLineSet"/>
+               <a href="Figure13.17bMorphingCubeLineSetIndex.html">
+                  <img src="_thumbnails/Figure13.17bMorphingCubeLineSetThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure13.17bMorphingCubeLineSetIndex.html">Figure 13.17b Morphing Cube Line Set</a>
+            </td>
+            <td>A morphing cube shape using IndexedLineSet and CoordinateInterpolator. Note that constant-width lines thwart perspective rendering and lead to optical-illusion effects.</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13-PointsLinesFaces</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12-Inline/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14-ElevationGrid/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

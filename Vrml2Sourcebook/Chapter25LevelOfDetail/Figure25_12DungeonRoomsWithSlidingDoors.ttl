@@ -1,0 +1,203 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure25_12DungeonRoomsWithSlidingDoors.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 25.12, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch25/25fig12.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '4 October 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Two dungeon rooms controlled by LOD nodes and separated by a wall and a pair of sliding doors.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure25_12DungeonRoomsWithSlidingDoors.x3d" .
+:meta dcterms:creator "Figure 25.12, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch25/25fig12.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "4 October 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "Two dungeon rooms controlled by LOD nodes and separated by a wall and a pair of sliding doors." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Viewpoint_2_1, :NavigationInfo_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5, :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_8 .
+:Viewpoint_2_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Click door for next dungeon room' ;
+  x3do:fieldOfView 1.05 ;
+  x3do:position ( 0 2 10 ) .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:avatarSize ( 0.5 1.6 0.5 ) ;
+  x3do:headlight false ;
+  x3do:speed 2 ;
+  x3do:type '"WALK" "EXAMINE" "ANY"' .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :LOD_2_3_1, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5, :Clock, :LeftOpen, :RightOpen .
+:LOD_2_3_1 a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :DungeonRoom, :WorldInfo_2_3_1_2 ;
+  x3do:range ( 20 ) .
+:DungeonRoom a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :LOD_2_3_1 ;
+  x3do:DEF 'DungeonRoom' ;
+  x3do:url '"Figure25_08DungeonRoom.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_08DungeonRoom.x3d" "Figure25_08DungeonRoom.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_08DungeonRoom.wrl"' .
+:WorldInfo_2_3_1_2 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :LOD_2_3_1 ;
+  x3do:info '"null node"' .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :LOD_2_3_2_1 ;
+  x3do:translation ( 0 0 -10 ) .
+:LOD_2_3_2_1 a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasChildren :DungeonRoom-USE-1, :WorldInfo_2_3_2_1_2 ;
+  x3do:range ( 20 ) .
+:DungeonRoom-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :LOD_2_3_2_1 ;
+  owl:sameAs :DungeonRoom . # DEF matching this USE
+:WorldInfo_2_3_2_1_2 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :LOD_2_3_2_1 ;
+  x3do:info '"null node"' .
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Inline_2_3_3_1 ;
+  x3do:translation ( 0 0 -5 ) .
+:Inline_2_3_3_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:url '"Figure25_10DungeonWallWithDoorway.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_10DungeonWallWithDoorway.x3d" "Figure25_10DungeonWallWithDoorway.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_10DungeonWallWithDoorway.wrl"' .
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Inline_2_3_4_1 ;
+  x3do:rotation ( 0 1 0 1.57 ) ;
+  x3do:scale ( 1 1 2 ) ;
+  x3do:translation ( 0 0 -15 ) .
+:Inline_2_3_4_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:url '"Figure25_07DungeonRoomWall.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_07DungeonRoomWall.x3d" "Figure25_07DungeonRoomWall.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_07DungeonRoomWall.wrl"' .
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :LeftDoor, :RightDoor, :TouchDoor ;
+  x3do:translation ( 0 0 -4.95 ) .
+:LeftDoor a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_1_1 ;
+  x3do:DEF 'LeftDoor' .
+:Transform_2_3_5_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :LeftDoor ;
+  x3do:hasChildren :Door ;
+  x3do:translation ( -0.75 0 0 ) .
+:Door a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_5_1_1 ;
+  x3do:DEF 'Door' ;
+  x3do:url '"Figure25_11DungeonDoor.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_11DungeonDoor.x3d" "Figure25_11DungeonDoor.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_11DungeonDoor.wrl"' .
+:RightDoor a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_2_1 ;
+  x3do:DEF 'RightDoor' .
+:Transform_2_3_5_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :RightDoor ;
+  x3do:hasChildren :Door-USE-1 ;
+  x3do:translation ( 0.75 0 0 ) .
+:Door-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_5_2_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:TouchDoor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:DEF 'TouchDoor' ;
+  x3do:description 'touch to open doors for 10 seconds' .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '10' .
+:LeftOpen a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'LeftOpen' ;
+  x3do:key ( 0 0.05 0.8 1 ) ;
+  x3do:keyValue ( 0 0 0 -1.3 0 0 -1.3 0 0 0 0 0 ) .
+:RightOpen a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'RightOpen' ;
+  x3do:key ( 0 0.05 0.8 1 ) ;
+  x3do:keyValue ( 0 0 0 1.3 0 0 1.3 0 0 0 0 0 ) .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'TouchDoor' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Clock' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'LeftOpen' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'RightOpen' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'LeftOpen' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'LeftDoor' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RightOpen' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'RightDoor' .

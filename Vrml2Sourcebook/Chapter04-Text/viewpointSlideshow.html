@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 04 - Text</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+            content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="7 March 2017"/>
+      <meta name="reference" content="http://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         http://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <style type="text/css">
+// can further set slideshow parameters here, see FAQ.
+      
+.slideshow-captions {
+  height: 465px;
+  width: 792px;
+}  
+.slideshow-images {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}  
+.slideshow {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}
+</style>
+      <link rel="stylesheet" type="text/css" href="../slideshow/css/slideshow.css"
+            media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+
+
+
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure04.01TextShape.x3d._VP_Default_viewpoint.png': { 'caption': '[1] Figure04.01TextShape.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.01TextShapeWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure04.01TextShapeWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.02ListOfTextStrings.x3d._VP_Default_viewpoint.png': { 'caption': '[3] Figure04.02ListOfTextStrings.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.02ListOfTextStringsWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure04.02ListOfTextStringsWithAxes.x3d - (default X3D view)' },
+      'Figure04.03CompressedText.x3d._VP_Default_viewpoint.png': { 'caption': '[5] Figure04.03CompressedText.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.03CompressedTextWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure04.03CompressedTextWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.04ListTextStringsAndLengths.x3d._VP_Default_viewpoint.png': { 'caption': '[7] Figure04.04ListTextStringsAndLengths.x3d - (default X3D view)' },
+      'Figure04.04ListTextStringsAndLengthsWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure04.04ListTextStringsAndLengthsWithAxes.x3d - (default X3D view)' },
+      'Figure04.05TextLimitedByMaximumExtent.x3d._VP_Default_viewpoint.png': { 'caption': '[9] Figure04.05TextLimitedByMaximumExtent.x3d - (default X3D view)' },
+      'Figure04.05TextLimitedByMaximumExtentWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure04.05TextLimitedByMaximumExtentWithAxes.x3d - (default X3D view)' },
+      'Figure04.06aTextPlainSerifFont.x3d._VP_Default_viewpoint.png': { 'caption': '[11] Figure04.06aTextPlainSerifFont.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.06aTextPlainSerifFontWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure04.06aTextPlainSerifFontWithAxes.x3d - (default X3D view)' },
+      'Figure04.06bTextBoldSerifFont.x3d._VP_Default_viewpoint.png': { 'caption': '[13] Figure04.06bTextBoldSerifFont.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.06bTextBoldSerifFontWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure04.06bTextBoldSerifFontWithAxes.x3d - (default X3D view)' },
+      'Figure04.07SmallText.x3d._VP_Default_viewpoint.png': { 'caption': '[15] Figure04.07SmallText.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.07SmallTextWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure04.07SmallTextWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.08aTextMoreLineSpacing.x3d._VP_Default_viewpoint.png': { 'caption': '[17] Figure04.08aTextMoreLineSpacing.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.08aTextMoreLineSpacingWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure04.08aTextMoreLineSpacingWithAxes.x3d - (default X3D view)' },
+      'Figure04.08bTextLessLineSpacing.x3d._VP_Default_viewpoint.png': { 'caption': '[19] Figure04.08bTextLessLineSpacing.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.08bTextLessLineSpacingWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[20] Figure04.08bTextLessLineSpacingWithAxes.x3d - (default X3D view)' },
+      'Figure04.09TwoTextShapesDifferentJustification.x3d._VP_Default_viewpoint.png': { 'caption': '[21] Figure04.09TwoTextShapesDifferentJustification.x3d -' },
+      'Figure04.09TwoTextShapesDifferentJustificationWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[22] Figure04.09TwoTextShapesDifferentJustificationWithAxes.x3d -' },
+      'Figure04.10TwoLinesTextFlatBox.x3d._VP_Default_viewpoint.png': { 'caption': '[23] Figure04.10TwoLinesTextFlatBox.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.10TwoLinesTextFlatBoxWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure04.10TwoLinesTextFlatBoxWithAxes.x3d - (default X3D view)' },
+      'Figure04.11TextOverstrikeFont.x3d._VP_View_from_30m_away.png': { 'caption': '[25] Figure04.11TextOverstrikeFont.x3d - View from 30m away' },
+      'Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png': { 'caption': '[26] Figure04.11TextOverstrikeFont.x3d - Default viewpoint at (0 0 10) is way too close!! That is a bad place to be, provide a replacement viewpoint instead.' },
+      'Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint.png': { 'caption': '[27] Figure04.11TextOverstrikeFont.x3d - (default X3D view from 0 0 10)' },
+      'Figure04.11TextOverstrikeFontWithAxes.x3d._VP_View_from_30m_away.png': { 'caption': '[28] Figure04.11TextOverstrikeFontWithAxes.x3d - View from 30m away' },
+      'Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png': { 'caption': '[29] Figure04.11TextOverstrikeFontWithAxes.x3d - Default viewpoint at (0 0 10) is way too close!! That is a bad place to be, provide a replacement viewpoint instead.' },
+      'Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[30] Figure04.11TextOverstrikeFontWithAxes.x3d - (default X3D view)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03-Shapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05-PositioningShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 04 - Text</h2>
+      <table align="center" border="0" width="792">
+         <tr style="align:left; text-align: left;">
+            <td style="align:left; text-align: left; left:-100px; ">
+               <div id="show" class="slideshow"
+                    style="align: center; float: none; position: relative; left:-200px; width:792;">
+                  <div class="slideshow-images"
+                       style="align: center; float: none; position: relative; width:792;">
+                     <img src="_viewpoints/Figure04.01TextShape.x3d._VP_Default_viewpoint.png"
+                          alt="[1] Figure04.01TextShape.x3d - (default X3D view from 0 0 10)"
+                          height="465"
+                          width="792"
+                          align=""
+                          float=""
+                          position=""/>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary=""
+             style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Chapter Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter04-Text/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 04.11, Text Overstrike Font With Axes" title="Figure 04.11, Text Overstrike Font With Axes" hspace="10" 
+                          src="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_View_from_30m_away.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes
+                        how to build Text shapes with accompanying FontStyle nodes to vary how strings are presented.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch04.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0038.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center" summary=""
+                      style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="right" style="background-color:lightgrey">
+26 X3D Scenes &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey">
+ &nbsp;30 Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.01TextShapeIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.01TextShapeThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.01TextShapeIndex.html" title="X3D scene">Figure 04.01 Text Shape</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.01TextShape.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.01TextShape.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[1] Figure04.01TextShape.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.01TextShapeWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.01TextShapeWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.01TextShapeWithAxesIndex.html" title="X3D scene">Figure 04.01 Text Shape With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.01TextShapeWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.01TextShapeWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[2] Figure04.01TextShapeWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.02ListOfTextStringsIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.02ListOfTextStringsThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.02ListOfTextStringsIndex.html" title="X3D scene">Figure 04.02 List Of Text Strings</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.02ListOfTextStrings.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.02ListOfTextStrings.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[3] Figure04.02ListOfTextStrings.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.02ListOfTextStringsWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.02ListOfTextStringsWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.02ListOfTextStringsWithAxesIndex.html" title="X3D scene">Figure 04.02 List Of Text Strings With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.02ListOfTextStringsWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.02ListOfTextStringsWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[4] Figure04.02ListOfTextStringsWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.03CompressedTextIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.03CompressedTextThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.03CompressedTextIndex.html" title="X3D scene">Figure 04.03 Compressed Text</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.03CompressedText.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.03CompressedText.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[5] Figure04.03CompressedText.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.03CompressedTextWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.03CompressedTextWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.03CompressedTextWithAxesIndex.html" title="X3D scene">Figure 04.03 Compressed Text With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.03CompressedTextWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.03CompressedTextWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[6] Figure04.03CompressedTextWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.04ListTextStringsAndLengthsIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.04ListTextStringsAndLengthsThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.04ListTextStringsAndLengthsIndex.html" title="X3D scene">Figure 04.04 List Text Strings And Lengths</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.04ListTextStringsAndLengths.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.04ListTextStringsAndLengths.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[7] Figure04.04ListTextStringsAndLengths.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.04ListTextStringsAndLengthsWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.04ListTextStringsAndLengthsWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.04ListTextStringsAndLengthsWithAxesIndex.html" title="X3D scene">Figure 04.04 List Text Strings And Lengths With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.04ListTextStringsAndLengthsWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.04ListTextStringsAndLengthsWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[8] Figure04.04ListTextStringsAndLengthsWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.05TextLimitedByMaximumExtentIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.05TextLimitedByMaximumExtentThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.05TextLimitedByMaximumExtentIndex.html" title="X3D scene">Figure 04.05 Text Limited By Maximum Extent</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.05TextLimitedByMaximumExtent.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.05TextLimitedByMaximumExtent.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[9] Figure04.05TextLimitedByMaximumExtent.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.05TextLimitedByMaximumExtentWithAxesIndex.html"
+                           title="X3D scene">
+                           <img src="_thumbnails/Figure04.05TextLimitedByMaximumExtentWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.05TextLimitedByMaximumExtentWithAxesIndex.html"
+                           title="X3D scene">Figure 04.05 Text Limited By Maximum Extent With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.05TextLimitedByMaximumExtentWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.05TextLimitedByMaximumExtentWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[10] Figure04.05TextLimitedByMaximumExtentWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.06aTextPlainSerifFontIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.06aTextPlainSerifFontThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.06aTextPlainSerifFontIndex.html" title="X3D scene">Figure 04.06a Text Plain Serif Font</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.06aTextPlainSerifFont.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.06aTextPlainSerifFont.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[11] Figure04.06aTextPlainSerifFont.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.06aTextPlainSerifFontWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.06aTextPlainSerifFontWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.06aTextPlainSerifFontWithAxesIndex.html" title="X3D scene">Figure 04.06a Text Plain Serif Font With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.06aTextPlainSerifFontWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.06aTextPlainSerifFontWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[12] Figure04.06aTextPlainSerifFontWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.06bTextBoldSerifFontIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.06bTextBoldSerifFontThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.06bTextBoldSerifFontIndex.html" title="X3D scene">Figure 04.06b Text Bold Serif Font</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.06bTextBoldSerifFont.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.06bTextBoldSerifFont.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[13] Figure04.06bTextBoldSerifFont.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.06bTextBoldSerifFontWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.06bTextBoldSerifFontWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.06bTextBoldSerifFontWithAxesIndex.html" title="X3D scene">Figure 04.06b Text Bold Serif Font With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.06bTextBoldSerifFontWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.06bTextBoldSerifFontWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[14] Figure04.06bTextBoldSerifFontWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.07SmallTextIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.07SmallTextThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.07SmallTextIndex.html" title="X3D scene">Figure 04.07 Small Text</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.07SmallText.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.07SmallText.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[15] Figure04.07SmallText.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.07SmallTextWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.07SmallTextWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.07SmallTextWithAxesIndex.html" title="X3D scene">Figure 04.07 Small Text With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.07SmallTextWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.07SmallTextWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[16] Figure04.07SmallTextWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.08aTextMoreLineSpacingIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.08aTextMoreLineSpacingThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.08aTextMoreLineSpacingIndex.html" title="X3D scene">Figure 04.08a Text More Line Spacing</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.08aTextMoreLineSpacing.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.08aTextMoreLineSpacing.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[17] Figure04.08aTextMoreLineSpacing.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.08aTextMoreLineSpacingWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.08aTextMoreLineSpacingWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.08aTextMoreLineSpacingWithAxesIndex.html" title="X3D scene">Figure 04.08a Text More Line Spacing With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.08aTextMoreLineSpacingWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.08aTextMoreLineSpacingWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[18] Figure04.08aTextMoreLineSpacingWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.08bTextLessLineSpacingIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.08bTextLessLineSpacingThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.08bTextLessLineSpacingIndex.html" title="X3D scene">Figure 04.08b Text Less Line Spacing</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.08bTextLessLineSpacing.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.08bTextLessLineSpacing.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[19] Figure04.08bTextLessLineSpacing.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.08bTextLessLineSpacingWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.08bTextLessLineSpacingWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.08bTextLessLineSpacingWithAxesIndex.html" title="X3D scene">Figure 04.08b Text Less Line Spacing With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.08bTextLessLineSpacingWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.08bTextLessLineSpacingWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[20] Figure04.08bTextLessLineSpacingWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.09TwoTextShapesDifferentJustificationIndex.html"
+                           title="X3D scene">
+                           <img src="_thumbnails/Figure04.09TwoTextShapesDifferentJustificationThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.09TwoTextShapesDifferentJustificationIndex.html"
+                           title="X3D scene">Figure 04.09 Two Text Shapes Different Justification</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.09TwoTextShapesDifferentJustification.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.09TwoTextShapesDifferentJustification.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[21] Figure04.09TwoTextShapesDifferentJustification.x3d -</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.09TwoTextShapesDifferentJustificationWithAxesIndex.html"
+                           title="X3D scene">
+                           <img src="_thumbnails/Figure04.09TwoTextShapesDifferentJustificationWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.09TwoTextShapesDifferentJustificationWithAxesIndex.html"
+                           title="X3D scene">Figure 04.09 Two Text Shapes Different Justification With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.09TwoTextShapesDifferentJustificationWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.09TwoTextShapesDifferentJustificationWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[22] Figure04.09TwoTextShapesDifferentJustificationWithAxes.x3d -</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.10TwoLinesTextFlatBoxIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.10TwoLinesTextFlatBoxThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.10TwoLinesTextFlatBoxIndex.html" title="X3D scene">Figure 04.10 Two Lines Text Flat Box</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.10TwoLinesTextFlatBox.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.10TwoLinesTextFlatBox.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[23] Figure04.10TwoLinesTextFlatBox.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.10TwoLinesTextFlatBoxWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.10TwoLinesTextFlatBoxWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.10TwoLinesTextFlatBoxWithAxesIndex.html" title="X3D scene">Figure 04.10 Two Lines Text Flat Box With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.10TwoLinesTextFlatBoxWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.10TwoLinesTextFlatBoxWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[24] Figure04.10TwoLinesTextFlatBoxWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.11TextOverstrikeFontIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.11TextOverstrikeFontThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.11TextOverstrikeFontIndex.html" title="X3D scene">Figure 04.11 Text Overstrike Font</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_View_from_30m_away.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_View_from_30m_away.png"
+                                align="left"
+                                height="24"/>[25] Figure04.11TextOverstrikeFont.x3d - View from 30m away</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png"
+                                align="left"
+                                height="24"/>[26] Figure04.11TextOverstrikeFont.x3d - Default viewpoint at (0 0 10) is way too close!! That is a bad place to be, provide a replacement viewpoint instead.</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFont.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[27] Figure04.11TextOverstrikeFont.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure04.11TextOverstrikeFontWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure04.11TextOverstrikeFontWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure04.11TextOverstrikeFontWithAxesIndex.html" title="X3D scene">Figure 04.11 Text Overstrike Font With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_View_from_30m_away.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_View_from_30m_away.png"
+                                align="left"
+                                height="24"/>[28] Figure04.11TextOverstrikeFontWithAxes.x3d - View from 30m away</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10)_is_way_too_close!!_That_is_a_bad_place_to_be,_provide_a_replacement_viewpoint_instead..png"
+                                align="left"
+                                height="24"/>[29] Figure04.11TextOverstrikeFontWithAxes.x3d - Default viewpoint at (0 0 10) is way too close!! That is a bad place to be, provide a replacement viewpoint instead.</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure04.11TextOverstrikeFontWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[30] Figure04.11TextOverstrikeFontWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter04-Text/viewpointSlideshow.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter04-Text/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter04-Text/viewpointSlideshow.html"
+                     target="_blank">
+                     <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                          alt="Validate XHTML 1.1"
+                          height="31"
+                          width="88"
+                          border="0"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter04-Text/_viewpoints/"
+                     target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter04-Text/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03-Shapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05-PositioningShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

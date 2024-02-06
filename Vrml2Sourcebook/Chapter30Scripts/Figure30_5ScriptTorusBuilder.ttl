@@ -1,0 +1,258 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_5ScriptTorusBuilder.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure30_5ScriptTorusBuilder.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 30.5, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig05.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '28 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A torus shape built with a donut-maker program script. Also see Figures 31.6 and 31.7 for comparison.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_5ScriptTorusBuilder.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure30_5ScriptTorusBuilder.x3d" .
+:meta dcterms:creator "Figure 30.5, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig05.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "28 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A torus shape built with a donut-maker program script. Also see Figures 31.6 and 31.7 for comparison." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_5ScriptTorusBuilder.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure30_5ScriptTorusBuilder.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Torus' ;
+  x3do:orientation ( 1 0 0 -0.78 ) ;
+  x3do:position ( 0 5 5 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :DonutMakerExternalScript, :DonutMakerInternalScript .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasGeometry :Donut ;
+  x3do:hasAppearance :Appearance_2_3_1_2 .
+:Donut a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:DEF 'Donut' ;
+  x3do:beginCap false ;
+  x3do:convex false ;
+  x3do:creaseAngle 1.57 ;
+  x3do:endCap false .
+:Appearance_2_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :Material_2_3_1_2_1 .
+:Material_2_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_2 ;
+  x3do:diffuseColor ( 0 0.4 0.8 ) .
+:DonutMakerExternalScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasField :field_2_3_2_1, :field_2_3_2_2, :field_2_3_2_3, :field_2_3_2_4, :field_2_3_2_5, :field_2_3_2_6, :field_2_3_2_7, :field_2_3_2_8 ;
+  x3do:DEF 'DonutMakerExternalScript' ;
+  x3do:url '"donutmaker.js" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/donutmaker.js"' .
+:field_2_3_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'spineRadius' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 2 .
+:field_2_3_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'crossSectionRadius' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 1 .
+:field_2_3_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'spineResolution' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 16 .
+:field_2_3_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'crossSectionResolution' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 16 .
+:field_2_3_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_spineRadius' ;
+  x3do:type 'SFFloat' .
+:field_2_3_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_crossSectionRadius' ;
+  x3do:type 'SFFloat' .
+:field_2_3_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'spine_changed' ;
+  x3do:type 'MFVec3f' .
+:field_2_3_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerExternalScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'crossSection_changed' ;
+  x3do:type 'MFVec2f' .
+:DonutMakerInternalScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasField :field_2_3_3_1, :field_2_3_3_2, :field_2_3_3_3, :field_2_3_3_4, :field_2_3_3_5, :field_2_3_3_6, :field_2_3_3_7, :field_2_3_3_8 ;
+  x3do:DEF 'DonutMakerInternalScript' ;
+  x3do:sourceCode """
+ecmascript:
+
+function initialize( ) {
+    generateCrossSection( );
+    generateSpine( );
+}
+
+function set_crossSectionRadius( csr, ts ) {
+    crossSectionRadius = csr;
+    generateCrossSection( );
+//  Browser.println ('crossSectionRadius = ' + csr);
+}
+
+function set_spineRadius( sr, ts ) {
+    spineRadius = sr;
+    generateSpine( );
+//  Browser.println ('spineRadius = ' + sr);
+}
+
+function generateCrossSection( ) {
+    angle = 0.0;
+    delta = (2 * 3.141592653) / crossSectionResolution;
+    for ( i = 0; i <= crossSectionResolution; i++ ) {
+        crossSection_changed[i][0] =  crossSectionRadius * Math.cos( angle );
+        crossSection_changed[i][1] = -crossSectionRadius * Math.sin( angle );
+        angle += delta;
+    }
+    // added code to make ends meet
+    crossSection_changed[crossSectionResolution + 1][0] = crossSection_changed[0][0];
+    crossSection_changed[crossSectionResolution + 1][1] = crossSection_changed[0][1];
+}
+
+function generateSpine( ) {
+    angle = 0.0;
+    delta = (2 * 3.141592653) / spineResolution;
+    for ( i = 0; i <= spineResolution; i++ ) {
+        spine_changed[i][0] =  spineRadius * Math.cos( angle );
+        spine_changed[i][1] =  0.0;
+        spine_changed[i][2] = -spineRadius * Math.sin( angle );
+        angle += delta;
+    }
+    // added code to make ends meet
+    spine_changed[spineResolution + 1][0] = spine_changed[0][0];
+    spine_changed[spineResolution + 1][1] = 0.0;
+    spine_changed[spineResolution + 1][2] = spine_changed[0][2];
+}
+""" .
+:field_2_3_3_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'spineRadius' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 2 .
+:field_2_3_3_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'crossSectionRadius' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 1 .
+:field_2_3_3_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'spineResolution' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 16 .
+:field_2_3_3_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'crossSectionResolution' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 16 .
+:field_2_3_3_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_spineRadius' ;
+  x3do:type 'SFFloat' .
+:field_2_3_3_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_crossSectionRadius' ;
+  x3do:type 'SFFloat' .
+:field_2_3_3_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'spine_changed' ;
+  x3do:type 'MFVec3f' .
+:field_2_3_3_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :DonutMakerInternalScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'crossSection_changed' ;
+  x3do:type 'MFVec2f' .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'spine_changed' ;
+  x3do:fromNode 'DonutMakerInternalScript' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'Donut' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'crossSection_changed' ;
+  x3do:fromNode 'DonutMakerInternalScript' ;
+  x3do:toField 'set_crossSection' ;
+  x3do:toNode 'Donut' .

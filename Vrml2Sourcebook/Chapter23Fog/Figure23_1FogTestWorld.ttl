@@ -1,0 +1,186 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/Figure23_1FogTestWorld.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure23_1FogTestWorld.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 23.1, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch23/23fig01.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '22 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A test world for use in subsequent fog example scenes.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/Figure23_1FogTestWorld.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure23_1FogTestWorld.x3d" .
+:meta dcterms:creator "Figure 23.1, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch23/23fig01.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "22 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A test world for use in subsequent fog example scenes." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/Figure23_1FogTestWorld.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Group_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure23_1FogTestWorld.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '30m above 60m x 60m square' ;
+  x3do:orientation ( 1 0 0 -1.57 ) ;
+  x3do:position ( 0 30 0 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '60m above 60m x 60m square' ;
+  x3do:orientation ( 1 0 0 -1.57 ) ;
+  x3do:position ( 0 60 0 ) .
+:Group_2_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :DirectionalLight_2_4_1, :Shape_2_4_2, :ColumnPair, :Transform_2_4_4, :Transform_2_4_5, :Transform_2_4_6, :Transform_2_4_7, :Transform_2_4_8, :Transform_2_4_9, :Transform_2_4_10 .
+:DirectionalLight_2_4_1 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:ambientIntensity 1 ;
+  x3do:direction ( 0 -1 -1 ) ;
+  x3do:intensity 0.2 .
+:Shape_2_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasGeometry :Box_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_2 .
+:Box_2_4_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:size ( 60 0.01 60 ) .
+:Appearance_2_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasMaterial :Material_2_4_2_2_1 .
+:Material_2_4_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_2 ;
+  x3do:ambientIntensity 0.5 ;
+  x3do:diffuseColor ( 0.2 0.8 0.2 ) .
+:ColumnPair a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Transform_2_4_3_1, :Transform_2_4_3_2 ;
+  x3do:DEF 'ColumnPair' .
+:Transform_2_4_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ColumnPair ;
+  x3do:hasChildren :Column ;
+  x3do:translation ( -4 3 0 ) .
+:Column a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3_1 ;
+  x3do:hasGeometry :Cylinder_2_4_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_3_1_1_2 ;
+  x3do:DEF 'Column' .
+:Cylinder_2_4_3_1_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Column ;
+  x3do:height 6 ;
+  x3do:radius 0.3 .
+:Appearance_2_4_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Column ;
+  x3do:hasMaterial :Material_2_4_3_1_1_2_1 .
+:Material_2_4_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_3_1_1_2 ;
+  x3do:diffuseColor ( 1 0.8 0.5 ) .
+:Transform_2_4_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ColumnPair ;
+  x3do:hasChildren :Column-USE-1 ;
+  x3do:translation ( 4 3 0 ) .
+:Column-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3_2 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-1 ;
+  x3do:translation ( 0 0 -8 ) .
+:ColumnPair-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_4 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-2 ;
+  x3do:translation ( 0 0 -8 ) .
+:ColumnPair-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_5 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-3 ;
+  x3do:translation ( 0 0 8 ) .
+:ColumnPair-USE-3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_6 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-4 ;
+  x3do:translation ( 0 0 -16 ) .
+:ColumnPair-USE-4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_7 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-5 ;
+  x3do:translation ( 0 0 16 ) .
+:ColumnPair-USE-5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_8 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-6 ;
+  x3do:translation ( 0 0 -24 ) .
+:ColumnPair-USE-6 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_9 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE
+:Transform_2_4_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :ColumnPair-USE-7 ;
+  x3do:translation ( 0 0 24 ) .
+:ColumnPair-USE-7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_10 ;
+  owl:sameAs :ColumnPair . # DEF matching this USE

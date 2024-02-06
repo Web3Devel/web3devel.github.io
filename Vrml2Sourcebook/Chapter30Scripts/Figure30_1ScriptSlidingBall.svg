@@ -1,0 +1,12 @@
+
+        
+ecmascript:
+
+// Move a shape in a straight path
+function set_fraction( fraction, eventTime ) {
+	value_changed[0] = fraction;    // X component
+	value_changed[1] = 0.0;         // Y component
+	value_changed[2] = 0.0;         // Z component
+}
+
+      

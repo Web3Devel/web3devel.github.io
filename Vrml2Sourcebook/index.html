@@ -1,0 +1,2552 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="icon" href="images/X3DtextIcon16.png" title="X3D" type="image/png">
+      <title>Vrml2Sourcebook X3D Examples Archive - Table of Contents </title>
+      <meta name="author" content="Don Brutzman">
+      <meta name="identifier" content="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook">
+      <meta name="subject" content="X3D VRML X3DOM X_ITE VRML 2 Sourcebook">
+      <meta name="generator" content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt">
+      <meta name="modified" content="2024-01-01-08:00">
+   </head>
+   <body><a name="top"></a><table align="center" border="0" cellspacing="0" cellpadding="0" summary="" width="80%">
+         <tr align="center">
+            <td><a href="../X3dResources.html" target="_blank"><img src="images/x3d2-s.gif" width="154" height="97" border="0" title="X3D Resources" alt="X3D Resources"></a></td>
+            <td rowspan="2">
+               <pre>&nbsp;&nbsp;</pre>
+            </td>
+            <td>
+               <h2 align="center">VRML 2 Sourcebook, X3D&nbsp;Examples Archive</h2>
+            </td>
+            <td rowspan="2">
+               <pre>&nbsp;&nbsp;</pre>
+            </td>
+            <td><a href="https://www.web3d.org"><img src="images/web3d_logo2.png" width="120" height="60" border="0" title="Web3D Consortium home page" alt="Web3D Consortium home page"></a></td>
+         </tr>
+         <tr>
+            <td align="right"><a href="https://www.wiley.com/legacy/compbooks/vrml2sbk/cover/cover.htm" target="VRMLSourcebook"><img src="images/Vrml2SourcebookCover.jpg" width="110" height="137" border="0" title="VRML 2 Sourcebook" alt="VRML 2 Sourcebook"></a></td>
+            <td align="center">
+               <p style="text-align:center;margin-left:auto;margin-right:auto;width:95%;font-size:medium">The <a href="https://www.wiley.com/legacy/compbooks/vrml2sbk/cover/cover.htm" target="VRMLSourcebook"><i>VRML 2 Sourcebook</i></a> was written by Andrea L. Ames, David R. Nadeau, and John L. Moreland, published by
+                  John Wiley &amp; Sons, 1996. This open-source archive has translated the <a href="https://www.wiley.com/legacy/compbooks/vrml2sbk/toc/toc.htm" target="VRMLSourcebook">original examples</a> to create corresponding example scenes using X3D. The original <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" target="VRMLSourcebook">SIGGRAPH 98 course notes</a> with corresponding translated <a href="#Siggraph98Course">Siggraph 98 Course</a> scenes are also available.</p>
+               <p style="text-align:center;margin-left:auto;margin-right:auto;width:80%;font-size:medium"> Virtual Reality Modeling Language (VRML97) is the second-generation ISO International
+                  Standard that is fully compatible with  the third-generation ISO standard, Extensible
+                  3D (X3D) Graphics.  VRML97 provides a close match to the X3D Immersive Profile.</p>
+            </td>
+            <td align="left"><img src="images/Vrml1SourcebookCover.jpg" width="104" height="132" border="0" title="VRML 1 Sourcebook" alt="VRML 1 Sourcebook"></td>
+         </tr>
+      </table>
+      <hr width="90%">
+      <table align="center" width="90%" summary="" border="0" cellpadding="1">
+         <tr>
+            <td align="left" width="35%" valign="middle"><a href="../X3dResources.html" target="_blank"><img src="images/x3d2-s.gif" width="51" height="32" border="0" title="X3D Resources" alt="X3D Resources"></a> &nbsp;&nbsp;&nbsp; <a href="javadoc/index.html" target="_blank"><img src="images/Java-32.png" width="32" height="32" border="0" title="Javadoc for translated java source" alt="Javadoc for translated java source"></a></td>
+            <td align="center" width="30%">31 Directories, 416 X3D Models</td>
+            <td align="right" width="35%"><a href="https://www.web3d.org/x3d/content/examples/X3dExamplesVrml2Sourcebook.zip"><img src="images/698717-icon-124-document-file-zip-32.png" width="32" height="32" border="0" title=".zip archive" alt=".zip archive"></a> &nbsp;&nbsp;&nbsp; <a href="#information"><img src="images/200px-Question_book-new.svg.png" width="40" height="31" border="0" title="Archive Information" alt="Archive Information"></a></td>
+         </tr>
+      </table>
+      <hr width="90%">
+      <table align="center" width="90%" summary="" border="0" cellpadding="1"><!--chapterCountModulo3=1-->
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter02Introduction">Chapter 02 Introduction</a></td>
+            <td><a href="#Chapter03Shapes">Chapter 03 Shapes</a></td>
+            <td><a href="#Chapter04Text">Chapter 04 Text</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter05PositioningShapes">Chapter 05 Positioning Shapes</a></td>
+            <td><a href="#Chapter06RotatingShapes">Chapter 06 Rotating Shapes</a></td>
+            <td><a href="#Chapter07ScalingShapes">Chapter 07 Scaling Shapes</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter08AnimatingPositionOrientationScale">Chapter 08 Animating Position Orientation Scale</a></td>
+            <td><a href="#Chapter09SensingViewer">Chapter 09 Sensing Viewer</a></td>
+            <td><a href="#Chapter10Materials">Chapter 10 Materials</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter11Grouping">Chapter 11 Grouping</a></td>
+            <td><a href="#Chapter12Inline">Chapter 12 Inline</a></td>
+            <td><a href="#Chapter13PointsLinesFaces">Chapter 13 Points Lines Faces</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter14ElevationGrid">Chapter 14 Elevation Grid</a></td>
+            <td><a href="#Chapter15Extrusion">Chapter 15 Extrusion</a></td>
+            <td><a href="#Chapter16Color">Chapter 16 Color</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter17Textures">Chapter 17 Textures</a></td>
+            <td><a href="#Chapter18TextureMapping">Chapter 18 Texture Mapping</a></td>
+            <td><a href="#Chapter19NormalsShading">Chapter 19 Normals Shading</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter20Lighting">Chapter 20 Lighting</a></td>
+            <td><a href="#Chapter21ShinyMaterials">Chapter 21 Shiny Materials</a></td>
+            <td><a href="#Chapter22Background">Chapter 22 Background</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter23Fog">Chapter 23 Fog</a></td>
+            <td><a href="#Chapter24Sound">Chapter 24 Sound</a></td>
+            <td><a href="#Chapter25LevelOfDetail">Chapter 25 Level Of Detail</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter26Viewpoint">Chapter 26 Viewpoint</a></td>
+            <td><a href="#Chapter27SensingVisibilityProximityCollision">Chapter 27 Sensing Visibility Proximity Collision</a></td>
+            <td><a href="#Chapter28Anchor">Chapter 28 Anchor</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter29WorldInfo">Chapter 29 World Info</a></td>
+            <td><a href="#Chapter30Scripts">Chapter 30 Scripts</a></td>
+            <td><a href="#Chapter31Prototypes">Chapter 31 Prototypes</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Siggraph98Course">Siggraph 98 Course</a></td>
+            <td width="32%">&nbsp;</td>
+            <td width="32%">&nbsp;</td>
+         </tr>
+      </table><br><table align="center" width="95%" summary="" border="1" cellpadding="6">
+         <tr align="left">
+            <th width="67%">&nbsp;&nbsp;31 Directory Summaries </th>
+            <th width="33%" colspan="2">&nbsp;&nbsp;416 X3D Models</th>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter02Introduction">&nbsp;</a><a title="Directory Summary" href="Chapter02Introduction/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 02 Introduction</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter02Introduction/index.html"><img border="0" alt="Your first VRML world - a brown hut" title="Your first VRML world - a brown hut." hspace="10" 
+                          src="Chapter02Introduction/_viewpoints/Figure02_1Hut.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes
+                        VRML file structure, a sample VRML file, understanding the header and understanding UTF8.
+                        Guidance is provided for using comments, nodes, node type name, fields and values, and using field names.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch02.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0000.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter02Introduction/Figure02_1HutIndex.html">Figure 02 1 Hut</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter02Introduction/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter02Introduction/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter03Shapes">&nbsp;</a><a title="Directory Summary" href="Chapter03Shapes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 03 Shapes</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes how to build primitive geometric shapes.
+                    </p>
+                    
+
+
+                    <p>
+                        The Shape node contains Appearance and geometry.
+                        Geometry primitive nodes of interest include Box, Cone, Cylinder, Sphere, Text and FontStyle.
+                        Multiple Shape nodes can be drawn together to make new objects of interest.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch03.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0028.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter03Shapes/index.html"><img border="0" alt="Space Station, or spark plug? You decide..." title="Space Station, or spark plug? You decide...." hspace="10" 
+                          src="Chapter03Shapes/_viewpoints/Figure03_10SpaceStation.x3d._VP_View_from_80m_away.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter03Shapes/Figure03_01DefaultBoxIndex.html">Figure 03 01 Default Box</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_01DefaultBoxWithAxesIndex.html">Figure 03 01 Default Box With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_02ResizedBoxIndex.html">Figure 03 02 Resized Box</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_02ResizedBoxWithAxesIndex.html">Figure 03 02 Resized Box With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_03DefaultConeIndex.html">Figure 03 0 3Default Cone</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_03DefaultConeWithAxesIndex.html">Figure 03 0 3Default Cone With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_04FlattenedConeIndex.html">Figure 03 04 Flattened Cone</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_04FlattenedConeWithAxesIndex.html">Figure 03 04 Flattened Cone With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_05DefaultCylinderIndex.html">Figure 03 05 Default Cylinder</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_05DefaultCylinderWithAxesIndex.html">Figure 03 05 Default Cylinder With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_06ResizedCylinderIndex.html">Figure 03 06 Resized Cylinder</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_06ResizedCylinderWithAxesIndex.html">Figure 03 06 Resized Cylinder With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_07ResizedCylinderHollowIndex.html">Figure 03 07 Resized Cylinder Hollow</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_07ResizedCylinderHollowWithAxesIndex.html">Figure 03 07 Resized Cylinder Hollow With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_08DefaultSphereIndex.html">Figure 03 08 Default Sphere</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_08DefaultSphereWithAxesIndex.html">Figure 03 08 Default Sphere With Axes</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_09_3dPlusSignIndex.html">Figure 03 09  3D Plus Sign</a></li>
+                           <li><a href="Chapter03Shapes/Figure03_10SpaceStationIndex.html">Figure 03 10 Space Station</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter03Shapes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter03Shapes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter04Text">&nbsp;</a><a title="Directory Summary" href="Chapter04Text/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 04 Text</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter04Text/index.html"><img border="0" alt="Figure 04.11, Text Overstrike Font With Axes" title="Figure 04.11, Text Overstrike Font With Axes" hspace="10" 
+                          src="Chapter04Text/_viewpoints/Figure04_11TextOverstrikeFontWithAxes.x3d._VP_View_from_30m_away.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Text geometry is placed in a Shape to describe your scene.
+                    </p>
+                    
+
+					
+                    <p>
+                        This chapter describes
+                        how to build Text shapes with accompanying FontStyle nodes to vary how strings are presented.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch04.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0038.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter04Text/Figure04_01TextShapeIndex.html">Figure 04 01 Text Shape</a></li>
+                           <li><a href="Chapter04Text/Figure04_01TextShapeWithAxesIndex.html">Figure 04 01 Text Shape With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_02ListOfTextStringsIndex.html">Figure 04 02 List Of Text Strings</a></li>
+                           <li><a href="Chapter04Text/Figure04_02ListOfTextStringsWithAxesIndex.html">Figure 04 02 List Of Text Strings With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_03CompressedTextIndex.html">Figure 04 03 Compressed Text</a></li>
+                           <li><a href="Chapter04Text/Figure04_03CompressedTextWithAxesIndex.html">Figure 04 03 Compressed Text With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_04ListTextStringsAndLengthsIndex.html">Figure 04 04 List Text Strings And Lengths</a></li>
+                           <li><a href="Chapter04Text/Figure04_04ListTextStringsAndLengthsWithAxesIndex.html">Figure 04 04 List Text Strings And Lengths With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_05TextLimitedByMaximumExtentIndex.html">Figure 04 05 Text Limited By Maximum Extent</a></li>
+                           <li><a href="Chapter04Text/Figure04_05TextLimitedByMaximumExtentWithAxesIndex.html">Figure 04 05 Text Limited By Maximum Extent With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_06aTextPlainSerifFontIndex.html">Figure 04 06a Text Plain Serif Font</a></li>
+                           <li><a href="Chapter04Text/Figure04_06aTextPlainSerifFontWithAxesIndex.html">Figure 04 06a Text Plain Serif Font With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_06bTextBoldSerifFontIndex.html">Figure 04 06b Text Bold Serif Font</a></li>
+                           <li><a href="Chapter04Text/Figure04_06bTextBoldSerifFontWithAxesIndex.html">Figure 04 06b Text Bold Serif Font With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_07SmallTextIndex.html">Figure 04 07 Small Text</a></li>
+                           <li><a href="Chapter04Text/Figure04_07SmallTextWithAxesIndex.html">Figure 04 07 Small Text With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_08aTextMoreLineSpacingIndex.html">Figure 04 08a Text More Line Spacing</a></li>
+                           <li><a href="Chapter04Text/Figure04_08aTextMoreLineSpacingWithAxesIndex.html">Figure 04 08a Text More Line Spacing With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_08bTextLessLineSpacingIndex.html">Figure 04 08b Text Less Line Spacing</a></li>
+                           <li><a href="Chapter04Text/Figure04_08bTextLessLineSpacingWithAxesIndex.html">Figure 04 08b Text Less Line Spacing With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_09TwoTextShapesDifferentJustificationIndex.html">Figure 04 09 Two Text Shapes Different Justification</a></li>
+                           <li><a href="Chapter04Text/Figure04_09TwoTextShapesDifferentJustificationWithAxesIndex.html">Figure 04 09 Two Text Shapes Different Justification With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_10TwoLinesTextFlatBoxIndex.html">Figure 04 10 Two Lines Text Flat Box</a></li>
+                           <li><a href="Chapter04Text/Figure04_10TwoLinesTextFlatBoxWithAxesIndex.html">Figure 04 10 Two Lines Text Flat Box With Axes</a></li>
+                           <li><a href="Chapter04Text/Figure04_11TextOverstrikeFontIndex.html">Figure 04 11 Text Overstrike Font</a></li>
+                           <li><a href="Chapter04Text/Figure04_11TextOverstrikeFontWithAxesIndex.html">Figure 04 11 Text Overstrike Font With Axes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter04Text/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter04Text/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter05PositioningShapes">&nbsp;</a><a title="Directory Summary" href="Chapter05PositioningShapes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 05 Positioning Shapes</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes
+                        how to position shapes within an X-Y-Z world coordinate system by adding a parent Transform node.
+                        Rotations about each axis are counter-clockwise using the right-hand rule.
+                        Nested Transform nodes can translate, rotate and scale shapes relative to each other in 3D space.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch05.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0049.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter05PositioningShapes/index.html"><img border="0" alt="Figure 05.11 Nested Archways With Axes" title="Figure 05.11 Nested Archways With Axes" hspace="10" 
+                          src="Chapter05PositioningShapes/_viewpoints/Figure05_11NestedArchwaysWithAxes.x3d._VP_View_Arch.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter05PositioningShapes/Figure05_03bCylinderTranslationIndex.html">Figure 05 03b Cylinder Translation</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_03bCylinderTranslationWithAxesIndex.html">Figure 05 03b Cylinder Translation With Axes</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_04bCylinderTranslationIndex.html">Figure 05 04b Cylinder Translation</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_04bCylinderTranslationWithAxesIndex.html">Figure 05 04b Cylinder Translation With Axes</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_10ArchwayIndex.html">Figure 05 10 Archway</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_10ArchwayWithAxesIndex.html">Figure 05 10 Archway With Axes</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_11NestedArchwaysIndex.html">Figure 05 11 Nested Archways</a></li>
+                           <li><a href="Chapter05PositioningShapes/Figure05_11NestedArchwaysWithAxesIndex.html">Figure 05 11 Nested Archways With Axes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter05PositioningShapes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter05PositioningShapes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter06RotatingShapes">&nbsp;</a><a title="Directory Summary" href="Chapter06RotatingShapes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 06 Rotating Shapes</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter06RotatingShapes/index.html"><img border="0" alt="Figure 06.09 Triple Asterisk 3D With Axes" title="Figure 06.09 Triple Asterisk 3D With Axes" hspace="10" 
+                          src="Chapter06RotatingShapes/_viewpoints/Figure06_09TripleAsterisk3dWithAxes.x3d._VP_View_shape.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Rotations can transform the orientation of a shape in any direction.
+                    </p>
+                    
+
+					
+                    <p>
+                        Rotation orients a coordinate system about a rotation axis by a rotation angle measured in radians.
+                        To help remember positive and negative rotation directions: open your hand, stick out your thumb,
+                        aim your thumb in an axis positive direction, and curl your fingers around the axis.
+                        The curl direction is a positive rotation.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch06.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0059.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter06RotatingShapes/Figure06_04bRotation45xWithAxesIndex.html">Figure 06 04b Rotation 45x With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_05bRotationMinus45xWithAxesIndex.html">Figure 06 05b Rotation Minus 45x With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_06bRotation45yWithAxesIndex.html">Figure 06 06b Rotation 45y With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_07bRotationMinus45zWithAxesIndex.html">Figure 06 07b Rotation Minus 45z With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_08Asterisk3dWithAxesIndex.html">Figure 06 08 Asterisk 3D With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_09TripleAsterisk3dWithAxesIndex.html">Figure 06 09 Triple Asterisk 3D With Axes</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_10SimpleArchIndex.html">Figure 06 10 Simple Arch</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_11DeskLampBaseIndex.html">Figure 06 11 Desk Lamp Base</a></li>
+                           <li><a href="Chapter06RotatingShapes/Figure06_12DeskLampBaseTwoArmsIndex.html">Figure 06 1 2Desk Lamp Base Two Arms</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter06RotatingShapes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter06RotatingShapes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter07ScalingShapes">&nbsp;</a><a title="Directory Summary" href="Chapter07ScalingShapes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 07 Scaling Shapes</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Scale transformations grow or shrink a local coordinate system by a scaling factor in the X, Y, and Z directions.
+                    </p>
+                    
+
+
+                    <p>
+                        Transform operations are bottom-up: children shapes are first scaled, rotated, then translated.
+                        Order is fixed, independent of the field order that happens to occur in the Transform node.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch07.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0064.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter07ScalingShapes/index.html"><img border="0" alt="Figure 07.11 Scaled Arches" title="Figure 07.11 Scaled Arches" hspace="10" 
+                          src="Chapter07ScalingShapes/_viewpoints/Figure07_11ScaledArches.x3d._VP_View_arches.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter07ScalingShapes/Figure07_04bScale2xWithAxesIndex.html">Figure 07 04b Scale 2x With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_05bScaleHalfxWithAxesIndex.html">Figure 07 05b Scale Halfx With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_06bScale2yWithAxesIndex.html">Figure 07 06b Scale 2y With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_07bScaleHalfzWithAxesIndex.html">Figure 07 07b Scale Halfz With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_08bScale2x_Halfy_4zWithAxesIndex.html">Figure 07 08b Scale 2x Halfy 4z With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_09SimpleSpaceshipBodyWingsWithAxesIndex.html">Figure 07 09 Simple Spaceship Body Wings With Axes</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_10SimpleSpaceshipIndex.html">Figure 07 10 Simple Spaceship</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_11ScaledArchesIndex.html">Figure 07 11 Scaled Arches</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_12aSimpleTreeIndex.html">Figure 07 12a Simple Tree</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_12bVerticallyScaledTreeIndex.html">Figure 07 12b Vertically Scaled Tree</a></li>
+                           <li><a href="Chapter07ScalingShapes/Figure07_13DiagonallyScaledTreeIndex.html">Figure 07 1 3Diagonally Scaled Tree</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter07ScalingShapes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter07ScalingShapes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter08AnimatingPositionOrientationScale">&nbsp;</a><a title="Directory Summary" href="Chapter08AnimatingPositionOrientationScale/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 08 Animating Position Orientation Scale</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter08AnimatingPositionOrientationScale/index.html"><img border="0" alt="Figure 08.4 Orientation Interpolator With Axes" title="Figure 08.4 Orientation Interpolator With Axes" hspace="10" 
+                          src="Chapter08AnimatingPositionOrientationScale/Figure08_4OrientationInterpolatorWithAxes.png" width="112" height="112" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						TimeSensor nodes produce clock events that can drive event-producing interpolators for animating position, orientation and scale.
+                    </p>
+                    
+
+
+                    <p>
+                        The TimeSensor node is similar to a stop watch: you control the start and stop time, it generates time events while running.
+                        It can loop forever, or run through only one cycle and stop. 
+                        To animate a scene, route time events into other nodes.
+                        PositionInterpolator can convert time events into 3D position or scale values.
+                        OrientationInterpolator can animate rotation values.
+                        ColorInterpolator can animate color values, and ScalarInterpolator can animate transparency values.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch08.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0133.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_3PositionInterpolatorIndex.html">Figure 08 3 Position Interpolator</a></li>
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_3PositionInterpolatorWithAxesIndex.html">Figure 08 3 Position Interpolator With Axes</a></li>
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_4OrientationInterpolatorIndex.html">Figure 08 4 Orientation Interpolator</a></li>
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_4OrientationInterpolatorWithAxesIndex.html">Figure 08 4 Orientation Interpolator With Axes</a></li>
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_5AnimatingScaleIndex.html">Figure 08 5 Animating Scale</a></li>
+                           <li><a href="Chapter08AnimatingPositionOrientationScale/Figure08_5AnimatingScaleWithAxesIndex.html">Figure 08 5 Animating Scale With Axes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter08AnimatingPositionOrientationScale/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter08AnimatingPositionOrientationScale/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter09SensingViewer">&nbsp;</a><a title="Directory Summary" href="Chapter09SensingViewer/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 09 Sensing Viewer</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Authors can design interactivity into a scene that responds to user actions.
+                    </p>
+                    
+
+					
+                    <p>
+                        A scene can sense when the viewer's cursor is over a shape, has touched a shape, or is dragging atop a shape.
+                        A scene can also trigger animations on a viewer's touch, enabling the viewer to move and rotate shapes.
+                        There are four main action sensor types:
+                        TouchSensor senses touch,
+                        SphereSensor senses drags in a spherical way,
+                        CylinderSensor senses drags cylindrically, and
+                        PlaneSensor senses drags around a plane.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch09.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0161.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter09SensingViewer/index.html"><img border="0" alt="Figure 09.6 Sphere Sensor With Axes" title="Figure 09.6 Sphere Sensor With Axes" hspace="10" 
+                          src="Chapter09SensingViewer/_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter09SensingViewer/Figure09_1SpinningCubeTouchSensorIndex.html">Figure 09 1 Spinning Cube Touch Sensor</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_1SpinningCubeTouchSensorWithAxesIndex.html">Figure 09 1 Spinning Cube Touch Sensor With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_2SpinningCubeTouchSensorClickedIndex.html">Figure 09 2 Spinning Cube Touch Sensor Clicked</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_2SpinningCubeTouchSensorClickedWithAxesIndex.html">Figure 09 2 Spinning Cube Touch Sensor Clicked With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_3ConePlaneSensorIndex.html">Figure 09 3 Cone Plane Sensor</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_3ConePlaneSensorWithAxesIndex.html">Figure 09 3 Cone Plane Sensor With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_4ConePlaneSensorConstrainedIndex.html">Figure 09 4 Cone Plane Sensor Constrained</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_4ConePlaneSensorConstrainedWithAxesIndex.html">Figure 09 4 Cone Plane Sensor Constrained With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_5FourStackingBlocksIndex.html">Figure 09 5 Four Stacking Blocks</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_5FourStackingBlocksWithAxesIndex.html">Figure 09 5 Four Stacking Blocks With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_6SphereSensorIndex.html">Figure 09 6 Sphere Sensor</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_6SphereSensorWithAxesIndex.html">Figure 09 6 Sphere Sensor With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_7CylinderSensorIndex.html">Figure 09 7 Cylinder Sensor</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_7CylinderSensorWithAxesIndex.html">Figure 09 7 Cylinder Sensor With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_8ClickDragTouchSensorPlaneSensorIndex.html">Figure 09 8 Click Drag Touch Sensor Plane Sensor</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_8ClickDragTouchSensorPlaneSensorWithAxesIndex.html">Figure 09 8 Click Drag Touch Sensor Plane Sensor With Axes</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_9DeskLampIndex.html">Figure 09 9 Desk Lamp</a></li>
+                           <li><a href="Chapter09SensingViewer/Figure09_9DeskLampWithAxesIndex.html">Figure 09 9 Desk Lamp With Axes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter09SensingViewer/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter09SensingViewer/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter10Materials">&nbsp;</a><a title="Directory Summary" href="Chapter10Materials/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 10 Materials</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter10Materials/index.html"><img border="0" alt="Figure 10.09 Three Blinking Shapes" title="Figure 10.09 Three Blinking Shapes" hspace="10" 
+                          src="Chapter10Materials/_viewpoints/Figure10_09ThreeBlinkingShapes.x3d._VP_Blinking_shapes.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Appearance and Material nodes control a shape's shading color (diffuseColor), glow color (emissiveColor), transparency, shininess, and ambient intensity.
+                    </p>
+                    
+
+
+                    <p>
+                        Appearance and Material nodes control a shape's shading color (diffuseColor), glow color (emissiveColor), transparency, shininess, and ambient intensity.
+                        Colors specify a mixture of red, green, and blue (RGB) light with component values between 0.0 (none) and 1.0 (lots).
+                        ColorInterpolator can animate color values, and 
+                        ScalarInterpolator can animate transparency values.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch10.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0071.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter10Materials/Figure10_04BrightRedSphereIndex.html">Figure 10 04 Bright Red Sphere</a></li>
+                           <li><a href="Chapter10Materials/Figure10_05MultiColoredSpaceStationIndex.html">Figure 10 05 Multi Colored Space Station</a></li>
+                           <li><a href="Chapter10Materials/Figure10_06PulsatingSpaceStationIndex.html">Figure 10 06 Pulsating Space Station</a></li>
+                           <li><a href="Chapter10Materials/Figure10_07LightBulbIndex.html">Figure 10 07 Light Bulb</a></li>
+                           <li><a href="Chapter10Materials/Figure10_08BlinkingSphereIndex.html">Figure 10 08 Blinking Sphere</a></li>
+                           <li><a href="Chapter10Materials/Figure10_09ThreeBlinkingShapesIndex.html">Figure 10 09 Three Blinking Shapes</a></li>
+                           <li><a href="Chapter10Materials/Figure10_10SemiTransparentSpaceStationIndex.html">Figure 10 10 Semi Transparent Space Station</a></li>
+                           <li><a href="Chapter10Materials/Figure10_11AnimatingTransparencySpaceStationIndex.html">Figure 10 11 Animating Transparency Space Station</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter10Materials/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter10Materials/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter11Grouping">&nbsp;</a><a title="Directory Summary" href="Chapter11Grouping/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 11 Grouping</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Grouping nodes are used to group shapes to compose complex shapes.
+                        <ul>
+                            <li>
+                            The Switch node creates a switched group where only one child node in the group is displayed, children implicitly numbered from 0
+                            and a whichChoice value of -1 selects no children.
+                            </li>
+                            <li>
+                            Transform creates a group with its own coordinate system where every child node in the group is displayed.
+                            </li>
+                            <li>
+                            Billboard creates a group with a special coordinate system that turns to face the viewer.
+                            </li>
+                        </ul>
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch11.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0084.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    <p>
+                    
+                    <a href="Chapter11Grouping/index.html"><img border="0" alt="Figure 11.2 Cafe Sign Billboard" title="Figure 11.2 Cafe Sign Billboard" hspace="10" 
+                          src="Chapter11Grouping/_viewpoints/Figure11_2CafeSignBillboard.x3d._VP_Cafe_sign_Billboard_view_from_corner.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="Chapter11Grouping/index.html"><img border="0" alt="Figure 11.3 Bounding Box" title="Figure 11.3 Bounding Box" hspace="10" 
+                          src="Chapter11Grouping/_viewpoints/Figure11_3BoundingBox.x3d._VP_A_group_of_shapes_within_a_bounding_box..png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                          </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter11Grouping/Figure11_1CafeSignSwitchResolutionsIndex.html">Figure 11 1 Cafe Sign Switch Resolutions</a></li>
+                           <li><a href="Chapter11Grouping/Figure11_2CafeSignBillboardIndex.html">Figure 11 2 Cafe Sign Billboard</a></li>
+                           <li><a href="Chapter11Grouping/Figure11_3BoundingBoxIndex.html">Figure 11 3 Bounding Box</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter11Grouping/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter11Grouping/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter12Inline">&nbsp;</a><a title="Directory Summary" href="Chapter12Inline/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 12 Inline</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter12Inline/index.html"><img border="0" alt="Figure 12.3 Temple Of Inlined Arches" title="Figure 12.3 Temple Of Inlined Arches" hspace="10" 
+                          src="Chapter12Inline/_viewpoints/Figure12_3TempleOfInlinedArches.x3d._VP_Temple-estuous_aggregation_of_arches.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+	
+                    <p>
+                            Inline nodes can load other VRML/X3D scenes into the current scene, helping authors reuse models to build larger worlds.
+                    </p>
+                    
+
+
+                    <p>
+                            An Inline node creates a special group from another scene's contents.
+                            Children nodes are read from the file selected by a URL, and every child node loaded from the group is displayed.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch12.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0096.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter12Inline/Figure12_1SimpleArchIndex.html">Figure 12 1 Simple Arch</a></li>
+                           <li><a href="Chapter12Inline/Figure12_2InlinedArchesIndex.html">Figure 12 2 Inlined Arches</a></li>
+                           <li><a href="Chapter12Inline/Figure12_3TempleOfInlinedArchesIndex.html">Figure 12 3 Temple Of Inlined Arches</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter12Inline/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter12Inline/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter13PointsLinesFaces">&nbsp;</a><a title="Directory Summary" href="Chapter13PointsLinesFaces/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 13 Points Lines Faces</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+	
+                    <p>
+						Points, lines and mesh faces allow authors to build a complete variety of geometry.
+                    </p>
+                    
+
+
+                    <p>
+                        Complex shapes are hard to build with primitive shapes (for example: terrain, animals, plants, machinery).
+                        Instead, build shapes out of atomic components: points, lines, and polygon faces.
+                        Shape building is like a 3D connect-the-dots game: place dots at 3D locations, and connect-the-dots to form shapes
+                        A coordinate specifies a 3D dot location, measured relative to a coordinate system origin.
+                        A geometry node then specifies how to connect the dots: for example,
+                        PointSet, IndexedLineSet, or IndexedFaceSet.
+                        Animation is accomplished using a CoordinateInterpolator node.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch13.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0175.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter13PointsLinesFaces/index.html"><img border="0" alt="Figure 13.16 Vaulted Ceiling" title="Figure 13.16 Vaulted Ceiling" hspace="10" 
+                          src="Chapter13PointsLinesFaces/_viewpoints/Figure13_16VaultedCeiling.x3d._VP_Vaulted_ceiling.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_10PointSetBoxCornersIndex.html">Figure 13 10 Point Set Box Corners</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_11IndexedLineSetBoxWireframeIndex.html">Figure 13 11 Indexed Line Set Box Wireframe</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_12IndexedFaceSetCubeIndex.html">Figure 13 12 Indexed Face Set Cube</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_13IndexedFaceSetLightningBoltIndex.html">Figure 13 13 Indexed Face Set Lightning Bolt</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_14VaultedCeilingPieceCreasedIndex.html">Figure 13 14 Vaulted Ceiling Piece Creased</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_15VaultedCeilingPieceIndex.html">Figure 13 15 Vaulted Ceiling Piece</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_16VaultedCeilingIndex.html">Figure 13 16 Vaulted Ceiling</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_17aMorphingCubeIndex.html">Figure 13 17a Morphing Cube</a></li>
+                           <li><a href="Chapter13PointsLinesFaces/Figure13_17bMorphingCubeLineSetIndex.html">Figure 13 17b Morphing Cube Line Set</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter13PointsLinesFaces/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter13PointsLinesFaces/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter14ElevationGrid">&nbsp;</a><a title="Directory Summary" href="Chapter14ElevationGrid/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 14 Elevation Grid</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter14ElevationGrid/index.html"><img border="0" alt="Figure 14.4b Elevation Grid Puddle Splash 40x 40" title="Figure 14.4b Elevation Grid Puddle Splash 40x 40" hspace="10" 
+                          src="Chapter14ElevationGrid/_viewpoints/Figure14_4bElevationGridPuddleSplash40x40.x3d._VP_Puddle_splash.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						ElevationGrid nodes provide a simple way to construct terrain-like geometry.
+                    </p>
+                    
+
+
+                    <p>
+                            Building terrain sets is very common: hills, valleys, mountains and other tricky uses.
+                            An ElevationGrid geometry node creates terrains using xDimension and zDimension for grid size, with
+                            xSpacing and zSpacing for row and column distances, and then includes
+                            height elevations at each of the grid points.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch14.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0199.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter14ElevationGrid/Figure14_2ElevationGridMountainIndex.html">Figure 14 2 Elevation Grid Mountain</a></li>
+                           <li><a href="Chapter14ElevationGrid/Figure14_3ElevationGridRibbonIndex.html">Figure 14 3 Elevation Grid Ribbon</a></li>
+                           <li><a href="Chapter14ElevationGrid/Figure14_4aElevationGridPuddleSplash10x10Index.html">Figure 14 4a Elevation Grid Puddle Splash 10x 10</a></li>
+                           <li><a href="Chapter14ElevationGrid/Figure14_4bElevationGridPuddleSplash40x40Index.html">Figure 14 4b Elevation Grid Puddle Splash 40x 40</a></li>
+                           <li><a href="Chapter14ElevationGrid/Figure14_5ElevationGridTerrainIndex.html">Figure 14 5 Elevation Grid Terrain</a></li>
+                           <li><a href="Chapter14ElevationGrid/Figure14_6ElevationGridMedallionIndex.html">Figure 14 6 Elevation Grid Medallion</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter14ElevationGrid/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter14ElevationGrid/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter15Extrusion">&nbsp;</a><a title="Directory Summary" href="Chapter15Extrusion/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 15 Extrusion</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+				
+                    <p>
+						Extrusion geometry is defined by a 2D cross-section that is stretched and rotated around a central spine.
+                    </p>
+                    
+
+
+                    <p>
+                        Extruded shapes are very common: tubes, pipes, bars, vases, donuts, and other tricky uses.
+                        An Extrusion node efficiently creates extruded shapes.
+                        The crossSection field specifies the cross-section, and the spine field specifies the sweep path.
+                        The scale and orientation fields specify scaling and rotation at each spine point.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch15.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0208.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter15Extrusion/index.html"><img border="0" alt="Figure 15.10 Extruded Room With Axes" title="Figure 15.10 Extruded Room With Axes" hspace="10" 
+                          src="Chapter15Extrusion/_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter15Extrusion/Figure15_07ExtrudedCylinderIndex.html">Figure 15 07 Extruded Cylinder</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_08ExtrudedHalfCylinderWithCapsIndex.html">Figure 15 08 Extruded Half Cylinder With Caps</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_08ExtrudedHalfCylinderWithCapsWithAxesIndex.html">Figure 15 08 Extruded Half Cylinder With Caps With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_09ExtrudedHalfCylinderWithoutCapsIndex.html">Figure 15 09 Extruded Half Cylinder Without Caps</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxesIndex.html">Figure 15 09 Extruded Half Cylinder Without Caps With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_10ExtrudedRoomIndex.html">Figure 15 10 Extruded Room</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_10ExtrudedRoomWithAxesIndex.html">Figure 15 10 Extruded Room With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_11ExtrudedPlaygroundSlideIndex.html">Figure 15 11 Extruded Playground Slide</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_11ExtrudedPlaygroundSlideWithAxesIndex.html">Figure 15 11 Extruded Playground Slide With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_12TorusIndex.html">Figure 15 12 Torus</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_12TorusWithAxesIndex.html">Figure 15 12 Torus With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_13ExtrudedPyramidIndex.html">Figure 15 13 Extruded Pyramid</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_13ExtrudedPyramidWithAxesIndex.html">Figure 15 13 Extruded Pyramid With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_14ExtrudedVaseIndex.html">Figure 15 14 Extruded Vase</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_14ExtrudedVaseWithAxesIndex.html">Figure 15 14 Extruded Vase With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_15TwistedBarIndex.html">Figure 15 15 Twisted Bar</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_15TwistedBarWithAxesIndex.html">Figure 15 15 Twisted Bar With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_16ExtrudedLipstickIndex.html">Figure 15 16 Extruded Lipstick</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_16ExtrudedLipstickWithAxesIndex.html">Figure 15 16 Extruded Lipstick With Axes</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_17WigglingSnakeIndex.html">Figure 15 17 Wiggling Snake</a></li>
+                           <li><a href="Chapter15Extrusion/Figure15_17WigglingSnakeWithAxesIndex.html">Figure 15 17 Wiggling Snake With Axes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter15Extrusion/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter15Extrusion/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter16Color">&nbsp;</a><a title="Directory Summary" href="Chapter16Color/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 16 Color</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter16Color/index.html"><img border="0" alt="Figure 16.7 Vertex Colored Elevation Grid Mountain" title="Figure 16.7 Vertex Colored Elevation Grid Mountain" hspace="10" 
+                          src="Chapter16Color/_viewpoints/Figure16_7VertexColoredElevationGridMountain.x3d._VP_Per-vertex_colored_mountain.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						The Color node lists Red-Green-Blue (RGB) colors to use for rendering points in a geometric shape.
+                    </p>
+                    
+
+
+                    <p>
+                            Color indexes select colors to use at each vertex.
+                            Colors override any accompanying Material node.
+                            The colorPerVertex field selects color per line/face/grid square or else color per coordinate.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch16.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0221.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter16Color/Figure16_1ColoredPointSetScatterPlotIndex.html">Figure 16 1 Colored Point Set Scatter Plot</a></li>
+                           <li><a href="Chapter16Color/Figure16_2ColoredLinesPlotIndex.html">Figure 16 2 Colored Lines Plot</a></li>
+                           <li><a href="Chapter16Color/Figure16_3ColoredLinesStarburstIndex.html">Figure 16 3 Colored Lines Starburst</a></li>
+                           <li><a href="Chapter16Color/Figure16_3ColoredLinesStarburstWithAxesIndex.html">Figure 16 3 Colored Lines Starburst With Axes</a></li>
+                           <li><a href="Chapter16Color/Figure16_4ColoredBookFacesIndex.html">Figure 16 4 Colored Book Faces</a></li>
+                           <li><a href="Chapter16Color/Figure16_4ColoredBookFacesWithAxesIndex.html">Figure 16 4 Colored Book Faces With Axes</a></li>
+                           <li><a href="Chapter16Color/Figure16_5LogFireColoredFacesIndex.html">Figure 16 5 Log Fire Colored Faces</a></li>
+                           <li><a href="Chapter16Color/Figure16_5LogFireColoredFacesWithAxesIndex.html">Figure 16 5 Log Fire Colored Faces With Axes</a></li>
+                           <li><a href="Chapter16Color/Figure16_6ColoredElevationGridCheckerboardIndex.html">Figure 16 6 Colored Elevation Grid Checkerboard</a></li>
+                           <li><a href="Chapter16Color/Figure16_7VertexColoredElevationGridMountainIndex.html">Figure 16 7 Vertex Colored Elevation Grid Mountain</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter16Color/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter16Color/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter17Textures">&nbsp;</a><a title="Directory Summary" href="Chapter17Textures/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 17 Textures</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Textures are 2D images that can be wrapped on top of 3D geometry.
+                    </p>
+                    
+
+
+                    <p>
+                        You can model every tiny texture detail of a world using a vast number of colored faces, but this is time consuming and difficult.
+                        Use a trick instead:  take a picture of the real thing, then paste that picture on the shape, like sticking on a decal image.
+                        Specify the texture using an ImageTexture, PixelTexture, or MovieTexture node within an Appearance node.
+                        Color textures override material, grayscale textures multiply against the color values.
+                        Textures with transparency create holes that can be seen through.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch17.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0259.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter17Textures/index.html"><img border="0" alt="Figure 17.08b Textured Elevation Grid Mountain" title="Figure 17.08b Textured Elevation Grid Mountain" hspace="10" 
+                          src="Chapter17Textures/_viewpoints/Figure17_08bTexturedElevationGridMountain.x3d._VP_Textured_mountain.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter17Textures/Figure17_04aTextureBoxTestIndex.html">Figure 17 04a Texture Box Test</a></li>
+                           <li><a href="Chapter17Textures/Figure17_04bTextureConeTestIndex.html">Figure 17 04b Texture Cone Test</a></li>
+                           <li><a href="Chapter17Textures/Figure17_04cTextureCylinderTestIndex.html">Figure 17 04c Texture Cylinder Test</a></li>
+                           <li><a href="Chapter17Textures/Figure17_04dTextureSphereTestIndex.html">Figure 17 04d Texture Sphere Test</a></li>
+                           <li><a href="Chapter17Textures/Figure17_05dTexturedSodaCanIndex.html">Figure 17 05d Textured Soda Can</a></li>
+                           <li><a href="Chapter17Textures/Figure17_06bTexturedTextIndex.html">Figure 17 06b Textured Text</a></li>
+                           <li><a href="Chapter17Textures/Figure17_07bTexturedLightningBoltIndex.html">Figure 17 07b Textured Lightning Bolt</a></li>
+                           <li><a href="Chapter17Textures/Figure17_08bTexturedElevationGridMountainIndex.html">Figure 17 08b Textured Elevation Grid Mountain</a></li>
+                           <li><a href="Chapter17Textures/Figure17_09bTexturedDonutTorusExtrusionIndex.html">Figure 17 09b Textured Donut Torus Extrusion</a></li>
+                           <li><a href="Chapter17Textures/Figure17_10cTextureTransparencyTreeIndex.html">Figure 17 10c Texture Transparency Tree</a></li>
+                           <li><a href="Chapter17Textures/Figure17_11bGreyTextureGreenMaterialStripedCylinderIndex.html">Figure 17 11b Grey Texture Green Material Striped Cylinder</a></li>
+                           <li><a href="Chapter17Textures/Figure17_12bWoodTexturesIndex.html">Figure 17 12b Wood Textures</a></li>
+                           <li><a href="Chapter17Textures/Figure17_13SimplePixelTextureIndex.html">Figure 17 13 Simple Pixel Texture</a></li>
+                           <li><a href="Chapter17Textures/Figure17_14bMovieTextureWhirlpoolIndex.html">Figure 17 14b Movie Texture Whirlpool</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter17Textures/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter17Textures/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter18TextureMapping">&nbsp;</a><a title="Directory Summary" href="Chapter18TextureMapping/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 18 Texture Mapping</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter18TextureMapping/index.html"><img border="0" alt="Figure 18.27 Rotating Fan Animated Texture Transform" title="Figure 18.27 Rotating Fan Animated Texture Transform" hspace="10" 
+                          src="Chapter18TextureMapping/_viewpoints/Figure18_27RotatingFanAnimatedTextureTransform.x3d._VP_That_feels_good.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Texture coordinates transform and map pixels in a 2D image onto specific 3D points.
+                    </p>
+                    
+
+
+                    <p>
+                            Texture images are in a texture coordinate system.
+                            By default, an entire texture image is mapped once around the shape.
+                            You can also extract only pieces of interest, or create repeating patterns.
+                            Texture coordinates and indexes describe a texture cookie cutter.
+                            Texture transforms translate, rotate, and scale place the cookie cutter.
+                            Texture indexes bind the cut-out cookie texture to a face on a shape.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch18.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0276.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter18TextureMapping/Figure18_19TextureCoordinateTestIndex.html">Figure 18 19 Texture Coordinate Test</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_20bTextureCoordinatePizzaSliceIndex.html">Figure 18 20b Texture Coordinate Pizza Slice</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_21TextureCoordinatePizzaSliceIndex.html">Figure 18 21 Texture Coordinate Pizza Slice</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_22bTextureCoordinateVideoWallIndex.html">Figure 18 22b Texture Coordinate Video Wall</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_23bTextureCoordinateGrillworkIndex.html">Figure 18 23b Texture Coordinate Grillwork</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_24TextureCoordinateRotatedGrillworkFenceIndex.html">Figure 18 24 Texture Coordinate Rotated Grillwork Fence</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_25bTextureTransformBrickBoxIndex.html">Figure 18 25b Texture Transform Brick Box</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_26bUncorrectedTextureSanDiegoBayIndex.html">Figure 18 26b Uncorrected Texture San Diego Bay</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_26cCorrectedTextureSanDiegoBayIndex.html">Figure 18 26c Corrected Texture San Diego Bay</a></li>
+                           <li><a href="Chapter18TextureMapping/Figure18_27RotatingFanAnimatedTextureTransformIndex.html">Figure 18 27 Rotating Fan Animated Texture Transform</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter18TextureMapping/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter18TextureMapping/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter19NormalsShading">&nbsp;</a><a title="Directory Summary" href="Chapter19NormalsShading/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 19 Normals Shading</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Normal (perpendicular) vectors defined for individual points or polygons can change the shading of geometry.
+                    </p>
+                    
+
+
+                    <p>
+                        When shaded, the faces on a shape are obvious.
+                        Creating a smooth shape may require a large number of small faces.
+                        An alternative is to instead use smooth shading to create the illusion of a smooth shape, but with a smaller number of faces.
+                    </p>
+                    
+
+
+                    <p>
+                        The Normal node lists normal vectors to use for parts of a shape which can change shading.
+                        These are used as the value of the normal field, and normal index values select which normals to use (similar to color index values).
+                        Ordinarily the creaseAngle field controls faceted or smooth shading.
+                        Normals override the normal effect of the creaseAngle value.
+                        The normalPerVertex field selects normal per face/grid square or normal per coordinate.
+                        The NormalInterpolator node converts time values to normal values for animation effects.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch19.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0238.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="Chapter19NormalsShading/index.html"><img border="0" alt="Figure 19.22 Normal Square Shaded" title="Figure 19.22 Normal Square Shaded" hspace="10" 
+                          src="Chapter19NormalsShading/_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="Chapter19NormalsShading/index.html"><img border="0" alt="Figure 19.26 Normal Shaded Elevation Grid" title="Figure 19.26 Normal Shaded Elevation Grid" hspace="10" 
+                          src="Chapter19NormalsShading/_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter19NormalsShading/Figure19_21NormalSquareIndex.html">Figure 19 21 Normal Square</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_22NormalSquareShadedIndex.html">Figure 19 22 Normal Square Shaded</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_23HalfColumnIndex.html">Figure 19 23 Half Column</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_24aHalfColumnCreaseAngleIndex.html">Figure 19 24a Half Column Crease Angle</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_24bTwoHalfColumnsCreaseAngleSeamIndex.html">Figure 19 24b Two Half Columns Crease Angle Seam</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_25aHalfColumnNormalsIndex.html">Figure 19 25a Half Column Normals</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_25bTwoHalfColumnsNormalsSeamlessIndex.html">Figure 19 25b Two Half Columns Normals Seamless</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_26NormalShadedElevationGridIndex.html">Figure 19 26 Normal Shaded Elevation Grid</a></li>
+                           <li><a href="Chapter19NormalsShading/Figure19_27SquareFaceAnimatingNormalsIndex.html">Figure 19 27 Square Face Animating Normals</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter19NormalsShading/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter19NormalsShading/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter20Lighting">&nbsp;</a><a title="Directory Summary" href="Chapter20Lighting/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 20 Lighting</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="Chapter20Lighting/index.html"><img border="0" alt="Figure 20.06b Point Light Spheres Intensity" title="Figure 20.06b Point Light Spheres Intensity" hspace="10" 
+                          src="Chapter20Lighting/_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="Chapter20Lighting/index.html"><img border="0" alt="Figure 20.13a Directional Light Sunrise" title="Figure 20.13a Directional Light Sunrise" hspace="10" 
+                          src="Chapter20Lighting/_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Vaulted_ceiling.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							Lights provide virtual illumination that allows objects to be seen.
+                    </p>
+                    
+
+
+                    <p>
+                            By default, you have one light in the scene, attached to your head.
+                            For more realism, you can add multiple lights: suns, light bulbs, candles, flashlights, spotlights, firelight.
+                            Lights can be positioned, oriented, and colored.
+                            Lights do not cast shadows.
+                    </p>
+                    
+
+
+                    <p>
+                            There are three types of lights: PointLight, DirectionalLight, and SpotLight.
+                            All lights have an on/off, intensity, ambient effect, and color fields.
+                            PointLight and SpotLight nodes have a location, radius, and attenuation.
+                            DirectionalLight and SpotLight nodes have a direction.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch20.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0299.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter20Lighting/Figure20_04HeadlightSpheresIndex.html">Figure 20 04 Headlight Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_05FlatMeshIndex.html">Figure 20 05 Flat Mesh</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_06aPointLightSpheresIndex.html">Figure 20 06a Point Light Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_06bPointLightSpheresIntensityIndex.html">Figure 20 06b Point Light Spheres Intensity</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_07PointLightSpheresAttenuationIndex.html">Figure 20 07 Point Light Spheres Attenuation</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_08PointLightSpheresSmallRadiusIndex.html">Figure 20 08 Point Light Spheres Small Radius</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_09GlowingOrbArchwaysExhibitIndex.html">Figure 20 09 Glowing Orb Archways Exhibit</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_10BlinkingRedLightbulbIndex.html">Figure 20 10 Blinking Red Lightbulb</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_11aDirectionalLightAimingRightThroughSpheresIndex.html">Figure 20 11a Directional Light Aiming Right Through Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_11bDirectionalLightAimingUpperRightThroughSpheresIndex.html">Figure 20 11b Directional Light Aiming Upper Right Through Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresIndex.html">Figure 20 12 Two Directional Lights Aiming Left Right Through Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_13aDirectionalLightSunriseIndex.html">Figure 20 13a Directional Light Sunrise</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_13bDirectionalLightNoonIndex.html">Figure 20 13b Directional Light Noon</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_13cDirectionalLightSunsetIndex.html">Figure 20 13c Directional Light Sunset</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_14DirectionalLightSunAnimatedIndex.html">Figure 20 14 Directional Light Sun Animated</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_15aSpotLightSpheresIndex.html">Figure 20 15a Spot Light Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_15bWideAngleSpotLightSpheresIndex.html">Figure 20 15b Wide Angle Spot Light Spheres</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_16SpotLightBeamWidthComparisonIndex.html">Figure 20 16 Spot Light Beam Width Comparison</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_17aSimpleWorldNoShadowsIndex.html">Figure 20 17a Simple World No Shadows</a></li>
+                           <li><a href="Chapter20Lighting/Figure20_17bSimpleWorldFakeShadowsIndex.html">Figure 20 17b Simple World Fake Shadows</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter20Lighting/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter20Lighting/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter21ShinyMaterials">&nbsp;</a><a title="Directory Summary" href="Chapter21ShinyMaterials/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 21 Shiny Materials</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Material nodes are the primary way to define color, transparency and shininess for geometric objects.
+                    </p>
+                    
+
+
+                    <p>
+                        The Material node controls overall rendering properties including the shading color (diffuseColor),
+                        glow color (emissiveColor), transparency, shininess and ambient intensity.
+                        Proper combinations of values can emulate the properties of shiny materials, such as metals.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch21.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0081.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter21ShinyMaterials/index.html"><img border="0" alt="Figure 21.5 Shiny Gold Vase" title="Figure 21.5 Shiny Gold Vase" hspace="10" 
+                          src="Chapter21ShinyMaterials/_viewpoints/Figure21_5ShinyGoldVase.x3d._VP_Very_shiny_grey_vase.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter21ShinyMaterials/Figure21_4aDullGreyVaseIndex.html">Figure 21 4a Dull Grey Vase</a></li>
+                           <li><a href="Chapter21ShinyMaterials/Figure21_4bSomewhatShinyGreyVaseIndex.html">Figure 21 4b Somewhat Shiny Grey Vase</a></li>
+                           <li><a href="Chapter21ShinyMaterials/Figure21_4cShinyGreyVaseIndex.html">Figure 21 4c Shiny Grey Vase</a></li>
+                           <li><a href="Chapter21ShinyMaterials/Figure21_4dVeryShinyGreyVaseIndex.html">Figure 21 4d Very Shiny Grey Vase</a></li>
+                           <li><a href="Chapter21ShinyMaterials/Figure21_5ShinyGoldVaseIndex.html">Figure 21 5 Shiny Gold Vase</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter21ShinyMaterials/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter21ShinyMaterials/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter22Background">&nbsp;</a><a title="Directory Summary" href="Chapter22Background/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 22 Background</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter22Background/index.html"><img border="0" alt="Figure 22.3c Background Sky Ground Mountains" title="Figure 22.3c Background Sky Ground Mountains" hspace="10" 
+                          src="Chapter22Background/_viewpoints/Figure22_3cBackgroundSkyGroundMountains.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							A Background node presents a virtual sky above and land (or sea, or space) below.
+                    </p>
+                    
+
+
+                    <p>
+                            Background nodes describe groundColor and skyColor gradients on the ground hemisphere and sky sphere.
+                            Background nodes can also apply panorama images on a panorama box.
+                            Of interest is that the viewer can look around and navigate, but never get any closer to the background.
+                            Backgrounds are faster to draw than if you used shapes to build them.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch22.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0311.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter22Background/Figure22_1BackgroundSkySphereIndex.html">Figure 22 1 Background Sky Sphere</a></li>
+                           <li><a href="Chapter22Background/Figure22_2BackgroundSkyGroundIndex.html">Figure 22 2 Background Sky Ground</a></li>
+                           <li><a href="Chapter22Background/Figure22_3cBackgroundSkyGroundMountainsIndex.html">Figure 22 3c Background Sky Ground Mountains</a></li>
+                           <li><a href="Chapter22Background/Figure22_4BackgroundBindingIndex.html">Figure 22 4 Background Binding</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter22Background/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter22Background/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter23Fog">&nbsp;</a><a title="Directory Summary" href="Chapter23Fog/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 23 Fog</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Fog simulates atmospheric effects by blending distant objects with fog color.
+                    </p>
+                    
+
+
+                    <p>
+                        Fog increases realism and can be used to set a mood, even indoors.
+                        Add fog outside to create hazy worlds, or add fog inside to create dark dungeons.
+                        Fog has a color, a type, and a visibility range.
+                        Fog limits the viewer's sight, reducing the amount of the world you have to build and the amount of the world that must be drawn.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch23.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0325.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter23Fog/index.html"><img border="0" alt="Figure 23.5 Binding Fogs And Backgrounds" title="Figure 23.5 Binding Fogs And Backgrounds" hspace="10" 
+                          src="Chapter23Fog/_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter23Fog/Figure23_1FogTestWorldIndex.html">Figure 23 1 Fog Test World</a></li>
+                           <li><a href="Chapter23Fog/Figure23_2aLinearFogVisibility0Index.html">Figure 23 2a Linear Fog Visibility 0</a></li>
+                           <li><a href="Chapter23Fog/Figure23_2bLinearFogVisibility40Index.html">Figure 23 2b Linear Fog Visibility 40</a></li>
+                           <li><a href="Chapter23Fog/Figure23_2cLinearFogVisibility30Index.html">Figure 23 2c Linear Fog Visibility 30</a></li>
+                           <li><a href="Chapter23Fog/Figure23_2dLinearFogVisibility20Index.html">Figure 23  2D Linear Fog Visibility 20</a></li>
+                           <li><a href="Chapter23Fog/Figure23_3aExponentialFogVisibility100Index.html">Figure 23 3a Exponential Fog Visibility 100</a></li>
+                           <li><a href="Chapter23Fog/Figure23_3bExponentialFogVisibility40Index.html">Figure 23 3b Exponential Fog Visibility 40</a></li>
+                           <li><a href="Chapter23Fog/Figure23_3cExponentialFogVisibility20Index.html">Figure 23 3c Exponential Fog Visibility 20</a></li>
+                           <li><a href="Chapter23Fog/Figure23_4BlackFogVisibility40Index.html">Figure 23 4 Black Fog Visibility 40</a></li>
+                           <li><a href="Chapter23Fog/Figure23_5BindingFogsAndBackgroundsIndex.html">Figure 23 5 Binding Fogs And Backgrounds</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter23Fog/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter23Fog/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter24Sound">&nbsp;</a><a title="Directory Summary" href="Chapter24Sound/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 24 Sound</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter24Sound/index.html"><img border="0" alt="Figure 24.1 Emitter Markers" title="Figure 24.1 Emitter Markers" hspace="10" 
+                          src="Chapter24Sound/_viewpoints/Figure24_1EmitterMarkers.x3d._VP_9m_distance,_range_circles_at_5m_and_10m.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							The Sound node controls the stereo 3D spatialization of sound playback by a child AudioClip or MovieTexture node.
+                    </p>
+                    
+
+
+                    <p>
+                            Sounds can be triggered by viewer actions: clicks, horn honks, door latch noises, etc.
+                            Sounds can also be continuous in the background: wind, crowd noises, elevator music.
+                            Sounds emit from a location, in a direction, and within an ellipsoidal volume.
+                            A Sound node describes a sound emitter, where a source node provides the sound and range fields describe the sound region.
+                            An AudioClip node or a MovieTexture node describe a sound source, where a url points to the sound file.
+                            AudioClip also controls playback by start time, stop time, and (optionally) looping.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch24.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0333.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter24Sound/Figure24_1EmitterMarkersIndex.html">Figure 24 1 Emitter Markers</a></li>
+                           <li><a href="Chapter24Sound/Figure24_2AmbientSoundEmitterMarkersIndex.html">Figure 24 2 Ambient Sound Emitter Markers</a></li>
+                           <li><a href="Chapter24Sound/Figure24_3TouchSensorTriggeredSoundIndex.html">Figure 24 3 Touch Sensor Triggered Sound</a></li>
+                           <li><a href="Chapter24Sound/Figure24_4FourKeyKeyboardIndex.html">Figure 24 4 Four Key Keyboard</a></li>
+                           <li><a href="Chapter24Sound/Figure24_5TwoAmbientCirclingSoundsIndex.html">Figure 24 5 Two Ambient Circling Sounds</a></li>
+                           <li><a href="Chapter24Sound/Figure24_6DirectedAmbientSoundIndex.html">Figure 24 6 Directed Ambient Sound</a></li>
+                           <li><a href="Chapter24Sound/Figure24_7VirtualTVIndex.html">Figure 24 7 Virtual TV</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter24Sound/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter24Sound/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter25LevelOfDetail">&nbsp;</a><a title="Directory Summary" href="Chapter25LevelOfDetail/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 25 Level Of Detail</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Level of detail (LOD) allows an overall world become very large by letting an author provide 
+						high-fidelity models when a viewer is nearby, and simpler geometry when the viewer is far away.
+                    </p>
+                    
+
+
+                    <p>
+                        The further the viewer can see, the more there is to draw.
+                        Note that if a shape is distant, the shape is smaller and the viewer can't see as much detail.
+                        So... draw it with less detail.
+                        Varying detail with distance reduces initial download time and increases drawing speed.
+                    </p>
+                    
+
+
+                    <p>
+                        Increase performance by making multiple levels of shapes: high detail for close up viewing, 
+                        progressively lower detail for more distant viewing.
+                        Group the levels in an LOD node, ordered from high detail to low detail, and using an array of range values to select switching distances .
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch25.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0387.htm" target="_Vrml2SourcebookCourse">VRML 2.0 Sourcebook course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="Chapter25LevelOfDetail/index.html"><img border="0" alt="Figure 25.04 Three Torches Side By Side" title="Figure 25.04 Three Torches Side By Side" hspace="10" 
+                          src="Chapter25LevelOfDetail/_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Torch_(medium_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="Chapter25LevelOfDetail/index.html"><img border="0" alt="Figure 25.12 Dungeon Rooms With Sliding Doors" title="Figure 25.12 Dungeon Rooms With Sliding Doors" hspace="10" 
+                          src="Chapter25LevelOfDetail/_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Torch_(high_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter25LevelOfDetail/Figure25_01TorchHighDetailIndex.html">Figure 25 01 Torch High Detail</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_02TorchMediumDetailIndex.html">Figure 25 02 Torch Medium Detail</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_03TorchLowDetailIndex.html">Figure 25 03 Torch Low Detail</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_04ThreeTorchesSideBySideIndex.html">Figure 25 04 Three Torches Side By Side</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_05ThreeTorchesSingleLODIndex.html">Figure 25 05 Three Torches Single LOD</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_06DungeonRoomFloorIndex.html">Figure 25 06 Dungeon Room Floor</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_07DungeonRoomWallIndex.html">Figure 25 07 Dungeon Room Wall</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_08DungeonRoomIndex.html">Figure 25 08 Dungeon Room</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_09TwoDungeonRoomsWithLODHidingIndex.html">Figure 25 09 Two Dungeon Rooms With LODHiding</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_10DungeonWallWithDoorwayIndex.html">Figure 25 10 Dungeon Wall With Doorway</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_11DungeonDoorIndex.html">Figure 25 11 Dungeon Door</a></li>
+                           <li><a href="Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoorsIndex.html">Figure 25 1 2Dungeon Rooms With Sliding Doors</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter25LevelOfDetail/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter25LevelOfDetail/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter26Viewpoint">&nbsp;</a><a title="Directory Summary" href="Chapter26Viewpoint/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 26 Viewpoint</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter26Viewpoint/index.html"><img border="0" alt="Figure 26.7 Dungeon Viewpoints And Fields Of View" title="Figure 26.7 Dungeon Viewpoints And Fields Of View" hspace="10" 
+                          src="Chapter26Viewpoint/_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							Viewpoints are the primary way for an author to show users what is in a scene,
+							helping them navigate among objects of interest.
+                    </p>
+                    
+
+
+                    <p>
+                            Viewpoint nodes specify a desired location, an orientation, and a camera field-of-view lens angle.
+                            By default, the viewer enters a world at position (0, 0, 10) and is looking along the -Z axis towards the origin.
+                            You can provide your own preferred viewing locations and directions in Viewpoint nodes.
+                            The first Viewpoint in the scene is the initial entry Viewpoint.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch26.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0352.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter26Viewpoint/Figure26_5DungeonViewpointIndex.html">Figure 26 5 Dungeon Viewpoint</a></li>
+                           <li><a href="Chapter26Viewpoint/Figure26_7DungeonViewpointsAndFieldsOfViewIndex.html">Figure 26 7 Dungeon Viewpoints And Fields Of View</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter26Viewpoint/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter26Viewpoint/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter27SensingVisibilityProximityCollision">&nbsp;</a><a title="Directory Summary" href="Chapter27SensingVisibilityProximityCollision/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 27 Sensing Visibility Proximity Collision</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Sensing viewer activity enables the scene to trigger animations.
+                        A VisibilitySensor node checks if a region is visible to the viewer, where the region is described by a center and a size.
+                        Time events are sent on entry and exit of visibility, and true/false is sent on entry and exit of visibility.
+                        A ProximitySensor node similarly checks if the viewer is within a region, also sending viewer position and orientation while within the sensed region.
+                        Collision is a grouping node that checks if the viewer has run into a shape defined by the node's children 
+                        (or else simpler proxy geometry) with a collision time event sent upon contact.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch27.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0366.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter27SensingVisibilityProximityCollision/index.html"><img border="0" alt="Figure 27.1 Visibility Sensor Dungeon Sliding Doors" title="Figure 27.1 Visibility Sensor Dungeon Sliding Doors" hspace="10" 
+                          src="Chapter27SensingVisibilityProximityCollision/Figure27_1VisibilitySensorDungeonSlidingDoors.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter27SensingVisibilityProximityCollision/Figure27_1VisibilitySensorDungeonSlidingDoorsIndex.html">Figure 27 1 Visibility Sensor Dungeon Sliding Doors</a></li>
+                           <li><a href="Chapter27SensingVisibilityProximityCollision/Figure27_2ProximitySensorDungeonSlidingDoorsIndex.html">Figure 27 2 Proximity Sensor Dungeon Sliding Doors</a></li>
+                           <li><a href="Chapter27SensingVisibilityProximityCollision/Figure27_3CollisionDetectionSpinningOrbIndex.html">Figure 27 3 Collision Detection Spinning Orb</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter27SensingVisibilityProximityCollision/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter28Anchor">&nbsp;</a><a title="Directory Summary" href="Chapter28Anchor/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 28 Anchor</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter28Anchor/index.html"><img border="0" alt="Figure 28.2 Anchor Load Another World" title="Figure 28.2 Anchor Load Another World" hspace="10" 
+                          src="Chapter28Anchor/_viewpoints/Figure28_2AnchorLoadAnotherWorld.x3d._VP_Left_corner_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Similar to HTML web pages, the Anchor node lets an author make shapes selectable for navigating to another viewpoint,
+						loading a new VRML/X3D world, or launching new content in a web browser.
+                    </p>
+                    
+
+                    
+                    <p>
+                            An Anchor node creates a group that acts as a clickable anchor where every child node in the group is displayed, and
+                            clicking one follows a url to another scene or another Web link.
+                            An Anchor can also bring the user to another Viewpoint location in the scene.
+                            A description field names each Anchor so that the user knows its purpose.
+                    </p>
+                    
+
+                    
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch28.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0094.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter28Anchor/Figure28_1AnchorViewpointsDungeonIndex.html">Figure 28 1 Anchor Viewpoints Dungeon</a></li>
+                           <li><a href="Chapter28Anchor/Figure28_2AnchorLoadAnotherWorldIndex.html">Figure 28 2 Anchor Load Another World</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter28Anchor/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter28Anchor/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter29WorldInfo">&nbsp;</a><a title="Directory Summary" href="Chapter29WorldInfo/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 29 World Info</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						The WorldInfo defines the title of the scene and can hold additional metadata.
+                    </p>
+                    
+
+
+                    <p>
+                        After you've created a great world, sign it!
+                        You can provide a title and a description embedded within the file by using a WorldInfo node.
+                        The title field provides the name for your world so that the browser can show it.
+                        The info field can hold any additional information of interest.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch29.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0491.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter29WorldInfo/index.html"><img border="0" alt="Figure 29.1 World Info: view image to see browser title" title="Figure 29.1 World Info: view image to see browser title" hspace="10" 
+                          src="Chapter29WorldInfo/Figure29_1WorldInfo.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter29WorldInfo/Figure29_1WorldInfoIndex.html">Figure 29 1 World Info</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter29WorldInfo/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter29WorldInfo/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter30Scripts">&nbsp;</a><a title="Directory Summary" href="Chapter30Scripts/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 30 Scripts</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter30Scripts/index.html"><img border="0" alt="Figure 30.4 Script Spiraling Ball Trace" title="Figure 30.4 Script Spiraling Ball Trace" hspace="10" 
+                          src="Chapter30Scripts/_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Scripts allow authors to define their own event-handling code to improve animation sophistication.
+                    </p>
+                    
+
+                    
+                    <p>
+                            Many actions are too complex for animation nodes, such as computed animation paths (e.g. gravity), 
+                            algorithmic shapes (e.g. fractals), or collaborative environments (e.g. games).
+                            You can create new sensors, interpolators, etc., using program scripts written in 
+                            Java (a powerful general-purpose language) or ECMAscript (JavaScript, an easy-to-learn language).
+                            The Script node selects a program script, specified by a url or contained source code.
+                            Program scripts have field and event interface declarations, each with a data type, a name, and an initial value (for fields only).
+                    </p>
+                    
+
+                    
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch30.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0399.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter30Scripts/Figure30_1ScriptSlidingBallIndex.html">Figure 30 1 Script Sliding Ball</a></li>
+                           <li><a href="Chapter30Scripts/Figure30_2ScriptBackgroundSelectIndex.html">Figure 30 2 Script Background Select</a></li>
+                           <li><a href="Chapter30Scripts/Figure30_3ScriptSoundActivateIndex.html">Figure 30 3 Script Sound Activate</a></li>
+                           <li><a href="Chapter30Scripts/Figure30_4ScriptSpiralingBallTraceIndex.html">Figure 30 4 Script Spiraling Ball Trace</a></li>
+                           <li><a href="Chapter30Scripts/Figure30_5ScriptTorusBuilderIndex.html">Figure 30 5 Script Torus Builder</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter30Scripts/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter30Scripts/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter31Prototypes">&nbsp;</a><a title="Directory Summary" href="Chapter31Prototypes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 31 Prototypes</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Prototypes are an extension mechanism that lets authors define their own customizable nodes, 
+						improving reusability and sharing of cool content.
+                    </p>
+                    
+
+
+                <p>
+                        By declaring prototype designs and then creating one or more instances, you can create new node types that encapsulate
+                        Shapes, Sensors, Interpolators, Scripts and anything else. 
+                        This technique creates new high-level nodes such as robots, menus, new shapes, etc.
+                        A PROTO statement declares a new node type (a prototype) with
+                        a name (the new node type name) along with fields and events (the interfaces to the prototype).
+                        Once defined, a prototyped node can be used like any other node.
+                    </p>
+                    
+
+
+                <p>
+                       These X3D scenes are adapted directly from the
+                       <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch31.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                       Also available:
+                       <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0471.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                </p>
+                
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="Chapter31Prototypes/index.html"><img border="0" alt="Figure 31.9 Spin Group Prototype" title="Figure 31.9 Spin Group Prototype" hspace="10" 
+                          src="Chapter31Prototypes/_viewpoints/Figure31_9SpinGroupPrototype.x3d._VP_Click_on_blue_crossbar_to_activate_second_SpinGroup.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter31Prototypes/Figure31_1WallColorPrototypeIndex.html">Figure 31 1 Wall Color Prototype</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_2MaterialPrototypesLibraryIndex.html">Figure 31 2 Material Prototypes Library</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_3MaterialExternalPrototypesIndex.html">Figure 31 3 Material External Prototypes</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_4WoodAppearancePrototypesLibraryIndex.html">Figure 31 4 Wood Appearance Prototypes Library</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_5WoodAppearanceExternalPrototypesIndex.html">Figure 31 5 Wood Appearance External Prototypes</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_6DonutPrototypeIndex.html">Figure 31 6 Donut Prototype</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_7DonutExternalPrototypeIndex.html">Figure 31 7 Donut External Prototype</a></li>
+                           <li><a href="Chapter31Prototypes/Figure31_9SpinGroupPrototypeIndex.html">Figure 31 9 Spin Group Prototype</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter31Prototypes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Chapter31Prototypes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Siggraph98Course">&nbsp;</a><a title="Directory Summary" href="Siggraph98Course/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Siggraph 98 Course</font></b></a>
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    <p>
+                    
+                    <a href="Siggraph98Course/index.html"><img border="0" alt="Robotic hand juggling primitives" title="Robotic hand juggling primitives" hspace="10" 
+                            src="Siggraph98Course/Hand.png" width="158" height="93" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="Siggraph98Course/index.html"><img border="0" alt="Primitive geometry examples" title="Primitive geometry examples" hspace="10" 
+                          src="Siggraph98Course/Primitives.png" width="156" height="94" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+                <td align="left">                   
+                
+                    <p>    
+						This entire book was presented as a tutorial during the ACM Special Interest Group on Graphics (SIGGRAPH) 
+						conference in 1998.
+                    </p>
+                    
+
+
+                    <p>
+                           The SIGGRAPH98 online course
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97</a>
+                           by David R. Nadeau, John L. Moreland, and Michael M. Heck
+                           includes all of the examples translated here.
+                           Many of these X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/cover/cover.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                    </p>
+                    
+
+
+                    <p>
+                           A large number of 
+                           <a href="Siggraph98Course/interesting.html">Interesting Scenes</a>
+                           have been added to this course for learning VRML and X3D.
+                           
+                           <a href="Siggraph98Course/originals/">Source code</a>
+                           for the original example models is also provided.
+                    </p>
+                    
+
+
+                    <p>
+                        <b>Original Course Abstract.</b>
+                        
+                        <i>The Virtual Reality Modeling Language (VRML) is an international standard for describing 3D shapes 
+                        and scenery on the World Wide Web. VRML's technology has very broad applicability, including web-based entertainment, 
+                        distributed visualization, 3D user interfaces to remote web resources, 3D collaborative environments, 
+                        interactive simulations for education, virtual museums, virtual retail spaces, and more. 
+                        VRML is a key technology shaping the future of the Web.
+
+                        Participants in this tutorial will learn how to use VRML 97 (a.k.a. ISO VRML, VRML 2.0, and Moving Worlds) 
+                        to author their own 3D virtual worlds on the World Wide Web. 
+                        Participants will learn VRML concepts and terminology, and be introduced to VRML's text-format syntax. 
+                        Participants also will learn tips and techniques for increasing performance and realism. 
+                        The tutorial includes numerous VRML examples and information on where to find out more about VRML features and use.
+                        </i>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Siggraph98Course/AmbientIndex.html">Ambient</a></li>
+                           <li><a href="Siggraph98Course/AnchorExampleIndex.html">Anchor Example</a></li>
+                           <li><a href="Siggraph98Course/AnimatedGridIndex.html">Animated Grid</a></li>
+                           <li><a href="Siggraph98Course/ArchIndex.html">Arch</a></li>
+                           <li><a href="Siggraph98Course/ArchesIndex.html">Arches</a></li>
+                           <li><a href="Siggraph98Course/aTorchIndex.html">a Torch</a></li>
+                           <li><a href="Siggraph98Course/aTorch1Index.html">a Torch 1</a></li>
+                           <li><a href="Siggraph98Course/aTorch2Index.html">a Torch 2</a></li>
+                           <li><a href="Siggraph98Course/aTorch3Index.html">a Torch 3</a></li>
+                           <li><a href="Siggraph98Course/Background2Index.html">Background 2</a></li>
+                           <li><a href="Siggraph98Course/BackgroundExampleIndex.html">Background Example</a></li>
+                           <li><a href="Siggraph98Course/BarPlotIndex.html">Bar Plot</a></li>
+                           <li><a href="Siggraph98Course/BarTwistIndex.html">Bar Twist</a></li>
+                           <li><a href="Siggraph98Course/Bounce1Index.html">Bounce 1</a></li>
+                           <li><a href="Siggraph98Course/Bounce2Index.html">Bounce 2</a></li>
+                           <li><a href="Siggraph98Course/Bounce3Index.html">Bounce 3</a></li>
+                           <li><a href="Siggraph98Course/BoxesIndex.html">Boxes</a></li>
+                           <li><a href="Siggraph98Course/BoxPrimitiveIndex.html">Box Primitive</a></li>
+                           <li><a href="Siggraph98Course/BrickBoxIndex.html">Brick Box</a></li>
+                           <li><a href="Siggraph98Course/BurstIndex.html">Burst</a></li>
+                           <li><a href="Siggraph98Course/ButtonIndex.html">Button</a></li>
+                           <li><a href="Siggraph98Course/CanIndex.html">Can</a></li>
+                           <li><a href="Siggraph98Course/CastleIndex.html">Castle</a></li>
+                           <li><a href="Siggraph98Course/CeilingIndex.html">Ceiling</a></li>
+                           <li><a href="Siggraph98Course/ChairIndex.html">Chair</a></li>
+                           <li><a href="Siggraph98Course/ColorsIndex.html">Colors</a></li>
+                           <li><a href="Siggraph98Course/ColumnIndex.html">Column</a></li>
+                           <li><a href="Siggraph98Course/ColumnsIndex.html">Columns</a></li>
+                           <li><a href="Siggraph98Course/ConePrimitiveIndex.html">Cone Primitive</a></li>
+                           <li><a href="Siggraph98Course/CookieIndex.html">Cookie</a></li>
+                           <li><a href="Siggraph98Course/CreaseAngleIndex.html">Crease Angle</a></li>
+                           <li><a href="Siggraph98Course/CutIndex.html">Cut</a></li>
+                           <li><a href="Siggraph98Course/CutPlaneIndex.html">Cut Plane</a></li>
+                           <li><a href="Siggraph98Course/CylinderPrimitiveIndex.html">Cylinder Primitive</a></li>
+                           <li><a href="Siggraph98Course/DinetteIndex.html">Dinette</a></li>
+                           <li><a href="Siggraph98Course/DirectionalLightExampleIndex.html">Directional Light Example</a></li>
+                           <li><a href="Siggraph98Course/DonutIndex.html">Donut</a></li>
+                           <li><a href="Siggraph98Course/DoorwayIndex.html">Doorway</a></li>
+                           <li><a href="Siggraph98Course/DungeonDoorIndex.html">Dungeon Door</a></li>
+                           <li><a href="Siggraph98Course/DungeonFloorIndex.html">Dungeon Floor</a></li>
+                           <li><a href="Siggraph98Course/DungeonRoomIndex.html">Dungeon Room</a></li>
+                           <li><a href="Siggraph98Course/DungeonWallIndex.html">Dungeon Wall</a></li>
+                           <li><a href="Siggraph98Course/DungeonWall2Index.html">Dungeon Wall 2</a></li>
+                           <li><a href="Siggraph98Course/ExtrusionSpiralIndex.html">Extrusion Spiral</a></li>
+                           <li><a href="Siggraph98Course/ExtrusionSpiralMotionIndex.html">Extrusion Spiral Motion</a></li>
+                           <li><a href="Siggraph98Course/FenceIndex.html">Fence</a></li>
+                           <li><a href="Siggraph98Course/FlamesIndex.html">Flames</a></li>
+                           <li><a href="Siggraph98Course/FloaterIndex.html">Floater</a></li>
+                           <li><a href="Siggraph98Course/FloorIndex.html">Floor</a></li>
+                           <li><a href="Siggraph98Course/Fog1Index.html">Fog 1</a></li>
+                           <li><a href="Siggraph98Course/Fog2Index.html">Fog 2</a></li>
+                           <li><a href="Siggraph98Course/Fog3Index.html">Fog 3</a></li>
+                           <li><a href="Siggraph98Course/Fog4Index.html">Fog 4</a></li>
+                           <li><a href="Siggraph98Course/Fog5Index.html">Fog 5</a></li>
+                           <li><a href="Siggraph98Course/FogWorldIndex.html">Fog World</a></li>
+                           <li><a href="Siggraph98Course/GlowDoorIndex.html">Glow Door</a></li>
+                           <li><a href="Siggraph98Course/HalfCylinderIndex.html">Half Cylinder</a></li>
+                           <li><a href="Siggraph98Course/HandIndex.html">Hand</a></li>
+                           <li><a href="Siggraph98Course/HeadsUpDisplayHUDIndex.html">Heads Up Display HUD</a></li>
+                           <li><a href="Siggraph98Course/HornIndex.html">Horn</a></li>
+                           <li><a href="Siggraph98Course/IsoLineIndex.html">Iso Line</a></li>
+                           <li><a href="Siggraph98Course/IsoSurfaceIndex.html">Iso Surface</a></li>
+                           <li><a href="Siggraph98Course/KeyboardIndex.html">Keyboard</a></li>
+                           <li><a href="Siggraph98Course/LampIndex.html">Lamp</a></li>
+                           <li><a href="Siggraph98Course/Lamp2Index.html">Lamp 2</a></li>
+                           <li><a href="Siggraph98Course/Lamp2aIndex.html">Lamp 2a</a></li>
+                           <li><a href="Siggraph98Course/LandIndex.html">Land</a></li>
+                           <li><a href="Siggraph98Course/LightningIndex.html">Lightning</a></li>
+                           <li><a href="Siggraph98Course/LinePlotIndex.html">Line Plot</a></li>
+                           <li><a href="Siggraph98Course/LoaderIndex.html">Loader</a></li>
+                           <li><a href="Siggraph98Course/LogIndex.html">Log</a></li>
+                           <li><a href="Siggraph98Course/MatchIndex.html">Match</a></li>
+                           <li><a href="Siggraph98Course/MonolithIndex.html">Monolith</a></li>
+                           <li><a href="Siggraph98Course/MountainIndex.html">Mountain</a></li>
+                           <li><a href="Siggraph98Course/Mountain128Index.html">Mountain 128</a></li>
+                           <li><a href="Siggraph98Course/Mountain16Index.html">Mountain 16</a></li>
+                           <li><a href="Siggraph98Course/Mountain32Index.html">Mountain 32</a></li>
+                           <li><a href="Siggraph98Course/MountainColorIndex.html">Mountain Color</a></li>
+                           <li><a href="Siggraph98Course/MountainColor2Index.html">Mountain Color 2</a></li>
+                           <li><a href="Siggraph98Course/NestedIndex.html">Nested</a></li>
+                           <li><a href="Siggraph98Course/OneIndex.html">One</a></li>
+                           <li><a href="Siggraph98Course/PedestalIndex.html">Pedestal</a></li>
+                           <li><a href="Siggraph98Course/PlayYardIndex.html">Play Yard</a></li>
+                           <li><a href="Siggraph98Course/PointLightExampleIndex.html">Point Light Example</a></li>
+                           <li><a href="Siggraph98Course/PointPlotIndex.html">Point Plot</a></li>
+                           <li><a href="Siggraph98Course/PrimitivesIndex.html">Primitives</a></li>
+                           <li><a href="Siggraph98Course/Proximity1Index.html">Proximity 1</a></li>
+                           <li><a href="Siggraph98Course/Proximity2Index.html">Proximity 2</a></li>
+                           <li><a href="Siggraph98Course/QueryIndex.html">Query</a></li>
+                           <li><a href="Siggraph98Course/RoboBillIndex.html">Robo Bill</a></li>
+                           <li><a href="Siggraph98Course/RoboBodyIndex.html">Robo Body</a></li>
+                           <li><a href="Siggraph98Course/RoboHeadIndex.html">Robo Head</a></li>
+                           <li><a href="Siggraph98Course/RobotsIndex.html">Robots</a></li>
+                           <li><a href="Siggraph98Course/ScatterIndex.html">Scatter</a></li>
+                           <li><a href="Siggraph98Course/ShinyIndex.html">Shiny</a></li>
+                           <li><a href="Siggraph98Course/SlabsIndex.html">Slabs</a></li>
+                           <li><a href="Siggraph98Course/SlideIndex.html">Slide</a></li>
+                           <li><a href="Siggraph98Course/SnakeIndex.html">Snake</a></li>
+                           <li><a href="Siggraph98Course/SoundMarkerIndex.html">Sound Marker</a></li>
+                           <li><a href="Siggraph98Course/SpaceIndex.html">Space</a></li>
+                           <li><a href="Siggraph98Course/Space2Index.html">Space 2</a></li>
+                           <li><a href="Siggraph98Course/SpherePrimitiveIndex.html">Sphere Primitive</a></li>
+                           <li><a href="Siggraph98Course/SpheresIndex.html">Spheres</a></li>
+                           <li><a href="Siggraph98Course/SpiralIndex.html">Spiral</a></li>
+                           <li><a href="Siggraph98Course/SpotLightExampleIndex.html">Spot Light Example</a></li>
+                           <li><a href="Siggraph98Course/SquisherIndex.html">Squisher</a></li>
+                           <li><a href="Siggraph98Course/StairwayIndex.html">Stairway</a></li>
+                           <li><a href="Siggraph98Course/StopWatchIndex.html">Stop Watch</a></li>
+                           <li><a href="Siggraph98Course/SubIndex.html">Sub</a></li>
+                           <li><a href="Siggraph98Course/SubWorldIndex.html">Sub World</a></li>
+                           <li><a href="Siggraph98Course/TableIndex.html">Table</a></li>
+                           <li><a href="Siggraph98Course/TempleIndex.html">Temple</a></li>
+                           <li><a href="Siggraph98Course/Terrain00Index.html">Terrain 00</a></li>
+                           <li><a href="Siggraph98Course/Terrain01Index.html">Terrain 01</a></li>
+                           <li><a href="Siggraph98Course/Terrain02Index.html">Terrain 02</a></li>
+                           <li><a href="Siggraph98Course/Terrain03Index.html">Terrain 03</a></li>
+                           <li><a href="Siggraph98Course/Terrain04Index.html">Terrain 04</a></li>
+                           <li><a href="Siggraph98Course/Terrain05Index.html">Terrain 05</a></li>
+                           <li><a href="Siggraph98Course/Terrain06Index.html">Terrain 06</a></li>
+                           <li><a href="Siggraph98Course/Terrain07Index.html">Terrain 07</a></li>
+                           <li><a href="Siggraph98Course/Terrain08Index.html">Terrain 08</a></li>
+                           <li><a href="Siggraph98Course/Terrain09Index.html">Terrain 09</a></li>
+                           <li><a href="Siggraph98Course/TextFontIndex.html">Text Font</a></li>
+                           <li><a href="Siggraph98Course/TextJustificationIndex.html">Text Justification</a></li>
+                           <li><a href="Siggraph98Course/TextPrimitiveIndex.html">Text Primitive</a></li>
+                           <li><a href="Siggraph98Course/TextSizeIndex.html">Text Size</a></li>
+                           <li><a href="Siggraph98Course/TexturePlaneIndex.html">Texture Plane</a></li>
+                           <li><a href="Siggraph98Course/TextVerticalIndex.html">Text Vertical</a></li>
+                           <li><a href="Siggraph98Course/ThreeIndex.html">Three</a></li>
+                           <li><a href="Siggraph98Course/TimedTimerIndex.html">Timed Timer</a></li>
+                           <li><a href="Siggraph98Course/Torch1Index.html">Torch 1</a></li>
+                           <li><a href="Siggraph98Course/Torch2Index.html">Torch 2</a></li>
+                           <li><a href="Siggraph98Course/Torch3Index.html">Torch 3</a></li>
+                           <li><a href="Siggraph98Course/TorchesIndex.html">Torches</a></li>
+                           <li><a href="Siggraph98Course/Torches3Index.html">Torches 3</a></li>
+                           <li><a href="Siggraph98Course/TowerPartIndex.html">Tower Part</a></li>
+                           <li><a href="Siggraph98Course/TowersIndex.html">Towers</a></li>
+                           <li><a href="Siggraph98Course/TreadIndex.html">Tread</a></li>
+                           <li><a href="Siggraph98Course/TreeWallIndex.html">Tree Wall</a></li>
+                           <li><a href="Siggraph98Course/TumbleGroupIndex.html">Tumble Group</a></li>
+                           <li><a href="Siggraph98Course/TwoIndex.html">Two</a></li>
+                           <li><a href="Siggraph98Course/VaultIndex.html">Vault</a></li>
+                           <li><a href="Siggraph98Course/VectorIndex.html">Vector</a></li>
+                           <li><a href="Siggraph98Course/VectorField1Index.html">Vector Field 1</a></li>
+                           <li><a href="Siggraph98Course/WiggleIndex.html">Wiggle</a></li>
+                           <li><a href="Siggraph98Course/WindmillIndex.html">Windmill</a></li>
+                           <li><a href="Siggraph98Course/WoodColorIndex.html">Wood Color</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Siggraph98Course/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?Vrml2Sourcebook/Siggraph98Course/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <table align="center" width="95%" summary="" border="0" cellpadding="6">
+         <tr>
+            <td><a name="information"></a><p style="text-align:center"><a href="#information"><img src="images/200px-Question_book-new.svg.png" width="40" height="31" border="0" title="Archive Information" alt="Archive Information" align="left"></a><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top" align="right"></a>Online at <br><a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook</a></p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br><a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook" target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook</a></p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+         The 
+         <a href="X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+         and
+         <a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+         provide more information about the production of this archive.</p>
+      <table align="center" width="95%" summary="" border="1" cellpadding="6">
+         <tr>
+            <td align="left" width="25%">Point of contact:  <br>Don Brutzman (<a href="mailto:brutzman@nps.edu%20(Don%20Brutzman)?subject=feedback%20on%20X3D%20Vrml2Sourcebook%20examples%20archive">brutzman&nbsp;at&nbsp;nps.edu</a>)
+               </td>
+            <td align="center" width="25%"><a href="README.txt">README.txt</a><br><a href="license.html">Open-Source License</a></td>
+            <td align="center" width="25%"><a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/index.html" target="_blank"><img src="https://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1" alt="Validate XHTML 1.1" height="31" width="88" border="0"></a></td>
+            <td align="right" width="25%"><a href="ContentCatalogVrml2Sourcebook.xml" target="_blank">Content Catalog XML</a><br>Autogenerated 2024-01-01-08:00<!--Catalog creation date 1/1/2024--></td>
+         </tr>
+      </table>
+   </body>
+</html>

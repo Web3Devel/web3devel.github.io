@@ -1,0 +1,248 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13PointsLinesFaces/Figure13_16VaultedCeiling.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure13_16VaultedCeiling.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 13.16, The VRML 2 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch13/13fig16.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Colleen Case' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '29 July 2000' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A vaulted ceiling piece used repeatedly to build part of a medieval building.' ;
+  x3do:name 'description' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13PointsLinesFaces/Figure13_16VaultedCeiling.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure13_16VaultedCeiling.x3d" .
+:meta dcterms:creator "Figure 13.16, The VRML 2 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch13/13fig16.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:translator "Colleen Case" .
+:meta dcterms:created "29 July 2000" .
+:meta dcterms:modified "1 July 2023" .
+:meta dcterms:description "A vaulted ceiling piece used repeatedly to build part of a medieval building." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13PointsLinesFaces/Figure13_16VaultedCeiling.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure13_16VaultedCeiling.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Vaulted ceiling' ;
+  x3do:orientation ( 1 0 0 -0.758 ) ;
+  x3do:position ( 0 8 7 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Ceiling, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5, :Transform_2_3_6, :Transform_2_3_7, :Transform_2_3_8, :Transform_2_3_9, :Transform_2_3_10, :Transform_2_3_11, :Transform_2_3_12, :Transform_2_3_13, :Transform_2_3_14, :Transform_2_3_15, :Transform_2_3_16, :Transform_2_3_17, :Transform_2_3_18 .
+:Ceiling a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Vault, :Transform_2_3_1_2, :Transform_2_3_1_3, :Transform_2_3_1_4 ;
+  x3do:DEF 'Ceiling' ;
+  x3do:translation ( 0 2 0 ) .
+:Vault a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Ceiling ;
+  x3do:DEF 'Vault' ;
+  x3do:url '"Figure13_15VaultedCeilingPiece.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13PointsLinesFaces/Figure13_15VaultedCeilingPiece.x3d" "Figure13_15VaultedCeilingPiece.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter13PointsLinesFaces/Figure13_15VaultedCeilingPiece.wrl"' .
+:Transform_2_3_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Ceiling ;
+  x3do:hasChildren :Vault-USE-1 ;
+  x3do:rotation ( 0 1 0 1.57 ) .
+:Vault-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_1_2 ;
+  owl:sameAs :Vault . # DEF matching this USE
+:Transform_2_3_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Ceiling ;
+  x3do:hasChildren :Vault-USE-2 ;
+  x3do:rotation ( 0 1 0 3.14 ) .
+:Vault-USE-2 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_1_3 ;
+  owl:sameAs :Vault . # DEF matching this USE
+:Transform_2_3_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Ceiling ;
+  x3do:hasChildren :Vault-USE-3 ;
+  x3do:rotation ( 0 1 0 -1.57 ) .
+:Vault-USE-3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_1_4 ;
+  owl:sameAs :Vault . # DEF matching this USE
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Ceiling-USE-1 ;
+  x3do:translation ( -2 0 0 ) .
+:Ceiling-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_2 ;
+  owl:sameAs :Ceiling . # DEF matching this USE
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Ceiling-USE-2 ;
+  x3do:translation ( 2 0 0 ) .
+:Ceiling-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_3 ;
+  owl:sameAs :Ceiling . # DEF matching this USE
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Ceiling-USE-3 ;
+  x3do:translation ( 0 0 -2 ) .
+:Ceiling-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_4 ;
+  owl:sameAs :Ceiling . # DEF matching this USE
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Ceiling-USE-4 ;
+  x3do:translation ( 0 0 2 ) .
+:Ceiling-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_5 ;
+  owl:sameAs :Ceiling . # DEF matching this USE
+:Transform_2_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column ;
+  x3do:translation ( -3 1 -1 ) .
+:Column a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6 ;
+  x3do:hasAppearance :Appearance_2_3_6_1_1 ;
+  x3do:hasGeometry :Cylinder_2_3_6_1_2 ;
+  x3do:DEF 'Column' .
+:Appearance_2_3_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Column ;
+  x3do:hasMaterial :Material_2_3_6_1_1_1 .
+:Material_2_3_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_6_1_1 ;
+  x3do:diffuseColor ( 0.9 0.9 0.9 ) .
+:Cylinder_2_3_6_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Column ;
+  x3do:radius 0.05 .
+:Transform_2_3_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-1 ;
+  x3do:translation ( -1 1 -1 ) .
+:Column-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-2 ;
+  x3do:translation ( 1 1 -1 ) .
+:Column-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_8 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-3 ;
+  x3do:translation ( 1 1 -1 ) .
+:Column-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_9 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-4 ;
+  x3do:translation ( 3 1 -1 ) .
+:Column-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_10 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-5 ;
+  x3do:translation ( -3 1 1 ) .
+:Column-USE-5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_11 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-6 ;
+  x3do:translation ( -1 1 1 ) .
+:Column-USE-6 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_12 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-7 ;
+  x3do:translation ( 1 1 1 ) .
+:Column-USE-7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_13 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_14 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-8 ;
+  x3do:translation ( 3 1 1 ) .
+:Column-USE-8 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_14 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-9 ;
+  x3do:translation ( -1 1 -3 ) .
+:Column-USE-9 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_15 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-10 ;
+  x3do:translation ( -1 1 3 ) .
+:Column-USE-10 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_16 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_17 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-11 ;
+  x3do:translation ( 1 1 -3 ) .
+:Column-USE-11 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_17 ;
+  owl:sameAs :Column . # DEF matching this USE
+:Transform_2_3_18 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Column-USE-12 ;
+  x3do:translation ( 1 1 3 ) .
+:Column-USE-12 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_18 ;
+  owl:sameAs :Column . # DEF matching this USE

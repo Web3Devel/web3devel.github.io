@@ -1,0 +1,42 @@
+
+        
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+// you can view the output of print statements in the VRML Console
+
+function toggle ( value, ts ) {
+  // only toggle on click (isActive true) not release (isActive false)
+  if ( value == false ) return;
+  if ( state == true )
+  {
+	state  = false;
+	stateTurnedFalse = true;
+	Browser.println ('ToggleScript.state = ' + state + ', stateTurnedFalse = ' + true);
+  }
+  else
+  {
+	state  = true;
+	stateTurnedTrue = true;
+	Browser.println ('ToggleScript.state = ' + state + ', stateTurnedTrue = ' + true);
+  }
+}
+
+      
+        
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+
+function setStart ( value, timeStamp ) {
+	startEventTime = timeStamp;
+	Browser.println ('TimeFilter.setStart (' + value + '), startEventTime = ' + timeStamp);
+	Browser.println (); // newline
+}
+function setStop  ( value, timeStamp ) {
+	stopEventTime  = timeStamp;
+	Browser.println ('TimeFilter.setStop  (' + value + '),  stopEventTime = ' + timeStamp);
+	Browser.println (); // newline
+}
+
+      

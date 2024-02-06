@@ -1,0 +1,1 @@
+<Sound DEF=''/> location='0 0 0' has height of sound ellipse centered on ground plane, consider changing location y-value to 1.6 in order to match typical avatar height (in meters) [/X3D/Scene/Group/Sound, warning]

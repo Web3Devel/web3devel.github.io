@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+
+<X3D version="3.0" profile="Immersive"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+   <head>
+      <meta content="Figure06.07bRotation-45zWithAxes.x3d" name="title" />
+      <meta content="Figure 6.7b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" name="creator"/>
+      <meta content="Don Brutzman" name="translator"/>
+      <meta content="6 October 2000" name="created"/>
+      <meta content="15 September 2002" name="modified"/>
+      <meta content="Rotating -45 degrees about Z axis.  Coordinate axes superimposed to show VRML directions." name="description"/>
+      <meta content="http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Chapter06-RotatingShapes/Figure06.07bRotation-45zWithAxes.x3d" name="identifier" />
+      <meta content="X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html" name="generator"/>
+     <meta name="license" content="../../license.html"/>
+  </head>
+   <Scene>
+      <Viewpoint description="View shape" position="0 0 6"/><!---45 degrees equals -0.785 radians, 0 0 1 indicates Z axis-->
+      <Transform rotation="0 0 1 -0.785">
+         <Transform translation="0 0.8 0">
+            <Shape>
+               <Cone bottomRadius="0.3" height="0.6"/>
+               <Appearance DEF="GREEN_APPEARANCE">
+                  <Material diffuseColor="0.1 0.7 0.2"/>
+               </Appearance>
+            </Shape>
+         </Transform>
+         <Shape>
+            <Box size="0.25 1 0.25"/>
+            <Appearance USE="GREEN_APPEARANCE"/>
+         </Shape>
+      </Transform><!--Adding this Inline reference to another scene superimposes VRML coordinate system axes.-->
+      <Transform scale="1.5 1.5 1.5">
+      <Inline DEF="CoordinateAxes" url="&quot;CoordinateAxes.wrl&quot;&#10;&quot;/www.web3d.org/x3d/content/examples/Basic/course/CoordinateAxes.wrl&quot;&#10;&quot;/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/CoordinateAxes.wrl&quot;&#10;&quot;http://www.web3d.org/x3d/content/examples/Basic/course/CoordinateAxes.wrl&quot;&#10;&quot;https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl&quot;&#10;&quot;CoordinateAxes.x3d&quot;&#10;&quot;/www.web3d.org/x3d/content/examples/Basic/course/CoordinateAxes.x3d&quot;&#10;&quot;/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/CoordinateAxes.x3d&quot;&#10;&quot;http://www.web3d.org/x3d/content/examples/Basic/course/CoordinateAxes.x3d&quot;&#10;&quot;https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d&quot;&#10;&quot;file:///c:/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/CoordinateAxes.wrl&quot;"/>
+      </Transform>
+   </Scene>
+</X3D>

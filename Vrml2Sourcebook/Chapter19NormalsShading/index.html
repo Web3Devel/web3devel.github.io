@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 19 Normals Shading</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18TextureMapping/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter19NormalsShading/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter20Lighting/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 19 Normals Shading</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter19NormalsShading/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Normal (perpendicular) vectors defined for individual points or polygons can change the shading of geometry.
+                    </p>
+                    
+
+
+                    <p>
+                        When shaded, the faces on a shape are obvious.
+                        Creating a smooth shape may require a large number of small faces.
+                        An alternative is to instead use smooth shading to create the illusion of a smooth shape, but with a smaller number of faces.
+                    </p>
+                    
+
+
+                    <p>
+                        The Normal node lists normal vectors to use for parts of a shape which can change shading.
+                        These are used as the value of the normal field, and normal index values select which normals to use (similar to color index values).
+                        Ordinarily the creaseAngle field controls faceted or smooth shading.
+                        Normals override the normal effect of the creaseAngle value.
+                        The normalPerVertex field selects normal per face/grid square or normal per coordinate.
+                        The NormalInterpolator node converts time values to normal values for animation effects.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch19.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0238.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 19.22 Normal Square Shaded" title="Figure 19.22 Normal Square Shaded" hspace="10" 
+                          src="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 19.26 Normal Shaded Elevation Grid" title="Figure 19.26 Normal Shaded Elevation Grid" hspace="10" 
+                          src="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;9 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_21NormalSquare"/>
+               <a href="Figure19_21NormalSquareIndex.html">
+                  <img src="_thumbnails/Figure19_21NormalSquareThumbnail.png"
+                        height="48"
+                        alt="Figure19_21NormalSquare"
+                        title="Figure19_21NormalSquare"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_21NormalSquareIndex.html">Figure 19 21 Normal Square</a>
+            </td>
+            <td>A square face and four normals. Also see Figures 19.21 and 19.22 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_22NormalSquareShaded"/>
+               <a href="Figure19_22NormalSquareShadedIndex.html">
+                  <img src="_thumbnails/Figure19_22NormalSquareShadedThumbnail.png"
+                        height="48"
+                        alt="Figure19_22NormalSquareShaded"
+                        title="Figure19_22NormalSquareShaded"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_22NormalSquareShadedIndex.html">Figure 19 22 Normal Square Shaded</a>
+            </td>
+            <td>A square face with two normals pointing along the positive Z axis and two normals pointing along the positive X axis. Also see Figures 19.21 and 19.22 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_23HalfColumn"/>
+               <a href="Figure19_23HalfColumnIndex.html">
+                  <img src="_thumbnails/Figure19_23HalfColumnThumbnail.png"
+                        height="48"
+                        alt="Figure19_23HalfColumn"
+                        title="Figure19_23HalfColumn"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_23HalfColumnIndex.html">Figure 19 23 Half Column</a>
+            </td>
+            <td>A smooth-shaded half column using a crease angle. Compare Figures 19.23, 19.24a, 19.24b, 19.25a and 19.25b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_24aHalfColumnCreaseAngle"/>
+               <a href="Figure19_24aHalfColumnCreaseAngleIndex.html">
+                  <img src="_thumbnails/Figure19_24aHalfColumnCreaseAngleThumbnail.png"
+                        height="48"
+                        alt="Figure19_24aHalfColumnCreaseAngle"
+                        title="Figure19_24aHalfColumnCreaseAngle"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_24aHalfColumnCreaseAngleIndex.html">Figure 19 24a Half Column Crease Angle</a>
+            </td>
+            <td>A smooth-shaded half column using a crease angle. Compare Figures 19.23, 19.24a, 19.24b, 19.25a and 19.25b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_24bTwoHalfColumnsCreaseAngleSeam"/>
+               <a href="Figure19_24bTwoHalfColumnsCreaseAngleSeamIndex.html">
+                  <img src="_thumbnails/Figure19_24bTwoHalfColumnsCreaseAngleSeamThumbnail.png"
+                        height="48"
+                        alt="Figure19_24bTwoHalfColumnsCreaseAngleSeam"
+                        title="Figure19_24bTwoHalfColumnsCreaseAngleSeam"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_24bTwoHalfColumnsCreaseAngleSeamIndex.html">Figure 19 24b Two Half Columns Crease Angle Seam</a>
+            </td>
+            <td>A smooth-shaded half column using a crease angle - note seams where each smoothly shaded half-column meets. Compare Figures 19.23, 19.24a, 19.24b, 19.25a and 19.25b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_25aHalfColumnNormals"/>
+               <a href="Figure19_25aHalfColumnNormalsIndex.html">
+                  <img src="_thumbnails/Figure19_25aHalfColumnNormalsThumbnail.png"
+                        height="48"
+                        alt="Figure19_25aHalfColumnNormals"
+                        title="Figure19_25aHalfColumnNormals"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_25aHalfColumnNormalsIndex.html">Figure 19 25a Half Column Normals</a>
+            </td>
+            <td>A smooth-shaded half column using a crease angle. Compare Figures 19.23, 19.24a, 19.24b, 19.25a and 19.25b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_25bTwoHalfColumnsNormalsSeamless"/>
+               <a href="Figure19_25bTwoHalfColumnsNormalsSeamlessIndex.html">
+                  <img src="_thumbnails/Figure19_25bTwoHalfColumnsNormalsSeamlessThumbnail.png"
+                        height="48"
+                        alt="Figure19_25bTwoHalfColumnsNormalsSeamless"
+                        title="Figure19_25bTwoHalfColumnsNormalsSeamless"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_25bTwoHalfColumnsNormalsSeamlessIndex.html">Figure 19 25b Two Half Columns Normals Seamless</a>
+            </td>
+            <td>A smooth-shaded half column using a crease angle. Compare Figures 19.23, 19.24a, 19.24b, 19.25a and 19.25b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_26NormalShadedElevationGrid"/>
+               <a href="Figure19_26NormalShadedElevationGridIndex.html">
+                  <img src="_thumbnails/Figure19_26NormalShadedElevationGridThumbnail.png"
+                        height="48"
+                        alt="Figure19_26NormalShadedElevationGrid"
+                        title="Figure19_26NormalShadedElevationGrid"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_26NormalShadedElevationGridIndex.html">Figure 19 26 Normal Shaded Elevation Grid</a>
+            </td>
+            <td>An elevation grid using a special shading effect.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure19_27SquareFaceAnimatingNormals"/>
+               <a href="Figure19_27SquareFaceAnimatingNormalsIndex.html">
+                  <img src="_thumbnails/Figure19_27SquareFaceAnimatingNormalsThumbnail.png"
+                        height="48"
+                        alt="Figure19_27SquareFaceAnimatingNormals"
+                        title="Figure19_27SquareFaceAnimatingNormals"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure19_27SquareFaceAnimatingNormalsIndex.html">Figure 19 27 Square Face Animating Normals</a>
+            </td>
+            <td>An elevation grid using a special shading effect.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18TextureMapping/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter19NormalsShading/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter20Lighting/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

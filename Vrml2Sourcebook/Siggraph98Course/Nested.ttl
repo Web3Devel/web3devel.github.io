@@ -1,0 +1,204 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Nested.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Nested.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Multiple nested sensors: this world illustrates the use of nested sensors where one sensor covers shapes in an inner Transform group, and another sensor covers shapes in an outer Transform group.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/nested.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0172.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Nested.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Nested.x3d" .
+:meta dcterms:description "Multiple nested sensors: this world illustrates the use of nested sensors where one sensor covers shapes in an inner Transform group, and another sensor covers shapes in an outer Transform group." .
+:meta dcterms:creator "John L. Moreland" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/nested.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0172.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Nested.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :NavigationInfo_2_2, :Viewpoint_2_3, :TopTf, :Shape_2_7 ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1998, John L. Moreland"' ;
+  x3do:title 'Nested sensors' .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 -0.25 ) ;
+  x3do:position ( 0.0 1.0 2.0 ) .
+:TopTf a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Segment1Tf ;
+  x3do:DEF 'TopTf' .
+:Segment1Tf a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :TopTf ;
+  x3do:hasChildren :Segment1Ss, :Block, :Transform_2_4_1_3, :Segment2Tf ;
+  x3do:DEF 'Segment1Tf' ;
+  x3do:center ( 0.0 -0.25 0.0 ) ;
+  x3do:translation ( 0.0 0.25 0.0 ) .
+:Segment1Ss a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :Segment1Tf ;
+  x3do:DEF 'Segment1Ss' .
+:Block a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Segment1Tf ;
+  x3do:hasChildren :Shape_2_4_1_2_1 ;
+  x3do:DEF 'Block' ;
+  x3do:scale ( 0.1 0.5 0.1 ) .
+:Shape_2_4_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Block ;
+  x3do:hasAppearance :Appear ;
+  x3do:hasGeometry :Sphere_2_4_1_2_1_2 .
+:Appear a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_2_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1_1_1 ;
+  x3do:DEF 'Appear' .
+:Material_2_4_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appear ;
+  x3do:diffuseColor ( 1.0 1.0 0.0 ) .
+:Sphere_2_4_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_1_2_1 ;
+  x3do:radius 0.5 .
+:Transform_2_4_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Segment1Tf ;
+  x3do:hasChildren :Shape_2_4_1_3_1 ;
+  x3do:translation ( 0.0 0.25 0.0 ) .
+:Shape_2_4_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1_3 ;
+  x3do:hasAppearance :Appear-USE-1 ;
+  x3do:hasGeometry :Sphere_2_4_1_3_1_2 .
+:Appear-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_3_1 ;
+  owl:sameAs :Appear . # DEF matching this USE
+:Sphere_2_4_1_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_1_3_1 ;
+  x3do:radius 0.05 .
+:Segment2Tf a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Segment1Tf ;
+  x3do:hasChildren :Segment2Ss, :Transform_2_4_1_4_2 ;
+  x3do:DEF 'Segment2Tf' ;
+  x3do:center ( 0.0 0.25 0.0 ) .
+:Segment2Ss a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :Segment2Tf ;
+  x3do:DEF 'Segment2Ss' .
+:Transform_2_4_1_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Segment2Tf ;
+  x3do:hasChildren :Block-USE-1 ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:Block-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_1_4_2 ;
+  owl:sameAs :Block . # DEF matching this USE
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'Segment1Ss' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Segment1Tf' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'Segment2Ss' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Segment2Tf' .
+:Shape_2_7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_7_1 ;
+  x3do:hasGeometry :Box_2_7_2 .
+:Appearance_2_7_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7 ;
+  x3do:hasMaterial :Material_2_7_1_1 .
+:Material_2_7_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1 .
+:Box_2_7_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7 ;
+  x3do:size ( 2.0 0.02 2.0 ) .

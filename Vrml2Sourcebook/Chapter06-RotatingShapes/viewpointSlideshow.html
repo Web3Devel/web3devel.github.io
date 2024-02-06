@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 06 - Rotating Shapes</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+            content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="7 March 2017"/>
+      <meta name="reference" content="http://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         http://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <style type="text/css">
+// can further set slideshow parameters here, see FAQ.
+      
+.slideshow-captions {
+  height: 465px;
+  width: 792px;
+}  
+.slideshow-images {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}  
+.slideshow {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}
+</style>
+      <link rel="stylesheet" type="text/css" href="../slideshow/css/slideshow.css"
+            media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+
+
+
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure06.04bRotation45xWithAxes.x3d._VP_View_shape.png': { 'caption': '[1] Figure06.04bRotation45xWithAxes.x3d - View shape' },
+      'Figure06.04bRotation45xWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure06.04bRotation45xWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.05bRotation-45xWithAxes.x3d._VP_View_shape.png': { 'caption': '[3] Figure06.05bRotation-45xWithAxes.x3d - View shape' },
+      'Figure06.05bRotation-45xWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure06.05bRotation-45xWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.06bRotation45yWithAxes.x3d._VP_View_shape.png': { 'caption': '[5] Figure06.06bRotation45yWithAxes.x3d - View shape' },
+      'Figure06.06bRotation45yWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure06.06bRotation45yWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.07bRotation-45zWithAxes.x3d._VP_View_shape.png': { 'caption': '[7] Figure06.07bRotation-45zWithAxes.x3d - View shape' },
+      'Figure06.07bRotation-45zWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure06.07bRotation-45zWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.08Asterisk3dWithAxes.x3d._VP_View_shape.png': { 'caption': '[9] Figure06.08Asterisk3dWithAxes.x3d - View shape' },
+      'Figure06.08Asterisk3dWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure06.08Asterisk3dWithAxes.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.09TripleAsterisk3dWithAxes.x3d._VP_View_shape.png': { 'caption': '[11] Figure06.09TripleAsterisk3dWithAxes.x3d - View shape' },
+      'Figure06.09TripleAsterisk3dWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure06.09TripleAsterisk3dWithAxes.x3d - (default X3D view)' },
+      'Figure06.10SimpleArch.x3d._VP_View_arch_from_position_0_6_16,_looking_downward..png': { 'caption': '[13] Figure06.10SimpleArch.x3d - View arch from position 0 6 16, looking downward.' },
+      'Figure06.10SimpleArch.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure06.10SimpleArch.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.11DeskLampBase.x3d._VP_View_lamp_base.png': { 'caption': '[15] Figure06.11DeskLampBase.x3d - View lamp base' },
+      'Figure06.11DeskLampBase.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure06.11DeskLampBase.x3d - (default X3D view from 0 0 10)' },
+      'Figure06.12DeskLampBaseTwoArms.x3d._VP_View_lamp_base.png': { 'caption': '[17] Figure06.12DeskLampBaseTwoArms.x3d - View lamp base' },
+      'Figure06.12DeskLampBaseTwoArms.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure06.12DeskLampBaseTwoArms.x3d - (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05-PositioningShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 06 - Rotating Shapes</h2>
+      <table align="center" border="0" width="792">
+         <tr style="align:left; text-align: left;">
+            <td style="align:left; text-align: left; left:-100px; ">
+               <div id="show" class="slideshow"
+                    style="align: center; float: none; position: relative; left:-200px; width:792;">
+                  <div class="slideshow-images"
+                       style="align: center; float: none; position: relative; width:792;">
+                     <img src="_viewpoints/Figure06.04bRotation45xWithAxes.x3d._VP_View_shape.png"
+                          alt="[1] Figure06.04bRotation45xWithAxes.x3d - View shape"
+                          height="465"
+                          width="792"
+                          align=""
+                          float=""
+                          position=""/>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary=""
+             style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Chapter Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 06.09 Triple Asterisk 3D With Axes" title="Figure 06.09 Triple Asterisk 3D With Axes" hspace="10" 
+                          src="_viewpoints/Figure06.09TripleAsterisk3dWithAxes.x3d._VP_View_shape.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                        Rotation orients a coordinate system about a rotation axis by a rotation angle measured in radians.
+                        To help remember positive and negative rotation directions: open your hand, stick out your thumb,
+                        aim your thumb in an axis positive direction, and curl your fingers around the axis.
+                        The curl direction is a positive rotation.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch06.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0059.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center" summary=""
+                      style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="right" style="background-color:lightgrey">
+9 X3D Scenes &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey">
+ &nbsp;18 Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.04bRotation45xWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.04bRotation45xWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.04bRotation45xWithAxesIndex.html" title="X3D scene">Figure 06.04b Rotation 45x With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.04bRotation45xWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.04bRotation45xWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[1] Figure06.04bRotation45xWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.04bRotation45xWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.04bRotation45xWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[2] Figure06.04bRotation45xWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.05bRotation-45xWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.05bRotation-45xWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.05bRotation-45xWithAxesIndex.html" title="X3D scene">Figure 06.05b Rotation - 45x With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.05bRotation-45xWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.05bRotation-45xWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[3] Figure06.05bRotation-45xWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.05bRotation-45xWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.05bRotation-45xWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[4] Figure06.05bRotation-45xWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.06bRotation45yWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.06bRotation45yWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.06bRotation45yWithAxesIndex.html" title="X3D scene">Figure 06.06b Rotation 45y With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.06bRotation45yWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.06bRotation45yWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[5] Figure06.06bRotation45yWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.06bRotation45yWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.06bRotation45yWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[6] Figure06.06bRotation45yWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.07bRotation-45zWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.07bRotation-45zWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.07bRotation-45zWithAxesIndex.html" title="X3D scene">Figure 06.07b Rotation - 45z With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.07bRotation-45zWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.07bRotation-45zWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[7] Figure06.07bRotation-45zWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.07bRotation-45zWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.07bRotation-45zWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[8] Figure06.07bRotation-45zWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.08Asterisk3dWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.08Asterisk3dWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.08Asterisk3dWithAxesIndex.html" title="X3D scene">Figure 06.08 Asterisk 3D With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.08Asterisk3dWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.08Asterisk3dWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[9] Figure06.08Asterisk3dWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.08Asterisk3dWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.08Asterisk3dWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[10] Figure06.08Asterisk3dWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.09TripleAsterisk3dWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.09TripleAsterisk3dWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.09TripleAsterisk3dWithAxesIndex.html" title="X3D scene">Figure 06.09 Triple Asterisk 3D With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.09TripleAsterisk3dWithAxes.x3d._VP_View_shape.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.09TripleAsterisk3dWithAxes.x3d._VP_View_shape.png"
+                                align="left"
+                                height="24"/>[11] Figure06.09TripleAsterisk3dWithAxes.x3d - View shape</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.09TripleAsterisk3dWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.09TripleAsterisk3dWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[12] Figure06.09TripleAsterisk3dWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.10SimpleArchIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.10SimpleArchThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.10SimpleArchIndex.html" title="X3D scene">Figure 06.10 Simple Arch</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.10SimpleArch.x3d._VP_View_arch_from_position_0_6_16,_looking_downward..png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.10SimpleArch.x3d._VP_View_arch_from_position_0_6_16,_looking_downward..png"
+                                align="left"
+                                height="24"/>[13] Figure06.10SimpleArch.x3d - View arch from position 0 6 16, looking downward.</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.10SimpleArch.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.10SimpleArch.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[14] Figure06.10SimpleArch.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.11DeskLampBaseIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.11DeskLampBaseThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.11DeskLampBaseIndex.html" title="X3D scene">Figure 06.11 Desk Lamp Base</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.11DeskLampBase.x3d._VP_View_lamp_base.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.11DeskLampBase.x3d._VP_View_lamp_base.png"
+                                align="left"
+                                height="24"/>[15] Figure06.11DeskLampBase.x3d - View lamp base</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.11DeskLampBase.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.11DeskLampBase.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[16] Figure06.11DeskLampBase.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure06.12DeskLampBaseTwoArmsIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure06.12DeskLampBaseTwoArmsThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure06.12DeskLampBaseTwoArmsIndex.html" title="X3D scene">Figure 06.1 2Desk Lamp Base Two Arms</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure06.12DeskLampBaseTwoArms.x3d._VP_View_lamp_base.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.12DeskLampBaseTwoArms.x3d._VP_View_lamp_base.png"
+                                align="left"
+                                height="24"/>[17] Figure06.12DeskLampBaseTwoArms.x3d - View lamp base</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure06.12DeskLampBaseTwoArms.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure06.12DeskLampBaseTwoArms.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[18] Figure06.12DeskLampBaseTwoArms.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/viewpointSlideshow.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/viewpointSlideshow.html"
+                     target="_blank">
+                     <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                          alt="Validate XHTML 1.1"
+                          height="31"
+                          width="88"
+                          border="0"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/_viewpoints/"
+                     target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter06-RotatingShapes/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05-PositioningShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Figure09_9DeskLamp.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element   {color: navy}
+span.attribute {color: green}
+span.value     {color: teal}
+span.plain     {color: black}
+span.gray      {color: gray}
+span.idName    {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE;} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF;} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF;} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.boxedBlock          {border: 1px solid grey;  }
+div.center {text-align: center}
+div.indented {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+/* https://stackoverflow.com/questions/10769016/display-image-on-text-link-hover-css-only 
+    position: relative;
+    left: 20px;*/
+.child {
+    float: right;
+    height: 0px;
+}
+.parent:hover {
+    background-color: lightyellow;
+}
+.parent:hover .child {
+    background-color: lightyellow;
+    height: 200px;
+}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "<a href="https://www.web3d.org/specifications/x3d-3.0.dtd">https://www.web3d.org/specifications/x3d-3.0.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Interactive Profile supports Interchange geometry and animation, plus basic user interaction"><span class="attribute">profile</span>='<span class="value">Interactive</span>'</span>
+&#160;<span class="attribute">version</span>='<span class="value">3.0</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.0.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.0.xsd</a>
+'</span>
+&gt;
+</span>
+<div class="indented">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span>
+<div class="indented">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Figure09_9DeskLamp.x3d">Figure09_9DeskLamp.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Figure 9.9, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig09.htm"
+                   target="_blank">http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig09.htm</a>
+'/&gt;
+</span><br />
+
+<span title="author-defined metadata">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">transcriber</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">12 August 2000</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">A desk lamp with arm angles that can be adjusted using nested sensors.</span>'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLamp.x3d"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLamp.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../../license.html">../../license.html</a>'/&gt;
+</span>
+</div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <span style="color:white">&lt;!--</span>
+               <span class="div.indented">
+                  <b>
+                     <a title="Event Graph ROUTE Table shows event connections"
+                         href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+                  </b> shows event connections</span>
+               <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+               <b>
+                  <i>Index for DEF nodes: </i>
+               </b>
+               <a title="go to this Transform node"
+                   href="#FIRST_ARM_TRANSFORM"
+                   class="idName">FIRST_ARM_TRANSFORM</a>,
+<a title="go to this Shape node" href="#LAMP_ARM" class="idName">LAMP_ARM</a>,
+<a title="go to this Transform node"
+                   href="#LAMP_SHADE_TRANSFORM"
+                   class="idName">LAMP_SHADE_TRANSFORM</a>,
+<a title="go to this Transform node"
+                   href="#LAMP_TRANSFORM"
+                   class="idName">LAMP_TRANSFORM</a>,
+<a title="go to this Appearance node"
+                   href="#LIGHT_BROWN"
+                   class="idName">LIGHT_BROWN</a>,
+<a title="go to this SphereSensor node"
+                   href="#MOVE_FIRST_ARM"
+                   class="idName">MOVE_FIRST_ARM</a>,
+<a title="go to this PlaneSensor node"
+                   href="#MOVE_LAMP"
+                   class="idName">MOVE_LAMP</a>,
+<a title="go to this SphereSensor node"
+                   href="#MOVE_LAMP_SHADE"
+                   class="idName">MOVE_LAMP_SHADE</a>,
+<a title="go to this SphereSensor node"
+                   href="#MOVE_SECOND_ARM"
+                   class="idName">MOVE_SECOND_ARM</a>,
+<a title="go to this Transform node"
+                   href="#SECOND_ARM_TRANSFORM"
+                   class="idName">SECOND_ARM_TRANSFORM</a>,
+<a title="go to this Appearance node" href="#WHITE" class="idName">WHITE</a>
+<br /><hr width="25%"/>
+               <b>
+                  <i>Index for Viewpoint node: </i>
+               </b>
+               <a title="go to this Viewpoint node: Desk lamp"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">--&gt;</span>
+<br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span>
+<div class="indented">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">Figure09_9DeskLamp.x3d</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Figure09_9DeskLamp.x3d._VP_Desk_lamp.png">Desk lamp</a>'&#160;<span class="attribute">position</span>='<span class="value">0 0.2 1</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  First  rotate  PlaneSensor  to  horizontal  XZ  (Y  =  0)  plane  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 1.57</span>'&gt;
+</span>
+<div class="indented">
+                  <a name="MOVE_LAMP"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MOVE_LAMP</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="idName">LAMP_TRANSFORM</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF;">&lt;<span class="element">PlaneSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MOVE_LAMP" href="#MOVE_LAMP" class="idName">MOVE_LAMP</a>'&#160;<span class="attribute">description</span>='<span class="value">drag to move lamp</span>'&#160;<span class="attribute">maxPosition</span>='<span class="value">0.1 0.1</span>'&#160;<span class="attribute">minPosition</span>='<span class="value">-0.1 -0.1</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="LAMP_TRANSFORM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">LAMP_TRANSFORM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">MOVE_LAMP</span>.<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to LAMP_TRANSFORM"
+                      href="#LAMP_TRANSFORM"
+                      class="idName">LAMP_TRANSFORM</a>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                     <span title="XML comment">&lt;!--  Note  that  we  are  connecting  a  chain  of  behavior  engines  in  these  ROUTEs.  The  event  types  passed  via  each  ROUTE  must  each  match.  --&gt;</span>
+<br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_1"
+                            href="#ROUTE_1"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#MOVE_LAMP"
+                         class="idName">MOVE_LAMP</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">fromField</span>='<span class="value">translation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#LAMP_TRANSFORM"
+                         class="idName">LAMP_TRANSFORM</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'</span>/&gt;
+</span><br /><span title="XML comment">&lt;!--  Now  rotate  back  so  that  actual  geometry  remains  in  original  coordinate  system  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 -1.57</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.01</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.1</span>'/&gt;
+</span><br />
+<a name="WHITE"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to WHITE" href="#WHITE" class="idName">WHITE</a>'&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.9 .9 .9</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span>
+<div class="indented">
+                           <a name="MOVE_FIRST_ARM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MOVE_FIRST_ARM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="idName">FIRST_ARM_TRANSFORM</span>.<span class="attribute">set_rotation</span>
+                           </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF;">&lt;<span class="element">SphereSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MOVE_FIRST_ARM"
+                               href="#MOVE_FIRST_ARM"
+                               class="idName">MOVE_FIRST_ARM</a>'&#160;<span class="attribute">description</span>='<span class="value">rotate first arm</span>'&#160;<span class="attribute">offset</span>='<span class="value">1 0 0 -0.7</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="FIRST_ARM_TRANSFORM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">FIRST_ARM_TRANSFORM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">MOVE_FIRST_ARM</span>.<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                           </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to FIRST_ARM_TRANSFORM"
+                               href="#FIRST_ARM_TRANSFORM"
+                               class="idName">FIRST_ARM_TRANSFORM</a>'&#160;<span class="attribute">center</span>='<span class="value">0 -0.15 0</span>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 -0.7</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 0.15 0</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                              <a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                                 <a title="HTML bookmark for this ROUTE is #ROUTE_2"
+                                     href="#ROUTE_2"
+                                     class="route">ROUTE</a>
+                              </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                                  href="#MOVE_FIRST_ARM"
+                                  class="idName">MOVE_FIRST_ARM</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">rotation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                                  href="#FIRST_ARM_TRANSFORM"
+                                  class="idName">FIRST_ARM_TRANSFORM</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="LAMP_ARM"> </a> 
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to LAMP_ARM" href="#LAMP_ARM" class="idName">LAMP_ARM</a>'&gt;
+</span>
+<div class="indented">
+                                 <a name="LIGHT_BROWN"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to LIGHT_BROWN"
+                                     href="#LIGHT_BROWN"
+                                     class="idName">LIGHT_BROWN</a>'&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.6 .6 .2</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.3</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.01</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span>
+<div class="indented">
+                                 <a name="MOVE_SECOND_ARM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MOVE_SECOND_ARM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="idName">SECOND_ARM_TRANSFORM</span>.<span class="attribute">set_rotation</span>
+                                 </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF;">&lt;<span class="element">SphereSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MOVE_SECOND_ARM"
+                                     href="#MOVE_SECOND_ARM"
+                                     class="idName">MOVE_SECOND_ARM</a>'&#160;<span class="attribute">description</span>='<span class="value">rotate second arm</span>'&#160;<span class="attribute">offset</span>='<span class="value">1 0 0 1.9</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="SECOND_ARM_TRANSFORM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">SECOND_ARM_TRANSFORM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="idName">MOVE_SECOND_ARM</span>.<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                                 </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to SECOND_ARM_TRANSFORM"
+                                     href="#SECOND_ARM_TRANSFORM"
+                                     class="idName">SECOND_ARM_TRANSFORM</a>'&#160;<span class="attribute">center</span>='<span class="value">0 -0.15 0</span>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 1.9</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 0.3 0</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                                    <a name="ROUTE_3"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                                       <a title="HTML bookmark for this ROUTE is #ROUTE_3"
+                                           href="#ROUTE_3"
+                                           class="route">ROUTE</a>
+                                    </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                                        href="#MOVE_SECOND_ARM"
+                                        class="idName">MOVE_SECOND_ARM</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">rotation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                                        href="#SECOND_ARM_TRANSFORM"
+                                        class="idName">SECOND_ARM_TRANSFORM</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                                        href="#LAMP_ARM"
+                                        class="idName">LAMP_ARM</a>'/&gt;
+</span><br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span>
+<div class="indented">
+                                       <a name="MOVE_LAMP_SHADE"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MOVE_LAMP_SHADE</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="idName">LAMP_SHADE_TRANSFORM</span>.<span class="attribute">set_rotation</span>
+                                       </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF;">&lt;<span class="element">SphereSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MOVE_LAMP_SHADE"
+                                           href="#MOVE_LAMP_SHADE"
+                                           class="idName">MOVE_LAMP_SHADE</a>'&#160;<span class="attribute">description</span>='<span class="value">rotate lamp shade</span>'&#160;<span class="attribute">offset</span>='<span class="value">1 0 0 -1.25</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="LAMP_SHADE_TRANSFORM"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">LAMP_SHADE_TRANSFORM</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="idName">MOVE_LAMP_SHADE</span>.<span class="attribute">rotation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                                       </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to LAMP_SHADE_TRANSFORM"
+                                           href="#LAMP_SHADE_TRANSFORM"
+                                           class="idName">LAMP_SHADE_TRANSFORM</a>'&#160;<span class="attribute">center</span>='<span class="value">0 0.07 0</span>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 -1.25</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 0.075 0</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                                          <a name="ROUTE_4"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                                             <a title="HTML bookmark for this ROUTE is #ROUTE_4"
+                                                 href="#ROUTE_4"
+                                                 class="route">ROUTE</a>
+                                          </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                                              href="#MOVE_LAMP_SHADE"
+                                              class="idName">MOVE_LAMP_SHADE</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">rotation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                                              href="#LAMP_SHADE_TRANSFORM"
+                                              class="idName">LAMP_SHADE_TRANSFORM</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.1 .6 .6</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Cone is a geometry primitive node">&lt;<span class="element">Cone</span>&#160;<span class="attribute">bottom</span>='<span class="value">false</span>'&#160;<span class="attribute">bottomRadius</span>='<span class="value">0.12</span>'&#160;<span class="attribute">height</span>='<span class="value">0.15</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 -0.05 0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.4 .4 .1</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">.8 .8 .2</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.05</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="SpotLight is a light source that illuminates geometry within a conical beam">&lt;<span class="element">SpotLight</span>&#160;<span class="attribute">beamWidth</span>='<span class="value">1.570796</span>'&#160;<span class="attribute">color</span>='<span class="value">.8 .8 .1</span>'&#160;<span class="attribute">cutOffAngle</span>='<span class="value">.785398</span>'&#160;<span class="attribute">direction</span>='<span class="value">0 -1 0</span>'/&gt;
+</span>
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span>
+
+</div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <span style="color:white">&lt;!--</span>
+            <span class="div.indented">
+               <b>
+                  <a title="Event Graph ROUTE Table shows event connections"
+                      href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+               </b> shows event connections</span>
+            <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+            <b>
+               <i>Index for DEF nodes: </i>
+            </b>
+            <a title="go to this Transform node"
+                href="#FIRST_ARM_TRANSFORM"
+                class="idName">FIRST_ARM_TRANSFORM</a>,
+<a title="go to this Shape node" href="#LAMP_ARM" class="idName">LAMP_ARM</a>,
+<a title="go to this Transform node"
+                href="#LAMP_SHADE_TRANSFORM"
+                class="idName">LAMP_SHADE_TRANSFORM</a>,
+<a title="go to this Transform node"
+                href="#LAMP_TRANSFORM"
+                class="idName">LAMP_TRANSFORM</a>,
+<a title="go to this Appearance node"
+                href="#LIGHT_BROWN"
+                class="idName">LIGHT_BROWN</a>,
+<a title="go to this SphereSensor node"
+                href="#MOVE_FIRST_ARM"
+                class="idName">MOVE_FIRST_ARM</a>,
+<a title="go to this PlaneSensor node"
+                href="#MOVE_LAMP"
+                class="idName">MOVE_LAMP</a>,
+<a title="go to this SphereSensor node"
+                href="#MOVE_LAMP_SHADE"
+                class="idName">MOVE_LAMP_SHADE</a>,
+<a title="go to this SphereSensor node"
+                href="#MOVE_SECOND_ARM"
+                class="idName">MOVE_SECOND_ARM</a>,
+<a title="go to this Transform node"
+                href="#SECOND_ARM_TRANSFORM"
+                class="idName">SECOND_ARM_TRANSFORM</a>,
+<a title="go to this Appearance node" href="#WHITE" class="idName">WHITE</a>
+<br /><hr width="25%"/>
+            <b>
+               <i>Index for Viewpoint node: </i>
+            </b>
+            <a title="go to this Viewpoint node: Desk lamp"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">--&gt;</span>
+         <!-- apply-templates * | comment() complete -->
+      </div>
+      <div style="background-color:#DDEEFF;">
+         <br/>
+         <p style="text-align:center;">
+            <b>
+               <a name="EventGraph"> </a>
+               <a href="#EventGraph" title="bookmark link">Event Graph ROUTE Table</a> entries with 4 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE"
+                   title="X3D Tooltips: ROUTE"
+                   target="_tooltip_type">ROUTE</a> connections total, showing <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#Eventmodel"
+                   target="_blank"
+                   title="X3D 4.0 Architecture, Concepts, Event Model">X3D event-model relationships</a> for this scene.</b>
+         </p>
+         <p style="text-align:center;">Each row shows an <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#EventCascade"
+                target="_blank">event cascade</a> that may occur during a single <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#Timestamp"
+                target="_blank">timestamp</a> interval between frame renderings, as part of the <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#ExecutionModel"
+                target="_blank">X3D execution model</a>.</p>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;"><!--starting first row-->
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#MOVE_FIRST_ARM" title="DEF name">MOVE_FIRST_ARM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">SphereSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field SphereSensor.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SphereSensor.rotation">rotation_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_2" href="#ROUTE_2">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#FIRST_ARM_TRANSFORM" title="DEF name">FIRST_ARM_TRANSFORM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;">
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#MOVE_LAMP_SHADE" title="DEF name">MOVE_LAMP_SHADE</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">SphereSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field SphereSensor.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SphereSensor.rotation">rotation_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_4" href="#ROUTE_4">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#LAMP_SHADE_TRANSFORM" title="DEF name">LAMP_SHADE_TRANSFORM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;">
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#MOVE_SECOND_ARM" title="DEF name">MOVE_SECOND_ARM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">SphereSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field SphereSensor.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SphereSensor.rotation">rotation_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_3" href="#ROUTE_3">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#SECOND_ARM_TRANSFORM" title="DEF name">SECOND_ARM_TRANSFORM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;">
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#MOVE_LAMP" title="DEF name">MOVE_LAMP</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">PlaneSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field PlaneSensor.translation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#PlaneSensor.translation">translation_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFVec3f data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFVec3f">SFVec3f</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_1" href="#ROUTE_1">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#LAMP_TRANSFORM" title="DEF name">LAMP_TRANSFORM</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.translation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.translation">set_translation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFVec3f data type">
+                  <a title="X3D Tooltips: SFVec3f data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFVec3f">SFVec3f</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+      </div>
+      <hr style="width:100%"/>
+      <span style="color:white">--&gt;</span>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+Online at 
+<br/>
+         <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLampIndex.html"
+             target="_top">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLampIndex.html</a>
+         <span style="color:white">--&gt;</span>
+         <br/>
+         <span style="color:white">&lt;!--</span>
+Version control at 
+<br/>
+         <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLamp.x3d"
+             target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_9DeskLamp.x3d</a>
+         <span style="color:white">--&gt;</span>
+      </p>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color legend: X3D terminology <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches XML terminology 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;" >(Light-blue background: event-based behavior node or statement)</span>
+<span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background inside box: inserted documentation)</span>
+<span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a>, and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips, and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

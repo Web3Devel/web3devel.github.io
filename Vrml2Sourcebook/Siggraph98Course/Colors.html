@@ -1,0 +1,2728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Colors.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element   {color: navy}
+span.attribute {color: green}
+span.value     {color: teal}
+span.plain     {color: black}
+span.gray      {color: gray}
+span.idName    {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE;} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF;} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF;} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.boxedBlock          {border: 1px solid grey;  }
+div.center {text-align: center}
+div.indented {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+/* https://stackoverflow.com/questions/10769016/display-image-on-text-link-hover-css-only 
+    position: relative;
+    left: 20px;*/
+.child {
+    float: right;
+    height: 0px;
+}
+.parent:hover {
+    background-color: lightyellow;
+}
+.parent:hover .child {
+    background-color: lightyellow;
+    height: 200px;
+}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Interactive Profile supports Interchange geometry and animation, plus basic user interaction"><span class="attribute">profile</span>='<span class="value">Interactive</span>'</span>
+&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>
+&gt;
+</span>
+<div class="indented">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span>
+<div class="indented">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Colors.x3d">Colors.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">This scene presents some colorful frames. See the source comments regarding animation details.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">David R. Nadeau</span>'/&gt;
+</span><br />
+
+<span title="meta 'translator' provides name of person performing translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 July 1998</span>'/&gt;
+</span><br />
+
+<span title="meta 'translated' provides date of translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">2 February 2014</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="originals/colors.wrl">originals/colors.wrl</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98" target="_blank">http://www.siggraph.org/s98</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98/conference/courses/18.html"
+                   target="_blank">http://www.siggraph.org/s98/conference/courses/18.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0073.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0073.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0130.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0130.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0167.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0167.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Colors.x3d"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Colors.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+               <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span>
+</div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <span style="color:white">&lt;!--</span>
+               <span class="div.indented">
+                  <b>
+                     <a title="Event Graph ROUTE Table shows event connections"
+                         href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+                  </b> shows event connections</span>
+               <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+               <b>
+                  <i>Index for DEF nodes: </i>
+               </b>
+               <a title="go to this Viewpoint node" href="#Entry" class="idName">Entry</a>,
+<a title="go to this IndexedFaceSet node" href="#Frame" class="idName">Frame</a>,
+<a title="go to this Transform node" href="#Frame1" class="idName">Frame1</a>,
+<a title="go to this Transform node" href="#Frame2" class="idName">Frame2</a>,
+<a title="go to this Transform node" href="#Frame3" class="idName">Frame3</a>,
+<a title="go to this Transform node" href="#Frame4" class="idName">Frame4</a>,
+<a title="go to this Transform node" href="#Frame5" class="idName">Frame5</a>,
+<a title="go to this Transform node" href="#Frame6" class="idName">Frame6</a>,
+<a title="go to this Transform node" href="#Frame7" class="idName">Frame7</a>,
+<a title="go to this Transform node" href="#Frame8" class="idName">Frame8</a>,
+<a title="go to this Transform node" href="#Frame9" class="idName">Frame9</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot1"
+                   class="idName">Rot1</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot2"
+                   class="idName">Rot2</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot3"
+                   class="idName">Rot3</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot4"
+                   class="idName">Rot4</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot5"
+                   class="idName">Rot5</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot6"
+                   class="idName">Rot6</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot7"
+                   class="idName">Rot7</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot8"
+                   class="idName">Rot8</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rot9"
+                   class="idName">Rot9</a>,
+<a title="go to this TimeSensor node" href="#Timer1" class="idName">Timer1</a>,
+<a title="go to this TimeSensor node" href="#Timer2" class="idName">Timer2</a>,
+<a title="go to this TimeSensor node" href="#Timer3" class="idName">Timer3</a>,
+<a title="go to this TimeSensor node" href="#Timer4" class="idName">Timer4</a>,
+<a title="go to this TimeSensor node" href="#Timer5" class="idName">Timer5</a>,
+<a title="go to this TimeSensor node" href="#Timer6" class="idName">Timer6</a>,
+<a title="go to this TimeSensor node" href="#Timer7" class="idName">Timer7</a>,
+<a title="go to this TimeSensor node" href="#Timer8" class="idName">Timer8</a>,
+<a title="go to this TimeSensor node" href="#Timer9" class="idName">Timer9</a>,
+<a title="go to this TouchSensor node" href="#Touch" class="idName">Touch</a>
+<br /><hr width="25%"/>
+               <b>
+                  <i>Index for Viewpoint node: </i>
+               </b>
+               <a title="go to this Viewpoint node: Entry view"
+                   href="#Entry"
+                   class="idName">Entry</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">--&gt;</span>
+<br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span>
+<div class="indented">
+               <span title="XML comment">&lt;!--  Orientation  interpolators  slowly  spin  9  frames,  each  with  a  slightly  different  speed.  At  first  there  is  a  clear  structure,  but  as  the  animation  evolves  the  structure  dissolves  in  to  chaos.  If  you  wait  long  enough,  they'll  all  get  back  in  sync  again...  after  about  560  years!  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Things  to  experiment  with:  Try  using  other  time  keyValue  for  the  rotation  speed  of  the  9  squares.  If  the  keyValue  are  multiples  of  a  common  factor,  the  squares  will  get  in  sync  sooner  than  if  they  don't  have  a  common  factor.  --&gt;</span>
+<br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='<span class="value">"Copyright (c) 1996, David R. Nadeau"</span>'&#160;<span class="attribute">title</span>='<span class="value">Colors</span>'/&gt;
+</span><br />
+<a name="Entry"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Entry" href="#Entry" class="idName">Entry</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Colors.x3d._VP_Entry_view.png">Entry view</a>'&#160;<span class="attribute">position</span>='<span class="value">0.0 0.0 3.0</span>'/&gt;
+</span><br />
+
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>/&gt;
+</span><br />
+
+<span title="Background simulates ground and sky, using vertical arrays of wraparound color values or backdrop textures on all six sides">&lt;<span class="element">Background</span>/&gt;
+</span><br />
+<a name="Frame1"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame1</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_19"><i>from</i>&#160;<span class="idName">Rot1</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame1" href="#Frame1" class="idName">Frame1</a>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 0.0 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+<a name="Frame"> </a> 
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame" href="#Frame" class="idName">Frame</a>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 6 7 -1 1 2 17 16 -1 2 3 4 5 -1 19 18 5 6 -1 11 10 13 12 -1 10 9 20 21 -1 9 8 15 14 -1 22 23 14 13 -1 3 11 12 4 -1 4 12 15 7 -1 8 0 7 15 -1 0 8 11 3 -1 16 17 21 20 -1 21 17 18 22 -1 19 23 22 18 -1 16 20 23 19 -1</span>'&gt;
+</span>
+<div class="indented">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-1.0 -1.0 0.1 -0.9 -1.0 0.1 0.9 -1.0 0.1 1.0 -1.0 0.1 1.0 1.0 0.1 0.9 1.0 0.1 -0.9 1.0 0.1 -1.0 1.0 0.1 -1.0 -1.0 -0.1 -0.9 -1.0 -0.1 0.9 -1.0 -0.1 1.0 -1.0 -0.1 1.0 1.0 -0.1 0.9 1.0 -0.1 -0.9 1.0 -0.1 -1.0 1.0 -0.1 -0.9 -0.9 0.1 0.9 -0.9 0.1 0.9 0.9 0.1 -0.9 0.9 0.1 -0.9 -0.9 -0.1 0.9 -0.9 -0.1 0.9 0.9 -0.1 -0.9 0.9 -0.1</span>'/&gt;
+</span>
+</div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame2"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame2</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_20"><i>from</i>&#160;<span class="idName">Rot2</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame2" href="#Frame2" class="idName">Frame2</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -0.4</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 0.5 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame3"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame3</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_21"><i>from</i>&#160;<span class="idName">Rot3</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame3" href="#Frame3" class="idName">Frame3</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -0.8</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 1.0 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame4"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame4</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_22"><i>from</i>&#160;<span class="idName">Rot4</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame4" href="#Frame4" class="idName">Frame4</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -1.2</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.5 1.0 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame5"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame5</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_23"><i>from</i>&#160;<span class="idName">Rot5</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame5" href="#Frame5" class="idName">Frame5</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -1.6</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 1.0 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame6"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame6</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_24"><i>from</i>&#160;<span class="idName">Rot6</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame6" href="#Frame6" class="idName">Frame6</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -2.0</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 1.0 0.5</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame7"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame7</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_25"><i>from</i>&#160;<span class="idName">Rot7</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame7" href="#Frame7" class="idName">Frame7</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -2.4</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 1.0 1.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame8"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame8</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_26"><i>from</i>&#160;<span class="idName">Rot8</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame8" href="#Frame8" class="idName">Frame8</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -2.8</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 0.5 1.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Frame9"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Frame9</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_27"><i>from</i>&#160;<span class="idName">Rot9</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Frame9" href="#Frame9" class="idName">Frame9</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -3.2</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 0.0 1.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Frame"
+                         class="idName">Frame</a>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Touch"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Touch</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer1</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer2</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer3</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer4</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer5</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer6</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer7</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer8</span>.<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Timer9</span>.<span class="attribute">set_startTime</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TouchSensor tracks location &amp; state of the pointing device, and detects when user points at geometry" style="background-color:#DDEEFF;">&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Touch" href="#Touch" class="idName">Touch</a>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer1"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer1</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot1</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer1" href="#Timer1" class="idName">Timer1</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">10.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer2"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer2</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot2</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer2" href="#Timer2" class="idName">Timer2</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">11.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer3"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer3</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_12"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot3</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer3" href="#Timer3" class="idName">Timer3</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">12.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer4"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer4</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_13"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot4</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer4" href="#Timer4" class="idName">Timer4</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">13.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer5"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer5</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_14"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot5</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer5" href="#Timer5" class="idName">Timer5</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">14.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer6"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer6</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_15"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot6</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer6" href="#Timer6" class="idName">Timer6</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">15.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer7"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer7</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_16"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot7</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer7" href="#Timer7" class="idName">Timer7</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">16.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer8"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer8</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_17"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot8</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer8" href="#Timer8" class="idName">Timer8</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">17.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Timer9"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Timer9</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="idName">Touch</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_18"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rot9</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Timer9" href="#Timer9" class="idName">Timer9</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">18.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">-1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot1"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot1</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_10"><i>from</i>&#160;<span class="idName">Timer1</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_19"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame1</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot1" href="#Rot1" class="idName">Rot1</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot2"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot2</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_11"><i>from</i>&#160;<span class="idName">Timer2</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_20"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame2</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot2" href="#Rot2" class="idName">Rot2</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot3"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot3</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_12"><i>from</i>&#160;<span class="idName">Timer3</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_21"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame3</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot3" href="#Rot3" class="idName">Rot3</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot4"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot4</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_13"><i>from</i>&#160;<span class="idName">Timer4</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_22"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame4</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot4" href="#Rot4" class="idName">Rot4</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot5"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot5</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_14"><i>from</i>&#160;<span class="idName">Timer5</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_23"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame5</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot5" href="#Rot5" class="idName">Rot5</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot6"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot6</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_15"><i>from</i>&#160;<span class="idName">Timer6</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_24"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame6</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot6" href="#Rot6" class="idName">Rot6</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot7"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot7</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_16"><i>from</i>&#160;<span class="idName">Timer7</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_25"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame7</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot7" href="#Rot7" class="idName">Rot7</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot8"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot8</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_17"><i>from</i>&#160;<span class="idName">Timer8</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_26"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame8</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot8" href="#Rot8" class="idName">Rot8</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rot9"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rot9</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_18"><i>from</i>&#160;<span class="idName">Timer9</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_27"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Frame9</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rot9" href="#Rot9" class="idName">Rot9</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.14 0.0 0.0 1.0 6.28</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_1"
+                      href="#ROUTE_1"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer1"
+                   class="idName">Timer1</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_2"
+                      href="#ROUTE_2"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer2"
+                   class="idName">Timer2</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_3"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_3"
+                      href="#ROUTE_3"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer3"
+                   class="idName">Timer3</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_4"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_4"
+                      href="#ROUTE_4"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer4"
+                   class="idName">Timer4</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_5"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_5"
+                      href="#ROUTE_5"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer5"
+                   class="idName">Timer5</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_6"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_6"
+                      href="#ROUTE_6"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer6"
+                   class="idName">Timer6</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_7"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_7"
+                      href="#ROUTE_7"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer7"
+                   class="idName">Timer7</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_8"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_8"
+                      href="#ROUTE_8"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer8"
+                   class="idName">Timer8</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_9"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_9"
+                      href="#ROUTE_9"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Touch"
+                   class="idName">Touch</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer9"
+                   class="idName">Timer9</a>'<span title="X3D Tooltips: SFTime data type">&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_10"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_10"
+                      href="#ROUTE_10"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer1"
+                   class="idName">Timer1</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot1"
+                   class="idName">Rot1</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_11"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_11"
+                      href="#ROUTE_11"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer2"
+                   class="idName">Timer2</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot2"
+                   class="idName">Rot2</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_12"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_12"
+                      href="#ROUTE_12"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer3"
+                   class="idName">Timer3</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot3"
+                   class="idName">Rot3</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_13"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_13"
+                      href="#ROUTE_13"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer4"
+                   class="idName">Timer4</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot4"
+                   class="idName">Rot4</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_14"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_14"
+                      href="#ROUTE_14"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer5"
+                   class="idName">Timer5</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot5"
+                   class="idName">Rot5</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_15"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_15"
+                      href="#ROUTE_15"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer6"
+                   class="idName">Timer6</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot6"
+                   class="idName">Rot6</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_16"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_16"
+                      href="#ROUTE_16"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer7"
+                   class="idName">Timer7</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot7"
+                   class="idName">Rot7</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_17"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_17"
+                      href="#ROUTE_17"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer8"
+                   class="idName">Timer8</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot8"
+                   class="idName">Rot8</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_18"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_18"
+                      href="#ROUTE_18"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Timer9"
+                   class="idName">Timer9</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot9"
+                   class="idName">Rot9</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_19"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_19"
+                      href="#ROUTE_19"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot1"
+                   class="idName">Rot1</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame1"
+                   class="idName">Frame1</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_20"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_20"
+                      href="#ROUTE_20"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot2"
+                   class="idName">Rot2</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame2"
+                   class="idName">Frame2</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_21"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_21"
+                      href="#ROUTE_21"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot3"
+                   class="idName">Rot3</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame3"
+                   class="idName">Frame3</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_22"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_22"
+                      href="#ROUTE_22"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot4"
+                   class="idName">Rot4</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame4"
+                   class="idName">Frame4</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_23"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_23"
+                      href="#ROUTE_23"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot5"
+                   class="idName">Rot5</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame5"
+                   class="idName">Frame5</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_24"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_24"
+                      href="#ROUTE_24"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot6"
+                   class="idName">Rot6</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame6"
+                   class="idName">Frame6</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_25"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_25"
+                      href="#ROUTE_25"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot7"
+                   class="idName">Rot7</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame7"
+                   class="idName">Frame7</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_26"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_26"
+                      href="#ROUTE_26"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot8"
+                   class="idName">Rot8</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame8"
+                   class="idName">Frame8</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_27"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_27"
+                      href="#ROUTE_27"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rot9"
+                   class="idName">Rot9</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Frame9"
+                   class="idName">Frame9</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span>
+</div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span>
+
+</div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <span style="color:white">&lt;!--</span>
+            <span class="div.indented">
+               <b>
+                  <a title="Event Graph ROUTE Table shows event connections"
+                      href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+               </b> shows event connections</span>
+            <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+            <b>
+               <i>Index for DEF nodes: </i>
+            </b>
+            <a title="go to this Viewpoint node" href="#Entry" class="idName">Entry</a>,
+<a title="go to this IndexedFaceSet node" href="#Frame" class="idName">Frame</a>,
+<a title="go to this Transform node" href="#Frame1" class="idName">Frame1</a>,
+<a title="go to this Transform node" href="#Frame2" class="idName">Frame2</a>,
+<a title="go to this Transform node" href="#Frame3" class="idName">Frame3</a>,
+<a title="go to this Transform node" href="#Frame4" class="idName">Frame4</a>,
+<a title="go to this Transform node" href="#Frame5" class="idName">Frame5</a>,
+<a title="go to this Transform node" href="#Frame6" class="idName">Frame6</a>,
+<a title="go to this Transform node" href="#Frame7" class="idName">Frame7</a>,
+<a title="go to this Transform node" href="#Frame8" class="idName">Frame8</a>,
+<a title="go to this Transform node" href="#Frame9" class="idName">Frame9</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot1"
+                class="idName">Rot1</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot2"
+                class="idName">Rot2</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot3"
+                class="idName">Rot3</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot4"
+                class="idName">Rot4</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot5"
+                class="idName">Rot5</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot6"
+                class="idName">Rot6</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot7"
+                class="idName">Rot7</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot8"
+                class="idName">Rot8</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rot9"
+                class="idName">Rot9</a>,
+<a title="go to this TimeSensor node" href="#Timer1" class="idName">Timer1</a>,
+<a title="go to this TimeSensor node" href="#Timer2" class="idName">Timer2</a>,
+<a title="go to this TimeSensor node" href="#Timer3" class="idName">Timer3</a>,
+<a title="go to this TimeSensor node" href="#Timer4" class="idName">Timer4</a>,
+<a title="go to this TimeSensor node" href="#Timer5" class="idName">Timer5</a>,
+<a title="go to this TimeSensor node" href="#Timer6" class="idName">Timer6</a>,
+<a title="go to this TimeSensor node" href="#Timer7" class="idName">Timer7</a>,
+<a title="go to this TimeSensor node" href="#Timer8" class="idName">Timer8</a>,
+<a title="go to this TimeSensor node" href="#Timer9" class="idName">Timer9</a>,
+<a title="go to this TouchSensor node" href="#Touch" class="idName">Touch</a>
+<br /><hr width="25%"/>
+            <b>
+               <i>Index for Viewpoint node: </i>
+            </b>
+            <a title="go to this Viewpoint node: Entry view"
+                href="#Entry"
+                class="idName">Entry</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">--&gt;</span>
+         <!-- apply-templates * | comment() complete -->
+      </div>
+      <div style="background-color:#DDEEFF;">
+         <br/>
+         <p style="text-align:center;">
+            <b>
+               <a name="EventGraph"> </a>
+               <a href="#EventGraph" title="bookmark link">Event Graph ROUTE Table</a> entries with 27 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE"
+                   title="X3D Tooltips: ROUTE"
+                   target="_tooltip_type">ROUTE</a> connections total, showing <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#Eventmodel"
+                   target="_blank"
+                   title="X3D 4.0 Architecture, Concepts, Event Model">X3D event-model relationships</a> for this scene.</b>
+         </p>
+         <p style="text-align:center;">Each row shows an <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#EventCascade"
+                target="_blank">event cascade</a> that may occur during a single <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#Timestamp"
+                target="_blank">timestamp</a> interval between frame renderings, as part of the <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#ExecutionModel"
+                target="_blank">X3D execution model</a>.</p>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;"><!--starting first row-->
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_1" href="#ROUTE_1">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer1" title="DEF name">Timer1</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer1" title="DEF name">Timer1</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_10" href="#ROUTE_10">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot1" title="DEF name">Rot1</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot1" title="DEF name">Rot1</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_19" href="#ROUTE_19">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame1" title="DEF name">Frame1</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_2" href="#ROUTE_2">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer2" title="DEF name">Timer2</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer2" title="DEF name">Timer2</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_11" href="#ROUTE_11">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot2" title="DEF name">Rot2</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot2" title="DEF name">Rot2</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_20" href="#ROUTE_20">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame2" title="DEF name">Frame2</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_3" href="#ROUTE_3">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer3" title="DEF name">Timer3</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer3" title="DEF name">Timer3</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_12" href="#ROUTE_12">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot3" title="DEF name">Rot3</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot3" title="DEF name">Rot3</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_21" href="#ROUTE_21">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame3" title="DEF name">Frame3</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_4" href="#ROUTE_4">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer4" title="DEF name">Timer4</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer4" title="DEF name">Timer4</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_13" href="#ROUTE_13">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot4" title="DEF name">Rot4</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot4" title="DEF name">Rot4</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_22" href="#ROUTE_22">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame4" title="DEF name">Frame4</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_5" href="#ROUTE_5">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer5" title="DEF name">Timer5</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer5" title="DEF name">Timer5</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_14" href="#ROUTE_14">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot5" title="DEF name">Rot5</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot5" title="DEF name">Rot5</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_23" href="#ROUTE_23">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame5" title="DEF name">Frame5</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_6" href="#ROUTE_6">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer6" title="DEF name">Timer6</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer6" title="DEF name">Timer6</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_15" href="#ROUTE_15">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot6" title="DEF name">Rot6</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot6" title="DEF name">Rot6</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_24" href="#ROUTE_24">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame6" title="DEF name">Frame6</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_7" href="#ROUTE_7">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer7" title="DEF name">Timer7</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer7" title="DEF name">Timer7</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_16" href="#ROUTE_16">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot7" title="DEF name">Rot7</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot7" title="DEF name">Rot7</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_25" href="#ROUTE_25">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame7" title="DEF name">Frame7</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_8" href="#ROUTE_8">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer8" title="DEF name">Timer8</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer8" title="DEF name">Timer8</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_17" href="#ROUTE_17">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot8" title="DEF name">Rot8</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot8" title="DEF name">Rot8</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_26" href="#ROUTE_26">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame8" title="DEF name">Frame8</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Touch" title="DEF name">Touch</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TouchSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TouchSensor.touchTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor.touchTime">touchTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_9" href="#ROUTE_9">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Timer9" title="DEF name">Timer9</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.startTime"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.startTime">set_startTime</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFTime data type">
+                  <a title="X3D Tooltips: SFTime data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFTime">SFTime</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Timer9" title="DEF name">Timer9</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_18" href="#ROUTE_18">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Rot9" title="DEF name">Rot9</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:white; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:white;" title="">
+               <a href="#Rot9" title="DEF name">Rot9</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_27" href="#ROUTE_27">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=3">(3)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Frame9" title="DEF name">Frame9</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+         <br/>
+      </div>
+      <hr style="width:100%"/>
+      <span style="color:white">--&gt;</span>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+Online at 
+<br/>
+         <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/ColorsIndex.html"
+             target="_top">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/ColorsIndex.html</a>
+         <span style="color:white">--&gt;</span>
+         <br/>
+         <span style="color:white">&lt;!--</span>
+Version control at 
+<br/>
+         <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Colors.x3d"
+             target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Colors.x3d</a>
+         <span style="color:white">--&gt;</span>
+      </p>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color legend: X3D terminology <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches XML terminology 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;" >(Light-blue background: event-based behavior node or statement)</span>
+<span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background inside box: inserted documentation)</span>
+<span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a>, and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips, and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

@@ -1,0 +1,203 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_10BlinkingRedLightbulb.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure20_10BlinkingRedLightbulb.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A blinking lightbulb showing multiple lighting effects.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 20.10, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch20/20fig10.htm' ;
+  x3do:name 'reference' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '8 September 2000' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Xj3D run-time exception' ;
+  x3do:name 'warning' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_10BlinkingRedLightbulb.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure20_10BlinkingRedLightbulb.x3d" .
+:meta dcterms:description "A blinking lightbulb showing multiple lighting effects." .
+:meta dcterms:creator "Figure 20.10, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch20/20fig10.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "8 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:warning "Xj3D run-time exception" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_10BlinkingRedLightbulb.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Transform_2_4, :Clock, :BulbIntensity, :BulbDiffuse, :BulbEmissive ;
+  x3do:hasROUTE :ROUTE_2_9, :ROUTE_2_10, :ROUTE_2_11, :ROUTE_2_12, :ROUTE_2_13, :ROUTE_2_14 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure20_10BlinkingRedLightbulb.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Blinking red light bulb' ;
+  x3do:orientation ( 1 0 0 1.1 ) ;
+  x3do:position ( 0 2 0.25 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1 ;
+  x3do:translation ( 0 3 0 ) .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :CeilingDirectionalLight, :BulbLight, :Shape_2_4_1_3, :Transform_2_4_1_4 ;
+  x3do:translation ( 0 -0.05 0 ) .
+:CeilingDirectionalLight a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:DEF 'CeilingDirectionalLight' ;
+  x3do:ambientIntensity 1 ;
+  x3do:direction ( 0 1 0 ) ;
+  x3do:intensity 0.15 .
+:BulbLight a owl:NamedIndividual, x3do:PointLight ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:DEF 'BulbLight' ;
+  x3do:color ( 1 0 0 ) ;
+  x3do:intensity 0.5 ;
+  x3do:radius 16 .
+:Shape_2_4_1_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasGeometry :Bulb ;
+  x3do:hasAppearance :Appearance_2_4_1_3_2 .
+:Bulb a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_1_3 ;
+  x3do:DEF 'Bulb' ;
+  x3do:radius 0.04 .
+:Appearance_2_4_1_3_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_3 ;
+  x3do:hasMaterial :BulbMaterial .
+:BulbMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_3_2 ;
+  x3do:DEF 'BulbMaterial' ;
+  x3do:diffuseColor ( 0 0 0 ) ;
+  x3do:emissiveColor ( 1 0.3 0.3 ) .
+:Transform_2_4_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasChildren :Shape_2_4_1_4_1 ;
+  x3do:translation ( -0.25 0.05 -0.25 ) .
+:Shape_2_4_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1_4 ;
+  x3do:hasGeometry :ElevationGrid_2_4_1_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_4_1_2 .
+:ElevationGrid_2_4_1_4_1_1 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :Shape_2_4_1_4_1 ;
+  x3do:height ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ) ;
+  x3do:solid false ;
+  x3do:xDimension 11 ;
+  x3do:xSpacing 0.05 ;
+  x3do:zDimension 11 ;
+  x3do:zSpacing 0.05 .
+:Appearance_2_4_1_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_4_1_2_1 .
+:Material_2_4_1_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_4_1_2 ;
+  x3do:diffuseColor ( 1 1 1 ) .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:BulbIntensity a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BulbIntensity' ;
+  x3do:key ( 0 0.5 0.5 1 ) ;
+  x3do:keyValue ( 0.8 0.8 0 0 ) .
+:BulbDiffuse a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BulbDiffuse' ;
+  x3do:key ( 0 0.5 0.5 1 ) ;
+  x3do:keyValue ( 0.3 0.3 0.3 0.3 0.3 0.3 1 0.3 0.3 1 0.3 0.3 ) .
+:BulbEmissive a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BulbEmissive' ;
+  x3do:key ( 0 0.5 0.5 1 ) ;
+  x3do:keyValue ( 1 0.3 0.3 1 0.3 0.3 0 0 0 0 0 0 ) .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BulbIntensity' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BulbDiffuse' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BulbEmissive' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BulbIntensity' ;
+  x3do:toField 'set_intensity' ;
+  x3do:toNode 'BulbLight' .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BulbDiffuse' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'BulbMaterial' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BulbEmissive' ;
+  x3do:toField 'set_emissiveColor' ;
+  x3do:toNode 'BulbMaterial' .

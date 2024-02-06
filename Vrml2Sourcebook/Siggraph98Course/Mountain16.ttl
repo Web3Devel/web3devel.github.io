@@ -1,0 +1,134 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Mountain16.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Mountain16.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Low-resolution mountain.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/mount16.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0201.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Mountain16.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Mountain16.x3d" .
+:meta dcterms:description "Low-resolution mountain." .
+:meta dcterms:creator "John L. Moreland" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/mount16.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0201.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Mountain16.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Shape_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, John L. Moreland"' ;
+  x3do:title 'Low-res Mountain' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 -0.2 ) ;
+  x3do:position ( 1.2 0.9 4.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Shape_2_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_4_1 ;
+  x3do:hasGeometry :ElevationGrid_2_4_2 .
+:Appearance_2_4_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasMaterial :Material_2_4_1_1 .
+:Material_2_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1 .
+:ElevationGrid_2_4_2 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:height ( 0.019608 0.031373 0.043137 0.05098 0.054902 0.054902 0.066667 0.062745 0.062745 0.062745 0.058824 0.054902 0.047059 0.047059 0.035294 0.031373 0.035294 0.035294 0.039216 0.054902 0.062745 0.066667 0.070588 0.070588 0.070588 0.070588 0.098039 0.129412 0.086275 0.078431 0.066667 0.043137 0.039216 0.05098 0.058824 0.07451 0.066667 0.062745 0.054902 0.062745 0.058824 0.066667 0.145098 0.27451 0.227451 0.168627 0.07451 0.05098 0.035294 0.058824 0.070588 0.07451 0.062745 0.058824 0.047059 0.039216 0.054902 0.058824 0.211765 0.356863 0.32549 0.223529 0.07451 0.05098 0.054902 0.070588 0.07451 0.078431 0.054902 0.047059 0.035294 0.027451 0.086275 0.129412 0.231373 0.372549 0.321569 0.231373 0.082353 0.058824 0.054902 0.066667 0.082353 0.07451 0.035294 0.023529 0.027451 0.058824 0.454902 0.517647 0.239216 0.121569 0.094118 0.078431 0.058824 0.058824 0.062745 0.066667 0.07451 0.047059 0.023529 0.027451 0.129412 0.47451 0.815686 0.701961 0.317647 0.054902 0.035294 0.05098 0.066667 0.066667 0.066667 0.062745 0.066667 0.05098 0.031373 0.082353 0.27451 0.780392 0.956863 0.827451 0.25098 0.054902 0.035294 0.047059 0.062745 0.058824 0.078431 0.078431 0.058824 0.054902 0.113725 0.07451 0.282353 0.858824 0.945098 0.745098 0.203922 0.031373 0.027451 0.031373 0.043137 0.062745 0.070588 0.094118 0.109804 0.117647 0.192157 0.282353 0.231373 0.517647 0.92549 0.929412 0.423529 0.027451 0.031373 0.05098 0.058824 0.066667 0.058824 0.082353 0.160784 0.223529 0.329412 0.329412 0.458824 0.733333 0.901961 0.858824 0.607843 0.164706 0.054902 0.047059 0.062745 0.062745 0.058824 0.090196 0.180392 0.254902 0.243137 0.164706 0.443137 0.768627 0.796078 0.772549 0.701961 0.298039 0.290196 0.152941 0.098039 0.066667 0.05098 0.066667 0.101961 0.152941 0.086275 0.094118 0.341176 0.611765 0.662745 0.584314 0.596078 0.470588 0.396078 0.282353 0.137255 0.058824 0.047059 0.054902 0.062745 0.070588 0.058824 0.066667 0.152941 0.388235 0.368627 0.47451 0.439216 0.380392 0.32549 0.164706 0.058824 0.05098 0.035294 0.05098 0.058824 0.062745 0.066667 0.07451 0.133333 0.192157 0.172549 0.098039 0.290196 0.27451 0.133333 0.105882 0.054902 0.047059 0.035294 0.043137 0.05098 0.054902 0.062745 0.066667 0.054902 0.082353 0.098039 0.07451 0.098039 0.078431 0.062745 0.062745 0.054902 0.039216 ) ;
+  x3do:xDimension 16 ;
+  x3do:xSpacing 0.16 ;
+  x3do:zDimension 16 ;
+  x3do:zSpacing 0.16 .

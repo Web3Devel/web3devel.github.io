@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 15 Extrusion</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure15_07ExtrudedCylinder.x3d._VP_Extruded_cylinder.png': { 'caption': '[1] Figure15_07ExtrudedCylinder.x3d Extruded cylinder' },
+      'Figure15_07ExtrudedCylinder.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure15_07ExtrudedCylinder.x3d (default X3D view from 0 0 10)' },
+      'Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png': { 'caption': '[3] Figure15_08ExtrudedHalfCylinderWithCaps.x3d Extruded half cylinder with end caps' },
+      'Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure15_08ExtrudedHalfCylinderWithCaps.x3d (default X3D view)' },
+      'Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png': { 'caption': '[5] Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d Extruded half cylinder with end caps' },
+      'Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d (default X3D view)' },
+      'Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png': { 'caption': '[7] Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d Extruded half cylinder with end caps' },
+      'Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d (default X3D view)' },
+      'Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png': { 'caption': '[9] Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d Extruded half cylinder with end caps' },
+      'Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d' },
+      'Figure15_10ExtrudedRoom.x3d._VP_Extruded_room_with_a_doorway.png': { 'caption': '[11] Figure15_10ExtrudedRoom.x3d Extruded room with a doorway' },
+      'Figure15_10ExtrudedRoom.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure15_10ExtrudedRoom.x3d (default X3D view from 0 0 10)' },
+      'Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png': { 'caption': '[13] Figure15_10ExtrudedRoomWithAxes.x3d Extruded room with a doorway' },
+      'Figure15_10ExtrudedRoomWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure15_10ExtrudedRoomWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Extruded_playground_slide.png': { 'caption': '[15] Figure15_11ExtrudedPlaygroundSlide.x3d Extruded playground slide' },
+      'Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure15_11ExtrudedPlaygroundSlide.x3d (default X3D view from 0 0 10)' },
+      'Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Extruded_playground_slide.png': { 'caption': '[17] Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d Extruded playground slide' },
+      'Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d (default X3D view)' },
+<!--not found:       'Figure15_12Torus.x3d._VP_Torus_from_above.png': { 'caption': '[19] Figure15_12Torus.x3d Torus from above' },-->
+      'Figure15_12Torus.x3d._VP_Torus_from_ahead.png': { 'caption': '[20] Figure15_12Torus.x3d Torus from ahead' },
+      'Figure15_12Torus.x3d._VP_Default_viewpoint.png': { 'caption': '[21] Figure15_12Torus.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'Figure15_12TorusWithAxes.x3d._VP_Torus_from_above.png': { 'caption': '[22] Figure15_12TorusWithAxes.x3d Torus from above' },-->
+      'Figure15_12TorusWithAxes.x3d._VP_Torus_from_ahead.png': { 'caption': '[23] Figure15_12TorusWithAxes.x3d Torus from ahead' },
+      'Figure15_12TorusWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure15_12TorusWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_13ExtrudedPyramid.x3d._VP_Extruded_pyramid.png': { 'caption': '[25] Figure15_13ExtrudedPyramid.x3d Extruded pyramid' },
+      'Figure15_13ExtrudedPyramid.x3d._VP_Default_viewpoint.png': { 'caption': '[26] Figure15_13ExtrudedPyramid.x3d (default X3D view from 0 0 10)' },
+      'Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Extruded_pyramid.png': { 'caption': '[27] Figure15_13ExtrudedPyramidWithAxes.x3d Extruded pyramid' },
+      'Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[28] Figure15_13ExtrudedPyramidWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_14ExtrudedVase.x3d._VP_Extruded_vase.png': { 'caption': '[29] Figure15_14ExtrudedVase.x3d Extruded vase' },
+      'Figure15_14ExtrudedVase.x3d._VP_Default_viewpoint.png': { 'caption': '[30] Figure15_14ExtrudedVase.x3d (default X3D view from 0 0 10)' },
+      'Figure15_14ExtrudedVaseWithAxes.x3d._VP_Extruded_vase.png': { 'caption': '[31] Figure15_14ExtrudedVaseWithAxes.x3d Extruded vase' },
+      'Figure15_14ExtrudedVaseWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[32] Figure15_14ExtrudedVaseWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_15TwistedBar.x3d._VP_Twisted_bar_using_extrusion_orientations.png': { 'caption': '[33] Figure15_15TwistedBar.x3d Twisted bar using extrusion orientations' },
+      'Figure15_15TwistedBar.x3d._VP_Default_viewpoint.png': { 'caption': '[34] Figure15_15TwistedBar.x3d (default X3D view from 0 0 10)' },
+      'Figure15_15TwistedBarWithAxes.x3d._VP_Twisted_bar_using_extrusion_orientations.png': { 'caption': '[35] Figure15_15TwistedBarWithAxes.x3d Twisted bar using extrusion orientations' },
+      'Figure15_15TwistedBarWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[36] Figure15_15TwistedBarWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_16ExtrudedLipstick.x3d._VP_Lipstick_using_extrusion_orientation.png': { 'caption': '[37] Figure15_16ExtrudedLipstick.x3d Lipstick using extrusion orientation' },
+      'Figure15_16ExtrudedLipstick.x3d._VP_Default_viewpoint.png': { 'caption': '[38] Figure15_16ExtrudedLipstick.x3d (default X3D view from 0 0 10)' },
+      'Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Lipstick_using_extrusion_orientation.png': { 'caption': '[39] Figure15_16ExtrudedLipstickWithAxes.x3d Lipstick using extrusion orientation' },
+      'Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[40] Figure15_16ExtrudedLipstickWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure15_17WigglingSnake.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png': { 'caption': '[41] Figure15_17WigglingSnake.x3d Wiggling snake, seen from behind, using Extrusion and OrientationInterpolator' },
+      'Figure15_17WigglingSnake.x3d._VP_Snake_head.png': { 'caption': '[42] Figure15_17WigglingSnake.x3d Snake head' },
+      'Figure15_17WigglingSnake.x3d._VP_Default_viewpoint.png': { 'caption': '[43] Figure15_17WigglingSnake.x3d (default X3D view from 0 0 10)' },
+      'Figure15_17WigglingSnakeWithAxes.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png': { 'caption': '[44] Figure15_17WigglingSnakeWithAxes.x3d Wiggling snake, seen from behind, using Extrusion and OrientationInterpolator' },
+      'Figure15_17WigglingSnakeWithAxes.x3d._VP_Snake_head.png': { 'caption': '[45] Figure15_17WigglingSnakeWithAxes.x3d Snake head' },
+      'Figure15_17WigglingSnakeWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[46] Figure15_17WigglingSnakeWithAxes.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14ElevationGrid/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter15Extrusion/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16Color/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 15 Extrusion</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Extruded_cylinder.png"
+                  alt="[1] Figure15_07ExtrudedCylinder.x3d Extruded cylinder"
+                  title="[1] Figure15_07ExtrudedCylinder.x3d Extruded cylinder"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter15Extrusion/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+				
+                    <p>
+						Extrusion geometry is defined by a 2D cross-section that is stretched and rotated around a central spine.
+                    </p>
+                    
+
+
+                    <p>
+                        Extruded shapes are very common: tubes, pipes, bars, vases, donuts, and other tricky uses.
+                        An Extrusion node efficiently creates extruded shapes.
+                        The crossSection field specifies the cross-section, and the spine field specifies the sweep path.
+                        The scale and orientation fields specify scaling and rotation at each spine point.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch15.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0208.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 15.10 Extruded Room With Axes" title="Figure 15.10 Extruded Room With Axes" hspace="10" 
+                          src="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+21 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 44 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_07ExtrudedCylinderIndex.html">
+                           <img src="_thumbnails/Figure15_07ExtrudedCylinderThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_07ExtrudedCylinder"
+                                 title="X3D model Figure15_07ExtrudedCylinder.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_07ExtrudedCylinderIndex.html"
+                            title="X3D model Figure15_07ExtrudedCylinder.x3d">Figure 15 07 Extruded Cylinder.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Extruded_cylinder.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Extruded_cylinder.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Extruded_cylinder.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure15_07ExtrudedCylinder.x3d Extruded cylinder</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_07ExtrudedCylinder.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure15_07ExtrudedCylinder.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_08ExtrudedHalfCylinderWithCapsIndex.html">
+                           <img src="_thumbnails/Figure15_08ExtrudedHalfCylinderWithCapsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_08ExtrudedHalfCylinderWithCaps"
+                                 title="X3D model Figure15_08ExtrudedHalfCylinderWithCaps.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_08ExtrudedHalfCylinderWithCapsIndex.html"
+                            title="X3D model Figure15_08ExtrudedHalfCylinderWithCaps.x3d">Figure 15 08 Extruded Half Cylinder With Caps.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure15_08ExtrudedHalfCylinderWithCaps.x3d Extruded half cylinder with end caps</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCaps.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure15_08ExtrudedHalfCylinderWithCaps.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_08ExtrudedHalfCylinderWithCapsWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_08ExtrudedHalfCylinderWithCapsWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_08ExtrudedHalfCylinderWithCapsWithAxes"
+                                 title="X3D model Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_08ExtrudedHalfCylinderWithCapsWithAxesIndex.html"
+                            title="X3D model Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d">Figure 15 08 Extruded Half Cylinder With Caps With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d Extruded half cylinder with end caps</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure15_08ExtrudedHalfCylinderWithCapsWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_09ExtrudedHalfCylinderWithoutCapsIndex.html">
+                           <img src="_thumbnails/Figure15_09ExtrudedHalfCylinderWithoutCapsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_09ExtrudedHalfCylinderWithoutCaps"
+                                 title="X3D model Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_09ExtrudedHalfCylinderWithoutCapsIndex.html"
+                            title="X3D model Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d">Figure 15 09 Extruded Half Cylinder Without Caps.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d Extruded half cylinder with end caps</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure15_09ExtrudedHalfCylinderWithoutCaps.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes"
+                                 title="X3D model Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxesIndex.html"
+                            title="X3D model Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d">Figure 15 09 Extruded Half Cylinder Without Caps With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Extruded_half_cylinder_with_end_caps.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d Extruded half cylinder with end caps</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure15_09ExtrudedHalfCylinderWithoutCapsWithAxes.x3d</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_10ExtrudedRoomIndex.html">
+                           <img src="_thumbnails/Figure15_10ExtrudedRoomThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_10ExtrudedRoom"
+                                 title="X3D model Figure15_10ExtrudedRoom.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_10ExtrudedRoomIndex.html"
+                            title="X3D model Figure15_10ExtrudedRoom.x3d">Figure 15 10 Extruded Room.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Extruded_room_with_a_doorway.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Extruded_room_with_a_doorway.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Extruded_room_with_a_doorway.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure15_10ExtrudedRoom.x3d Extruded room with a doorway</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_10ExtrudedRoom.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure15_10ExtrudedRoom.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_10ExtrudedRoomWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_10ExtrudedRoomWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_10ExtrudedRoomWithAxes"
+                                 title="X3D model Figure15_10ExtrudedRoomWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_10ExtrudedRoomWithAxesIndex.html"
+                            title="X3D model Figure15_10ExtrudedRoomWithAxes.x3d">Figure 15 10 Extruded Room With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure15_10ExtrudedRoomWithAxes.x3d Extruded room with a doorway</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_10ExtrudedRoomWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure15_10ExtrudedRoomWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_11ExtrudedPlaygroundSlideIndex.html">
+                           <img src="_thumbnails/Figure15_11ExtrudedPlaygroundSlideThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_11ExtrudedPlaygroundSlide"
+                                 title="X3D model Figure15_11ExtrudedPlaygroundSlide.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_11ExtrudedPlaygroundSlideIndex.html"
+                            title="X3D model Figure15_11ExtrudedPlaygroundSlide.x3d">Figure 15 11 Extruded Playground Slide.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Extruded_playground_slide.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Extruded_playground_slide.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Extruded_playground_slide.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure15_11ExtrudedPlaygroundSlide.x3d Extruded playground slide</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlide.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] Figure15_11ExtrudedPlaygroundSlide.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_11ExtrudedPlaygroundSlideWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_11ExtrudedPlaygroundSlideWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_11ExtrudedPlaygroundSlideWithAxes"
+                                 title="X3D model Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_11ExtrudedPlaygroundSlideWithAxesIndex.html"
+                            title="X3D model Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d">Figure 15 11 Extruded Playground Slide With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Extruded_playground_slide.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Extruded_playground_slide.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Extruded_playground_slide.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d Extruded playground slide</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure15_11ExtrudedPlaygroundSlideWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure15_12TorusIndex.html">
+                           <img src="_thumbnails/Figure15_12TorusThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_12Torus"
+                                 title="X3D model Figure15_12Torus.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure15_12TorusIndex.html"
+                            title="X3D model Figure15_12Torus.x3d">Figure 15 12 Torus.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure15_12Torus.x3d._VP_Torus_from_above.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[19] Figure15_12Torus.x3d Torus from above</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_12Torus.x3d._VP_Torus_from_ahead.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_12Torus.x3d._VP_Torus_from_ahead.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_12Torus.x3d._VP_Torus_from_ahead.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Figure15_12Torus.x3d Torus from ahead</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_12Torus.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_12Torus.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_12Torus.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Figure15_12Torus.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure15_12TorusWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_12TorusWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_12TorusWithAxes"
+                                 title="X3D model Figure15_12TorusWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure15_12TorusWithAxesIndex.html"
+                            title="X3D model Figure15_12TorusWithAxes.x3d">Figure 15 12 Torus With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure15_12TorusWithAxes.x3d._VP_Torus_from_above.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[22] Figure15_12TorusWithAxes.x3d Torus from above</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Torus_from_ahead.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Torus_from_ahead.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Torus_from_ahead.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[23] Figure15_12TorusWithAxes.x3d Torus from ahead</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_12TorusWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] Figure15_12TorusWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_13ExtrudedPyramidIndex.html">
+                           <img src="_thumbnails/Figure15_13ExtrudedPyramidThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_13ExtrudedPyramid"
+                                 title="X3D model Figure15_13ExtrudedPyramid.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_13ExtrudedPyramidIndex.html"
+                            title="X3D model Figure15_13ExtrudedPyramid.x3d">Figure 15 13 Extruded Pyramid.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Extruded_pyramid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Extruded_pyramid.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Extruded_pyramid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[25] Figure15_13ExtrudedPyramid.x3d Extruded pyramid</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramid.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[26] Figure15_13ExtrudedPyramid.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_13ExtrudedPyramidWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_13ExtrudedPyramidWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_13ExtrudedPyramidWithAxes"
+                                 title="X3D model Figure15_13ExtrudedPyramidWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_13ExtrudedPyramidWithAxesIndex.html"
+                            title="X3D model Figure15_13ExtrudedPyramidWithAxes.x3d">Figure 15 13 Extruded Pyramid With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Extruded_pyramid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Extruded_pyramid.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Extruded_pyramid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[27] Figure15_13ExtrudedPyramidWithAxes.x3d Extruded pyramid</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_13ExtrudedPyramidWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[28] Figure15_13ExtrudedPyramidWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_14ExtrudedVaseIndex.html">
+                           <img src="_thumbnails/Figure15_14ExtrudedVaseThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_14ExtrudedVase"
+                                 title="X3D model Figure15_14ExtrudedVase.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_14ExtrudedVaseIndex.html"
+                            title="X3D model Figure15_14ExtrudedVase.x3d">Figure 15 14 Extruded Vase.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Extruded_vase.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Extruded_vase.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Extruded_vase.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[29] Figure15_14ExtrudedVase.x3d Extruded vase</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_14ExtrudedVase.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[30] Figure15_14ExtrudedVase.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_14ExtrudedVaseWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_14ExtrudedVaseWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_14ExtrudedVaseWithAxes"
+                                 title="X3D model Figure15_14ExtrudedVaseWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_14ExtrudedVaseWithAxesIndex.html"
+                            title="X3D model Figure15_14ExtrudedVaseWithAxes.x3d">Figure 15 14 Extruded Vase With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Extruded_vase.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Extruded_vase.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Extruded_vase.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[31] Figure15_14ExtrudedVaseWithAxes.x3d Extruded vase</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_14ExtrudedVaseWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[32] Figure15_14ExtrudedVaseWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_15TwistedBarIndex.html">
+                           <img src="_thumbnails/Figure15_15TwistedBarThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_15TwistedBar"
+                                 title="X3D model Figure15_15TwistedBar.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_15TwistedBarIndex.html"
+                            title="X3D model Figure15_15TwistedBar.x3d">Figure 15 15 Twisted Bar.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_15TwistedBar.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_15TwistedBar.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_15TwistedBar.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[33] Figure15_15TwistedBar.x3d Twisted bar using extrusion orientations</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_15TwistedBar.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_15TwistedBar.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_15TwistedBar.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[34] Figure15_15TwistedBar.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_15TwistedBarWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_15TwistedBarWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_15TwistedBarWithAxes"
+                                 title="X3D model Figure15_15TwistedBarWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_15TwistedBarWithAxesIndex.html"
+                            title="X3D model Figure15_15TwistedBarWithAxes.x3d">Figure 15 15 Twisted Bar With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Twisted_bar_using_extrusion_orientations.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[35] Figure15_15TwistedBarWithAxes.x3d Twisted bar using extrusion orientations</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_15TwistedBarWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[36] Figure15_15TwistedBarWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_16ExtrudedLipstickIndex.html">
+                           <img src="_thumbnails/Figure15_16ExtrudedLipstickThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_16ExtrudedLipstick"
+                                 title="X3D model Figure15_16ExtrudedLipstick.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_16ExtrudedLipstickIndex.html"
+                            title="X3D model Figure15_16ExtrudedLipstick.x3d">Figure 15 16 Extruded Lipstick.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[37] Figure15_16ExtrudedLipstick.x3d Lipstick using extrusion orientation</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstick.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[38] Figure15_16ExtrudedLipstick.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure15_16ExtrudedLipstickWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_16ExtrudedLipstickWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_16ExtrudedLipstickWithAxes"
+                                 title="X3D model Figure15_16ExtrudedLipstickWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure15_16ExtrudedLipstickWithAxesIndex.html"
+                            title="X3D model Figure15_16ExtrudedLipstickWithAxes.x3d">Figure 15 16 Extruded Lipstick With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Lipstick_using_extrusion_orientation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[39] Figure15_16ExtrudedLipstickWithAxes.x3d Lipstick using extrusion orientation</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_16ExtrudedLipstickWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[40] Figure15_16ExtrudedLipstickWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure15_17WigglingSnakeIndex.html">
+                           <img src="_thumbnails/Figure15_17WigglingSnakeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_17WigglingSnake"
+                                 title="X3D model Figure15_17WigglingSnake.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure15_17WigglingSnakeIndex.html"
+                            title="X3D model Figure15_17WigglingSnake.x3d">Figure 15 17 Wiggling Snake.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[41] Figure15_17WigglingSnake.x3d Wiggling snake, seen from behind, using Extrusion and OrientationInterpolator</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Snake_head.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Snake_head.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Snake_head.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[42] Figure15_17WigglingSnake.x3d Snake head</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnake.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[43] Figure15_17WigglingSnake.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure15_17WigglingSnakeWithAxesIndex.html">
+                           <img src="_thumbnails/Figure15_17WigglingSnakeWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure15_17WigglingSnakeWithAxes"
+                                 title="X3D model Figure15_17WigglingSnakeWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure15_17WigglingSnakeWithAxesIndex.html"
+                            title="X3D model Figure15_17WigglingSnakeWithAxes.x3d">Figure 15 17 Wiggling Snake With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Wiggling_snake,_seen_from_behind,_using_Extrusion_and_OrientationInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[44] Figure15_17WigglingSnakeWithAxes.x3d Wiggling snake, seen from behind, using Extrusion and OrientationInterpolator</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Snake_head.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Snake_head.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Snake_head.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[45] Figure15_17WigglingSnakeWithAxes.x3d Snake head</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure15_17WigglingSnakeWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[46] Figure15_17WigglingSnakeWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14ElevationGrid/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter15Extrusion/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16Color/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

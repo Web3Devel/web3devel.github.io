@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 30 Scripts</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure30_1ScriptSlidingBall.x3d._VP_sliding_ball.png': { 'caption': '[1] Figure30_1ScriptSlidingBall.x3d sliding ball' },
+      'Figure30_1ScriptSlidingBall.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure30_1ScriptSlidingBall.x3d (default X3D view from 0 0 10)' },
+      'Figure30_2ScriptBackgroundSelect.x3d._VP_Background_select.png': { 'caption': '[3] Figure30_2ScriptBackgroundSelect.x3d Background select' },
+      'Figure30_2ScriptBackgroundSelect.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure30_2ScriptBackgroundSelect.x3d (default X3D view from 0 0 10)' },
+      'Figure30_3ScriptSoundActivate.x3d._VP_toggle_sound_by_clicking_ball.png': { 'caption': '[5] Figure30_3ScriptSoundActivate.x3d toggle sound by clicking ball' },
+      'Figure30_3ScriptSoundActivate.x3d._VP_move_left_spatialize_right.png': { 'caption': '[6] Figure30_3ScriptSoundActivate.x3d move left spatialize right' },
+      'Figure30_3ScriptSoundActivate.x3d._VP_move_right_spatialize_left.png': { 'caption': '[7] Figure30_3ScriptSoundActivate.x3d move right spatialize left' },
+      'Figure30_3ScriptSoundActivate.x3d._VP_outside_maximum_attenuation_ellipsoid.png': { 'caption': '[8] Figure30_3ScriptSoundActivate.x3d outside maximum attenuation ellipsoid' },
+      'Figure30_3ScriptSoundActivate.x3d._VP_Default_viewpoint.png': { 'caption': '[9] Figure30_3ScriptSoundActivate.x3d (default X3D view from 0 0 10)' },
+      'Figure30_4ScriptSpiralingBallTrace.x3d._VP_spiraling_ball.png': { 'caption': '[10] Figure30_4ScriptSpiralingBallTrace.x3d spiraling ball' },
+      'Figure30_4ScriptSpiralingBallTrace.x3d._VP_view_from_above.png': { 'caption': '[11] Figure30_4ScriptSpiralingBallTrace.x3d view from above' },
+      'Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png': { 'caption': '[12] Figure30_4ScriptSpiralingBallTrace.x3d side view' },
+      'Figure30_4ScriptSpiralingBallTrace.x3d._VP_Default_viewpoint.png': { 'caption': '[13] Figure30_4ScriptSpiralingBallTrace.x3d (default X3D view from 0 0 10)' },
+      'Figure30_5ScriptTorusBuilder.x3d._VP_Torus.png': { 'caption': '[14] Figure30_5ScriptTorusBuilder.x3d Torus' },
+      'Figure30_5ScriptTorusBuilder.x3d._VP_Default_viewpoint.png': { 'caption': '[15] Figure30_5ScriptTorusBuilder.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter29WorldInfo/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter30Scripts/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter31Prototypes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 30 Scripts</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_sliding_ball.png"
+                  alt="[1] Figure30_1ScriptSlidingBall.x3d sliding ball"
+                  title="[1] Figure30_1ScriptSlidingBall.x3d sliding ball"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter30Scripts/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 30.4 Script Spiraling Ball Trace" title="Figure 30.4 Script Spiraling Ball Trace" hspace="10" 
+                          src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Scripts allow authors to define their own event-handling code to improve animation sophistication.
+                    </p>
+                    
+
+                    
+                    <p>
+                            Many actions are too complex for animation nodes, such as computed animation paths (e.g. gravity), 
+                            algorithmic shapes (e.g. fractals), or collaborative environments (e.g. games).
+                            You can create new sensors, interpolators, etc., using program scripts written in 
+                            Java (a powerful general-purpose language) or ECMAscript (JavaScript, an easy-to-learn language).
+                            The Script node selects a program script, specified by a url or contained source code.
+                            Program scripts have field and event interface declarations, each with a data type, a name, and an initial value (for fields only).
+                    </p>
+                    
+
+                    
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch30.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0399.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+5 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 15 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure30_1ScriptSlidingBallIndex.html">
+                           <img src="_thumbnails/Figure30_1ScriptSlidingBallThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure30_1ScriptSlidingBall"
+                                 title="X3D model Figure30_1ScriptSlidingBall.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure30_1ScriptSlidingBallIndex.html"
+                            title="X3D model Figure30_1ScriptSlidingBall.x3d">Figure 30 1 Script Sliding Ball.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_sliding_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_sliding_ball.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_sliding_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure30_1ScriptSlidingBall.x3d sliding ball</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_1ScriptSlidingBall.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure30_1ScriptSlidingBall.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure30_2ScriptBackgroundSelectIndex.html">
+                           <img src="_thumbnails/Figure30_2ScriptBackgroundSelectThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure30_2ScriptBackgroundSelect"
+                                 title="X3D model Figure30_2ScriptBackgroundSelect.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure30_2ScriptBackgroundSelectIndex.html"
+                            title="X3D model Figure30_2ScriptBackgroundSelect.x3d">Figure 30 2 Script Background Select.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Background_select.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Background_select.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Background_select.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure30_2ScriptBackgroundSelect.x3d Background select</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_2ScriptBackgroundSelect.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure30_2ScriptBackgroundSelect.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="5">
+                        <a href="Figure30_3ScriptSoundActivateIndex.html">
+                           <img src="_thumbnails/Figure30_3ScriptSoundActivateThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure30_3ScriptSoundActivate"
+                                 title="X3D model Figure30_3ScriptSoundActivate.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="5">
+                        <br/>
+                        <a href="Figure30_3ScriptSoundActivateIndex.html"
+                            title="X3D model Figure30_3ScriptSoundActivate.x3d">Figure 30 3 Script Sound Activate.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_toggle_sound_by_clicking_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_toggle_sound_by_clicking_ball.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_toggle_sound_by_clicking_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure30_3ScriptSoundActivate.x3d toggle sound by clicking ball</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_left_spatialize_right.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_left_spatialize_right.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_left_spatialize_right.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure30_3ScriptSoundActivate.x3d move left spatialize right</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_right_spatialize_left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_right_spatialize_left.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_move_right_spatialize_left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure30_3ScriptSoundActivate.x3d move right spatialize left</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_outside_maximum_attenuation_ellipsoid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_outside_maximum_attenuation_ellipsoid.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_outside_maximum_attenuation_ellipsoid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure30_3ScriptSoundActivate.x3d outside maximum attenuation ellipsoid</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_3ScriptSoundActivate.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure30_3ScriptSoundActivate.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="4">
+                        <a href="Figure30_4ScriptSpiralingBallTraceIndex.html">
+                           <img src="_thumbnails/Figure30_4ScriptSpiralingBallTraceThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure30_4ScriptSpiralingBallTrace"
+                                 title="X3D model Figure30_4ScriptSpiralingBallTrace.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="4">
+                        <br/>
+                        <a href="Figure30_4ScriptSpiralingBallTraceIndex.html"
+                            title="X3D model Figure30_4ScriptSpiralingBallTrace.x3d">Figure 30 4 Script Spiraling Ball Trace.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_spiraling_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_spiraling_ball.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_spiraling_ball.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure30_4ScriptSpiralingBallTrace.x3d spiraling ball</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_view_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_view_from_above.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_view_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure30_4ScriptSpiralingBallTrace.x3d view from above</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure30_4ScriptSpiralingBallTrace.x3d side view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure30_4ScriptSpiralingBallTrace.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure30_5ScriptTorusBuilderIndex.html">
+                           <img src="_thumbnails/Figure30_5ScriptTorusBuilderThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure30_5ScriptTorusBuilder"
+                                 title="X3D model Figure30_5ScriptTorusBuilder.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure30_5ScriptTorusBuilderIndex.html"
+                            title="X3D model Figure30_5ScriptTorusBuilder.x3d">Figure 30 5 Script Torus Builder.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Torus.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Torus.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Torus.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure30_5ScriptTorusBuilder.x3d Torus</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure30_5ScriptTorusBuilder.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure30_5ScriptTorusBuilder.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter29WorldInfo/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter30Scripts/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter31Prototypes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

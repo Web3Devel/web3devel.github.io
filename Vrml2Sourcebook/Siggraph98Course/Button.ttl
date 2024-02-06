@@ -1,0 +1,301 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Button.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Button.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple button: this file contains a Prototype declaration to manage a button that, when clicked, rotates 90 degrees and sends a URL. This button is used in "loader.wrl".' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Loader.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/button.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0469.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Button.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Button.x3d" .
+:meta dcterms:description "Simple button: this file contains a Prototype declaration to manage a button that, when clicked, rotates 90 degrees and sends a URL. This button is used in \"loader.wrl\"." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Loader.x3d" .
+:meta dcterms:reference "originals/button.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0469.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Button.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_3, :Anchor_2_4 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1998, David R. Nadeau"' ;
+  x3do:title 'Simple Button' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:name 'Button' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3, :field_2_2_1_4 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'url' ;
+  x3do:type 'MFString' ;
+  x3do:value '""' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'textureUrl' ;
+  x3do:type 'MFString' ;
+  x3do:value '""' .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'url_changed' ;
+  x3do:type 'MFString' .
+:field_2_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'translation' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.0 0.0 0.0 ) .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :Trans, :Timer, :Rotator, :SendUrl ;
+  x3do:hasROUTE :ROUTE_2_2_2_5, :ROUTE_2_2_2_6, :ROUTE_2_2_2_7, :ROUTE_2_2_2_8 .
+:Trans a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_1_1 ;
+  x3do:hasChildren :Shape_2_2_2_1_2, :Touch ;
+  x3do:DEF 'Trans' .
+:IS_2_2_2_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :Trans ;
+  x3do:hasConnect :connect_2_2_2_1_1_1 .
+:connect_2_2_2_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'translation' .
+:Shape_2_2_2_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Trans ;
+  x3do:hasAppearance :Appearance_2_2_2_1_2_1 ;
+  x3do:hasGeometry :Box_2_2_2_1_2_2 .
+:Appearance_2_2_2_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2 ;
+  x3do:hasMaterial :Material_2_2_2_1_2_1_1 ;
+  x3do:hasTexture :ImageTexture_2_2_2_1_2_1_2 .
+:Material_2_2_2_1_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:ImageTexture_2_2_2_1_2_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1_2_1 .
+:IS_2_2_2_1_2_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :ImageTexture_2_2_2_1_2_1_2 ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_2_1_1 .
+:connect_2_2_2_1_2_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1_2_1 ;
+  x3do:nodeField 'url' ;
+  x3do:protoField 'textureUrl' .
+:Box_2_2_2_1_2_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_2_2_1_2 ;
+  x3do:size ( 1.0 1.0 1.0 ) .
+:Touch a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Trans ;
+  x3do:DEF 'Touch' ;
+  x3do:description 'Select to initiate button spin and scene loading' .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:DEF 'Timer' ;
+  x3do:stopTime '1.0' .
+:Rotator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:DEF 'Rotator' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.571 ) .
+:SendUrl a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasField :field_2_2_2_4_1, :field_2_2_2_4_2, :field_2_2_2_4_3 ;
+  x3do:hasIS :IS_2_2_2_4_4 ;
+  x3do:DEF 'SendUrl' ;
+  x3do:sourceCode """
+ecmascript:
+	function set_touchTime( tm, ts ) {
+		url_changed = sendUrl;
+	}
+""" .
+:field_2_2_2_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :SendUrl ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'sendUrl' ;
+  x3do:type 'MFString' .
+:field_2_2_2_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :SendUrl ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_touchTime' ;
+  x3do:type 'SFTime' .
+:field_2_2_2_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :SendUrl ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'url_changed' ;
+  x3do:type 'MFString' .
+:IS_2_2_2_4_4 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :SendUrl ;
+  x3do:hasConnect :connect_2_2_2_4_4_1, :connect_2_2_2_4_4_2 .
+:connect_2_2_2_4_4_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_4_4 ;
+  x3do:nodeField 'sendUrl' ;
+  x3do:protoField 'url' .
+:connect_2_2_2_4_4_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_4_4 ;
+  x3do:nodeField 'url_changed' ;
+  x3do:protoField 'url_changed' .
+:ROUTE_2_2_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'Touch' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Timer' .
+:ROUTE_2_2_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rotator' .
+:ROUTE_2_2_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rotator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Trans' .
+:ROUTE_2_2_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'Touch' ;
+  x3do:toField 'set_touchTime' ;
+  x3do:toNode 'SendUrl' .
+:Background_2_3 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0 0.333333 0.66667 ) .
+:Anchor_2_4 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1, :Shape_2_4_2 ;
+  x3do:description 'select text to view parent scene' ;
+  x3do:url '"Loader.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Loader.x3d" "Loader.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Loader.wrl"' .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4 ;
+  x3do:hasGeometry :Text_2_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_2 .
+:Text_2_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_1_1 ;
+  x3do:string '"Button.x3d scene holds" "a prototype declaration" "" "Select this text to view example" "use in Loader.x3d scene"' .
+:FontStyle_2_4_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:cssStyle 'BOLD' .
+:Appearance_2_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1 .
+:Material_2_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2 ;
+  x3do:diffuseColor ( 1 0.9 0.4 ) .
+:Shape_2_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4 ;
+  x3do:hasGeometry :Box_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_2 .
+:Box_2_4_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:size ( 12 5 0.1 ) .
+:Appearance_2_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasMaterial :Material_2_4_2_2_1 .
+:Material_2_4_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_2 ;
+  x3do:transparency 1 .

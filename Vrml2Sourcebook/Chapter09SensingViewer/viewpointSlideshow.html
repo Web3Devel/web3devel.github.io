@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 09 Sensing Viewer</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure09_1SpinningCubeTouchSensor.x3d._VP_Default_viewpoint.png': { 'caption': '[1] Figure09_1SpinningCubeTouchSensor.x3d (default X3D view from 0 0 10)' },
+      'Figure09_1SpinningCubeTouchSensorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure09_1SpinningCubeTouchSensorWithAxes.x3d (default X3D view)' },
+      'Figure09_2SpinningCubeTouchSensorClicked.x3d._VP_Default_viewpoint.png': { 'caption': '[3] Figure09_2SpinningCubeTouchSensorClicked.x3d (default X3D view)' },
+      'Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d (default X3D view)' },
+      'Figure09_3ConePlaneSensor.x3d._VP_Default_viewpoint.png': { 'caption': '[5] Figure09_3ConePlaneSensor.x3d (default X3D view from 0 0 10)' },
+      'Figure09_3ConePlaneSensorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure09_3ConePlaneSensorWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure09_4ConePlaneSensorConstrained.x3d._VP_Default_viewpoint.png': { 'caption': '[7] Figure09_4ConePlaneSensorConstrained.x3d (default X3D view from 0 0 10)' },
+      'Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_click_and_drag_Cone.png': { 'caption': '[8] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d click and drag Cone' },
+      'Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10).png': { 'caption': '[9] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d Default viewpoint at (0 0 10)' },
+      'Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d (default X3D view)' },
+      'Figure09_5FourStackingBlocks.x3d._VP_Hello_Cubes..png': { 'caption': '[11] Figure09_5FourStackingBlocks.x3d Hello Cubes.' },
+      'Figure09_5FourStackingBlocks.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure09_5FourStackingBlocks.x3d (default X3D view from 0 0 10)' },
+      'Figure09_5FourStackingBlocksWithAxes.x3d._VP_Hello_Cubes..png': { 'caption': '[13] Figure09_5FourStackingBlocksWithAxes.x3d Hello Cubes.' },
+      'Figure09_5FourStackingBlocksWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure09_5FourStackingBlocksWithAxes.x3d (default X3D view)' },
+      'Figure09_6SphereSensor.x3d._VP_Default_viewpoint.png': { 'caption': '[15] Figure09_6SphereSensor.x3d (default X3D view from 0 0 10)' },
+      'Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure09_6SphereSensorWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure09_7CylinderSensor.x3d._VP_Default_viewpoint.png': { 'caption': '[17] Figure09_7CylinderSensor.x3d (default X3D view from 0 0 10)' },
+      'Figure09_7CylinderSensorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure09_7CylinderSensorWithAxes.x3d (default X3D view from 0 0 10)' },
+      'Figure09_8ClickDragTouchSensorPlaneSensor.x3d._VP_Default_viewpoint.png': { 'caption': '[19] Figure09_8ClickDragTouchSensorPlaneSensor.x3d (default X3D view)' },
+      'Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[20] Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d' },
+      'Figure09_9DeskLamp.x3d._VP_Desk_lamp.png': { 'caption': '[21] Figure09_9DeskLamp.x3d Desk lamp' },
+      'Figure09_9DeskLamp.x3d._VP_Default_viewpoint.png': { 'caption': '[22] Figure09_9DeskLamp.x3d (default X3D view from 0 0 10)' },
+      'Figure09_9DeskLampWithAxes.x3d._VP_Desk_lamp.png': { 'caption': '[23] Figure09_9DeskLampWithAxes.x3d Desk lamp' },
+      'Figure09_9DeskLampWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure09_9DeskLampWithAxes.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08AnimatingPositionOrientationScale/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter09SensingViewer/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Materials/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 09 Sensing Viewer</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure09_1SpinningCubeTouchSensor.x3d._VP_Default_viewpoint.png"
+                  alt="[1] Figure09_1SpinningCubeTouchSensor.x3d (default X3D view from 0 0 10)"
+                  title="[1] Figure09_1SpinningCubeTouchSensor.x3d (default X3D view from 0 0 10)"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter09SensingViewer/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Authors can design interactivity into a scene that responds to user actions.
+                    </p>
+                    
+
+					
+                    <p>
+                        A scene can sense when the viewer's cursor is over a shape, has touched a shape, or is dragging atop a shape.
+                        A scene can also trigger animations on a viewer's touch, enabling the viewer to move and rotate shapes.
+                        There are four main action sensor types:
+                        TouchSensor senses touch,
+                        SphereSensor senses drags in a spherical way,
+                        CylinderSensor senses drags cylindrically, and
+                        PlaneSensor senses drags around a plane.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch09.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0161.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 09.6 Sphere Sensor With Axes" title="Figure 09.6 Sphere Sensor With Axes" hspace="10" 
+                          src="_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+18 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 24 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_1SpinningCubeTouchSensorIndex.html">
+                           <img src="_thumbnails/Figure09_1SpinningCubeTouchSensorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_1SpinningCubeTouchSensor"
+                                 title="X3D model Figure09_1SpinningCubeTouchSensor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_1SpinningCubeTouchSensorIndex.html"
+                            title="X3D model Figure09_1SpinningCubeTouchSensor.x3d">Figure 09 1 Spinning Cube Touch Sensor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_1SpinningCubeTouchSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_1SpinningCubeTouchSensor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_1SpinningCubeTouchSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure09_1SpinningCubeTouchSensor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_1SpinningCubeTouchSensorWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_1SpinningCubeTouchSensorWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_1SpinningCubeTouchSensorWithAxes"
+                                 title="X3D model Figure09_1SpinningCubeTouchSensorWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_1SpinningCubeTouchSensorWithAxesIndex.html"
+                            title="X3D model Figure09_1SpinningCubeTouchSensorWithAxes.x3d">Figure 09 1 Spinning Cube Touch Sensor With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_1SpinningCubeTouchSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_1SpinningCubeTouchSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_1SpinningCubeTouchSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure09_1SpinningCubeTouchSensorWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_2SpinningCubeTouchSensorClickedIndex.html">
+                           <img src="_thumbnails/Figure09_2SpinningCubeTouchSensorClickedThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_2SpinningCubeTouchSensorClicked"
+                                 title="X3D model Figure09_2SpinningCubeTouchSensorClicked.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_2SpinningCubeTouchSensorClickedIndex.html"
+                            title="X3D model Figure09_2SpinningCubeTouchSensorClicked.x3d">Figure 09 2 Spinning Cube Touch Sensor Clicked.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_2SpinningCubeTouchSensorClicked.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_2SpinningCubeTouchSensorClicked.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_2SpinningCubeTouchSensorClicked.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure09_2SpinningCubeTouchSensorClicked.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_2SpinningCubeTouchSensorClickedWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_2SpinningCubeTouchSensorClickedWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_2SpinningCubeTouchSensorClickedWithAxes"
+                                 title="X3D model Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_2SpinningCubeTouchSensorClickedWithAxesIndex.html"
+                            title="X3D model Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d">Figure 09 2 Spinning Cube Touch Sensor Clicked With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure09_2SpinningCubeTouchSensorClickedWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_3ConePlaneSensorIndex.html">
+                           <img src="_thumbnails/Figure09_3ConePlaneSensorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_3ConePlaneSensor"
+                                 title="X3D model Figure09_3ConePlaneSensor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_3ConePlaneSensorIndex.html"
+                            title="X3D model Figure09_3ConePlaneSensor.x3d">Figure 09 3 Cone Plane Sensor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_3ConePlaneSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_3ConePlaneSensor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_3ConePlaneSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure09_3ConePlaneSensor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_3ConePlaneSensorWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_3ConePlaneSensorWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_3ConePlaneSensorWithAxes"
+                                 title="X3D model Figure09_3ConePlaneSensorWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_3ConePlaneSensorWithAxesIndex.html"
+                            title="X3D model Figure09_3ConePlaneSensorWithAxes.x3d">Figure 09 3 Cone Plane Sensor With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_3ConePlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_3ConePlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_3ConePlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure09_3ConePlaneSensorWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_4ConePlaneSensorConstrainedIndex.html">
+                           <img src="_thumbnails/Figure09_4ConePlaneSensorConstrainedThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_4ConePlaneSensorConstrained"
+                                 title="X3D model Figure09_4ConePlaneSensorConstrained.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_4ConePlaneSensorConstrainedIndex.html"
+                            title="X3D model Figure09_4ConePlaneSensorConstrained.x3d">Figure 09 4 Cone Plane Sensor Constrained.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrained.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_4ConePlaneSensorConstrained.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrained.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure09_4ConePlaneSensorConstrained.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure09_4ConePlaneSensorConstrainedWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_4ConePlaneSensorConstrainedWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_4ConePlaneSensorConstrainedWithAxes"
+                                 title="X3D model Figure09_4ConePlaneSensorConstrainedWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure09_4ConePlaneSensorConstrainedWithAxesIndex.html"
+                            title="X3D model Figure09_4ConePlaneSensorConstrainedWithAxes.x3d">Figure 09 4 Cone Plane Sensor Constrained With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_click_and_drag_Cone.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_click_and_drag_Cone.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_click_and_drag_Cone.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d click and drag Cone</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10).png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint_at_(0_0_10).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d Default viewpoint at (0 0 10)</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_4ConePlaneSensorConstrainedWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure09_4ConePlaneSensorConstrainedWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure09_5FourStackingBlocksIndex.html">
+                           <img src="_thumbnails/Figure09_5FourStackingBlocksThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_5FourStackingBlocks"
+                                 title="X3D model Figure09_5FourStackingBlocks.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure09_5FourStackingBlocksIndex.html"
+                            title="X3D model Figure09_5FourStackingBlocks.x3d">Figure 09 5 Four Stacking Blocks.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Hello_Cubes..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Hello_Cubes..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Hello_Cubes..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure09_5FourStackingBlocks.x3d Hello Cubes.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_5FourStackingBlocks.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure09_5FourStackingBlocks.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure09_5FourStackingBlocksWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_5FourStackingBlocksWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_5FourStackingBlocksWithAxes"
+                                 title="X3D model Figure09_5FourStackingBlocksWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure09_5FourStackingBlocksWithAxesIndex.html"
+                            title="X3D model Figure09_5FourStackingBlocksWithAxes.x3d">Figure 09 5 Four Stacking Blocks With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Hello_Cubes..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Hello_Cubes..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Hello_Cubes..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure09_5FourStackingBlocksWithAxes.x3d Hello Cubes.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_5FourStackingBlocksWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure09_5FourStackingBlocksWithAxes.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_6SphereSensorIndex.html">
+                           <img src="_thumbnails/Figure09_6SphereSensorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_6SphereSensor"
+                                 title="X3D model Figure09_6SphereSensor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_6SphereSensorIndex.html"
+                            title="X3D model Figure09_6SphereSensor.x3d">Figure 09 6 Sphere Sensor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_6SphereSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_6SphereSensor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_6SphereSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure09_6SphereSensor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_6SphereSensorWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_6SphereSensorWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_6SphereSensorWithAxes"
+                                 title="X3D model Figure09_6SphereSensorWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_6SphereSensorWithAxesIndex.html"
+                            title="X3D model Figure09_6SphereSensorWithAxes.x3d">Figure 09 6 Sphere Sensor With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_6SphereSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] Figure09_6SphereSensorWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_7CylinderSensorIndex.html">
+                           <img src="_thumbnails/Figure09_7CylinderSensorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_7CylinderSensor"
+                                 title="X3D model Figure09_7CylinderSensor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_7CylinderSensorIndex.html"
+                            title="X3D model Figure09_7CylinderSensor.x3d">Figure 09 7 Cylinder Sensor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_7CylinderSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_7CylinderSensor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_7CylinderSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure09_7CylinderSensor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_7CylinderSensorWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_7CylinderSensorWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_7CylinderSensorWithAxes"
+                                 title="X3D model Figure09_7CylinderSensorWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_7CylinderSensorWithAxesIndex.html"
+                            title="X3D model Figure09_7CylinderSensorWithAxes.x3d">Figure 09 7 Cylinder Sensor With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_7CylinderSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_7CylinderSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_7CylinderSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure09_7CylinderSensorWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_8ClickDragTouchSensorPlaneSensorIndex.html">
+                           <img src="_thumbnails/Figure09_8ClickDragTouchSensorPlaneSensorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_8ClickDragTouchSensorPlaneSensor"
+                                 title="X3D model Figure09_8ClickDragTouchSensorPlaneSensor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_8ClickDragTouchSensorPlaneSensorIndex.html"
+                            title="X3D model Figure09_8ClickDragTouchSensorPlaneSensor.x3d">Figure 09 8 Click Drag Touch Sensor Plane Sensor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] Figure09_8ClickDragTouchSensorPlaneSensor.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure09_8ClickDragTouchSensorPlaneSensorWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_8ClickDragTouchSensorPlaneSensorWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_8ClickDragTouchSensorPlaneSensorWithAxes"
+                                 title="X3D model Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure09_8ClickDragTouchSensorPlaneSensorWithAxesIndex.html"
+                            title="X3D model Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d">Figure 09 8 Click Drag Touch Sensor Plane Sensor With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Figure09_8ClickDragTouchSensorPlaneSensorWithAxes.x3d</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure09_9DeskLampIndex.html">
+                           <img src="_thumbnails/Figure09_9DeskLampThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_9DeskLamp"
+                                 title="X3D model Figure09_9DeskLamp.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure09_9DeskLampIndex.html"
+                            title="X3D model Figure09_9DeskLamp.x3d">Figure 09 9 Desk Lamp.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_9DeskLamp.x3d._VP_Desk_lamp.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_9DeskLamp.x3d._VP_Desk_lamp.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_9DeskLamp.x3d._VP_Desk_lamp.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Figure09_9DeskLamp.x3d Desk lamp</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_9DeskLamp.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_9DeskLamp.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_9DeskLamp.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] Figure09_9DeskLamp.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure09_9DeskLampWithAxesIndex.html">
+                           <img src="_thumbnails/Figure09_9DeskLampWithAxesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure09_9DeskLampWithAxes"
+                                 title="X3D model Figure09_9DeskLampWithAxes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure09_9DeskLampWithAxesIndex.html"
+                            title="X3D model Figure09_9DeskLampWithAxes.x3d">Figure 09 9 Desk Lamp With Axes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Desk_lamp.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Desk_lamp.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Desk_lamp.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[23] Figure09_9DeskLampWithAxes.x3d Desk lamp</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure09_9DeskLampWithAxes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] Figure09_9DeskLampWithAxes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08AnimatingPositionOrientationScale/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter09SensingViewer/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Materials/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

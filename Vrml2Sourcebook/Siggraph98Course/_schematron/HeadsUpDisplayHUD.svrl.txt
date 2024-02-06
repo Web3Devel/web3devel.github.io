@@ -1,0 +1,6 @@
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='8.0 0.4 8.0' which has Y-value height of 0.4[/X3D/Scene/Viewpoint, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/Transform[2]/Transform/Shape/Appearance, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/Transform[2]/Transform/Transform[1]/Shape/Appearance, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/Transform[2]/Transform/Transform[2]/Shape/Appearance, warning]
+<CylinderSensor DEF='ThumbWheel'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform[2]/Transform/Transform[3]/CylinderSensor, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/Transform[2]/Transform/Transform[3]/Shape/Appearance, warning]

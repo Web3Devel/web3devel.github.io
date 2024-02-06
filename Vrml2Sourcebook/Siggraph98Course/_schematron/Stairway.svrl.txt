@@ -1,0 +1,1 @@
+<X3D profile='Immersive'> is defined, but nodes in scene have actual profile='Interactive' [/X3D, info]

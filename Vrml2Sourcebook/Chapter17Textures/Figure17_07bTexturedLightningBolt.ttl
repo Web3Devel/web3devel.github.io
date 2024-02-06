@@ -1,0 +1,104 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_07bTexturedLightningBolt.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure17_07bTexturedLightningBolt.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 17.07b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch17/17fig07b.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'August 28, 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A flame image textured onto a 3D lightning bolt using concave faces. Compare Figures 13.13 and 17.7b.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../Chapter13PointsLinesFaces/Figure13_13IndexedFaceSetLightningBolt.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_07bTexturedLightningBolt.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure17_07bTexturedLightningBolt.x3d" .
+:meta dcterms:creator "Figure 17.07b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch17/17fig07b.htm" .
+:meta dcterms:created "August 28, 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A flame image textured onto a 3D lightning bolt using concave faces. Compare Figures 13.13 and 17.7b." .
+:meta dcterms:reference "../Chapter13PointsLinesFaces/Figure13_13IndexedFaceSetLightningBolt.x3d" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_07bTexturedLightningBolt.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure17_07bTexturedLightningBolt.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Textured lightning bolt' ;
+  x3do:position ( 4 5 15 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1 .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_1_2 .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasTexture :ImageTexture_2_3_1_1_1 .
+:ImageTexture_2_3_1_1_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:url '"bolt2.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/bolt2.jpg"' .
+:IndexedFaceSet_2_3_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasCoord :Coordinate_2_3_1_2_1 ;
+  x3do:convex false ;
+  x3do:coordIndex ( 0 1 2 3 4 5 6 -1 0 12 11 10 9 8 7 -1 0 7 1 -1 1 7 8 2 -1 2 8 9 3 -1 3 9 10 4 -1 4 10 11 5 -1 5 11 12 6 -1 6 12 0 ) .
+:Coordinate_2_3_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_1_2 ;
+  x3do:point ( 0.0 0.0 0.0 5.5 5.0 0.88 4.0 5.5 0.968 7.0 8.0 1.408 4.0 9.0 1.584 1.0 5.0 0.88 2.5 4.5 0.792 5.5 5.0 -0.88 4.0 5.5 -0.968 7.0 8.0 -1.408 4.0 9.0 -1.584 1.0 5.0 -0.88 2.5 4.5 -0.792 ) .

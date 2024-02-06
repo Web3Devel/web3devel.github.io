@@ -1,0 +1,19 @@
+
+      
+ecmascript:
+		function update( ) {
+			message.length = 5;
+			message[0] = 'Browser: ' + Browser.getName( );
+			message[1] = 'Version: ' + Browser.getVersion( );
+			message[2] = 'URL:     ' + Browser.getWorldURL( );
+			message[3] = 'Speed:   ' + Browser.getCurrentSpeed( );
+			message[4] = 'Frames:  ' + Browser.getCurrentFrameRate( );
+		}
+		function initialize( ) {
+			update( );
+		}
+		function trigger( t, ts ) {
+			update( );
+		}
+
+    

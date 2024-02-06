@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 17 - Textures</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16-Color/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18-TextureMapping/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 17 - Textures</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter17-Textures/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        You can model every tiny texture detail of a world using a vast number of colored faces, but this is time consuming and difficult.
+                        Use a trick instead:  take a picture of the real thing, then paste that picture on the shape, like sticking on a decal image.
+                        Specify the texture using an ImageTexture, PixelTexture, or MovieTexture node within an Appearance node.
+                        Color textures override material, grayscale textures multiply against the color values.
+                        Textures with transparency create holes that can be seen through.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch17.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0259.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 17.08b Textured Elevation Grid Mountain" title="Figure 17.08b Textured Elevation Grid Mountain" hspace="10" 
+                          src="_viewpoints/Figure17.08bTexturedElevationGridMountain.x3d._VP_Textured_mountain.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;14 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.04aTextureBoxTest"/>
+               <a href="Figure17.04aTextureBoxTestIndex.html">
+                  <img src="_thumbnails/Figure17.04aTextureBoxTestThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.04aTextureBoxTestIndex.html">Figure 17.04a Texture Box Test</a>
+            </td>
+            <td>A texture-mapped Box. Compare Figure17.04aTextureBoxTest, Figure17.04bTextureConeTest, Figure17.04cTextureCylinderTest and Figure17.04dTextureSphereTest.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.04bTextureConeTest"/>
+               <a href="Figure17.04bTextureConeTestIndex.html">
+                  <img src="_thumbnails/Figure17.04bTextureConeTestThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.04bTextureConeTestIndex.html">Figure 17.04b Texture Cone Test</a>
+            </td>
+            <td>A texture-mapped Cone. Compare Figure17.04aTextureBoxTest, Figure17.04bTextureConeTest, Figure17.04cTextureCylinderTest and Figure17.04dTextureSphereTest.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.04cTextureCylinderTest"/>
+               <a href="Figure17.04cTextureCylinderTestIndex.html">
+                  <img src="_thumbnails/Figure17.04cTextureCylinderTestThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.04cTextureCylinderTestIndex.html">Figure 17.04c Texture Cylinder Test</a>
+            </td>
+            <td>A texture-mapped Cylinder. Compare Figure17.04aTextureBoxTest, Figure17.04bTextureConeTest, Figure17.04cTextureCylinderTest and Figure17.04dTextureSphereTest.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.04dTextureSphereTest"/>
+               <a href="Figure17.04dTextureSphereTestIndex.html">
+                  <img src="_thumbnails/Figure17.04dTextureSphereTestThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.04dTextureSphereTestIndex.html">Figure 17.04d Texture Sphere Test</a>
+            </td>
+            <td>A texture-mapped Sphere. Compare Figure17.04aTextureBoxTest, Figure17.04bTextureConeTest, Figure17.04cTextureCylinderTest and Figure17.04dTextureSphereTest.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.05dTexturedSodaCan"/>
+               <a href="Figure17.05dTexturedSodaCanIndex.html">
+                  <img src="_thumbnails/Figure17.05dTexturedSodaCanThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.05dTexturedSodaCanIndex.html">Figure 17.05d Textured Soda Can</a>
+            </td>
+            <td>A soft drink can built by texture mapping soft-drink-can images to parts of a cylinder. Images include the top, the bottom, and the sides.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.06bTexturedText"/>
+               <a href="Figure17.06bTexturedTextIndex.html">
+                  <img src="_thumbnails/Figure17.06bTexturedTextThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.06bTexturedTextIndex.html">Figure 17.06b Textured Text</a>
+            </td>
+            <td>A brick texture mapped to a text shape.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.07bTexturedLightningBolt"/>
+               <a href="Figure17.07bTexturedLightningBoltIndex.html">
+                  <img src="_thumbnails/Figure17.07bTexturedLightningBoltThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.07bTexturedLightningBoltIndex.html">Figure 17.07b Textured Lightning Bolt</a>
+            </td>
+            <td>A flame image textured onto a 3D lightning bolt using concave faces. Compare Figures 13.13 and 17.7b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.08bTexturedElevationGridMountain"/>
+               <a href="Figure17.08bTexturedElevationGridMountainIndex.html">
+                  <img src="_thumbnails/Figure17.08bTexturedElevationGridMountainThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.08bTexturedElevationGridMountainIndex.html">Figure 17.08b Textured Elevation Grid Mountain</a>
+            </td>
+            <td>A terrain texture image, texture mapped to a mountain-shaped elevation grid. Compare Figure14.2ElevationGridMountain.x3d, Figure16.7VertexColoredElevationGridMountain.x3d and Figure17.08bTexturedElevationGridMountain.x3dn</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.09bTexturedDonutTorusExtrusion"/>
+               <a href="Figure17.09bTexturedDonutTorusExtrusionIndex.html">
+                  <img src="_thumbnails/Figure17.09bTexturedDonutTorusExtrusionThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.09bTexturedDonutTorusExtrusionIndex.html">Figure 17.09b Textured Donut Torus Extrusion</a>
+            </td>
+            <td>A donut-icing texture image texture mapped to a chocolate donut</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.10cTextureTransparencyTree"/>
+               <a href="Figure17.10cTextureTransparencyTreeIndex.html">
+                  <img src="_thumbnails/Figure17.10cTextureTransparencyTreeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.10cTextureTransparencyTreeIndex.html">Figure 17.10c Texture Transparency Tree</a>
+            </td>
+            <td>A tree image texture mapped, with pixel transparencies, on a rectangular face to create a tree.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.11bGreyTextureGreenMaterialStripedCylinder"/>
+               <a href="Figure17.11bGreyTextureGreenMaterialStripedCylinderIndex.html">
+                  <img src="_thumbnails/Figure17.11bGreyTextureGreenMaterialStripedCylinderThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.11bGreyTextureGreenMaterialStripedCylinderIndex.html">Figure 17.11b Grey Texture Green Material Striped Cylinder</a>
+            </td>
+            <td>A tree image texture mapped, with pixel transparencies, on a rectangular face to create a tree.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.12bWoodTextures"/>
+               <a href="Figure17.12bWoodTexturesIndex.html">
+                  <img src="_thumbnails/Figure17.12bWoodTexturesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.12bWoodTexturesIndex.html">Figure 17.12b Wood Textures</a>
+            </td>
+            <td>Six different wood types created by coloring a grayscale wood texture.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.13SimplePixelTexture"/>
+               <a href="Figure17.13SimplePixelTextureIndex.html">
+                  <img src="_thumbnails/Figure17.13SimplePixelTextureThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.13SimplePixelTextureIndex.html">Figure 17.13 Simple Pixel Texture</a>
+            </td>
+            <td>A face with color varying from yellow to red, showing PixelTexture use.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure17.14bMovieTextureWhirlpool"/>
+               <a href="Figure17.14bMovieTextureWhirlpoolIndex.html">
+                  <img src="_thumbnails/Figure17.14bMovieTextureWhirlpoolThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure17.14bMovieTextureWhirlpoolIndex.html">Figure 17.14b Movie Texture Whirlpool</a>
+            </td>
+            <td>A swirling whirlpool created using a movie texture.</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17-Textures/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17-Textures</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17-Textures/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17-Textures/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17-Textures</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16-Color/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18-TextureMapping/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

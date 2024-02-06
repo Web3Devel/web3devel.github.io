@@ -1,0 +1,60 @@
+
+          
+ecmascript:
+
+function initialize( ) {
+    generateCrossSection( );
+    generateSpine( );
+}
+
+function set_crossSectionRadius( csr, ts )
+{
+    crossSectionRadius = csr;
+//  Browser.println ('crossSectionRadius =' + crossSectionRadius);
+    generateCrossSection( );
+}
+
+function set_spineRadius( sr, ts )
+{
+    spineRadius = sr;
+//  Browser.println ('spineRadius =' + spineRadius);
+    generateSpine( );
+}
+
+function generateCrossSection( )
+{
+    newCrossSection = new MFVec2f(); // temporary hold variable
+    angle = 0.0;
+    delta = 6.28 / crossSectionResolution;
+    for ( i = 0; i &lt;= crossSectionResolution + 1; i++ ) {
+        newCrossSection[i][0] =  crossSectionRadius * Math.cos( angle );
+        newCrossSection[i][1] = -crossSectionRadius * Math.sin( angle );
+        angle += delta;
+    }
+    // make ends meet
+    newCrossSection[crossSectionResolution + 1][0] = newCrossSection[0][0];
+    newCrossSection[crossSectionResolution + 1][1] = newCrossSection[0][1];
+
+    crossSection_changed = newCrossSection;
+}
+
+function generateSpine( )
+{
+    newSpine = new MFVec3f(); // temporary hold variable
+    angle = 0.0;
+    delta = (2 * 3.141592653) / spineResolution;
+    for ( i = 0; i &lt;= spineResolution; i++ ) {
+        newSpine[i][0] = spineRadius * Math.cos( angle );
+        newSpine[i][1] = 0.0;
+        newSpine[i][2] = -spineRadius * Math.sin( angle );
+        angle += delta;
+    }
+    // make ends meet
+    newSpine[spineResolution + 1][0] = newSpine[0][0];
+    newSpine[spineResolution + 1][1] = 0.0;
+    newSpine[spineResolution + 1][2] = newSpine[0][2];
+
+    spine_changed = newSpine;
+}
+
+        

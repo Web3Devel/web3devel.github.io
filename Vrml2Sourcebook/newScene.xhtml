@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- =================================================================== -->
+<!-- embedded X3D scene appears after html/head/script and style entries -->
+<!-- =================================================================== -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title> (X3dToX3dom.xslt X3DOM)</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="generator" content="http://www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt"/>
+      <!-- Numbered X3DOM release versions: http://www.x3dom.org/download -->
+<!-- Developer X3DOM release version: http://www.x3dom.org/download/dev -->
+<link rel="stylesheet" type="text/css"
+            href="http://www.x3dom.org/download/dev/x3dom.css"/>
+      <script type="text/javascript" src="http://www.x3dom.org/download/dev/x3dom-full.js"/>
+      <meta name="warning"
+            content="Webfonts must be loaded prior to using Text node in X3D scene... see http://x3dom.org/x3dom/example/x3dom_text.html"/>
+      <!-- X3DOM needs Web Fonts when an X3D Text node is included -->
+<!-- adapted from http://x3dom.org/x3dom/example/x3dom_text.html and http://web.mit.edu/jmorzins/www/fonts.html -->
+<style type="text/css">
+/* ============================================================================= */
+@font-face {
+  font-family: 'SERIF'; /* default original */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roman'), url('Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SERIF'; /* default alternate */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Times New Roman'), local('TimesNewRoman'), url('Times New Roman.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'SANS'; /* default original */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('Arial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SANS'; /* default alternate */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url('Helvetica.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'TYPEWRITER'; /* default original */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier'), url('Courier.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TYPEWRITER'; /* default alternate */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier New'), url('Courier New.ttf') format('truetype');
+}
+/* ============================================================================= */
+</style>
+      <style type="text/css" media="screen, print">
+.webfont { font-size:200%; font-family:'TYPEWRITER'; color:green;} /* Conversion TODO font families: SANS SERIF TYPEWRITER */
+</style>
+      <!-- Button zoom adapted from http://x3dom.org/docs/dev/tutorial/styling.html -->
+<style type="text/css">
+
+html {width:100%;height:100%;margin:0;padding:0;}
+body {margin:0;padding:10px;width:100%;height:100%;}
+
+#rootX3dElement {
+    height: 450px;
+    width:  800px;
+    border: none;
+    display: block;
+    position:relative;
+    background:#000;
+}
+
+#toggleZoomButton {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: #202021;
+    color: #ccc;
+}
+
+#toggleZoomButton:hover {
+    background-color:blue;
+}
+</style>
+      <!-- http://x3dom.org/docs/dev/api.html and http://x3dom.org/docs/dev/configuration.html -->
+<script type="text/javascript">
+var zoomed = false;
+var showStatistics = false;
+var showDebugLog   = true;
+
+function toggleZoom(button) {
+
+        var new_height;
+        var new_width;
+        var x3d_element;
+        
+        htmlBody       = document.getElementById('htmlBody');
+        htmlPageHeader = document.getElementById('htmlPageHeader');
+        htmlPageFooter = document.getElementById('htmlPageFooter');
+        x3d_element    = document.getElementById('rootX3dElement');
+
+        if (zoomed) // previous value
+        {
+                // unzoom
+                new_height = "450px";
+                new_width  = "800px";
+                button.innerHTML = "Zoom";
+                htmlPageHeader.style.display = "table-row";
+                htmlPageFooter.style.display = "table-row";
+                document.getElementById('checkBoxCell').style="text-align:right";
+                htmlBody.style.padding = "10px";
+                x3d_element.showStat   = showStatistics;
+                x3d_element.showLog    = showDebugLog;
+                x3d_element.runtime.debug(showDebugLog);
+                document.getElementById("details").hidden = (!showDebugLog);
+        } else {
+                // zoom
+                new_height = "100%";
+                new_width  = "100%";
+                button.innerHTML = "Unzoom";
+                htmlPageHeader.style.display = "none";
+                htmlPageFooter.style.display = "none";
+                htmlBody.style.padding = "0px";
+                x3d_element.showStat   = false;
+                x3d_element.showLog    = false;
+                x3d_element.runtime.debug(false);
+                document.getElementById("details").hidden = true;
+                // TODO how to hide browser interface?
+        }
+        zoomed = !zoomed; // toggle
+
+        x3d_element.style.height = new_height;
+        x3d_element.style.width  = new_width;
+}
+                    
+    // Browser information table adapted from http://www.w3schools.com/js/js_window_navigator.asp
+    
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        document.getElementById("browserCodeName"      ).innerHTML = navigator.appCodeName;
+        document.getElementById("browserAppName"       ).innerHTML = navigator.appName;
+        document.getElementById("browserAppVersion"    ).innerHTML = navigator.appVersion;
+        document.getElementById("browserCookieEnabled" ).innerHTML = navigator.cookieEnabled;
+        document.getElementById("browserPlatform"      ).innerHTML = navigator.platform;
+        document.getElementById("browserUserAgent"     ).innerHTML = navigator.userAgent;
+    if (navigator.systemLanguage)
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.systemLanguage;
+    else
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.language;
+    }, false);
+
+function toggleOverlayStatistics()
+{
+        showStatistics = !showStatistics; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.statistics(showStatistics);
+}
+function toggleShowDebugLogs()
+{
+        showDebugLog  = !showDebugLog; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.debug(showDebugLog);
+        document.getElementById("details").hidden = (!showDebugLog);
+}
+</script>
+   </head>
+   <body id="htmlBody">
+      <table style="width:96%" id="htmlPageHeader">
+         <tr>
+            <td style="text-align:left;">
+               <h2/>
+            </td>
+            <td id="checkBoxCell" style="text-align:right"> (<a href="*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*"
+                  title="View .x3d scene">.x3d scene</a>, 
+<a href=".html" title="View .html pretty-print source">pretty-print source</a>, 
+<input id="checkBoxOverlayStatistics" type="checkbox" value="Overlay scene statistics"
+                      onclick="toggleOverlayStatistics();"/>
+               <span title="Overlay scene performance statistics">statistics</span>, 
+<input id="checkBoxShowDebugLogs" type="checkbox" value="Display debugger logs"
+                      checked="checked"
+                      onclick="toggleShowDebugLogs();"/>
+               <span title="Show meta information and debug logs">info &amp; logs</span>)</td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p>
+                  <span class="webfont">*enter description here, short-sentence summaries preferred*</span>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <div>
+<!-- ================================ -->
+<!-- embedded X3D scene appears here: -->
+<X3D id='rootX3dElement' showStat='false' showLog='true' showProgress='bar'
+ profile='Immersive' version='3.3' noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+<head>
+<meta content='*enter FileNameWithNoAbbreviations.x3d here*' name='title'/>
+<meta content='*enter description here, short-sentence summaries preferred*' name='description'/>
+<meta content='*enter name of original author here*' name='creator'/>
+<meta content='*if manually translating VRML-to-X3D, enter name of person translating here*' name='translator'/>
+<meta content='*enter date of initial version here*' name='created'/>
+<meta content='*enter date of translation here*' name='translated'/>
+<meta content='*enter date of latest revision here*' name='modified'/>
+<meta content='*enter version here, if any*' name='version'/>
+<meta content='*enter reference citation or relative/online url here*' name='reference'/>
+<meta content='*enter additional url/bibliographic reference information here*' name='reference'/>
+<meta content='*enter reference resource here if required to support function, delivery, or coherence of content*' name='requires'/>
+<meta content='*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2006 to present' name='rights'/>
+<meta content='*enter drawing filename/url here*' name='drawing'/>
+<meta content='*enter image filename/url here*' name='Image'/>
+<meta content='*enter movie filename/url here*' name='MovingImage'/>
+<meta content='*enter photo filename/url here*' name='photo'/>
+<meta content='*enter subject keywords here*' name='subject'/>
+<meta content='*enter permission statements or url here*' name='accessRights'/>
+<meta content='*insert any known warnings, bugs or errors here*' name='warning'/>
+<meta content='*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*' name='identifier'/>
+<meta content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' name='generator'/>
+<meta content='../license.html' name='license'/>
+</head>
+<!-- Conversion note: the following HTML button is overlaid on top of the X3D scene -->
+<button id="toggleZoomButton" onclick="toggleZoom(this); return false;">Zoom</button>
+<Scene/>
+</X3D>
+
+<!-- ================================ -->
+</div>
+      <div id="details">
+         <p style="clear:both;">&nbsp;</p>
+         <table style="border:0px solid; border-spacing:0px; margin:auto; margin-top:20px;margin-left:5%;">
+            <tr style="background-color:silver; border-color:silver;">
+               <th style="text-align:right;">X3D&nbsp;Scene </th>
+               <th style="text-align:left;"> Metadata </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">title</td>
+               <td>
+                  <a href="*enter FileNameWithNoAbbreviations.x3d here*">*enter FileNameWithNoAbbreviations.x3d here*</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">description</td>
+               <td>*enter description here, short-sentence summaries preferred*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">creator</td>
+               <td>*enter name of original author here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translator</td>
+               <td>*if manually translating VRML-to-X3D, enter name of person translating here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">created</td>
+               <td>*enter date of initial version here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translated</td>
+               <td>*enter date of translation here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">modified</td>
+               <td>*enter date of latest revision here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">version</td>
+               <td>*enter version here, if any*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>*enter reference citation or relative/online url here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>*enter additional url/bibliographic reference information here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">requires</td>
+               <td>*enter reference resource here if required to support function, delivery, or coherence of content*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">rights</td>
+               <td>*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2006 to present</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">drawing</td>
+               <td>*enter drawing filename/url here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">Image</td>
+               <td>
+                  <a href="*enter image filename/url here*">*enter image filename/url here*</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">MovingImage</td>
+               <td>
+                  <a href="*enter movie filename/url here*">*enter movie filename/url here*</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">photo</td>
+               <td>*enter photo filename/url here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">subject</td>
+               <td>*enter subject keywords here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">accessRights</td>
+               <td>*enter permission statements or url here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">warning</td>
+               <td>*insert any known warnings, bugs or errors here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">identifier</td>
+               <td>*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>X3D-Edit 3.3, <a href="https://savage.nps.edu/X3D-Edit">https://savage.nps.edu/X3D-Edit</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">license</td>
+               <td>
+                  <a href="../license.html">../license.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr style="background-color:silver;border-color:silver;">
+               <th style="text-align:right;"> HTML&nbsp;Browser </th>
+               <th style="text-align:left;"> Information </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser code name: </td>
+               <td id="browserCodeName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser application name: </td>
+               <td id="browserAppName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser version: </td>
+               <td id="browserAppVersion"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Cookies enabled: </td>
+               <td id="browserCookieEnabled"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Platform: </td>
+               <td id="browserPlatform"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> User Agent: </td>
+               <td id="browserUserAgent"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> System language: </td>
+               <td id="browserSystemLanguage"/>
+            </tr>
+            <tr>
+               <td colspan="2">
+</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- =================================================================== -->
+<!-- embedded X3D scene appears after html/head/script and style entries -->
+<!-- =================================================================== -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Mountain32.x3d (X3dToDom)</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="generator" content="http://www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt"/>
+      <!-- Numbered X3DOM release versions: http://www.x3dom.org/download -->
+<!-- Developer X3DOM release version: http://www.x3dom.org/download/dev -->
+<link rel="stylesheet" type="text/css"
+            href="http://www.x3dom.org/download/dev/x3dom.css"/>
+      <script type="text/javascript" src="http://www.x3dom.org/download/dev/x3dom-full.js"/>
+      <meta name="warning"
+            content="Webfonts must be loaded prior to using Text node in X3D scene... see http://x3dom.org/x3dom/example/x3dom_text.html"/>
+      <!-- X3DOM needs Web Fonts when an X3D Text node is included --><!-- adapted from http://x3dom.org/x3dom/example/x3dom_text.html and http://web.mit.edu/jmorzins/www/fonts.html -->
+<style type="text/css">
+/* ============================================================================= */
+@font-face {
+  font-family: 'SERIF'; /* default original */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roman'), url('Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SERIF'; /* default alternate */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Times New Roman'), local('TimesNewRoman'), url('Times New Roman.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'SANS'; /* default original */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('Arial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SANS'; /* default alternate */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url('Helvetica.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'TYPEWRITER'; /* default original */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier'), url('Courier.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TYPEWRITER'; /* default alternate */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier New'), url('Courier New.ttf') format('truetype');
+}
+/* ============================================================================= */
+</style>
+      <style type="text/css" media="screen, print">
+.webfont { font-size:200%; font-family:'TYPEWRITER'; color:green;} /* Conversion TODO font families: SANS SERIF TYPEWRITER */
+</style>
+      <!-- Button zoom adapted from http://x3dom.org/docs/dev/tutorial/styling.html -->
+<style type="text/css">
+
+html {width:100%;height:100%;margin:0;padding:0;}
+body {margin:0;padding:10px;width:100%;height:100%;}
+
+#rootX3dElement {
+    height: 450px;
+    width:  800px;
+    border: none;
+    display: block;
+    position:relative;
+    background:#000;
+}
+
+#toggleZoomButton {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: #202021;
+    color: #ccc;
+}
+
+#toggleZoomButton:hover {
+    background-color:blue;
+}
+</style>
+      <!-- http://x3dom.org/docs/dev/api.html and http://x3dom.org/docs/dev/configuration.html -->
+<script type="text/javascript">
+var zoomed = false;
+var showStatistics = false;
+var showDebugLog   = true;
+
+function toggleZoom(button) {
+
+        var new_height;
+        var new_width;
+        var x3d_element;
+        
+        htmlBody       = document.getElementById('htmlBody');
+        htmlPageHeader = document.getElementById('htmlPageHeader');
+        htmlPageFooter = document.getElementById('htmlPageFooter');
+        x3d_element    = document.getElementById('rootX3dElement');
+
+        if (zoomed) // previous value
+        {
+                // unzoom
+                new_height = "450px";
+                new_width  = "800px";
+                button.innerHTML = "Zoom";
+                htmlPageHeader.style.display = "table-row";
+                htmlPageFooter.style.display = "table-row";
+                document.getElementById('checkBoxCell').style="text-align:right";
+                htmlBody.style.padding = "10px";
+                x3d_element.showStat   = showStatistics;
+                x3d_element.showLog    = showDebugLog;
+                x3d_element.runtime.debug(showDebugLog);
+                document.getElementById("details").hidden = (!showDebugLog);
+        } else {
+                // zoom
+                new_height = "100%";
+                new_width  = "100%";
+                button.innerHTML = "Unzoom";
+                htmlPageHeader.style.display = "none";
+                htmlPageFooter.style.display = "none";
+                htmlBody.style.padding = "0px";
+                x3d_element.showStat   = false;
+                x3d_element.showLog    = false;
+                x3d_element.runtime.debug(false);
+                document.getElementById("details").hidden = true;
+                // TODO how to hide browser interface?
+        }
+        zoomed = !zoomed; // toggle
+
+        x3d_element.style.height = new_height;
+        x3d_element.style.width  = new_width;
+}
+                    
+    // Browser information table adapted from http://www.w3schools.com/js/js_window_navigator.asp
+    
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        document.getElementById("browserCodeName"      ).innerHTML = navigator.appCodeName;
+        document.getElementById("browserAppName"       ).innerHTML = navigator.appName;
+        document.getElementById("browserAppVersion"    ).innerHTML = navigator.appVersion;
+        document.getElementById("browserCookieEnabled" ).innerHTML = navigator.cookieEnabled;
+        document.getElementById("browserPlatform"      ).innerHTML = navigator.platform;
+        document.getElementById("browserUserAgent"     ).innerHTML = navigator.userAgent;
+    if (navigator.systemLanguage)
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.systemLanguage;
+    else
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.language;
+    }, false);
+
+function toggleOverlayStatistics()
+{
+        showStatistics = !showStatistics; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.statistics(showStatistics);
+}
+function toggleShowDebugLogs()
+{
+        showDebugLog  = !showDebugLog; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.debug(showDebugLog);
+        document.getElementById("details").hidden = (!showDebugLog);
+}
+</script>
+   </head>
+   <body id="htmlBody">
+      <table style="width:96%" id="htmlPageHeader">
+         <tr>
+            <td style="text-align:left;">
+               <h2>Mountain32.x3d</h2>
+            </td>
+            <td id="checkBoxCell" style="text-align:right"> (<a href="http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course/Mountain32.x3d"
+                  title="View .x3d scene">.x3d scene</a>, 
+<a href="http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course/Mountain32.html"
+                  title="View .html pretty-print source">pretty-print source</a>, 
+<input id="checkBoxOverlayStatistics" type="checkbox" value="Overlay scene statistics"
+                      onclick="toggleOverlayStatistics();"/>
+               <span title="Overlay scene performance statistics">statistics</span>, 
+<input id="checkBoxShowDebugLogs" type="checkbox" value="Display debugger logs"
+                      checked="checked"
+                      onclick="toggleShowDebugLogs();"/>
+               <span title="Show meta information and debug logs">info &amp; logs</span>)</td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p>
+                  <span class="webfont">Mid-resolution mountain.</span>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <div>
+<!-- ================================ -->
+<!-- embedded X3D scene appears here: -->
+<X3D id='rootX3dElement' showStat='false' showLog='true' showProgress='bar'
+ profile='Interactive' version='3.3' noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+<head>
+<meta content='Mountain32.x3d' name='title'/>
+<meta content='Mid-resolution mountain.' name='description'/>
+<meta content='John L. Moreland' name='creator'/>
+<meta content='Don Brutzman' name='translator'/>
+<meta content='1 July 1998' name='created'/>
+<meta content='2 February 2014' name='translated'/>
+<meta content='8 February 2014' name='modified'/>
+<meta content='originals/mount32.wrl' name='reference'/>
+<meta content='http://www.siggraph.org/s98' name='reference'/>
+<meta content='http://www.siggraph.org/s98/conference/courses/18.html' name='reference'/>
+<meta content='http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0201.htm' name='reference'/>
+<meta content='http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' name='reference'/>
+<meta content='http://www.web3d.org/x3d/content/examples/X3dResources.html' name='reference'/>
+<meta content='http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course/Mountain32.x3d' name='identifier'/>
+<meta content='Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' name='generator'/>
+<meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+<meta content='../license.html' name='license'/>
+</head>
+<!-- Conversion note: the following HTML button is overlaid on top of the X3D scene -->
+<button id="toggleZoomButton" onclick="toggleZoom(this); return false;">Zoom</button>
+<Scene>
+<WorldInfo info='&quot;copyright (c) 1997, John L. Moreland&quot;' title='Mid-res Mountain'/>
+<Viewpoint description='Entry view' orientation='1.0 0.0 0.0 -0.2' position='1.2 0.9 4.0'/>
+<NavigationInfo/>
+<Shape>
+<Appearance>
+<Material/>
+</Appearance>
+<ElevationGrid height='0.019608 0.027451 0.031373 0.035294 0.043137 0.043137 0.05098 0.047059 0.054902 0.054902 0.054902 0.054902 0.066667 0.062745 0.062745 0.062745 0.062745 0.062745 0.062745 0.058824 0.058824 0.062745 0.054902 0.054902 0.047059 0.05098 0.047059 0.039216 0.035294 0.031373 0.031373 0.019608 0.019608 0.027451 0.039216 0.039216 0.047059 0.047059 0.05098 0.047059 0.058824 0.058824 0.062745 0.062745 0.066667 0.070588 0.066667 0.070588 0.070588 0.066667 0.062745 0.066667 0.07451 0.070588 0.078431 0.07451 0.062745 0.062745 0.054902 0.047059 0.043137 0.039216 0.031373 0.027451 0.035294 0.039216 0.035294 0.05098 0.039216 0.058824 0.054902 0.05098 0.062745 0.066667 0.066667 0.066667 0.070588 0.070588 0.070588 0.070588 0.070588 0.066667 0.070588 0.07451 0.098039 0.121569 0.129412 0.113725 0.086275 0.101961 0.078431 0.066667 0.066667 0.047059 0.043137 0.035294 0.031373 0.043137 0.047059 0.05098 0.058824 0.066667 0.066667 0.062745 0.062745 0.066667 0.058824 0.070588 0.058824 0.070588 0.070588 0.062745 0.062745 0.070588 0.070588 0.082353 0.113725 0.160784 0.227451 0.196078 0.196078 0.145098 0.12549 0.105882 0.062745 0.05098 0.047059 0.031373 0.039216 0.047059 0.05098 0.047059 0.058824 0.070588 0.07451 0.066667 0.066667 0.066667 0.062745 0.058824 0.054902 0.062745 0.062745 0.054902 0.058824 0.062745 0.066667 0.082353 0.145098 0.247059 0.27451 0.270588 0.227451 0.219608 0.168627 0.121569 0.07451 0.058824 0.05098 0.043137 0.047059 0.05098 0.054902 0.062745 0.062745 0.07451 0.070588 0.070588 0.058824 0.058824 0.062745 0.05098 0.047059 0.054902 0.039216 0.058824 0.054902 0.05098 0.058824 0.086275 0.129412 0.254902 0.333333 0.305882 0.294118 0.25098 0.211765 0.129412 0.070588 0.058824 0.05098 0.047059 0.035294 0.05098 0.058824 0.05098 0.070588 0.078431 0.07451 0.066667 0.062745 0.054902 0.058824 0.047059 0.047059 0.039216 0.039216 0.035294 0.054902 0.066667 0.058824 0.090196 0.211765 0.301961 0.356863 0.364706 0.32549 0.298039 0.223529 0.121569 0.07451 0.058824 0.05098 0.047059 0.047059 0.058824 0.058824 0.066667 0.070588 0.078431 0.078431 0.062745 0.058824 0.05098 0.039216 0.047059 0.039216 0.039216 0.043137 0.05098 0.082353 0.117647 0.07451 0.152941 0.219608 0.32549 0.384314 0.372549 0.356863 0.317647 0.247059 0.105882 0.066667 0.054902 0.054902 0.043137 0.054902 0.05098 0.070588 0.066667 0.07451 0.086275 0.078431 0.058824 0.054902 0.043137 0.047059 0.035294 0.035294 0.031373 0.027451 0.05098 0.086275 0.235294 0.129412 0.160784 0.231373 0.286275 0.372549 0.329412 0.321569 0.254902 0.231373 0.172549 0.082353 0.05098 0.058824 0.058824 0.058824 0.062745 0.066667 0.078431 0.082353 0.086275 0.078431 0.062745 0.039216 0.039216 0.035294 0.035294 0.027451 0.027451 0.035294 0.098039 0.203922 0.243137 0.305882 0.270588 0.258824 0.254902 0.239216 0.160784 0.152941 0.141176 0.129412 0.117647 0.090196 0.062745 0.058824 0.05098 0.054902 0.062745 0.066667 0.070588 0.082353 0.078431 0.07451 0.047059 0.035294 0.031373 0.023529 0.027451 0.027451 0.035294 0.058824 0.239216 0.454902 0.541176 0.517647 0.4 0.239216 0.129412 0.121569 0.086275 0.094118 0.086275 0.078431 0.070588 0.058824 0.070588 0.058824 0.062745 0.05098 0.062745 0.062745 0.070588 0.082353 0.078431 0.066667 0.054902 0.043137 0.027451 0.023529 0.031373 0.043137 0.098039 0.152941 0.419608 0.580392 0.796078 0.709804 0.427451 0.227451 0.137255 0.070588 0.05098 0.047059 0.047059 0.054902 0.058824 0.066667 0.07451 0.066667 0.062745 0.062745 0.062745 0.066667 0.066667 0.07451 0.078431 0.047059 0.031373 0.023529 0.023529 0.027451 0.039216 0.129412 0.227451 0.47451 0.733333 0.815686 0.854902 0.701961 0.552941 0.317647 0.145098 0.054902 0.027451 0.035294 0.043137 0.05098 0.062745 0.066667 0.066667 0.066667 0.062745 0.066667 0.066667 0.066667 0.070588 0.07451 0.062745 0.058824 0.043137 0.031373 0.031373 0.047059 0.058824 0.137255 0.494118 0.803922 0.913725 0.917647 0.890196 0.807843 0.486275 0.184314 0.039216 0.031373 0.027451 0.031373 0.035294 0.047059 0.05098 0.062745 0.066667 0.062745 0.062745 0.066667 0.066667 0.062745 0.058824 0.066667 0.054902 0.05098 0.05098 0.031373 0.027451 0.082353 0.211765 0.27451 0.537255 0.780392 0.929412 0.956863 0.909804 0.827451 0.541176 0.25098 0.117647 0.054902 0.031373 0.035294 0.039216 0.047059 0.05098 0.062745 0.062745 0.058824 0.066667 0.070588 0.070588 0.070588 0.066667 0.054902 0.054902 0.054902 0.058824 0.058824 0.027451 0.035294 0.203922 0.576471 0.780392 0.831373 0.956863 0.972549 0.933333 0.878431 0.678431 0.505882 0.14902 0.058824 0.031373 0.035294 0.039216 0.039216 0.05098 0.062745 0.062745 0.062745 0.070588 0.078431 0.086275 0.078431 0.070588 0.058824 0.058824 0.054902 0.066667 0.113725 0.066667 0.07451 0.086275 0.282353 0.666667 0.858824 0.92549 0.945098 0.937255 0.745098 0.545098 0.203922 0.113725 0.031373 0.031373 0.027451 0.027451 0.031373 0.039216 0.043137 0.054902 0.062745 0.058824 0.070588 0.086275 0.094118 0.086275 0.082353 0.058824 0.062745 0.094118 0.121569 0.172549 0.156863 0.117647 0.176471 0.403922 0.611765 0.780392 0.909804 0.862745 0.85098 0.65098 0.286275 0.101961 0.043137 0.031373 0.023529 0.035294 0.043137 0.05098 0.05098 0.054902 0.066667 0.066667 0.070588 0.07451 0.094118 0.121569 0.109804 0.090196 0.117647 0.133333 0.192157 0.258824 0.282353 0.258824 0.231373 0.286275 0.517647 0.803922 0.92549 0.945098 0.929412 0.803922 0.423529 0.145098 0.027451 0.023529 0.031373 0.043137 0.05098 0.054902 0.058824 0.066667 0.066667 0.062745 0.062745 0.070588 0.082353 0.121569 0.176471 0.133333 0.192157 0.219608 0.270588 0.32549 0.352941 0.32549 0.356863 0.435294 0.682353 0.847059 0.941176 0.92549 0.901961 0.647059 0.14902 0.066667 0.027451 0.031373 0.039216 0.031373 0.043137 0.047059 0.058824 0.058824 0.062745 0.062745 0.058824 0.070588 0.082353 0.098039 0.160784 0.235294 0.223529 0.290196 0.329412 0.345098 0.329412 0.352941 0.458824 0.568627 0.733333 0.87451 0.901961 0.882353 0.858824 0.741176 0.607843 0.384314 0.164706 0.066667 0.054902 0.043137 0.047059 0.070588 0.062745 0.070588 0.062745 0.062745 0.054902 0.07451 0.094118 0.14902 0.207843 0.231373 0.266667 0.301961 0.286275 0.294118 0.270588 0.262745 0.447059 0.709804 0.792157 0.839216 0.85098 0.819608 0.819608 0.776471 0.741176 0.572549 0.258824 0.121569 0.101961 0.086275 0.105882 0.109804 0.078431 0.07451 0.066667 0.058824 0.058824 0.062745 0.090196 0.129412 0.180392 0.231373 0.254902 0.262745 0.243137 0.184314 0.164706 0.266667 0.443137 0.654902 0.768627 0.788235 0.796078 0.741176 0.772549 0.709804 0.701961 0.545098 0.298039 0.298039 0.290196 0.215686 0.152941 0.101961 0.098039 0.086275 0.066667 0.066667 0.054902 0.062745 0.078431 0.078431 0.145098 0.203922 0.207843 0.121569 0.14902 0.121569 0.082353 0.188235 0.411765 0.580392 0.698039 0.729412 0.701961 0.690196 0.690196 0.67451 0.631373 0.576471 0.486275 0.462745 0.396078 0.235294 0.152941 0.152941 0.113725 0.070588 0.070588 0.062745 0.05098 0.058824 0.066667 0.094118 0.101961 0.137255 0.152941 0.137255 0.086275 0.078431 0.094118 0.141176 0.341176 0.529412 0.611765 0.619608 0.662745 0.654902 0.584314 0.6 0.596078 0.529412 0.470588 0.462745 0.396078 0.270588 0.282353 0.211765 0.137255 0.078431 0.058824 0.062745 0.05098 0.05098 0.066667 0.070588 0.078431 0.07451 0.101961 0.082353 0.066667 0.062745 0.070588 0.156863 0.278431 0.329412 0.505882 0.568627 0.576471 0.576471 0.545098 0.545098 0.513726 0.501961 0.466667 0.407843 0.360784 0.282353 0.227451 0.129412 0.098039 0.066667 0.066667 0.05098 0.047059 0.043137 0.054902 0.054902 0.062745 0.066667 0.070588 0.062745 0.058824 0.058824 0.066667 0.101961 0.152941 0.301961 0.388235 0.501961 0.368627 0.376471 0.47451 0.439216 0.439216 0.443137 0.380392 0.368627 0.32549 0.239216 0.164706 0.098039 0.058824 0.058824 0.05098 0.054902 0.043137 0.05098 0.058824 0.058824 0.058824 0.066667 0.070588 0.066667 0.062745 0.062745 0.078431 0.101961 0.156863 0.262745 0.305882 0.321569 0.192157 0.258824 0.270588 0.243137 0.376471 0.380392 0.341176 0.266667 0.227451 0.203922 0.121569 0.094118 0.062745 0.05098 0.05098 0.035294 0.035294 0.047059 0.05098 0.058824 0.058824 0.062745 0.062745 0.066667 0.066667 0.062745 0.07451 0.098039 0.133333 0.129412 0.192157 0.192157 0.172549 0.090196 0.098039 0.223529 0.290196 0.266667 0.27451 0.2 0.133333 0.117647 0.105882 0.066667 0.054902 0.047059 0.047059 0.047059 0.023529 0.043137 0.043137 0.047059 0.054902 0.058824 0.058824 0.054902 0.062745 0.066667 0.070588 0.082353 0.086275 0.070588 0.121569 0.160784 0.098039 0.066667 0.113725 0.164706 0.184314 0.14902 0.117647 0.113725 0.090196 0.054902 0.082353 0.062745 0.043137 0.047059 0.043137 0.035294 0.035294 0.035294 0.043137 0.043137 0.05098 0.05098 0.054902 0.062745 0.062745 0.062745 0.066667 0.062745 0.054902 0.078431 0.082353 0.090196 0.098039 0.054902 0.07451 0.098039 0.098039 0.086275 0.078431 0.066667 0.062745 0.047059 0.062745 0.062745 0.054902 0.047059 0.039216 0.031373 0.023529 0.031373 0.031373 0.043137 0.047059 0.05098 0.054902 0.062745 0.058824 0.062745 0.058824 0.062745 0.058824 0.066667 0.066667 0.062745 0.078431 0.062745 0.066667 0.078431 0.078431 0.062745 0.062745 0.062745 0.05098 0.043137 0.054902 0.05098 0.047059 0.039216 0.039216 0.031373' xDimension='32' xSpacing='0.08' zDimension='32' zSpacing='0.08'/>
+</Shape>
+</Scene>
+</X3D>
+
+<!-- ================================ -->
+</div>
+      <div id="details">
+         <p style="clear:both;">&nbsp;</p>
+         <table style="border:0px solid; border-spacing:0px; margin:auto; margin-top:20px;margin-left:5%;">
+            <tr style="background-color:silver; border-color:silver;">
+               <th style="text-align:right;">X3D&nbsp;Scene </th>
+               <th style="text-align:left;"> Metadata </th>
+            </tr>
+            <tr style="background-color:silver; border-color:silver;">
+               <td style="text-align:right;color:green;">
+                  <i> archive </i>
+               </td>
+               <td>
+                  <i>
+                     <a href="http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course">http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course</a>
+                  </i>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">title</td>
+               <td>
+                  <a href="Mountain32.x3d">Mountain32.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">description</td>
+               <td>Mid-resolution mountain.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">creator</td>
+               <td>John L. Moreland</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translator</td>
+               <td>Don Brutzman</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">created</td>
+               <td>1 July 1998</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translated</td>
+               <td>2 February 2014</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">modified</td>
+               <td>8 February 2014</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>originals/mount32.wrl</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://www.siggraph.org/s98">http://www.siggraph.org/s98</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://www.siggraph.org/s98/conference/courses/18.html">http://www.siggraph.org/s98/conference/courses/18.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0201.htm">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0201.htm</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://www.web3d.org/x3d/content/examples/X3dResources.html">http://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">identifier</td>
+               <td>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course/Mountain32.x3d">http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Siggraph98Course/Mountain32.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>
+                  <a href="Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html">Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>X3D-Edit, <a href="https://savage.nps.edu/X3D-Edit">https://savage.nps.edu/X3D-Edit</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">license</td>
+               <td>
+                  <a href="../license.html">../license.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr style="background-color:silver;border-color:silver;">
+               <th style="text-align:right;"> HTML&nbsp;Browser </th>
+               <th style="text-align:left;"> Information </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser code name: </td>
+               <td id="browserCodeName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser application name: </td>
+               <td id="browserAppName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser version: </td>
+               <td id="browserAppVersion"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Cookies enabled: </td>
+               <td id="browserCookieEnabled"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Platform: </td>
+               <td id="browserPlatform"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> User Agent: </td>
+               <td id="browserUserAgent"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> System language: </td>
+               <td id="browserSystemLanguage"/>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <div id="htmlPageFooter">
+                     <table border="1"
+                            style="float:left; margin:auto; margin-top:20px; border:1px solid black;">
+                        <caption style="text-align:center;background-color:silver;border-color:silver; padding:4px;">
+                           <b>X3DOM node coverage</b>
+                        </caption>
+                        <tr style="text-align:center; padding:4px; border:1px solid black;">
+                           <th> Supported nodes found </th>
+                           <th> Unsupported nodes found </th>
+                           <th> Partial support</th>
+                        </tr>
+                        <tr style="border:1px solid black;">
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:green;">Appearance<br/>ElevationGrid<br/>Material<br/>NavigationInfo<br/>Shape<br/>Viewpoint<br/>WorldInfo<br/>
+                              </span> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:red;"/> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;"> </td>
+                        </tr>
+                        <tr style="text-align:center; background-color:silver;border-color:silver; padding:6px;">
+                           <td colspan="3" style="cellpadding:3px"> &nbsp;&nbsp;&nbsp; References: <a href="http://www.x3dom.org/check" onclick="target='_blank';">X3DOM browser check</a>,
+                                <a href="http://www.x3dom.org" onclick="target='_blank';">X3DOM home</a>,
+                                <a href="http://doc.x3dom.org" onclick="target='_blank';">X3DOM documentation</a>,
+                                <a href="http://x3dom.org/x3dom/test/functional/dumpNodeTypeTree.html"
+                                 onclick="target='_blank';">X3DOM list of supported nodes</a>,
+                                and
+                                <a href="http://www.web3d.org/x3d/content/examples/X3dResources.html"
+                                 onclick="target='_blank';">X3D Resources</a> &nbsp;&nbsp;&nbsp; </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

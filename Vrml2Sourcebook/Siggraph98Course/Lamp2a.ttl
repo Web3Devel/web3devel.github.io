@@ -1,0 +1,369 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Lamp2a.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Lamp2a.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Desk lamp with light toggle switch: this file builds a desk lamp that can be moved about. Dragging on the lamp base slides the lamp back and forth. Dragging on the lamp arms turns the lamp arm. Dragging on the lamp shade turns the lamp shade. Touching the lamp&apos;s light switch (on the top of the lamp shade) turns the lamp on and off.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '3 September 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/lamp2a.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0430.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Lamp2a.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Lamp2a.x3d" .
+:meta dcterms:description "Desk lamp with light toggle switch: this file builds a desk lamp that can be moved about. Dragging on the lamp base slides the lamp back and forth. Dragging on the lamp arms turns the lamp arm. Dragging on the lamp shade turns the lamp shade. Touching the lamp's light switch (on the top of the lamp shade) turns the lamp on and off." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "3 September 2023" .
+:meta dcterms:reference "originals/lamp2a.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0430.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Lamp2a.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Entry, :NavigationInfo_2_3, :Background_2_4, :DirectionalLight_2_5, :Transform_2_6, :Transform_2_7, :Toggle ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10, :ROUTE_2_11, :ROUTE_2_13, :ROUTE_2_14 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Desk lamp with light toggle switch' .
+:Entry a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Entry' ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 0.1 1.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:direction ( 0.0 -1.0 -1.0 ) ;
+  x3do:intensity 0.3 .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 ;
+  x3do:translation ( -1.0 0.0 -1.0 ) .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :ElevationGrid_2_6_1_2 .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_6_1_1_2 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 .
+:ImageTexture_2_6_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:url '"wood.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wood.jpg"' .
+:ElevationGrid_2_6_1_2 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:creaseAngle 3.14 ;
+  x3do:height ( 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ) ;
+  x3do:xDimension 10 ;
+  x3do:xSpacing 0.25 ;
+  x3do:zDimension 10 ;
+  x3do:zSpacing 0.25 .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :MoveLamp, :Lamp ;
+  x3do:rotation ( 1.0 0.0 0.0 1.571 ) ;
+  x3do:translation ( 0.0 0.01 0.0 ) .
+:MoveLamp a owl:NamedIndividual, x3do:PlaneSensor ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:DEF 'MoveLamp' .
+:Lamp a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :Shape_2_7_2_1, :Group_2_7_2_2 ;
+  x3do:DEF 'Lamp' ;
+  x3do:rotation ( 1.0 0.0 0.0 -1.571 ) .
+:Shape_2_7_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Lamp ;
+  x3do:hasAppearance :Appearance_2_7_2_1_1 ;
+  x3do:hasGeometry :Cylinder_2_7_2_1_2 .
+:Appearance_2_7_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  x3do:hasMaterial :Material_2_7_2_1_1_1 .
+:Material_2_7_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_1_1 ;
+  x3do:diffuseColor ( 0.5 0.5 0.5 ) .
+:Cylinder_2_7_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  x3do:height 0.01 ;
+  x3do:radius 0.1 .
+:Group_2_7_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Lamp ;
+  x3do:hasChildren :MoveFirstArm, :FirstArm .
+:MoveFirstArm a owl:NamedIndividual, x3do:CylinderSensor ;
+  x3do:hasParent :Group_2_7_2_2 ;
+  x3do:DEF 'MoveFirstArm' .
+:FirstArm a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7_2_2 ;
+  x3do:hasChildren :Transform_2_7_2_2_2_1 ;
+  x3do:DEF 'FirstArm' .
+:Transform_2_7_2_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstArm ;
+  x3do:hasChildren :LampArm, :Group_2_7_2_2_2_1_2 ;
+  x3do:center ( 0.0 -0.15 0.0 ) ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.7 ) ;
+  x3do:translation ( 0.0 0.15 0.0 ) .
+:LampArm a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2_2_2_1 ;
+  x3do:hasAppearance :Red ;
+  x3do:hasGeometry :Cylinder_2_7_2_2_2_1_1_2 ;
+  x3do:DEF 'LampArm' .
+:Red a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :LampArm ;
+  x3do:hasMaterial :Material_2_7_2_2_2_1_1_1_1 ;
+  x3do:DEF 'Red' .
+:Material_2_7_2_2_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Red ;
+  x3do:diffuseColor ( 1.0 0.2 0.2 ) .
+:Cylinder_2_7_2_2_2_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :LampArm ;
+  x3do:height 0.3 ;
+  x3do:radius 0.01 .
+:Group_2_7_2_2_2_1_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_7_2_2_2_1 ;
+  x3do:hasChildren :MoveSecondArm, :SecondArm .
+:MoveSecondArm a owl:NamedIndividual, x3do:CylinderSensor ;
+  x3do:hasParent :Group_2_7_2_2_2_1_2 ;
+  x3do:DEF 'MoveSecondArm' .
+:SecondArm a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7_2_2_2_1_2 ;
+  x3do:hasChildren :Transform_2_7_2_2_2_1_2_2_1 ;
+  x3do:DEF 'SecondArm' .
+:Transform_2_7_2_2_2_1_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondArm ;
+  x3do:hasChildren :LampArm-USE-1, :Group_2_7_2_2_2_1_2_2_1_2 ;
+  x3do:center ( 0.0 -0.15 0.0 ) ;
+  x3do:rotation ( 1.0 0.0 0.0 1.9 ) ;
+  x3do:translation ( 0.0 0.3 0.0 ) .
+:LampArm-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1 ;
+  owl:sameAs :LampArm . # DEF matching this USE
+:Group_2_7_2_2_2_1_2_2_1_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1 ;
+  x3do:hasChildren :MoveLampShade, :LampShade .
+:MoveLampShade a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :Group_2_7_2_2_2_1_2_2_1_2 ;
+  x3do:DEF 'MoveLampShade' ;
+  x3do:offset ( 1.0 0.0 0.0 -1.25 ) .
+:LampShade a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7_2_2_2_1_2_2_1_2 ;
+  x3do:hasChildren :Shape_2_7_2_2_2_1_2_2_1_2_2_1, :Transform_2_7_2_2_2_1_2_2_1_2_2_2, :Transform_2_7_2_2_2_1_2_2_1_2_2_3 ;
+  x3do:DEF 'LampShade' ;
+  x3do:center ( 0.0 0.075 0.0 ) ;
+  x3do:rotation ( 1.0 0.0 0.0 -1.25 ) ;
+  x3do:translation ( 0.0 0.075 0.0 ) .
+:Shape_2_7_2_2_2_1_2_2_1_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LampShade ;
+  x3do:hasAppearance :Red-USE-1 ;
+  x3do:hasGeometry :Cone_2_7_2_2_2_1_2_2_1_2_2_1_2 .
+:Red-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_1 ;
+  owl:sameAs :Red . # DEF matching this USE
+:Cone_2_7_2_2_2_1_2_2_1_2_2_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_1 ;
+  x3do:bottom false ;
+  x3do:bottomRadius 0.12 ;
+  x3do:height 0.15 .
+:Transform_2_7_2_2_2_1_2_2_1_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :LampShade ;
+  x3do:hasChildren :LightSwitch, :Shape_2_7_2_2_2_1_2_2_1_2_2_2_2 ;
+  x3do:translation ( 0.0 0.075 0.0 ) .
+:LightSwitch a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1_2_2_2 ;
+  x3do:DEF 'LightSwitch' .
+:Shape_2_7_2_2_2_1_2_2_1_2_2_2_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1_2_2_2 ;
+  x3do:hasAppearance :Appearance_2_7_2_2_2_1_2_2_1_2_2_2_2_1 ;
+  x3do:hasGeometry :Cylinder_2_7_2_2_2_1_2_2_1_2_2_2_2_2 .
+:Appearance_2_7_2_2_2_1_2_2_1_2_2_2_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_2_2 ;
+  x3do:hasMaterial :Material_2_7_2_2_2_1_2_2_1_2_2_2_2_1_1 .
+:Material_2_7_2_2_2_1_2_2_1_2_2_2_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_2_2_1_2_2_1_2_2_2_2_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:Cylinder_2_7_2_2_2_1_2_2_1_2_2_2_2_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_2_2 ;
+  x3do:height 0.03 ;
+  x3do:radius 0.007 .
+:Transform_2_7_2_2_2_1_2_2_1_2_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :LampShade ;
+  x3do:hasChildren :LampLight, :Shape_2_7_2_2_2_1_2_2_1_2_2_3_2 ;
+  x3do:translation ( 0.0 -0.05 0.0 ) .
+:LampLight a owl:NamedIndividual, x3do:SpotLight ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1_2_2_3 ;
+  x3do:DEF 'LampLight' ;
+  x3do:ambientIntensity 0.2 ;
+  x3do:beamWidth 0.6 ;
+  x3do:direction ( 0.0 -1.0 0.0 ) .
+:Shape_2_7_2_2_2_1_2_2_1_2_2_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2_2_2_1_2_2_1_2_2_3 ;
+  x3do:hasAppearance :Appearance_2_7_2_2_2_1_2_2_1_2_2_3_2_1 ;
+  x3do:hasGeometry :Sphere_2_7_2_2_2_1_2_2_1_2_2_3_2_2 .
+:Appearance_2_7_2_2_2_1_2_2_1_2_2_3_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_3_2 ;
+  x3do:hasMaterial :BulbMaterial .
+:BulbMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_2_2_1_2_2_1_2_2_3_2_1 ;
+  x3do:DEF 'BulbMaterial' ;
+  x3do:diffuseColor ( 0.0 0.0 0.0 ) ;
+  x3do:emissiveColor ( 1.0 1.0 1.0 ) .
+:Sphere_2_7_2_2_2_1_2_2_1_2_2_3_2_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_7_2_2_2_1_2_2_1_2_2_3_2 ;
+  x3do:radius 0.05 .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'translation_changed' ;
+  x3do:fromNode 'MoveLamp' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Lamp' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'MoveFirstArm' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'FirstArm' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'MoveSecondArm' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'SecondArm' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'MoveLampShade' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'LampShade' .
+:Toggle a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_12_1, :field_2_12_2, :field_2_12_3 ;
+  x3do:DEF 'Toggle' ;
+  x3do:sourceCode """
+ecmascript:
+		function set_active( b, tm ) {
+			// ignore button releases
+			if ( b == false ) return;
+
+			// toggle on button presses
+			if ( on == true ) on = false;
+			else              on = true;
+			on_changed = on;
+		}
+""" .
+:field_2_12_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Toggle ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'on' ;
+  x3do:type 'SFBool' ;
+  x3do:value true .
+:field_2_12_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Toggle ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_active' ;
+  x3do:type 'SFBool' .
+:field_2_12_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Toggle ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'on_changed' ;
+  x3do:type 'SFBool' .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'LightSwitch' ;
+  x3do:toField 'set_active' ;
+  x3do:toNode 'Toggle' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'on_changed' ;
+  x3do:fromNode 'Toggle' ;
+  x3do:toField 'set_on' ;
+  x3do:toNode 'LampLight' .

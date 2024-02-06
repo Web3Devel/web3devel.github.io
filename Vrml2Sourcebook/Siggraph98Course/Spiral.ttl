@@ -1,0 +1,928 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Spiral.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Spiral.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Spiral flow shows how to move a set of particles (spheres) along a pre-computed animation path. Such an approach might be used to visualize the results of a fluid flow simulation.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Spiral.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/spiral.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'build the track that the balls follow' ;
+  x3do:name 'TODO' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0151.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Spiral.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Spiral.x3d" .
+:meta dcterms:description "Spiral flow shows how to move a set of particles (spheres) along a pre-computed animation path. Such an approach might be used to visualize the results of a fluid flow simulation." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:Image "Spiral.png" .
+:meta dcterms:reference "originals/spiral.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0151.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Spiral.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Transform_2_4, :Transform_2_5, :Transform_2_6, :Transform_2_7, :Particle1, :Particle2, :Particle3, :Particle4, :Particle5, :Particle6, :Particle7, :Particle8, :Particle9, :Particle10, :Particle11, :Particle12, :Timer1, :Timer2, :Timer3, :Timer4, :Timer5, :Timer6, :Timer7, :Timer8, :Timer9, :Timer10, :Timer11, :Timer12, :Position1, :Position2, :Position3, :Position4, :Position5, :Position6, :Position7, :Position8, :Position9, :Position10, :Position11, :Position12, :Color1, :Color2, :Color3, :Color4, :Color5, :Color6, :Color7, :Color8, :Color9, :Color10, :Color11, :Color12 ;
+  x3do:hasROUTE :ROUTE_2_56, :ROUTE_2_57, :ROUTE_2_58, :ROUTE_2_59, :ROUTE_2_60, :ROUTE_2_61, :ROUTE_2_62, :ROUTE_2_63, :ROUTE_2_64, :ROUTE_2_65, :ROUTE_2_66, :ROUTE_2_67, :ROUTE_2_68, :ROUTE_2_69, :ROUTE_2_70, :ROUTE_2_71, :ROUTE_2_72, :ROUTE_2_73, :ROUTE_2_74, :ROUTE_2_75, :ROUTE_2_76, :ROUTE_2_77, :ROUTE_2_78, :ROUTE_2_79, :ROUTE_2_80, :ROUTE_2_81, :ROUTE_2_82, :ROUTE_2_83, :ROUTE_2_84, :ROUTE_2_85, :ROUTE_2_86, :ROUTE_2_87, :ROUTE_2_88, :ROUTE_2_89, :ROUTE_2_90, :ROUTE_2_91, :ROUTE_2_92, :ROUTE_2_93, :ROUTE_2_94, :ROUTE_2_95, :ROUTE_2_96, :ROUTE_2_97, :ROUTE_2_98, :ROUTE_2_99, :ROUTE_2_100, :ROUTE_2_101, :ROUTE_2_102, :ROUTE_2_103 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Spiral flow' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 9.0 35.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:translation ( 0.0 8.0 0.0 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasAppearance :BaseColor ;
+  x3do:hasGeometry :Cylinder_2_4_1_2 .
+:BaseColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1 ;
+  x3do:DEF 'BaseColor' .
+:Material_2_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :BaseColor ;
+  x3do:diffuseColor ( 0.0 0.5 1.0 ) .
+:Cylinder_2_4_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:height 18.0 ;
+  x3do:radius 0.5 .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:translation ( 0.0 -1.0 0.0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasAppearance :BaseColor-USE-1 ;
+  x3do:hasGeometry :Cylinder_2_5_1_2 .
+:BaseColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  owl:sameAs :BaseColor . # DEF matching this USE
+:Cylinder_2_5_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:height 0.25 ;
+  x3do:radius 6.0 .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_6_1, :Transform_2_6_2 ;
+  x3do:translation ( 0.0 16.0 0.0 ) .
+:Transform_2_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :Shape_2_6_1_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 -1.571 ) ;
+  x3do:translation ( 4.5 0.0 -1.0 ) .
+:Shape_2_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:hasAppearance :BaseColor-USE-2 ;
+  x3do:hasGeometry :Cone_2_6_1_1_2 .
+:BaseColor-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  owl:sameAs :BaseColor . # DEF matching this USE
+:Cone_2_6_1_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  x3do:bottomRadius 1.2 ;
+  x3do:height 2.5 .
+:Transform_2_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :Shape_2_6_2_1 ;
+  x3do:translation ( 2.25 0.0 0.0 ) .
+:Shape_2_6_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_2 ;
+  x3do:hasAppearance :BaseColor-USE-3 ;
+  x3do:hasGeometry :Box_2_6_2_1_2 .
+:BaseColor-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2_1 ;
+  owl:sameAs :BaseColor . # DEF matching this USE
+:Box_2_6_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_2_1 ;
+  x3do:size ( 4.5 0.5 0.5 ) .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_7_1, :Transform_2_7_2 .
+:Transform_2_7_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :Shape_2_7_1_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 1.571 ) ;
+  x3do:translation ( 4.5 0.0 1.0 ) .
+:Shape_2_7_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_1 ;
+  x3do:hasAppearance :BaseColor-USE-4 ;
+  x3do:hasGeometry :Cone_2_7_1_1_2 .
+:BaseColor-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1_1 ;
+  owl:sameAs :BaseColor . # DEF matching this USE
+:Cone_2_7_1_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_7_1_1 ;
+  x3do:bottomRadius 1.2 ;
+  x3do:height 2.5 .
+:Transform_2_7_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :Shape_2_7_2_1 ;
+  x3do:translation ( 2.25 0.0 0.0 ) .
+:Shape_2_7_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2 ;
+  x3do:hasAppearance :BaseColor-USE-5 ;
+  x3do:hasGeometry :Box_2_7_2_1_2 .
+:BaseColor-USE-5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  owl:sameAs :BaseColor . # DEF matching this USE
+:Box_2_7_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  x3do:size ( 4.5 0.5 0.5 ) .
+:Particle1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_8_1 ;
+  x3do:DEF 'Particle1' .
+:Shape_2_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle1 ;
+  x3do:hasAppearance :Appearance_2_8_1_1 ;
+  x3do:hasGeometry :Particle .
+:Appearance_2_8_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasMaterial :Material1 .
+:Material1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1_1 ;
+  x3do:DEF 'Material1' .
+:Particle a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:DEF 'Particle' .
+:Particle2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_9_1 ;
+  x3do:DEF 'Particle2' .
+:Shape_2_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle2 ;
+  x3do:hasAppearance :Appearance_2_9_1_1 ;
+  x3do:hasGeometry :Particle-USE-1 .
+:Appearance_2_9_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_1 ;
+  x3do:hasMaterial :Material2 .
+:Material2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_9_1_1 ;
+  x3do:DEF 'Material2' .
+:Particle-USE-1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_9_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_10_1 ;
+  x3do:DEF 'Particle3' .
+:Shape_2_10_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle3 ;
+  x3do:hasAppearance :Appearance_2_10_1_1 ;
+  x3do:hasGeometry :Particle-USE-2 .
+:Appearance_2_10_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_1 ;
+  x3do:hasMaterial :Material3 .
+:Material3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_1_1 ;
+  x3do:DEF 'Material3' .
+:Particle-USE-2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_10_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_11_1 ;
+  x3do:DEF 'Particle4' .
+:Shape_2_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle4 ;
+  x3do:hasAppearance :Appearance_2_11_1_1 ;
+  x3do:hasGeometry :Particle-USE-3 .
+:Appearance_2_11_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_11_1 ;
+  x3do:hasMaterial :Material4 .
+:Material4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_11_1_1 ;
+  x3do:DEF 'Material4' .
+:Particle-USE-3 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_11_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_12_1 ;
+  x3do:DEF 'Particle5' .
+:Shape_2_12_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle5 ;
+  x3do:hasAppearance :Appearance_2_12_1_1 ;
+  x3do:hasGeometry :Particle-USE-4 .
+:Appearance_2_12_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1 ;
+  x3do:hasMaterial :Material5 .
+:Material5 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1_1 ;
+  x3do:DEF 'Material5' .
+:Particle-USE-4 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_12_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_13_1 ;
+  x3do:DEF 'Particle6' .
+:Shape_2_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle6 ;
+  x3do:hasAppearance :Appearance_2_13_1_1 ;
+  x3do:hasGeometry :Particle-USE-5 .
+:Appearance_2_13_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_13_1 ;
+  x3do:hasMaterial :Material6 .
+:Material6 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_13_1_1 ;
+  x3do:DEF 'Material6' .
+:Particle-USE-5 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_13_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_14_1 ;
+  x3do:DEF 'Particle7' .
+:Shape_2_14_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle7 ;
+  x3do:hasAppearance :Appearance_2_14_1_1 ;
+  x3do:hasGeometry :Particle-USE-6 .
+:Appearance_2_14_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_14_1 ;
+  x3do:hasMaterial :Material7 .
+:Material7 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_14_1_1 ;
+  x3do:DEF 'Material7' .
+:Particle-USE-6 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_14_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_15_1 ;
+  x3do:DEF 'Particle8' .
+:Shape_2_15_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle8 ;
+  x3do:hasAppearance :Appearance_2_15_1_1 ;
+  x3do:hasGeometry :Particle-USE-7 .
+:Appearance_2_15_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_15_1 ;
+  x3do:hasMaterial :Material8 .
+:Material8 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_15_1_1 ;
+  x3do:DEF 'Material8' .
+:Particle-USE-7 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_15_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_16_1 ;
+  x3do:DEF 'Particle9' .
+:Shape_2_16_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle9 ;
+  x3do:hasAppearance :Appearance_2_16_1_1 ;
+  x3do:hasGeometry :Particle-USE-8 .
+:Appearance_2_16_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_16_1 ;
+  x3do:hasMaterial :Material9 .
+:Material9 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_16_1_1 ;
+  x3do:DEF 'Material9' .
+:Particle-USE-8 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_16_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_17_1 ;
+  x3do:DEF 'Particle10' .
+:Shape_2_17_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle10 ;
+  x3do:hasAppearance :Appearance_2_17_1_1 ;
+  x3do:hasGeometry :Particle-USE-9 .
+:Appearance_2_17_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_17_1 ;
+  x3do:hasMaterial :Material10 .
+:Material10 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_17_1_1 ;
+  x3do:DEF 'Material10' .
+:Particle-USE-9 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_17_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_18_1 ;
+  x3do:DEF 'Particle11' .
+:Shape_2_18_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle11 ;
+  x3do:hasAppearance :Appearance_2_18_1_1 ;
+  x3do:hasGeometry :Particle-USE-10 .
+:Appearance_2_18_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_18_1 ;
+  x3do:hasMaterial :Material11 .
+:Material11 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_18_1_1 ;
+  x3do:DEF 'Material11' .
+:Particle-USE-10 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_18_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Particle12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_19_1 ;
+  x3do:DEF 'Particle12' .
+:Shape_2_19_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Particle12 ;
+  x3do:hasAppearance :Appearance_2_19_1_1 ;
+  x3do:hasGeometry :Particle-USE-11 .
+:Appearance_2_19_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_19_1 ;
+  x3do:hasMaterial :Material12 .
+:Material12 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_19_1_1 ;
+  x3do:DEF 'Material12' .
+:Particle-USE-11 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_19_1 ;
+  owl:sameAs :Particle . # DEF matching this USE
+:Timer1 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer1' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:stopTime '-1.0' .
+:Timer2 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer2' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '0.25' ;
+  x3do:stopTime '-1.0' .
+:Timer3 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer3' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '0.5' ;
+  x3do:stopTime '-1.0' .
+:Timer4 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer4' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '0.7500000000000001' ;
+  x3do:stopTime '-1.0' .
+:Timer5 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer5' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' ;
+  x3do:stopTime '-1.0' .
+:Timer6 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer6' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '1.25' ;
+  x3do:stopTime '-1.0' .
+:Timer7 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer7' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '6.0' ;
+  x3do:stopTime '-1.0' .
+:Timer8 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer8' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '6.25' ;
+  x3do:stopTime '-1.0' .
+:Timer9 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer9' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '6.5' ;
+  x3do:stopTime '-1.0' .
+:Timer10 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer10' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '6.75' ;
+  x3do:stopTime '-1.0' .
+:Timer11 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer11' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '7.0' ;
+  x3do:stopTime '-1.0' .
+:Timer12 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer12' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true ;
+  x3do:startTime '7.25' ;
+  x3do:stopTime '-1.0' .
+:Position1 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position1' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position2 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position2' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position3 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position3' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position4 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position4' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position5 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position5' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position6 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position6' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position7 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position7' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position8 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position8' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position9 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position9' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position10 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position10' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position11 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position11' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Position12 a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Position12' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 4.5 16.0 0.0 3.89 15.75 2.81 1.63 15.49 4.83 -1.49 15.24 5.17 -4.33 14.98 3.65 -5.88 14.73 0.81 -5.71 14.48 -2.4 -4.01 14.22 -5.02 -1.41 13.97 -6.5 1.36 13.71 -6.71 3.76 13.46 -5.93 5.52 13.21 -4.57 6.62 12.95 -3.07 7.19 12.7 -1.72 7.42 12.44 -0.71 7.49 12.19 -0.13 7.5 11.94 -0.01 7.47 11.68 -0.36 7.33 11.43 -1.16 6.95 11.17 -2.36 6.14 10.92 -3.82 4.73 10.67 -5.29 2.63 10.41 -6.42 -0.01 10.16 -6.75 -2.78 9.9 -5.92 -5.02 9.65 -3.83 -6.01 9.4 -0.81 -5.31 9.14 2.34 -3.02 8.89 4.63 0.11 8.63 5.24 2.93 8.38 3.98 4.42 8.13 1.43 4.14 7.87 -1.34 2.4 7.62 -3.26 0.08 7.37 -3.76 -1.9 7.11 -2.91 -2.93 6.86 -1.29 -2.91 6.6 0.39 -2.14 6.35 1.63 -1.04 6.1 2.23 0.0 5.84 2.25 0.78 5.59 1.91 1.27 5.33 1.42 1.5 5.08 0.93 1.57 4.83 0.53 1.56 4.57 0.25 1.52 4.32 0.07 1.5 4.06 0.0 1.51 3.81 0.03 1.54 3.56 0.15 1.57 3.3 0.38 1.55 3.05 0.72 1.41 2.79 1.17 1.06 2.54 1.67 0.43 2.29 2.11 -0.5 2.03 2.3 -1.6 1.78 2.01 -2.59 1.52 1.09 -3.04 1.27 -0.42 -2.55 1.02 -2.15 -1.0 0.76 -3.47 1.25 0.51 -3.7 3.41 0.25 -2.46 4.5 0.0 0.0 ) .
+:Color1 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color1' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color2 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color2' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color3 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color3' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color4 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color4' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color5 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color5' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color6 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color6' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color7 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color7' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color8 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color8' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color9 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color9' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color10 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color10' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color11 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color11' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:Color12 a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Color12' ;
+  x3do:key ( 0.0 0.02 0.03 0.05 0.06 0.08 0.1 0.11 0.13 0.14 0.16 0.17 0.19 0.21 0.22 0.24 0.25 0.27 0.29 0.3 0.32 0.33 0.35 0.37 0.38 0.4 0.41 0.43 0.44 0.46 0.48 0.49 0.51 0.52 0.54 0.56 0.57 0.59 0.6 0.62 0.63 0.65 0.67 0.68 0.7 0.71 0.73 0.75 0.76 0.78 0.79 0.81 0.83 0.84 0.86 0.87 0.89 0.9 0.92 0.94 0.95 0.97 0.98 1.0 ) ;
+  x3do:keyValue ( 0.5 0.5 0.0 0.45 0.55 0.0 0.4 0.6 0.0 0.35 0.65 0.0 0.31 0.69 0.0 0.26 0.74 0.0 0.22 0.78 0.0 0.18 0.82 0.0 0.14 0.86 0.0 0.11 0.89 0.0 0.08 0.92 0.0 0.06 0.94 0.0 0.03 0.97 0.0 0.02 0.98 0.0 0.01 0.99 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.01 0.99 0.0 0.03 0.97 0.0 0.04 0.96 0.0 0.07 0.93 0.0 0.09 0.91 0.0 0.13 0.87 0.0 0.16 0.84 0.0 0.2 0.8 0.0 0.24 0.76 0.0 0.28 0.72 0.0 0.33 0.67 0.0 0.38 0.62 0.0 0.43 0.57 0.0 0.48 0.52 0.0 0.52 0.48 0.0 0.57 0.43 0.0 0.62 0.38 0.0 0.67 0.33 0.0 0.72 0.28 0.0 0.76 0.24 0.0 0.8 0.2 0.0 0.84 0.16 0.0 0.87 0.13 0.0 0.91 0.09 0.0 0.93 0.07 0.0 0.96 0.04 0.0 0.97 0.03 0.0 0.99 0.01 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 0.99 0.01 0.0 0.98 0.02 0.0 0.97 0.03 0.0 0.94 0.06 0.0 0.92 0.08 0.0 0.89 0.11 0.0 0.86 0.14 0.0 0.82 0.18 0.0 0.78 0.22 0.0 0.74 0.26 0.0 0.69 0.31 0.0 0.65 0.35 0.0 0.6 0.4 0.0 0.55 0.45 0.0 0.5 0.5 0.0 ) .
+:ROUTE_2_56 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer1' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position1' .
+:ROUTE_2_57 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position1' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle1' .
+:ROUTE_2_58 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer1' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color1' .
+:ROUTE_2_59 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color1' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material1' .
+:ROUTE_2_60 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer2' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position2' .
+:ROUTE_2_61 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position2' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle2' .
+:ROUTE_2_62 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer2' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color2' .
+:ROUTE_2_63 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color2' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material2' .
+:ROUTE_2_64 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer3' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position3' .
+:ROUTE_2_65 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position3' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle3' .
+:ROUTE_2_66 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer3' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color3' .
+:ROUTE_2_67 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color3' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material3' .
+:ROUTE_2_68 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer4' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position4' .
+:ROUTE_2_69 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position4' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle4' .
+:ROUTE_2_70 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer4' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color4' .
+:ROUTE_2_71 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color4' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material4' .
+:ROUTE_2_72 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer5' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position5' .
+:ROUTE_2_73 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position5' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle5' .
+:ROUTE_2_74 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer5' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color5' .
+:ROUTE_2_75 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color5' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material5' .
+:ROUTE_2_76 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer6' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position6' .
+:ROUTE_2_77 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position6' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle6' .
+:ROUTE_2_78 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer6' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color6' .
+:ROUTE_2_79 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color6' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material6' .
+:ROUTE_2_80 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer7' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position7' .
+:ROUTE_2_81 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position7' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle7' .
+:ROUTE_2_82 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer7' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color7' .
+:ROUTE_2_83 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color7' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material7' .
+:ROUTE_2_84 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer8' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position8' .
+:ROUTE_2_85 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position8' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle8' .
+:ROUTE_2_86 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer8' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color8' .
+:ROUTE_2_87 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color8' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material8' .
+:ROUTE_2_88 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer9' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position9' .
+:ROUTE_2_89 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position9' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle9' .
+:ROUTE_2_90 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer9' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color9' .
+:ROUTE_2_91 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color9' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material9' .
+:ROUTE_2_92 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer10' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position10' .
+:ROUTE_2_93 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position10' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle10' .
+:ROUTE_2_94 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer10' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color10' .
+:ROUTE_2_95 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color10' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material10' .
+:ROUTE_2_96 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer11' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position11' .
+:ROUTE_2_97 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position11' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle11' .
+:ROUTE_2_98 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer11' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color11' .
+:ROUTE_2_99 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color11' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material11' .
+:ROUTE_2_100 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer12' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Position12' .
+:ROUTE_2_101 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Position12' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Particle12' .
+:ROUTE_2_102 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer12' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Color12' .
+:ROUTE_2_103 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Color12' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Material12' .

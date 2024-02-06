@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 19 Normals Shading</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure19_21NormalSquare.x3d._VP_Normal_square,_solid=false_means_visible_on_both_sides.png': { 'caption': '[1] Figure19_21NormalSquare.x3d Normal square, solid=false means visible on both sides' },
+      'Figure19_21NormalSquare.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure19_21NormalSquare.x3d (default X3D view from 0 0 10)' },
+      'Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png': { 'caption': '[3] Figure19_22NormalSquareShaded.x3d Square with artificial normals, thus shaded. Careful, solid=true means visible only on one side!' },
+      'Figure19_22NormalSquareShaded.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure19_22NormalSquareShaded.x3d (default X3D view from 0 0 10)' },
+      'Figure19_23HalfColumn.x3d._VP_Half_column._Careful,_only_one_side!.png': { 'caption': '[5] Figure19_23HalfColumn.x3d Half column. Careful, only one side!' },
+      'Figure19_23HalfColumn.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure19_23HalfColumn.x3d (default X3D view from 0 0 10)' },
+      'Figure19_24aHalfColumnCreaseAngle.x3d._VP_Half_column._Careful,_only_one_side!.png': { 'caption': '[7] Figure19_24aHalfColumnCreaseAngle.x3d Half column. Careful, only one side!' },
+      'Figure19_24aHalfColumnCreaseAngle.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure19_24aHalfColumnCreaseAngle.x3d (default X3D view from 0 0 10)' },
+      'Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Two_half_columns_-_note_visible_seams_where_each_side_meets.png': { 'caption': '[9] Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d Two half columns - note visible seams where each side meets' },
+      'Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d (default X3D view)' },
+      'Figure19_25aHalfColumnNormals.x3d._VP_Half_column._Careful,_only_one_side!_Normals_are_applied_to_vertical_edges,_but_seam_improvement_not_visible_until_halves_put_together.png': { 'caption': '[11] Figure19_25aHalfColumnNormals.x3d Half column. Careful, only one side! Normals are applied to vertical edges, but seam improvement not visible until halves put together' },
+      'Figure19_25aHalfColumnNormals.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure19_25aHalfColumnNormals.x3d (default X3D view from 0 0 10)' },
+      'Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Two_half_columns_-_no_more_visible_seams_where_each_side_meets.png': { 'caption': '[13] Figure19_25bTwoHalfColumnsNormalsSeamless.x3d Two half columns - no more visible seams where each side meets' },
+      'Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure19_25bTwoHalfColumnsNormalsSeamless.x3d (default X3D view)' },
+      'Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png': { 'caption': '[15] Figure19_26NormalShadedElevationGrid.x3d Shaded (but flat) ElevationGrid' },
+      'Figure19_26NormalShadedElevationGrid.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure19_26NormalShadedElevationGrid.x3d (default X3D view)' },
+      'Figure19_27SquareFaceAnimatingNormals.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png': { 'caption': '[17] Figure19_27SquareFaceAnimatingNormals.x3d Animating normals on right vertices of a quadrilateral' },
+      'Figure19_27SquareFaceAnimatingNormals.x3d._VP_Other_side_-_note_difference_in_animated_shading.png': { 'caption': '[18] Figure19_27SquareFaceAnimatingNormals.x3d Other side - note difference in animated shading' },
+      'Figure19_27SquareFaceAnimatingNormals.x3d._VP_Default_viewpoint.png': { 'caption': '[19] Figure19_27SquareFaceAnimatingNormals.x3d (default X3D view)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18TextureMapping/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter19NormalsShading/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter20Lighting/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 19 Normals Shading</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure19_21NormalSquare.x3d._VP_Normal_square,_solid=false_means_visible_on_both_sides.png"
+                  alt="[1] Figure19_21NormalSquare.x3d Normal square, solid=false means visible on both sides"
+                  title="[1] Figure19_21NormalSquare.x3d Normal square, solid=false means visible on both sides"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter19NormalsShading/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Normal (perpendicular) vectors defined for individual points or polygons can change the shading of geometry.
+                    </p>
+                    
+
+
+                    <p>
+                        When shaded, the faces on a shape are obvious.
+                        Creating a smooth shape may require a large number of small faces.
+                        An alternative is to instead use smooth shading to create the illusion of a smooth shape, but with a smaller number of faces.
+                    </p>
+                    
+
+
+                    <p>
+                        The Normal node lists normal vectors to use for parts of a shape which can change shading.
+                        These are used as the value of the normal field, and normal index values select which normals to use (similar to color index values).
+                        Ordinarily the creaseAngle field controls faceted or smooth shading.
+                        Normals override the normal effect of the creaseAngle value.
+                        The normalPerVertex field selects normal per face/grid square or normal per coordinate.
+                        The NormalInterpolator node converts time values to normal values for animation effects.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch19.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0238.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 19.22 Normal Square Shaded" title="Figure 19.22 Normal Square Shaded" hspace="10" 
+                          src="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 19.26 Normal Shaded Elevation Grid" title="Figure 19.26 Normal Shaded Elevation Grid" hspace="10" 
+                          src="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+9 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 19 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_21NormalSquareIndex.html">
+                           <img src="_thumbnails/Figure19_21NormalSquareThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_21NormalSquare"
+                                 title="X3D model Figure19_21NormalSquare.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_21NormalSquareIndex.html"
+                            title="X3D model Figure19_21NormalSquare.x3d">Figure 19 21 Normal Square.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_21NormalSquare.x3d._VP_Normal_square,_solid=false_means_visible_on_both_sides.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_21NormalSquare.x3d._VP_Normal_square,_solid=false_means_visible_on_both_sides.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_21NormalSquare.x3d._VP_Normal_square,_solid=false_means_visible_on_both_sides.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure19_21NormalSquare.x3d Normal square, solid=false means visible on both sides</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_21NormalSquare.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_21NormalSquare.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_21NormalSquare.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure19_21NormalSquare.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_22NormalSquareShadedIndex.html">
+                           <img src="_thumbnails/Figure19_22NormalSquareShadedThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_22NormalSquareShaded"
+                                 title="X3D model Figure19_22NormalSquareShaded.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_22NormalSquareShadedIndex.html"
+                            title="X3D model Figure19_22NormalSquareShaded.x3d">Figure 19 22 Normal Square Shaded.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Square_with_artificial_normals,_thus_shaded._Careful,_solid=true_means_visible_only_on_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure19_22NormalSquareShaded.x3d Square with artificial normals, thus shaded. Careful, solid=true means visible only on one side!</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_22NormalSquareShaded.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure19_22NormalSquareShaded.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_23HalfColumnIndex.html">
+                           <img src="_thumbnails/Figure19_23HalfColumnThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_23HalfColumn"
+                                 title="X3D model Figure19_23HalfColumn.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_23HalfColumnIndex.html"
+                            title="X3D model Figure19_23HalfColumn.x3d">Figure 19 23 Half Column.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_23HalfColumn.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_23HalfColumn.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_23HalfColumn.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure19_23HalfColumn.x3d Half column. Careful, only one side!</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_23HalfColumn.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_23HalfColumn.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_23HalfColumn.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure19_23HalfColumn.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_24aHalfColumnCreaseAngleIndex.html">
+                           <img src="_thumbnails/Figure19_24aHalfColumnCreaseAngleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_24aHalfColumnCreaseAngle"
+                                 title="X3D model Figure19_24aHalfColumnCreaseAngle.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_24aHalfColumnCreaseAngleIndex.html"
+                            title="X3D model Figure19_24aHalfColumnCreaseAngle.x3d">Figure 19 24a Half Column Crease Angle.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Half_column._Careful,_only_one_side!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure19_24aHalfColumnCreaseAngle.x3d Half column. Careful, only one side!</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_24aHalfColumnCreaseAngle.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure19_24aHalfColumnCreaseAngle.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_24bTwoHalfColumnsCreaseAngleSeamIndex.html">
+                           <img src="_thumbnails/Figure19_24bTwoHalfColumnsCreaseAngleSeamThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_24bTwoHalfColumnsCreaseAngleSeam"
+                                 title="X3D model Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_24bTwoHalfColumnsCreaseAngleSeamIndex.html"
+                            title="X3D model Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d">Figure 19 24b Two Half Columns Crease Angle Seam.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Two_half_columns_-_note_visible_seams_where_each_side_meets.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Two_half_columns_-_note_visible_seams_where_each_side_meets.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Two_half_columns_-_note_visible_seams_where_each_side_meets.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d Two half columns - note visible seams where each side meets</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure19_24bTwoHalfColumnsCreaseAngleSeam.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_25aHalfColumnNormalsIndex.html">
+                           <img src="_thumbnails/Figure19_25aHalfColumnNormalsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_25aHalfColumnNormals"
+                                 title="X3D model Figure19_25aHalfColumnNormals.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_25aHalfColumnNormalsIndex.html"
+                            title="X3D model Figure19_25aHalfColumnNormals.x3d">Figure 19 25a Half Column Normals.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Half_column._Careful,_only_one_side!_Normals_are_applied_to_vertical_edges,_but_seam_improvement_not_visible_until_halves_put_together.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Half_column._Careful,_only_one_side!_Normals_are_applied_to_vertical_edges,_but_seam_improvement_not_visible_until_halves_put_together.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Half_column._Careful,_only_one_side!_Normals_are_applied_to_vertical_edges,_but_seam_improvement_not_visible_until_halves_put_together.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure19_25aHalfColumnNormals.x3d Half column. Careful, only one side! Normals are applied to vertical edges, but seam improvement not visible until halves put together</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_25aHalfColumnNormals.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure19_25aHalfColumnNormals.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_25bTwoHalfColumnsNormalsSeamlessIndex.html">
+                           <img src="_thumbnails/Figure19_25bTwoHalfColumnsNormalsSeamlessThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_25bTwoHalfColumnsNormalsSeamless"
+                                 title="X3D model Figure19_25bTwoHalfColumnsNormalsSeamless.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_25bTwoHalfColumnsNormalsSeamlessIndex.html"
+                            title="X3D model Figure19_25bTwoHalfColumnsNormalsSeamless.x3d">Figure 19 25b Two Half Columns Normals Seamless.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Two_half_columns_-_no_more_visible_seams_where_each_side_meets.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Two_half_columns_-_no_more_visible_seams_where_each_side_meets.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Two_half_columns_-_no_more_visible_seams_where_each_side_meets.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure19_25bTwoHalfColumnsNormalsSeamless.x3d Two half columns - no more visible seams where each side meets</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_25bTwoHalfColumnsNormalsSeamless.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure19_25bTwoHalfColumnsNormalsSeamless.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure19_26NormalShadedElevationGridIndex.html">
+                           <img src="_thumbnails/Figure19_26NormalShadedElevationGridThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_26NormalShadedElevationGrid"
+                                 title="X3D model Figure19_26NormalShadedElevationGrid.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure19_26NormalShadedElevationGridIndex.html"
+                            title="X3D model Figure19_26NormalShadedElevationGrid.x3d">Figure 19 26 Normal Shaded Elevation Grid.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Shaded_(but_flat)_ElevationGrid.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure19_26NormalShadedElevationGrid.x3d Shaded (but flat) ElevationGrid</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_26NormalShadedElevationGrid.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] Figure19_26NormalShadedElevationGrid.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure19_27SquareFaceAnimatingNormalsIndex.html">
+                           <img src="_thumbnails/Figure19_27SquareFaceAnimatingNormalsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure19_27SquareFaceAnimatingNormals"
+                                 title="X3D model Figure19_27SquareFaceAnimatingNormals.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure19_27SquareFaceAnimatingNormalsIndex.html"
+                            title="X3D model Figure19_27SquareFaceAnimatingNormals.x3d">Figure 19 27 Square Face Animating Normals.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure19_27SquareFaceAnimatingNormals.x3d Animating normals on right vertices of a quadrilateral</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure19_27SquareFaceAnimatingNormals.x3d Other side - note difference in animated shading</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure19_27SquareFaceAnimatingNormals.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] Figure19_27SquareFaceAnimatingNormals.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter19NormalsShading/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter18TextureMapping/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter19NormalsShading/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter20Lighting/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

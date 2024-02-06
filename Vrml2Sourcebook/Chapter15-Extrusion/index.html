@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 15 - Extrusion</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14-ElevationGrid/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16-Color/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 15 - Extrusion</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter15-Extrusion/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Extruded shapes are very common: tubes, pipes, bars, vases, donuts, and ther tricky uses.
+                        An Extrusion node efficiently creates extruded shapes.
+                        The crossSection field specifies the cross-section, and the spine field specifies the sweep path.
+                        The scale and orientation fields specify scaling and rotation at each spine point.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch15.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0208.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 15.10 Extruded Room With Axes" title="Figure 15.10 Extruded Room With Axes" hspace="10" 
+                          src="_viewpoints/Figure15.10ExtrudedRoomWithAxes.x3d._VP_Extruded_room_with_a_doorway.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;21 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.07ExtrudedCylinder"/>
+               <a href="Figure15.07ExtrudedCylinderIndex.html">
+                  <img src="_thumbnails/Figure15.07ExtrudedCylinderThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.07ExtrudedCylinderIndex.html">Figure 15.07 Extruded Cylinder</a>
+            </td>
+            <td>An extruded cylinder built using a circular cross section swept along a straight spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.08ExtrudedHalfCylinderWithCaps"/>
+               <a href="Figure15.08ExtrudedHalfCylinderWithCapsIndex.html">
+                  <img src="_thumbnails/Figure15.08ExtrudedHalfCylinderWithCapsThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.08ExtrudedHalfCylinderWithCapsIndex.html">Figure 15.08 Extruded Half Cylinder With Caps</a>
+            </td>
+            <td>An extruded half cylinder built using half of a circular cross section swept along a straight spine. Also see Figure 15.9 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.08ExtrudedHalfCylinderWithCapsWithAxes"/>
+               <a href="Figure15.08ExtrudedHalfCylinderWithCapsWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.08ExtrudedHalfCylinderWithCapsWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.08ExtrudedHalfCylinderWithCapsWithAxesIndex.html">Figure 15.08 Extruded Half Cylinder With Caps With Axes</a>
+            </td>
+            <td>An extruded half cylinder built using half of a circular cross section swept along a straight spine. Also see Figure 15.9 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.09ExtrudedHalfCylinderWithoutCaps"/>
+               <a href="Figure15.09ExtrudedHalfCylinderWithoutCapsIndex.html">
+                  <img src="_thumbnails/Figure15.09ExtrudedHalfCylinderWithoutCapsThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.09ExtrudedHalfCylinderWithoutCapsIndex.html">Figure 15.09 Extruded Half Cylinder Without Caps</a>
+            </td>
+            <td>An extruded half cylinder with its beginning and ending caps turned off. Also see Figure 15.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.09ExtrudedHalfCylinderWithoutCapsWithAxes"/>
+               <a href="Figure15.09ExtrudedHalfCylinderWithoutCapsWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.09ExtrudedHalfCylinderWithoutCapsWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.09ExtrudedHalfCylinderWithoutCapsWithAxesIndex.html">Figure 15.09 Extruded Half Cylinder Without Caps With Axes</a>
+            </td>
+            <td>An extruded half cylinder with its beginning and ending caps turned off. Also see Figure 15.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.10ExtrudedRoom"/>
+               <a href="Figure15.10ExtrudedRoomIndex.html">
+                  <img src="_thumbnails/Figure15.10ExtrudedRoomThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.10ExtrudedRoomIndex.html">Figure 15.10 Extruded Room</a>
+            </td>
+            <td>An extruded room using a floor plan as the cross section.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.10ExtrudedRoomWithAxes"/>
+               <a href="Figure15.10ExtrudedRoomWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.10ExtrudedRoomWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.10ExtrudedRoomWithAxesIndex.html">Figure 15.10 Extruded Room With Axes</a>
+            </td>
+            <td>An extruded room using a floor plan as the cross section.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.11ExtrudedPlaygroundSlide"/>
+               <a href="Figure15.11ExtrudedPlaygroundSlideIndex.html">
+                  <img src="_thumbnails/Figure15.11ExtrudedPlaygroundSlideThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.11ExtrudedPlaygroundSlideIndex.html">Figure 15.11 Extruded Playground Slide</a>
+            </td>
+            <td>A playground slide built by extruding a half-circle cross section along a helical spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.11ExtrudedPlaygroundSlideWithAxes"/>
+               <a href="Figure15.11ExtrudedPlaygroundSlideWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.11ExtrudedPlaygroundSlideWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.11ExtrudedPlaygroundSlideWithAxesIndex.html">Figure 15.11 Extruded Playground Slide With Axes</a>
+            </td>
+            <td>A playground slide built by extruding a half-circle cross section along a helical spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.12Torus"/>
+               <a href="Figure15.12TorusIndex.html">
+                  <img src="_thumbnails/Figure15.12TorusThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.12TorusIndex.html">Figure 15.12 Torus</a>
+            </td>
+            <td>A torus built using a circular cross section swept along a circular spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.12TorusWithAxes"/>
+               <a href="Figure15.12TorusWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.12TorusWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.12TorusWithAxesIndex.html">Figure 15.12 Torus With Axes</a>
+            </td>
+            <td>A torus built using a circular cross section swept along a circular spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.13ExtrudedPyramid"/>
+               <a href="Figure15.13ExtrudedPyramidIndex.html">
+                  <img src="_thumbnails/Figure15.13ExtrudedPyramidThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.13ExtrudedPyramidIndex.html">Figure 15.13 Extruded Pyramid</a>
+            </td>
+            <td>A pyramid built by scaling a square cross section to 0.01 at the pyramid apex.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.13ExtrudedPyramidWithAxes"/>
+               <a href="Figure15.13ExtrudedPyramidWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.13ExtrudedPyramidWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.13ExtrudedPyramidWithAxesIndex.html">Figure 15.13 Extruded Pyramid With Axes</a>
+            </td>
+            <td>A pyramid built by scaling a square cross section to 0.01 at the pyramid apex.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.14ExtrudedVase"/>
+               <a href="Figure15.14ExtrudedVaseIndex.html">
+                  <img src="_thumbnails/Figure15.14ExtrudedVaseThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.14ExtrudedVaseIndex.html">Figure 15.14 Extruded Vase</a>
+            </td>
+            <td>A vase built by scaling a circular cross section at each coordinate along a straight spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.14ExtrudedVaseWithAxes"/>
+               <a href="Figure15.14ExtrudedVaseWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.14ExtrudedVaseWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.14ExtrudedVaseWithAxesIndex.html">Figure 15.14 Extruded Vase With Axes</a>
+            </td>
+            <td>A vase built by scaling a circular cross section at each coordinate along a straight spine.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.15TwistedBar"/>
+               <a href="Figure15.15TwistedBarIndex.html">
+                  <img src="_thumbnails/Figure15.15TwistedBarThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.15TwistedBarIndex.html">Figure 15.15 Twisted Bar</a>
+            </td>
+            <td>A bar twisted using Y-axis, cross-section rotation at each spine coordinate.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.15TwistedBarWithAxes"/>
+               <a href="Figure15.15TwistedBarWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.15TwistedBarWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.15TwistedBarWithAxesIndex.html">Figure 15.15 Twisted Bar With Axes</a>
+            </td>
+            <td>A bar twisted using Y-axis, cross-section rotation at each spine coordinate.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.16ExtrudedLipstick"/>
+               <a href="Figure15.16ExtrudedLipstickIndex.html">
+                  <img src="_thumbnails/Figure15.16ExtrudedLipstickThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.16ExtrudedLipstickIndex.html">Figure 15.16 Extruded Lipstick</a>
+            </td>
+            <td>A lipstick shape created by rotating a circular cross section about the X axis as it is extruded.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.16ExtrudedLipstickWithAxes"/>
+               <a href="Figure15.16ExtrudedLipstickWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.16ExtrudedLipstickWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.16ExtrudedLipstickWithAxesIndex.html">Figure 15.16 Extruded Lipstick With Axes</a>
+            </td>
+            <td>A lipstick shape created by rotating a circular cross section about the X axis as it is extruded.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.17WigglingSnake"/>
+               <a href="Figure15.17WigglingSnakeIndex.html">
+                  <img src="_thumbnails/Figure15.17WigglingSnakeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.17WigglingSnakeIndex.html">Figure 15.17 Wiggling Snake</a>
+            </td>
+            <td>A wiggling snake whose spine is animated using a CoordinateInterpolator node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure15.17WigglingSnakeWithAxes"/>
+               <a href="Figure15.17WigglingSnakeWithAxesIndex.html">
+                  <img src="_thumbnails/Figure15.17WigglingSnakeWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure15.17WigglingSnakeWithAxesIndex.html">Figure 15.17 Wiggling Snake With Axes</a>
+            </td>
+            <td>A wiggling snake whose spine is animated using a CoordinateInterpolator node.</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15-Extrusion/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15-Extrusion</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15-Extrusion/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15-Extrusion/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15-Extrusion</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14-ElevationGrid/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter16-Color/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

@@ -1,0 +1,132 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_1SpinningCubeTouchSensor.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure09_1SpinningCubeTouchSensor.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 9.1, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig01.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '9 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A cube that spins when the cursor moves over it. Also see Figure 9.2 for comparison.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure09_2SpinningCubeTouchSensorClicked.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_1SpinningCubeTouchSensor.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure09_1SpinningCubeTouchSensor.x3d" .
+:meta dcterms:creator "Figure 9.1, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig01.htm" .
+:meta dcterms:created "9 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A cube that spins when the cursor moves over it. Also see Figure 9.2 for comparison." .
+:meta dcterms:reference "Figure09_2SpinningCubeTouchSensorClicked.x3d" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_1SpinningCubeTouchSensor.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_2 ;
+  x3do:hasROUTE :ROUTE_2_3, :ROUTE_2_4, :ROUTE_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure09_1SpinningCubeTouchSensor.x3d' .
+:Group_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :CUBE_TRANSFORM, :MyTouchSensor, :CLOCK, :CubePathInterpolator .
+:CUBE_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:hasChildren :Shape_2_2_1_1 ;
+  x3do:DEF 'CUBE_TRANSFORM' .
+:Shape_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :CUBE_TRANSFORM ;
+  x3do:hasGeometry :Box_2_2_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_1_2 .
+:Box_2_2_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_2_1_1 .
+:Appearance_2_2_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasMaterial :Material_2_2_1_1_2_1 .
+:Material_2_2_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1_2 ;
+  x3do:diffuseColor ( .5 .5 .5 ) .
+:MyTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:DEF 'MyTouchSensor' ;
+  x3do:description 'Point at box to spin it' .
+:CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:DEF 'CLOCK' ;
+  x3do:cycleInterval '4' ;
+  x3do:enabled false ;
+  x3do:loop true .
+:CubePathInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:DEF 'CubePathInterpolator' ;
+  x3do:key ( 0.0 0.50 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 3.14 0.0 1.0 0.0 6.28 ) .
+:ROUTE_2_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isOver' ;
+  x3do:fromNode 'MyTouchSensor' ;
+  x3do:toField 'set_enabled' ;
+  x3do:toNode 'CLOCK' .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'CubePathInterpolator' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CubePathInterpolator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'CUBE_TRANSFORM' .

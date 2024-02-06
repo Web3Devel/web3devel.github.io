@@ -1,0 +1,1 @@
+<ProtoDeclare name="DarkOak"/> has no corresponding <ProtoInstance name='DarkOak'/> [/X3D/Scene/ProtoDeclare[1], warning]

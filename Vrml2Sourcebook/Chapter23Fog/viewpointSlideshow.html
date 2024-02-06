@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 23 Fog</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure23_1FogTestWorld.x3d._VP_30m_above_60m_x_60m_square.png': { 'caption': '[1] Figure23_1FogTestWorld.x3d 30m above 60m x 60m square' },
+      'Figure23_1FogTestWorld.x3d._VP_60m_above_60m_x_60m_square.png': { 'caption': '[2] Figure23_1FogTestWorld.x3d 60m above 60m x 60m square' },
+      'Figure23_1FogTestWorld.x3d._VP_Default_viewpoint.png': { 'caption': '[3] Figure23_1FogTestWorld.x3d (default X3D view from 0 0 10)' },
+      'Figure23_2aLinearFogVisibility0.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[4] Figure23_2aLinearFogVisibility0.x3d Seven pairs of columns' },
+      'Figure23_2aLinearFogVisibility0.x3d._VP_Default_viewpoint.png': { 'caption': '[5] Figure23_2aLinearFogVisibility0.x3d (default X3D view from 0 0 10)' },
+      'Figure23_2bLinearFogVisibility40.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[6] Figure23_2bLinearFogVisibility40.x3d Seven pairs of columns' },
+      'Figure23_2bLinearFogVisibility40.x3d._VP_Default_viewpoint.png': { 'caption': '[7] Figure23_2bLinearFogVisibility40.x3d (default X3D view from 0 0 10)' },
+      'Figure23_2cLinearFogVisibility30.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[8] Figure23_2cLinearFogVisibility30.x3d Seven pairs of columns' },
+      'Figure23_2cLinearFogVisibility30.x3d._VP_Default_viewpoint.png': { 'caption': '[9] Figure23_2cLinearFogVisibility30.x3d (default X3D view from 0 0 10)' },
+      'Figure23_2dLinearFogVisibility20.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[10] Figure23_2dLinearFogVisibility20.x3d Seven pairs of columns' },
+      'Figure23_2dLinearFogVisibility20.x3d._VP_Default_viewpoint.png': { 'caption': '[11] Figure23_2dLinearFogVisibility20.x3d (default X3D view from 0 0 10)' },
+      'Figure23_3aExponentialFogVisibility100.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[12] Figure23_3aExponentialFogVisibility100.x3d Seven pairs of columns' },
+      'Figure23_3aExponentialFogVisibility100.x3d._VP_Default_viewpoint.png': { 'caption': '[13] Figure23_3aExponentialFogVisibility100.x3d (default X3D view)' },
+      'Figure23_3bExponentialFogVisibility40.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[14] Figure23_3bExponentialFogVisibility40.x3d Seven pairs of columns' },
+      'Figure23_3bExponentialFogVisibility40.x3d._VP_Default_viewpoint.png': { 'caption': '[15] Figure23_3bExponentialFogVisibility40.x3d (default X3D view)' },
+      'Figure23_3cExponentialFogVisibility20.x3d._VP_Seven_pairs_of_columns.png': { 'caption': '[16] Figure23_3cExponentialFogVisibility20.x3d Seven pairs of columns' },
+      'Figure23_3cExponentialFogVisibility20.x3d._VP_Default_viewpoint.png': { 'caption': '[17] Figure23_3cExponentialFogVisibility20.x3d (default X3D view)' },
+      'Figure23_4BlackFogVisibility40.x3d._VP_A_foggy_world_using_black_fog.png': { 'caption': '[18] Figure23_4BlackFogVisibility40.x3d A foggy world using black fog' },
+      'Figure23_4BlackFogVisibility40.x3d._VP_Default_viewpoint.png': { 'caption': '[19] Figure23_4BlackFogVisibility40.x3d (default X3D view from 0 0 10)' },
+      'Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png': { 'caption': '[20] Figure23_5BindingFogsAndBackgrounds.x3d Binding fog and background pairs' },
+      'Figure23_5BindingFogsAndBackgrounds.x3d._VP_Default_viewpoint.png': { 'caption': '[21] Figure23_5BindingFogsAndBackgrounds.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter22Background/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter23Fog/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 23 Fog</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure23_1FogTestWorld.x3d._VP_30m_above_60m_x_60m_square.png"
+                  alt="[1] Figure23_1FogTestWorld.x3d 30m above 60m x 60m square"
+                  title="[1] Figure23_1FogTestWorld.x3d 30m above 60m x 60m square"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter23Fog/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Fog simulates atmospheric effects by blending distant objects with fog color.
+                    </p>
+                    
+
+
+                    <p>
+                        Fog increases realism and can be used to set a mood, even indoors.
+                        Add fog outside to create hazy worlds, or add fog inside to create dark dungeons.
+                        Fog has a color, a type, and a visibility range.
+                        Fog limits the viewer's sight, reducing the amount of the world you have to build and the amount of the world that must be drawn.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch23.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0325.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 23.5 Binding Fogs And Backgrounds" title="Figure 23.5 Binding Fogs And Backgrounds" hspace="10" 
+                          src="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png" width="156" height="89" align="middle"/></a>
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+10 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 21 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure23_1FogTestWorldIndex.html">
+                           <img src="_thumbnails/Figure23_1FogTestWorldThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_1FogTestWorld"
+                                 title="X3D model Figure23_1FogTestWorld.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure23_1FogTestWorldIndex.html"
+                            title="X3D model Figure23_1FogTestWorld.x3d">Figure 23 1 Fog Test World.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_30m_above_60m_x_60m_square.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_1FogTestWorld.x3d._VP_30m_above_60m_x_60m_square.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_30m_above_60m_x_60m_square.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure23_1FogTestWorld.x3d 30m above 60m x 60m square</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_60m_above_60m_x_60m_square.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_1FogTestWorld.x3d._VP_60m_above_60m_x_60m_square.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_60m_above_60m_x_60m_square.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure23_1FogTestWorld.x3d 60m above 60m x 60m square</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_1FogTestWorld.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_1FogTestWorld.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure23_1FogTestWorld.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_2aLinearFogVisibility0Index.html">
+                           <img src="_thumbnails/Figure23_2aLinearFogVisibility0Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_2aLinearFogVisibility0"
+                                 title="X3D model Figure23_2aLinearFogVisibility0.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_2aLinearFogVisibility0Index.html"
+                            title="X3D model Figure23_2aLinearFogVisibility0.x3d">Figure 23 2a Linear Fog Visibility 0.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure23_2aLinearFogVisibility0.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2aLinearFogVisibility0.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure23_2aLinearFogVisibility0.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_2bLinearFogVisibility40Index.html">
+                           <img src="_thumbnails/Figure23_2bLinearFogVisibility40Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_2bLinearFogVisibility40"
+                                 title="X3D model Figure23_2bLinearFogVisibility40.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_2bLinearFogVisibility40Index.html"
+                            title="X3D model Figure23_2bLinearFogVisibility40.x3d">Figure 23 2b Linear Fog Visibility 40.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure23_2bLinearFogVisibility40.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2bLinearFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure23_2bLinearFogVisibility40.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_2cLinearFogVisibility30Index.html">
+                           <img src="_thumbnails/Figure23_2cLinearFogVisibility30Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_2cLinearFogVisibility30"
+                                 title="X3D model Figure23_2cLinearFogVisibility30.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_2cLinearFogVisibility30Index.html"
+                            title="X3D model Figure23_2cLinearFogVisibility30.x3d">Figure 23 2c Linear Fog Visibility 30.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure23_2cLinearFogVisibility30.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2cLinearFogVisibility30.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure23_2cLinearFogVisibility30.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_2dLinearFogVisibility20Index.html">
+                           <img src="_thumbnails/Figure23_2dLinearFogVisibility20Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_2dLinearFogVisibility20"
+                                 title="X3D model Figure23_2dLinearFogVisibility20.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_2dLinearFogVisibility20Index.html"
+                            title="X3D model Figure23_2dLinearFogVisibility20.x3d">Figure 23  2D Linear Fog Visibility 20.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure23_2dLinearFogVisibility20.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_2dLinearFogVisibility20.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure23_2dLinearFogVisibility20.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_3aExponentialFogVisibility100Index.html">
+                           <img src="_thumbnails/Figure23_3aExponentialFogVisibility100Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_3aExponentialFogVisibility100"
+                                 title="X3D model Figure23_3aExponentialFogVisibility100.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_3aExponentialFogVisibility100Index.html"
+                            title="X3D model Figure23_3aExponentialFogVisibility100.x3d">Figure 23 3a Exponential Fog Visibility 100.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure23_3aExponentialFogVisibility100.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3aExponentialFogVisibility100.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure23_3aExponentialFogVisibility100.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_3bExponentialFogVisibility40Index.html">
+                           <img src="_thumbnails/Figure23_3bExponentialFogVisibility40Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_3bExponentialFogVisibility40"
+                                 title="X3D model Figure23_3bExponentialFogVisibility40.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_3bExponentialFogVisibility40Index.html"
+                            title="X3D model Figure23_3bExponentialFogVisibility40.x3d">Figure 23 3b Exponential Fog Visibility 40.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure23_3bExponentialFogVisibility40.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3bExponentialFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure23_3bExponentialFogVisibility40.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_3cExponentialFogVisibility20Index.html">
+                           <img src="_thumbnails/Figure23_3cExponentialFogVisibility20Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_3cExponentialFogVisibility20"
+                                 title="X3D model Figure23_3cExponentialFogVisibility20.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_3cExponentialFogVisibility20Index.html"
+                            title="X3D model Figure23_3cExponentialFogVisibility20.x3d">Figure 23 3c Exponential Fog Visibility 20.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Seven_pairs_of_columns.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] Figure23_3cExponentialFogVisibility20.x3d Seven pairs of columns</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_3cExponentialFogVisibility20.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure23_3cExponentialFogVisibility20.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_4BlackFogVisibility40Index.html">
+                           <img src="_thumbnails/Figure23_4BlackFogVisibility40Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_4BlackFogVisibility40"
+                                 title="X3D model Figure23_4BlackFogVisibility40.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_4BlackFogVisibility40Index.html"
+                            title="X3D model Figure23_4BlackFogVisibility40.x3d">Figure 23 4 Black Fog Visibility 40.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_A_foggy_world_using_black_fog.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_A_foggy_world_using_black_fog.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_A_foggy_world_using_black_fog.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure23_4BlackFogVisibility40.x3d A foggy world using black fog</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_4BlackFogVisibility40.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] Figure23_4BlackFogVisibility40.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure23_5BindingFogsAndBackgroundsIndex.html">
+                           <img src="_thumbnails/Figure23_5BindingFogsAndBackgroundsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure23_5BindingFogsAndBackgrounds"
+                                 title="X3D model Figure23_5BindingFogsAndBackgrounds.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure23_5BindingFogsAndBackgroundsIndex.html"
+                            title="X3D model Figure23_5BindingFogsAndBackgrounds.x3d">Figure 23 5 Binding Fogs And Backgrounds.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Binding_fog_and_background_pairs.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Figure23_5BindingFogsAndBackgrounds.x3d Binding fog and background pairs</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure23_5BindingFogsAndBackgrounds.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Figure23_5BindingFogsAndBackgrounds.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter23Fog/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter22Background/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter23Fog/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

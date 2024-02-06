@@ -1,0 +1,544 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Floater.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Floater.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Floating pads world: a collection of white pads are created. Each pad slides back and forth horizontally or vertically at its own speed. A green light illuminates the tops of the pads while a blue light illuminates the bottoms.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Floater.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/floater.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0135htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Floater.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Floater.x3d" .
+:meta dcterms:description "Floating pads world: a collection of white pads are created. Each pad slides back and forth horizontally or vertically at its own speed. A green light illuminates the tops of the pads while a blue light illuminates the bottoms." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:Image "Floater.png" .
+:meta dcterms:reference "originals/floater.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0135htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Floater.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Background_2_4, :DirectionalLight_2_5, :DirectionalLight_2_6, :ProtoInstance_2_8, :ProtoInstance_2_9, :ProtoInstance_2_10, :ProtoInstance_2_11, :ProtoInstance_2_12, :ProtoInstance_2_13, :ProtoInstance_2_14, :ProtoInstance_2_15, :ProtoInstance_2_16, :ProtoInstance_2_17, :ProtoInstance_2_18, :ProtoInstance_2_19, :ProtoInstance_2_20, :ProtoInstance_2_21, :ProtoInstance_2_22, :ProtoInstance_2_23, :ProtoInstance_2_24, :ProtoInstance_2_25, :ProtoInstance_2_26, :ProtoInstance_2_27, :ProtoInstance_2_28 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1996, David R. Nadeau"' ;
+  x3do:title 'Floating Pads World' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 1.6 10.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0.0 0.1 0.4 ) .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 0.3 1.0 0.3 ) ;
+  x3do:direction ( 0.5 -1.0 -0.7 ) .
+:DirectionalLight_2_6 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 0.0 0.3 1.0 ) ;
+  x3do:direction ( -0.5 1.0 0.7 ) .
+:ProtoDeclare_2_7 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_7_1 ;
+  x3do:hasProtoBody :ProtoBody_2_7_2 ;
+  x3do:name 'Pad' .
+:ProtoInterface_2_7_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_7 ;
+  x3do:hasField :field_2_7_1_1, :field_2_7_1_2, :field_2_7_1_3 .
+:field_2_7_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_7_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rotation' ;
+  x3do:type 'SFRotation' ;
+  x3do:value ( 0.0 0.0 1.0 0.0 ) .
+:field_2_7_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_7_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'cycleInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '10.0' .
+:field_2_7_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_7_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'translation' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.0 0.0 0.0 ) .
+:ProtoBody_2_7_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_7 ;
+  x3do:hasChildren :Collision_2_7_2_1 ;
+  x3do:hasROUTE :ROUTE_2_7_2_2, :ROUTE_2_7_2_3 .
+:Collision_2_7_2_1 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :ProtoBody_2_7_2 ;
+  x3do:hasChildren :Transform_2_7_2_1_1 ;
+  x3do:enabled false .
+:Transform_2_7_2_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_7_2_1 ;
+  x3do:hasIS :IS_2_7_2_1_1_1 ;
+  x3do:hasChildren :Movee .
+:IS_2_7_2_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :Transform_2_7_2_1_1 ;
+  x3do:hasConnect :connect_2_7_2_1_1_1_1, :connect_2_7_2_1_1_1_2 .
+:connect_2_7_2_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_7_2_1_1_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'translation' .
+:connect_2_7_2_1_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_7_2_1_1_1 ;
+  x3do:nodeField 'rotation' ;
+  x3do:protoField 'rotation' .
+:Movee a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_2_1_1 ;
+  x3do:hasChildren :Shape_2_7_2_1_1_2_1, :Clock, :Mover ;
+  x3do:DEF 'Movee' .
+:Shape_2_7_2_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Movee ;
+  x3do:hasAppearance :Appearance_2_7_2_1_1_2_1_1 ;
+  x3do:hasGeometry :Box_2_7_2_1_1_2_1_2 .
+:Appearance_2_7_2_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1_1_2_1 ;
+  x3do:hasMaterial :Material_2_7_2_1_1_2_1_1_1 .
+:Material_2_7_2_1_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_1_1_2_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:Box_2_7_2_1_1_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_2_1_1_2_1 ;
+  x3do:size ( 4.0 0.2 2.0 ) .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Movee ;
+  x3do:hasIS :IS_2_7_2_1_1_2_2_1 ;
+  x3do:DEF 'Clock' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:IS_2_7_2_1_1_2_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :Clock ;
+  x3do:hasConnect :connect_2_7_2_1_1_2_2_1_1 .
+:connect_2_7_2_1_1_2_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_7_2_1_1_2_2_1 ;
+  x3do:nodeField 'cycleInterval' ;
+  x3do:protoField 'cycleInterval' .
+:Mover a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Movee ;
+  x3do:DEF 'Mover' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( -10.0 0.0 0.0 10.0 0.0 0.0 -10.0 0.0 0.0 ) .
+:ROUTE_2_7_2_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_7_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Mover' .
+:ROUTE_2_7_2_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_7_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Mover' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Movee' .
+:ProtoInstance_2_8 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_8_1, :fieldValue_2_8_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_8_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_8_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 4.0 0.0' .
+:ProtoInstance_2_9 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_9_1, :fieldValue_2_9_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_9_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '12.0' .
+:fieldValue_2_9_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9 ;
+  x3do:name 'translation' ;
+  x3do:value '-2.0 0.0 -2.0' .
+:ProtoInstance_2_10 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_10_1, :fieldValue_2_10_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_10_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_10 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '14.0' .
+:fieldValue_2_10_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_10 ;
+  x3do:name 'translation' ;
+  x3do:value '2.0 6.0 -4.0' .
+:ProtoInstance_2_11 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_11_1, :fieldValue_2_11_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_11_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_11 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '16.0' .
+:fieldValue_2_11_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_11 ;
+  x3do:name 'translation' ;
+  x3do:value '-4.0 2.0 -8.0' .
+:ProtoInstance_2_12 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_12_1, :fieldValue_2_12_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_12_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_12 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '18.0' .
+:fieldValue_2_12_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_12 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -6.0 -10.0' .
+:ProtoInstance_2_13 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_13_1, :fieldValue_2_13_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_13_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_13_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'translation' ;
+  x3do:value '4.0 -2.0 -10.0' .
+:ProtoInstance_2_14 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_14_1, :fieldValue_2_14_2 ;
+  x3do:name 'Pad' .
+:fieldValue_2_14_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_14 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '8.0' .
+:fieldValue_2_14_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_14 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -4.0 -0.0' .
+:ProtoInstance_2_15 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_15_1, :fieldValue_2_15_2, :fieldValue_2_15_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_15_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_15 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_15_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_15 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_15_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_15 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 4.0 0.0' .
+:ProtoInstance_2_16 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_16_1, :fieldValue_2_16_2, :fieldValue_2_16_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_16_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_16 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_16_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_16 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '12.0' .
+:fieldValue_2_16_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_16 ;
+  x3do:name 'translation' ;
+  x3do:value '-2.0 0.0 -2.0' .
+:ProtoInstance_2_17 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_17_1, :fieldValue_2_17_2, :fieldValue_2_17_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_17_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_17 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_17_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_17 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '14.0' .
+:fieldValue_2_17_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_17 ;
+  x3do:name 'translation' ;
+  x3do:value '2.0 6.0 -4.0' .
+:ProtoInstance_2_18 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_18_1, :fieldValue_2_18_2, :fieldValue_2_18_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_18_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_18 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_18_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_18 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '16.0' .
+:fieldValue_2_18_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_18 ;
+  x3do:name 'translation' ;
+  x3do:value '-4.0 2.0 -8.0' .
+:ProtoInstance_2_19 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_19_1, :fieldValue_2_19_2, :fieldValue_2_19_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_19_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_19 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_19_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_19 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '18.0' .
+:fieldValue_2_19_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_19 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -6.0 -10.0' .
+:ProtoInstance_2_20 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_20_1, :fieldValue_2_20_2, :fieldValue_2_20_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_20_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_20 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_20_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_20 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_20_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_20 ;
+  x3do:name 'translation' ;
+  x3do:value '4.0 -2.0 -10.0' .
+:ProtoInstance_2_21 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_21_1, :fieldValue_2_21_2, :fieldValue_2_21_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_21_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_21 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 1.0 0.0 1.571' .
+:fieldValue_2_21_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_21 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '8.0' .
+:fieldValue_2_21_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_21 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -4.0 -0.0' .
+:ProtoInstance_2_22 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_22_1, :fieldValue_2_22_2, :fieldValue_2_22_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_22_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_22 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_22_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_22 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_22_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_22 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 4.0 0.0' .
+:ProtoInstance_2_23 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_23_1, :fieldValue_2_23_2, :fieldValue_2_23_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_23_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_23 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_23_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_23 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '12.0' .
+:fieldValue_2_23_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_23 ;
+  x3do:name 'translation' ;
+  x3do:value '-2.0 0.0 -2.0' .
+:ProtoInstance_2_24 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_24_1, :fieldValue_2_24_2, :fieldValue_2_24_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_24_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_24 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_24_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_24 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '14.0' .
+:fieldValue_2_24_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_24 ;
+  x3do:name 'translation' ;
+  x3do:value '2.0 6.0 -4.0' .
+:ProtoInstance_2_25 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_25_1, :fieldValue_2_25_2, :fieldValue_2_25_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_25_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_25 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_25_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_25 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '16.0' .
+:fieldValue_2_25_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_25 ;
+  x3do:name 'translation' ;
+  x3do:value '-4.0 2.0 -8.0' .
+:ProtoInstance_2_26 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_26_1, :fieldValue_2_26_2, :fieldValue_2_26_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_26_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_26 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_26_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_26 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '18.0' .
+:fieldValue_2_26_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_26 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -6.0 -10.0' .
+:ProtoInstance_2_27 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_27_1, :fieldValue_2_27_2, :fieldValue_2_27_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_27_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_27 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_27_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_27 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '10.0' .
+:fieldValue_2_27_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_27 ;
+  x3do:name 'translation' ;
+  x3do:value '4.0 -2.0 -10.0' .
+:ProtoInstance_2_28 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_28_1, :fieldValue_2_28_2, :fieldValue_2_28_3 ;
+  x3do:name 'Pad' .
+:fieldValue_2_28_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_28 ;
+  x3do:name 'rotation' ;
+  x3do:value '0.0 0.0 1.0 1.571' .
+:fieldValue_2_28_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_28 ;
+  x3do:name 'cycleInterval' ;
+  x3do:value '8.0' .
+:fieldValue_2_28_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_28 ;
+  x3do:name 'translation' ;
+  x3do:value '0.0 -4.0 -0.0' .

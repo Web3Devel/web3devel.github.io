@@ -1,0 +1,381 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CreaseAngle.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'CreaseAngle.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'creaseAngle demonstration: select and drag upper halves of quadrilaterals to change creaseAngle and shading.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/creangle.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0243.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CreaseAngle.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "CreaseAngle.x3d" .
+:meta dcterms:description "creaseAngle demonstration: select and drag upper halves of quadrilaterals to change creaseAngle and shading." .
+:meta dcterms:creator "John L. Moreland" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/creangle.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0243.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CreaseAngle.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :NavigationInfo_2_4, :DirectionalLight_2_5, :DirectionalLight_2_6, :Transform_2_7, :Transform_2_8, :Transform_2_9, :PS, :Scr, :CI ;
+  x3do:hasROUTE :ROUTE_2_13, :ROUTE_2_14, :ROUTE_2_15, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_18 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, John L. Moreland"' ;
+  x3do:title 'Crease angle demonstration' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:centerOfRotation ( 0 0.85 0 ) ;
+  x3do:description 'Front Face' ;
+  x3do:orientation ( 0 1 0 -0.62 ) ;
+  x3do:position ( -2 0.85 3 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:centerOfRotation ( 0 0.85 0 ) ;
+  x3do:description 'Back Face' ;
+  x3do:orientation ( 0.0 1.0 0.0 0.62 ) ;
+  x3do:position ( 2.4 0.85 3.0 ) .
+:NavigationInfo_2_4 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 1.0 0.0 0.0 ) ;
+  x3do:direction ( 0.0 -1.0 0.1 ) .
+:DirectionalLight_2_6 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 0.0 0.0 1.0 ) ;
+  x3do:direction ( 0.0 1.0 -0.1 ) .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_7_1, :Transform_2_7_2 ;
+  x3do:translation ( -1.1 0.0 0.0 ) .
+:Shape_2_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :White ;
+  x3do:hasGeometry :IndexedFaceSet_2_7_1_2 .
+:White a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_1 ;
+  x3do:DEF 'White' .
+:Material_2_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :White ;
+  x3do:ambientIntensity 0.5 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:IndexedFaceSet_2_7_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:hasCoord :Crd1 ;
+  x3do:coordIndex ( 0 1 4 5 0 -1 1 2 3 4 1 -1 ) ;
+  x3do:solid false .
+:Crd1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_7_1_2 ;
+  x3do:DEF 'Crd1' ;
+  x3do:point ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 2.0 1.0 0.0 2.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 ) .
+:Transform_2_7_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :Billboard_2_7_2_1 ;
+  x3do:translation ( 0.0 1.0 1.2 ) .
+:Billboard_2_7_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_7_2 ;
+  x3do:hasChildren :Shape_2_7_2_1_1, :bendAngleLabel .
+:Shape_2_7_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_7_2_1 ;
+  x3do:hasAppearance :FntColor ;
+  x3do:hasGeometry :Text_2_7_2_1_1_2 .
+:FntColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1_1 ;
+  x3do:hasMaterial :Material_2_7_2_1_1_1_1 ;
+  x3do:DEF 'FntColor' .
+:Material_2_7_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FntColor ;
+  x3do:diffuseColor ( 1.0 0.0 0.0 ) .
+:Text_2_7_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_2_1_1 ;
+  x3do:hasFontStyle :FntStyle ;
+  x3do:string '"0.0"' .
+:FntStyle a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_7_2_1_1_2 ;
+  x3do:DEF 'FntStyle' ;
+  x3do:justify '"BEGIN" "MIDDLE"' ;
+  x3do:size 0.1 ;
+  x3do:cssStyle 'BOLD' .
+:bendAngleLabel a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Billboard_2_7_2_1 ;
+  x3do:hasChildren :Shape_2_7_2_1_2_1 ;
+  x3do:DEF 'bendAngleLabel' ;
+  x3do:translation ( 0.0 -0.1 0.0 ) .
+:Shape_2_7_2_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :bendAngleLabel ;
+  x3do:hasAppearance :Appearance_2_7_2_1_2_1_1 ;
+  x3do:hasGeometry :bendAngle .
+:Appearance_2_7_2_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1_2_1 ;
+  x3do:hasMaterial :Material_2_7_2_1_2_1_1_1 .
+:Material_2_7_2_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_1_2_1_1 ;
+  x3do:diffuseColor ( 0.0 0.5 0.0 ) .
+:bendAngle a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_2_1_2_1 ;
+  x3do:hasFontStyle :FntStyle-USE-1 ;
+  x3do:DEF 'bendAngle' ;
+  x3do:string '"0.0"' .
+:FntStyle-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :bendAngle ;
+  owl:sameAs :FntStyle . # DEF matching this USE
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_8_1, :Transform_2_8_2 .
+:Shape_2_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasAppearance :White-USE-1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_8_1_2 .
+:White-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1 ;
+  owl:sameAs :White . # DEF matching this USE
+:IndexedFaceSet_2_8_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasCoord :Crd2 ;
+  x3do:coordIndex ( 0 1 4 5 0 -1 1 2 3 4 1 -1 ) ;
+  x3do:creaseAngle 0.785 ;
+  x3do:solid false .
+:Crd2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_8_1_2 ;
+  x3do:DEF 'Crd2' ;
+  x3do:point ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 2.0 1.0 0.0 2.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 ) .
+:Transform_2_8_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasChildren :Billboard_2_8_2_1 ;
+  x3do:translation ( 0.0 1.0 1.2 ) .
+:Billboard_2_8_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_8_2 ;
+  x3do:hasChildren :Shape_2_8_2_1_1, :bendAngleLabel-USE-1 .
+:Shape_2_8_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_2_1 ;
+  x3do:hasAppearance :FntColor-USE-1 ;
+  x3do:hasGeometry :Text_2_8_2_1_1_2 .
+:FntColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_2_1_1 ;
+  owl:sameAs :FntColor . # DEF matching this USE
+:Text_2_8_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_2_1_1 ;
+  x3do:hasFontStyle :FntStyle-USE-2 ;
+  x3do:string '"0.785"' .
+:FntStyle-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_2_1_1_2 ;
+  owl:sameAs :FntStyle . # DEF matching this USE
+:bendAngleLabel-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Billboard_2_8_2_1 ;
+  owl:sameAs :bendAngleLabel . # DEF matching this USE
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_9_1, :Transform_2_9_2 ;
+  x3do:translation ( 1.1 0.0 0.0 ) .
+:Shape_2_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasAppearance :White-USE-2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_9_1_2 .
+:White-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_1 ;
+  owl:sameAs :White . # DEF matching this USE
+:IndexedFaceSet_2_9_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_9_1 ;
+  x3do:hasCoord :Crd3 ;
+  x3do:coordIndex ( 0 1 4 5 0 -1 1 2 3 4 1 -1 ) ;
+  x3do:creaseAngle 1.57 ;
+  x3do:solid false .
+:Crd3 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_9_1_2 ;
+  x3do:DEF 'Crd3' ;
+  x3do:point ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 2.0 1.0 0.0 2.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 ) .
+:Transform_2_9_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasChildren :Billboard_2_9_2_1 ;
+  x3do:translation ( 0.0 1.0 1.2 ) .
+:Billboard_2_9_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_9_2 ;
+  x3do:hasChildren :Shape_2_9_2_1_1, :bendAngleLabel-USE-2 .
+:Shape_2_9_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_9_2_1 ;
+  x3do:hasAppearance :FntColor-USE-2 ;
+  x3do:hasGeometry :Text_2_9_2_1_1_2 .
+:FntColor-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_2_1_1 ;
+  owl:sameAs :FntColor . # DEF matching this USE
+:Text_2_9_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_9_2_1_1 ;
+  x3do:hasFontStyle :FntStyle-USE-3 ;
+  x3do:string '"1.57"' .
+:FntStyle-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_9_2_1_1_2 ;
+  owl:sameAs :FntStyle . # DEF matching this USE
+:bendAngleLabel-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Billboard_2_9_2_1 ;
+  owl:sameAs :bendAngleLabel . # DEF matching this USE
+:PS a owl:NamedIndividual, x3do:PlaneSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'PS' ;
+  x3do:description 'Select and drag upper halves of quads to change creaseAngle and shading' ;
+  x3do:maxPosition ( 6.283 1.57 ) .
+:Scr a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_11_1, :field_2_11_2, :field_2_11_3 ;
+  x3do:DEF 'Scr' ;
+  x3do:sourceCode """
+ecmascript:
+        function set_translation( tran, et )
+        {
+            tempCA = tran[0] / 4.0;
+            if ( tempCA < 0.00 ) tempCA = 0.0;
+            if ( tempCA > 1.57 ) tempCA = 1.57;
+            fraction_changed = tempCA;
+            // Hacks to get truncation/formatting
+            tempCA = (Math.floor(tempCA*1000)/1000.0);
+            if ( (tempCA > 0.1) && (tempCA < 1.0) )
+                tempCA = '0' + tempCA;
+            if ( tempCA <= 0.0 )
+                tempCA = tempCA + '.' + '0';
+            label_changed[0] = tempCA;
+        }
+""" .
+:field_2_11_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Scr ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'label_changed' ;
+  x3do:type 'MFString' .
+:field_2_11_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Scr ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_translation' ;
+  x3do:type 'SFVec3f' .
+:field_2_11_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Scr ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'fraction_changed' ;
+  x3do:type 'SFFloat' .
+:CI a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'CI' ;
+  x3do:key ( 0.0 1.57 ) ;
+  x3do:keyValue ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 2.0 1.0 0.0 2.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 ) .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'translation_changed' ;
+  x3do:fromNode 'PS' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Scr' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Scr' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'CI' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'label_changed' ;
+  x3do:fromNode 'Scr' ;
+  x3do:toField 'set_string' ;
+  x3do:toNode 'bendAngle' .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CI' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'Crd1' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CI' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'Crd2' .
+:ROUTE_2_18 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CI' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'Crd3' .

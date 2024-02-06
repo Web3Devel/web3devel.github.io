@@ -1,0 +1,7 @@
+empty <Appearance DEF='App'/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/ProtoDeclare[1]/ProtoBody/Group/Shape[1]/Appearance, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/ProtoDeclare[1]/ProtoBody/Group/Shape[2]/Appearance, warning]
+<ProtoDeclare name="SlidingPlane"/> has no corresponding <ProtoInstance name='SlidingPlane'/> [/X3D/Scene/ProtoDeclare[2], warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/ProtoDeclare[2]/ProtoBody/Transform/Transform/Transform/Shape/Appearance, warning]
+<Text DEF='Label' string='""'/> string array has questionable line-break "" quote marks [/X3D/Scene/ProtoDeclare[2]/ProtoBody/Transform/Transform/Transform/Shape/Text, error]
+<ROUTE fromNode='Translator' fromField='offset_changed' toNode='Slider' toField='set_offset'/> should not have 'set_' in event-source fromField name [/X3D/Scene/ProtoDeclare[2]/ProtoBody/ROUTE[7], error]
+<ROUTE fromNode='Translator' fromField='offset_changed' toNode='PlanePosition' toField='set_translation'/> should not have 'set_' in event-source fromField name [/X3D/Scene/ProtoDeclare[2]/ProtoBody/ROUTE[8], error]

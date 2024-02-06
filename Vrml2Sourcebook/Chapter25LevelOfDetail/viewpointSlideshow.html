@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 25 Level Of Detail</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure25_01TorchHighDetail.x3d._VP_Torch_(high_detail).png': { 'caption': '[1] Figure25_01TorchHighDetail.x3d Torch (high detail)' },
+      'Figure25_01TorchHighDetail.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure25_01TorchHighDetail.x3d (default X3D view from 0 0 10)' },
+      'Figure25_02TorchMediumDetail.x3d._VP_Torch_(medium_detail).png': { 'caption': '[3] Figure25_02TorchMediumDetail.x3d Torch (medium detail)' },
+      'Figure25_02TorchMediumDetail.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure25_02TorchMediumDetail.x3d (default X3D view from 0 0 10)' },
+      'Figure25_03TorchLowDetail.x3d._VP_Torch_(low_detail).png': { 'caption': '[5] Figure25_03TorchLowDetail.x3d Torch (low detail)' },
+      'Figure25_03TorchLowDetail.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure25_03TorchLowDetail.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'Figure25_04ThreeTorchesSideBySide.x3d._VP_Three_torches,_high/medium/low_detail.png': { 'caption': '[7] Figure25_04ThreeTorchesSideBySide.x3d Three torches, high/medium/low detail' },-->
+      'Figure25_04ThreeTorchesSideBySide.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure25_04ThreeTorchesSideBySide.x3d (default X3D view from 0 0 10)' },
+      'Figure25_05ThreeTorchesSingleLOD.x3d._VP_20m_no-detail_torch_-_zoom_in!.png': { 'caption': '[9] Figure25_05ThreeTorchesSingleLOD.x3d 20m no-detail torch - zoom in!' },
+      'Figure25_05ThreeTorchesSingleLOD.x3d._VP_10m_low-detail_torch.png': { 'caption': '[10] Figure25_05ThreeTorchesSingleLOD.x3d 10m low-detail torch' },
+      'Figure25_05ThreeTorchesSingleLOD.x3d._VP_5m_medium-detail_torch.png': { 'caption': '[11] Figure25_05ThreeTorchesSingleLOD.x3d 5m medium-detail torch' },
+      'Figure25_05ThreeTorchesSingleLOD.x3d._VP_2m_high-detail_torch.png': { 'caption': '[12] Figure25_05ThreeTorchesSingleLOD.x3d 2m high-detail torch' },
+      'Figure25_05ThreeTorchesSingleLOD.x3d._VP_Default_viewpoint.png': { 'caption': '[13] Figure25_05ThreeTorchesSingleLOD.x3d (default X3D view from 0 0 10)' },
+      'Figure25_06DungeonRoomFloor.x3d._VP_Dungeon_floor.png': { 'caption': '[14] Figure25_06DungeonRoomFloor.x3d Dungeon floor' },
+      'Figure25_06DungeonRoomFloor.x3d._VP_Default_viewpoint.png': { 'caption': '[15] Figure25_06DungeonRoomFloor.x3d (default X3D view from 0 0 10)' },
+      'Figure25_07DungeonRoomWall.x3d._VP_Dungeon_wall.png': { 'caption': '[16] Figure25_07DungeonRoomWall.x3d Dungeon wall' },
+      'Figure25_07DungeonRoomWall.x3d._VP_Default_viewpoint.png': { 'caption': '[17] Figure25_07DungeonRoomWall.x3d (default X3D view from 0 0 10)' },
+      'Figure25_08DungeonRoom.x3d._VP_Dungeon_room.png': { 'caption': '[18] Figure25_08DungeonRoom.x3d Dungeon room' },
+      'Figure25_08DungeonRoom.x3d._VP_Default_viewpoint.png': { 'caption': '[19] Figure25_08DungeonRoom.x3d (default X3D view from 0 0 10)' },
+      'Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Dungeon_room.png': { 'caption': '[20] Figure25_09TwoDungeonRoomsWithLODHiding.x3d Dungeon room' },
+      'Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Default_viewpoint.png': { 'caption': '[21] Figure25_09TwoDungeonRoomsWithLODHiding.x3d (default X3D view)' },
+      'Figure25_10DungeonWallWithDoorway.x3d._VP_Dungeon_door.png': { 'caption': '[22] Figure25_10DungeonWallWithDoorway.x3d Dungeon door' },
+      'Figure25_10DungeonWallWithDoorway.x3d._VP_Default_viewpoint.png': { 'caption': '[23] Figure25_10DungeonWallWithDoorway.x3d (default X3D view from 0 0 10)' },
+      'Figure25_11DungeonDoor.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure25_11DungeonDoor.x3d (default X3D view from 0 0 10)' },
+      'Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Click_door_for_next_dungeon_room.png': { 'caption': '[25] Figure25_12DungeonRoomsWithSlidingDoors.x3d Click door for next dungeon room' },
+      'Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Default_viewpoint.png': { 'caption': '[26] Figure25_12DungeonRoomsWithSlidingDoors.x3d (default X3D view)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter25LevelOfDetail/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter26Viewpoint/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 25 Level Of Detail</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Torch_(high_detail).png"
+                  alt="[1] Figure25_01TorchHighDetail.x3d Torch (high detail)"
+                  title="[1] Figure25_01TorchHighDetail.x3d Torch (high detail)"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+						Level of detail (LOD) allows an overall world become very large by letting an author provide 
+						high-fidelity models when a viewer is nearby, and simpler geometry when the viewer is far away.
+                    </p>
+                    
+
+
+                    <p>
+                        The further the viewer can see, the more there is to draw.
+                        Note that if a shape is distant, the shape is smaller and the viewer can't see as much detail.
+                        So... draw it with less detail.
+                        Varying detail with distance reduces initial download time and increases drawing speed.
+                    </p>
+                    
+
+
+                    <p>
+                        Increase performance by making multiple levels of shapes: high detail for close up viewing, 
+                        progressively lower detail for more distant viewing.
+                        Group the levels in an LOD node, ordered from high detail to low detail, and using an array of range values to select switching distances .
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch25.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0387.htm" target="_Vrml2SourcebookCourse">VRML 2.0 Sourcebook course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 25.04 Three Torches Side By Side" title="Figure 25.04 Three Torches Side By Side" hspace="10" 
+                          src="_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Torch_(medium_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 25.12 Dungeon Rooms With Sliding Doors" title="Figure 25.12 Dungeon Rooms With Sliding Doors" hspace="10" 
+                          src="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Torch_(high_detail).png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+12 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 25 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_01TorchHighDetailIndex.html">
+                           <img src="_thumbnails/Figure25_01TorchHighDetailThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_01TorchHighDetail"
+                                 title="X3D model Figure25_01TorchHighDetail.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_01TorchHighDetailIndex.html"
+                            title="X3D model Figure25_01TorchHighDetail.x3d">Figure 25 01 Torch High Detail.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Torch_(high_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Torch_(high_detail).png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Torch_(high_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure25_01TorchHighDetail.x3d Torch (high detail)</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_01TorchHighDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure25_01TorchHighDetail.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_02TorchMediumDetailIndex.html">
+                           <img src="_thumbnails/Figure25_02TorchMediumDetailThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_02TorchMediumDetail"
+                                 title="X3D model Figure25_02TorchMediumDetail.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_02TorchMediumDetailIndex.html"
+                            title="X3D model Figure25_02TorchMediumDetail.x3d">Figure 25 02 Torch Medium Detail.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Torch_(medium_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Torch_(medium_detail).png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Torch_(medium_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure25_02TorchMediumDetail.x3d Torch (medium detail)</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_02TorchMediumDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure25_02TorchMediumDetail.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_03TorchLowDetailIndex.html">
+                           <img src="_thumbnails/Figure25_03TorchLowDetailThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_03TorchLowDetail"
+                                 title="X3D model Figure25_03TorchLowDetail.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_03TorchLowDetailIndex.html"
+                            title="X3D model Figure25_03TorchLowDetail.x3d">Figure 25 03 Torch Low Detail.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Torch_(low_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Torch_(low_detail).png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Torch_(low_detail).png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure25_03TorchLowDetail.x3d Torch (low detail)</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_03TorchLowDetail.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure25_03TorchLowDetail.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_04ThreeTorchesSideBySideIndex.html">
+                           <img src="_thumbnails/Figure25_04ThreeTorchesSideBySideThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_04ThreeTorchesSideBySide"
+                                 title="X3D model Figure25_04ThreeTorchesSideBySide.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_04ThreeTorchesSideBySideIndex.html"
+                            title="X3D model Figure25_04ThreeTorchesSideBySide.x3d">Figure 25 04 Three Torches Side By Side.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Three_torches,_high/medium/low_detail.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[7] Figure25_04ThreeTorchesSideBySide.x3d Three torches, high/medium/low detail</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_04ThreeTorchesSideBySide.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure25_04ThreeTorchesSideBySide.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="5">
+                        <a href="Figure25_05ThreeTorchesSingleLODIndex.html">
+                           <img src="_thumbnails/Figure25_05ThreeTorchesSingleLODThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_05ThreeTorchesSingleLOD"
+                                 title="X3D model Figure25_05ThreeTorchesSingleLOD.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="5">
+                        <br/>
+                        <a href="Figure25_05ThreeTorchesSingleLODIndex.html"
+                            title="X3D model Figure25_05ThreeTorchesSingleLOD.x3d">Figure 25 05 Three Torches Single LOD.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_20m_no-detail_torch_-_zoom_in!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_20m_no-detail_torch_-_zoom_in!.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_20m_no-detail_torch_-_zoom_in!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure25_05ThreeTorchesSingleLOD.x3d 20m no-detail torch - zoom in!</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_10m_low-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_10m_low-detail_torch.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_10m_low-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure25_05ThreeTorchesSingleLOD.x3d 10m low-detail torch</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_5m_medium-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_5m_medium-detail_torch.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_5m_medium-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure25_05ThreeTorchesSingleLOD.x3d 5m medium-detail torch</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_2m_high-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_2m_high-detail_torch.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_2m_high-detail_torch.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure25_05ThreeTorchesSingleLOD.x3d 2m high-detail torch</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_05ThreeTorchesSingleLOD.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] Figure25_05ThreeTorchesSingleLOD.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_06DungeonRoomFloorIndex.html">
+                           <img src="_thumbnails/Figure25_06DungeonRoomFloorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_06DungeonRoomFloor"
+                                 title="X3D model Figure25_06DungeonRoomFloor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_06DungeonRoomFloorIndex.html"
+                            title="X3D model Figure25_06DungeonRoomFloor.x3d">Figure 25 06 Dungeon Room Floor.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Dungeon_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Dungeon_floor.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Dungeon_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] Figure25_06DungeonRoomFloor.x3d Dungeon floor</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_06DungeonRoomFloor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] Figure25_06DungeonRoomFloor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_07DungeonRoomWallIndex.html">
+                           <img src="_thumbnails/Figure25_07DungeonRoomWallThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_07DungeonRoomWall"
+                                 title="X3D model Figure25_07DungeonRoomWall.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_07DungeonRoomWallIndex.html"
+                            title="X3D model Figure25_07DungeonRoomWall.x3d">Figure 25 07 Dungeon Room Wall.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Dungeon_wall.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Dungeon_wall.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Dungeon_wall.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] Figure25_07DungeonRoomWall.x3d Dungeon wall</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_07DungeonRoomWall.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure25_07DungeonRoomWall.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_08DungeonRoomIndex.html">
+                           <img src="_thumbnails/Figure25_08DungeonRoomThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_08DungeonRoom"
+                                 title="X3D model Figure25_08DungeonRoom.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_08DungeonRoomIndex.html"
+                            title="X3D model Figure25_08DungeonRoom.x3d">Figure 25 08 Dungeon Room.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Dungeon_room.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure25_08DungeonRoom.x3d Dungeon room</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_08DungeonRoom.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] Figure25_08DungeonRoom.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_09TwoDungeonRoomsWithLODHidingIndex.html">
+                           <img src="_thumbnails/Figure25_09TwoDungeonRoomsWithLODHidingThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_09TwoDungeonRoomsWithLODHiding"
+                                 title="X3D model Figure25_09TwoDungeonRoomsWithLODHiding.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_09TwoDungeonRoomsWithLODHidingIndex.html"
+                            title="X3D model Figure25_09TwoDungeonRoomsWithLODHiding.x3d">Figure 25 09 Two Dungeon Rooms With LODHiding.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Dungeon_room.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Figure25_09TwoDungeonRoomsWithLODHiding.x3d Dungeon room</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_09TwoDungeonRoomsWithLODHiding.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Figure25_09TwoDungeonRoomsWithLODHiding.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_10DungeonWallWithDoorwayIndex.html">
+                           <img src="_thumbnails/Figure25_10DungeonWallWithDoorwayThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_10DungeonWallWithDoorway"
+                                 title="X3D model Figure25_10DungeonWallWithDoorway.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_10DungeonWallWithDoorwayIndex.html"
+                            title="X3D model Figure25_10DungeonWallWithDoorway.x3d">Figure 25 10 Dungeon Wall With Doorway.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Dungeon_door.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Dungeon_door.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Dungeon_door.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] Figure25_10DungeonWallWithDoorway.x3d Dungeon door</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_10DungeonWallWithDoorway.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[23] Figure25_10DungeonWallWithDoorway.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="Figure25_11DungeonDoorIndex.html">
+                           <img src="_thumbnails/Figure25_11DungeonDoorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_11DungeonDoor"
+                                 title="X3D model Figure25_11DungeonDoor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="Figure25_11DungeonDoorIndex.html"
+                            title="X3D model Figure25_11DungeonDoor.x3d">Figure 25 11 Dungeon Door.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_11DungeonDoor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_11DungeonDoor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_11DungeonDoor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] Figure25_11DungeonDoor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure25_12DungeonRoomsWithSlidingDoorsIndex.html">
+                           <img src="_thumbnails/Figure25_12DungeonRoomsWithSlidingDoorsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure25_12DungeonRoomsWithSlidingDoors"
+                                 title="X3D model Figure25_12DungeonRoomsWithSlidingDoors.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure25_12DungeonRoomsWithSlidingDoorsIndex.html"
+                            title="X3D model Figure25_12DungeonRoomsWithSlidingDoors.x3d">Figure 25 1 2Dungeon Rooms With Sliding Doors.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Click_door_for_next_dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Click_door_for_next_dungeon_room.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Click_door_for_next_dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[25] Figure25_12DungeonRoomsWithSlidingDoors.x3d Click door for next dungeon room</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure25_12DungeonRoomsWithSlidingDoors.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[26] Figure25_12DungeonRoomsWithSlidingDoors.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter24Sound/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter25LevelOfDetail/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter26Viewpoint/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,128 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/Figure26_7DungeonViewpointsAndFieldsOfView.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure26_7DungeonViewpointsAndFieldsOfView.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 26.7, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch26/26fig07.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '4 October 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'This Viewpoint series does not move the user but rather increases the field of view (FOV) very widely, producing an interesting effect. Numerous additional viewpoints follow.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/Figure26_7DungeonViewpointsAndFieldsOfView.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure26_7DungeonViewpointsAndFieldsOfView.x3d" .
+:meta dcterms:creator "Figure 26.7, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch26/26fig07.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "4 October 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "This Viewpoint series does not move the user but rather increases the field of view (FOV) very widely, producing an interesting effect. Numerous additional viewpoints follow." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/Figure26_7DungeonViewpointsAndFieldsOfView.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Viewpoint_2_6, :Viewpoint_2_7, :Viewpoint_2_8, :Viewpoint_2_9, :NavigationInfo_2_10, :Inline_2_11 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure26_7DungeonViewpointsAndFieldsOfView.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Forward view' ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '10 degree FOV corner view' ;
+  x3do:fieldOfView 0.1745 ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '20 degree FOV corner view' ;
+  x3do:fieldOfView 0.3491 ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '45 degree FOV (default value) corner view' ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '60 degree FOV corner view' ;
+  x3do:fieldOfView 1.047 ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_7 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '90 degree FOV corner view' ;
+  x3do:fieldOfView 1.57 ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_8 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '135 degree FOV corner view' ;
+  x3do:fieldOfView 2.42 ;
+  x3do:orientation ( 0 1 0 0.611 ) ;
+  x3do:position ( 0 1.6 5 ) .
+:Viewpoint_2_9 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Click door for next dungeon room' ;
+  x3do:fieldOfView 1.05 ;
+  x3do:position ( 0 2 10 ) .
+:NavigationInfo_2_10 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:avatarSize ( 0.5 1.6 0.5 ) ;
+  x3do:headlight false ;
+  x3do:speed 2 ;
+  x3do:type '"WALK" "EXAMINE" "ANY"' .
+:Inline_2_11 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Scene ;
+  x3do:url '"../Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.x3d" "../Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_12DungeonRoomsWithSlidingDoors.wrl"' .

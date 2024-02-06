@@ -1,0 +1,24 @@
+
+        
+ecmascript:
+
+function set_fraction ( fraction, eventTime ) {
+	value_changed[0] = radius * Math.sin( turns * fraction * 6.28 ); // x
+	value_changed[1] = radius * Math.cos( turns * fraction * 6.28 ); // y
+	value_changed[2] = turns * (fraction - 0.5);                     // z
+}
+
+      
+        
+ecmascript:
+
+function initalize( )
+{
+	string_changed[0] = label + ':';
+}
+function set_float( value, timestamp )
+{
+	string_changed[0] = label + ': ' + Math.round (value * 100) / 100;
+}
+
+      

@@ -1,0 +1,155 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_6SphereSensorWithAxes.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure09_6SphereSensorWithAxes.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 9.6, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig06.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '12 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Two shapes that rotate when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_6SphereSensorWithAxes.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure09_6SphereSensorWithAxes.x3d" .
+:meta dcterms:creator "Figure 9.6, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch09/09fig06.htm" .
+:meta dcterms:created "12 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "Two shapes that rotate when the viewer drags them, with coordinate axes superimposed to show X3D/VRML directions." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter09SensingViewer/Figure09_6SphereSensorWithAxes.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :FIRST_TRANSFORM, :SECOND_TRANSFORM, :Transform_2_4 ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure09_6SphereSensorWithAxes.x3d' .
+:FIRST_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_2_1, :FIRST_SPHERESENSOR ;
+  x3do:DEF 'FIRST_TRANSFORM' ;
+  x3do:translation ( -2 0 0 ) .
+:Shape_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :FIRST_TRANSFORM ;
+  x3do:hasGeometry :Box_2_2_1_1 ;
+  x3do:hasAppearance :FIRST_APPEARANCE .
+:Box_2_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_2_1 .
+:FIRST_APPEARANCE a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasMaterial :Material_2_2_1_2_1 ;
+  x3do:DEF 'FIRST_APPEARANCE' .
+:Material_2_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FIRST_APPEARANCE ;
+  x3do:diffuseColor ( .9 .5 .1 ) ;
+  x3do:emissiveColor ( .2 .1 .05 ) .
+:FIRST_SPHERESENSOR a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :FIRST_TRANSFORM ;
+  x3do:DEF 'FIRST_SPHERESENSOR' ;
+  x3do:description 'click and drag to rotate' .
+:SECOND_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :SECOND_SPHERESENSOR, :TRANSPARENT_CYLINDER_TRANSFORM ;
+  x3do:DEF 'SECOND_TRANSFORM' ;
+  x3do:translation ( 2 0 0 ) .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SECOND_TRANSFORM ;
+  x3do:hasGeometry :Cone_2_3_1_1 ;
+  x3do:hasAppearance :FIRST_APPEARANCE-USE-1 .
+:Cone_2_3_1_1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_3_1 .
+:FIRST_APPEARANCE-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  owl:sameAs :FIRST_APPEARANCE . # DEF matching this USE
+:SECOND_SPHERESENSOR a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :SECOND_TRANSFORM ;
+  x3do:DEF 'SECOND_SPHERESENSOR' ;
+  x3do:description 'click and drag to rotate' .
+:TRANSPARENT_CYLINDER_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SECOND_TRANSFORM ;
+  x3do:hasChildren :Shape_2_3_3_1 ;
+  x3do:DEF 'TRANSPARENT_CYLINDER_TRANSFORM' ;
+  x3do:translation ( 0 -0.2 0 ) .
+:Shape_2_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TRANSPARENT_CYLINDER_TRANSFORM ;
+  x3do:hasGeometry :Sphere_2_3_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_3_1_2 .
+:Sphere_2_3_3_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:radius 1.3 .
+:Appearance_2_3_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:hasMaterial :Material_2_3_3_1_2_1 .
+:Material_2_3_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_1_2 ;
+  x3do:diffuseColor ( .7 .7 .7 ) ;
+  x3do:transparency .5 .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :CoordinateAxes ;
+  x3do:scale ( 4 4 4 ) .
+:CoordinateAxes a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:DEF 'CoordinateAxes' ;
+  x3do:url '"../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d" "../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl"' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'FIRST_SPHERESENSOR' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'FIRST_TRANSFORM' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'SECOND_SPHERESENSOR' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'SECOND_TRANSFORM' .

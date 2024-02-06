@@ -1,0 +1,334 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TumbleGroup.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20, :meta_1_21, :meta_1_22, :meta_1_23 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'TumbleGroup.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Tumble group: this file contains a Prototype declaration to manage a group of shapes, tumbling them in X, Y, and Z directions.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Loader.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'One.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Two.x3d' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Three.x3d' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Boxes.x3d' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/tumgrp.wrl' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0465.htm' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0469.htm' ;
+  x3do:name 'reference' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TumbleGroup.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_21 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_22 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_23 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "TumbleGroup.x3d" .
+:meta dcterms:description "Tumble group: this file contains a Prototype declaration to manage a group of shapes, tumbling them in X, Y, and Z directions." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Loader.x3d" .
+:meta dcterms:reference "One.x3d" .
+:meta dcterms:reference "Two.x3d" .
+:meta dcterms:reference "Three.x3d" .
+:meta dcterms:reference "Boxes.x3d" .
+:meta dcterms:reference "originals/tumgrp.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0465.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0469.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TumbleGroup.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_3, :Anchor_2_4 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'TumbleGroup.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:name 'TumbleGroup' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3, :field_2_2_1_4, :field_2_2_1_5 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'xTumbleInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '3.0' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'children' ;
+  x3do:type 'MFNode' .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'zTumbleInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '5.0' .
+:field_2_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'translation' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.0 0.0 0.0 ) .
+:field_2_2_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'yTumbleInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '1.0' .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :XRot, :XClock, :YClock, :ZClock, :XRotIt, :YRotIt, :ZRotIt ;
+  x3do:hasROUTE :ROUTE_2_2_2_8, :ROUTE_2_2_2_9, :ROUTE_2_2_2_10, :ROUTE_2_2_2_11, :ROUTE_2_2_2_12, :ROUTE_2_2_2_13 .
+:XRot a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasChildren :YRot ;
+  x3do:DEF 'XRot' .
+:YRot a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :XRot ;
+  x3do:hasChildren :ZRot ;
+  x3do:DEF 'YRot' .
+:ZRot a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :YRot ;
+  x3do:hasIS :IS_2_2_2_1_1_1_1 ;
+  x3do:DEF 'ZRot' .
+:IS_2_2_2_1_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :ZRot ;
+  x3do:hasConnect :connect_2_2_2_1_1_1_1_1, :connect_2_2_2_1_1_1_1_2 .
+:connect_2_2_2_1_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'translation' .
+:connect_2_2_2_1_1_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1_1 ;
+  x3do:nodeField 'children' ;
+  x3do:protoField 'children' .
+:XClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_2_1 ;
+  x3do:DEF 'XClock' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:IS_2_2_2_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :XClock ;
+  x3do:hasConnect :connect_2_2_2_2_1_1 .
+:connect_2_2_2_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_1 ;
+  x3do:nodeField 'cycleInterval' ;
+  x3do:protoField 'xTumbleInterval' .
+:YClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_3_1 ;
+  x3do:DEF 'YClock' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:IS_2_2_2_3_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :YClock ;
+  x3do:hasConnect :connect_2_2_2_3_1_1 .
+:connect_2_2_2_3_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_3_1 ;
+  x3do:nodeField 'cycleInterval' ;
+  x3do:protoField 'yTumbleInterval' .
+:ZClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_4_1 ;
+  x3do:DEF 'ZClock' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:IS_2_2_2_4_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :ZClock ;
+  x3do:hasConnect :connect_2_2_2_4_1_1 .
+:connect_2_2_2_4_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_4_1 ;
+  x3do:nodeField 'cycleInterval' ;
+  x3do:protoField 'zTumbleInterval' .
+:XRotIt a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:DEF 'XRotIt' ;
+  x3do:key ( 0.0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 0.0 0.0 1.0 0.0 0.0 1.57 1.0 0.0 0.0 3.14 1.0 0.0 0.0 4.71 1.0 0.0 0.0 6.28 ) .
+:YRotIt a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:DEF 'YRotIt' ;
+  x3do:key ( 0.0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.57 0.0 1.0 0.0 3.14 0.0 1.0 0.0 4.71 0.0 1.0 0.0 6.28 ) .
+:ZRotIt a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:DEF 'ZRotIt' ;
+  x3do:key ( 0.0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 1.0 0.0 0.0 0.0 1.0 1.57 0.0 0.0 1.0 3.14 0.0 0.0 1.0 4.71 0.0 0.0 1.0 6.28 ) .
+:ROUTE_2_2_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'XClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'XRotIt' .
+:ROUTE_2_2_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'YClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'YRotIt' .
+:ROUTE_2_2_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ZClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'ZRotIt' .
+:ROUTE_2_2_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'XRotIt' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'XRot' .
+:ROUTE_2_2_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'YRotIt' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'YRot' .
+:ROUTE_2_2_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'ZRotIt' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'ZRot' .
+:Background_2_3 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0 0.333333 0.66667 ) .
+:Anchor_2_4 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1, :Shape_2_4_2 ;
+  x3do:description 'select text to view parent scene' ;
+  x3do:url '"Loader.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Loader.x3d" "Loader.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Loader.wrl"' .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4 ;
+  x3do:hasGeometry :Text_2_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_2 .
+:Text_2_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_1_1 ;
+  x3do:string '"The TumbleGroup.x3d scene holds" "a prototype declaration" "" "Select this text to view example usage" "in Loader.x3d scene"' .
+:FontStyle_2_4_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:cssStyle 'BOLD' .
+:Appearance_2_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1 .
+:Material_2_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2 ;
+  x3do:diffuseColor ( 1 0.9 0.4 ) .
+:Shape_2_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4 ;
+  x3do:hasGeometry :Box_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_2 .
+:Box_2_4_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:size ( 12 5 0.1 ) .
+:Appearance_2_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasMaterial :Material_2_4_2_2_1 .
+:Material_2_4_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_2 ;
+  x3do:transparency 1 .

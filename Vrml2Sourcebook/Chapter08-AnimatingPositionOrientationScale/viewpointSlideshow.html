@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 08 - Animating Position Orientation Scale</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+            content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="7 March 2017"/>
+      <meta name="reference" content="http://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         http://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <style type="text/css">
+// can further set slideshow parameters here, see FAQ.
+      
+.slideshow-captions {
+  height: 465px;
+  width: 792px;
+}  
+.slideshow-images {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}  
+.slideshow {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}
+</style>
+      <link rel="stylesheet" type="text/css" href="../slideshow/css/slideshow.css"
+            media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+
+
+
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure08.3PositionInterpolator.x3d._VP_Default_viewpoint.png': { 'caption': '[1] Figure08.3PositionInterpolator.x3d - (default X3D view from 0 0 10)' },
+      'Figure08.3PositionInterpolatorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure08.3PositionInterpolatorWithAxes.x3d - (default X3D view)' },
+      'Figure08.4OrientationInterpolator.x3d._VP_Figure_8.4_OrientationInterpolator.png': { 'caption': '[3] Figure08.4OrientationInterpolator.x3d - Figure 8.4 OrientationInterpolator' },
+      'Figure08.4OrientationInterpolator.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure08.4OrientationInterpolator.x3d - (default X3D view from 0 0 10)' },
+      'Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Figure_8.4_OrientationInterpolatorWithAxes.png': { 'caption': '[5] Figure08.4OrientationInterpolatorWithAxes.x3d - Figure 8.4 OrientationInterpolatorWithAxes' },
+      'Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure08.4OrientationInterpolatorWithAxes.x3d - (default X3D view)' },
+      'Figure08.5AnimatingScale.x3d._VP_Default_viewpoint.png': { 'caption': '[7] Figure08.5AnimatingScale.x3d - (default X3D view from 0 0 10)' },
+      'Figure08.5AnimatingScaleWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure08.5AnimatingScaleWithAxes.x3d - (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09-SensingViewer/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 08 - Animating Position Orientation Scale</h2>
+      <table align="center" border="0" width="792">
+         <tr style="align:left; text-align: left;">
+            <td style="align:left; text-align: left; left:-100px; ">
+               <div id="show" class="slideshow"
+                    style="align: center; float: none; position: relative; left:-200px; width:792;">
+                  <div class="slideshow-images"
+                       style="align: center; float: none; position: relative; width:792;">
+                     <img src="_viewpoints/Figure08.3PositionInterpolator.x3d._VP_Default_viewpoint.png"
+                          alt="[1] Figure08.3PositionInterpolator.x3d - (default X3D view from 0 0 10)"
+                          height="465"
+                          width="792"
+                          align=""
+                          float=""
+                          position=""/>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary=""
+             style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Chapter Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 08.4 Orientation Interpolator With Axes" title="Figure 08.4 Orientation Interpolator With Axes" hspace="10" 
+                          src="Figure08.4OrientationInterpolatorWithAxes.png" width="112" height="112" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                        The TimeSensor node is similar to a stop watch: you control the start and stop time, it generates time events while running.
+                        It can loop forever, or run through only one cycle and stop. 
+                        To animate a scene, route time events into other nodes.
+                        PositionInterpolator can convert time events into 3D position or scale values.
+                        OrientationInterpolator can animate rotation values.
+                        ColorInterpolator can animate color values, and ScalarInterpolator can animate transparency values.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch08.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0133.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center" summary=""
+                      style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="right" style="background-color:lightgrey">
+6 X3D Scenes &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey">
+ &nbsp;8 Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.3PositionInterpolatorIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.3PositionInterpolatorThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.3PositionInterpolatorIndex.html" title="X3D scene">Figure 08.3 Position Interpolator</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.3PositionInterpolator.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.3PositionInterpolator.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[1] Figure08.3PositionInterpolator.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.3PositionInterpolatorWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.3PositionInterpolatorWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.3PositionInterpolatorWithAxesIndex.html" title="X3D scene">Figure 08.3 Position Interpolator With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.3PositionInterpolatorWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.3PositionInterpolatorWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[2] Figure08.3PositionInterpolatorWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.4OrientationInterpolatorIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.4OrientationInterpolatorThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.4OrientationInterpolatorIndex.html" title="X3D scene">Figure 08.4 Orientation Interpolator</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.4OrientationInterpolator.x3d._VP_Figure_8.4_OrientationInterpolator.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.4OrientationInterpolator.x3d._VP_Figure_8.4_OrientationInterpolator.png"
+                                align="left"
+                                height="24"/>[3] Figure08.4OrientationInterpolator.x3d - Figure 8.4 OrientationInterpolator</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure08.4OrientationInterpolator.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.4OrientationInterpolator.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[4] Figure08.4OrientationInterpolator.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.4OrientationInterpolatorWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.4OrientationInterpolatorWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.4OrientationInterpolatorWithAxesIndex.html" title="X3D scene">Figure 08.4 Orientation Interpolator With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Figure_8.4_OrientationInterpolatorWithAxes.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Figure_8.4_OrientationInterpolatorWithAxes.png"
+                                align="left"
+                                height="24"/>[5] Figure08.4OrientationInterpolatorWithAxes.x3d - Figure 8.4 OrientationInterpolatorWithAxes</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.4OrientationInterpolatorWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[6] Figure08.4OrientationInterpolatorWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.5AnimatingScaleIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.5AnimatingScaleThumbnail.png" width="64" height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.5AnimatingScaleIndex.html" title="X3D scene">Figure 08.5 Animating Scale</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.5AnimatingScale.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.5AnimatingScale.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[7] Figure08.5AnimatingScale.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure08.5AnimatingScaleWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure08.5AnimatingScaleWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure08.5AnimatingScaleWithAxesIndex.html" title="X3D scene">Figure 08.5 Animating Scale With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure08.5AnimatingScaleWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure08.5AnimatingScaleWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[8] Figure08.5AnimatingScaleWithAxes.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/viewpointSlideshow.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/viewpointSlideshow.html"
+                     target="_blank">
+                     <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                          alt="Validate XHTML 1.1"
+                          height="31"
+                          width="88"
+                          border="0"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/_viewpoints/"
+                     target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09-SensingViewer/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

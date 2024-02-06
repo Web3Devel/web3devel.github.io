@@ -1,0 +1,159 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18TextureMapping/Figure18_27RotatingFanAnimatedTextureTransform.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure18_27RotatingFanAnimatedTextureTransform.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 18.27, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch18/18fig27.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '4 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A rotating fan, made realistic by animating a TextureTransform.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18TextureMapping/Figure18_27RotatingFanAnimatedTextureTransform.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure18_27RotatingFanAnimatedTextureTransform.x3d" .
+:meta dcterms:creator "Figure 18.27, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch18/18fig27.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "4 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A rotating fan, made realistic by animating a TextureTransform." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18TextureMapping/Figure18_27RotatingFanAnimatedTextureTransform.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure18_27RotatingFanAnimatedTextureTransform.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'That feels good' ;
+  x3do:position ( 0 0 4 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :Transform_2_3_2, :Clock, :FanPath .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :Square .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasTexture :ImageTexture_2_3_1_1_1 ;
+  x3do:hasTextureTransform :FanRotation .
+:ImageTexture_2_3_1_1_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:repeatS false ;
+  x3do:repeatT false ;
+  x3do:url '"fan.png" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18TextureMapping/fan.png"' .
+:FanRotation a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:DEF 'FanRotation' ;
+  x3do:center ( -0.5 -0.5 ) .
+:Square a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasCoord :Coordinate_2_3_1_2_1 ;
+  x3do:hasTexCoord :TextureCoordinate_2_3_1_2_2 ;
+  x3do:DEF 'Square' ;
+  x3do:coordIndex ( 0 1 2 3 ) ;
+  x3do:solid false ;
+  x3do:texCoordIndex ( 0 1 2 3 ) .
+:Coordinate_2_3_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :Square ;
+  x3do:point ( -1 -1 -0.1 1 -1 -0.1 1 1 -0.1 -1 1 -0.1 ) .
+:TextureCoordinate_2_3_1_2_2 a owl:NamedIndividual, x3do:TextureCoordinate ;
+  x3do:hasParent :Square ;
+  x3do:point ( 0 0 1 0 1 1 0 1 ) .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_2_1 ;
+  x3do:translation ( 0 0 0.1 ) .
+:Shape_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasAppearance :Appearance_2_3_2_1_1 ;
+  x3do:hasGeometry :Square-USE-1 .
+:Appearance_2_3_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasTexture :ImageTexture_2_3_2_1_1_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_3_2_1_1_2 .
+:ImageTexture_2_3_2_1_1_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_2_1_1 ;
+  x3do:url '"grill.png" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter18TextureMapping/grill.png"' .
+:TextureTransform_2_3_2_1_1_2 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_3_2_1_1 ;
+  x3do:center ( 0.5 0.5 ) ;
+  x3do:rotation 0.785 ;
+  x3do:scale ( 8 8 ) .
+:Square-USE-1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  owl:sameAs :Square . # DEF matching this USE
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:FanPath a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'FanPath' ;
+  x3do:key ( 0 0.5 1 ) ;
+  x3do:keyValue ( 0 3.14 6.28 ) .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'FanPath' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'FanPath' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'FanRotation' .

@@ -1,0 +1,842 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Stairway.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Stairway.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'The Stairway world uses a twisting, branching, floating stairway to lead the visitor to six doorways. Each doorway is a selectable anchor leading to another world.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '16 December 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/stairwy.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0095.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Stairway.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Stairway.x3d" .
+:meta dcterms:description "The Stairway world uses a twisting, branching, floating stairway to lead the visitor to six doorways. Each doorway is a selectable anchor leading to another world." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "16 December 2023" .
+:meta dcterms:reference "originals/stairwy.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0095.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Stairway.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Transform_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'The Stairway' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyAngle ( 1.37 1.57 1.77 ) ;
+  x3do:skyColor ( 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.5 0.0 0.0 0.0 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_3_1, :NavigationInfo_2_3_2, :DirectionalLight_2_3_3, :PointLight_2_3_4, :Transform_2_3_5, :Transform_2_3_6, :Transform_2_3_7, :Transform_2_3_8, :Transform_2_3_9, :Transform_2_3_10, :Transform_2_3_11, :Transform_2_3_12, :Transform_2_3_13, :Transform_2_3_14, :Transform_2_3_15, :Transform_2_3_16, :Transform_2_3_17, :Transform_2_3_18, :Transform_2_3_19, :Transform_2_3_20, :Transform_2_3_21, :Transform_2_3_22, :Transform_2_3_23, :Transform_2_3_24, :Transform_2_3_25, :Transform_2_3_26, :Transform_2_3_27, :Transform_2_3_28, :Transform_2_3_29, :Transform_2_3_30, :Transform_2_3_31, :Transform_2_3_32, :Shape_2_3_33, :Shape_2_3_34, :Transform_2_3_35, :Transform_2_3_36, :Transform_2_3_37, :Transform_2_3_38, :Transform_2_3_39, :Transform_2_3_40, :Transform_2_3_41, :Transform_2_3_42 ;
+  x3do:scale ( 0.4 0.4 0.4 ) .
+:Viewpoint_2_3_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 0.1 ) ;
+  x3do:position ( 9.0 -5.0 25.0 ) .
+:NavigationInfo_2_3_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:avatarSize ( 0.5 4.0 1.5 ) ;
+  x3do:headlight false ;
+  x3do:speed 4.0 ;
+  x3do:type '"WALK" "ANY"' .
+:DirectionalLight_2_3_3 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:color ( 0.0 0.3 1.0 ) ;
+  x3do:direction ( -3.0 2.0 -1.0 ) .
+:PointLight_2_3_4 a owl:NamedIndividual, x3do:PointLight ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:ambientIntensity 0.3 ;
+  x3do:location ( 14.0 10.0 14.0 ) .
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Platform ;
+  x3do:translation ( 5.0 -3.0 5.0 ) .
+:Platform a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasAppearance :Marble ;
+  x3do:hasGeometry :Box_2_3_5_1_2 ;
+  x3do:DEF 'Platform' .
+:Marble a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Platform ;
+  x3do:hasMaterial :Material_2_3_5_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_3_5_1_1_2 ;
+  x3do:DEF 'Marble' .
+:Material_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Marble ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:ImageTexture_2_3_5_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Marble ;
+  x3do:url '"marble_g.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/marble_g.jpg"' .
+:Box_2_3_5_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Platform ;
+  x3do:size ( 4.0 0.25 4.0 ) .
+:Transform_2_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs ;
+  x3do:translation ( 5.0 -2.5 2.5 ) .
+:ThreeUpStraightStairs a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_6 ;
+  x3do:hasChildren :Stair, :Transform_2_3_6_1_2, :Transform_2_3_6_1_3 ;
+  x3do:DEF 'ThreeUpStraightStairs' .
+:Stair a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ThreeUpStraightStairs ;
+  x3do:hasAppearance :Marble-USE-1 ;
+  x3do:hasGeometry :Box_2_3_6_1_1_2 ;
+  x3do:DEF 'Stair' .
+:Marble-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Stair ;
+  owl:sameAs :Marble . # DEF matching this USE
+:Box_2_3_6_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Stair ;
+  x3do:size ( 4.0 0.25 1.0 ) .
+:Transform_2_3_6_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpStraightStairs ;
+  x3do:hasChildren :Stair-USE-1 ;
+  x3do:translation ( 0.0 0.5 -1.0 ) .
+:Stair-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_1_2 ;
+  owl:sameAs :Stair . # DEF matching this USE
+:Transform_2_3_6_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpStraightStairs ;
+  x3do:hasChildren :Stair-USE-2 ;
+  x3do:translation ( 0.0 1.0 -2.0 ) .
+:Stair-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_1_3 ;
+  owl:sameAs :Stair . # DEF matching this USE
+:Transform_2_3_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-1 ;
+  x3do:translation ( 5.0 -1.0 -0.5 ) .
+:ThreeUpStraightStairs-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_7 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Platform-USE-1 ;
+  x3do:translation ( 5.0 0.5 -5.0 ) .
+:Platform-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_8 ;
+  owl:sameAs :Platform . # DEF matching this USE
+:Transform_2_3_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-2 ;
+  x3do:translation ( 5.0 1.0 -7.5 ) .
+:ThreeUpStraightStairs-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_9 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Anchor_2_3_10_1 ;
+  x3do:translation ( 5.0 5.0 -10.1 ) .
+:Anchor_2_3_10_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_10 ;
+  x3do:hasChildren :Door ;
+  x3do:description 'Temple of the Orb' ;
+  x3do:url '"Temple.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Temple.x3d" "Temple.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Temple.wrl"' .
+:Door a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_10_1 ;
+  x3do:hasChildren :Shape_2_3_10_1_1_1, :Transform_2_3_10_1_1_2 ;
+  x3do:DEF 'Door' .
+:Shape_2_3_10_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Door ;
+  x3do:hasAppearance :Appearance_2_3_10_1_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_10_1_1_1_2 .
+:Appearance_2_3_10_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_10_1_1_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_3_10_1_1_1_1_1 ;
+  x3do:hasMaterial :Material_2_3_10_1_1_1_1_2 ;
+  x3do:hasTexture :ImageTexture_2_3_10_1_1_1_1_3 .
+:TextureTransform_2_3_10_1_1_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_3_10_1_1_1_1 ;
+  x3do:scale ( 1.0 2.0 ) .
+:Material_2_3_10_1_1_1_1_2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_10_1_1_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:ImageTexture_2_3_10_1_1_1_1_3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_10_1_1_1_1 ;
+  x3do:url '"panel.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/panel.jpg"' .
+:Box_2_3_10_1_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_10_1_1_1 ;
+  x3do:size ( 3.0 6.0 0.2 ) .
+:Transform_2_3_10_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Door ;
+  x3do:hasChildren :Shape_2_3_10_1_1_2_1 ;
+  x3do:translation ( 1.18 -0.0 0.2 ) .
+:Shape_2_3_10_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_10_1_1_2 ;
+  x3do:hasAppearance :Appearance_2_3_10_1_1_2_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_10_1_1_2_1_2 .
+:Appearance_2_3_10_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_10_1_1_2_1 ;
+  x3do:hasMaterial :Material_2_3_10_1_1_2_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_3_10_1_1_2_1_1_2 .
+:Material_2_3_10_1_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_10_1_1_2_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:ImageTexture_2_3_10_1_1_2_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_10_1_1_2_1_1 ;
+  x3do:url '"blur.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/blur.jpg"' .
+:Sphere_2_3_10_1_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_10_1_1_2_1 ;
+  x3do:radius 0.15 .
+:Transform_2_3_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpRightCurvingStairs ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 1.0 -5.0 ) .
+:ThreeUpRightCurvingStairs a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_11 ;
+  x3do:hasChildren :OffToLeftStair, :Transform_2_3_11_1_2, :Transform_2_3_11_1_3 ;
+  x3do:DEF 'ThreeUpRightCurvingStairs' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftStair a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingStairs ;
+  x3do:hasChildren :Stair-USE-3 ;
+  x3do:DEF 'OffToLeftStair' ;
+  x3do:translation ( -5.0 0.0 0.0 ) .
+:Stair-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :OffToLeftStair ;
+  owl:sameAs :Stair . # DEF matching this USE
+:Transform_2_3_11_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.26 ) ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:OffToLeftStair-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_11_1_2 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_11_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-2 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.52 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:OffToLeftStair-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_11_1_3 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_12_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 2.5 -5.0 ) .
+:Transform_2_3_12_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_12 ;
+  x3do:hasChildren :ThreeUpRightCurvingStairs-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.785 ) .
+:ThreeUpRightCurvingStairs-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_12_1 ;
+  owl:sameAs :ThreeUpRightCurvingStairs . # DEF matching this USE
+:Transform_2_3_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_13_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 4.0 -5.0 ) .
+:Transform_2_3_13_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_13 ;
+  x3do:hasChildren :ThreeUpRightCurvingStairs-USE-2 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -1.57 ) .
+:ThreeUpRightCurvingStairs-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_13_1 ;
+  owl:sameAs :ThreeUpRightCurvingStairs . # DEF matching this USE
+:Transform_2_3_14 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_14_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 5.0 -5.0 ) .
+:Transform_2_3_14_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_14 ;
+  x3do:hasChildren :Transform_2_3_14_1_1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -2.09 ) .
+:Transform_2_3_14_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_14_1 ;
+  x3do:hasChildren :Anchor_2_3_14_1_1_1 ;
+  x3do:translation ( 0.0 3.0 -0.6 ) .
+:Anchor_2_3_14_1_1_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_14_1_1 ;
+  x3do:hasChildren :Door-USE-1 ;
+  x3do:description 'Primitives on Pedestals' ;
+  x3do:url '"Primitives.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Primitives.x3d" "Primitives.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Primitives.wrl"' .
+:Door-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_14_1_1_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:Transform_2_3_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeDownLeftCurvingStairs ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 7.5 0.0 -5.0 ) .
+:ThreeDownLeftCurvingStairs a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_15 ;
+  x3do:hasChildren :OffToLeftStair-USE-3, :Transform_2_3_15_1_2, :Transform_2_3_15_1_3 ;
+  x3do:DEF 'ThreeDownLeftCurvingStairs' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftStair-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingStairs ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_15_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-4 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) ;
+  x3do:translation ( 0.0 -0.5 0.0 ) .
+:OffToLeftStair-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_15_1_2 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_15_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-5 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) ;
+  x3do:translation ( 0.0 -1.0 0.0 ) .
+:OffToLeftStair-USE-5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_15_1_3 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_16_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 7.5 -1.5 -5.0 ) .
+:Transform_2_3_16_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_16 ;
+  x3do:hasChildren :ThreeDownLeftCurvingStairs-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 0.785 ) .
+:ThreeDownLeftCurvingStairs-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_16_1 ;
+  owl:sameAs :ThreeDownLeftCurvingStairs . # DEF matching this USE
+:Transform_2_3_17 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_17_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 7.5 -2.5 -5.0 ) .
+:Transform_2_3_17_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_17 ;
+  x3do:hasChildren :Transform_2_3_17_1_1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 1.31 ) .
+:Transform_2_3_17_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_17_1 ;
+  x3do:hasChildren :Anchor_2_3_17_1_1_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 0.0 3.0 0.6 ) .
+:Anchor_2_3_17_1_1_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_17_1_1 ;
+  x3do:hasChildren :Door-USE-2 ;
+  x3do:description 'The Doorway' ;
+  x3do:url '"Doorway.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Doorway.x3d" "Doorway.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Doorway.wrl"' .
+:Door-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_17_1_1_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:Transform_2_3_18 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-3 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 -2.5 5.0 ) .
+:ThreeUpStraightStairs-USE-3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_18 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_19 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Platform-USE-2 ;
+  x3do:translation ( -2.0 -1.0 5.0 ) .
+:Platform-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_19 ;
+  owl:sameAs :Platform . # DEF matching this USE
+:Transform_2_3_20 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpLeftCurvingStairs ;
+  x3do:translation ( -2.0 -0.5 2.5 ) .
+:ThreeUpLeftCurvingStairs a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_20 ;
+  x3do:hasChildren :OffToRightStair, :Transform_2_3_20_1_2, :Transform_2_3_20_1_3 ;
+  x3do:DEF 'ThreeUpLeftCurvingStairs' ;
+  x3do:translation ( -5.0 0.0 0.0 ) .
+:OffToRightStair a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingStairs ;
+  x3do:hasChildren :Stair-USE-4 ;
+  x3do:DEF 'OffToRightStair' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:Stair-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :OffToRightStair ;
+  owl:sameAs :Stair . # DEF matching this USE
+:Transform_2_3_20_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingStairs ;
+  x3do:hasChildren :OffToRightStair-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:OffToRightStair-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_20_1_2 ;
+  owl:sameAs :OffToRightStair . # DEF matching this USE
+:Transform_2_3_20_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingStairs ;
+  x3do:hasChildren :OffToRightStair-USE-2 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:OffToRightStair-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_20_1_3 ;
+  owl:sameAs :OffToRightStair . # DEF matching this USE
+:Transform_2_3_21 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_21_1 ;
+  x3do:translation ( -2.0 0.5 2.5 ) .
+:Transform_2_3_21_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_21 ;
+  x3do:hasChildren :Transform_2_3_21_1_1 ;
+  x3do:center ( -5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) .
+:Transform_2_3_21_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_21_1 ;
+  x3do:hasChildren :Anchor_2_3_21_1_1_1 ;
+  x3do:translation ( 0.0 3.0 -0.6 ) .
+:Anchor_2_3_21_1_1_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_21_1_1 ;
+  x3do:hasChildren :Door-USE-3 ;
+  x3do:description 'Monolith World' ;
+  x3do:url '"Monolith.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Monolith.x3d" "Monolith.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Monolith.wrl"' .
+:Door-USE-3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_21_1_1_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:Transform_2_3_22 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-4 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( -4.5 -0.5 5.0 ) .
+:ThreeUpStraightStairs-USE-4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_22 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_23 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-5 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( -7.5 1.0 5.0 ) .
+:ThreeUpStraightStairs-USE-5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_23 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_24 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Anchor_2_3_24_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( -10.1 5.0 5.0 ) .
+:Anchor_2_3_24_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_24 ;
+  x3do:hasChildren :Door-USE-4 ;
+  x3do:description 'The Tower' ;
+  x3do:url '"Towers.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Towers.x3d" "Towers.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Towers.wrl"' .
+:Door-USE-4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_24_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:Transform_2_3_25 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-6 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 9.5 -4.5 5.0 ) .
+:ThreeUpStraightStairs-USE-6 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_25 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_26 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Platform-USE-3 ;
+  x3do:translation ( 12.0 -5.0 5.0 ) .
+:Platform-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_26 ;
+  owl:sameAs :Platform . # DEF matching this USE
+:Transform_2_3_27 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-7 ;
+  x3do:translation ( 12.0 -6.5 9.5 ) .
+:ThreeUpStraightStairs-USE-7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_27 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_28 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Platform-USE-4 ;
+  x3do:translation ( 12.0 -7.0 12.0 ) .
+:Platform-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_28 ;
+  owl:sameAs :Platform . # DEF matching this USE
+:Transform_2_3_29 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpStraightStairs-USE-8 ;
+  x3do:translation ( 12.0 -8.5 16.5 ) .
+:ThreeUpStraightStairs-USE-8 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3_29 ;
+  owl:sameAs :ThreeUpStraightStairs . # DEF matching this USE
+:Transform_2_3_30 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeDownRightCurvingStairs ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 5.0 -3.5 7.5 ) .
+:ThreeDownRightCurvingStairs a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_30 ;
+  x3do:hasChildren :OffToLeftStair-USE-6, :Transform_2_3_30_1_2, :Transform_2_3_30_1_3 ;
+  x3do:DEF 'ThreeDownRightCurvingStairs' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftStair-USE-6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingStairs ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_30_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-7 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.26 ) ;
+  x3do:translation ( 0.0 -0.5 0.0 ) .
+:OffToLeftStair-USE-7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_30_1_2 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_30_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingStairs ;
+  x3do:hasChildren :OffToLeftStair-USE-8 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.52 ) ;
+  x3do:translation ( 0.0 -1.0 0.0 ) .
+:OffToLeftStair-USE-8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_30_1_3 ;
+  owl:sameAs :OffToLeftStair . # DEF matching this USE
+:Transform_2_3_31 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_31_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 5.0 -5.0 7.5 ) .
+:Transform_2_3_31_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_31 ;
+  x3do:hasChildren :ThreeDownRightCurvingStairs-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.785 ) .
+:ThreeDownRightCurvingStairs-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_31_1 ;
+  owl:sameAs :ThreeDownRightCurvingStairs . # DEF matching this USE
+:Transform_2_3_32 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_32_1 ;
+  x3do:translation ( 5.0 -6.0 7.5 ) .
+:Transform_2_3_32_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_32 ;
+  x3do:hasChildren :Transform_2_3_32_1_1 ;
+  x3do:center ( -5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -1.48 ) .
+:Transform_2_3_32_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_32_1 ;
+  x3do:hasChildren :Anchor_2_3_32_1_1_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 0.0 3.0 -0.6 ) .
+:Anchor_2_3_32_1_1_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_3_32_1_1 ;
+  x3do:hasChildren :Door-USE-5 ;
+  x3do:description 'Robot Bill' ;
+  x3do:url '"RoboBill.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/RoboBill.x3d" "RoboBill.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/RoboBill.wrl"' .
+:Door-USE-5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Anchor_2_3_32_1_1_1 ;
+  owl:sameAs :Door . # DEF matching this USE
+:Shape_2_3_33 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_33_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_33_2 .
+:Appearance_2_3_33_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_33 ;
+  x3do:hasTextureTransform :TextureTransform_2_3_33_1_1 ;
+  x3do:hasMaterial :Material_2_3_33_1_2 ;
+  x3do:hasTexture :ImageTexture_2_3_33_1_3 .
+:TextureTransform_2_3_33_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_3_33_1 ;
+  x3do:scale ( 20.0 20.0 ) .
+:Material_2_3_33_1_2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_33_1 ;
+  x3do:ambientIntensity 0.3 .
+:ImageTexture_2_3_33_1_3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_33_1 ;
+  x3do:url '"stone2.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/stone2.jpg"' .
+:IndexedFaceSet_2_3_33_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_33 ;
+  x3do:hasCoord :Coordinate_2_3_33_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_3_33_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_33_2 ;
+  x3do:point ( -30.0 -9.0 30.0 30.0 -9.0 30.0 30.0 -9.0 -30.0 -30.0 -9.0 -30.0 ) .
+:Shape_2_3_34 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasAppearance :ShadowColor ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_34_2 .
+:ShadowColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_34 ;
+  x3do:hasMaterial :Material_2_3_34_1_1 ;
+  x3do:DEF 'ShadowColor' .
+:Material_2_3_34_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ShadowColor ;
+  x3do:ambientIntensity 0.0 ;
+  x3do:diffuseColor ( 0.1 0.1 0.1 ) ;
+  x3do:transparency 0.25 .
+:IndexedFaceSet_2_3_34_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_34 ;
+  x3do:hasCoord :Coordinate_2_3_34_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 -1 4 5 6 7 -1 8 9 10 11 -1 ) .
+:Coordinate_2_3_34_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_34_2 ;
+  x3do:point ( 10.0 -8.5 17.0 14.0 -8.5 17.0 14.0 -8.5 3.0 10.0 -8.5 3.0 -10.0 -8.5 7.0 10.0 -8.5 7.0 10.0 -8.5 3.0 -10.0 -8.5 3.0 3.0 -8.5 7.0 7.0 -8.5 7.0 7.0 -8.5 -10.0 3.0 -8.5 -10.0 ) .
+:Transform_2_3_35 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpRightCurvingShadows ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 -8.5 -5.0 ) .
+:ThreeUpRightCurvingShadows a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_35 ;
+  x3do:hasChildren :OffToLeftShadow, :Transform_2_3_35_1_2, :Transform_2_3_35_1_3 ;
+  x3do:DEF 'ThreeUpRightCurvingShadows' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftShadow a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingShadows ;
+  x3do:hasChildren :Shadow ;
+  x3do:DEF 'OffToLeftShadow' ;
+  x3do:translation ( -5.0 0.0 0.0 ) .
+:Shadow a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :OffToLeftShadow ;
+  x3do:hasAppearance :ShadowColor-USE-1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_35_1_1_1_2 ;
+  x3do:DEF 'Shadow' .
+:ShadowColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shadow ;
+  owl:sameAs :ShadowColor . # DEF matching this USE
+:IndexedFaceSet_2_3_35_1_1_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shadow ;
+  x3do:hasCoord :Coordinate_2_3_35_1_1_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 -1 ) .
+:Coordinate_2_3_35_1_1_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_35_1_1_1_2 ;
+  x3do:point ( -2.0 0.0 0.5 2.0 0.0 0.5 2.0 0.0 -0.5 -2.0 0.0 -0.5 ) .
+:Transform_2_3_35_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.26 ) .
+:OffToLeftShadow-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_35_1_2 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_35_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpRightCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-2 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.52 ) .
+:OffToLeftShadow-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_35_1_3 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_36 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_36_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 -8.5 -5.0 ) .
+:Transform_2_3_36_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_36 ;
+  x3do:hasChildren :ThreeUpRightCurvingShadows-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.785 ) .
+:ThreeUpRightCurvingShadows-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_36_1 ;
+  owl:sameAs :ThreeUpRightCurvingShadows . # DEF matching this USE
+:Transform_2_3_37 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_37_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 2.5 -8.5 -5.0 ) .
+:Transform_2_3_37_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_37 ;
+  x3do:hasChildren :ThreeUpRightCurvingShadows-USE-2 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -1.57 ) .
+:ThreeUpRightCurvingShadows-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_37_1 ;
+  owl:sameAs :ThreeUpRightCurvingShadows . # DEF matching this USE
+:Transform_2_3_38 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeDownLeftCurvingShadows ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 7.5 -8.5 -5.0 ) .
+:ThreeDownLeftCurvingShadows a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_38 ;
+  x3do:hasChildren :OffToLeftShadow-USE-3, :Transform_2_3_38_1_2, :Transform_2_3_38_1_3 ;
+  x3do:DEF 'ThreeDownLeftCurvingShadows' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftShadow-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingShadows ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_38_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-4 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) .
+:OffToLeftShadow-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_38_1_2 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_38_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownLeftCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-5 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) .
+:OffToLeftShadow-USE-5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_38_1_3 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_39 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_39_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:translation ( 7.5 -8.5 -5.0 ) .
+:Transform_2_3_39_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_39 ;
+  x3do:hasChildren :ThreeDownLeftCurvingShadows-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 0.785 ) .
+:ThreeDownLeftCurvingShadows-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_39_1 ;
+  owl:sameAs :ThreeDownLeftCurvingShadows . # DEF matching this USE
+:Transform_2_3_40 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeUpLeftCurvingShadows ;
+  x3do:translation ( -2.0 -8.5 2.5 ) .
+:ThreeUpLeftCurvingShadows a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_40 ;
+  x3do:hasChildren :OffToRightShadow, :Transform_2_3_40_1_2, :Transform_2_3_40_1_3 ;
+  x3do:DEF 'ThreeUpLeftCurvingShadows' ;
+  x3do:translation ( -5.0 0.0 0.0 ) .
+:OffToRightShadow a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingShadows ;
+  x3do:hasChildren :Shadow-USE-1 ;
+  x3do:DEF 'OffToRightShadow' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:Shadow-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :OffToRightShadow ;
+  owl:sameAs :Shadow . # DEF matching this USE
+:Transform_2_3_40_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingShadows ;
+  x3do:hasChildren :OffToRightShadow-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) .
+:OffToRightShadow-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_40_1_2 ;
+  owl:sameAs :OffToRightShadow . # DEF matching this USE
+:Transform_2_3_40_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeUpLeftCurvingShadows ;
+  x3do:hasChildren :OffToRightShadow-USE-2 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) .
+:OffToRightShadow-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_40_1_3 ;
+  owl:sameAs :OffToRightShadow . # DEF matching this USE
+:Transform_2_3_41 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :ThreeDownRightCurvingShadows ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 5.0 -8.5 7.5 ) .
+:ThreeDownRightCurvingShadows a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_41 ;
+  x3do:hasChildren :OffToLeftShadow-USE-6, :Transform_2_3_41_1_2, :Transform_2_3_41_1_3 ;
+  x3do:DEF 'ThreeDownRightCurvingShadows' ;
+  x3do:translation ( 5.0 0.0 0.0 ) .
+:OffToLeftShadow-USE-6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingShadows ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_41_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-7 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.26 ) .
+:OffToLeftShadow-USE-7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_41_1_2 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_41_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThreeDownRightCurvingShadows ;
+  x3do:hasChildren :OffToLeftShadow-USE-8 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.52 ) .
+:OffToLeftShadow-USE-8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_41_1_3 ;
+  owl:sameAs :OffToLeftShadow . # DEF matching this USE
+:Transform_2_3_42 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_42_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:translation ( 5.0 -8.5 7.5 ) .
+:Transform_2_3_42_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_42 ;
+  x3do:hasChildren :ThreeDownRightCurvingShadows-USE-1 ;
+  x3do:center ( 5.0 0.0 0.0 ) ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.785 ) .
+:ThreeDownRightCurvingShadows-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_42_1 ;
+  owl:sameAs :ThreeDownRightCurvingShadows . # DEF matching this USE

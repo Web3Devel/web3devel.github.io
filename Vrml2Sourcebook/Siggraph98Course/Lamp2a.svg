@@ -1,0 +1,14 @@
+
+      
+ecmascript:
+		function set_active( b, tm ) {
+			// ignore button releases
+			if ( b == false ) return;
+
+			// toggle on button presses
+			if ( on == true ) on = false;
+			else              on = true;
+			on_changed = on;
+		}
+
+    

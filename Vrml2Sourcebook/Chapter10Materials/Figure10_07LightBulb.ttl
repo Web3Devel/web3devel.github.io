@@ -1,0 +1,201 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_07LightBulb.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure10_07LightBulb.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 10.7, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch10/10fig07.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '15 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A lightbulb that varies in brightness as the pointing device is held over the socket.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_07LightBulb.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure10_07LightBulb.x3d" .
+:meta dcterms:creator "Figure 10.7, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch10/10fig07.htm" .
+:meta dcterms:created "15 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A lightbulb that varies in brightness as the pointing device is held over the socket." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_07LightBulb.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Transform_2_3, :LIGHT_TIMESENSOR, :WHITE_COLORINTERPOLATOR ;
+  x3do:hasROUTE :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure10_07LightBulb.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Light bulb: put mouse over socket to change brightness' ;
+  x3do:position ( 0 0 8 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :Group_2_3_2, :Transform_2_3_3 ;
+  x3do:translation ( 0 2 0 ) .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :Cylinder_2_3_1_2 .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1 .
+:Material_2_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:diffuseColor ( 0.4 0.4 0.4 ) ;
+  x3do:emissiveColor ( 0.1 0.1 0.1 ) .
+:Cylinder_2_3_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:radius 0.05 .
+:Group_2_3_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Transform_2_3_2_1, :Transform_2_3_2_2, :SOCKET_TOUCHSENSOR .
+:Transform_2_3_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_2 ;
+  x3do:hasChildren :Shape_2_3_2_1_1 ;
+  x3do:translation ( 0 -1 0 ) .
+:Shape_2_3_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_1 ;
+  x3do:hasAppearance :BULB_CASING ;
+  x3do:hasGeometry :Sphere_2_3_2_1_1_2 .
+:BULB_CASING a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1_1 ;
+  x3do:hasMaterial :SOCKET_MATERIAL ;
+  x3do:DEF 'BULB_CASING' .
+:SOCKET_MATERIAL a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :BULB_CASING ;
+  x3do:DEF 'SOCKET_MATERIAL' ;
+  x3do:diffuseColor ( 0.4 0.4 0.16 ) ;
+  x3do:emissiveColor ( 0.4 0.4 0.16 ) .
+:Sphere_2_3_2_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_2_1_1 ;
+  x3do:radius 0.5 .
+:Transform_2_3_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_2 ;
+  x3do:hasChildren :Shape_2_3_2_2_1 ;
+  x3do:translation ( 0 -1.5 0 ) .
+:Shape_2_3_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_2 ;
+  x3do:hasAppearance :BULB_CASING-USE-1 ;
+  x3do:hasGeometry :Cylinder_2_3_2_2_1_2 .
+:BULB_CASING-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  owl:sameAs :BULB_CASING . # DEF matching this USE
+:Cylinder_2_3_2_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  x3do:height 1 ;
+  x3do:radius 0.5 .
+:SOCKET_TOUCHSENSOR a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3_2 ;
+  x3do:DEF 'SOCKET_TOUCHSENSOR' ;
+  x3do:description 'touch to change light intensity' .
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_3_1, :LIGHTSOURCE ;
+  x3do:translation ( 0 -2.95 0 ) .
+:Shape_2_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:hasAppearance :Appearance_2_3_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_3_1_2 .
+:Appearance_2_3_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:hasMaterial :BULB_MATERIAL .
+:BULB_MATERIAL a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_1_1 ;
+  x3do:DEF 'BULB_MATERIAL' ;
+  x3do:diffuseColor ( 0.4 0.4 0.4 ) ;
+  x3do:emissiveColor ( 0.8 0.8 0.8 ) .
+:Sphere_2_3_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_3_1 .
+:LIGHTSOURCE a owl:NamedIndividual, x3do:PointLight ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:DEF 'LIGHTSOURCE' .
+:LIGHT_TIMESENSOR a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'LIGHT_TIMESENSOR' ;
+  x3do:cycleInterval '3' ;
+  x3do:enabled false ;
+  x3do:loop true .
+:WHITE_COLORINTERPOLATOR a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'WHITE_COLORINTERPOLATOR' ;
+  x3do:key ( 0 0.1 0.4 0.6 0.9 1 ) ;
+  x3do:keyValue ( 1 1 1 1 1 1 0.1 0.1 0.1 0.1 0.1 0.1 1 1 1 1 1 1 ) .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isOver' ;
+  x3do:fromNode 'SOCKET_TOUCHSENSOR' ;
+  x3do:toField 'enabled' ;
+  x3do:toNode 'LIGHT_TIMESENSOR' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'LIGHT_TIMESENSOR' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'WHITE_COLORINTERPOLATOR' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'WHITE_COLORINTERPOLATOR' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'BULB_MATERIAL' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'WHITE_COLORINTERPOLATOR' ;
+  x3do:toField 'set_emissiveColor' ;
+  x3do:toNode 'BULB_MATERIAL' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'WHITE_COLORINTERPOLATOR' ;
+  x3do:toField 'set_color' ;
+  x3do:toNode 'LIGHTSOURCE' .

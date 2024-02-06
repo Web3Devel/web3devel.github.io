@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Windmill.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element   {color: navy}
+span.attribute {color: green}
+span.value     {color: teal}
+span.plain     {color: black}
+span.gray      {color: gray}
+span.idName    {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE;} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF;} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF;} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.boxedBlock          {border: 1px solid grey;  }
+div.center {text-align: center}
+div.indented {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+/* https://stackoverflow.com/questions/10769016/display-image-on-text-link-hover-css-only 
+    position: relative;
+    left: 20px;*/
+.child {
+    float: right;
+    height: 0px;
+}
+.parent:hover {
+    background-color: lightyellow;
+}
+.parent:hover .child {
+    background-color: lightyellow;
+    height: 200px;
+}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Interchange Profile supports simple geometry and animation"><span class="attribute">profile</span>='<span class="value">Interchange</span>'</span>
+&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>
+&gt;
+</span>
+<div class="indented">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span>
+<div class="indented">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Windmill.x3d">Windmill.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">This world builds a windmill whose sails spin about. Several viewpoints are added to look at the windmill from different angles.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">David R. Nadeau, John L. Moreland, Michael M. Heck</span>'/&gt;
+</span><br />
+
+<span title="meta 'translator' provides name of person performing translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 July 1998</span>'/&gt;
+</span><br />
+
+<span title="meta 'translated' provides date of translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">2 February 2014</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="originals/windmill.wrl">originals/windmill.wrl</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98" target="_blank">http://www.siggraph.org/s98</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98/conference/courses/18.html"
+                   target="_blank">http://www.siggraph.org/s98/conference/courses/18.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0356.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0356.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Windmill.x3d"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Windmill.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+               <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span>
+</div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <span style="color:white">&lt;!--</span>
+               <span class="div.indented">
+                  <b>
+                     <a title="Event Graph ROUTE Table shows event connections"
+                         href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+                  </b> shows event connections</span>
+               <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+               <b>
+                  <i>Index for DEF nodes: </i>
+               </b>
+               <a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#Rotator"
+                   class="idName">Rotator</a>,
+<a title="go to this Transform node" href="#Sail" class="idName">Sail</a>,
+<a title="go to this Transform node" href="#Sails" class="idName">Sails</a>,
+<a title="go to this Appearance node" href="#Tile" class="idName">Tile</a>,
+<a title="go to this Appearance node" href="#Wood" class="idName">Wood</a>
+<br /><hr width="25%"/>
+               <b>
+                  <i>Index for Viewpoint nodes: </i>
+               </b>
+               <a title="go to this Viewpoint node: Entry view"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Close-up"
+                   href="#Viewpoint_2"
+                   class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: Front door"
+                   href="#Viewpoint_3"
+                   class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: Far away"
+                   href="#Viewpoint_4"
+                   class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: Roof top"
+                   href="#Viewpoint_5"
+                   class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: On a sail"
+                   href="#Viewpoint_6"
+                   class="idName">Viewpoint_6</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">--&gt;</span>
+<br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span>
+<div class="indented">
+               <span title="XML comment">&lt;!--  EXPERIMENTATION  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Add  additional  windmills  to  the  world.  Make  each  windmill's  sails  rotate  at  a  slightly  different  speed.  This  will  insure  that  the  windmills  don't  all  rotate  in  sync,  thereby  making  the  scene  look  more  natural.  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Make  the  windmill  door  an  anchor.  Clicking  on  the  door  leads  to  another  world  describing  the  windmill  interior.  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Add  panorama  cloud  and  mountain  textures  to  the  Background  node.  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Remove  the  windmill's  sails  and,  instead,  create  a  rotating  water  wheel.  --&gt;</span>
+<br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='<span class="value">"Copyright (c) 1997, David R. Nadeau"</span>'&#160;<span class="attribute">title</span>='<span class="value">Windmill</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Windmill.x3d._VP_Entry_view.png">Entry view</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1.0 0.0 0.0 0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 1.65 35.0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_2"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Windmill.x3d._VP_Close-up.png">Close-up</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1.0 0.0 0.0 0.5</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 1.65 15.0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_3"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Windmill.x3d._VP_Front_door.png">Front door</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 0.785</span>'&#160;<span class="attribute">position</span>='<span class="value">7.05 1.65 7.05</span>'/&gt;
+</span><br />
+<a name="Viewpoint_4"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Windmill.x3d._VP_Far_away.png">Far away</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 2.356</span>'&#160;<span class="attribute">position</span>='<span class="value">35.0 1.65 -35.0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_5"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Windmill.x3d._VP_Roof_top.png">Roof top</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.00128 0.959 0.282 3.1503</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 14.43 2.0</span>'/&gt;
+</span><br />
+
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">headlight</span>='<span class="value">false</span>'&#160;<span class="attribute">speed</span>='<span class="value">3.0</span>'/&gt;
+</span><br />
+
+<span title="Background simulates ground and sky, using vertical arrays of wraparound color values or backdrop textures on all six sides">&lt;<span class="element">Background</span>&#160;<span class="attribute">skyAngle</span>='<span class="value">1.3 1.471</span>'&#160;<span class="attribute">skyColor</span>='<span class="value">0.0 0.2 0.8 0.1 0.3 0.9 0.7 0.7 0.7</span>'/&gt;
+</span><br />
+
+<span title="DirectionalLight creates parallel light rays to illuminate geometric shapes">&lt;<span class="element">DirectionalLight</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.8</span>'&#160;<span class="attribute">direction</span>='<span class="value">-1.0 -1.0 -1.0</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 -0.005 0.0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureTransform</span>&#160;<span class="attribute">scale</span>='<span class="value">2.0 2.0</span>'/&gt;
+<br />
+
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.7</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.0 0.5 0.1</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="fire_g.jpg" target="_blank" class="parent">fire_g.jpg<img class="child" src="fire_g.jpg"/>
+                        </a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/fire_g.jpg"
+                            target="_blank"
+                            class="parent">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/fire_g.jpg<img class="child"
+                                 src="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/fire_g.jpg"/>
+                        </a>" '</span>
+/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3</span>'&#160;<span class="attribute">texCoordIndex</span>='<span class="value">0 1 2 3</span>'&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureCoordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0</span>'/&gt;
+<br />
+
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-100.0 0.0 100.0 100.0 0.0 100.0 100.0 0.0 -100.0 -100.0 0.0 -100.0</span>'/&gt;
+</span>
+</div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 5.0 0.0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureTransform</span>&#160;<span class="attribute">scale</span>='<span class="value">2.0 2.0</span>'/&gt;
+<br />
+
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.3</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 1.0 1.0</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="swall1.jpg" target="_blank" class="parent">swall1.jpg<img class="child" src="swall1.jpg"/>
+                        </a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/swall1.jpg"
+                            target="_blank"
+                            class="parent">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/swall1.jpg<img class="child"
+                                 src="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/swall1.jpg"/>
+                        </a>" '</span>
+/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">bottom</span>='<span class="value">false</span>'&#160;<span class="attribute">height</span>='<span class="value">10.0</span>'&#160;<span class="attribute">radius</span>='<span class="value">5.0</span>'&#160;<span class="attribute">top</span>='<span class="value">false</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 12.0 0.0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+                     <a name="Tile"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Tile" href="#Tile" class="idName">Tile</a>'&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureTransform</span>&#160;<span class="attribute">scale</span>='<span class="value">4.0 4.0</span>'/&gt;
+<br />
+
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.3</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0.0 0.0</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="wtile.jpg" target="_blank" class="parent">wtile.jpg<img class="child" src="wtile.jpg"/>
+                        </a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wtile.jpg"
+                            target="_blank"
+                            class="parent">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wtile.jpg<img class="child"
+                                 src="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wtile.jpg"/>
+                        </a>" '</span>
+/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Cone is a geometry primitive node">&lt;<span class="element">Cone</span>&#160;<span class="attribute">bottomRadius</span>='<span class="value">6.0</span>'&#160;<span class="attribute">height</span>='<span class="value">4.0</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.785</span>'&#160;<span class="attribute">translation</span>='<span class="value">3.55 0.0 3.55</span>'&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 3.6 0.0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                            href="#Tile"
+                            class="idName">Tile</a>'/&gt;
+</span><br />
+
+<span title="Cone is a geometry primitive node">&lt;<span class="element">Cone</span>&#160;<span class="attribute">bottomRadius</span>='<span class="value">1.5</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.3</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.4 0.2 0.0</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="wdoor.jpg" target="_blank" class="parent">wdoor.jpg<img class="child" src="wdoor.jpg"/>
+                        </a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wdoor.jpg"
+                            target="_blank"
+                            class="parent">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wdoor.jpg<img class="child"
+                                 src="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/wdoor.jpg"/>
+                        </a>" '</span>
+/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3 -1 4 0 3 7 -1 1 5 6 2 -1</span>'&#160;<span class="attribute">texCoordIndex</span>='<span class="value">0 1 2 3 -1 4 5 6 7 -1 4 5 6 7 -1</span>'&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureCoordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 0.0 0.0 0.08 0.0 0.08 1.0 0.0 1.0</span>'/&gt;
+<br />
+
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-0.7 0.0 0.15 0.7 0.0 0.15 0.7 2.9 0.15 -0.7 2.9 0.15 -0.7 0.0 -0.05 0.7 0.0 -0.05 0.7 2.9 -0.05 -0.7 2.9 -0.05</span>'/&gt;
+</span>
+</div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.05 0.5</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.4 0.4 0.4</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2.0 0.1 1.0</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Sails"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Sails</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">Rotator</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Sails" href="#Sails" class="idName">Sails</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 8.0 6.5</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                  <a name="Viewpoint_6"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Windmill.x3d._VP_On_a_sail.png">On a sail</a>'&#160;<span class="attribute">position</span>='<span class="value">0.0 6.5 -0.1</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1.0 0.0 0.0 1.571</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -0.75</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+                        <a name="Wood"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Wood" href="#Wood" class="idName">Wood</a>'&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.6 0.4 0.0</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">bottom</span>='<span class="value">false</span>'&#160;<span class="attribute">height</span>='<span class="value">1.5</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.8</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Sail"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Sail" href="#Sail" class="idName">Sail</a>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 3.5 0.1</span>'&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 1.0 0.1</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureTransform</span>&#160;<span class="attribute">scale</span>='<span class="value">2.0 6.0</span>'/&gt;
+<br />
+
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 1.0 1.0</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="sails.jpg" target="_blank" class="parent">sails.jpg<img class="child" src="sails.jpg"/>
+                              </a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/sails.jpg"
+                                  target="_blank"
+                                  class="parent">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/sails.jpg<img class="child"
+                                       src="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/sails.jpg"/>
+                              </a>" '</span>
+/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+<br />
+
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2.0 6.0 0.1</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                            href="#Wood"
+                            class="idName">Wood</a>'/&gt;
+</span><br />
+
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">0.1 7.0 0.1</span>'/&gt;
+</span>
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 0.0 1.0 1.571</span>'&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Sail"
+                         class="idName">Sail</a>'/&gt;
+</span>
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 0.0 1.0 -1.571</span>'&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Sail"
+                         class="idName">Sail</a>'/&gt;
+</span>
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 0.0 1.0 3.141</span>'&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='
+<a title="go to the original DEF node definition"
+                         href="#Sail"
+                         class="idName">Sail</a>'/&gt;
+</span>
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Clock"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Clock</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Rotator</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF;">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Clock" href="#Clock" class="idName">Clock</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">10.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">1.0</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="Rotator"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Rotator</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Clock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Sails</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF;">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Rotator" href="#Rotator" class="idName">Rotator</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.5 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 1.0 0.0 0.0 0.0 1.0 3.141 0.0 0.0 1.0 6.282</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_1"
+                      href="#ROUTE_1"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Clock"
+                   class="idName">Clock</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rotator"
+                   class="idName">Rotator</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                  <a title="HTML bookmark for this ROUTE is #ROUTE_2"
+                      href="#ROUTE_2"
+                      class="route">ROUTE</a>
+               </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Rotator"
+                   class="idName">Rotator</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                   href="#Sails"
+                   class="idName">Sails</a>'<span title="X3D Tooltips: SFRotation data type">&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'</span>/&gt;
+</span>
+</div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span>
+
+</div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <span style="color:white">&lt;!--</span>
+            <span class="div.indented">
+               <b>
+                  <a title="Event Graph ROUTE Table shows event connections"
+                      href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+               </b> shows event connections</span>
+            <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+            <b>
+               <i>Index for DEF nodes: </i>
+            </b>
+            <a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#Rotator"
+                class="idName">Rotator</a>,
+<a title="go to this Transform node" href="#Sail" class="idName">Sail</a>,
+<a title="go to this Transform node" href="#Sails" class="idName">Sails</a>,
+<a title="go to this Appearance node" href="#Tile" class="idName">Tile</a>,
+<a title="go to this Appearance node" href="#Wood" class="idName">Wood</a>
+<br /><hr width="25%"/>
+            <b>
+               <i>Index for Viewpoint nodes: </i>
+            </b>
+            <a title="go to this Viewpoint node: Entry view"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Close-up"
+                href="#Viewpoint_2"
+                class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: Front door"
+                href="#Viewpoint_3"
+                class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: Far away"
+                href="#Viewpoint_4"
+                class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: Roof top"
+                href="#Viewpoint_5"
+                class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: On a sail"
+                href="#Viewpoint_6"
+                class="idName">Viewpoint_6</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">--&gt;</span>
+         <!-- apply-templates * | comment() complete -->
+      </div>
+      <div style="background-color:#DDEEFF;">
+         <br/>
+         <p style="text-align:center;">
+            <b>
+               <a name="EventGraph"> </a>
+               <a href="#EventGraph" title="bookmark link">Event Graph ROUTE Table</a> with 2 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE"
+                   title="X3D Tooltips: ROUTE"
+                   target="_tooltip_type">ROUTE</a> connections total, showing <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#Eventmodel"
+                   target="_blank"
+                   title="X3D 4.0 Architecture, Concepts, Event Model">X3D event-model relationships</a> for this scene.</b>
+         </p>
+         <p style="text-align:center;">Each row shows an <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#EventCascade"
+                target="_blank">event cascade</a> that may occur during a single <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#Timestamp"
+                target="_blank">timestamp</a> interval between frame renderings, as part of the <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#ExecutionModel"
+                target="_blank">X3D execution model</a>.</p>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;"><!--starting first row-->
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Clock" title="DEF name">Clock</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">TimeSensor</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field TimeSensor.fraction_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor.fraction">fraction_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_1" href="#ROUTE_1">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#Rotator" title="DEF name">Rotator</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.set_fraction"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.set_fraction">set_fraction</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFFloat data type">
+                  <a title="X3D Tooltips: SFFloat data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFFloat">SFFloat</a>
+               </span>
+            </td>
+            <td style="text-align:center; background-color:LightYellow; vertical-align:bottom;">
+               <span style="background-color:lightgrey;">
+                  <i>
+                     <a title="same node receives input event on left and sends output event on right">then</a>
+                  </i>
+               </span>
+            </td>
+            <td style="text-align:right; background-color:LightYellow;" title="">
+               <a href="#Rotator" title="DEF name">Rotator</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">OrientationInterpolator</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field OrientationInterpolator.value_changed"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator.value_changed">value_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:white" title="">
+                  <br/>
+                  <a title="go to #ROUTE_2" href="#ROUTE_2">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=2">(2)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:white;" title="">
+               <a href="#Sails" title="DEF name">Sails</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Transform</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Transform.rotation"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform.rotation">set_rotation</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFRotation data type">
+                  <a title="X3D Tooltips: SFRotation data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFRotation">SFRotation</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+      </div>
+      <hr style="width:100%"/>
+      <span style="color:white">--&gt;</span>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+Online at 
+<br/>
+         <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/WindmillIndex.html"
+             target="_top">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/WindmillIndex.html</a>
+         <span style="color:white">--&gt;</span>
+         <br/>
+         <span style="color:white">&lt;!--</span>
+Version control at 
+<br/>
+         <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Windmill.x3d"
+             target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Windmill.x3d</a>
+         <span style="color:white">--&gt;</span>
+      </p>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color legend: X3D terminology <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches XML terminology 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;" >(Light-blue background: event-based behavior node or statement)</span>
+<span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background inside box: inserted documentation)</span>
+<span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a>, and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips, and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

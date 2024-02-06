@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 03 - Shapes</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02-Introduction/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04-Text/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 03 - Shapes</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter03-Shapes/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes
+                        how to build primitive shapes.
+                        The Shape node contains Appearance and geometry.
+                        Geometry primitive nodes of interest include Box, Cone, Cylinder, Sphere, Text and FontStyle.
+                        Multiple Shape nodes can be drawn together to make new objects of interest.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch03.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0028.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Space Station, or spark plug? You decide..." title="Space Station, or spark plug? You decide...." hspace="10" 
+                          src="_viewpoints/Figure03.10SpaceStation.x3d._VP_View_from_80m_away.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;18 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.01DefaultBox"/>
+               <a href="Figure03.01DefaultBoxIndex.html">
+                  <img src="_thumbnails/Figure03.01DefaultBoxThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.01DefaultBoxIndex.html">Figure 03.01 Default Box</a>
+            </td>
+            <td>Default Box uses default values</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.01DefaultBoxWithAxes"/>
+               <a href="Figure03.01DefaultBoxWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.01DefaultBoxWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.01DefaultBoxWithAxesIndex.html">Figure 03.01 Default Box With Axes</a>
+            </td>
+            <td>Default Box uses default values, coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.02ResizedBox"/>
+               <a href="Figure03.02ResizedBoxIndex.html">
+                  <img src="_thumbnails/Figure03.02ResizedBoxThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.02ResizedBoxIndex.html">Figure 03.02 Resized Box</a>
+            </td>
+            <td>Resized Box with a small width, a medium height, and a large depth</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.02ResizedBoxWithAxes"/>
+               <a href="Figure03.02ResizedBoxWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.02ResizedBoxWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.02ResizedBoxWithAxesIndex.html">Figure 03.02 Resized Box With Axes</a>
+            </td>
+            <td>Resized Box with a small width, a medium height, and a large depth. Coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.03DefaultCone"/>
+               <a href="Figure03.03DefaultConeIndex.html">
+                  <img src="_thumbnails/Figure03.03DefaultConeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.03DefaultConeIndex.html">Figure 03.0 3Default Cone</a>
+            </td>
+            <td>Default Cone.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.03DefaultConeWithAxes"/>
+               <a href="Figure03.03DefaultConeWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.03DefaultConeWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.03DefaultConeWithAxesIndex.html">Figure 03.0 3Default Cone With Axes</a>
+            </td>
+            <td>Default Cone with coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.04FlattenedCone"/>
+               <a href="Figure03.04FlattenedConeIndex.html">
+                  <img src="_thumbnails/Figure03.04FlattenedConeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.04FlattenedConeIndex.html">Figure 03.04 Flattened Cone</a>
+            </td>
+            <td>Flattened Cone: a cone with a large bottom radius and a short height</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.04FlattenedConeWithAxes"/>
+               <a href="Figure03.04FlattenedConeWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.04FlattenedConeWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.04FlattenedConeWithAxesIndex.html">Figure 03.04 Flattened Cone With Axes</a>
+            </td>
+            <td>Flattened Cone: a cone with a large bottom radius and a short height, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.05DefaultCylinder"/>
+               <a href="Figure03.05DefaultCylinderIndex.html">
+                  <img src="_thumbnails/Figure03.05DefaultCylinderThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.05DefaultCylinderIndex.html">Figure 03.05 Default Cylinder</a>
+            </td>
+            <td>Default Cylinder</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.05DefaultCylinderWithAxes"/>
+               <a href="Figure03.05DefaultCylinderWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.05DefaultCylinderWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.05DefaultCylinderWithAxesIndex.html">Figure 03.05 Default Cylinder With Axes</a>
+            </td>
+            <td>Default Cylinder, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.06ResizedCylinder"/>
+               <a href="Figure03.06ResizedCylinderIndex.html">
+                  <img src="_thumbnails/Figure03.06ResizedCylinderThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.06ResizedCylinderIndex.html">Figure 03.06 Resized Cylinder</a>
+            </td>
+            <td>Resized Cylinder: a cylinder with a large radius and a short height</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.06ResizedCylinderWithAxes"/>
+               <a href="Figure03.06ResizedCylinderWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.06ResizedCylinderWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.06ResizedCylinderWithAxesIndex.html">Figure 03.06 Resized Cylinder With Axes</a>
+            </td>
+            <td>Resized Cylinder: a cylinder with a large radius and a short height, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.07ResizedCylinderHollow"/>
+               <a href="Figure03.07ResizedCylinderHollowIndex.html">
+                  <img src="_thumbnails/Figure03.07ResizedCylinderHollowThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.07ResizedCylinderHollowIndex.html">Figure 03.07 Resized Cylinder Hollow</a>
+            </td>
+            <td>Resized Cylinder Hollow: a cylinder with a large radius, short height, no top and no bottom</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.07ResizedCylinderHollowWithAxes"/>
+               <a href="Figure03.07ResizedCylinderHollowWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.07ResizedCylinderHollowWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.07ResizedCylinderHollowWithAxesIndex.html">Figure 03.07 Resized Cylinder Hollow With Axes</a>
+            </td>
+            <td>Resized Cylinder Hollow: a cylinder with a large radius, short height, no top and no bottom, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.08DefaultSphere"/>
+               <a href="Figure03.08DefaultSphereIndex.html">
+                  <img src="_thumbnails/Figure03.08DefaultSphereThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.08DefaultSphereIndex.html">Figure 03.08 Default Sphere</a>
+            </td>
+            <td>Default Sphere</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.08DefaultSphereWithAxes"/>
+               <a href="Figure03.08DefaultSphereWithAxesIndex.html">
+                  <img src="_thumbnails/Figure03.08DefaultSphereWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.08DefaultSphereWithAxesIndex.html">Figure 03.08 Default Sphere With Axes</a>
+            </td>
+            <td>Default Sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.09_3dPlusSign"/>
+               <a href="Figure03.09_3dPlusSignIndex.html">
+                  <img src="_thumbnails/Figure03.09_3dPlusSignThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.09_3dPlusSignIndex.html">Figure 03.09  3D Plus Sign</a>
+            </td>
+            <td>3D Plus Sign is made out of three perpendicular Boxes - rotate and examine to see</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure03.10SpaceStation"/>
+               <a href="Figure03.10SpaceStationIndex.html">
+                  <img src="_thumbnails/Figure03.10SpaceStationThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure03.10SpaceStationIndex.html">Figure 03.10 Space Station</a>
+            </td>
+            <td>Space Station, or spark plug? You decide... Also see Figure10.05MultiColoredSpaceStation.x3d, Figure10.06PulsatingSpaceStation.x3d, Figure10.10SemiTransparentSpaceStation.x3d and Figure10.11AnimatingTransparencySpaceStation.x3d</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter03-Shapes/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter03-Shapes</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter03-Shapes/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter03-Shapes/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter03-Shapes</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02-Introduction/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04-Text/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

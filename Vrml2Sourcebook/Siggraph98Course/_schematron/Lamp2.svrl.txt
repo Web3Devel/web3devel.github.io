@@ -1,0 +1,4 @@
+<PlaneSensor DEF='MoveLamp'/> is missing description. Example: description='select and drag to move' [/X3D/Scene/Transform[2]/PlaneSensor, warning]
+<CylinderSensor DEF='MoveFirstArm'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform[2]/Transform/Group/CylinderSensor, warning]
+<CylinderSensor DEF='MoveSecondArm'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform[2]/Transform/Group/Transform/Transform/Group/CylinderSensor, warning]
+<SphereSensor DEF='MoveLampShade'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform[2]/Transform/Group/Transform/Transform/Group/Transform/Transform/Group/SphereSensor, warning]

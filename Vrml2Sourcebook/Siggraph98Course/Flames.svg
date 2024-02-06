@@ -1,0 +1,15 @@
+
+          
+ecmascript:
+    function set_fraction( f, tm ) {
+            if ( f &lt; 0.25 )
+                    texture_changed = flameTextures[0];
+            else if ( f &lt; 0.50 )
+                    texture_changed = flameTextures[1];
+            else if ( f &lt; 0.75 )
+                    texture_changed = flameTextures[2];
+            else
+                    texture_changed = flameTextures[3];
+    }
+
+        

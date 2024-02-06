@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 05 Positioning Shapes</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04Text/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter05PositioningShapes/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06RotatingShapes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 05 Positioning Shapes</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter05PositioningShapes/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        This chapter describes
+                        how to position shapes within an X-Y-Z world coordinate system by adding a parent Transform node.
+                        Rotations about each axis are counter-clockwise using the right-hand rule.
+                        Nested Transform nodes can translate, rotate and scale shapes relative to each other in 3D space.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch05.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0049.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 05.11 Nested Archways With Axes" title="Figure 05.11 Nested Archways With Axes" hspace="10" 
+                          src="_viewpoints/Figure05_11NestedArchwaysWithAxes.x3d._VP_View_Arch.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;8 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_03bCylinderTranslation"/>
+               <a href="Figure05_03bCylinderTranslationIndex.html">
+                  <img src="_thumbnails/Figure05_03bCylinderTranslationThumbnail.png"
+                        height="48"
+                        alt="Figure05_03bCylinderTranslation"
+                        title="Figure05_03bCylinderTranslation"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_03bCylinderTranslationIndex.html">Figure 05 03b Cylinder Translation</a>
+            </td>
+            <td>Translating +2 units along the X axis, 1 unit along Y axis, and building a cylinder.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_03bCylinderTranslationWithAxes"/>
+               <a href="Figure05_03bCylinderTranslationWithAxesIndex.html">
+                  <img src="_thumbnails/Figure05_03bCylinderTranslationWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure05_03bCylinderTranslationWithAxes"
+                        title="Figure05_03bCylinderTranslationWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_03bCylinderTranslationWithAxesIndex.html">Figure 05 03b Cylinder Translation With Axes</a>
+            </td>
+            <td>Translating +2 units along the X axis, 1 unit along Y axis, and building a cylinder, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_04bCylinderTranslation"/>
+               <a href="Figure05_04bCylinderTranslationIndex.html">
+                  <img src="_thumbnails/Figure05_04bCylinderTranslationThumbnail.png"
+                        height="48"
+                        alt="Figure05_04bCylinderTranslation"
+                        title="Figure05_04bCylinderTranslation"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_04bCylinderTranslationIndex.html">Figure 05 04b Cylinder Translation</a>
+            </td>
+            <td>Translating -2 units along the X axis, 1 unit along Y axis, and building a cylinder.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_04bCylinderTranslationWithAxes"/>
+               <a href="Figure05_04bCylinderTranslationWithAxesIndex.html">
+                  <img src="_thumbnails/Figure05_04bCylinderTranslationWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure05_04bCylinderTranslationWithAxes"
+                        title="Figure05_04bCylinderTranslationWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_04bCylinderTranslationWithAxesIndex.html">Figure 05 04b Cylinder Translation With Axes</a>
+            </td>
+            <td>Translating -2 units along the X axis, 1 unit along Y axis, and building a cylinder, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_10Archway"/>
+               <a href="Figure05_10ArchwayIndex.html">
+                  <img src="_thumbnails/Figure05_10ArchwayThumbnail.png"
+                        height="48"
+                        alt="Figure05_10Archway"
+                        title="Figure05_10Archway"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_10ArchwayIndex.html">Figure 05 10 Archway</a>
+            </td>
+            <td>Building an archway using multiple, translated coordinate systems.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_10ArchwayWithAxes"/>
+               <a href="Figure05_10ArchwayWithAxesIndex.html">
+                  <img src="_thumbnails/Figure05_10ArchwayWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure05_10ArchwayWithAxes"
+                        title="Figure05_10ArchwayWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_10ArchwayWithAxesIndex.html">Figure 05 10 Archway With Axes</a>
+            </td>
+            <td>Building an archway using multiple, translated coordinate systems, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_11NestedArchways"/>
+               <a href="Figure05_11NestedArchwaysIndex.html">
+                  <img src="_thumbnails/Figure05_11NestedArchwaysThumbnail.png"
+                        height="48"
+                        alt="Figure05_11NestedArchways"
+                        title="Figure05_11NestedArchways"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_11NestedArchwaysIndex.html">Figure 05 11 Nested Archways</a>
+            </td>
+            <td>Nesting coordinate systems.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure05_11NestedArchwaysWithAxes"/>
+               <a href="Figure05_11NestedArchwaysWithAxesIndex.html">
+                  <img src="_thumbnails/Figure05_11NestedArchwaysWithAxesThumbnail.png"
+                        height="48"
+                        alt="Figure05_11NestedArchwaysWithAxes"
+                        title="Figure05_11NestedArchwaysWithAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure05_11NestedArchwaysWithAxesIndex.html">Figure 05 11 Nested Archways With Axes</a>
+            </td>
+            <td>Nesting coordinate systems, coordinate axes superimposed to show X3D/VRML directions.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter05PositioningShapes/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter05PositioningShapes</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter05PositioningShapes/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter05PositioningShapes/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter05PositioningShapes</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04Text/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter05PositioningShapes/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06RotatingShapes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

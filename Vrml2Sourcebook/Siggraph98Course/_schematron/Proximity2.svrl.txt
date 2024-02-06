@@ -1,0 +1,3 @@
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='7.5 1.7 7.5' which has Y-value height of 1.7[/X3D/Scene/Viewpoint, warning]
+<Sound DEF=''/> location='0 0 0' has height of sound ellipse centered on ground plane, consider changing location y-value to 1.6 in order to match typical avatar height (in meters) [/X3D/Scene/Sound, warning]
+<AudioClip DEF='Bonk'/> is missing description which is important for accessibility and usability.  Example: description='AudioClip sound of ___ is playing...' [/X3D/Scene/Sound/AudioClip, warning]

@@ -1,0 +1,289 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_3ScriptSoundActivate.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure30_3ScriptSoundActivate.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 30.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig03.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '29 October 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A pair of filter scripts used to create a toggle on-off switch.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_3ScriptSoundActivate.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure30_3ScriptSoundActivate.x3d" .
+:meta dcterms:creator "Figure 30.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig03.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "29 October 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A pair of filter scripts used to create a toggle on-off switch." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_3ScriptSoundActivate.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :NavigationInfo_2_6, :Background_2_7, :Group_2_8, :Shape_2_9 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure30_3ScriptSoundActivate.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'toggle sound by clicking ball' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'move left spatialize right' ;
+  x3do:position ( -5 0 10 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'move right spatialize left' ;
+  x3do:position ( 5 0 10 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'outside maximum attenuation ellipsoid' ;
+  x3do:position ( 0 0 30 ) .
+:NavigationInfo_2_6 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:type '"NONE"' .
+:Background_2_7 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:groundAngle ( 1.309 1.570796 ) ;
+  x3do:groundColor ( 0.1 0.1 0 0.5 0.25 0.2 0.6 0.6 0.2 ) ;
+  x3do:skyAngle ( 1.309 1.571 ) ;
+  x3do:skyColor ( 1 0 0 1 0.4 0 1 1 0 ) .
+:Group_2_8 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Touch, :Shape_2_8_2, :Sound_2_8_3, :ToggleScript, :TimeFilter, :Transform_2_8_11 ;
+  x3do:hasROUTE :ROUTE_2_8_6, :ROUTE_2_8_7, :ROUTE_2_8_8, :ROUTE_2_8_9, :ROUTE_2_8_10 .
+:Touch a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:DEF 'Touch' ;
+  x3do:description 'touch to toggle audio' .
+:Shape_2_8_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:hasGeometry :Sphere_2_8_2_1 ;
+  x3do:hasAppearance :Appearance_2_8_2_2 .
+:Sphere_2_8_2_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_8_2 .
+:Appearance_2_8_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_2 ;
+  x3do:hasMaterial :Material_2_8_2_2_1 .
+:Material_2_8_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_2_2 ;
+  x3do:diffuseColor ( 1 0.3 0.3 ) .
+:Sound_2_8_3 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:hasSource :Audio ;
+  x3do:maxBack 15 ;
+  x3do:maxFront 15 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 .
+:Audio a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_8_3 ;
+  x3do:DEF 'Audio' ;
+  x3do:description 'willow1' ;
+  x3do:loop true ;
+  x3do:url '"../Chapter24Sound/willow1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/willow1.wav"' .
+:ToggleScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:hasField :field_2_8_4_1, :field_2_8_4_2, :field_2_8_4_3, :field_2_8_4_4 ;
+  x3do:DEF 'ToggleScript' ;
+  x3do:sourceCode """
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+// you can view the output of print statements in the VRML Console
+
+function toggle ( value, ts ) {
+  // only toggle on click (isActive true) not release (isActive false)
+  if ( value == false ) return;
+  if ( state == true )
+  {
+	state  = false;
+	stateTurnedFalse = true;
+	Browser.println ('ToggleScript.state = ' + state + ', stateTurnedFalse = ' + true);
+  }
+  else
+  {
+	state  = true;
+	stateTurnedTrue = true;
+	Browser.println ('ToggleScript.state = ' + state + ', stateTurnedTrue = ' + true);
+  }
+}
+""" .
+:field_2_8_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ToggleScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'toggle' ;
+  x3do:type 'SFBool' .
+:field_2_8_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ToggleScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'state' ;
+  x3do:type 'SFBool' ;
+  x3do:value true .
+:field_2_8_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ToggleScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'stateTurnedTrue' ;
+  x3do:type 'SFBool' .
+:field_2_8_4_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ToggleScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'stateTurnedFalse' ;
+  x3do:type 'SFBool' .
+:TimeFilter a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:hasField :field_2_8_5_1, :field_2_8_5_2, :field_2_8_5_3, :field_2_8_5_4 ;
+  x3do:DEF 'TimeFilter' ;
+  x3do:sourceCode """
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+
+function setStart ( value, timeStamp ) {
+	startEventTime = timeStamp;
+	Browser.println ('TimeFilter.setStart (' + value + '), startEventTime = ' + timeStamp);
+	Browser.println (); // newline
+}
+function setStop  ( value, timeStamp ) {
+	stopEventTime  = timeStamp;
+	Browser.println ('TimeFilter.setStop  (' + value + '),  stopEventTime = ' + timeStamp);
+	Browser.println (); // newline
+}
+""" .
+:field_2_8_5_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeFilter ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'setStart' ;
+  x3do:type 'SFBool' .
+:field_2_8_5_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeFilter ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'setStop' ;
+  x3do:type 'SFBool' .
+:field_2_8_5_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeFilter ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'startEventTime' ;
+  x3do:type 'SFTime' .
+:field_2_8_5_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeFilter ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'stopEventTime' ;
+  x3do:type 'SFTime' .
+:ROUTE_2_8_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'Touch' ;
+  x3do:toField 'toggle' ;
+  x3do:toNode 'ToggleScript' .
+:ROUTE_2_8_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:fromField 'stateTurnedTrue' ;
+  x3do:fromNode 'ToggleScript' ;
+  x3do:toField 'setStart' ;
+  x3do:toNode 'TimeFilter' .
+:ROUTE_2_8_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:fromField 'stateTurnedFalse' ;
+  x3do:fromNode 'ToggleScript' ;
+  x3do:toField 'setStop' ;
+  x3do:toNode 'TimeFilter' .
+:ROUTE_2_8_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:fromField 'startEventTime' ;
+  x3do:fromNode 'TimeFilter' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Audio' .
+:ROUTE_2_8_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:fromField 'stopEventTime' ;
+  x3do:fromNode 'TimeFilter' ;
+  x3do:toField 'set_stopTime' ;
+  x3do:toNode 'Audio' .
+:Transform_2_8_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_8 ;
+  x3do:hasChildren :Shape_2_8_11_1 ;
+  x3do:translation ( 0 2.5 0 ) .
+:Shape_2_8_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_11 ;
+  x3do:hasGeometry :Text_2_8_11_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_11_1_2 .
+:Text_2_8_11_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_11_1 ;
+  x3do:hasFontStyle :FontStyle_2_8_11_1_1_1 ;
+  x3do:string '"toggle sound" "by clicking ball"' .
+:FontStyle_2_8_11_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_11_1_1 ;
+  x3do:family '"SANS"' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.8 ;
+  x3do:cssStyle 'BOLD' .
+:Appearance_2_8_11_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_11_1 ;
+  x3do:hasMaterial :Material_2_8_11_1_2_1 .
+:Material_2_8_11_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_11_1_2 ;
+  x3do:diffuseColor ( 0.9 0.9 0.9 ) .
+:Shape_2_9 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :TransparentAppearance ;
+  x3do:hasGeometry :Sphere_2_9_2 .
+:TransparentAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9 ;
+  x3do:hasMaterial :Material_2_9_1_1 ;
+  x3do:DEF 'TransparentAppearance' .
+:Material_2_9_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :TransparentAppearance ;
+  x3do:diffuseColor ( 0.5 0 0 ) ;
+  x3do:transparency 0.7 .
+:Sphere_2_9_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_9 ;
+  x3do:radius 15 .

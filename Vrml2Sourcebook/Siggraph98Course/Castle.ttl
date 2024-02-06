@@ -1,0 +1,508 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Castle.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Castle.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A fairy-tale castle atop a green hill with a blue sky behind. There are no animations or fun things to click on... building those is up to you.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/castle.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0000.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Castle.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Castle.x3d" .
+:meta dcterms:description "A fairy-tale castle atop a green hill with a blue sky behind. There are no animations or fun things to click on... building those is up to you." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/castle.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0000.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Castle.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Transform_2_4, :Castle .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Fairy-tale Castle' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 0.35 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:speed 40.0 .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:translation ( 0.0 -1.6 0.0 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasAppearance :Appearance_2_4_1_1 ;
+  x3do:hasGeometry :Box_2_4_1_2 .
+:Appearance_2_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1 .
+:Material_2_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1 ;
+  x3do:diffuseColor ( 0.0 0.0 0.0 ) ;
+  x3do:emissiveColor ( 0.0 0.5 0.0 ) .
+:Box_2_4_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:size ( 2000.0 0.01 2000.0 ) .
+:Castle a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_5_1, :Transform_2_5_2, :Transform_2_5_3, :Transform_2_5_4, :Transform_2_5_5, :Transform_2_5_6, :Transform_2_5_7 ;
+  x3do:DEF 'Castle' ;
+  x3do:translation ( 0.0 -1.6 -200.0 ) .
+:Transform_2_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :Shape_2_5_1_1 ;
+  x3do:translation ( 0.0 20.0 0.0 ) .
+:Shape_2_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:hasAppearance :CastleColor ;
+  x3do:hasGeometry :Cylinder_2_5_1_1_2 .
+:CastleColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1 ;
+  x3do:hasMaterial :Material_2_5_1_1_1_1 ;
+  x3do:DEF 'CastleColor' .
+:Material_2_5_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :CastleColor ;
+  x3do:ambientIntensity 0.5 ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:Cylinder_2_5_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1_1 ;
+  x3do:bottom false ;
+  x3do:height 40.0 ;
+  x3do:radius 50.0 .
+:Transform_2_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :Transform_2_5_2_1, :Transform_2_5_2_2, :Transform_2_5_2_3, :Transform_2_5_2_4 ;
+  x3do:translation ( 0.0 0.0 52.0 ) .
+:Transform_2_5_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2 ;
+  x3do:hasChildren :Shape_2_5_2_1_1 ;
+  x3do:translation ( 0.0 10.0 0.0 ) .
+:Shape_2_5_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_2_1 ;
+  x3do:hasAppearance :CastleColor-USE-1 ;
+  x3do:hasGeometry :Box_2_5_2_1_1_2 .
+:CastleColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Box_2_5_2_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_2_1_1 ;
+  x3do:size ( 30.0 20.0 6.0 ) .
+:Transform_2_5_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2 ;
+  x3do:hasChildren :Shape_2_5_2_2_1 ;
+  x3do:translation ( 0.0 5.0 3.0 ) .
+:Shape_2_5_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_2_2 ;
+  x3do:hasAppearance :Appearance_2_5_2_2_1_1 ;
+  x3do:hasGeometry :Box_2_5_2_2_1_2 .
+:Appearance_2_5_2_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2_2_1 ;
+  x3do:hasMaterial :Material_2_5_2_2_1_1_1 .
+:Material_2_5_2_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2_2_1_1 ;
+  x3do:diffuseColor ( 0.4 0.1 0.0 ) .
+:Box_2_5_2_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_2_2_1 ;
+  x3do:size ( 10.0 10.0 0.5 ) .
+:Transform_2_5_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2 ;
+  x3do:hasChildren :EntryTower, :EntryRoof ;
+  x3do:translation ( -15.0 0.0 3.0 ) .
+:EntryTower a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2_3 ;
+  x3do:hasChildren :Shape_2_5_2_3_1_1 ;
+  x3do:DEF 'EntryTower' ;
+  x3do:translation ( 0.0 15.0 0.0 ) .
+:Shape_2_5_2_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :EntryTower ;
+  x3do:hasAppearance :CastleColor-USE-2 ;
+  x3do:hasGeometry :Cylinder_2_5_2_3_1_1_2 .
+:CastleColor-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2_3_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_2_3_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_2_3_1_1 ;
+  x3do:bottom false ;
+  x3do:height 30.0 ;
+  x3do:radius 5.0 ;
+  x3do:top false .
+:EntryRoof a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2_3 ;
+  x3do:hasChildren :Shape_2_5_2_3_2_1 ;
+  x3do:DEF 'EntryRoof' ;
+  x3do:translation ( 0.0 40.0 0.0 ) .
+:Shape_2_5_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :EntryRoof ;
+  x3do:hasAppearance :RoofColor ;
+  x3do:hasGeometry :Cone_2_5_2_3_2_1_2 .
+:RoofColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2_3_2_1 ;
+  x3do:hasMaterial :Material_2_5_2_3_2_1_1_1 ;
+  x3do:DEF 'RoofColor' .
+:Material_2_5_2_3_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :RoofColor ;
+  x3do:ambientIntensity 0.5 ;
+  x3do:diffuseColor ( 1.0 0.0 0.0 ) .
+:Cone_2_5_2_3_2_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_2_3_2_1 ;
+  x3do:bottomRadius 8.0 ;
+  x3do:height 20.0 .
+:Transform_2_5_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2 ;
+  x3do:hasChildren :EntryTower-USE-1, :EntryRoof-USE-1 ;
+  x3do:translation ( 15.0 0.0 3.0 ) .
+:EntryTower-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2_4 ;
+  owl:sameAs :EntryTower . # DEF matching this USE
+:EntryRoof-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_2_4 ;
+  owl:sameAs :EntryRoof . # DEF matching this USE
+:Transform_2_5_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :Transform_2_5_3_1, :Transform_2_5_3_2, :Transform_2_5_3_3 ;
+  x3do:translation ( -15.0 40.0 -5.0 ) .
+:Transform_2_5_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_3 ;
+  x3do:hasChildren :Shape_2_5_3_1_1 ;
+  x3do:translation ( 0.0 30.0 0.0 ) .
+:Shape_2_5_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_3_1 ;
+  x3do:hasAppearance :CastleColor-USE-3 ;
+  x3do:hasGeometry :Cylinder_2_5_3_1_1_2 .
+:CastleColor-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_3_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_3_1_1 ;
+  x3do:bottom false ;
+  x3do:height 60.0 ;
+  x3do:radius 25.0 .
+:Transform_2_5_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_3 ;
+  x3do:hasChildren :Shape_2_5_3_2_1 ;
+  x3do:translation ( 0.0 100.0 0.0 ) .
+:Shape_2_5_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_3_2 ;
+  x3do:hasAppearance :CastleColor-USE-4 ;
+  x3do:hasGeometry :Cylinder_2_5_3_2_1_2 .
+:CastleColor-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_2_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_3_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_3_2_1 ;
+  x3do:bottom false ;
+  x3do:height 80.0 ;
+  x3do:radius 15.0 ;
+  x3do:top false .
+:Transform_2_5_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_3 ;
+  x3do:hasChildren :MainRoofCone ;
+  x3do:translation ( 0.0 170.0 0.0 ) .
+:MainRoofCone a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_3_3 ;
+  x3do:hasAppearance :RoofColor-USE-1 ;
+  x3do:hasGeometry :Cone_2_5_3_3_1_2 ;
+  x3do:DEF 'MainRoofCone' .
+:RoofColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :MainRoofCone ;
+  owl:sameAs :RoofColor . # DEF matching this USE
+:Cone_2_5_3_3_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :MainRoofCone ;
+  x3do:bottomRadius 23.0 ;
+  x3do:height 60.0 .
+:Transform_2_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :Transform_2_5_4_1, :Transform_2_5_4_2, :Transform_2_5_4_3 ;
+  x3do:translation ( 20.0 40.0 15.0 ) .
+:Transform_2_5_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4 ;
+  x3do:hasChildren :Shape_2_5_4_1_1 ;
+  x3do:translation ( 0.0 50.0 0.0 ) .
+:Shape_2_5_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_4_1 ;
+  x3do:hasAppearance :CastleColor-USE-5 ;
+  x3do:hasGeometry :Cylinder_2_5_4_1_1_2 .
+:CastleColor-USE-5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_4_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_4_1_1 ;
+  x3do:bottom false ;
+  x3do:height 100.0 ;
+  x3do:radius 15.0 ;
+  x3do:top false .
+:Transform_2_5_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4 ;
+  x3do:hasChildren :MainRoofCone-USE-1 ;
+  x3do:translation ( 0.0 130.0 0.0 ) .
+:MainRoofCone-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_4_2 ;
+  owl:sameAs :MainRoofCone . # DEF matching this USE
+:Transform_2_5_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4 ;
+  x3do:hasChildren :SmallSubTower, :SmallSubBase, :SmallSubRoof ;
+  x3do:translation ( 0.0 30.0 15.0 ) .
+:SmallSubTower a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4_3 ;
+  x3do:hasChildren :Shape_2_5_4_3_1_1 ;
+  x3do:DEF 'SmallSubTower' ;
+  x3do:translation ( 0.0 25.0 0.0 ) .
+:Shape_2_5_4_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SmallSubTower ;
+  x3do:hasAppearance :CastleColor-USE-6 ;
+  x3do:hasGeometry :Cylinder_2_5_4_3_1_1_2 .
+:CastleColor-USE-6 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_3_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_4_3_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_4_3_1_1 ;
+  x3do:bottom false ;
+  x3do:height 30.0 ;
+  x3do:radius 5.0 ;
+  x3do:top false .
+:SmallSubBase a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4_3 ;
+  x3do:hasChildren :Shape_2_5_4_3_2_1 ;
+  x3do:DEF 'SmallSubBase' ;
+  x3do:rotation ( 1.0 0.0 0.0 3.14159 ) ;
+  x3do:translation ( 0.0 5.0 0.0 ) .
+:Shape_2_5_4_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SmallSubBase ;
+  x3do:hasAppearance :CastleColor-USE-7 ;
+  x3do:hasGeometry :Cone_2_5_4_3_2_1_2 .
+:CastleColor-USE-7 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_3_2_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cone_2_5_4_3_2_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_4_3_2_1 ;
+  x3do:bottom false ;
+  x3do:bottomRadius 5.0 ;
+  x3do:height 10.0 .
+:SmallSubRoof a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4_3 ;
+  x3do:hasChildren :Shape_2_5_4_3_3_1 ;
+  x3do:DEF 'SmallSubRoof' ;
+  x3do:translation ( 0.0 50.0 0.0 ) .
+:Shape_2_5_4_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SmallSubRoof ;
+  x3do:hasAppearance :RoofColor-USE-2 ;
+  x3do:hasGeometry :Cone_2_5_4_3_3_1_2 .
+:RoofColor-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_3_3_1 ;
+  owl:sameAs :RoofColor . # DEF matching this USE
+:Cone_2_5_4_3_3_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_4_3_3_1 ;
+  x3do:bottomRadius 8.0 ;
+  x3do:height 20.0 .
+:Transform_2_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :LargeSubTower, :LargeSubBase, :LargeSubRoof, :Transform_2_5_5_4 ;
+  x3do:translation ( 50.0 20.0 0.0 ) .
+:LargeSubTower a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasChildren :Shape_2_5_5_1_1 ;
+  x3do:DEF 'LargeSubTower' ;
+  x3do:translation ( 0.0 60.0 0.0 ) .
+:Shape_2_5_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LargeSubTower ;
+  x3do:hasAppearance :CastleColor-USE-8 ;
+  x3do:hasGeometry :Cylinder_2_5_5_1_1_2 .
+:CastleColor-USE-8 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_1_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cylinder_2_5_5_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_5_1_1 ;
+  x3do:bottom false ;
+  x3do:height 80.0 ;
+  x3do:radius 10.0 ;
+  x3do:top false .
+:LargeSubBase a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasChildren :Shape_2_5_5_2_1 ;
+  x3do:DEF 'LargeSubBase' ;
+  x3do:rotation ( 1.0 0.0 0.0 3.14159 ) ;
+  x3do:translation ( 0.0 10.0 0.0 ) .
+:Shape_2_5_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LargeSubBase ;
+  x3do:hasAppearance :CastleColor-USE-9 ;
+  x3do:hasGeometry :Cone_2_5_5_2_1_2 .
+:CastleColor-USE-9 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_2_1 ;
+  owl:sameAs :CastleColor . # DEF matching this USE
+:Cone_2_5_5_2_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_5_2_1 ;
+  x3do:bottom false ;
+  x3do:bottomRadius 10.0 ;
+  x3do:height 20.0 .
+:LargeSubRoof a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasChildren :Shape_2_5_5_3_1 ;
+  x3do:DEF 'LargeSubRoof' ;
+  x3do:translation ( 0.0 120.0 0.0 ) .
+:Shape_2_5_5_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LargeSubRoof ;
+  x3do:hasAppearance :RoofColor-USE-3 ;
+  x3do:hasGeometry :Cone_2_5_5_3_1_2 .
+:RoofColor-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_3_1 ;
+  owl:sameAs :RoofColor . # DEF matching this USE
+:Cone_2_5_5_3_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_5_3_1 ;
+  x3do:bottomRadius 15.0 ;
+  x3do:height 40.0 .
+:Transform_2_5_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasChildren :SmallSubTower-USE-1, :SmallSubBase-USE-1, :SmallSubRoof-USE-1 ;
+  x3do:translation ( 10.0 40.0 0.0 ) .
+:SmallSubTower-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5_4 ;
+  owl:sameAs :SmallSubTower . # DEF matching this USE
+:SmallSubBase-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5_4 ;
+  owl:sameAs :SmallSubBase . # DEF matching this USE
+:SmallSubRoof-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5_4 ;
+  owl:sameAs :SmallSubRoof . # DEF matching this USE
+:Transform_2_5_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :LargeSubTower-USE-1, :LargeSubBase-USE-1, :LargeSubRoof-USE-1, :Transform_2_5_6_4 ;
+  x3do:translation ( -35.36 20.0 35.36 ) .
+:LargeSubTower-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6 ;
+  owl:sameAs :LargeSubTower . # DEF matching this USE
+:LargeSubBase-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6 ;
+  owl:sameAs :LargeSubBase . # DEF matching this USE
+:LargeSubRoof-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6 ;
+  owl:sameAs :LargeSubRoof . # DEF matching this USE
+:Transform_2_5_6_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6 ;
+  x3do:hasChildren :SmallSubTower-USE-2, :SmallSubBase-USE-2, :SmallSubRoof-USE-2 ;
+  x3do:translation ( -7.07 40.0 7.07 ) .
+:SmallSubTower-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6_4 ;
+  owl:sameAs :SmallSubTower . # DEF matching this USE
+:SmallSubBase-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6_4 ;
+  owl:sameAs :SmallSubBase . # DEF matching this USE
+:SmallSubRoof-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_6_4 ;
+  owl:sameAs :SmallSubRoof . # DEF matching this USE
+:Transform_2_5_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Castle ;
+  x3do:hasChildren :LargeSubTower-USE-2, :LargeSubBase-USE-2, :LargeSubRoof-USE-2, :Transform_2_5_7_4 ;
+  x3do:translation ( 0.0 20.0 -50.0 ) .
+:LargeSubTower-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7 ;
+  owl:sameAs :LargeSubTower . # DEF matching this USE
+:LargeSubBase-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7 ;
+  owl:sameAs :LargeSubBase . # DEF matching this USE
+:LargeSubRoof-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7 ;
+  owl:sameAs :LargeSubRoof . # DEF matching this USE
+:Transform_2_5_7_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7 ;
+  x3do:hasChildren :SmallSubTower-USE-3, :SmallSubBase-USE-3, :SmallSubRoof-USE-3 ;
+  x3do:translation ( 0.0 40.0 -10.0 ) .
+:SmallSubTower-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7_4 ;
+  owl:sameAs :SmallSubTower . # DEF matching this USE
+:SmallSubBase-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7_4 ;
+  owl:sameAs :SmallSubBase . # DEF matching this USE
+:SmallSubRoof-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_7_4 ;
+  owl:sameAs :SmallSubRoof . # DEF matching this USE

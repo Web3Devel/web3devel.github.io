@@ -1,0 +1,150 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/Figure15_17WigglingSnakeWithAxes.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure15_17WigglingSnakeWithAxes.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 15.17, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch15/15fig17.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A wiggling snake whose spine is animated using a CoordinateInterpolator node.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/Figure15_17WigglingSnakeWithAxes.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure15_17WigglingSnakeWithAxes.x3d" .
+:meta dcterms:creator "Figure 15.17, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch15/15fig17.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "20 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A wiggling snake whose spine is animated using a CoordinateInterpolator node." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter15Extrusion/Figure15_17WigglingSnakeWithAxes.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Shape_2_4, :Transform_2_5, :Transform_2_6, :CLOCK, :SNAKE_WIGGLE ;
+  x3do:hasROUTE :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure15_17WigglingSnakeWithAxes.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Wiggling snake, seen from behind, using Extrusion and OrientationInterpolator' ;
+  x3do:orientation ( -0.37796 0.91249 0.15656 0.85225 ) ;
+  x3do:position ( 10 5 10 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Snake head' ;
+  x3do:orientation ( 0.18581 0.96486 0.18581 -1.606566 ) ;
+  x3do:position ( -10 4 0 ) .
+:Shape_2_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_4_1 ;
+  x3do:hasGeometry :Box_2_4_2 .
+:Appearance_2_4_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasMaterial :Material_2_4_1_1 .
+:Material_2_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1 ;
+  x3do:diffuseColor ( 0.6 0.6 0 ) .
+:Box_2_4_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:size ( 20 0.01 20 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:translation ( 0 0.3 0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasAppearance :Appearance_2_5_1_1 ;
+  x3do:hasGeometry :SNAKE .
+:Appearance_2_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :Material_2_5_1_1_1 .
+:Material_2_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1 ;
+  x3do:diffuseColor ( 0 1.0 0.2 ) .
+:SNAKE a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:DEF 'SNAKE' ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( 1.00 0.00 0.92 -0.38 0.71 -0.71 0.38 -0.92 0.00 -1.00 -0.38 -0.92 -0.71 -0.71 -0.92 -0.38 -1.00 -0.0 -0.92 0.38 -0.71 0.71 -0.38 0.92 0.00 1.00 0.38 0.92 0.71 0.71 0.92 0.38 1.00 0.00 ) ;
+  x3do:scale ( 0.050 0.020 0.200 0.100 0.400 0.150 0.250 0.250 0.270 0.270 0.300 0.300 0.300 0.300 0.300 0.300 0.300 0.300 0.300 0.300 0.290 0.290 0.290 0.290 0.290 0.290 0.280 0.280 0.280 0.280 0.250 0.250 0.200 0.200 0.100 0.100 0.050 0.050 ) ;
+  x3do:spine ( -4.100 0.0 0.000 -4.0 0.0 0.000 -3.529 0.0 0.674 -3.059 0.0 0.996 -2.588 0.0 0.798 -2.118 0.0 0.184 -1.647 0.0 -0.526 -1.176 0.0 -0.962 -0.706 0.0 -0.895 -0.235 0.0 -0.361 0.235 0.0 0.361 0.706 0.0 0.895 1.176 0.0 0.962 1.647 0.0 0.526 2.118 0.0 -0.184 2.588 0.0 -0.798 3.059 0.0 -0.996 3.529 0.0 -0.674 4.0 0.0 0.0 ) .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :CoordinateAxes ;
+  x3do:scale ( 5 5 5 ) .
+:CoordinateAxes a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:DEF 'CoordinateAxes' ;
+  x3do:url '"../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d" "../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl"' .
+:CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'CLOCK' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:SNAKE_WIGGLE a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SNAKE_WIGGLE' ;
+  x3do:key ( 0.0 0.25 0.50 0.75 1.0 ) ;
+  x3do:keyValue ( -4.100 0 0.000 -4.0 0 0.000 -3.529 0 0.674 -3.059 0 0.996 -2.588 0 0.798 -2.118 0 0.184 -1.647 0 -0.526 -1.176 0 -0.962 -0.706 0 -0.895 -0.235 0 -0.361 0.235 0 0.361 0.706 0 0.895 1.176 0 0.962 1.647 0 0.526 2.118 0 -0.184 2.588 0 -0.798 3.059 0 -0.996 3.529 0 -0.674 4.0 0 0.000 -4.100 0 -1.000 -4.0 0 -1.000 -3.529 0 -0.739 -3.059 0 -0.092 -2.588 0 0.603 -2.118 0 0.983 -1.647 0 0.850 -1.176 0 0.274 -0.706 0 -0.446 -0.235 0 -0.932 0.235 0 -0.932 0.706 0 -0.446 1.176 0 0.274 1.647 0 0.850 2.118 0 0.983 2.588 0 0.603 3.059 0 -0.092 3.529 0 -0.739 4.0 0 -1.000 -4.100 0 0.000 -4.0 0 0.000 -3.529 0 -0.674 -3.059 0 -0.996 -2.588 0 -0.798 -2.118 0 -0.184 -1.647 0 0.526 -1.176 0 0.962 -0.706 0 0.895 -0.235 0 0.361 0.235 0 -0.361 0.706 0 -0.895 1.176 0 -0.962 1.647 0 -0.526 2.118 0 0.184 2.588 0 0.798 3.059 0 0.996 3.529 0 0.674 4.0 0 0.000 -4.100 0 1.000 -4.0 0 1.000 -3.529 0 0.739 -3.059 0 0.092 -2.588 0 -0.603 -2.118 0 -0.983 -1.647 0 -0.850 -1.176 0 -0.274 -0.706 0 0.446 -0.235 0 0.932 0.235 0 0.932 0.706 0 0.446 1.176 0 -0.274 1.647 0 -0.850 2.118 0 -0.983 2.588 0 -0.603 3.059 0 0.092 3.529 0 0.739 4.0 0 1.000 -4.100 0 0.000 -4.0 0 0.000 -3.529 0 0.674 -3.059 0 0.996 -2.588 0 0.798 -2.118 0 0.184 -1.647 0 -0.526 -1.176 0 -0.962 -0.706 0 -0.895 -0.235 0 -0.361 0.235 0 0.361 0.706 0 0.895 1.176 0 0.962 1.647 0 0.526 2.118 0 -0.184 2.588 0 -0.798 3.059 0 -0.996 3.529 0 -0.674 4.0 0 0.0 ) .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SNAKE_WIGGLE' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SNAKE_WIGGLE' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'SNAKE' .

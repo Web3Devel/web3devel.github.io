@@ -1,0 +1,342 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_2ScriptBackgroundSelect.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure30_2ScriptBackgroundSelect.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 30.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig02.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Click on a geometric Shape to change the scene Background. A Script node controls the state changes.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_2ScriptBackgroundSelect.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure30_2ScriptBackgroundSelect.x3d" .
+:meta dcterms:creator "Figure 30.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig02.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "2 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "Click on a geometric Shape to change the scene Background. A Script node controls the state changes." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_2ScriptBackgroundSelect.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Default, :BackgroundCyan-ish, :BackgroundReddish, :BackgroundBluish, :Group_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure30_2ScriptBackgroundSelect.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Background select' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 2 10 ) .
+:Default a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Default' .
+:BackgroundCyan-ish a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BackgroundCyan-ish' ;
+  x3do:groundAngle ( 1.309 1.570796 ) ;
+  x3do:groundColor ( 0.1 0.1 0 0.4 0.25 0.2 0.6 0.6 0.6 ) ;
+  x3do:skyAngle ( 1.309 1.571 ) ;
+  x3do:skyColor ( 0 0.2 0.7 0.0 0.5 1 1 1 1 ) .
+:BackgroundReddish a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BackgroundReddish' ;
+  x3do:groundAngle ( 1.309 1.570796 ) ;
+  x3do:groundColor ( 0.1 0.1 0 0.5 0.25 0.2 0.6 0.6 0.2 ) ;
+  x3do:skyAngle ( 1.309 1.571 ) ;
+  x3do:skyColor ( 1 0 0 1 0.4 0 1 1 0 ) .
+:BackgroundBluish a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BackgroundBluish' ;
+  x3do:groundAngle ( 1.309 1.570796 ) ;
+  x3do:groundColor ( 0 0 0.1 0 0.1 0.3 0.3 0.3 0.6 ) ;
+  x3do:skyAngle ( 1.309 1.571 ) ;
+  x3do:skyColor ( 1 0 0.8 0.5 0 0.8 0 0 0.8 ) .
+:Group_2_7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_7_1, :Filter1, :Group_2_7_5, :Filter2, :Transform_2_7_9, :Filter3, :Transform_2_7_13 ;
+  x3do:hasROUTE :ROUTE_2_7_3, :ROUTE_2_7_4, :ROUTE_2_7_7, :ROUTE_2_7_8, :ROUTE_2_7_11, :ROUTE_2_7_12 .
+:Transform_2_7_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_1_1, :SensorButton1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_7_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_1 ;
+  x3do:hasGeometry :Box_2_7_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_7_1_1_2 .
+:Box_2_7_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_1_1 .
+:Appearance_2_7_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_2_1 .
+:Material_2_7_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_1_2 ;
+  x3do:diffuseColor ( 0 0.5 0.8 ) .
+:SensorButton1 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_7_1 ;
+  x3do:DEF 'SensorButton1' ;
+  x3do:description 'Cyan background' .
+:Filter1 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasField :field_2_7_2_1, :field_2_7_2_2, :field_2_7_2_3 ;
+  x3do:DEF 'Filter1' ;
+  x3do:sourceCode """
+ecmascript:
+
+function initialize () {
+  Browser.println (' '); // skip line
+  Browser.println ('Click shapes to select a background...');
+  Browser.println (' '); // skip line
+}
+
+// setting the value of an eventOut variable also sends it as an event
+
+function set_boolean ( value, eventTime ) {
+  // only trigger on true values so that Background stays bound
+  if ( value == true ) {  
+	activated = value;
+	Browser.println ('Cyan background ' + count);
+  }
+  else count++;  // received isActive value = false
+}
+""" .
+:field_2_7_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'filter input value' ;
+  x3do:name 'set_boolean' ;
+  x3do:type 'SFBool' .
+:field_2_7_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter1 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'activated provides a persistent binding value otherwise isActive events will toggle Background binding on/off.' ;
+  x3do:name 'activated' ;
+  x3do:type 'SFBool' .
+:field_2_7_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'count is only used locally so it is declared as an interface for persistence' ;
+  x3do:name 'count' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 1 .
+:ROUTE_2_7_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'SensorButton1' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter1' .
+:ROUTE_2_7_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'activated' ;
+  x3do:fromNode 'Filter1' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'BackgroundCyan-ish' .
+:Group_2_7_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_5_1, :SensorButton2 .
+:Shape_2_7_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_7_5 ;
+  x3do:hasGeometry :Sphere_2_7_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_7_5_1_2 .
+:Sphere_2_7_5_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_7_5_1 .
+:Appearance_2_7_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_5_1 ;
+  x3do:hasMaterial :Material_2_7_5_1_2_1 .
+:Material_2_7_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_5_1_2 ;
+  x3do:diffuseColor ( 1 0.3 0.3 ) .
+:SensorButton2 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_7_5 ;
+  x3do:DEF 'SensorButton2' ;
+  x3do:description 'Red background' .
+:Filter2 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasField :field_2_7_6_1, :field_2_7_6_2, :field_2_7_6_3 ;
+  x3do:DEF 'Filter2' ;
+  x3do:sourceCode """
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+
+function set_boolean ( value, eventTime ) {
+  // only trigger on true values so that Background stays bound
+  if ( value == true ) {
+	activated = value;
+	Browser.println ('Red background ' + count);
+  }
+  else count++;  // received isActive value = false
+}
+""" .
+:field_2_7_6_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter2 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'filter input value' ;
+  x3do:name 'set_boolean' ;
+  x3do:type 'SFBool' .
+:field_2_7_6_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter2 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'activated provides a persistent binding value otherwise isActive events will toggle Background binding on/off.' ;
+  x3do:name 'activated' ;
+  x3do:type 'SFBool' .
+:field_2_7_6_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter2 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'count is only used locally so it is declared as an interface for persistence' ;
+  x3do:name 'count' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 1 .
+:ROUTE_2_7_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'SensorButton2' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter2' .
+:ROUTE_2_7_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'activated' ;
+  x3do:fromNode 'Filter2' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'BackgroundReddish' .
+:Transform_2_7_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_9_1, :SensorButton3 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_7_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_9 ;
+  x3do:hasGeometry :Cone_2_7_9_1_1 ;
+  x3do:hasAppearance :Appearance_2_7_9_1_2 .
+:Cone_2_7_9_1_1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_7_9_1 .
+:Appearance_2_7_9_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_9_1 ;
+  x3do:hasMaterial :Material_2_7_9_1_2_1 .
+:Material_2_7_9_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_9_1_2 ;
+  x3do:diffuseColor ( 0.2 0.2 0.8 ) .
+:SensorButton3 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_7_9 ;
+  x3do:DEF 'SensorButton3' ;
+  x3do:description 'Blue background' .
+:Filter3 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasField :field_2_7_10_1, :field_2_7_10_2, :field_2_7_10_3 ;
+  x3do:DEF 'Filter3' ;
+  x3do:sourceCode """
+ecmascript:
+
+// setting the value of an eventOut variable also sends it as an event
+
+function set_boolean ( value, eventTime ) {
+  // only trigger on true values so that Background stays bound
+  if ( value == true ) {
+	activated = value;
+	Browser.println ('Blue background ' + count);
+  }
+  else count++;  // received isActive value = false
+}
+""" .
+:field_2_7_10_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter3 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'filter input value' ;
+  x3do:name 'set_boolean' ;
+  x3do:type 'SFBool' .
+:field_2_7_10_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter3 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'activated provides a persistent binding value otherwise isActive events will toggle Background binding on/off.' ;
+  x3do:name 'activated' ;
+  x3do:type 'SFBool' .
+:field_2_7_10_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Filter3 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'count is only used locally so it is declared as an interface for persistence' ;
+  x3do:name 'count' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 1 .
+:ROUTE_2_7_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'SensorButton3' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter3' .
+:ROUTE_2_7_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'activated' ;
+  x3do:fromNode 'Filter3' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'BackgroundBluish' .
+:Transform_2_7_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_13_1 ;
+  x3do:translation ( 0 -3 0 ) .
+:Shape_2_7_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_13 ;
+  x3do:hasGeometry :Text_2_7_13_1_1 ;
+  x3do:hasAppearance :Appearance_2_7_13_1_2 .
+:Text_2_7_13_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_13_1 ;
+  x3do:hasFontStyle :FontStyle_2_7_13_1_1_1 ;
+  x3do:string '"Click on a Shape to change a Background," "Open player console to see trace statements."' .
+:FontStyle_2_7_13_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_7_13_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.6 .
+:Appearance_2_7_13_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_13_1 ;
+  x3do:hasMaterial :Material_2_7_13_1_2_1 .
+:Material_2_7_13_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_13_1_2 ;
+  x3do:diffuseColor ( 0.7 0.7 0.7 ) .

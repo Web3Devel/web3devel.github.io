@@ -1,0 +1,230 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Sub.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Sub.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Geometry used in Sound test scene.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau, John L. Moreland, Michael M. Heck' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/sub.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SubWorld.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0350.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Sub.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Sub.x3d" .
+:meta dcterms:description "Geometry used in Sound test scene." .
+:meta dcterms:creator "David R. Nadeau, John L. Moreland, Michael M. Heck" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/sub.wrl" .
+:meta dcterms:reference "SubWorld.x3d" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0350.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Sub.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :NavigationInfo_2_2, :Group_2_3, :Transform_2_4, :Transform_2_5, :Time, :Nav ;
+  x3do:hasROUTE :ROUTE_2_7, :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Sub.x3d' .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_3_1, :Transform_2_3_2, :Periscope .
+:Transform_2_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_1_1 ;
+  x3do:scale ( 0.2 0.2 1.0 ) .
+:Shape_2_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasAppearance :Yellow ;
+  x3do:hasGeometry :Sphere_2_3_1_1_2 .
+:Yellow a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1_1 ;
+  x3do:DEF 'Yellow' .
+:Material_2_3_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Yellow ;
+  x3do:diffuseColor ( 1.0 1.0 0.0 ) .
+:Sphere_2_3_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:radius 5.0 .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_2_1 ;
+  x3do:scale ( 0.3 1.0 1.0 ) ;
+  x3do:translation ( 0.0 1.3 0.0 ) .
+:Shape_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasAppearance :Yellow-USE-1 ;
+  x3do:hasGeometry :Cylinder_2_3_2_1_2 .
+:Yellow-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  owl:sameAs :Yellow . # DEF matching this USE
+:Cylinder_2_3_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:height 1.0 .
+:Periscope a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_3_1 ;
+  x3do:DEF 'Periscope' ;
+  x3do:translation ( 0.0 1.7 0.0 ) .
+:Shape_2_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Periscope ;
+  x3do:hasAppearance :Yellow-USE-2 ;
+  x3do:hasGeometry :Extrusion_2_3_3_1_2 .
+:Yellow-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  owl:sameAs :Yellow . # DEF matching this USE
+:Extrusion_2_3_3_1_2 a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:crossSection ( 0.1 -0.1 -0.1 -0.1 -0.1 0.1 0.1 0.1 0.1 -0.1 ) ;
+  x3do:spine ( 0.0 0.0 0.0 0.0 0.6 0.0 0.0 0.6 0.5 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Sound_2_4_1 ;
+  x3do:scale ( 1.0 0.5 1.0 ) .
+:Sound_2_4_1 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasSource :Ping ;
+  x3do:maxBack 30.0 ;
+  x3do:maxFront 30.0 ;
+  x3do:minBack 15.0 ;
+  x3do:minFront 15.0 .
+:Ping a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_4_1 ;
+  x3do:DEF 'Ping' ;
+  x3do:pitch 0.5 ;
+  x3do:url '"ping.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/ping.wav"' .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Sound_2_5_1 ;
+  x3do:scale ( 1.0 0.5 1.0 ) .
+:Sound_2_5_1 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasSource :AudioClip_2_5_1_1 ;
+  x3do:maxBack 30.0 ;
+  x3do:maxFront 30.0 ;
+  x3do:minBack 15.0 ;
+  x3do:minFront 15.0 .
+:AudioClip_2_5_1_1 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_5_1 ;
+  x3do:loop true ;
+  x3do:startTime '1.0' ;
+  x3do:url '"prop.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/prop.wav"' .
+:Time a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Time' ;
+  x3do:cycleInterval '4.0' ;
+  x3do:loop true .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'cycleTime' ;
+  x3do:fromNode 'Time' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Ping' .
+:Nav a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Nav' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 3.14159 0.0 1.0 0.0 6.283 ) .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Time' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Nav' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Nav' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Periscope' .

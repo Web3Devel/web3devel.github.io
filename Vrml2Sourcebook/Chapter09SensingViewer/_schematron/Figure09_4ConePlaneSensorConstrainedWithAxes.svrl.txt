@@ -1,0 +1,3 @@
+<X3D profile='Immersive'> is defined, but nodes in scene have actual profile='Interactive' [/X3D, info]
+<X3D profile='Immersive'> is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination [/X3D, info]
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='8 1.5 8' which has Y-value height of 1.5[/X3D/Scene/Viewpoint[1], warning]

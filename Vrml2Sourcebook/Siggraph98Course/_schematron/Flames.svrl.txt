@@ -1,0 +1,1 @@
+empty <Appearance DEF='FlameAppearance'/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/ProtoDeclare/ProtoBody/Shape/Appearance, warning]

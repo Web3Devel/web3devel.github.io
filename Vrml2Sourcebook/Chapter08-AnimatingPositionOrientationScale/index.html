@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 08 - Animating Position Orientation Scale</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09-SensingViewer/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 08 - Animating Position Orientation Scale</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 08.4 Orientation Interpolator With Axes" title="Figure 08.4 Orientation Interpolator With Axes" hspace="10" 
+                          src="Figure08.4OrientationInterpolatorWithAxes.png" width="112" height="112" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                        The TimeSensor node is similar to a stop watch: you control the start and stop time, it generates time events while running.
+                        It can loop forever, or run through only one cycle and stop. 
+                        To animate a scene, route time events into other nodes.
+                        PositionInterpolator can convert time events into 3D position or scale values.
+                        OrientationInterpolator can animate rotation values.
+                        ColorInterpolator can animate color values, and ScalarInterpolator can animate transparency values.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch08.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0133.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;6 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.3PositionInterpolator"/>
+               <a href="Figure08.3PositionInterpolatorIndex.html">
+                  <img src="_thumbnails/Figure08.3PositionInterpolatorThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.3PositionInterpolatorIndex.html">Figure 08.3 Position Interpolator</a>
+            </td>
+            <td>Simple PositionInterpolator example. An animation that moves a coordinate system and the cube built within it along a bouncing path.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.3PositionInterpolatorWithAxes"/>
+               <a href="Figure08.3PositionInterpolatorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure08.3PositionInterpolatorWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.3PositionInterpolatorWithAxesIndex.html">Figure 08.3 Position Interpolator With Axes</a>
+            </td>
+            <td>Simple PositionInterpolator example. An animation that moves a coordinate system and the cube built within it along a bouncing path, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.4OrientationInterpolator"/>
+               <a href="Figure08.4OrientationInterpolatorIndex.html">
+                  <img src="_thumbnails/Figure08.4OrientationInterpolatorThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.4OrientationInterpolatorIndex.html">Figure 08.4 Orientation Interpolator</a>
+            </td>
+            <td>Animation that rotates a coordinate system and the column built within it.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.4OrientationInterpolatorWithAxes"/>
+               <a href="Figure08.4OrientationInterpolatorWithAxesIndex.html">
+                  <img src="_thumbnails/Figure08.4OrientationInterpolatorWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.4OrientationInterpolatorWithAxesIndex.html">Figure 08.4 Orientation Interpolator With Axes</a>
+            </td>
+            <td>Animation that rotates a coordinate system and the column built within it, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.5AnimatingScale"/>
+               <a href="Figure08.5AnimatingScaleIndex.html">
+                  <img src="_thumbnails/Figure08.5AnimatingScaleThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.5AnimatingScaleIndex.html">Figure 08.5 Animating Scale</a>
+            </td>
+            <td>Animation that scales a coordinate system and the ball built within it.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure08.5AnimatingScaleWithAxes"/>
+               <a href="Figure08.5AnimatingScaleWithAxesIndex.html">
+                  <img src="_thumbnails/Figure08.5AnimatingScaleWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure08.5AnimatingScaleWithAxesIndex.html">Figure 08.5 Animating Scale With Axes</a>
+            </td>
+            <td>Animation that scales a coordinate system and the ball built within it, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter08-AnimatingPositionOrientationScale</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07-ScalingShapes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09-SensingViewer/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

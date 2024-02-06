@@ -1,0 +1,1 @@
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Collision, warning]

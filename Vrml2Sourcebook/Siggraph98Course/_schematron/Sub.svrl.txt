@@ -1,0 +1,2 @@
+<AudioClip DEF='Ping'/> is missing description which is important for accessibility and usability.  Example: description='AudioClip sound of ___ is playing...' [/X3D/Scene/Transform[1]/Sound/AudioClip, warning]
+<AudioClip DEF=''/> is missing description which is important for accessibility and usability.  Example: description='AudioClip sound of ___ is playing...' [/X3D/Scene/Transform[2]/Sound/AudioClip, warning]

@@ -1,0 +1,139 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrrain04.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Terrrain04.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Terrain snapshot providing an animation keyframe for AnimatedGrid.x3d' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau, John L. Moreland, Michael M. Heck' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'AnimatedGrid.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/ter04.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0495.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrrain04.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Terrrain04.x3d" .
+:meta dcterms:description "Terrain snapshot providing an animation keyframe for AnimatedGrid.x3d" .
+:meta dcterms:creator "David R. Nadeau, John L. Moreland, Michael M. Heck" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "AnimatedGrid.x3d" .
+:meta dcterms:reference "originals/ter04.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0495.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrrain04.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Transform_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Terrrain04.x3d' .
+:Transform_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_2_1 ;
+  x3do:translation ( -7.5 0.0 -7.5 ) .
+:Shape_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasAppearance :Appearance_2_2_1_1 ;
+  x3do:hasGeometry :ElevationGrid_2_2_1_2 .
+:Appearance_2_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasMaterial :Material_2_2_1_1_1 .
+:Material_2_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1 .
+:ElevationGrid_2_2_1_2 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasColor :Color_2_2_1_2_1 ;
+  x3do:creaseAngle 1.571 ;
+  x3do:height ( 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 -1.38 -1.85 -1.09 0.39 1.61 1.77 0.76 -0.76 -1.77 -1.61 -0.39 1.09 1.85 1.38 0.0 -1.85 -2.47 -1.46 0.52 2.15 2.37 1.01 -1.01 -2.37 -2.15 -0.52 1.46 2.47 1.85 0.0 -1.09 -1.46 -0.86 0.31 1.27 1.4 0.6 -0.6 -1.4 -1.27 -0.31 0.86 1.46 1.09 0.0 0.39 0.52 0.31 -0.11 -0.45 -0.49 -0.21 0.21 0.49 0.45 0.11 -0.31 -0.52 -0.39 0.0 1.61 2.15 1.27 -0.45 -1.88 -2.06 -0.88 0.88 2.06 1.88 0.45 -1.27 -2.15 -1.61 0.0 1.77 2.37 1.4 -0.49 -2.06 -2.26 -0.97 0.97 2.26 2.06 0.49 -1.4 -2.37 -1.77 0.0 0.76 1.01 0.6 -0.21 -0.88 -0.97 -0.41 0.41 0.97 0.88 0.21 -0.6 -1.01 -0.76 0.0 -0.76 -1.01 -0.6 0.21 0.88 0.97 0.41 -0.41 -0.97 -0.88 -0.21 0.6 1.01 0.76 0.0 -1.77 -2.37 -1.4 0.49 2.06 2.26 0.97 -0.97 -2.26 -2.06 -0.49 1.4 2.37 1.77 0.0 -1.61 -2.15 -1.27 0.45 1.88 2.06 0.88 -0.88 -2.06 -1.88 -0.45 1.27 2.15 1.61 0.0 -0.39 -0.52 -0.31 0.11 0.45 0.49 0.21 -0.21 -0.49 -0.45 -0.11 0.31 0.52 0.39 0.0 1.09 1.46 0.86 -0.31 -1.27 -1.4 -0.6 0.6 1.4 1.27 0.31 -0.86 -1.46 -1.09 0.0 1.85 2.47 1.46 -0.52 -2.15 -2.37 -1.01 1.01 2.37 2.15 0.52 -1.46 -2.47 -1.85 0.0 1.38 1.85 1.09 -0.39 -1.61 -1.77 -0.76 0.76 1.77 1.61 0.39 -1.09 -1.85 -1.38 ) ;
+  x3do:solid false ;
+  x3do:xDimension 15 ;
+  x3do:zDimension 15 .
+:Color_2_2_1_2_1 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :ElevationGrid_2_2_1_2 ;
+  x3do:color ( 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.55 0.0 0.45 0.74 0.0 0.26 0.44 0.0 0.56 0.15 0.0 0.85 0.64 0.0 0.36 0.71 0.0 0.29 0.3 0.0 0.7 0.3 0.0 0.7 0.71 0.0 0.29 0.64 0.0 0.36 0.15 0.0 0.85 0.44 0.0 0.56 0.74 0.0 0.26 0.55 0.0 0.45 0.0 0.0 1.0 0.74 0.0 0.26 0.99 0.0 0.01 0.58 0.0 0.42 0.21 0.0 0.79 0.86 0.0 0.14 0.95 0.0 0.05 0.4 0.0 0.6 0.4 0.0 0.6 0.95 0.0 0.05 0.86 0.0 0.14 0.21 0.0 0.79 0.58 0.0 0.42 0.99 0.0 0.01 0.74 0.0 0.26 0.0 0.0 1.0 0.44 0.0 0.56 0.58 0.0 0.42 0.35 0.0 0.65 0.12 0.0 0.88 0.51 0.0 0.49 0.56 0.0 0.44 0.24 0.0 0.76 0.24 0.0 0.76 0.56 0.0 0.44 0.51 0.0 0.49 0.12 0.0 0.88 0.35 0.0 0.65 0.58 0.0 0.42 0.44 0.0 0.56 0.0 0.0 1.0 0.15 0.0 0.85 0.21 0.0 0.79 0.12 0.0 0.88 0.04 0.0 0.96 0.18 0.0 0.82 0.2 0.0 0.8 0.08 0.0 0.92 0.08 0.0 0.92 0.2 0.0 0.8 0.18 0.0 0.82 0.04 0.0 0.96 0.12 0.0 0.88 0.21 0.0 0.79 0.15 0.0 0.85 0.0 0.0 1.0 0.64 0.0 0.36 0.86 0.0 0.14 0.51 0.0 0.49 0.18 0.0 0.82 0.75 0.0 0.25 0.82 0.0 0.18 0.35 0.0 0.65 0.35 0.0 0.65 0.82 0.0 0.18 0.75 0.0 0.25 0.18 0.0 0.82 0.51 0.0 0.49 0.86 0.0 0.14 0.64 0.0 0.36 0.0 0.0 1.0 0.71 0.0 0.29 0.95 0.0 0.05 0.56 0.0 0.44 0.2 0.0 0.8 0.82 0.0 0.18 0.9 0.0 0.1 0.39 0.0 0.61 0.39 0.0 0.61 0.9 0.0 0.1 0.82 0.0 0.18 0.2 0.0 0.8 0.56 0.0 0.44 0.95 0.0 0.05 0.71 0.0 0.29 0.0 0.0 1.0 0.3 0.0 0.7 0.4 0.0 0.6 0.24 0.0 0.76 0.08 0.0 0.92 0.35 0.0 0.65 0.39 0.0 0.61 0.17 0.0 0.83 0.17 0.0 0.83 0.39 0.0 0.61 0.35 0.0 0.65 0.08 0.0 0.92 0.24 0.0 0.76 0.4 0.0 0.6 0.3 0.0 0.7 0.0 0.0 1.0 0.3 0.0 0.7 0.4 0.0 0.6 0.24 0.0 0.76 0.08 0.0 0.92 0.35 0.0 0.65 0.39 0.0 0.61 0.17 0.0 0.83 0.17 0.0 0.83 0.39 0.0 0.61 0.35 0.0 0.65 0.08 0.0 0.92 0.24 0.0 0.76 0.4 0.0 0.6 0.3 0.0 0.7 0.0 0.0 1.0 0.71 0.0 0.29 0.95 0.0 0.05 0.56 0.0 0.44 0.2 0.0 0.8 0.82 0.0 0.18 0.9 0.0 0.1 0.39 0.0 0.61 0.39 0.0 0.61 0.9 0.0 0.1 0.82 0.0 0.18 0.2 0.0 0.8 0.56 0.0 0.44 0.95 0.0 0.05 0.71 0.0 0.29 0.0 0.0 1.0 0.64 0.0 0.36 0.86 0.0 0.14 0.51 0.0 0.49 0.18 0.0 0.82 0.75 0.0 0.25 0.82 0.0 0.18 0.35 0.0 0.65 0.35 0.0 0.65 0.82 0.0 0.18 0.75 0.0 0.25 0.18 0.0 0.82 0.51 0.0 0.49 0.86 0.0 0.14 0.64 0.0 0.36 0.0 0.0 1.0 0.15 0.0 0.85 0.21 0.0 0.79 0.12 0.0 0.88 0.04 0.0 0.96 0.18 0.0 0.82 0.2 0.0 0.8 0.08 0.0 0.92 0.08 0.0 0.92 0.2 0.0 0.8 0.18 0.0 0.82 0.04 0.0 0.96 0.12 0.0 0.88 0.21 0.0 0.79 0.15 0.0 0.85 0.0 0.0 1.0 0.44 0.0 0.56 0.58 0.0 0.42 0.35 0.0 0.65 0.12 0.0 0.88 0.51 0.0 0.49 0.56 0.0 0.44 0.24 0.0 0.76 0.24 0.0 0.76 0.56 0.0 0.44 0.51 0.0 0.49 0.12 0.0 0.88 0.35 0.0 0.65 0.58 0.0 0.42 0.44 0.0 0.56 0.0 0.0 1.0 0.74 0.0 0.26 0.99 0.0 0.01 0.58 0.0 0.42 0.21 0.0 0.79 0.86 0.0 0.14 0.95 0.0 0.05 0.4 0.0 0.6 0.4 0.0 0.6 0.95 0.0 0.05 0.86 0.0 0.14 0.21 0.0 0.79 0.58 0.0 0.42 0.99 0.0 0.01 0.74 0.0 0.26 0.0 0.0 1.0 0.55 0.0 0.45 0.74 0.0 0.26 0.44 0.0 0.56 0.15 0.0 0.85 0.64 0.0 0.36 0.71 0.0 0.29 0.3 0.0 0.7 0.3 0.0 0.7 0.71 0.0 0.29 0.64 0.0 0.36 0.15 0.0 0.85 0.44 0.0 0.56 0.74 0.0 0.26 0.55 0.0 0.45 ) .

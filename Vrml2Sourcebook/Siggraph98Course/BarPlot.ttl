@@ -1,0 +1,1415 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/BarPlot.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BarPlot.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Demonstrate plotting values with 3D emphasis.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '3 September 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BarPlot.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/barplot.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0113.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/BarPlot.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BarPlot.x3d" .
+:meta dcterms:description "Demonstrate plotting values with 3D emphasis." .
+:meta dcterms:creator "John L. Moreland" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "3 September 2023" .
+:meta dcterms:Image "BarPlot.png" .
+:meta dcterms:reference "originals/barplot.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0113.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/BarPlot.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Transform_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, John L. Moreland"' ;
+  x3do:title '3D Bar Plot' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 0.0 20.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1, :Transform_2_4_2, :Transform_2_4_3, :Transform_2_4_4, :Transform_2_4_5, :Transform_2_4_6, :Transform_2_4_7, :Transform_2_4_8, :Transform_2_4_9, :Transform_2_4_10, :Transform_2_4_11, :Transform_2_4_12, :Transform_2_4_13, :Transform_2_4_14, :Transform_2_4_15, :Transform_2_4_16, :Transform_2_4_17, :Transform_2_4_18, :Transform_2_4_19, :Transform_2_4_20, :Transform_2_4_21, :Transform_2_4_22, :Transform_2_4_23, :Transform_2_4_24, :Transform_2_4_25, :Transform_2_4_26, :Transform_2_4_27, :Transform_2_4_28, :Transform_2_4_29, :Transform_2_4_30, :Transform_2_4_31, :Transform_2_4_32, :Transform_2_4_33, :Transform_2_4_34, :Transform_2_4_35, :Transform_2_4_36, :Transform_2_4_37, :Transform_2_4_38, :Transform_2_4_39, :Transform_2_4_40, :Transform_2_4_41, :Transform_2_4_42, :Transform_2_4_43, :Transform_2_4_44, :Transform_2_4_45, :Transform_2_4_46, :Transform_2_4_47, :Transform_2_4_48, :Transform_2_4_49, :Transform_2_4_50, :Transform_2_4_51, :Transform_2_4_52, :Transform_2_4_53, :Transform_2_4_54, :Transform_2_4_55, :Transform_2_4_56, :Transform_2_4_57, :Transform_2_4_58, :Transform_2_4_59, :Transform_2_4_60 ;
+  x3do:translation ( -14.5 -2.5 0.0 ) .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_1_1 .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_1_1 ;
+  x3do:hasGeometry :Box_2_4_1_1_2 .
+:Appearance_2_4_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1_1 .
+:Material_2_4_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1_1 ;
+  x3do:diffuseColor ( 0.0 0.0 1.0 ) .
+:Box_2_4_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:size ( 1.0 0.00001 1.0 ) .
+:Transform_2_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_2_1 ;
+  x3do:translation ( 0.0 0.47619 0.0 ) .
+:Billboard_2_4_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_2 ;
+  x3do:hasChildren :Shape_2_4_2_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_2_1_1_2 .
+:Appearance_2_4_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_1_1 ;
+  x3do:hasMaterial :Material_2_4_2_1_1_1_1 .
+:Material_2_4_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_2_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_2_1_1_2_1 ;
+  x3do:string '"0.0"' .
+:FontStyle_2_4_2_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_2_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_3_1 ;
+  x3do:translation ( 1.0 0.519779 0.0 ) .
+:Shape_2_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3 ;
+  x3do:hasAppearance :Appearance_2_4_3_1_1 ;
+  x3do:hasGeometry :Box_2_4_3_1_2 .
+:Appearance_2_4_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:hasMaterial :Material_2_4_3_1_1_1 .
+:Material_2_4_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_3_1_1 ;
+  x3do:diffuseColor ( 0.207912 0.0 0.792089 ) .
+:Box_2_4_3_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:size ( 1.0 1.039558 1.0 ) .
+:Transform_2_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_4_1 ;
+  x3do:translation ( 1.0 1.515748 0.0 ) .
+:Billboard_2_4_4_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_4 ;
+  x3do:hasChildren :Shape_2_4_4_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_4_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_4_1_1_2 .
+:Appearance_2_4_4_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_4_1_1 ;
+  x3do:hasMaterial :Material_2_4_4_1_1_1_1 .
+:Material_2_4_4_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_4_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_4_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_4_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_4_1_1_2_1 ;
+  x3do:string '"1.0"' .
+:FontStyle_2_4_4_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_4_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_5_1 ;
+  x3do:translation ( 2.0 1.016841 0.0 ) .
+:Shape_2_4_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_5 ;
+  x3do:hasAppearance :Appearance_2_4_5_1_1 ;
+  x3do:hasGeometry :Box_2_4_5_1_2 .
+:Appearance_2_4_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_5_1 ;
+  x3do:hasMaterial :Material_2_4_5_1_1_1 .
+:Material_2_4_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_5_1_1 ;
+  x3do:diffuseColor ( 0.406736 0.0 0.593264 ) .
+:Box_2_4_5_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_5_1 ;
+  x3do:size ( 1.0 2.033682 1.0 ) .
+:Transform_2_4_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_6_1 ;
+  x3do:translation ( 2.0 2.509872 0.0 ) .
+:Billboard_2_4_6_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_6 ;
+  x3do:hasChildren :Shape_2_4_6_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_6_1 ;
+  x3do:hasAppearance :Appearance_2_4_6_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_6_1_1_2 .
+:Appearance_2_4_6_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_6_1_1 ;
+  x3do:hasMaterial :Material_2_4_6_1_1_1_1 .
+:Material_2_4_6_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_6_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_6_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_6_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_6_1_1_2_1 ;
+  x3do:string '"2.0"' .
+:FontStyle_2_4_6_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_6_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_7_1 ;
+  x3do:translation ( 3.0 1.469462 0.0 ) .
+:Shape_2_4_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_7 ;
+  x3do:hasAppearance :Appearance_2_4_7_1_1 ;
+  x3do:hasGeometry :Box_2_4_7_1_2 .
+:Appearance_2_4_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_7_1 ;
+  x3do:hasMaterial :Material_2_4_7_1_1_1 .
+:Material_2_4_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_7_1_1 ;
+  x3do:diffuseColor ( 0.587785 0.0 0.412215 ) .
+:Box_2_4_7_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_7_1 ;
+  x3do:size ( 1.0 2.938924 1.0 ) .
+:Transform_2_4_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_8_1 ;
+  x3do:translation ( 3.0 3.415115 0.0 ) .
+:Billboard_2_4_8_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_8 ;
+  x3do:hasChildren :Shape_2_4_8_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_8_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_8_1 ;
+  x3do:hasAppearance :Appearance_2_4_8_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_8_1_1_2 .
+:Appearance_2_4_8_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_8_1_1 ;
+  x3do:hasMaterial :Material_2_4_8_1_1_1_1 .
+:Material_2_4_8_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_8_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_8_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_8_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_8_1_1_2_1 ;
+  x3do:string '"2.9"' .
+:FontStyle_2_4_8_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_8_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_9_1 ;
+  x3do:translation ( 4.0 1.857861 0.0 ) .
+:Shape_2_4_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9 ;
+  x3do:hasAppearance :Appearance_2_4_9_1_1 ;
+  x3do:hasGeometry :Box_2_4_9_1_2 .
+:Appearance_2_4_9_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1 ;
+  x3do:hasMaterial :Material_2_4_9_1_1_1 .
+:Material_2_4_9_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_9_1_1 ;
+  x3do:diffuseColor ( 0.743144 0.0 0.256856 ) .
+:Box_2_4_9_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_9_1 ;
+  x3do:size ( 1.0 3.715722 1.0 ) .
+:Transform_2_4_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_10_1 ;
+  x3do:translation ( 4.0 4.191912 0.0 ) .
+:Billboard_2_4_10_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_10 ;
+  x3do:hasChildren :Shape_2_4_10_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_10_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_10_1 ;
+  x3do:hasAppearance :Appearance_2_4_10_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_10_1_1_2 .
+:Appearance_2_4_10_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_1_1 ;
+  x3do:hasMaterial :Material_2_4_10_1_1_1_1 .
+:Material_2_4_10_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_10_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_10_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_10_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_10_1_1_2_1 ;
+  x3do:string '"3.7"' .
+:FontStyle_2_4_10_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_10_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_11_1 ;
+  x3do:translation ( 5.0 2.165062 0.0 ) .
+:Shape_2_4_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_11 ;
+  x3do:hasAppearance :Appearance_2_4_11_1_1 ;
+  x3do:hasGeometry :Box_2_4_11_1_2 .
+:Appearance_2_4_11_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_11_1 ;
+  x3do:hasMaterial :Material_2_4_11_1_1_1 .
+:Material_2_4_11_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_11_1_1 ;
+  x3do:diffuseColor ( 0.866025 0.0 0.133975 ) .
+:Box_2_4_11_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_11_1 ;
+  x3do:size ( 1.0 4.330125 1.0 ) .
+:Transform_2_4_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_12_1 ;
+  x3do:translation ( 5.0 4.806315 0.0 ) .
+:Billboard_2_4_12_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_12 ;
+  x3do:hasChildren :Shape_2_4_12_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_12_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_12_1 ;
+  x3do:hasAppearance :Appearance_2_4_12_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_12_1_1_2 .
+:Appearance_2_4_12_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_12_1_1 ;
+  x3do:hasMaterial :Material_2_4_12_1_1_1_1 .
+:Material_2_4_12_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_12_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_12_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_12_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_12_1_1_2_1 ;
+  x3do:string '"4.3"' .
+:FontStyle_2_4_12_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_12_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_13_1 ;
+  x3do:translation ( 6.0 2.37764 0.0 ) .
+:Shape_2_4_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_13 ;
+  x3do:hasAppearance :Appearance_2_4_13_1_1 ;
+  x3do:hasGeometry :Box_2_4_13_1_2 .
+:Appearance_2_4_13_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_13_1 ;
+  x3do:hasMaterial :Material_2_4_13_1_1_1 .
+:Material_2_4_13_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_13_1_1 ;
+  x3do:diffuseColor ( 0.951056 0.0 0.048944 ) .
+:Box_2_4_13_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_13_1 ;
+  x3do:size ( 1.0 4.755281 1.0 ) .
+:Transform_2_4_14 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_14_1 ;
+  x3do:translation ( 6.0 5.231471 0.0 ) .
+:Billboard_2_4_14_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_14 ;
+  x3do:hasChildren :Shape_2_4_14_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_14_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_14_1 ;
+  x3do:hasAppearance :Appearance_2_4_14_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_14_1_1_2 .
+:Appearance_2_4_14_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_14_1_1 ;
+  x3do:hasMaterial :Material_2_4_14_1_1_1_1 .
+:Material_2_4_14_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_14_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_14_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_14_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_14_1_1_2_1 ;
+  x3do:string '"4.8"' .
+:FontStyle_2_4_14_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_14_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_15_1 ;
+  x3do:translation ( 7.0 2.486305 0.0 ) .
+:Shape_2_4_15_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_15 ;
+  x3do:hasAppearance :Appearance_2_4_15_1_1 ;
+  x3do:hasGeometry :Box_2_4_15_1_2 .
+:Appearance_2_4_15_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_15_1 ;
+  x3do:hasMaterial :Material_2_4_15_1_1_1 .
+:Material_2_4_15_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_15_1_1 ;
+  x3do:diffuseColor ( 0.994522 0.0 0.005478 ) .
+:Box_2_4_15_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_15_1 ;
+  x3do:size ( 1.0 4.972609 1.0 ) .
+:Transform_2_4_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_16_1 ;
+  x3do:translation ( 7.0 5.4488 0.0 ) .
+:Billboard_2_4_16_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_16 ;
+  x3do:hasChildren :Shape_2_4_16_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_16_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_16_1 ;
+  x3do:hasAppearance :Appearance_2_4_16_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_16_1_1_2 .
+:Appearance_2_4_16_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_16_1_1 ;
+  x3do:hasMaterial :Material_2_4_16_1_1_1_1 .
+:Material_2_4_16_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_16_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_16_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_16_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_16_1_1_2_1 ;
+  x3do:string '"5.0"' .
+:FontStyle_2_4_16_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_16_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_17 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_17_1 ;
+  x3do:translation ( 8.0 2.486305 0.0 ) .
+:Shape_2_4_17_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_17 ;
+  x3do:hasAppearance :Appearance_2_4_17_1_1 ;
+  x3do:hasGeometry :Box_2_4_17_1_2 .
+:Appearance_2_4_17_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_17_1 ;
+  x3do:hasMaterial :Material_2_4_17_1_1_1 .
+:Material_2_4_17_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_17_1_1 ;
+  x3do:diffuseColor ( 0.994522 0.0 0.005478 ) .
+:Box_2_4_17_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_17_1 ;
+  x3do:size ( 1.0 4.97261 1.0 ) .
+:Transform_2_4_18 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_18_1 ;
+  x3do:translation ( 8.0 5.4488 0.0 ) .
+:Billboard_2_4_18_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_18 ;
+  x3do:hasChildren :Shape_2_4_18_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_18_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_18_1 ;
+  x3do:hasAppearance :Appearance_2_4_18_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_18_1_1_2 .
+:Appearance_2_4_18_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_18_1_1 ;
+  x3do:hasMaterial :Material_2_4_18_1_1_1_1 .
+:Material_2_4_18_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_18_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_18_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_18_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_18_1_1_2_1 ;
+  x3do:string '"5.0"' .
+:FontStyle_2_4_18_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_18_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_19 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_19_1 ;
+  x3do:translation ( 9.0 2.377643 0.0 ) .
+:Shape_2_4_19_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_19 ;
+  x3do:hasAppearance :Appearance_2_4_19_1_1 ;
+  x3do:hasGeometry :Box_2_4_19_1_2 .
+:Appearance_2_4_19_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_19_1 ;
+  x3do:hasMaterial :Material_2_4_19_1_1_1 .
+:Material_2_4_19_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_19_1_1 ;
+  x3do:diffuseColor ( 0.951057 0.0 0.048943 ) .
+:Box_2_4_19_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_19_1 ;
+  x3do:size ( 1.0 4.755285 1.0 ) .
+:Transform_2_4_20 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_20_1 ;
+  x3do:translation ( 9.0 5.231476 0.0 ) .
+:Billboard_2_4_20_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_20 ;
+  x3do:hasChildren :Shape_2_4_20_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_20_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_20_1 ;
+  x3do:hasAppearance :Appearance_2_4_20_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_20_1_1_2 .
+:Appearance_2_4_20_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_20_1_1 ;
+  x3do:hasMaterial :Material_2_4_20_1_1_1_1 .
+:Material_2_4_20_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_20_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_20_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_20_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_20_1_1_2_1 ;
+  x3do:string '"4.8"' .
+:FontStyle_2_4_20_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_20_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_21 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_21_1 ;
+  x3do:translation ( 10.0 2.165066 0.0 ) .
+:Shape_2_4_21_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_21 ;
+  x3do:hasAppearance :Appearance_2_4_21_1_1 ;
+  x3do:hasGeometry :Box_2_4_21_1_2 .
+:Appearance_2_4_21_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_21_1 ;
+  x3do:hasMaterial :Material_2_4_21_1_1_1 .
+:Material_2_4_21_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_21_1_1 ;
+  x3do:diffuseColor ( 0.866026 0.0 0.133974 ) .
+:Box_2_4_21_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_21_1 ;
+  x3do:size ( 1.0 4.330132 1.0 ) .
+:Transform_2_4_22 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_22_1 ;
+  x3do:translation ( 10.0 4.806322 0.0 ) .
+:Billboard_2_4_22_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_22 ;
+  x3do:hasChildren :Shape_2_4_22_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_22_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_22_1 ;
+  x3do:hasAppearance :Appearance_2_4_22_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_22_1_1_2 .
+:Appearance_2_4_22_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_22_1_1 ;
+  x3do:hasMaterial :Material_2_4_22_1_1_1_1 .
+:Material_2_4_22_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_22_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_22_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_22_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_22_1_1_2_1 ;
+  x3do:string '"4.3"' .
+:FontStyle_2_4_22_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_22_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_23 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_23_1 ;
+  x3do:translation ( 11.0 1.857865 0.0 ) .
+:Shape_2_4_23_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_23 ;
+  x3do:hasAppearance :Appearance_2_4_23_1_1 ;
+  x3do:hasGeometry :Box_2_4_23_1_2 .
+:Appearance_2_4_23_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_23_1 ;
+  x3do:hasMaterial :Material_2_4_23_1_1_1 .
+:Material_2_4_23_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_23_1_1 ;
+  x3do:diffuseColor ( 0.743146 0.0 0.256854 ) .
+:Box_2_4_23_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_23_1 ;
+  x3do:size ( 1.0 3.71573 1.0 ) .
+:Transform_2_4_24 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_24_1 ;
+  x3do:translation ( 11.0 4.191921 0.0 ) .
+:Billboard_2_4_24_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_24 ;
+  x3do:hasChildren :Shape_2_4_24_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_24_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_24_1 ;
+  x3do:hasAppearance :Appearance_2_4_24_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_24_1_1_2 .
+:Appearance_2_4_24_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_24_1_1 ;
+  x3do:hasMaterial :Material_2_4_24_1_1_1_1 .
+:Material_2_4_24_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_24_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_24_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_24_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_24_1_1_2_1 ;
+  x3do:string '"3.7"' .
+:FontStyle_2_4_24_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_24_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_25 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_25_1 ;
+  x3do:translation ( 12.0 1.469467 0.0 ) .
+:Shape_2_4_25_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_25 ;
+  x3do:hasAppearance :Appearance_2_4_25_1_1 ;
+  x3do:hasGeometry :Box_2_4_25_1_2 .
+:Appearance_2_4_25_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_25_1 ;
+  x3do:hasMaterial :Material_2_4_25_1_1_1 .
+:Material_2_4_25_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_25_1_1 ;
+  x3do:diffuseColor ( 0.587787 0.0 0.412213 ) .
+:Box_2_4_25_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_25_1 ;
+  x3do:size ( 1.0 2.938935 1.0 ) .
+:Transform_2_4_26 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_26_1 ;
+  x3do:translation ( 12.0 3.415125 0.0 ) .
+:Billboard_2_4_26_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_26 ;
+  x3do:hasChildren :Shape_2_4_26_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_26_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_26_1 ;
+  x3do:hasAppearance :Appearance_2_4_26_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_26_1_1_2 .
+:Appearance_2_4_26_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_26_1_1 ;
+  x3do:hasMaterial :Material_2_4_26_1_1_1_1 .
+:Material_2_4_26_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_26_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_26_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_26_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_26_1_1_2_1 ;
+  x3do:string '"2.9"' .
+:FontStyle_2_4_26_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_26_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_27 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_27_1 ;
+  x3do:translation ( 13.0 1.016847 0.0 ) .
+:Shape_2_4_27_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_27 ;
+  x3do:hasAppearance :Appearance_2_4_27_1_1 ;
+  x3do:hasGeometry :Box_2_4_27_1_2 .
+:Appearance_2_4_27_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_27_1 ;
+  x3do:hasMaterial :Material_2_4_27_1_1_1 .
+:Material_2_4_27_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_27_1_1 ;
+  x3do:diffuseColor ( 0.406739 0.0 0.593261 ) .
+:Box_2_4_27_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_27_1 ;
+  x3do:size ( 1.0 2.033694 1.0 ) .
+:Transform_2_4_28 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_28_1 ;
+  x3do:translation ( 13.0 2.509884 0.0 ) .
+:Billboard_2_4_28_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_28 ;
+  x3do:hasChildren :Shape_2_4_28_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_28_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_28_1 ;
+  x3do:hasAppearance :Appearance_2_4_28_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_28_1_1_2 .
+:Appearance_2_4_28_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_28_1_1 ;
+  x3do:hasMaterial :Material_2_4_28_1_1_1_1 .
+:Material_2_4_28_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_28_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_28_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_28_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_28_1_1_2_1 ;
+  x3do:string '"2.0"' .
+:FontStyle_2_4_28_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_28_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_29 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_29_1 ;
+  x3do:translation ( 14.0 0.519785 0.0 ) .
+:Shape_2_4_29_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_29 ;
+  x3do:hasAppearance :Appearance_2_4_29_1_1 ;
+  x3do:hasGeometry :Box_2_4_29_1_2 .
+:Appearance_2_4_29_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_29_1 ;
+  x3do:hasMaterial :Material_2_4_29_1_1_1 .
+:Material_2_4_29_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_29_1_1 ;
+  x3do:diffuseColor ( 0.207914 0.0 0.792086 ) .
+:Box_2_4_29_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_29_1 ;
+  x3do:size ( 1.0 1.03957 1.0 ) .
+:Transform_2_4_30 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_30_1 ;
+  x3do:translation ( 14.0 1.51576 0.0 ) .
+:Billboard_2_4_30_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_30 ;
+  x3do:hasChildren :Shape_2_4_30_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_30_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_30_1 ;
+  x3do:hasAppearance :Appearance_2_4_30_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_30_1_1_2 .
+:Appearance_2_4_30_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_30_1_1 ;
+  x3do:hasMaterial :Material_2_4_30_1_1_1_1 .
+:Material_2_4_30_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_30_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_30_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_30_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_30_1_1_2_1 ;
+  x3do:string '"1.0"' .
+:FontStyle_2_4_30_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_30_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_31 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_31_1 ;
+  x3do:translation ( 15.0 6.0E-6 0.0 ) .
+:Shape_2_4_31_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_31 ;
+  x3do:hasAppearance :Appearance_2_4_31_1_1 ;
+  x3do:hasGeometry :Box_2_4_31_1_2 .
+:Appearance_2_4_31_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_31_1 ;
+  x3do:hasMaterial :Material_2_4_31_1_1_1 .
+:Material_2_4_31_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_31_1_1 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:Box_2_4_31_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_31_1 ;
+  x3do:size ( 1.0 1.3E-5 1.0 ) .
+:Transform_2_4_32 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_32_1 ;
+  x3do:translation ( 15.0 0.476203 0.0 ) .
+:Billboard_2_4_32_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_32 ;
+  x3do:hasChildren :Shape_2_4_32_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_32_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_32_1 ;
+  x3do:hasAppearance :Appearance_2_4_32_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_32_1_1_2 .
+:Appearance_2_4_32_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_32_1_1 ;
+  x3do:hasMaterial :Material_2_4_32_1_1_1_1 .
+:Material_2_4_32_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_32_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_32_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_32_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_32_1_1_2_1 ;
+  x3do:string '"0.0"' .
+:FontStyle_2_4_32_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_32_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_33 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_33_1 ;
+  x3do:translation ( 16.0 -0.519772 0.0 ) .
+:Shape_2_4_33_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_33 ;
+  x3do:hasAppearance :Appearance_2_4_33_1_1 ;
+  x3do:hasGeometry :Box_2_4_33_1_2 .
+:Appearance_2_4_33_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_33_1 ;
+  x3do:hasMaterial :Material_2_4_33_1_1_1 .
+:Material_2_4_33_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_33_1_1 ;
+  x3do:diffuseColor ( 0.207909 0.0 0.792091 ) .
+:Box_2_4_33_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_33_1 ;
+  x3do:size ( 1.0 1.039545 1.0 ) .
+:Transform_2_4_34 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_34_1 ;
+  x3do:translation ( 16.0 -1.515735 0.0 ) .
+:Billboard_2_4_34_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_34 ;
+  x3do:hasChildren :Shape_2_4_34_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_34_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_34_1 ;
+  x3do:hasAppearance :Appearance_2_4_34_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_34_1_1_2 .
+:Appearance_2_4_34_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_34_1_1 ;
+  x3do:hasMaterial :Material_2_4_34_1_1_1_1 .
+:Material_2_4_34_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_34_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_34_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_34_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_34_1_1_2_1 ;
+  x3do:string '"-1.0"' .
+:FontStyle_2_4_34_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_34_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_35 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_35_1 ;
+  x3do:translation ( 17.0 -1.016835 0.0 ) .
+:Shape_2_4_35_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_35 ;
+  x3do:hasAppearance :Appearance_2_4_35_1_1 ;
+  x3do:hasGeometry :Box_2_4_35_1_2 .
+:Appearance_2_4_35_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_35_1 ;
+  x3do:hasMaterial :Material_2_4_35_1_1_1 .
+:Material_2_4_35_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_35_1_1 ;
+  x3do:diffuseColor ( 0.406734 0.0 0.593266 ) .
+:Box_2_4_35_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_35_1 ;
+  x3do:size ( 1.0 2.033669 1.0 ) .
+:Transform_2_4_36 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_36_1 ;
+  x3do:translation ( 17.0 -2.50986 0.0 ) .
+:Billboard_2_4_36_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_36 ;
+  x3do:hasChildren :Shape_2_4_36_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_36_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_36_1 ;
+  x3do:hasAppearance :Appearance_2_4_36_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_36_1_1_2 .
+:Appearance_2_4_36_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_36_1_1 ;
+  x3do:hasMaterial :Material_2_4_36_1_1_1_1 .
+:Material_2_4_36_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_36_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_36_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_36_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_36_1_1_2_1 ;
+  x3do:string '"-2.0"' .
+:FontStyle_2_4_36_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_36_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_37 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_37_1 ;
+  x3do:translation ( 18.0 -1.469457 0.0 ) .
+:Shape_2_4_37_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_37 ;
+  x3do:hasAppearance :Appearance_2_4_37_1_1 ;
+  x3do:hasGeometry :Box_2_4_37_1_2 .
+:Appearance_2_4_37_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_37_1 ;
+  x3do:hasMaterial :Material_2_4_37_1_1_1 .
+:Material_2_4_37_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_37_1_1 ;
+  x3do:diffuseColor ( 0.587783 0.0 0.412217 ) .
+:Box_2_4_37_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_37_1 ;
+  x3do:size ( 1.0 2.938913 1.0 ) .
+:Transform_2_4_38 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_38_1 ;
+  x3do:translation ( 18.0 -3.415104 0.0 ) .
+:Billboard_2_4_38_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_38 ;
+  x3do:hasChildren :Shape_2_4_38_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_38_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_38_1 ;
+  x3do:hasAppearance :Appearance_2_4_38_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_38_1_1_2 .
+:Appearance_2_4_38_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_38_1_1 ;
+  x3do:hasMaterial :Material_2_4_38_1_1_1_1 .
+:Material_2_4_38_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_38_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_38_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_38_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_38_1_1_2_1 ;
+  x3do:string '"-2.9"' .
+:FontStyle_2_4_38_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_38_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_39 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_39_1 ;
+  x3do:translation ( 19.0 -1.857857 0.0 ) .
+:Shape_2_4_39_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_39 ;
+  x3do:hasAppearance :Appearance_2_4_39_1_1 ;
+  x3do:hasGeometry :Box_2_4_39_1_2 .
+:Appearance_2_4_39_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_39_1 ;
+  x3do:hasMaterial :Material_2_4_39_1_1_1 .
+:Material_2_4_39_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_39_1_1 ;
+  x3do:diffuseColor ( 0.743143 0.0 0.256857 ) .
+:Box_2_4_39_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_39_1 ;
+  x3do:size ( 1.0 3.715713 1.0 ) .
+:Transform_2_4_40 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_40_1 ;
+  x3do:translation ( 19.0 -4.191904 0.0 ) .
+:Billboard_2_4_40_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_40 ;
+  x3do:hasChildren :Shape_2_4_40_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_40_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_40_1 ;
+  x3do:hasAppearance :Appearance_2_4_40_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_40_1_1_2 .
+:Appearance_2_4_40_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_40_1_1 ;
+  x3do:hasMaterial :Material_2_4_40_1_1_1_1 .
+:Material_2_4_40_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_40_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_40_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_40_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_40_1_1_2_1 ;
+  x3do:string '"-3.7"' .
+:FontStyle_2_4_40_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_40_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_41 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_41_1 ;
+  x3do:translation ( 20.0 -2.165059 0.0 ) .
+:Shape_2_4_41_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_41 ;
+  x3do:hasAppearance :Appearance_2_4_41_1_1 ;
+  x3do:hasGeometry :Box_2_4_41_1_2 .
+:Appearance_2_4_41_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_41_1 ;
+  x3do:hasMaterial :Material_2_4_41_1_1_1 .
+:Material_2_4_41_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_41_1_1 ;
+  x3do:diffuseColor ( 0.866024 0.0 0.133976 ) .
+:Box_2_4_41_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_41_1 ;
+  x3do:size ( 1.0 4.330118 1.0 ) .
+:Transform_2_4_42 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_42_1 ;
+  x3do:translation ( 20.0 -4.806308 0.0 ) .
+:Billboard_2_4_42_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_42 ;
+  x3do:hasChildren :Shape_2_4_42_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_42_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_42_1 ;
+  x3do:hasAppearance :Appearance_2_4_42_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_42_1_1_2 .
+:Appearance_2_4_42_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_42_1_1 ;
+  x3do:hasMaterial :Material_2_4_42_1_1_1_1 .
+:Material_2_4_42_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_42_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_42_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_42_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_42_1_1_2_1 ;
+  x3do:string '"-4.3"' .
+:FontStyle_2_4_42_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_42_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_43 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_43_1 ;
+  x3do:translation ( 21.0 -2.377639 0.0 ) .
+:Shape_2_4_43_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_43 ;
+  x3do:hasAppearance :Appearance_2_4_43_1_1 ;
+  x3do:hasGeometry :Box_2_4_43_1_2 .
+:Appearance_2_4_43_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_43_1 ;
+  x3do:hasMaterial :Material_2_4_43_1_1_1 .
+:Material_2_4_43_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_43_1_1 ;
+  x3do:diffuseColor ( 0.951055 0.0 0.048945 ) .
+:Box_2_4_43_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_43_1 ;
+  x3do:size ( 1.0 4.755277 1.0 ) .
+:Transform_2_4_44 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_44_1 ;
+  x3do:translation ( 21.0 -5.231468 0.0 ) .
+:Billboard_2_4_44_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_44 ;
+  x3do:hasChildren :Shape_2_4_44_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_44_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_44_1 ;
+  x3do:hasAppearance :Appearance_2_4_44_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_44_1_1_2 .
+:Appearance_2_4_44_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_44_1_1 ;
+  x3do:hasMaterial :Material_2_4_44_1_1_1_1 .
+:Material_2_4_44_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_44_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_44_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_44_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_44_1_1_2_1 ;
+  x3do:string '"-4.8"' .
+:FontStyle_2_4_44_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_44_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_45 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_45_1 ;
+  x3do:translation ( 22.0 -2.486304 0.0 ) .
+:Shape_2_4_45_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_45 ;
+  x3do:hasAppearance :Appearance_2_4_45_1_1 ;
+  x3do:hasGeometry :Box_2_4_45_1_2 .
+:Appearance_2_4_45_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_45_1 ;
+  x3do:hasMaterial :Material_2_4_45_1_1_1 .
+:Material_2_4_45_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_45_1_1 ;
+  x3do:diffuseColor ( 0.994521 0.0 0.005479 ) .
+:Box_2_4_45_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_45_1 ;
+  x3do:size ( 1.0 4.972608 1.0 ) .
+:Transform_2_4_46 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_46_1 ;
+  x3do:translation ( 22.0 -5.448798 0.0 ) .
+:Billboard_2_4_46_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_46 ;
+  x3do:hasChildren :Shape_2_4_46_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_46_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_46_1 ;
+  x3do:hasAppearance :Appearance_2_4_46_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_46_1_1_2 .
+:Appearance_2_4_46_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_46_1_1 ;
+  x3do:hasMaterial :Material_2_4_46_1_1_1_1 .
+:Material_2_4_46_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_46_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_46_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_46_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_46_1_1_2_1 ;
+  x3do:string '"-5.0"' .
+:FontStyle_2_4_46_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_46_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_47 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_47_1 ;
+  x3do:translation ( 23.0 -2.486306 0.0 ) .
+:Shape_2_4_47_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_47 ;
+  x3do:hasAppearance :Appearance_2_4_47_1_1 ;
+  x3do:hasGeometry :Box_2_4_47_1_2 .
+:Appearance_2_4_47_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_47_1 ;
+  x3do:hasMaterial :Material_2_4_47_1_1_1 .
+:Material_2_4_47_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_47_1_1 ;
+  x3do:diffuseColor ( 0.994522 0.0 0.005478 ) .
+:Box_2_4_47_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_47_1 ;
+  x3do:size ( 1.0 4.972611 1.0 ) .
+:Transform_2_4_48 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_48_1 ;
+  x3do:translation ( 23.0 -5.448802 0.0 ) .
+:Billboard_2_4_48_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_48 ;
+  x3do:hasChildren :Shape_2_4_48_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_48_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_48_1 ;
+  x3do:hasAppearance :Appearance_2_4_48_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_48_1_1_2 .
+:Appearance_2_4_48_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_48_1_1 ;
+  x3do:hasMaterial :Material_2_4_48_1_1_1_1 .
+:Material_2_4_48_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_48_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_48_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_48_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_48_1_1_2_1 ;
+  x3do:string '"-5.0"' .
+:FontStyle_2_4_48_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_48_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_49 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_49_1 ;
+  x3do:translation ( 24.0 -2.377645 0.0 ) .
+:Shape_2_4_49_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_49 ;
+  x3do:hasAppearance :Appearance_2_4_49_1_1 ;
+  x3do:hasGeometry :Box_2_4_49_1_2 .
+:Appearance_2_4_49_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_49_1 ;
+  x3do:hasMaterial :Material_2_4_49_1_1_1 .
+:Material_2_4_49_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_49_1_1 ;
+  x3do:diffuseColor ( 0.951058 0.0 0.048942 ) .
+:Box_2_4_49_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_49_1 ;
+  x3do:size ( 1.0 4.755289 1.0 ) .
+:Transform_2_4_50 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_50_1 ;
+  x3do:translation ( 24.0 -5.23148 0.0 ) .
+:Billboard_2_4_50_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_50 ;
+  x3do:hasChildren :Shape_2_4_50_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_50_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_50_1 ;
+  x3do:hasAppearance :Appearance_2_4_50_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_50_1_1_2 .
+:Appearance_2_4_50_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_50_1_1 ;
+  x3do:hasMaterial :Material_2_4_50_1_1_1_1 .
+:Material_2_4_50_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_50_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_50_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_50_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_50_1_1_2_1 ;
+  x3do:string '"-4.8"' .
+:FontStyle_2_4_50_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_50_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_51 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_51_1 ;
+  x3do:translation ( 25.0 -2.165069 0.0 ) .
+:Shape_2_4_51_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_51 ;
+  x3do:hasAppearance :Appearance_2_4_51_1_1 ;
+  x3do:hasGeometry :Box_2_4_51_1_2 .
+:Appearance_2_4_51_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_51_1 ;
+  x3do:hasMaterial :Material_2_4_51_1_1_1 .
+:Material_2_4_51_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_51_1_1 ;
+  x3do:diffuseColor ( 0.866028 0.0 0.133972 ) .
+:Box_2_4_51_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_51_1 ;
+  x3do:size ( 1.0 4.330138 1.0 ) .
+:Transform_2_4_52 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_52_1 ;
+  x3do:translation ( 25.0 -4.806329 0.0 ) .
+:Billboard_2_4_52_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_52 ;
+  x3do:hasChildren :Shape_2_4_52_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_52_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_52_1 ;
+  x3do:hasAppearance :Appearance_2_4_52_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_52_1_1_2 .
+:Appearance_2_4_52_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_52_1_1 ;
+  x3do:hasMaterial :Material_2_4_52_1_1_1_1 .
+:Material_2_4_52_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_52_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_52_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_52_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_52_1_1_2_1 ;
+  x3do:string '"-4.3"' .
+:FontStyle_2_4_52_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_52_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_53 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_53_1 ;
+  x3do:translation ( 26.0 -1.85787 0.0 ) .
+:Shape_2_4_53_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_53 ;
+  x3do:hasAppearance :Appearance_2_4_53_1_1 ;
+  x3do:hasGeometry :Box_2_4_53_1_2 .
+:Appearance_2_4_53_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_53_1 ;
+  x3do:hasMaterial :Material_2_4_53_1_1_1 .
+:Material_2_4_53_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_53_1_1 ;
+  x3do:diffuseColor ( 0.743148 0.0 0.256852 ) .
+:Box_2_4_53_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_53_1 ;
+  x3do:size ( 1.0 3.715739 1.0 ) .
+:Transform_2_4_54 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_54_1 ;
+  x3do:translation ( 26.0 -4.19193 0.0 ) .
+:Billboard_2_4_54_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_54 ;
+  x3do:hasChildren :Shape_2_4_54_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_54_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_54_1 ;
+  x3do:hasAppearance :Appearance_2_4_54_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_54_1_1_2 .
+:Appearance_2_4_54_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_54_1_1 ;
+  x3do:hasMaterial :Material_2_4_54_1_1_1_1 .
+:Material_2_4_54_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_54_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_54_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_54_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_54_1_1_2_1 ;
+  x3do:string '"-3.7"' .
+:FontStyle_2_4_54_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_54_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_55 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_55_1 ;
+  x3do:translation ( 27.0 -1.469473 0.0 ) .
+:Shape_2_4_55_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_55 ;
+  x3do:hasAppearance :Appearance_2_4_55_1_1 ;
+  x3do:hasGeometry :Box_2_4_55_1_2 .
+:Appearance_2_4_55_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_55_1 ;
+  x3do:hasMaterial :Material_2_4_55_1_1_1 .
+:Material_2_4_55_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_55_1_1 ;
+  x3do:diffuseColor ( 0.587789 0.0 0.412211 ) .
+:Box_2_4_55_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_55_1 ;
+  x3do:size ( 1.0 2.938946 1.0 ) .
+:Transform_2_4_56 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_56_1 ;
+  x3do:translation ( 27.0 -3.415136 0.0 ) .
+:Billboard_2_4_56_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_56 ;
+  x3do:hasChildren :Shape_2_4_56_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_56_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_56_1 ;
+  x3do:hasAppearance :Appearance_2_4_56_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_56_1_1_2 .
+:Appearance_2_4_56_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_56_1_1 ;
+  x3do:hasMaterial :Material_2_4_56_1_1_1_1 .
+:Material_2_4_56_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_56_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_56_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_56_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_56_1_1_2_1 ;
+  x3do:string '"-2.9"' .
+:FontStyle_2_4_56_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_56_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_57 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_57_1 ;
+  x3do:translation ( 28.0 -1.016852 0.0 ) .
+:Shape_2_4_57_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_57 ;
+  x3do:hasAppearance :Appearance_2_4_57_1_1 ;
+  x3do:hasGeometry :Box_2_4_57_1_2 .
+:Appearance_2_4_57_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_57_1 ;
+  x3do:hasMaterial :Material_2_4_57_1_1_1 .
+:Material_2_4_57_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_57_1_1 ;
+  x3do:diffuseColor ( 0.406741 0.0 0.593259 ) .
+:Box_2_4_57_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_57_1 ;
+  x3do:size ( 1.0 2.033704 1.0 ) .
+:Transform_2_4_58 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_58_1 ;
+  x3do:translation ( 28.0 -2.509895 0.0 ) .
+:Billboard_2_4_58_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_58 ;
+  x3do:hasChildren :Shape_2_4_58_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_58_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_58_1 ;
+  x3do:hasAppearance :Appearance_2_4_58_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_58_1_1_2 .
+:Appearance_2_4_58_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_58_1_1 ;
+  x3do:hasMaterial :Material_2_4_58_1_1_1_1 .
+:Material_2_4_58_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_58_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_58_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_58_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_58_1_1_2_1 ;
+  x3do:string '"-2.0"' .
+:FontStyle_2_4_58_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_58_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .
+:Transform_2_4_59 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_59_1 ;
+  x3do:translation ( 29.0 -0.519791 0.0 ) .
+:Shape_2_4_59_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_59 ;
+  x3do:hasAppearance :Appearance_2_4_59_1_1 ;
+  x3do:hasGeometry :Box_2_4_59_1_2 .
+:Appearance_2_4_59_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_59_1 ;
+  x3do:hasMaterial :Material_2_4_59_1_1_1 .
+:Material_2_4_59_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_59_1_1 ;
+  x3do:diffuseColor ( 0.207916 0.0 0.792084 ) .
+:Box_2_4_59_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_59_1 ;
+  x3do:size ( 1.0 1.039582 1.0 ) .
+:Transform_2_4_60 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Billboard_2_4_60_1 ;
+  x3do:translation ( 29.0 -1.515773 0.0 ) .
+:Billboard_2_4_60_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_4_60 ;
+  x3do:hasChildren :Shape_2_4_60_1_1 ;
+  x3do:axisOfRotation ( 0.0 0.0 0.0 ) .
+:Shape_2_4_60_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_4_60_1 ;
+  x3do:hasAppearance :Appearance_2_4_60_1_1_1 ;
+  x3do:hasGeometry :Text_2_4_60_1_1_2 .
+:Appearance_2_4_60_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_60_1_1 ;
+  x3do:hasMaterial :Material_2_4_60_1_1_1_1 .
+:Material_2_4_60_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_60_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.0 ) .
+:Text_2_4_60_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_60_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_60_1_1_2_1 ;
+  x3do:string '"-1.0"' .
+:FontStyle_2_4_60_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_60_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.454545 .

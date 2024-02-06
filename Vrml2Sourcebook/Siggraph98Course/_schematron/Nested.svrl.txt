@@ -1,0 +1,2 @@
+<SphereSensor DEF='Segment1Ss'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform/Transform/SphereSensor, warning]
+<SphereSensor DEF='Segment2Ss'/> is missing description. Example: description='select and drag to rotate' [/X3D/Scene/Transform/Transform/Transform[3]/SphereSensor, warning]

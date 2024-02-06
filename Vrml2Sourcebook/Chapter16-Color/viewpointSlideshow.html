@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 16 - Color</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+            content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="7 March 2017"/>
+      <meta name="reference" content="http://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         http://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <style type="text/css">
+// can further set slideshow parameters here, see FAQ.
+      
+.slideshow-captions {
+  height: 465px;
+  width: 792px;
+}  
+.slideshow-images {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}  
+.slideshow {
+  height: 465px;
+  width: 792px;
+  align: center;
+  float: none;
+  position: relative;
+}
+</style>
+      <link rel="stylesheet" type="text/css" href="../slideshow/css/slideshow.css"
+            media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+
+
+
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure16.1ColoredPointSetScatterPlot.x3d._VP_View_points.png': { 'caption': '[1] Figure16.1ColoredPointSetScatterPlot.x3d - View points' },
+      'Figure16.1ColoredPointSetScatterPlot.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure16.1ColoredPointSetScatterPlot.x3d - (default X3D view)' },
+      'Figure16.2ColoredLinesPlot.x3d._VP_View_points.png': { 'caption': '[3] Figure16.2ColoredLinesPlot.x3d - View points' },
+      'Figure16.2ColoredLinesPlot.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure16.2ColoredLinesPlot.x3d - (default X3D view from 0 0 10)' },
+      'Figure16.3ColoredLinesStarburst.x3d._VP_Starburst_lines.png': { 'caption': '[5] Figure16.3ColoredLinesStarburst.x3d - Starburst lines' },
+      'Figure16.3ColoredLinesStarburst.x3d._VP_Spinning_viewpoint.png': { 'caption': '[6] Figure16.3ColoredLinesStarburst.x3d - Spinning viewpoint' },
+      'Figure16.3ColoredLinesStarburst.x3d._VP_Default_viewpoint.png': { 'caption': '[7] Figure16.3ColoredLinesStarburst.x3d - (default X3D view from 0 0 10)' },
+<!--not found:       'Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Starburst_lines.png': { 'caption': '[8] Figure16.3ColoredLinesStarburstWithAxes.x3d - Starburst lines' },-->
+<!--not found:       'Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Spinning_viewpoint.png': { 'caption': '[9] Figure16.3ColoredLinesStarburstWithAxes.x3d - Spinning viewpoint' },-->
+<!--not found:       'Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure16.3ColoredLinesStarburstWithAxes.x3d - (default X3D view)' },-->
+      'Figure16.4ColoredBookFaces.x3d._VP_Book.png': { 'caption': '[11] Figure16.4ColoredBookFaces.x3d - Book' },
+      'Figure16.4ColoredBookFaces.x3d._VP_Spinning_viewpoint.png': { 'caption': '[12] Figure16.4ColoredBookFaces.x3d - Spinning viewpoint' },
+      'Figure16.4ColoredBookFaces.x3d._VP_Default_viewpoint.png': { 'caption': '[13] Figure16.4ColoredBookFaces.x3d - (default X3D view from 0 0 10)' },
+      'Figure16.4ColoredBookFacesWithAxes.x3d._VP_Book.png': { 'caption': '[14] Figure16.4ColoredBookFacesWithAxes.x3d - Book' },
+      'Figure16.4ColoredBookFacesWithAxes.x3d._VP_Spinning_viewpoint.png': { 'caption': '[15] Figure16.4ColoredBookFacesWithAxes.x3d - Spinning viewpoint' },
+      'Figure16.4ColoredBookFacesWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure16.4ColoredBookFacesWithAxes.x3d - (default X3D view)' },
+      'Figure16.5LogFireColoredFaces.x3d._VP_Log_fire.png': { 'caption': '[17] Figure16.5LogFireColoredFaces.x3d - Log fire' },
+      'Figure16.5LogFireColoredFaces.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure16.5LogFireColoredFaces.x3d - (default X3D view from 0 0 10)' },
+      'Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Log_fire.png': { 'caption': '[19] Figure16.5LogFireColoredFacesWithAxes.x3d - Log fire' },
+      'Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Default_viewpoint.png': { 'caption': '[20] Figure16.5LogFireColoredFacesWithAxes.x3d - (default X3D view)' },
+      'Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Checkerboard.png': { 'caption': '[21] Figure16.6ColoredElevationGridCheckerboard.x3d - Checkerboard' },
+      'Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Default_viewpoint.png': { 'caption': '[22] Figure16.6ColoredElevationGridCheckerboard.x3d - (default X3D view)' },
+      'Figure16.7VertexColoredElevationGridMountain.x3d._VP_Per-vertex_colored_mountain.png': { 'caption': '[23] Figure16.7VertexColoredElevationGridMountain.x3d - Per-vertex colored mountain' },
+      'Figure16.7VertexColoredElevationGridMountain.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure16.7VertexColoredElevationGridMountain.x3d - (default X3D view)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter15-Extrusion/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter17-Textures/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 16 - Color</h2>
+      <table align="center" border="0" width="792">
+         <tr style="align:left; text-align: left;">
+            <td style="align:left; text-align: left; left:-100px; ">
+               <div id="show" class="slideshow"
+                    style="align: center; float: none; position: relative; left:-200px; width:792;">
+                  <div class="slideshow-images"
+                       style="align: center; float: none; position: relative; width:792;">
+                     <img src="_viewpoints/Figure16.1ColoredPointSetScatterPlot.x3d._VP_View_points.png"
+                          alt="[1] Figure16.1ColoredPointSetScatterPlot.x3d - View points"
+                          height="465"
+                          width="792"
+                          align=""
+                          float=""
+                          position=""/>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary=""
+             style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Chapter Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter16-Color/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 16.7 Vertex Colored Elevation Grid Mountain" title="Figure 16.7 Vertex Colored Elevation Grid Mountain" hspace="10" 
+                          src="_viewpoints/Figure16.7VertexColoredElevationGridMountain.x3d._VP_Per-vertex_colored_mountain.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                            The Color node lists colors to use for the various parts of a geometric shape, providing the value of the color field.
+                            Color indexes select colors to use at each vertex.
+                            Colors override any accompanying Material node.
+                            The colorPerVertex field selects color per line/face/grid square or else color per coordinate.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch16.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0221.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center" summary=""
+                      style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="right" style="background-color:lightgrey">
+10 X3D Scenes &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey">
+ &nbsp;21 Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.1ColoredPointSetScatterPlotIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.1ColoredPointSetScatterPlotThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.1ColoredPointSetScatterPlotIndex.html" title="X3D scene">Figure 16.1 Colored Point Set Scatter Plot</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.1ColoredPointSetScatterPlot.x3d._VP_View_points.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.1ColoredPointSetScatterPlot.x3d._VP_View_points.png"
+                                align="left"
+                                height="24"/>[1] Figure16.1ColoredPointSetScatterPlot.x3d - View points</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.1ColoredPointSetScatterPlot.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.1ColoredPointSetScatterPlot.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[2] Figure16.1ColoredPointSetScatterPlot.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.2ColoredLinesPlotIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.2ColoredLinesPlotThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.2ColoredLinesPlotIndex.html" title="X3D scene">Figure 16.2 Colored Lines Plot</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.2ColoredLinesPlot.x3d._VP_View_points.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.2ColoredLinesPlot.x3d._VP_View_points.png"
+                                align="left"
+                                height="24"/>[3] Figure16.2ColoredLinesPlot.x3d - View points</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.2ColoredLinesPlot.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.2ColoredLinesPlot.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[4] Figure16.2ColoredLinesPlot.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.3ColoredLinesStarburstIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.3ColoredLinesStarburstThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.3ColoredLinesStarburstIndex.html" title="X3D scene">Figure 16.3 Colored Lines Starburst</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Starburst_lines.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Starburst_lines.png"
+                                align="left"
+                                height="24"/>[5] Figure16.3ColoredLinesStarburst.x3d - Starburst lines</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Spinning_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Spinning_viewpoint.png"
+                                align="left"
+                                height="24"/>[6] Figure16.3ColoredLinesStarburst.x3d - Spinning viewpoint</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.3ColoredLinesStarburst.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[7] Figure16.3ColoredLinesStarburst.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.3ColoredLinesStarburstWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.3ColoredLinesStarburstWithAxesThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.3ColoredLinesStarburstWithAxesIndex.html" title="X3D scene">Figure 16.3 Colored Lines Starburst With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<!--file not found: _viewpoints/Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Starburst_lines.png--><span title="viewpoint image file not found">[8] Figure16.3ColoredLinesStarburstWithAxes.x3d - Starburst lines</span>
+                        <br/> &nbsp;<!--file not found: _viewpoints/Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Spinning_viewpoint.png--><span title="viewpoint image file not found">[9] Figure16.3ColoredLinesStarburstWithAxes.x3d - Spinning viewpoint</span>
+                        <br/> &nbsp;<!--file not found: _viewpoints/Figure16.3ColoredLinesStarburstWithAxes.x3d._VP_Default_viewpoint.png--><span title="viewpoint image file not found">[10] Figure16.3ColoredLinesStarburstWithAxes.x3d - (default X3D view)</span>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.4ColoredBookFacesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.4ColoredBookFacesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.4ColoredBookFacesIndex.html" title="X3D scene">Figure 16.4 Colored Book Faces</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Book.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Book.png" align="left"
+                                height="24"/>[11] Figure16.4ColoredBookFaces.x3d - Book</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Spinning_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Spinning_viewpoint.png"
+                                align="left"
+                                height="24"/>[12] Figure16.4ColoredBookFaces.x3d - Spinning viewpoint</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFaces.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[13] Figure16.4ColoredBookFaces.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.4ColoredBookFacesWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.4ColoredBookFacesWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.4ColoredBookFacesWithAxesIndex.html" title="X3D scene">Figure 16.4 Colored Book Faces With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Book.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Book.png"
+                                align="left"
+                                height="24"/>[14] Figure16.4ColoredBookFacesWithAxes.x3d - Book</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Spinning_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Spinning_viewpoint.png"
+                                align="left"
+                                height="24"/>[15] Figure16.4ColoredBookFacesWithAxes.x3d - Spinning viewpoint</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.4ColoredBookFacesWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[16] Figure16.4ColoredBookFacesWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.5LogFireColoredFacesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.5LogFireColoredFacesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.5LogFireColoredFacesIndex.html" title="X3D scene">Figure 16.5 Log Fire Colored Faces</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.5LogFireColoredFaces.x3d._VP_Log_fire.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.5LogFireColoredFaces.x3d._VP_Log_fire.png"
+                                align="left"
+                                height="24"/>[17] Figure16.5LogFireColoredFaces.x3d - Log fire</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.5LogFireColoredFaces.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.5LogFireColoredFaces.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[18] Figure16.5LogFireColoredFaces.x3d - (default X3D view from 0 0 10)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.5LogFireColoredFacesWithAxesIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.5LogFireColoredFacesWithAxesThumbnail.png" width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.5LogFireColoredFacesWithAxesIndex.html" title="X3D scene">Figure 16.5 Log Fire Colored Faces With Axes</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Log_fire.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Log_fire.png"
+                                align="left"
+                                height="24"/>[19] Figure16.5LogFireColoredFacesWithAxes.x3d - Log fire</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.5LogFireColoredFacesWithAxes.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[20] Figure16.5LogFireColoredFacesWithAxes.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.6ColoredElevationGridCheckerboardIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.6ColoredElevationGridCheckerboardThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.6ColoredElevationGridCheckerboardIndex.html" title="X3D scene">Figure 16.6 Colored Elevation Grid Checkerboard</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Checkerboard.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Checkerboard.png"
+                                align="left"
+                                height="24"/>[21] Figure16.6ColoredElevationGridCheckerboard.x3d - Checkerboard</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.6ColoredElevationGridCheckerboard.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[22] Figure16.6ColoredElevationGridCheckerboard.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="right" valign="middle">
+                        <a href="Figure16.7VertexColoredElevationGridMountainIndex.html" title="X3D scene">
+                           <img src="_thumbnails/Figure16.7VertexColoredElevationGridMountainThumbnail.png"
+                                width="64"
+                                height="64"
+                                align="left"/>
+                        </a>
+                        <br/>
+                        <a href="Figure16.7VertexColoredElevationGridMountainIndex.html" title="X3D scene">Figure 16.7 Vertex Colored Elevation Grid Mountain</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle">
+ &nbsp;<a href="_viewpoints/Figure16.7VertexColoredElevationGridMountain.x3d._VP_Per-vertex_colored_mountain.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.7VertexColoredElevationGridMountain.x3d._VP_Per-vertex_colored_mountain.png"
+                                align="left"
+                                height="24"/>[23] Figure16.7VertexColoredElevationGridMountain.x3d - Per-vertex colored mountain</a>
+                        <br/>
+                        <br/> &nbsp;<a href="_viewpoints/Figure16.7VertexColoredElevationGridMountain.x3d._VP_Default_viewpoint.png"
+                           title="Viewpoint image from X3D scene">
+                           <img src="_viewpoints/Figure16.7VertexColoredElevationGridMountain.x3d._VP_Default_viewpoint.png"
+                                align="left"
+                                height="24"/>[24] Figure16.7VertexColoredElevationGridMountain.x3d - (default X3D view)</a>
+                        <br/>
+                        <br/>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16-Color/viewpointSlideshow.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16-Color/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16-Color/viewpointSlideshow.html"
+                     target="_blank">
+                     <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                          alt="Validate XHTML 1.1"
+                          height="31"
+                          width="88"
+                          border="0"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16-Color/_viewpoints/"
+                     target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16-Color/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center" summary="navigation" border="1" cellpadding="2" width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter15-Extrusion/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                       title="Previous Chapter Viewpoint Slideshow"
+                       alt="Previous Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png" title="Chapter Summary"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter17-Textures/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Viewpoint Slideshow"
+                       alt="Next Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

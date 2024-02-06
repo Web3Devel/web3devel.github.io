@@ -1,0 +1,1 @@
+<FontStyle DEF=''/> array justify='"END"' has only 1 value for major-axis justification, add another value for minor-axis justification:  "BEGIN" "END" "FIRST" "MIDDLE" (default is "FIRST") [/X3D/Scene/Transform[2]/Shape[2]/Text/FontStyle, warning]

@@ -1,0 +1,261 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Column.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Column.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Gothic marble column: this file builds a column, such as might be found in gothic architecture. The column is used in multiple other examples.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Columns.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/column.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0500.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Column.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Column.x3d" .
+:meta dcterms:description "Gothic marble column: this file builds a column, such as might be found in gothic architecture. The column is used in multiple other examples." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Columns.x3d" .
+:meta dcterms:reference "originals/column.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0500.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Column.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Collision_2_2, :Transform_2_3, :Collision_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Column.x3d' .
+:Collision_2_2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_2_1 ;
+  x3do:enabled false .
+:Transform_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_2 ;
+  x3do:hasChildren :Shape_2_2_1_1 ;
+  x3do:translation ( 0.0 0.2 0.0 ) .
+:Shape_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_1_1 ;
+  x3do:hasGeometry :Box_2_2_1_1_2 .
+:Appearance_2_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_2_1_1_1_1 ;
+  x3do:hasMaterial :MarbleMaterial ;
+  x3do:hasTexture :MarbleImage .
+:TextureTransform_2_2_1_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_2_1_1_1 ;
+  x3do:rotation 0.1 ;
+  x3do:scale ( 1.0 0.1 ) ;
+  x3do:translation ( 0.2 0.2 ) .
+:MarbleMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1_1 ;
+  x3do:DEF 'MarbleMaterial' ;
+  x3do:ambientIntensity 0.4 .
+:MarbleImage a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_1_1_1 ;
+  x3do:DEF 'MarbleImage' ;
+  x3do:url '"marble_g.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/marble_g.jpg"' .
+:Box_2_2_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:size ( 0.9 0.4 0.9 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1 ;
+  x3do:translation ( 0.0 2.5 0.0 ) .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :Cylinder_2_3_1_2 .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :MarbleMaterial-USE-1 ;
+  x3do:hasTexture :MarbleImage-USE-1 .
+:MarbleMaterial-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  owl:sameAs :MarbleMaterial . # DEF matching this USE
+:MarbleImage-USE-1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  owl:sameAs :MarbleImage . # DEF matching this USE
+:Cylinder_2_3_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:bottom false ;
+  x3do:height 4.2 ;
+  x3do:radius 0.4 ;
+  x3do:top false .
+:Collision_2_4 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1, :Transform_2_4_2, :Transform_2_4_3 ;
+  x3do:enabled false .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_4 ;
+  x3do:hasChildren :Shape_2_4_1_1 ;
+  x3do:translation ( 0.0 4.6 0.0 ) .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_4_1_1_2 .
+:Appearance_2_4_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_4_1_1_1_1 ;
+  x3do:hasMaterial :MarbleMaterial-USE-2 ;
+  x3do:hasTexture :MarbleImage-USE-2 .
+:TextureTransform_2_4_1_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_4_1_1_1 ;
+  x3do:rotation 0.4 ;
+  x3do:scale ( 1.0 0.2 ) ;
+  x3do:translation ( 0.1 0.3 ) .
+:MarbleMaterial-USE-2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1_1 ;
+  owl:sameAs :MarbleMaterial . # DEF matching this USE
+:MarbleImage-USE-2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_4_1_1_1 ;
+  owl:sameAs :MarbleImage . # DEF matching this USE
+:IndexedFaceSet_2_4_1_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasCoord :Coordinate_2_4_1_1_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 1 2 6 5 -1 2 3 7 6 -1 3 0 4 7 -1 ) .
+:Coordinate_2_4_1_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_4_1_1_2 ;
+  x3do:point ( -0.3 0.0 0.3 0.3 0.0 0.3 0.3 0.0 -0.3 -0.3 0.0 -0.3 -0.4 0.2 0.4 0.4 0.2 0.4 0.4 0.2 -0.4 -0.4 0.2 -0.4 ) .
+:Transform_2_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_4 ;
+  x3do:hasChildren :Shape_2_4_2_1 ;
+  x3do:translation ( 0.0 4.85 0.0 ) .
+:Shape_2_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_2 ;
+  x3do:hasAppearance :Appearance_2_4_2_1_1 ;
+  x3do:hasGeometry :Box_2_4_2_1_2 .
+:Appearance_2_4_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_4_2_1_1_1 ;
+  x3do:hasMaterial :MarbleMaterial-USE-3 ;
+  x3do:hasTexture :MarbleImage-USE-3 .
+:TextureTransform_2_4_2_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_4_2_1_1 ;
+  x3do:rotation 0.5 ;
+  x3do:scale ( 1.0 0.2 ) ;
+  x3do:translation ( 0.2 0.3 ) .
+:MarbleMaterial-USE-3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_1_1 ;
+  owl:sameAs :MarbleMaterial . # DEF matching this USE
+:MarbleImage-USE-3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_4_2_1_1 ;
+  owl:sameAs :MarbleImage . # DEF matching this USE
+:Box_2_4_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:size ( 1.0 0.1 1.0 ) .
+:Transform_2_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_4 ;
+  x3do:hasChildren :Shape_2_4_3_1 ;
+  x3do:translation ( 0.0 5.05 0.0 ) .
+:Shape_2_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3 ;
+  x3do:hasAppearance :Appearance_2_4_3_1_1 ;
+  x3do:hasGeometry :Box_2_4_3_1_2 .
+:Appearance_2_4_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_4_3_1_1_1 ;
+  x3do:hasMaterial :MarbleMaterial-USE-4 ;
+  x3do:hasTexture :MarbleImage-USE-4 .
+:TextureTransform_2_4_3_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_4_3_1_1 ;
+  x3do:rotation 0.4 ;
+  x3do:scale ( 1.0 0.2 ) ;
+  x3do:translation ( 0.1 0.3 ) .
+:MarbleMaterial-USE-4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_3_1_1 ;
+  owl:sameAs :MarbleMaterial . # DEF matching this USE
+:MarbleImage-USE-4 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_4_3_1_1 ;
+  owl:sameAs :MarbleImage . # DEF matching this USE
+:Box_2_4_3_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:size ( 1.1 0.3 1.1 ) .

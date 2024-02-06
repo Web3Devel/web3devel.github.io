@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Cut.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element   {color: navy}
+span.attribute {color: green}
+span.value     {color: teal}
+span.plain     {color: black}
+span.gray      {color: gray}
+span.idName    {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE;} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF;} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF;} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.boxedBlock          {border: 1px solid grey;  }
+div.center {text-align: center}
+div.indented {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+/* https://stackoverflow.com/questions/10769016/display-image-on-text-link-hover-css-only 
+    position: relative;
+    left: 20px;*/
+.child {
+    float: right;
+    height: 0px;
+}
+.parent:hover {
+    background-color: lightyellow;
+}
+.parent:hover .child {
+    background-color: lightyellow;
+    height: 200px;
+}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>
+&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>
+&gt;
+</span>
+<div class="indented">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span>
+<div class="indented">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Cut.x3d">Cut.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Cutting plane parts: this file contains two prototype declarations used in creating a cutting plane. The example scene TexturePlane uses these for external prototype instances and creates a plane with one of a set of textures mapped to it. The texture choice is controlled by a fraction eventIn. SlidingPlane creates a texture plane that slides back and forth along the X axis, changing the texture based upon the X position.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">David R. Nadeau</span>'/&gt;
+</span><br />
+
+<span title="meta 'translator' provides name of person performing translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 July 1998</span>'/&gt;
+</span><br />
+
+<span title="meta 'translated' provides date of translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">2 February 2014</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">16 December 2023</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="CutPlane.x3d">CutPlane.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="TexturePlane.x3d">TexturePlane.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="originals/cut.wrl">originals/cut.wrl</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98" target="_blank">http://www.siggraph.org/s98</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.siggraph.org/s98/conference/courses/18.html"
+                   target="_blank">http://www.siggraph.org/s98/conference/courses/18.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0497.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0497.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm"
+                   target="_blank">http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Cut.x3d"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Cut.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+               <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span>
+</div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <span style="color:white">&lt;!--</span>
+               <span class="div.indented">
+                  <b>
+                     <a title="Event Graph ROUTE Table shows event connections"
+                         href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+                  </b> shows event connections</span>
+               <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+               <b>
+                  <i>Index for DEF nodes: </i>
+               </b>
+               <a title="go to this Appearance node" href="#App" class="idName">App</a>,
+<a title="go to this Text node" href="#Label" class="idName">Label</a>,
+<a title="go to this ProtoInstance node" href="#Plane" class="idName">Plane</a>,
+<a title="go to this Transform node"
+                   href="#PlanePosition"
+                   class="idName">PlanePosition</a>,
+<a title="go to this Script node" href="#Selector" class="idName">Selector</a>,
+<a title="go to this PlaneSensor node" href="#Slider" class="idName">Slider</a>,
+<a title="go to this Script node" href="#Translator" class="idName">Translator</a>
+<br /><hr width="10%"/>
+               <b>
+                  <i>Index for ProtoDeclare definitions: </i>
+               </b>
+               <a title="go to this declaration"
+                   href="#ProtoDeclare_SlidingPlane"
+                   class="prototype">SlidingPlane</a>,
+<a title="go to this declaration"
+                   href="#ProtoDeclare_TexturePlane"
+                   class="prototype">TexturePlane</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">--&gt;</span>
+<br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span>
+<div class="indented">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='<span class="value">"Copyright (c) 1997, David R. Nadeau"</span>'&#160;<span class="attribute">title</span>='<span class="value">Cutting Plane parts</span>'/&gt;
+</span><br />
+<a name="ProtoDeclare_TexturePlane"> </a> 
+<span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">TexturePlane</span>'&gt;
+</span>
+<div class="indented">
+<span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoInterface</span>&gt;
+</span>
+<div class="indented">
+                     <a name="TexturePlaneProtoField_textures"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">textures</span>'&#160;<span class="attribute">type</span>='<span class="value">MFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+</span>
+<div class="indented">
+                        <span title="XML comment">&lt;!--  initialized  with  ImageTexture  nodes  upon  use  --&gt;</span>
+                     </div><span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;/<span class="prototype">field</span>&gt;
+</span>
+<br />
+<a name="TexturePlaneProtoField_set_fraction"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_fraction</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</span>
+</div><span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoInterface</span>&gt;
+</span>
+<br />
+
+<span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoBody</span>&gt;
+</span>
+<div class="indented">
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+                           <a name="App"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">App</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Selector</span>.<span class="attribute">texture_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_texture</span>
+                           </a>]
+ --&gt;<br /></span>
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to App" href="#App" class="idName">App</a>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">solid</span>='<span class="value">false</span>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3</span>'&#160;<span class="attribute">texCoordIndex</span>='<span class="value">0 1 2 3</span>'&gt;
+</span>
+<div class="indented">
+&lt;<span class="element">TextureCoordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0</span>'/&gt;
+<br />
+
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0</span>'/&gt;
+</span>
+</div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>/&gt;
+</span><br />
+
+<span title="IndexedLineSet is a geometry node">&lt;<span class="element">IndexedLineSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3 0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0</span>'/&gt;
+</span>
+</div><span title="IndexedLineSet is a geometry node">&lt;/<span class="element">IndexedLineSet</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span>
+<br /><span title="XML comment">&lt;!--  ProtoBody  child  following  first  child  will  not  be  rendered,  since  the  first  child  determines  node  type  of  this  prototype.  --&gt;</span>
+<br />
+<a name="Selector"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Selector</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">texture_changed</span>&#160;<i>to</i>&#160;<span class="idName">App</span>.<span class="attribute">set_texture</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF;">&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Selector" href="#Selector" class="idName">Selector</a>'&#160;<span class="attribute">directOutput</span>='<span class="value">true</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">textures</span>'&#160;<span class="attribute">type</span>='<span class="value">MFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">texture_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_fraction</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</span><br />
+
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">IS</span>&gt;
+</span>
+<div class="indented">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                  title="connect interface events to this field in given node">textures</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                  href="#TexturePlane SlidingPlaneProtoField_textures"
+                                  class="prototype">textures</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                  title="connect interface events to this field in given node">set_fraction</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                  href="#TexturePlane SlidingPlaneProtoField_set_fraction"
+                                  class="prototype">set_fraction</a></span></span>'/&gt;
+</span>
+</div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;/<span class="element">IS</span>&gt;
+</span>
+<br />
+</div class="indented">
+</div class="indented">
+</div class="indented">
+</div class="indented">
+<code>
+                           <b>&lt;![CDATA[</b>
+                        </code>
+                        <pre>
+          
+ecmascript:
+    function initialize( ) {
+        texture_changed = textures[0];
+        Browser.println (&apos;[Cut Selector] initialize(): textures.length=&apos; + textures.length); // debug
+    }
+    function set_fraction( f, tm ) {
+        i = Math.floor(f * 10);
+        if ( i == 10 ) { i = 9; }
+        Browser.println (&apos;[Cut Selector] set_fraction(): i=&apos; + i); // debug
+        texture_changed = textures[i];
+    }
+
+        </pre>
+                        <code>
+                           <b>]]&gt;</b>
+                        </code>
+<div class="indented">
+<div class="indented">
+<div class="indented">
+<div class="indented">
+
+</div><span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF;">&lt;/<span class="element">Script</span>&gt;
+</span>
+<br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_1"
+                            href="#ROUTE_1"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Selector"
+                         class="idName">Selector</a>'<span title="X3D Tooltips: SFNode data type">&#160;<span class="attribute">fromField</span>='<span class="value">texture_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#App"
+                         class="idName">App</a>'<span title="X3D Tooltips: SFNode data type">&#160;<span class="attribute">toField</span>='<span class="value">set_texture</span>'</span>/&gt;
+</span>
+</div><span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoBody</span>&gt;
+</span>
+
+</div><span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+</span>
+<br />
+<a name="ProtoDeclare_SlidingPlane"> </a> 
+<span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">SlidingPlane</span>'&gt;
+</span>
+<div class="indented">
+<span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoInterface</span>&gt;
+</span>
+<div class="indented">
+                     <a name="SlidingPlaneProtoField_textures"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">textures</span>'&#160;<span class="attribute">type</span>='<span class="value">MFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+</span>
+<div class="indented">
+                        <span title="XML comment">&lt;!--  initialized  with  ImageTexture  nodes  upon  use  --&gt;</span>
+                     </div><span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;/<span class="prototype">field</span>&gt;
+</span>
+<br />
+<a name="SlidingPlaneProtoField_minMaxX"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">minMaxX</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec2f</span>'&#160;<span class="attribute">value</span>='<span class="value">0.0 1.0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span><br />
+<a name="SlidingPlaneProtoField_initialX"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">initialX</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">value</span>='<span class="value">0.0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span>
+</div><span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoInterface</span>&gt;
+</span>
+<br />
+
+<span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoBody</span>&gt;
+</span>
+<div class="indented">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 1.571</span>'&gt;
+</span>
+<div class="indented">
+                        <a name="Slider"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Slider</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">minPosition_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_minPosition</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">maxPosition_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_maxPosition</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">offset_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_offset</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="idName">PlanePosition</span>.<span class="attribute">set_translation</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="idName">Translator</span>.<span class="attribute">set_translation</span>
+                        </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF;">&lt;<span class="element">PlaneSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Slider" href="#Slider" class="idName">Slider</a>'&#160;<span class="attribute">description</span>='<span class="value">drag to see cross-section slices</span>'/&gt;
+</span></div><!--div.boxedBlock-->
+<br />
+<a name="PlanePosition"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">PlanePosition</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">Slider</span>.<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">offset_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                        </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to PlanePosition"
+                            href="#PlanePosition"
+                            class="idName">PlanePosition</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 -1.571</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+                           <a name="Plane"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Plane</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                           </a>]
+ --&gt;<br /></span>
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF;">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ProtoDeclare for this prototype instance"
+                               href="#ProtoDeclare_TexturePlane"
+                               class="prototype">TexturePlane</a>'&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Plane" href="#Plane" class="idName">Plane</a>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">IS</span>&gt;
+</span>
+<div class="indented">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                        title="connect interface events to this field in given node">textures</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                        href="#TexturePlane SlidingPlaneProtoField_textures"
+                                        class="prototype">textures</a></span></span>'/&gt;
+</span>
+</div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;/<span class="element">IS</span>&gt;
+</span>
+
+</div><span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoInstance</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 1.571</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.05 -1.2 0.0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>/&gt;
+</span><br />
+<a name="Label"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Label</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="idName">Translator</span>.<span class="attribute">label_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_string</span>
+                                 </a>]
+ --&gt;<br /></span>
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Label" href="#Label" class="idName">Label</a>'&#160;<span class="attribute">string</span>='<span class="value">""</span>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">size</span>='<span class="value">0.3</span>'&#160;<span class="attribute">style</span>='<span class="value">BOLD</span>'/&gt;
+</span>
+</div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+<a name="Translator"> </a> 
+<div class="boxedBlock">
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Translator</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="idName">Slider</span>.<span class="attribute">translation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Plane</span>.<span class="attribute">set_fraction</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">label_changed</span>&#160;<i>to</i>&#160;<span class="idName">Label</span>.<span class="attribute">set_string</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">minPosition_changed</span>&#160;<i>to</i>&#160;<span class="idName">Slider</span>.<span class="attribute">set_minPosition</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">maxPosition_changed</span>&#160;<i>to</i>&#160;<span class="idName">Slider</span>.<span class="attribute">set_maxPosition</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">offset_changed</span>&#160;<i>to</i>&#160;<span class="idName">Slider</span>.<span class="attribute">set_offset</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">offset_changed</span>&#160;<i>to</i>&#160;<span class="idName">PlanePosition</span>.<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF;">&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Translator"
+                         href="#Translator"
+                         class="idName">Translator</a>'&gt;
+</span>
+
+</div><!--div.boxedBlock-->
+<div class="indented">
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_translation</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">minMaxX</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec2f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">minPosition_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec2f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">fraction_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">initialX</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">offset_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">maxPosition_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec2f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF;">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">label_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</span><br />
+
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">IS</span>&gt;
+</span>
+<div class="indented">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                  title="connect interface events to this field in given node">minMaxX</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                  href="#TexturePlane SlidingPlaneProtoField_minMaxX"
+                                  class="prototype">minMaxX</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                  title="connect interface events to this field in given node">initialX</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                  href="#TexturePlane SlidingPlaneProtoField_initialX"
+                                  class="prototype">initialX</a></span></span>'/&gt;
+</span>
+</div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF;">&lt;/<span class="element">IS</span>&gt;
+</span>
+<br />
+</div class="indented">
+</div class="indented">
+</div class="indented">
+</div class="indented">
+<code>
+                           <b>&lt;![CDATA[</b>
+                        </code>
+                        <pre>
+          
+ecmascript:
+        function translate( x ) {
+        // compute the fraction using the given X position
+            f = (x-minMaxX[0]) / (minMaxX[1] - minMaxX[0]);
+        // send a fraction event
+            fraction_changed = f;
+        // send a new label string with 1 digit after decimal
+            label_changed[0] = Math.floor(f*10.0)/10.0;
+        }
+
+        function initialize( ) {
+        // set the plane sensor bounds
+            minPosition_changed[0] = minMaxX[0];
+            minPosition_changed[1] = 0.0;
+            maxPosition_changed[0] = minMaxX[1];
+            maxPosition_changed[1] = 0.0;
+        // set the plane sensor initial position
+            offset_changed[0] = initialX;
+            offset_changed[1] = 0.0;
+            offset_changed[2] = 0.0;
+        // compute the initial values
+            translate( initialX );
+        }
+
+        function set_translation( t, tm ) {
+        // compute the new values
+            translate( t[0] );
+        }
+
+        </pre>
+                        <code>
+                           <b>]]&gt;</b>
+                        </code>
+<div class="indented">
+<div class="indented">
+<div class="indented">
+<div class="indented">
+
+</div><span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF;">&lt;/<span class="element">Script</span>&gt;
+</span>
+<br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_2"
+                            href="#ROUTE_2"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Slider"
+                         class="idName">Slider</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">fromField</span>='<span class="value">translation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#PlanePosition"
+                         class="idName">PlanePosition</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_3"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_3"
+                            href="#ROUTE_3"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Slider"
+                         class="idName">Slider</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">fromField</span>='<span class="value">translation_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_4"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_4"
+                            href="#ROUTE_4"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Plane"
+                         class="idName">Plane</a>'<span title="X3D Tooltips: SFFloat data type">&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_5"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_5"
+                            href="#ROUTE_5"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: MFString data type">&#160;<span class="attribute">fromField</span>='<span class="value">label_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Label"
+                         class="idName">Label</a>'<span title="X3D Tooltips: MFString data type">&#160;<span class="attribute">toField</span>='<span class="value">set_string</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_6"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_6"
+                            href="#ROUTE_6"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFVec2f data type">&#160;<span class="attribute">fromField</span>='<span class="value">minPosition_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Slider"
+                         class="idName">Slider</a>'<span title="X3D Tooltips: SFVec2f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_minPosition</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_7"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_7"
+                            href="#ROUTE_7"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFVec2f data type">&#160;<span class="attribute">fromField</span>='<span class="value">maxPosition_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Slider"
+                         class="idName">Slider</a>'<span title="X3D Tooltips: SFVec2f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_maxPosition</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_8"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_8"
+                            href="#ROUTE_8"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">fromField</span>='<span class="value">offset_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Slider"
+                         class="idName">Slider</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_offset</span>'</span>/&gt;
+</span><br />
+<a name="ROUTE_9"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF;">&lt;<span class="route">
+                        <a title="HTML bookmark for this ROUTE is #ROUTE_9"
+                            href="#ROUTE_9"
+                            class="route">ROUTE</a>
+                     </span>&#160;<span class="attribute">fromNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#Translator"
+                         class="idName">Translator</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">fromField</span>='<span class="value">offset_changed</span>'</span>&#160;<span class="attribute">toNode</span>='
+<a title="go to the original DEF node definition"
+                         href="#PlanePosition"
+                         class="idName">PlanePosition</a>'<span title="X3D Tooltips: SFVec3f data type">&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'</span>/&gt;
+</span>
+</div><span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoBody</span>&gt;
+</span>
+
+</div><span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF;">&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+</span>
+<br /><span title="XML comment">&lt;!--  Display  scene  instructions  for  viewing  an  example  scene  with  a  corresponding  prototype  instance  --&gt;</span>
+<br />
+
+<span title="Background simulates ground and sky, using vertical arrays of wraparound color values or backdrop textures on all six sides">&lt;<span class="element">Background</span>&#160;<span class="attribute">skyColor</span>='<span class="value">0 0.333333 0.66667</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 2.5 0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">select text to view parent scene</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="CutPlane.x3d" target="_blank">CutPlane.x3d</a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutPlane.x3d"
+                      target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutPlane.x3d</a>"  "<a href="CutPlane.wrl" target="_blank">CutPlane.wrl</a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutPlane.wrl"
+                      target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutPlane.wrl</a>" '</span>
+&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"The Cut.x3d scene holds" "prototype declarations" "Select this text to view example usage" "in CutPlane.x3d scene"</span>'&gt;
+</span>
+<div class="indented">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">style</span>='<span class="value">BOLD</span>'/&gt;
+</span>
+</div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span>
+<br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.9 0.4</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br /><span title="XML comment">&lt;!--  Invisible  box  behind  text  makes  selection  easier  --&gt;</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">12 5 0.1</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 -2.5 0</span>'&gt;
+</span>
+<div class="indented">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">select text to view parent scene</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="TexturePlane.x3d" target="_blank">TexturePlane.x3d</a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TexturePlane.x3d"
+                      target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TexturePlane.x3d</a>"  "<a href="TexturePlane.wrl" target="_blank">TexturePlane.wrl</a>" "<a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TexturePlane.wrl"
+                      target="_blank">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TexturePlane.wrl</a>" '</span>
+&gt;
+</span>
+<div class="indented">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"or select this text to view example usage" "in TexturePlane.x3d scene"</span>'&gt;
+</span>
+<div class="indented">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">style</span>='<span class="value">BOLD</span>'/&gt;
+</span>
+</div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span>
+<br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.9 0.4</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+<br /><span title="XML comment">&lt;!--  Invisible  box  behind  text  makes  selection  easier  --&gt;</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span>
+<div class="indented">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">12 5 0.1</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span>
+<div class="indented">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</span>
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span>
+
+</div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span>
+
+</div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span>
+
+</div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span>
+
+</div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span>
+
+</div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span>
+<br /><span style="color:white">&lt;!--</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <span style="color:white">&lt;!--</span>
+            <span class="div.indented">
+               <b>
+                  <a title="Event Graph ROUTE Table shows event connections"
+                      href="#EventGraph">Event&#160;Graph ROUTE&#160;Table</a>
+               </b> shows event connections</span>
+            <span style="color:white">--&gt;</span>
+<br />&#160;
+<br />
+<span style="color:white">&lt;!--</span>
+            <b>
+               <i>Index for DEF nodes: </i>
+            </b>
+            <a title="go to this Appearance node" href="#App" class="idName">App</a>,
+<a title="go to this Text node" href="#Label" class="idName">Label</a>,
+<a title="go to this ProtoInstance node" href="#Plane" class="idName">Plane</a>,
+<a title="go to this Transform node"
+                href="#PlanePosition"
+                class="idName">PlanePosition</a>,
+<a title="go to this Script node" href="#Selector" class="idName">Selector</a>,
+<a title="go to this PlaneSensor node" href="#Slider" class="idName">Slider</a>,
+<a title="go to this Script node" href="#Translator" class="idName">Translator</a>
+<br /><hr width="10%"/>
+            <b>
+               <i>Index for ProtoDeclare definitions: </i>
+            </b>
+            <a title="go to this declaration"
+                href="#ProtoDeclare_SlidingPlane"
+                class="prototype">SlidingPlane</a>,
+<a title="go to this declaration"
+                href="#ProtoDeclare_TexturePlane"
+                class="prototype">TexturePlane</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">--&gt;</span>
+         <!-- apply-templates * | comment() complete -->
+      </div>
+      <div style="background-color:#DDEEFF;">
+         <br/>
+         <p style="text-align:center;">
+            <b>
+               <a name="EventGraph"> </a>
+               <a href="#EventGraph" title="bookmark link">Event Graph ROUTE Table</a> entries with 9 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE"
+                   title="X3D Tooltips: ROUTE"
+                   target="_tooltip_type">ROUTE</a> connections total, showing <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#Eventmodel"
+                   target="_blank"
+                   title="X3D 4.0 Architecture, Concepts, Event Model">X3D event-model relationships</a> for this scene.</b>
+         </p>
+         <p style="text-align:center;">Each row shows an <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#EventCascade"
+                target="_blank">event cascade</a> that may occur during a single <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/glossary.html#Timestamp"
+                target="_blank">timestamp</a> interval between frame renderings, as part of the <a href="https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/concepts.html#ExecutionModel"
+                target="_blank">X3D execution model</a>.</p>
+         <!-- EventGraph -->
+         <table border="1"
+                 style="border: 1px solid black; margin-left: auto; margin-right: auto; background-color:#DDEEFF;"><!--starting first row-->
+<tr>
+         <td style="text-align:right; background-color:white;" title="">
+               <a href="#Selector" title="DEF name">Selector</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Script</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Script.texture"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Script.texture">texture_changed</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFNode data type">
+                  <a target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFNode">SFNode</a>
+               </span>
+            </td>
+            <td style="vertical-align:middle; text-align:center; background-color:white;">
+               <div style="background-color:LightYellow" title="">
+                  <br/>
+                  <a title="go to #ROUTE_1" href="#ROUTE_1">ROUTE</a>
+                  <br/> event to <br/>
+                  <span style="vertical-align:top; font-size: smaller;">
+                     <a title="ROUTE depth=1">(1)</a>
+                  </span>
+               </div>
+            </td>
+            <td style="text-align:left; background-color:LightYellow;" title="">
+               <a href="#App" title="DEF name">App</a>
+               <br/>
+               <b>
+                  <span title="X3D node name">Appearance</span>
+               </b>
+               <br/>
+               <b>
+                  <a title="X3D Tooltips: field Appearance.texture"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#Appearance.texture">set_texture</a>
+               </b>
+               <br/>
+               <span title="X3D Tooltips: SFNode data type">
+                  <a title="X3D Tooltips: SFNode data type"
+                      target="_tooltip_type"
+                      href="https://www.web3d.org/x3d/content/X3dTooltips.html#SFNode">SFNode</a>
+               </span>
+            </td>
+            <!--time to start new row-->
+            <!--row finished-->
+</tr>
+</table>
+         <br/>
+         <br/>
+      </div>
+      <hr style="width:100%"/>
+      <span style="color:white">--&gt;</span>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+Online at 
+<br/>
+         <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutIndex.html"
+             target="_top">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/CutIndex.html</a>
+         <span style="color:white">--&gt;</span>
+         <br/>
+         <span style="color:white">&lt;!--</span>
+Version control at 
+<br/>
+         <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Cut.x3d"
+             target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Cut.x3d</a>
+         <span style="color:white">--&gt;</span>
+      </p>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color legend: X3D terminology <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches XML terminology 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;" >(Light-blue background: event-based behavior node or statement)</span>
+<span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background inside box: inserted documentation)</span>
+<span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+&#160;&#160;&#160;
+&lt;<span class="prototype">ProtoInstance</span>
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">ProtoInstance</span>&gt;
+<span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a>, and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips, and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

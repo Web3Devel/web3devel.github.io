@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 30 Scripts</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter29WorldInfo/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter30Scripts/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter31Prototypes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 30 Scripts</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter30Scripts/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 30.4 Script Spiraling Ball Trace" title="Figure 30.4 Script Spiraling Ball Trace" hspace="10" 
+                          src="_viewpoints/Figure30_4ScriptSpiralingBallTrace.x3d._VP_side_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+						Scripts allow authors to define their own event-handling code to improve animation sophistication.
+                    </p>
+                    
+
+                    
+                    <p>
+                            Many actions are too complex for animation nodes, such as computed animation paths (e.g. gravity), 
+                            algorithmic shapes (e.g. fractals), or collaborative environments (e.g. games).
+                            You can create new sensors, interpolators, etc., using program scripts written in 
+                            Java (a powerful general-purpose language) or ECMAscript (JavaScript, an easy-to-learn language).
+                            The Script node selects a program script, specified by a url or contained source code.
+                            Program scripts have field and event interface declarations, each with a data type, a name, and an initial value (for fields only).
+                    </p>
+                    
+
+                    
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch30.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0399.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;5 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure30_1ScriptSlidingBall"/>
+               <a href="Figure30_1ScriptSlidingBallIndex.html">
+                  <img src="_thumbnails/Figure30_1ScriptSlidingBallThumbnail.png"
+                        height="48"
+                        alt="Figure30_1ScriptSlidingBall"
+                        title="Figure30_1ScriptSlidingBall"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure30_1ScriptSlidingBallIndex.html">Figure 30 1 Script Sliding Ball</a>
+            </td>
+            <td>A sliding red sphere and a custom interpolation script. Three ways to include ECMAScript (JavaScript) programming are compared: external file, url script code, and embedded script code. Recommendation: use embedded script code inside a CDATA block.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure30_2ScriptBackgroundSelect"/>
+               <a href="Figure30_2ScriptBackgroundSelectIndex.html">
+                  <img src="_thumbnails/Figure30_2ScriptBackgroundSelectThumbnail.png"
+                        height="48"
+                        alt="Figure30_2ScriptBackgroundSelect"
+                        title="Figure30_2ScriptBackgroundSelect"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure30_2ScriptBackgroundSelectIndex.html">Figure 30 2 Script Background Select</a>
+            </td>
+            <td>Click on a geometric Shape to change the scene Background. A Script node controls the state changes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure30_3ScriptSoundActivate"/>
+               <a href="Figure30_3ScriptSoundActivateIndex.html">
+                  <img src="_thumbnails/Figure30_3ScriptSoundActivateThumbnail.png"
+                        height="48"
+                        alt="Figure30_3ScriptSoundActivate"
+                        title="Figure30_3ScriptSoundActivate"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure30_3ScriptSoundActivateIndex.html">Figure 30 3 Script Sound Activate</a>
+            </td>
+            <td>A pair of filter scripts used to create a toggle on-off switch.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure30_4ScriptSpiralingBallTrace"/>
+               <a href="Figure30_4ScriptSpiralingBallTraceIndex.html">
+                  <img src="_thumbnails/Figure30_4ScriptSpiralingBallTraceThumbnail.png"
+                        height="48"
+                        alt="Figure30_4ScriptSpiralingBallTrace"
+                        title="Figure30_4ScriptSpiralingBallTrace"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure30_4ScriptSpiralingBallTraceIndex.html">Figure 30 4 Script Spiraling Ball Trace</a>
+            </td>
+            <td>A spiraling red sphere and a custom interpolation script.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure30_5ScriptTorusBuilder"/>
+               <a href="Figure30_5ScriptTorusBuilderIndex.html">
+                  <img src="_thumbnails/Figure30_5ScriptTorusBuilderThumbnail.png"
+                        height="48"
+                        alt="Figure30_5ScriptTorusBuilder"
+                        title="Figure30_5ScriptTorusBuilder"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure30_5ScriptTorusBuilderIndex.html">Figure 30 5 Script Torus Builder</a>
+            </td>
+            <td>A torus shape built with a donut-maker program script. Also see Figures 31.6 and 31.7 for comparison.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter29WorldInfo/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter30Scripts/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter31Prototypes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC  "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="Figure15.15TwistedBar.Extrusion1.svg"
+     width="900"
+     height="750">
+   <rect width="900" height="750" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+-1 1 1 1 1 -1 -1 -1 -1 1'/>
+-->
+<!--
+			Min xPos = -1
+			Max xPos = 1			
+			Min yPos = -1
+			Max yPos = 1-->
+<g transform="translate(450 375) scale(100 -100)">
+      <g style="fill:none;stroke:blue;stroke-width:0.04">
+         <line id="line1" x1="-1" y1="1" x2="1" y2="1"/>
+         <line id="line2" x1="1" y1="1" x2="1" y2="-1"/>
+         <line id="line3" x1="1" y1="-1" x2="-1" y2="-1"/>
+         <line id="line4" x1="-1" y1="-1" x2="-1" y2="1"/>
+      </g>
+      <g style="fill:red;stroke:red;stroke-width:0.001">
+         <circle id="marker1" cx="-1" cy="1" r="0.05"/>
+         <set xlink:href="#markerText1" attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker1.mouseover"
+              end="marker1.mouseout"/>
+         <circle id="marker2" cx="1" cy="1" r="0.05"/>
+         <set xlink:href="#markerText2" attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker2.mouseover"
+              end="marker2.mouseout"/>
+         <circle id="marker3" cx="1" cy="-1" r="0.05"/>
+         <set xlink:href="#markerText3" attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker3.mouseover"
+              end="marker3.mouseout"/>
+         <circle id="marker4" cx="-1" cy="-1" r="0.05"/>
+         <set xlink:href="#markerText4" attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker4.mouseover"
+              end="marker4.mouseout"/>
+         <circle id="marker5" cx="-1" cy="1" r="0.05"/>
+         <set xlink:href="#markerText5" attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker5.mouseover"
+              end="marker5.mouseout"/>
+      </g>
+   </g>
+   <g id="markerTexts" transform="translate(450 375)"
+      style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none">
+      <text id="markerText1" x="-95" y="-105">(-1,1)</text>
+      <text id="markerText2" x="105" y="-105">(1,1)</text>
+      <text id="markerText3" x="105" y="95">(1,-1)</text>
+      <text id="markerText4" x="-95" y="95">(-1,-1)</text>
+      <text id="markerText5" x="-95" y="-105">(-1,1)</text>
+   </g>
+   <g transform="translate(450 375) scale(100 -100)"
+      style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+      <line x1="0" y1="-1.1" x2="0" y2="1.1"/>
+      <line x1="-1.1" y1="0" x2="1.1" y2="0"/>
+      <g style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+         <line x1="-1" y1="-0.03" x2="-1" y2="0.03"/>
+         <line x1="-0.8" y1="-0.03" x2="-0.8" y2="0.03"/>
+         <line x1="-0.6000000000000001" y1="-0.03" x2="-0.6000000000000001" y2="0.03"/>
+         <line x1="-0.4000000000000001" y1="-0.03" x2="-0.4000000000000001" y2="0.03"/>
+         <line x1="-0.20000000000000007" y1="-0.03" x2="-0.20000000000000007"
+               y2="0.03"/>
+         <line x1="-5.551115123125783E-17" y1="-0.03" x2="-5.551115123125783E-17"
+               y2="0.03"/>
+         <line x1="0.19999999999999996" y1="-0.03" x2="0.19999999999999996" y2="0.03"/>
+         <line x1="0.39999999999999997" y1="-0.03" x2="0.39999999999999997" y2="0.03"/>
+         <line x1="0.6" y1="-0.03" x2="0.6" y2="0.03"/>
+         <line x1="0.8" y1="-0.03" x2="0.8" y2="0.03"/>
+         <line x1="1" y1="-0.03" x2="1" y2="0.03"/>
+         <line y1="-1" x1="-0.03" y2="-1" x2="0.03"/>
+         <line y1="-0.8" x1="-0.03" y2="-0.8" x2="0.03"/>
+         <line y1="-0.6000000000000001" x1="-0.03" y2="-0.6000000000000001" x2="0.03"/>
+         <line y1="-0.4000000000000001" x1="-0.03" y2="-0.4000000000000001" x2="0.03"/>
+         <line y1="-0.20000000000000007" x1="-0.03" y2="-0.20000000000000007"
+               x2="0.03"/>
+         <line y1="-5.551115123125783E-17" x1="-0.03" y2="-5.551115123125783E-17"
+               x2="0.03"/>
+         <line y1="0.19999999999999996" x1="-0.03" y2="0.19999999999999996" x2="0.03"/>
+         <line y1="0.39999999999999997" x1="-0.03" y2="0.39999999999999997" x2="0.03"/>
+         <line y1="0.6" x1="-0.03" y2="0.6" x2="0.03"/>
+         <line y1="0.8" x1="-0.03" y2="0.8" x2="0.03"/>
+         <line y1="1" x1="-0.03" y2="1" x2="0.03"/>
+      </g>
+   </g>
+</svg>

@@ -1,0 +1,8 @@
+
+          
+ecmascript:
+	function set_touchTime( tm, ts ) {
+		url_changed = sendUrl;
+	}
+
+        

@@ -1,0 +1,3 @@
+<ExternProtoDeclare name="TexturePlane"/> has no corresponding ProtoInstance [/X3D/Scene/ExternProtoDeclare[1], warning]
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='4.0 0.4 2.5' which has Y-value height of 0.4[/X3D/Scene/Viewpoint, warning]
+empty <Appearance DEF=''/> found without child Material, TwoSidedMaterial, PhysicalMaterial, UnlitMaterial, FillProperties, LineProperties, PointProperties or texture node [/X3D/Scene/Transform/Shape/Appearance, warning]

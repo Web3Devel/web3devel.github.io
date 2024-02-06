@@ -1,0 +1,9 @@
+
+      
+ecmascript:
+		function set_rotation( rot, et )
+		{
+			one_changed = rot[3];
+		}
+
+    

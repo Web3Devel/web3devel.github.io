@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 07 - Scaling Shapes</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06-RotatingShapes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08-AnimatingPositionOrientationScale/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 07 - Scaling Shapes</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left">
+
+                    <p>
+                        Scale grows or shrinks a coordinate system by a scaling factor in X, Y, and Z.
+                        Transform operations are bottom-up: children shapes are first scaled, rotated, then translated.
+                        Order is fixed, independent of the field order that happens to occur in the Transform node.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch07.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0064.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 07.11 Scaled Arches" title="Figure 07.11 Scaled Arches" hspace="10" 
+                          src="_viewpoints/Figure07.11ScaledArches.x3d._VP_View_arches.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;11 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.04bScale2xWithAxes"/>
+               <a href="Figure07.04bScale2xWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.04bScale2xWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.04bScale2xWithAxesIndex.html">Figure 07.04b Scale 2x With Axes</a>
+            </td>
+            <td>Scaling up by 2.0 along the X-axis direction and building a sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.05bScale0.5xWithAxes"/>
+               <a href="Figure07.05bScale0.5xWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.05bScale0.5xWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.05bScale0.5xWithAxesIndex.html">Figure 07.05b Scale 0.5x With Axes</a>
+            </td>
+            <td>Scaling down by 0.5 along the X-axis direction and building a sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.06bScale2yWithAxes"/>
+               <a href="Figure07.06bScale2yWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.06bScale2yWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.06bScale2yWithAxesIndex.html">Figure 07.06b Scale 2y With Axes</a>
+            </td>
+            <td>Scaling up by 2.0 along the Y-axis direction and building a sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.07bScale0.5zWithAxes"/>
+               <a href="Figure07.07bScale0.5zWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.07bScale0.5zWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.07bScale0.5zWithAxesIndex.html">Figure 07.07b Scale 0.5z With Axes</a>
+            </td>
+            <td>Scaling down by 0.5 along the Z-axis direction and building a sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.08bScale2x_0.5y_4zWithAxes"/>
+               <a href="Figure07.08bScale2x_0.5y_4zWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.08bScale2x_0.5y_4zWithAxesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.08bScale2x_0.5y_4zWithAxesIndex.html">Figure 07.08b Scale 2x 0.5y 4z With Axes</a>
+            </td>
+            <td>Scaling up by 2.0 in the X direction, scaling down by 0.5 in the Y direction, scaling up by 4.0 in the Z direction, and building a sphere, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.09SimpleSpaceshipBodyWingsWithAxes"/>
+               <a href="Figure07.09SimpleSpaceshipBodyWingsWithAxesIndex.html">
+                  <img src="_thumbnails/Figure07.09SimpleSpaceshipBodyWingsWithAxesThumbnail.png"
+                       height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.09SimpleSpaceshipBodyWingsWithAxesIndex.html">Figure 07.09 Simple Spaceship Body Wings With Axes</a>
+            </td>
+            <td>A simple spaceship built with a cylinder and a sphere, each scaled within its own coordinate system, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.10SimpleSpaceship"/>
+               <a href="Figure07.10SimpleSpaceshipIndex.html">
+                  <img src="_thumbnails/Figure07.10SimpleSpaceshipThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.10SimpleSpaceshipIndex.html">Figure 07.10 Simple Spaceship</a>
+            </td>
+            <td>A simple spaceship built with shapes in scaled coordinate systems, with coordinate axes superimposed to show X3D/VRML directions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.11ScaledArches"/>
+               <a href="Figure07.11ScaledArchesIndex.html">
+                  <img src="_thumbnails/Figure07.11ScaledArchesThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.11ScaledArchesIndex.html">Figure 07.11 Scaled Arches</a>
+            </td>
+            <td>An archway with smaller archways on each side created in translated, scaled coordinate systems. Also see Figures 6.10, 7.11 and 12.1 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.12aSimpleTree"/>
+               <a href="Figure07.12aSimpleTreeIndex.html">
+                  <img src="_thumbnails/Figure07.12aSimpleTreeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.12aSimpleTreeIndex.html">Figure 07.12a Simple Tree</a>
+            </td>
+            <td>A tree at its original size. Also see Figures 7.12a, 7.12b and 7.13 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.12bVerticallyScaledTree"/>
+               <a href="Figure07.12bVerticallyScaledTreeIndex.html">
+                  <img src="_thumbnails/Figure07.12bVerticallyScaledTreeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.12bVerticallyScaledTreeIndex.html">Figure 07.12b Vertically Scaled Tree</a>
+            </td>
+            <td>A tree scaled up about a center point set at the base of the tree trunk. Also see Figures 7.12a, 7.12b and 7.13 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure07.13DiagonallyScaledTree"/>
+               <a href="Figure07.13DiagonallyScaledTreeIndex.html">
+                  <img src="_thumbnails/Figure07.13DiagonallyScaledTreeThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure07.13DiagonallyScaledTreeIndex.html">Figure 07.1 3Diagonally Scaled Tree</a>
+            </td>
+            <td>A tree scaled along a diagonal axis using scale orientation. Also see Figures 7.12a, 7.12b and 7.13 for comparison.</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter07-ScalingShapes</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06-RotatingShapes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08-AnimatingPositionOrientationScale/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

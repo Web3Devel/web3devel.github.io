@@ -1,0 +1,1 @@
+<Material DEF=''/> diffuseColor='3.0E-6 0.0 0.999997' contains a negative value [/X3D/Scene/Transform/Transform[31]/Shape/Appearance/Material, warning]

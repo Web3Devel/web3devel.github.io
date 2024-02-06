@@ -1,0 +1,187 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Torch2.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Torch2.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Medieval torch with medium-resolution detail.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau, John L. Moreland, Michael M. Heck' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Torches.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Torches3.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/torch2.wrl' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0389.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0397.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Torch2.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Torch2.x3d" .
+:meta dcterms:description "Medieval torch with medium-resolution detail." .
+:meta dcterms:creator "David R. Nadeau, John L. Moreland, Michael M. Heck" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Torches.x3d" .
+:meta dcterms:reference "Torches3.x3d" .
+:meta dcterms:reference "originals/torch2.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0389.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0397.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Torch2.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Transform_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Torch2.x3d' .
+:Transform_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_2_1, :Ring, :Transform_2_2_3, :Flames ;
+  x3do:scale ( 0.5 0.5 0.5 ) ;
+  x3do:translation ( 0.0 0.0 0.2 ) .
+:Transform_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasChildren :Shape_2_2_1_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 3.14 ) ;
+  x3do:translation ( 0.0 -0.75 0.0 ) .
+:Shape_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_1 ;
+  x3do:hasAppearance :Gray ;
+  x3do:hasGeometry :Cone_2_2_1_1_2 .
+:Gray a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasMaterial :Material_2_2_1_1_1_1 ;
+  x3do:DEF 'Gray' .
+:Material_2_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Gray ;
+  x3do:diffuseColor ( 0.4 0.4 0.4 ) ;
+  x3do:specularColor ( 0.7 0.7 0.7 ) .
+:Cone_2_2_1_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:bottomRadius 0.15 ;
+  x3do:height 1.5 .
+:Ring a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasAppearance :Gray-USE-1 ;
+  x3do:hasGeometry :Cylinder_2_2_2_2 ;
+  x3do:DEF 'Ring' .
+:Gray-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Ring ;
+  owl:sameAs :Gray . # DEF matching this USE
+:Cylinder_2_2_2_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Ring ;
+  x3do:bottom false ;
+  x3do:height 0.1 ;
+  x3do:radius 0.4 ;
+  x3do:top false .
+:Transform_2_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasChildren :Ring-USE-1 ;
+  x3do:translation ( 0.0 0.2 0.0 ) .
+:Ring-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_3 ;
+  owl:sameAs :Ring . # DEF matching this USE
+:Flames a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_4_1 ;
+  x3do:DEF 'Flames' .
+:IndexedFaceSet_2_2_4_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Flames ;
+  x3do:hasCoord :Coordinate_2_2_4_1_1 ;
+  x3do:hasColor :Color_2_2_4_1_2 ;
+  x3do:coordIndex ( 0 1 2 -1 3 4 5 -1 6 7 8 -1 ) .
+:Coordinate_2_2_4_1_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_4_1 ;
+  x3do:point ( 0.25 0.0 0.0 0.15 1.0 0.1 0.05 0.0 0.15 0.18 0.0 0.05 0.0 1.2 0.05 -0.1 0.0 0.05 -0.0 0.0 0.15 -0.13 0.8 0.1 -0.25 0.0 0.0 ) .
+:Color_2_2_4_1_2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedFaceSet_2_2_4_1 ;
+  x3do:color ( 1.0 0.0 0.0 0.9 0.5 0.0 1.0 0.0 0.0 0.9 0.3 0.0 1.0 1.0 0.0 0.9 0.3 0.0 0.7 0.1 0.2 0.9 0.8 0.0 1.0 0.0 0.0 ) .

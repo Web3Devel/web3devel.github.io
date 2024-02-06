@@ -1,0 +1,259 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/Figure27_3CollisionDetectionSpinningOrb.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure27_3CollisionDetectionSpinningOrb.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'tovrmlx3d.exe ROUTE validation confused by similar DEF names OrbSpin, OrbSpinner' ;
+  x3do:name 'TODO Castle Game Engine view3dscene Issue' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 27.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch27/27fig03.htm' ;
+  x3do:name 'reference' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '26 October 2000' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An orb that animates (for a single revolution) when the viewer collides with its box proxy shape. Walk towards the orb by using the up-arrow key.' ;
+  x3do:name 'description' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/Figure27_3CollisionDetectionSpinningOrb.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure27_3CollisionDetectionSpinningOrb.x3d" .
+:meta dcterms:creator "Figure 27.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch27/27fig03.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "26 October 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "An orb that animates (for a single revolution) when the viewer collides with its box proxy shape. Walk towards the orb by using the up-arrow key." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/Figure27_3CollisionDetectionSpinningOrb.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :NavigationInfo_2_4, :Group_2_5, :WispyAmp, :Clock, :OrbSpinner, :WispyVolume ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_11, :ROUTE_2_12, :ROUTE_2_14, :ROUTE_2_15 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure27_3CollisionDetectionSpinningOrb.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Zoom in on the orb to trigger the Collision node' ;
+  x3do:position ( 0 2 10 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Close-up viewpoint by the orb that triggers the Collision node' ;
+  x3do:position ( 0 0.8 2.5 ) .
+:NavigationInfo_2_4 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:avatarSize ( 2 1 0.5 ) ;
+  x3do:headlight false ;
+  x3do:speed 2 ;
+  x3do:type '"WALK" "EXAMINE" "ANY"' .
+:Group_2_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_5_1, :Transform_2_5_2, :OrbCollide, :Shape_2_5_4, :Transform_2_5_5 .
+:Transform_2_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Floor ;
+  x3do:translation ( 0 0 2.5 ) .
+:Floor a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Floor' ;
+  x3do:url '"../Chapter25LevelOfDetail/Figure25_06DungeonRoomFloor.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_06DungeonRoomFloor.x3d" "../Chapter25LevelOfDetail/Figure25_06DungeonRoomFloor.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter25LevelOfDetail/Figure25_06DungeonRoomFloor.wrl"' .
+:Transform_2_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Floor-USE-1 ;
+  x3do:translation ( 0 0 -2.5 ) .
+:Floor-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_5_2 ;
+  owl:sameAs :Floor . # DEF matching this USE
+:OrbCollide a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasProxy :ProxyGeometryTransform ;
+  x3do:hasChildren :ProxyGeometryTransform-USE-1, :OrbSpin ;
+  x3do:DEF 'OrbCollide' .
+:ProxyGeometryTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OrbCollide ;
+  x3do:hasChildren :Shape_2_5_3_1_1 ;
+  x3do:DEF 'ProxyGeometryTransform' ;
+  x3do:translation ( 0 0.6 0 ) .
+:Shape_2_5_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ProxyGeometryTransform ;
+  x3do:hasGeometry :Box_2_5_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_3_1_1_2 .
+:Box_2_5_3_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_3_1_1 ;
+  x3do:size ( 0.4 1.2 0.4 ) .
+:Appearance_2_5_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_1_1 ;
+  x3do:hasMaterial :Material_2_5_3_1_1_2_1 .
+:Material_2_5_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_3_1_1_2 ;
+  x3do:transparency 0.8 .
+:ProxyGeometryTransform-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OrbCollide ;
+  owl:sameAs :ProxyGeometryTransform . # DEF matching this USE
+:OrbSpin a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OrbCollide ;
+  x3do:hasChildren :PointLight_2_5_3_3_1, :Shape_2_5_3_3_2 ;
+  x3do:DEF 'OrbSpin' ;
+  x3do:translation ( 0 1 0 ) .
+:PointLight_2_5_3_3_1 a owl:NamedIndividual, x3do:PointLight ;
+  x3do:hasParent :OrbSpin ;
+  x3do:ambientIntensity 0.2 ;
+  x3do:color ( 0.7 0.5 0 ) ;
+  x3do:location ( 0.3 0 0 ) ;
+  x3do:radius 10 .
+:Shape_2_5_3_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :OrbSpin ;
+  x3do:hasAppearance :Appearance_2_5_3_3_2_1 ;
+  x3do:hasGeometry :Sphere_2_5_3_3_2_2 .
+:Appearance_2_5_3_3_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_3_2 ;
+  x3do:hasTexture :ImageTexture_2_5_3_3_2_1_1 ;
+  x3do:hasMaterial :Material_2_5_3_3_2_1_2 .
+:ImageTexture_2_5_3_3_2_1_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_5_3_3_2_1 ;
+  x3do:url '"fire.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/fire.jpg"' .
+:Material_2_5_3_3_2_1_2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_3_3_2_1 ;
+  x3do:emissiveColor ( 0.8 0.4 0.1 ) .
+:Sphere_2_5_3_3_2_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_3_3_2 ;
+  x3do:radius 0.2 .
+:Shape_2_5_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasAppearance :PedestalColor ;
+  x3do:hasGeometry :IndexedFaceSet_2_5_4_2 .
+:PedestalColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4 ;
+  x3do:hasMaterial :Material_2_5_4_1_1 ;
+  x3do:DEF 'PedestalColor' .
+:Material_2_5_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :PedestalColor ;
+  x3do:diffuseColor ( 0.7 0.6 0.5 ) .
+:IndexedFaceSet_2_5_4_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_5_4 ;
+  x3do:hasCoord :Coordinate_2_5_4_2_1 ;
+  x3do:coordIndex ( 0 1 4 -1 1 2 4 -1 2 3 4 -1 3 0 4 -1 ) .
+:Coordinate_2_5_4_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_5_4_2 ;
+  x3do:point ( -0.12 0.03 0.12 0.12 0.03 0.12 0.12 0.03 -0.12 -0.12 0.03 -0.12 0.0 0.63 0.0 ) .
+:Transform_2_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Shape_2_5_5_1 ;
+  x3do:translation ( 0 0.015 0 ) .
+:Shape_2_5_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasAppearance :PedestalColor-USE-1 ;
+  x3do:hasGeometry :Box_2_5_5_1_2 .
+:PedestalColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_1 ;
+  owl:sameAs :PedestalColor . # DEF matching this USE
+:Box_2_5_5_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_5_1 ;
+  x3do:size ( 0.4 0.03 0.4 ) .
+:WispyAmp a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :Wispy ;
+  x3do:DEF 'WispyAmp' ;
+  x3do:intensity 0.5 .
+:Wispy a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :WispyAmp ;
+  x3do:DEF 'Wispy' ;
+  x3do:description 'drone' ;
+  x3do:loop true ;
+  x3do:url '"drone1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter27SensingVisibilityProximityCollision/drone1.wav"' .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '8' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'OrbCollide' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Clock' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'OrbCollide' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Wispy' .
+:OrbSpinner a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OrbSpinner' ;
+  x3do:key ( 0 0.5 1 ) ;
+  x3do:keyValue ( 0 1 0 0.0 0 1 0 3.14 0 1 0 6.28 ) .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OrbSpinner' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OrbSpinner' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'OrbSpin' .
+:WispyVolume a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'WispyVolume' ;
+  x3do:key ( 0 0.1 0.9 1 ) ;
+  x3do:keyValue ( 0 0.6 0.6 0 ) .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'WispyVolume' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'WispyVolume' ;
+  x3do:toField 'set_intensity' ;
+  x3do:toNode 'WispyAmp' .

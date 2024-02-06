@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 20 Lighting</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19NormalsShading/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter20Lighting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter21ShinyMaterials/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 20 Lighting</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter20Lighting/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 20.06b Point Light Spheres Intensity" title="Figure 20.06b Point Light Spheres Intensity" hspace="10" 
+                          src="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 20.13a Directional Light Sunrise" title="Figure 20.13a Directional Light Sunrise" hspace="10" 
+                          src="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Vaulted_ceiling.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							Lights provide virtual illumination that allows objects to be seen.
+                    </p>
+                    
+
+
+                    <p>
+                            By default, you have one light in the scene, attached to your head.
+                            For more realism, you can add multiple lights: suns, light bulbs, candles, flashlights, spotlights, firelight.
+                            Lights can be positioned, oriented, and colored.
+                            Lights do not cast shadows.
+                    </p>
+                    
+
+
+                    <p>
+                            There are three types of lights: PointLight, DirectionalLight, and SpotLight.
+                            All lights have an on/off, intensity, ambient effect, and color fields.
+                            PointLight and SpotLight nodes have a location, radius, and attenuation.
+                            DirectionalLight and SpotLight nodes have a direction.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch20.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0299.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;20 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_04HeadlightSpheres"/>
+               <a href="Figure20_04HeadlightSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_04HeadlightSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_04HeadlightSpheres"
+                        title="Figure20_04HeadlightSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_04HeadlightSpheresIndex.html">Figure 20 04 Headlight Spheres</a>
+            </td>
+            <td>A sphere world illuminated by the headlight. Also see Figures 20.4, 20.6a, 20.6b, 20.7, 20.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_05FlatMesh"/>
+               <a href="Figure20_05FlatMeshIndex.html">
+                  <img src="_thumbnails/Figure20_05FlatMeshThumbnail.png"
+                        height="48"
+                        alt="Figure20_05FlatMesh"
+                        title="Figure20_05FlatMesh"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_05FlatMeshIndex.html">Figure 20 05 Flat Mesh</a>
+            </td>
+            <td>A flat mesh created using an ElevationGrid node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_06aPointLightSpheres"/>
+               <a href="Figure20_06aPointLightSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_06aPointLightSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_06aPointLightSpheres"
+                        title="Figure20_06aPointLightSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_06aPointLightSpheresIndex.html">Figure 20 06a Point Light Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a point light in the center. Also see Figures 20.4, 20.6a, 20.6b, 20.7, 20.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_06bPointLightSpheresIntensity"/>
+               <a href="Figure20_06bPointLightSpheresIntensityIndex.html">
+                  <img src="_thumbnails/Figure20_06bPointLightSpheresIntensityThumbnail.png"
+                        height="48"
+                        alt="Figure20_06bPointLightSpheresIntensity"
+                        title="Figure20_06bPointLightSpheresIntensity"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_06bPointLightSpheresIntensityIndex.html">Figure 20 06b Point Light Spheres Intensity</a>
+            </td>
+            <td>A sphere world illuminated by a point light with its ambient intensity set high. Also see Figures 20.4, 20.6a, 20.6b, 20.7, 20.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_07PointLightSpheresAttenuation"/>
+               <a href="Figure20_07PointLightSpheresAttenuationIndex.html">
+                  <img src="_thumbnails/Figure20_07PointLightSpheresAttenuationThumbnail.png"
+                        height="48"
+                        alt="Figure20_07PointLightSpheresAttenuation"
+                        title="Figure20_07PointLightSpheresAttenuation"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_07PointLightSpheresAttenuationIndex.html">Figure 20 07 Point Light Spheres Attenuation</a>
+            </td>
+            <td>A sphere world illuminated by a point light with attenuation control. Also see Figures 20.4, 20.6a, 20.6b, 20.7, 20.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_08PointLightSpheresSmallRadius"/>
+               <a href="Figure20_08PointLightSpheresSmallRadiusIndex.html">
+                  <img src="_thumbnails/Figure20_08PointLightSpheresSmallRadiusThumbnail.png"
+                        height="48"
+                        alt="Figure20_08PointLightSpheresSmallRadius"
+                        title="Figure20_08PointLightSpheresSmallRadius"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_08PointLightSpheresSmallRadiusIndex.html">Figure 20 08 Point Light Spheres Small Radius</a>
+            </td>
+            <td>A sphere world illuminated by a point light with a small radius. Also see Figures 20.4, 20.6a, 20.6b, 20.7, 20.8 for comparison.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_09GlowingOrbArchwaysExhibit"/>
+               <a href="Figure20_09GlowingOrbArchwaysExhibitIndex.html">
+                  <img src="_thumbnails/Figure20_09GlowingOrbArchwaysExhibitThumbnail.png"
+                        height="48"
+                        alt="Figure20_09GlowingOrbArchwaysExhibit"
+                        title="Figure20_09GlowingOrbArchwaysExhibit"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_09GlowingOrbArchwaysExhibitIndex.html">Figure 20 09 Glowing Orb Archways Exhibit</a>
+            </td>
+            <td>A glowing sphere within a gothic building.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_10BlinkingRedLightbulb"/>
+               <a href="Figure20_10BlinkingRedLightbulbIndex.html">
+                  <img src="_thumbnails/Figure20_10BlinkingRedLightbulbThumbnail.png"
+                        height="48"
+                        alt="Figure20_10BlinkingRedLightbulb"
+                        title="Figure20_10BlinkingRedLightbulb"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_10BlinkingRedLightbulbIndex.html">Figure 20 10 Blinking Red Lightbulb</a>
+            </td>
+            <td>A blinking lightbulb showing multiple lighting effects.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_11aDirectionalLightAimingRightThroughSpheres"/>
+               <a href="Figure20_11aDirectionalLightAimingRightThroughSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_11aDirectionalLightAimingRightThroughSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_11aDirectionalLightAimingRightThroughSpheres"
+                        title="Figure20_11aDirectionalLightAimingRightThroughSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_11aDirectionalLightAimingRightThroughSpheresIndex.html">Figure 20 11a Directional Light Aiming Right Through Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a DirectionalLight aiming to the right. Compare Figures 20.11a, 11b, 12.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_11bDirectionalLightAimingUpperRightThroughSpheres"/>
+               <a href="Figure20_11bDirectionalLightAimingUpperRightThroughSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_11bDirectionalLightAimingUpperRightThroughSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_11bDirectionalLightAimingUpperRightThroughSpheres"
+                        title="Figure20_11bDirectionalLightAimingUpperRightThroughSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_11bDirectionalLightAimingUpperRightThroughSpheresIndex.html">Figure 20 11b Directional Light Aiming Upper Right Through Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a DirectionalLight aiming up and to the right. Compare Figures 20.11a, 11b, 12.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres"/>
+               <a href="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres"
+                        title="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresIndex.html">Figure 20 12 Two Directional Lights Aiming Left Right Through Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a DirectionalLight aiming up and to the right. Compare Figures 20.11a, 11b, 12.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_13aDirectionalLightSunrise"/>
+               <a href="Figure20_13aDirectionalLightSunriseIndex.html">
+                  <img src="_thumbnails/Figure20_13aDirectionalLightSunriseThumbnail.png"
+                        height="48"
+                        alt="Figure20_13aDirectionalLightSunrise"
+                        title="Figure20_13aDirectionalLightSunrise"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_13aDirectionalLightSunriseIndex.html">Figure 20 13a Directional Light Sunrise</a>
+            </td>
+            <td>A DirectionalLight used to simulate the sun at sunrise. Compare Figures 20.13a, 13b, 13c, 14.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_13bDirectionalLightNoon"/>
+               <a href="Figure20_13bDirectionalLightNoonIndex.html">
+                  <img src="_thumbnails/Figure20_13bDirectionalLightNoonThumbnail.png"
+                        height="48"
+                        alt="Figure20_13bDirectionalLightNoon"
+                        title="Figure20_13bDirectionalLightNoon"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_13bDirectionalLightNoonIndex.html">Figure 20 13b Directional Light Noon</a>
+            </td>
+            <td>A DirectionalLight used to simulate the sun at noon. Compare Figures 20.13a, 13b, 13c, 14.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_13cDirectionalLightSunset"/>
+               <a href="Figure20_13cDirectionalLightSunsetIndex.html">
+                  <img src="_thumbnails/Figure20_13cDirectionalLightSunsetThumbnail.png"
+                        height="48"
+                        alt="Figure20_13cDirectionalLightSunset"
+                        title="Figure20_13cDirectionalLightSunset"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_13cDirectionalLightSunsetIndex.html">Figure 20 13c Directional Light Sunset</a>
+            </td>
+            <td>A DirectionalLight used to simulate the sun at sunset. Compare Figures 20.13a, 13b, 13c, 14.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_14DirectionalLightSunAnimated"/>
+               <a href="Figure20_14DirectionalLightSunAnimatedIndex.html">
+                  <img src="_thumbnails/Figure20_14DirectionalLightSunAnimatedThumbnail.png"
+                        height="48"
+                        alt="Figure20_14DirectionalLightSunAnimated"
+                        title="Figure20_14DirectionalLightSunAnimated"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_14DirectionalLightSunAnimatedIndex.html">Figure 20 14 Directional Light Sun Animated</a>
+            </td>
+            <td>A DirectionalLight simulates the sun from sunrise through sunset, animated using multiple interpolators. Compare Figures 20.13a, 13b, 13c, 14.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_15aSpotLightSpheres"/>
+               <a href="Figure20_15aSpotLightSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_15aSpotLightSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_15aSpotLightSpheres"
+                        title="Figure20_15aSpotLightSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_15aSpotLightSpheresIndex.html">Figure 20 15a Spot Light Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a SpotLight aiming to the right. Compare Figures 20.15a, 15b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_15bWideAngleSpotLightSpheres"/>
+               <a href="Figure20_15bWideAngleSpotLightSpheresIndex.html">
+                  <img src="_thumbnails/Figure20_15bWideAngleSpotLightSpheresThumbnail.png"
+                        height="48"
+                        alt="Figure20_15bWideAngleSpotLightSpheres"
+                        title="Figure20_15bWideAngleSpotLightSpheres"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_15bWideAngleSpotLightSpheresIndex.html">Figure 20 15b Wide Angle Spot Light Spheres</a>
+            </td>
+            <td>A sphere world illuminated by a wide-angle SpotLight aiming to the right. Compare Figures 20.15a, 15b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_16SpotLightBeamWidthComparison"/>
+               <a href="Figure20_16SpotLightBeamWidthComparisonIndex.html">
+                  <img src="_thumbnails/Figure20_16SpotLightBeamWidthComparisonThumbnail.png"
+                        height="48"
+                        alt="Figure20_16SpotLightBeamWidthComparison"
+                        title="Figure20_16SpotLightBeamWidthComparison"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_16SpotLightBeamWidthComparisonIndex.html">Figure 20 16 Spot Light Beam Width Comparison</a>
+            </td>
+            <td>Three meshes illuminated by separate spotlights, with outer cone set to 45 degrees and inner cones set to 45, 22 1/2, and 1/2 degrees respectively. Combines Figures 20.16a, 16b, 16c.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_17aSimpleWorldNoShadows"/>
+               <a href="Figure20_17aSimpleWorldNoShadowsIndex.html">
+                  <img src="_thumbnails/Figure20_17aSimpleWorldNoShadowsThumbnail.png"
+                        height="48"
+                        alt="Figure20_17aSimpleWorldNoShadows"
+                        title="Figure20_17aSimpleWorldNoShadows"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_17aSimpleWorldNoShadowsIndex.html">Figure 20 17a Simple World No Shadows</a>
+            </td>
+            <td>A simple world without fake shadows. Compare Figures 20.17a, 17b.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure20_17bSimpleWorldFakeShadows"/>
+               <a href="Figure20_17bSimpleWorldFakeShadowsIndex.html">
+                  <img src="_thumbnails/Figure20_17bSimpleWorldFakeShadowsThumbnail.png"
+                        height="48"
+                        alt="Figure20_17bSimpleWorldFakeShadows"
+                        title="Figure20_17bSimpleWorldFakeShadows"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure20_17bSimpleWorldFakeShadowsIndex.html">Figure 20 17b Simple World Fake Shadows</a>
+            </td>
+            <td>A simple world with fake shadows. Compare Figures 20.17a, 17b.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/index.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19NormalsShading/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter20Lighting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter21ShinyMaterials/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

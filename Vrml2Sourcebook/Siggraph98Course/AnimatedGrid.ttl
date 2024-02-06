@@ -1,0 +1,216 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/AnimatedGrid.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'AnimatedGrid.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Animated grid world illustrates the use of a script to change the whichChoice field of a Switch node. When animated, this enables switching among different pieces of geometry, such as the separate ElevationGrid scenes shown in this example.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/animgrid.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0495.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/AnimatedGrid.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "AnimatedGrid.x3d" .
+:meta dcterms:description "Animated grid world illustrates the use of a script to change the whichChoice field of a Switch node. When animated, this enables switching among different pieces of geometry, such as the separate ElevationGrid scenes shown in this example." .
+:meta dcterms:creator "John L. Moreland" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/animgrid.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0495.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/AnimatedGrid.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :DirectionalLight_2_4, :DirectionalLight_2_5, :Grids, :Clock, :Switcher ;
+  x3do:hasROUTE :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1998, John L. Moreland"' ;
+  x3do:title 'Animated grid' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 -0.83 ) ;
+  x3do:position ( 0.0 12.0 12.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false ;
+  x3do:type '"EXAMINE"' .
+:DirectionalLight_2_4 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:direction ( 1.0 -1.0 -1.0 ) .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:direction ( -1.0 1.0 1.0 ) .
+:Grids a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Inline_2_6_1, :Inline_2_6_2, :Inline_2_6_3, :Inline_2_6_4, :Inline_2_6_5, :Inline_2_6_6, :Inline_2_6_7, :Inline_2_6_8, :Inline_2_6_9, :Inline_2_6_10 ;
+  x3do:DEF 'Grids' ;
+  x3do:whichChoice 0 .
+:Inline_2_6_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain00.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain00.x3d" "Terrain00.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain00.wrl"' .
+:Inline_2_6_2 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain01.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain01.x3d" "Terrain01.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain01.wrl"' .
+:Inline_2_6_3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain02.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain02.x3d" "Terrain02.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain02.wrl"' .
+:Inline_2_6_4 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain03.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain03.x3d" "Terrain03.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain03.wrl"' .
+:Inline_2_6_5 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain04.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain04.x3d" "Terrain04.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain04.wrl"' .
+:Inline_2_6_6 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain05.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain05.x3d" "Terrain05.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain05.wrl"' .
+:Inline_2_6_7 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain06.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain06.x3d" "Terrain06.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain06.wrl"' .
+:Inline_2_6_8 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain07.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain07.x3d" "Terrain07.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain07.wrl"' .
+:Inline_2_6_9 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain08.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain08.x3d" "Terrain08.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain08.wrl"' .
+:Inline_2_6_10 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Grids ;
+  x3do:bboxSize ( 14.0 5.0 14.0 ) ;
+  x3do:url '"Terrain09.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain09.x3d" "Terrain09.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Terrain09.wrl"' .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '2.0' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:Switcher a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_8_1, :field_2_8_2, :field_2_8_3 ;
+  x3do:DEF 'Switcher' ;
+  x3do:sourceCode """
+ecmascript:
+    function set_fraction( frac, stamp ) {
+            choice_changed = frac * numberOfChoices;
+    }
+""" .
+:field_2_8_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Switcher ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'choice_changed' ;
+  x3do:type 'SFInt32' .
+:field_2_8_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Switcher ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'numberOfChoices' ;
+  x3do:type 'SFInt32' ;
+  x3do:value 10 .
+:field_2_8_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Switcher ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Switcher' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'choice_changed' ;
+  x3do:fromNode 'Switcher' ;
+  x3do:toField 'set_whichChoice' ;
+  x3do:toNode 'Grids' .

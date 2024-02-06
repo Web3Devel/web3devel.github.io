@@ -1,0 +1,8 @@
+
+      
+ecmascript:
+    function set_fraction( frac, stamp ) {
+            choice_changed = frac * numberOfChoices;
+    }
+
+    

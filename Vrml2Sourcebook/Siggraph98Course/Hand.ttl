@@ -1,0 +1,800 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Hand.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Hand.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Robotic hand juggling primitives: this scene illustrates the use of the primitive shapes and a lot of nested Transform nodes to created articulated structures.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '3 September 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Hand.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/hand.wrl' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0063.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0115.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Hand.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Hand.x3d" .
+:meta dcterms:description "Robotic hand juggling primitives: this scene illustrates the use of the primitive shapes and a lot of nested Transform nodes to created articulated structures." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "3 September 2023" .
+:meta dcterms:Image "Hand.png" .
+:meta dcterms:reference "originals/hand.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0063.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0115.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Hand.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Switch_2_4, :Transform_2_5, :Transform_2_6, :Transform_2_7, :Transform_2_8, :Transform_2_9 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Robotic hand juggling primitives' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Switch_2_4 a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1, :finger_base, :finger_middle, :finger_tip, :finger1, :finger2, :finger3, :finger4, :thumb, :palm, :hand ;
+  x3do:whichChoice -1 .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasAppearance :HandColor .
+:HandColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1 ;
+  x3do:DEF 'HandColor' .
+:Material_2_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :HandColor ;
+  x3do:ambientIntensity 0.3 ;
+  x3do:diffuseColor ( 0.3 0.3 0.5 ) ;
+  x3do:shininess 0.1 ;
+  x3do:specularColor ( 0.7 0.7 0.8 ) .
+:finger_base a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Shape_2_4_2_1, :Transform_2_4_2_2 ;
+  x3do:DEF 'finger_base' .
+:Shape_2_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :finger_base ;
+  x3do:hasAppearance :HandColor-USE-1 ;
+  x3do:hasGeometry :Sphere_2_4_2_1_2 .
+:HandColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:radius 0.41 .
+:Transform_2_4_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger_base ;
+  x3do:hasChildren :Shape_2_4_2_2_1, :Transform_2_4_2_2_2 ;
+  x3do:translation ( 0.0 0.875 0.0 ) .
+:Shape_2_4_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_2_2 ;
+  x3do:hasAppearance :HandColor-USE-2 ;
+  x3do:hasGeometry :Cylinder_2_4_2_2_1_2 .
+:HandColor-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_2_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_2_2_1 ;
+  x3do:height 1.75 ;
+  x3do:radius 0.35 .
+:Transform_2_4_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_2_2 ;
+  x3do:hasChildren :Shape_2_4_2_2_2_1 ;
+  x3do:translation ( 0.0 0.835 0.0 ) .
+:Shape_2_4_2_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_2_2_2 ;
+  x3do:hasAppearance :HandColor-USE-3 ;
+  x3do:hasGeometry :Sphere_2_4_2_2_2_1_2 .
+:HandColor-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_2_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_2_2_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_2_2_2_1 ;
+  x3do:radius 0.35 .
+:finger_middle a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Shape_2_4_3_1, :Transform_2_4_3_2 ;
+  x3do:DEF 'finger_middle' ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:Shape_2_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :finger_middle ;
+  x3do:hasAppearance :HandColor-USE-4 ;
+  x3do:hasGeometry :Cylinder_2_4_3_1_2 .
+:HandColor-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_3_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:height 1.0 ;
+  x3do:radius 0.315 .
+:Transform_2_4_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger_middle ;
+  x3do:hasChildren :Shape_2_4_3_2_1 ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:Shape_2_4_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3_2 ;
+  x3do:hasAppearance :HandColor-USE-5 ;
+  x3do:hasGeometry :Sphere_2_4_3_2_1_2 .
+:HandColor-USE-5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_3_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_3_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_3_2_1 ;
+  x3do:radius 0.32 .
+:finger_tip a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_4_1 ;
+  x3do:DEF 'finger_tip' ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.1 ) .
+:Transform_2_4_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger_tip ;
+  x3do:hasChildren :Shape_2_4_4_1_1, :Transform_2_4_4_1_2 ;
+  x3do:translation ( 0.0 0.4 0.0 ) .
+:Shape_2_4_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_4_1 ;
+  x3do:hasAppearance :HandColor-USE-6 ;
+  x3do:hasGeometry :Cylinder_2_4_4_1_1_2 .
+:HandColor-USE-6 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_4_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_4_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_4_1_1 ;
+  x3do:height 0.75 ;
+  x3do:radius 0.27 .
+:Transform_2_4_4_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_4_1 ;
+  x3do:hasChildren :Shape_2_4_4_1_2_1 ;
+  x3do:scale ( 1.0 0.7 1.0 ) ;
+  x3do:translation ( 0.0 0.35 0.0 ) .
+:Shape_2_4_4_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_4_1_2 ;
+  x3do:hasAppearance :HandColor-USE-7 ;
+  x3do:hasGeometry :Sphere_2_4_4_1_2_1_2 .
+:HandColor-USE-7 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_4_1_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_4_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_4_1_2_1 ;
+  x3do:radius 0.235 .
+:finger1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_5_1 ;
+  x3do:DEF 'finger1' ;
+  x3do:rotation ( 0.0 0.0 1.0 0.035 ) .
+:Transform_2_4_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger1 ;
+  x3do:hasChildren :Transform_2_4_5_1_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.03 ) .
+:Transform_2_4_5_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_5_1 ;
+  x3do:hasChildren :finger_base-USE-1, :Transform_2_4_5_1_1_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.2 ) .
+:finger_base-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_5_1_1 ;
+  owl:sameAs :finger_base . # DEF matching this USE
+:Transform_2_4_5_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_5_1_1 ;
+  x3do:hasChildren :finger_middle-USE-1, :Transform_2_4_5_1_1_2_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.2 ) ;
+  x3do:translation ( 0.0 1.71 0.0 ) .
+:finger_middle-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_5_1_1_2 ;
+  owl:sameAs :finger_middle . # DEF matching this USE
+:Transform_2_4_5_1_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_5_1_1_2 ;
+  x3do:hasChildren :finger_tip-USE-1 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.2 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:finger_tip-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_5_1_1_2_2 ;
+  owl:sameAs :finger_tip . # DEF matching this USE
+:finger2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_6_1 ;
+  x3do:DEF 'finger2' ;
+  x3do:scale ( 1.01 1.15 1.01 ) .
+:Transform_2_4_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger2 ;
+  x3do:hasChildren :Transform_2_4_6_1_1 .
+:Transform_2_4_6_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_6_1 ;
+  x3do:hasChildren :finger_base-USE-2, :Transform_2_4_6_1_1_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 0.2 0.0 ) .
+:finger_base-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_6_1_1 ;
+  owl:sameAs :finger_base . # DEF matching this USE
+:Transform_2_4_6_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_6_1_1 ;
+  x3do:hasChildren :finger_middle-USE-2, :Transform_2_4_6_1_1_2_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.71 0.0 ) .
+:finger_middle-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_6_1_1_2 ;
+  owl:sameAs :finger_middle . # DEF matching this USE
+:Transform_2_4_6_1_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_6_1_1_2 ;
+  x3do:hasChildren :finger_tip-USE-2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:finger_tip-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_6_1_1_2_2 ;
+  owl:sameAs :finger_tip . # DEF matching this USE
+:finger3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_7_1 ;
+  x3do:DEF 'finger3' ;
+  x3do:rotation ( 0.0 0.0 1.0 -0.0175 ) ;
+  x3do:scale ( 1.0 1.05 1.0 ) .
+:Transform_2_4_7_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger3 ;
+  x3do:hasChildren :Transform_2_4_7_1_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.065 ) .
+:Transform_2_4_7_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_7_1 ;
+  x3do:hasChildren :finger_base-USE-3, :Transform_2_4_7_1_1_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.6 ) ;
+  x3do:translation ( 0.0 0.1 0.0 ) .
+:finger_base-USE-3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_7_1_1 ;
+  owl:sameAs :finger_base . # DEF matching this USE
+:Transform_2_4_7_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_7_1_1 ;
+  x3do:hasChildren :finger_middle-USE-3, :Transform_2_4_7_1_1_2_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.71 0.0 ) .
+:finger_middle-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_7_1_1_2 ;
+  owl:sameAs :finger_middle . # DEF matching this USE
+:Transform_2_4_7_1_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_7_1_1_2 ;
+  x3do:hasChildren :finger_tip-USE-3 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:finger_tip-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_7_1_1_2_2 ;
+  owl:sameAs :finger_tip . # DEF matching this USE
+:finger4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_8_1 ;
+  x3do:DEF 'finger4' ;
+  x3do:rotation ( 0.0 0.0 1.0 -0.0698 ) ;
+  x3do:scale ( 0.9 0.9 0.9 ) .
+:Transform_2_4_8_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :finger4 ;
+  x3do:hasChildren :Transform_2_4_8_1_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.1 ) .
+:Transform_2_4_8_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_8_1 ;
+  x3do:hasChildren :finger_base-USE-4, :Transform_2_4_8_1_1_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.7 ) ;
+  x3do:translation ( 0.0 -0.2 0.0 ) .
+:finger_base-USE-4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_8_1_1 ;
+  owl:sameAs :finger_base . # DEF matching this USE
+:Transform_2_4_8_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_8_1_1 ;
+  x3do:hasChildren :finger_middle-USE-4, :Transform_2_4_8_1_1_2_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.71 0.0 ) .
+:finger_middle-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_8_1_1_2 ;
+  owl:sameAs :finger_middle . # DEF matching this USE
+:Transform_2_4_8_1_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_8_1_1_2 ;
+  x3do:hasChildren :finger_tip-USE-4 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) ;
+  x3do:translation ( 0.0 1.0 0.0 ) .
+:finger_tip-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_8_1_1_2_2 ;
+  owl:sameAs :finger_tip . # DEF matching this USE
+:thumb a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_9_1 ;
+  x3do:DEF 'thumb' ;
+  x3do:rotation ( 0.0 0.0 1.0 0.7 ) .
+:Transform_2_4_9_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :thumb ;
+  x3do:hasChildren :Transform_2_4_9_1_1 ;
+  x3do:rotation ( 0.0 0.0 1.0 0.1 ) .
+:Transform_2_4_9_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_1, :Transform_2_4_9_1_1_2 ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.9 ) ;
+  x3do:scale ( 0.7 0.7 0.8 ) .
+:Shape_2_4_9_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1 ;
+  x3do:hasAppearance :HandColor-USE-8 ;
+  x3do:hasGeometry :Sphere_2_4_9_1_1_1_2 .
+:HandColor-USE-8 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_9_1_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_9_1_1_1 ;
+  x3do:radius 0.9 .
+:Transform_2_4_9_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_1, :Transform_2_4_9_1_1_2_2 ;
+  x3do:translation ( 0.0 1.1 0.0 ) .
+:Shape_2_4_9_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2 ;
+  x3do:hasAppearance :HandColor-USE-9 ;
+  x3do:hasGeometry :Cylinder_2_4_9_1_1_2_1_2 .
+:HandColor-USE-9 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_9_1_1_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_1 ;
+  x3do:radius 0.55 .
+:Transform_2_4_9_1_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_2_1, :Transform_2_4_9_1_1_2_2_2 ;
+  x3do:translation ( 0.0 0.85 0.0 ) .
+:Shape_2_4_9_1_1_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2 ;
+  x3do:hasAppearance :HandColor-USE-10 ;
+  x3do:hasGeometry :Sphere_2_4_9_1_1_2_2_1_2 .
+:HandColor-USE-10 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_9_1_1_2_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_1 ;
+  x3do:radius 0.58 .
+:Transform_2_4_9_1_1_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2 ;
+  x3do:hasChildren :Transform_2_4_9_1_1_2_2_2_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 0.08 ) .
+:Transform_2_4_9_1_1_2_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_2_2_1_1, :Transform_2_4_9_1_1_2_2_2_1_2 ;
+  x3do:translation ( 0.0 0.6 0.0 ) .
+:Shape_2_4_9_1_1_2_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1 ;
+  x3do:hasAppearance :HandColor-USE-11 ;
+  x3do:hasGeometry :Cylinder_2_4_9_1_1_2_2_2_1_1_2 .
+:HandColor-USE-11 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_9_1_1_2_2_2_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_1 ;
+  x3do:height 1.2 ;
+  x3do:radius 0.41 .
+:Transform_2_4_9_1_1_2_2_2_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_2_2_1_2_1, :Transform_2_4_9_1_1_2_2_2_1_2_2 ;
+  x3do:translation ( 0.0 0.6 0.0 ) .
+:Shape_2_4_9_1_1_2_2_2_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2 ;
+  x3do:hasAppearance :HandColor-USE-12 ;
+  x3do:hasGeometry :Sphere_2_4_9_1_1_2_2_2_1_2_1_2 .
+:HandColor-USE-12 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_9_1_1_2_2_2_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_1 ;
+  x3do:radius 0.45 .
+:Transform_2_4_9_1_1_2_2_2_1_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2 ;
+  x3do:hasChildren :Transform_2_4_9_1_1_2_2_2_1_2_2_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 0.13 ) .
+:Transform_2_4_9_1_1_2_2_2_1_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2_2 ;
+  x3do:hasChildren :Transform_2_4_9_1_1_2_2_2_1_2_2_1_1 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.1 ) .
+:Transform_2_4_9_1_1_2_2_2_1_2_2_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2_2_1 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_1, :Transform_2_4_9_1_1_2_2_2_1_2_2_1_1_2 ;
+  x3do:translation ( 0.0 0.5 0.05 ) .
+:Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2_2_1_1 ;
+  x3do:hasAppearance :HandColor-USE-13 ;
+  x3do:hasGeometry :Cylinder_2_4_9_1_1_2_2_2_1_2_2_1_1_1_2 .
+:HandColor-USE-13 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_9_1_1_2_2_2_1_2_2_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_1 ;
+  x3do:height 1.0 ;
+  x3do:radius 0.325 .
+:Transform_2_4_9_1_1_2_2_2_1_2_2_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2_2_1_1 ;
+  x3do:hasChildren :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1 ;
+  x3do:scale ( 1.0 0.7 1.0 ) ;
+  x3do:translation ( 0.0 0.5 0.0 ) .
+:Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_9_1_1_2_2_2_1_2_2_1_1_2 ;
+  x3do:hasAppearance :HandColor-USE-14 ;
+  x3do:hasGeometry :Sphere_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1_2 .
+:HandColor-USE-14 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_9_1_1_2_2_2_1_2_2_1_1_2_1 ;
+  x3do:radius 0.29 .
+:palm a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :Transform_2_4_10_1, :Transform_2_4_10_2, :Transform_2_4_10_3, :Transform_2_4_10_4, :Transform_2_4_10_5 ;
+  x3do:DEF 'palm' .
+:Transform_2_4_10_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :palm ;
+  x3do:hasChildren :Shape_2_4_10_1_1 ;
+  x3do:translation ( -0.05 0.875 -0.03 ) .
+:Shape_2_4_10_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_1 ;
+  x3do:hasAppearance :HandColor-USE-15 ;
+  x3do:hasGeometry :Box_2_4_10_1_1_2 .
+:HandColor-USE-15 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Box_2_4_10_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_10_1_1 ;
+  x3do:size ( 2.85 2.45 0.6 ) .
+:Transform_2_4_10_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :palm ;
+  x3do:hasChildren :Shape_2_4_10_2_1 ;
+  x3do:scale ( 1.1 0.7 0.3 ) ;
+  x3do:translation ( -0.9 0.2 -0.2 ) .
+:Shape_2_4_10_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_2 ;
+  x3do:hasAppearance :HandColor-USE-16 ;
+  x3do:hasGeometry :Sphere_2_4_10_2_1_2 .
+:HandColor-USE-16 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_10_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_10_2_1 ;
+  x3do:radius 1.1 .
+:Transform_2_4_10_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :palm ;
+  x3do:hasChildren :Shape_2_4_10_3_1 ;
+  x3do:scale ( 0.9 0.8 0.3 ) ;
+  x3do:translation ( 0.5 0.0 -0.2 ) .
+:Shape_2_4_10_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_3 ;
+  x3do:hasAppearance :HandColor-USE-17 ;
+  x3do:hasGeometry :Sphere_2_4_10_3_1_2 .
+:HandColor-USE-17 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_3_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_10_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_10_3_1 .
+:Transform_2_4_10_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :palm ;
+  x3do:hasChildren :Transform_2_4_10_4_1 ;
+  x3do:scale ( 1.5 1.0 1.0 ) ;
+  x3do:translation ( 0.0 -0.6 0.0 ) .
+:Transform_2_4_10_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_4 ;
+  x3do:hasChildren :Shape_2_4_10_4_1_1, :Transform_2_4_10_4_1_2 ;
+  x3do:rotation ( 1.0 0.0 0.0 -0.4 ) .
+:Shape_2_4_10_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_4_1 ;
+  x3do:hasAppearance :HandColor-USE-18 ;
+  x3do:hasGeometry :Cylinder_2_4_10_4_1_1_2 .
+:HandColor-USE-18 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_4_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_10_4_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_10_4_1_1 ;
+  x3do:height 0.1 ;
+  x3do:radius 1.1 .
+:Transform_2_4_10_4_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_4_1 ;
+  x3do:hasChildren :Shape_2_4_10_4_1_2_1, :Shape_2_4_10_4_1_2_2, :Transform_2_4_10_4_1_2_3 ;
+  x3do:translation ( 0.0 -0.3 0.0 ) .
+:Shape_2_4_10_4_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_4_1_2 ;
+  x3do:hasAppearance :HandColor-USE-19 ;
+  x3do:hasGeometry :Sphere_2_4_10_4_1_2_1_2 .
+:HandColor-USE-19 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Sphere_2_4_10_4_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_1 ;
+  x3do:radius 0.8 .
+:Shape_2_4_10_4_1_2_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_4_1_2 ;
+  x3do:hasAppearance :HandColor-USE-20 ;
+  x3do:hasGeometry :Cylinder_2_4_10_4_1_2_2_2 .
+:HandColor-USE-20 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_2 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_10_4_1_2_2_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_2 ;
+  x3do:height 0.1 ;
+  x3do:radius 1.1 .
+:Transform_2_4_10_4_1_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_4_1_2 ;
+  x3do:hasChildren :Shape_2_4_10_4_1_2_3_1 ;
+  x3do:translation ( 0.0 -1.3 0.0 ) .
+:Shape_2_4_10_4_1_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_4_1_2_3 ;
+  x3do:hasAppearance :HandColor-USE-21 ;
+  x3do:hasGeometry :Cylinder_2_4_10_4_1_2_3_1_2 .
+:HandColor-USE-21 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_3_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_10_4_1_2_3_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_10_4_1_2_3_1 ;
+  x3do:radius 0.6 .
+:Transform_2_4_10_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :palm ;
+  x3do:hasChildren :Transform_2_4_10_5_1, :Transform_2_4_10_5_2, :Transform_2_4_10_5_3, :Transform_2_4_10_5_4, :Transform_2_4_10_5_5 ;
+  x3do:translation ( 0.0 -0.475 0.345 ) .
+:Transform_2_4_10_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5 ;
+  x3do:hasChildren :vein ;
+  x3do:rotation ( 0.0 0.0 1.0 0.15 ) .
+:vein a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5_1 ;
+  x3do:hasChildren :Shape_2_4_10_5_1_1_1 ;
+  x3do:DEF 'vein' ;
+  x3do:translation ( 0.0 1.375 0.0 ) .
+:Shape_2_4_10_5_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :vein ;
+  x3do:hasAppearance :HandColor-USE-22 ;
+  x3do:hasGeometry :Cylinder_2_4_10_5_1_1_1_2 .
+:HandColor-USE-22 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_5_1_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_10_5_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_10_5_1_1_1 ;
+  x3do:height 2.85 ;
+  x3do:radius 0.15 .
+:Transform_2_4_10_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5 ;
+  x3do:hasChildren :vein-USE-1 ;
+  x3do:rotation ( 0.0 0.0 1.0 0.45 ) .
+:vein-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5_2 ;
+  owl:sameAs :vein . # DEF matching this USE
+:Transform_2_4_10_5_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5 ;
+  x3do:hasChildren :vein-USE-2 ;
+  x3do:rotation ( 0.0 0.0 1.0 -0.15 ) .
+:vein-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5_3 ;
+  owl:sameAs :vein . # DEF matching this USE
+:Transform_2_4_10_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5 ;
+  x3do:hasChildren :vein-USE-3 ;
+  x3do:rotation ( 0.0 0.0 1.0 -0.45 ) .
+:vein-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5_4 ;
+  owl:sameAs :vein . # DEF matching this USE
+:Transform_2_4_10_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5 ;
+  x3do:hasChildren :Transform_2_4_10_5_5_1 ;
+  x3do:rotation ( 0.0 0.0 1.0 1.15 ) .
+:Transform_2_4_10_5_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_10_5_5 ;
+  x3do:hasChildren :Shape_2_4_10_5_5_1_1 ;
+  x3do:translation ( 0.0 0.875 0.0 ) .
+:Shape_2_4_10_5_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_10_5_5_1 ;
+  x3do:hasAppearance :HandColor-USE-23 ;
+  x3do:hasGeometry :Cylinder_2_4_10_5_5_1_1_2 .
+:HandColor-USE-23 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_10_5_5_1_1 ;
+  owl:sameAs :HandColor . # DEF matching this USE
+:Cylinder_2_4_10_5_5_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_10_5_5_1_1 ;
+  x3do:height 1.75 ;
+  x3do:radius 0.15 .
+:hand a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Switch_2_4 ;
+  x3do:hasChildren :finger1-USE-1, :Transform_2_4_11_2, :Transform_2_4_11_3, :Transform_2_4_11_4 ;
+  x3do:DEF 'hand' .
+:finger1-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :hand ;
+  owl:sameAs :finger1 . # DEF matching this USE
+:Transform_2_4_11_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :hand ;
+  x3do:hasChildren :finger2-USE-1, :Transform_2_4_11_2_2 ;
+  x3do:translation ( 0.8 0.0 0.0 ) .
+:finger2-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_2 ;
+  owl:sameAs :finger2 . # DEF matching this USE
+:Transform_2_4_11_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_2 ;
+  x3do:hasChildren :finger3-USE-1, :Transform_2_4_11_2_2_2 ;
+  x3do:translation ( 0.8 0.0 0.0 ) .
+:finger3-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_2_2 ;
+  owl:sameAs :finger3 . # DEF matching this USE
+:Transform_2_4_11_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_2_2 ;
+  x3do:hasChildren :finger4-USE-1 ;
+  x3do:translation ( 0.8 0.0 0.0 ) .
+:finger4-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_2_2_2 ;
+  owl:sameAs :finger4 . # DEF matching this USE
+:Transform_2_4_11_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :hand ;
+  x3do:hasChildren :thumb-USE-1 ;
+  x3do:translation ( -0.4 -2.0 0.0 ) .
+:thumb-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4_11_3 ;
+  owl:sameAs :thumb . # DEF matching this USE
+:Transform_2_4_11_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :hand ;
+  x3do:hasChildren :palm-USE-1 ;
+  x3do:translation ( 1.2 -2.2 0.0 ) .
+:palm-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_4_11_4 ;
+  owl:sameAs :palm . # DEF matching this USE
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_5_1 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.0 ) ;
+  x3do:translation ( 0.0 -2.0 0.0 ) .
+:Transform_2_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasChildren :hand-USE-1 ;
+  x3do:rotation ( 1.0 0.0 0.0 1.9 ) .
+:hand-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_5_1 ;
+  owl:sameAs :hand . # DEF matching this USE
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 ;
+  x3do:rotation ( 1.0 0.0 1.0 0.3 ) ;
+  x3do:translation ( 1.5 1.0 0.0 ) .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :Cone_2_6_1_2 .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:diffuseColor ( 1.0 0.0 0.0 ) .
+:Cone_2_6_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_6_1 .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_7_1 ;
+  x3do:translation ( 2.0 3.0 -0.5 ) .
+:Shape_2_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :Appearance_2_7_1_1 ;
+  x3do:hasGeometry :Sphere_2_7_1_2 .
+:Appearance_2_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_1 .
+:Material_2_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_1 ;
+  x3do:diffuseColor ( 1.0 1.0 0.0 ) .
+:Sphere_2_7_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_7_1 .
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_8_1 ;
+  x3do:rotation ( 1.0 0.0 0.2 0.82 ) ;
+  x3do:translation ( -0.6 0.8 0.5 ) .
+:Shape_2_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasAppearance :Appearance_2_8_1_1 ;
+  x3do:hasGeometry :Cylinder_2_8_1_2 .
+:Appearance_2_8_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasMaterial :Material_2_8_1_1_1 .
+:Material_2_8_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1_1 ;
+  x3do:diffuseColor ( 0.0 0.7 1.0 ) .
+:Cylinder_2_8_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:height 1.5 ;
+  x3do:radius 0.75 .
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_9_1 ;
+  x3do:rotation ( 1.0 0.0 0.7 1.3 ) ;
+  x3do:translation ( 0.0 2.6 -1.1 ) .
+:Shape_2_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasAppearance :Appearance_2_9_1_1 ;
+  x3do:hasGeometry :Box_2_9_1_2 .
+:Appearance_2_9_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_1 ;
+  x3do:hasMaterial :Material_2_9_1_1_1 .
+:Material_2_9_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_9_1_1 ;
+  x3do:diffuseColor ( 0.0 1.0 0.0 ) .
+:Box_2_9_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_9_1 ;
+  x3do:size ( 1.25 1.25 1.25 ) .

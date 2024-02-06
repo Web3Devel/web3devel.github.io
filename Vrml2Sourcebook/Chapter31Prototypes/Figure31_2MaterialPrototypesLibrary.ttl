@@ -1,0 +1,148 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter31Prototypes/Figure31_2MaterialPrototypesLibrary.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure31_2MaterialPrototypesLibrary.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 31.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch31/31fig02.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '27 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An external file containing a material library with the WallColor-node-type definition.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter31Prototypes/Figure31_2MaterialPrototypesLibrary.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure31_2MaterialPrototypesLibrary.x3d" .
+:meta dcterms:creator "Figure 31.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch31/31fig02.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "27 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "An external file containing a material library with the WallColor-node-type definition." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter31Prototypes/Figure31_2MaterialPrototypesLibrary.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Anchor_2_6 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2, :ProtoDeclare_2_3, :ProtoDeclare_2_4, :ProtoDeclare_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure31_2MaterialPrototypesLibrary.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_2_1 ;
+  x3do:name 'Aqua' .
+:ProtoBody_2_2_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasMaterial :Material_2_2_1_1 .
+:Material_2_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:diffuseColor ( 0 0.6 1 ) .
+:ProtoDeclare_2_3 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_3_1 ;
+  x3do:name 'Gold' .
+:ProtoBody_2_3_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_3 ;
+  x3do:hasMaterial :Material_2_3_1_1 .
+:Material_2_3_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_3_1 ;
+  x3do:ambientIntensity 0.4 ;
+  x3do:diffuseColor ( 0.22 0.15 0 ) ;
+  x3do:shininess 0.16 ;
+  x3do:specularColor ( 0.71 0.70 0.56 ) .
+:ProtoDeclare_2_4 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_4_1 ;
+  x3do:name 'Aluminum' .
+:ProtoBody_2_4_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_4 ;
+  x3do:hasMaterial :Material_2_4_1_1 .
+:Material_2_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_4_1 ;
+  x3do:ambientIntensity 0.3 ;
+  x3do:diffuseColor ( 0.3 0.3 0.5 ) ;
+  x3do:shininess 0.1 ;
+  x3do:specularColor ( 0.7 0.7 0.8 ) .
+:ProtoDeclare_2_5 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_5_1 ;
+  x3do:name 'Copper' .
+:ProtoBody_2_5_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_5 ;
+  x3do:hasMaterial :Material_2_5_1_1 .
+:Material_2_5_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_5_1 ;
+  x3do:ambientIntensity 0.26 ;
+  x3do:diffuseColor ( 0.30 0.11 0 ) ;
+  x3do:shininess 0.08 ;
+  x3do:specularColor ( 0.75 0.33 0 ) .
+:Anchor_2_6 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 ;
+  x3do:description 'Figure31_3MaterialExternalPrototypes' ;
+  x3do:url '"Figure31_3MaterialExternalPrototypes.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter31Prototypes/Figure31_3MaterialExternalPrototypes.x3d" "Figure31_3MaterialExternalPrototypes.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter31Prototypes/Figure31_3MaterialExternalPrototypes.wrl"' .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_6 ;
+  x3do:hasGeometry :Text_2_6_1_1 ;
+  x3do:hasAppearance :Appearance_2_6_1_2 .
+:Text_2_6_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasFontStyle :FontStyle_2_6_1_1_1 ;
+  x3do:string '"Figure31_2MaterialPrototypesLibrary" "contains prototype definitions" "" "Click on text to see these Materials in" "Figure31_3MaterialExternalPrototypes"' .
+:FontStyle_2_6_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.5 .
+:Appearance_2_6_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_2_1 .
+:Material_2_6_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_2 ;
+  x3do:diffuseColor ( 0 0.6 0.6 ) .

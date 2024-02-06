@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC  "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="Figure15_10ExtrudedRoomWithAxes.Extrusion1.svg"
+     width="900"
+     height="750">
+   <rect width="900" height="750" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+-0.5 1.0 -0.5 0.8 -1.8 0.8 -1.8 -0.8 1.8 -0.8 1.8 0.8 0.5 0.8 0.5 1.0 2.0 1.0 2.0 -1.0 -2.0 -1.0 -2.0 1.0 -0.5 1.0'/>
+-->
+   <!--
+			Min xPos = -2.0
+			Max xPos = 2.0			
+			Min yPos = -2.0
+			Max yPos = 2.0-->
+   <g transform="translate(450 375) scale(100 -100)">
+      <g style="fill:none;stroke:blue;stroke-width:0.04">
+         <line id="line1" x1="-0.5" y1="1.0" x2="-0.5" y2="0.8"/>
+         <line id="line2" x1="-0.5" y1="0.8" x2="-1.8" y2="0.8"/>
+         <line id="line3" x1="-1.8" y1="0.8" x2="-1.8" y2="-0.8"/>
+         <line id="line4" x1="-1.8" y1="-0.8" x2="1.8" y2="-0.8"/>
+         <line id="line5" x1="1.8" y1="-0.8" x2="1.8" y2="0.8"/>
+         <line id="line6" x1="1.8" y1="0.8" x2="0.5" y2="0.8"/>
+         <line id="line7" x1="0.5" y1="0.8" x2="0.5" y2="1.0"/>
+         <line id="line8" x1="0.5" y1="1.0" x2="2.0" y2="1.0"/>
+         <line id="line9" x1="2.0" y1="1.0" x2="2.0" y2="-1.0"/>
+         <line id="line10" x1="2.0" y1="-1.0" x2="-2.0" y2="-1.0"/>
+         <line id="line11" x1="-2.0" y1="-1.0" x2="-2.0" y2="1.0"/>
+         <line id="line12" x1="-2.0" y1="1.0" x2="-0.5" y2="1.0"/>
+      </g>
+      <g style="fill:red;stroke:red;stroke-width:0.001">
+         <circle id="marker1" cx="-0.5" cy="1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText1"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker1.mouseover"
+              end="marker1.mouseout"/>
+         <circle id="marker2" cx="-0.5" cy="0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText2"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker2.mouseover"
+              end="marker2.mouseout"/>
+         <circle id="marker3" cx="-1.8" cy="0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText3"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker3.mouseover"
+              end="marker3.mouseout"/>
+         <circle id="marker4" cx="-1.8" cy="-0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText4"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker4.mouseover"
+              end="marker4.mouseout"/>
+         <circle id="marker5" cx="1.8" cy="-0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText5"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker5.mouseover"
+              end="marker5.mouseout"/>
+         <circle id="marker6" cx="1.8" cy="0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText6"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker6.mouseover"
+              end="marker6.mouseout"/>
+         <circle id="marker7" cx="0.5" cy="0.8" r="0.05"/>
+         <set
+              xlink:href="#markerText7"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker7.mouseover"
+              end="marker7.mouseout"/>
+         <circle id="marker8" cx="0.5" cy="1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText8"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker8.mouseover"
+              end="marker8.mouseout"/>
+         <circle id="marker9" cx="2.0" cy="1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText9"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker9.mouseover"
+              end="marker9.mouseout"/>
+         <circle id="marker10" cx="2.0" cy="-1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText10"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker10.mouseover"
+              end="marker10.mouseout"/>
+         <circle id="marker11" cx="-2.0" cy="-1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText11"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker11.mouseover"
+              end="marker11.mouseout"/>
+         <circle id="marker12" cx="-2.0" cy="1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText12"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker12.mouseover"
+              end="marker12.mouseout"/>
+         <circle id="marker13" cx="-0.5" cy="1.0" r="0.05"/>
+         <set
+              xlink:href="#markerText13"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker13.mouseover"
+              end="marker13.mouseout"/>
+      </g>
+   </g>
+   <g id="markerTexts"
+      transform="translate(450 375)"
+      style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none">
+      <text id="markerText1" x="-45" y="-105">(-0.5,1.0)</text>
+      <text id="markerText2" x="-45" y="-85">(-0.5,0.8)</text>
+      <text id="markerText3" x="-175" y="-85">(-1.8,0.8)</text>
+      <text id="markerText4" x="-175" y="75">(-1.8,-0.8)</text>
+      <text id="markerText5" x="185" y="75">(1.8,-0.8)</text>
+      <text id="markerText6" x="185" y="-85">(1.8,0.8)</text>
+      <text id="markerText7" x="55" y="-85">(0.5,0.8)</text>
+      <text id="markerText8" x="55" y="-105">(0.5,1.0)</text>
+      <text id="markerText9" x="205" y="-105">(2.0,1.0)</text>
+      <text id="markerText10" x="205" y="95">(2.0,-1.0)</text>
+      <text id="markerText11" x="-195" y="95">(-2.0,-1.0)</text>
+      <text id="markerText12" x="-195" y="-105">(-2.0,1.0)</text>
+      <text id="markerText13" x="-45" y="-105">(-0.5,1.0)</text>
+   </g>
+   <g transform="translate(450 375) scale(100 -100)"
+      style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+      <line x1="0" y1="-2.2" x2="0" y2="2.2"/>
+      <line x1="-2.2" y1="0" x2="2.2" y2="0"/>
+      <g style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+         <line
+               x1="-2.1999999999999997"
+               y1="-0.03"
+               x2="-2.1999999999999997"
+               y2="0.03"/>
+         <line
+               x1="-1.9999999999999998"
+               y1="-0.03"
+               x2="-1.9999999999999998"
+               y2="0.03"/>
+         <line
+               x1="-1.7999999999999998"
+               y1="-0.03"
+               x2="-1.7999999999999998"
+               y2="0.03"/>
+         <line
+               x1="-1.5999999999999999"
+               y1="-0.03"
+               x2="-1.5999999999999999"
+               y2="0.03"/>
+         <line x1="-1.4" y1="-0.03" x2="-1.4" y2="0.03"/>
+         <line x1="-1.2" y1="-0.03" x2="-1.2" y2="0.03"/>
+         <line x1="-1" y1="-0.03" x2="-1" y2="0.03"/>
+         <line x1="-0.8" y1="-0.03" x2="-0.8" y2="0.03"/>
+         <line
+               x1="-0.6000000000000001"
+               y1="-0.03"
+               x2="-0.6000000000000001"
+               y2="0.03"/>
+         <line
+               x1="-0.4000000000000001"
+               y1="-0.03"
+               x2="-0.4000000000000001"
+               y2="0.03"/>
+         <line
+               x1="-0.20000000000000007"
+               y1="-0.03"
+               x2="-0.20000000000000007"
+               y2="0.03"/>
+         <line
+               x1="-5.551115123125783E-17"
+               y1="-0.03"
+               x2="-5.551115123125783E-17"
+               y2="0.03"/>
+         <line
+               x1="0.19999999999999996"
+               y1="-0.03"
+               x2="0.19999999999999996"
+               y2="0.03"/>
+         <line
+               x1="0.39999999999999997"
+               y1="-0.03"
+               x2="0.39999999999999997"
+               y2="0.03"/>
+         <line x1="0.6" y1="-0.03" x2="0.6" y2="0.03"/>
+         <line x1="0.8" y1="-0.03" x2="0.8" y2="0.03"/>
+         <line x1="1" y1="-0.03" x2="1" y2="0.03"/>
+         <line x1="1.2" y1="-0.03" x2="1.2" y2="0.03"/>
+         <line x1="1.4" y1="-0.03" x2="1.4" y2="0.03"/>
+         <line
+               x1="1.5999999999999999"
+               y1="-0.03"
+               x2="1.5999999999999999"
+               y2="0.03"/>
+         <line
+               x1="1.7999999999999998"
+               y1="-0.03"
+               x2="1.7999999999999998"
+               y2="0.03"/>
+         <line
+               x1="1.9999999999999998"
+               y1="-0.03"
+               x2="1.9999999999999998"
+               y2="0.03"/>
+         <line
+               x1="2.1999999999999997"
+               y1="-0.03"
+               x2="2.1999999999999997"
+               y2="0.03"/>
+         <line
+               y1="-2.1999999999999997"
+               x1="-0.03"
+               y2="-2.1999999999999997"
+               x2="0.03"/>
+         <line
+               y1="-1.9999999999999998"
+               x1="-0.03"
+               y2="-1.9999999999999998"
+               x2="0.03"/>
+         <line
+               y1="-1.7999999999999998"
+               x1="-0.03"
+               y2="-1.7999999999999998"
+               x2="0.03"/>
+         <line
+               y1="-1.5999999999999999"
+               x1="-0.03"
+               y2="-1.5999999999999999"
+               x2="0.03"/>
+         <line y1="-1.4" x1="-0.03" y2="-1.4" x2="0.03"/>
+         <line y1="-1.2" x1="-0.03" y2="-1.2" x2="0.03"/>
+         <line y1="-1" x1="-0.03" y2="-1" x2="0.03"/>
+         <line y1="-0.8" x1="-0.03" y2="-0.8" x2="0.03"/>
+         <line
+               y1="-0.6000000000000001"
+               x1="-0.03"
+               y2="-0.6000000000000001"
+               x2="0.03"/>
+         <line
+               y1="-0.4000000000000001"
+               x1="-0.03"
+               y2="-0.4000000000000001"
+               x2="0.03"/>
+         <line
+               y1="-0.20000000000000007"
+               x1="-0.03"
+               y2="-0.20000000000000007"
+               x2="0.03"/>
+         <line
+               y1="-5.551115123125783E-17"
+               x1="-0.03"
+               y2="-5.551115123125783E-17"
+               x2="0.03"/>
+         <line
+               y1="0.19999999999999996"
+               x1="-0.03"
+               y2="0.19999999999999996"
+               x2="0.03"/>
+         <line
+               y1="0.39999999999999997"
+               x1="-0.03"
+               y2="0.39999999999999997"
+               x2="0.03"/>
+         <line y1="0.6" x1="-0.03" y2="0.6" x2="0.03"/>
+         <line y1="0.8" x1="-0.03" y2="0.8" x2="0.03"/>
+         <line y1="1" x1="-0.03" y2="1" x2="0.03"/>
+         <line y1="1.2" x1="-0.03" y2="1.2" x2="0.03"/>
+         <line y1="1.4" x1="-0.03" y2="1.4" x2="0.03"/>
+         <line
+               y1="1.5999999999999999"
+               x1="-0.03"
+               y2="1.5999999999999999"
+               x2="0.03"/>
+         <line
+               y1="1.7999999999999998"
+               x1="-0.03"
+               y2="1.7999999999999998"
+               x2="0.03"/>
+         <line
+               y1="1.9999999999999998"
+               x1="-0.03"
+               y2="1.9999999999999998"
+               x2="0.03"/>
+         <line
+               y1="2.1999999999999997"
+               x1="-0.03"
+               y2="2.1999999999999997"
+               x2="0.03"/>
+      </g>
+   </g>
+</svg>

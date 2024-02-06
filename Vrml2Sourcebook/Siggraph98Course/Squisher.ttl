@@ -1,0 +1,265 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Squisher.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Squisher.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Squishy ball world illustrates the use of orientation, color, and position interpolators. The world contains left, center, and right balls. The left and right balls swing back and forth, pivoting about a common point above the center ball. Each time the left and right balls swing inward, striking the center ball, the center ball squishes and turns red.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/squisher.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0157.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Squisher.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Squisher.x3d" .
+:meta dcterms:description "Squishy ball world illustrates the use of orientation, color, and position interpolators. The world contains left, center, and right balls. The left and right balls swing back and forth, pivoting about a common point above the center ball. Each time the left and right balls swing inward, striking the center ball, the center ball squishes and turns red." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/squisher.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0157.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Squisher.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Entry, :NavigationInfo_2_3, :Background_2_4, :Transform_2_5, :Swingee1, :Swingee2, :Clock, :Swinger1, :Swinger2, :Squisher, :Colorer ;
+  x3do:hasROUTE :ROUTE_2_10, :ROUTE_2_11, :ROUTE_2_13, :ROUTE_2_14, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_19, :ROUTE_2_20 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Squishy ball' .
+:Entry a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Entry' ;
+  x3do:description 'Entry view' ;
+  x3do:position ( 0.0 1.6 10.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Squishee, :Stick ;
+  x3do:center ( 0.0 4.0 0.0 ) .
+:Squishee a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasChildren :Shape_2_5_1_1 ;
+  x3do:DEF 'Squishee' .
+:Shape_2_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Squishee ;
+  x3do:hasAppearance :Appearance_2_5_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_5_1_1_2 .
+:Appearance_2_5_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1 ;
+  x3do:hasMaterial :Coloree .
+:Coloree a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1_1 ;
+  x3do:DEF 'Coloree' .
+:Sphere_2_5_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_1_1 .
+:Stick a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasChildren :Shape_2_5_2_1 ;
+  x3do:DEF 'Stick' ;
+  x3do:translation ( 0.0 2.0 0.0 ) .
+:Shape_2_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Stick ;
+  x3do:hasAppearance :Appearance_2_5_2_1_1 ;
+  x3do:hasGeometry :Cylinder_2_5_2_1_2 .
+:Appearance_2_5_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2_1 ;
+  x3do:hasMaterial :Material_2_5_2_1_1_1 .
+:Material_2_5_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2_1_1 .
+:Cylinder_2_5_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_2_1 ;
+  x3do:height 4.0 ;
+  x3do:radius 0.1 .
+:Swingee1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Ball, :Stick-USE-1 ;
+  x3do:DEF 'Swingee1' ;
+  x3do:center ( 0.0 4.0 0.0 ) .
+:Ball a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Swingee1 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_1_2 ;
+  x3do:DEF 'Ball' .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Ball ;
+  x3do:hasMaterial :Material_2_6_1_1_1 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:diffuseColor ( 0.0 0.5 1.0 ) .
+:Sphere_2_6_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Ball .
+:Stick-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Swingee1 ;
+  owl:sameAs :Stick . # DEF matching this USE
+:Swingee2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Ball-USE-1, :Stick-USE-2 ;
+  x3do:DEF 'Swingee2' ;
+  x3do:center ( 0.0 4.0 0.0 ) .
+:Ball-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Swingee2 ;
+  owl:sameAs :Ball . # DEF matching this USE
+:Stick-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Swingee2 ;
+  owl:sameAs :Stick . # DEF matching this USE
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '2.0' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:Swinger1 a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Swinger1' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 1.0 -0.5 0.0 0.0 1.0 -0.2 0.0 0.0 1.0 -0.5 ) .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Swinger1' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Swinger1' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Swingee1' .
+:Swinger2 a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Swinger2' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 1.0 0.5 0.0 0.0 1.0 0.2 0.0 0.0 1.0 0.5 ) .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Swinger2' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Swinger2' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Swingee2' .
+:Squisher a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Squisher' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 1.0 1.0 1.0 0.5 1.4 1.4 1.0 1.0 1.0 ) .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Squisher' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Squisher' ;
+  x3do:toField 'set_scale' ;
+  x3do:toNode 'Squishee' .
+:Colorer a owl:NamedIndividual, x3do:ColorInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Colorer' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 0.5 1.0 1.0 0.0 0.0 0.0 0.5 1.0 ) .
+:ROUTE_2_19 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Colorer' .
+:ROUTE_2_20 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Colorer' ;
+  x3do:toField 'set_diffuseColor' ;
+  x3do:toNode 'Coloree' .

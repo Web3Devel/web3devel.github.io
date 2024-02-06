@@ -1,0 +1,221 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/Figure24_4FourKeyKeyboard.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure24_4FourKeyKeyboard.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 24.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch24/24fig04.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 October 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 July 2023' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/StudentProjects/KeyboardEightyEightKeys.x3d' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Four keys in a keyboard showing how pitch can vary a single sound source.' ;
+  x3do:name 'description' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/Figure24_4FourKeyKeyboard.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure24_4FourKeyKeyboard.x3d" .
+:meta dcterms:creator "Figure 24.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch24/24fig04.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "2 October 2000" .
+:meta dcterms:modified "14 July 2023" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/StudentProjects/KeyboardEightyEightKeys.x3d" .
+:meta dcterms:description "Four keys in a keyboard showing how pitch can vary a single sound source." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/Figure24_4FourKeyKeyboard.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5, :ROUTE_2_6, :ROUTE_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure24_4FourKeyKeyboard.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Middle C, C#, D, D#' ;
+  x3do:orientation ( 1 0 0 -0.758 ) ;
+  x3do:position ( 0 2 2 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_3_1, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4 .
+:Transform_2_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :WhiteKey, :C4, :Sound_2_3_1_3 .
+:WhiteKey a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasGeometry :Box_2_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_1_1_2 ;
+  x3do:DEF 'WhiteKey' .
+:Box_2_3_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :WhiteKey ;
+  x3do:size ( 0.23 0.1 1.5 ) .
+:Appearance_2_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :WhiteKey ;
+  x3do:hasMaterial :Material_2_3_1_1_2_1 .
+:Material_2_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1_2 ;
+  x3do:diffuseColor ( 0.9 0.9 0.9 ) .
+:C4 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:DEF 'C4' ;
+  x3do:description 'C4 key' .
+:Sound_2_3_1_3 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasSource :PitchC4 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 .
+:PitchC4 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_3_1_3 ;
+  x3do:DEF 'PitchC4' ;
+  x3do:description 'Pitch C4' ;
+  x3do:url '"tone1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/tone1.wav"' .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BlackKey, :Cs4, :Sound_2_3_2_3 ;
+  x3do:translation ( 0.125 0.1 -0.375 ) .
+:BlackKey a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasGeometry :Box_2_3_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_2_1_2 ;
+  x3do:DEF 'BlackKey' .
+:Box_2_3_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :BlackKey ;
+  x3do:size ( 0.2 0.1 0.75 ) .
+:Appearance_2_3_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :BlackKey ;
+  x3do:hasMaterial :Material_2_3_2_1_2_1 .
+:Material_2_3_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1_2 ;
+  x3do:diffuseColor ( 0.4 0.4 0.4 ) .
+:Cs4 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:DEF 'Cs4' ;
+  x3do:description 'Csharp4 key' .
+:Sound_2_3_2_3 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasSource :PitchCs4 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 .
+:PitchCs4 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_3_2_3 ;
+  x3do:DEF 'PitchCs4' ;
+  x3do:description 'Pitch Csharp4' ;
+  x3do:pitch 1.059 ;
+  x3do:url '"tone1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/tone1.wav"' .
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :WhiteKey-USE-1, :D4, :Sound_2_3_3_3 ;
+  x3do:translation ( 0.25 0 0 ) .
+:WhiteKey-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3 ;
+  owl:sameAs :WhiteKey . # DEF matching this USE
+:D4 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:DEF 'D4' ;
+  x3do:description 'D4 key' .
+:Sound_2_3_3_3 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:hasSource :PitchD4 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 .
+:PitchD4 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_3_3_3 ;
+  x3do:DEF 'PitchD4' ;
+  x3do:description 'Pitch D4' ;
+  x3do:pitch 1.122 ;
+  x3do:url '"tone1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/tone1.wav"' .
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BlackKey-USE-1, :Ds4, :Sound_2_3_4_3 ;
+  x3do:translation ( 0.375 0.1 -0.375 ) .
+:BlackKey-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4 ;
+  owl:sameAs :BlackKey . # DEF matching this USE
+:Ds4 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:DEF 'Ds4' ;
+  x3do:description 'Dsharp4 key' .
+:Sound_2_3_4_3 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:hasSource :PitchDs4 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 .
+:PitchDs4 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_3_4_3 ;
+  x3do:DEF 'PitchDs4' ;
+  x3do:description 'Pitch Dsharp4' ;
+  x3do:pitch 1.189 ;
+  x3do:url '"tone1.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24Sound/tone1.wav"' .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'C4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'PitchC4' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'Cs4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'PitchCs4' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'D4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'PitchD4' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'Ds4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'PitchDs4' .

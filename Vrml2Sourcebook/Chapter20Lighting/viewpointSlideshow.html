@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 20 Lighting</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure20_04HeadlightSpheres.x3d._VP_Spheres.png': { 'caption': '[1] Figure20_04HeadlightSpheres.x3d Spheres' },
+      'Figure20_04HeadlightSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure20_04HeadlightSpheres.x3d (default X3D view from 0 0 10)' },
+      'Figure20_05FlatMesh.x3d._VP_Flat_mesh.png': { 'caption': '[3] Figure20_05FlatMesh.x3d Flat mesh' },
+      'Figure20_05FlatMesh.x3d._VP_Default_viewpoint.png': { 'caption': '[4] Figure20_05FlatMesh.x3d (default X3D view from 0 0 10)' },
+      'Figure20_06aPointLightSpheres.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png': { 'caption': '[5] Figure20_06aPointLightSpheres.x3d PointLight at center of spheres. Note that light rays pass through geometry.' },
+      'Figure20_06aPointLightSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[6] Figure20_06aPointLightSpheres.x3d (default X3D view from 0 0 10)' },
+      'Figure20_06bPointLightSpheresIntensity.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png': { 'caption': '[7] Figure20_06bPointLightSpheresIntensity.x3d PointLight at center of spheres. Note that light rays pass through geometry.' },
+      'Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png': { 'caption': '[8] Figure20_06bPointLightSpheresIntensity.x3d (default X3D view)' },
+      'Figure20_07PointLightSpheresAttenuation.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png': { 'caption': '[9] Figure20_07PointLightSpheresAttenuation.x3d PointLight at center of spheres. Note that light rays pass through geometry.' },
+      'Figure20_07PointLightSpheresAttenuation.x3d._VP_Default_viewpoint.png': { 'caption': '[10] Figure20_07PointLightSpheresAttenuation.x3d (default X3D view)' },
+      'Figure20_08PointLightSpheresSmallRadius.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png': { 'caption': '[11] Figure20_08PointLightSpheresSmallRadius.x3d PointLight at center of spheres. Note that light rays pass through geometry.' },
+      'Figure20_08PointLightSpheresSmallRadius.x3d._VP_Default_viewpoint.png': { 'caption': '[12] Figure20_08PointLightSpheresSmallRadius.x3d (default X3D view)' },
+<!--not found:       'Figure20_09GlowingOrbArchwaysExhibit.x3d._VP_hello_orb.png': { 'caption': '[13] Figure20_09GlowingOrbArchwaysExhibit.x3d hello orb' },-->
+<!--not found:       'Figure20_09GlowingOrbArchwaysExhibit.x3d._VP_Default_viewpoint.png': { 'caption': '[14] Figure20_09GlowingOrbArchwaysExhibit.x3d (default X3D view)' },-->
+<!--not found:       'Figure20_10BlinkingRedLightbulb.x3d._VP_Blinking_red_light_bulb.png': { 'caption': '[15] Figure20_10BlinkingRedLightbulb.x3d Blinking red light bulb' },-->
+<!--not found:       'Figure20_10BlinkingRedLightbulb.x3d._VP_Default_viewpoint.png': { 'caption': '[16] Figure20_10BlinkingRedLightbulb.x3d (default X3D view from 0 0 10)' },-->
+      'Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png': { 'caption': '[17] Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.' },
+      'Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[18] Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d' },
+      'Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png': { 'caption': '[19] Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.' },
+      'Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[20] Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d' },
+      'Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png': { 'caption': '[21] Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.' },
+      'Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[22] Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d' },
+      'Figure20_13aDirectionalLightSunrise.x3d._VP_Cue_the_sunrise,_stage_right.png': { 'caption': '[23] Figure20_13aDirectionalLightSunrise.x3d Cue the sunrise, stage right' },
+      'Figure20_13aDirectionalLightSunrise.x3d._VP_Default_viewpoint.png': { 'caption': '[24] Figure20_13aDirectionalLightSunrise.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'Figure20_13bDirectionalLightNoon.x3d._VP_12_o&amp;apos;clock_high_without_a_shadow....png': { 'caption': '[25] Figure20_13bDirectionalLightNoon.x3d 12 o&amp;apos;clock high without a shadow...' },-->
+      'Figure20_13bDirectionalLightNoon.x3d._VP_Default_viewpoint.png': { 'caption': '[26] Figure20_13bDirectionalLightNoon.x3d (default X3D view from 0 0 10)' },
+      'Figure20_13cDirectionalLightSunset.x3d._VP_Exit_sun,_stage_left.png': { 'caption': '[27] Figure20_13cDirectionalLightSunset.x3d Exit sun, stage left' },
+      'Figure20_13cDirectionalLightSunset.x3d._VP_Default_viewpoint.png': { 'caption': '[28] Figure20_13cDirectionalLightSunset.x3d (default X3D view from 0 0 10)' },
+      'Figure20_14DirectionalLightSunAnimated.x3d._VP_Sunlight_animation.png': { 'caption': '[29] Figure20_14DirectionalLightSunAnimated.x3d Sunlight animation' },
+      'Figure20_14DirectionalLightSunAnimated.x3d._VP_Default_viewpoint.png': { 'caption': '[30] Figure20_14DirectionalLightSunAnimated.x3d (default X3D view)' },
+      'Figure20_15aSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png': { 'caption': '[31] Figure20_15aSpotLightSpheres.x3d SpotLight shining a cone of light rays to right.' },
+      'Figure20_15aSpotLightSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[32] Figure20_15aSpotLightSpheres.x3d (default X3D view from 0 0 10)' },
+      'Figure20_15bWideAngleSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png': { 'caption': '[33] Figure20_15bWideAngleSpotLightSpheres.x3d SpotLight shining a cone of light rays to right.' },
+      'Figure20_15bWideAngleSpotLightSpheres.x3d._VP_Default_viewpoint.png': { 'caption': '[34] Figure20_15bWideAngleSpotLightSpheres.x3d (default X3D view)' },
+      'Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLights_shining_on_meshes,_outer_cone_45_degrees._Inner_cone_varies_90_to_45_to_5_degrees..png': { 'caption': '[35] Figure20_16SpotLightBeamWidthComparison.x3d SpotLights shining on meshes, outer cone 45 degrees. Inner cone varies 90 to 45 to 5 degrees.' },
+      'Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLight_beam_differences_are_more_pronounced_at_narrow_angles.png': { 'caption': '[36] Figure20_16SpotLightBeamWidthComparison.x3d SpotLight beam differences are more pronounced at narrow angles' },
+      'Figure20_16SpotLightBeamWidthComparison.x3d._VP_Default_viewpoint.png': { 'caption': '[37] Figure20_16SpotLightBeamWidthComparison.x3d (default X3D view)' },
+      'Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene.png': { 'caption': '[38] Figure20_17aSimpleWorldNoShadows.x3d Simple sphere scene' },
+      'Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png': { 'caption': '[39] Figure20_17aSimpleWorldNoShadows.x3d Simple sphere scene seen from +X axis' },
+      'Figure20_17aSimpleWorldNoShadows.x3d._VP_Default_viewpoint.png': { 'caption': '[40] Figure20_17aSimpleWorldNoShadows.x3d (default X3D view from 0 0 10)' },
+      'Figure20_17bSimpleWorldFakeShadows.x3d._VP_Fake_showdows_in_simple_sphere_scene.png': { 'caption': '[41] Figure20_17bSimpleWorldFakeShadows.x3d Fake showdows in simple sphere scene' },
+      'Figure20_17bSimpleWorldFakeShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png': { 'caption': '[42] Figure20_17bSimpleWorldFakeShadows.x3d Simple sphere scene seen from +X axis' },
+      'Figure20_17bSimpleWorldFakeShadows.x3d._VP_Default_viewpoint.png': { 'caption': '[43] Figure20_17bSimpleWorldFakeShadows.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19NormalsShading/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter20Lighting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter21ShinyMaterials/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 20 Lighting</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Spheres.png"
+                  alt="[1] Figure20_04HeadlightSpheres.x3d Spheres"
+                  title="[1] Figure20_04HeadlightSpheres.x3d Spheres"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter20Lighting/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 20.06b Point Light Spheres Intensity" title="Figure 20.06b Point Light Spheres Intensity" hspace="10" 
+                          src="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+
+                    <p>
+                    
+                    <a href="index.html"><img border="0" alt="Figure 20.13a Directional Light Sunrise" title="Figure 20.13a Directional Light Sunrise" hspace="10" 
+                          src="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Vaulted_ceiling.png" width="156" height="89" align="middle"/></a>
+                    </p>
+                    
+
+                    
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							Lights provide virtual illumination that allows objects to be seen.
+                    </p>
+                    
+
+
+                    <p>
+                            By default, you have one light in the scene, attached to your head.
+                            For more realism, you can add multiple lights: suns, light bulbs, candles, flashlights, spotlights, firelight.
+                            Lights can be positioned, oriented, and colored.
+                            Lights do not cast shadows.
+                    </p>
+                    
+
+
+                    <p>
+                            There are three types of lights: PointLight, DirectionalLight, and SpotLight.
+                            All lights have an on/off, intensity, ambient effect, and color fields.
+                            PointLight and SpotLight nodes have a location, radius, and attenuation.
+                            DirectionalLight and SpotLight nodes have a direction.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch20.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0299.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+20 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 38 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_04HeadlightSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_04HeadlightSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_04HeadlightSpheres"
+                                 title="X3D model Figure20_04HeadlightSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_04HeadlightSpheresIndex.html"
+                            title="X3D model Figure20_04HeadlightSpheres.x3d">Figure 20 04 Headlight Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Spheres.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Spheres.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Spheres.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure20_04HeadlightSpheres.x3d Spheres</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_04HeadlightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure20_04HeadlightSpheres.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_05FlatMeshIndex.html">
+                           <img src="_thumbnails/Figure20_05FlatMeshThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_05FlatMesh"
+                                 title="X3D model Figure20_05FlatMesh.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_05FlatMeshIndex.html"
+                            title="X3D model Figure20_05FlatMesh.x3d">Figure 20 05 Flat Mesh.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_05FlatMesh.x3d._VP_Flat_mesh.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_05FlatMesh.x3d._VP_Flat_mesh.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_05FlatMesh.x3d._VP_Flat_mesh.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure20_05FlatMesh.x3d Flat mesh</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_05FlatMesh.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_05FlatMesh.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_05FlatMesh.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure20_05FlatMesh.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_06aPointLightSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_06aPointLightSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_06aPointLightSpheres"
+                                 title="X3D model Figure20_06aPointLightSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_06aPointLightSpheresIndex.html"
+                            title="X3D model Figure20_06aPointLightSpheres.x3d">Figure 20 06a Point Light Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure20_06aPointLightSpheres.x3d PointLight at center of spheres. Note that light rays pass through geometry.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_06aPointLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure20_06aPointLightSpheres.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_06bPointLightSpheresIntensityIndex.html">
+                           <img src="_thumbnails/Figure20_06bPointLightSpheresIntensityThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_06bPointLightSpheresIntensity"
+                                 title="X3D model Figure20_06bPointLightSpheresIntensity.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_06bPointLightSpheresIntensityIndex.html"
+                            title="X3D model Figure20_06bPointLightSpheresIntensity.x3d">Figure 20 06b Point Light Spheres Intensity.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure20_06bPointLightSpheresIntensity.x3d PointLight at center of spheres. Note that light rays pass through geometry.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_06bPointLightSpheresIntensity.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure20_06bPointLightSpheresIntensity.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_07PointLightSpheresAttenuationIndex.html">
+                           <img src="_thumbnails/Figure20_07PointLightSpheresAttenuationThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_07PointLightSpheresAttenuation"
+                                 title="X3D model Figure20_07PointLightSpheresAttenuation.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_07PointLightSpheresAttenuationIndex.html"
+                            title="X3D model Figure20_07PointLightSpheresAttenuation.x3d">Figure 20 07 Point Light Spheres Attenuation.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure20_07PointLightSpheresAttenuation.x3d PointLight at center of spheres. Note that light rays pass through geometry.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_07PointLightSpheresAttenuation.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure20_07PointLightSpheresAttenuation.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_08PointLightSpheresSmallRadiusIndex.html">
+                           <img src="_thumbnails/Figure20_08PointLightSpheresSmallRadiusThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_08PointLightSpheresSmallRadius"
+                                 title="X3D model Figure20_08PointLightSpheresSmallRadius.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_08PointLightSpheresSmallRadiusIndex.html"
+                            title="X3D model Figure20_08PointLightSpheresSmallRadius.x3d">Figure 20 08 Point Light Spheres Small Radius.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_PointLight_at_center_of_spheres._Note_that_light_rays_pass_through_geometry..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure20_08PointLightSpheresSmallRadius.x3d PointLight at center of spheres. Note that light rays pass through geometry.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_08PointLightSpheresSmallRadius.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] Figure20_08PointLightSpheresSmallRadius.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_09GlowingOrbArchwaysExhibitIndex.html">
+                           <img src="_thumbnails/Figure20_09GlowingOrbArchwaysExhibitThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_09GlowingOrbArchwaysExhibit"
+                                 title="X3D model Figure20_09GlowingOrbArchwaysExhibit.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_09GlowingOrbArchwaysExhibitIndex.html"
+                            title="X3D model Figure20_09GlowingOrbArchwaysExhibit.x3d">Figure 20 09 Glowing Orb Archways Exhibit.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure20_09GlowingOrbArchwaysExhibit.x3d._VP_hello_orb.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[13] Figure20_09GlowingOrbArchwaysExhibit.x3d hello orb</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure20_09GlowingOrbArchwaysExhibit.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[14] Figure20_09GlowingOrbArchwaysExhibit.x3d (default X3D view)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_10BlinkingRedLightbulbIndex.html">
+                           <img src="_thumbnails/Figure20_10BlinkingRedLightbulbThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_10BlinkingRedLightbulb"
+                                 title="X3D model Figure20_10BlinkingRedLightbulb.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_10BlinkingRedLightbulbIndex.html"
+                            title="X3D model Figure20_10BlinkingRedLightbulb.x3d">Figure 20 10 Blinking Red Lightbulb.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure20_10BlinkingRedLightbulb.x3d._VP_Blinking_red_light_bulb.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[15] Figure20_10BlinkingRedLightbulb.x3d Blinking red light bulb</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure20_10BlinkingRedLightbulb.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[16] Figure20_10BlinkingRedLightbulb.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_11aDirectionalLightAimingRightThroughSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_11aDirectionalLightAimingRightThroughSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_11aDirectionalLightAimingRightThroughSpheres"
+                                 title="X3D model Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_11aDirectionalLightAimingRightThroughSpheresIndex.html"
+                            title="X3D model Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d">Figure 20 11a Directional Light Aiming Right Through Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] Figure20_11aDirectionalLightAimingRightThroughSpheres.x3d</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_11bDirectionalLightAimingUpperRightThroughSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_11bDirectionalLightAimingUpperRightThroughSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_11bDirectionalLightAimingUpperRightThroughSpheres"
+                                 title="X3D model Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_11bDirectionalLightAimingUpperRightThroughSpheresIndex.html"
+                            title="X3D model Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d">Figure 20 11b Directional Light Aiming Upper Right Through Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Figure20_11bDirectionalLightAimingUpperRightThroughSpheres.x3d</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres"
+                                 title="X3D model Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheresIndex.html"
+                            title="X3D model Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d">Figure 20 12 Two Directional Lights Aiming Left Right Through Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_DirectionalLight_shining_parallel_rays_to_right._No_location,_light_source_is_infinitely_distant..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d DirectionalLight shining parallel rays to right. No location, light source is infinitely distant.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] Figure20_12TwoDirectionalLightsAimingLeftRightThroughSpheres.x3d</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_13aDirectionalLightSunriseIndex.html">
+                           <img src="_thumbnails/Figure20_13aDirectionalLightSunriseThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_13aDirectionalLightSunrise"
+                                 title="X3D model Figure20_13aDirectionalLightSunrise.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_13aDirectionalLightSunriseIndex.html"
+                            title="X3D model Figure20_13aDirectionalLightSunrise.x3d">Figure 20 13a Directional Light Sunrise.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Cue_the_sunrise,_stage_right.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Cue_the_sunrise,_stage_right.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Cue_the_sunrise,_stage_right.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[23] Figure20_13aDirectionalLightSunrise.x3d Cue the sunrise, stage right</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_13aDirectionalLightSunrise.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] Figure20_13aDirectionalLightSunrise.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_13bDirectionalLightNoonIndex.html">
+                           <img src="_thumbnails/Figure20_13bDirectionalLightNoonThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_13bDirectionalLightNoon"
+                                 title="X3D model Figure20_13bDirectionalLightNoon.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_13bDirectionalLightNoonIndex.html"
+                            title="X3D model Figure20_13bDirectionalLightNoon.x3d">Figure 20 13b Directional Light Noon.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/Figure20_13bDirectionalLightNoon.x3d._VP_12_o&amp;apos;clock_high_without_a_shadow....png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[25] Figure20_13bDirectionalLightNoon.x3d 12 o&amp;apos;clock high without a shadow...</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_13bDirectionalLightNoon.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_13bDirectionalLightNoon.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_13bDirectionalLightNoon.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[26] Figure20_13bDirectionalLightNoon.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_13cDirectionalLightSunsetIndex.html">
+                           <img src="_thumbnails/Figure20_13cDirectionalLightSunsetThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_13cDirectionalLightSunset"
+                                 title="X3D model Figure20_13cDirectionalLightSunset.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_13cDirectionalLightSunsetIndex.html"
+                            title="X3D model Figure20_13cDirectionalLightSunset.x3d">Figure 20 13c Directional Light Sunset.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Exit_sun,_stage_left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Exit_sun,_stage_left.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Exit_sun,_stage_left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[27] Figure20_13cDirectionalLightSunset.x3d Exit sun, stage left</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_13cDirectionalLightSunset.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[28] Figure20_13cDirectionalLightSunset.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_14DirectionalLightSunAnimatedIndex.html">
+                           <img src="_thumbnails/Figure20_14DirectionalLightSunAnimatedThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_14DirectionalLightSunAnimated"
+                                 title="X3D model Figure20_14DirectionalLightSunAnimated.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_14DirectionalLightSunAnimatedIndex.html"
+                            title="X3D model Figure20_14DirectionalLightSunAnimated.x3d">Figure 20 14 Directional Light Sun Animated.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Sunlight_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Sunlight_animation.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Sunlight_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[29] Figure20_14DirectionalLightSunAnimated.x3d Sunlight animation</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_14DirectionalLightSunAnimated.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[30] Figure20_14DirectionalLightSunAnimated.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_15aSpotLightSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_15aSpotLightSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_15aSpotLightSpheres"
+                                 title="X3D model Figure20_15aSpotLightSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_15aSpotLightSpheresIndex.html"
+                            title="X3D model Figure20_15aSpotLightSpheres.x3d">Figure 20 15a Spot Light Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[31] Figure20_15aSpotLightSpheres.x3d SpotLight shining a cone of light rays to right.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_15aSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[32] Figure20_15aSpotLightSpheres.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure20_15bWideAngleSpotLightSpheresIndex.html">
+                           <img src="_thumbnails/Figure20_15bWideAngleSpotLightSpheresThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_15bWideAngleSpotLightSpheres"
+                                 title="X3D model Figure20_15bWideAngleSpotLightSpheres.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure20_15bWideAngleSpotLightSpheresIndex.html"
+                            title="X3D model Figure20_15bWideAngleSpotLightSpheres.x3d">Figure 20 15b Wide Angle Spot Light Spheres.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_SpotLight_shining_a_cone_of_light_rays_to_right..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[33] Figure20_15bWideAngleSpotLightSpheres.x3d SpotLight shining a cone of light rays to right.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_15bWideAngleSpotLightSpheres.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[34] Figure20_15bWideAngleSpotLightSpheres.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure20_16SpotLightBeamWidthComparisonIndex.html">
+                           <img src="_thumbnails/Figure20_16SpotLightBeamWidthComparisonThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_16SpotLightBeamWidthComparison"
+                                 title="X3D model Figure20_16SpotLightBeamWidthComparison.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure20_16SpotLightBeamWidthComparisonIndex.html"
+                            title="X3D model Figure20_16SpotLightBeamWidthComparison.x3d">Figure 20 16 Spot Light Beam Width Comparison.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLights_shining_on_meshes,_outer_cone_45_degrees._Inner_cone_varies_90_to_45_to_5_degrees..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLights_shining_on_meshes,_outer_cone_45_degrees._Inner_cone_varies_90_to_45_to_5_degrees..png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLights_shining_on_meshes,_outer_cone_45_degrees._Inner_cone_varies_90_to_45_to_5_degrees..png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[35] Figure20_16SpotLightBeamWidthComparison.x3d SpotLights shining on meshes, outer cone 45 degrees. Inner cone varies 90 to 45 to 5 degrees.</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLight_beam_differences_are_more_pronounced_at_narrow_angles.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLight_beam_differences_are_more_pronounced_at_narrow_angles.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_SpotLight_beam_differences_are_more_pronounced_at_narrow_angles.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[36] Figure20_16SpotLightBeamWidthComparison.x3d SpotLight beam differences are more pronounced at narrow angles</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_16SpotLightBeamWidthComparison.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[37] Figure20_16SpotLightBeamWidthComparison.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure20_17aSimpleWorldNoShadowsIndex.html">
+                           <img src="_thumbnails/Figure20_17aSimpleWorldNoShadowsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_17aSimpleWorldNoShadows"
+                                 title="X3D model Figure20_17aSimpleWorldNoShadows.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure20_17aSimpleWorldNoShadowsIndex.html"
+                            title="X3D model Figure20_17aSimpleWorldNoShadows.x3d">Figure 20 17a Simple World No Shadows.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[38] Figure20_17aSimpleWorldNoShadows.x3d Simple sphere scene</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[39] Figure20_17aSimpleWorldNoShadows.x3d Simple sphere scene seen from +X axis</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17aSimpleWorldNoShadows.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[40] Figure20_17aSimpleWorldNoShadows.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="Figure20_17bSimpleWorldFakeShadowsIndex.html">
+                           <img src="_thumbnails/Figure20_17bSimpleWorldFakeShadowsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure20_17bSimpleWorldFakeShadows"
+                                 title="X3D model Figure20_17bSimpleWorldFakeShadows.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="Figure20_17bSimpleWorldFakeShadowsIndex.html"
+                            title="X3D model Figure20_17bSimpleWorldFakeShadows.x3d">Figure 20 17b Simple World Fake Shadows.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Fake_showdows_in_simple_sphere_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Fake_showdows_in_simple_sphere_scene.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Fake_showdows_in_simple_sphere_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[41] Figure20_17bSimpleWorldFakeShadows.x3d Fake showdows in simple sphere scene</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Simple_sphere_scene_seen_from_+X_axis.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[42] Figure20_17bSimpleWorldFakeShadows.x3d Simple sphere scene seen from +X axis</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure20_17bSimpleWorldFakeShadows.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[43] Figure20_17bSimpleWorldFakeShadows.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter19NormalsShading/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter20Lighting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter21ShinyMaterials/viewpointSlideshow.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

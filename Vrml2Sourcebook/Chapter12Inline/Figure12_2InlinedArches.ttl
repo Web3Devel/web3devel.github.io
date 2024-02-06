@@ -1,0 +1,126 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter12Inline/Figure12_2InlinedArches.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure12_2InlinedArches.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 12.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch12/12fig02.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '16 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A row of archways built by inlining one archway from Figure 12.1 and repeatedly instancing it. Also see Figures 12.1, 12.2 and 12.3 for comparison.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure12_1SimpleArch.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure12_3TempleOfInlinedArches.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter12Inline/Figure12_2InlinedArches.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure12_2InlinedArches.x3d" .
+:meta dcterms:creator "Figure 12.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch12/12fig02.htm" .
+:meta dcterms:created "16 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A row of archways built by inlining one archway from Figure 12.1 and repeatedly instancing it. Also see Figures 12.1, 12.2 and 12.3 for comparison." .
+:meta dcterms:reference "Figure12_1SimpleArch.x3d" .
+:meta dcterms:reference "Figure12_3TempleOfInlinedArches.x3d" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter12Inline/Figure12_2InlinedArches.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure12_2InlinedArches.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Arches arches arches' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 6 10 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ARCH, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5 .
+:ARCH a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'ARCH' ;
+  x3do:bboxCenter ( 1 4 0 ) ;
+  x3do:bboxSize ( 5 8 2 ) ;
+  x3do:url '"Figure12_1SimpleArch.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter12Inline/Figure12_1SimpleArch.x3d" "Figure12_1SimpleArch.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter12Inline/Figure12_1SimpleArch.wrl"' .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ARCH-USE-1 ;
+  x3do:translation ( 0 0 -2 ) .
+:ARCH-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_2 ;
+  owl:sameAs :ARCH . # DEF matching this USE
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ARCH-USE-2 ;
+  x3do:translation ( 0 0 -4 ) .
+:ARCH-USE-2 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_3 ;
+  owl:sameAs :ARCH . # DEF matching this USE
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ARCH-USE-3 ;
+  x3do:translation ( 0 0 -6 ) .
+:ARCH-USE-3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_4 ;
+  owl:sameAs :ARCH . # DEF matching this USE
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ARCH-USE-4 ;
+  x3do:translation ( 0 0 -8 ) .
+:ARCH-USE-4 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_3_5 ;
+  owl:sameAs :ARCH . # DEF matching this USE

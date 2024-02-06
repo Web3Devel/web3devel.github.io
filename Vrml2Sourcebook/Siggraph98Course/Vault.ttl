@@ -1,0 +1,198 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Vault.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20, :meta_1_21 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vault.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Gothic vaulted ceiling archway: this file builds a piece of a vaulted ceiling using an IndexedFaceSet node. This piece is then used to build a full ceiling in ceiling.wrl, and finally a full building in temple.wrl.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ceiling.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Temple.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/vault.wrl' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0309.htm' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0383.htm' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Vault.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_21 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Vault.x3d" .
+:meta dcterms:description "Gothic vaulted ceiling archway: this file builds a piece of a vaulted ceiling using an IndexedFaceSet node. This piece is then used to build a full ceiling in ceiling.wrl, and finally a full building in temple.wrl." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Ceiling.x3d" .
+:meta dcterms:reference "Temple.x3d" .
+:meta dcterms:reference "originals/vault.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0008.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0309.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0383.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Vault.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Collision_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Vault.x3d' .
+:Collision_2_2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_2_1, :Transform_2_2_2 ;
+  x3do:enabled false .
+:Shape_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_2 ;
+  x3do:hasAppearance :Appearance_2_2_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_1_2 .
+:Appearance_2_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_2_1_1_1 ;
+  x3do:hasMaterial :StoneMaterial ;
+  x3do:hasTexture :StoneBrick .
+:TextureTransform_2_2_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_2_1_1 ;
+  x3do:scale ( 4.0 4.0 ) .
+:StoneMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1 ;
+  x3do:DEF 'StoneMaterial' ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:StoneBrick a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_1_1 ;
+  x3do:DEF 'StoneBrick' ;
+  x3do:url '"stonebrk.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/stonebrk.jpg"' .
+:IndexedFaceSet_2_2_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasCoord :Coordinate_2_2_1_2_1 ;
+  x3do:ccw false ;
+  x3do:coordIndex ( 0 13 14 1 -1 1 14 15 2 -1 2 15 16 3 -1 3 16 17 4 -1 4 17 18 5 -1 5 18 19 6 -1 6 19 20 7 -1 7 20 21 8 -1 8 21 22 9 -1 9 22 23 10 -1 10 23 24 11 -1 11 24 25 12 -1 ) ;
+  x3do:creaseAngle 0.785 .
+:Coordinate_2_2_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_1_2 ;
+  x3do:point ( -1.1 0.0 1.0 -1.1 0.26 0.97 -1.1 0.5 0.87 -1.1 0.71 0.71 -1.1 0.87 0.5 -1.1 0.97 0.26 -1.1 1.0 0.0 -1.1 0.97 -0.26 -1.1 0.87 -0.5 -1.1 0.71 -0.71 -1.1 0.5 -0.87 -1.1 0.26 -0.97 -1.1 0.0 -1.0 -1.0 0.0 1.0 -0.97 0.26 0.97 -0.87 0.5 0.87 -0.71 0.71 0.71 -0.5 0.87 0.5 -0.26 0.96 0.26 0.0 1.0 0.0 -0.26 0.96 -0.26 -0.5 0.87 -0.5 -0.71 0.71 -0.71 -0.87 0.5 -0.87 -0.97 0.26 -0.97 -1.0 0.0 -1.0 ) .
+:Transform_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_2 ;
+  x3do:hasChildren :Shape_2_2_2_1 ;
+  x3do:translation ( -1.0 0.0 0.0 ) .
+:Shape_2_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2 ;
+  x3do:hasAppearance :Appearance_2_2_2_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_2 .
+:Appearance_2_2_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_2_2_1_1_1 ;
+  x3do:hasMaterial :StoneMaterial-USE-1 ;
+  x3do:hasTexture :ImageTexture_2_2_2_1_1_3 .
+:TextureTransform_2_2_2_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_2_2_1_1 .
+:StoneMaterial-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_1 ;
+  owl:sameAs :StoneMaterial . # DEF matching this USE
+:ImageTexture_2_2_2_1_1_3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_2_1_1 ;
+  x3do:url '"stone2.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/stone2.jpg"' .
+:IndexedFaceSet_2_2_2_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1 ;
+  x3do:hasTexCoord :TextureCoordinate_2_2_2_1_2_1 ;
+  x3do:hasCoord :Coordinate_2_2_2_1_2_2 ;
+  x3do:convex false ;
+  x3do:coordIndex ( 0 16 17 1 -1 1 17 18 2 -1 2 18 19 3 -1 3 19 20 4 -1 4 20 21 5 -1 5 21 22 6 -1 6 22 23 7 -1 24 8 9 25 -1 25 9 10 26 -1 26 10 11 27 -1 27 11 12 28 -1 28 12 13 29 -1 29 13 14 30 -1 30 14 15 31 -1 8 0 1 9 -1 9 1 2 10 -1 10 2 3 11 -1 11 3 4 12 -1 12 4 5 13 -1 13 5 6 14 -1 14 6 7 15 -1 16 24 25 17 -1 17 25 26 18 -1 18 26 27 19 -1 19 27 28 20 -1 20 28 29 21 -1 21 29 30 22 -1 22 30 31 23 -1 0 8 24 16 -1 7 23 31 15 -1 ) ;
+  x3do:creaseAngle 0.785 ;
+  x3do:texCoordIndex ( 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 0 1 2 3 -1 ) .
+:TextureCoordinate_2_2_2_1_2_1 a owl:NamedIndividual, x3do:TextureCoordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_2 ;
+  x3do:point ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 ) .
+:Coordinate_2_2_2_1_2_2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_2 ;
+  x3do:point ( 0.0 0.0 -0.9 0.0 0.39 -0.81 0.0 0.7 -0.56 0.0 0.88 -0.2 0.0 0.88 0.2 0.0 0.7 0.56 0.0 0.39 0.81 0.0 0.0 0.9 -0.1 0.0 -0.9 -0.1 0.39 -0.81 -0.1 0.7 -0.56 -0.1 0.88 -0.2 -0.1 0.88 0.2 -0.1 0.7 0.56 -0.1 0.39 0.81 -0.1 0.0 0.9 0.0 0.0 -1.0 0.0 0.43 -0.9 0.0 0.78 -0.62 0.0 0.97 -0.22 0.0 0.97 0.22 0.0 0.78 0.62 0.0 0.43 0.9 0.0 0.0 1.0 -0.1 0.0 -1.0 -0.1 0.43 -0.9 -0.1 0.78 -0.62 -0.1 0.97 -0.22 -0.1 0.97 0.22 -0.1 0.78 0.62 -0.1 0.43 0.9 -0.1 0.0 1.0 ) .

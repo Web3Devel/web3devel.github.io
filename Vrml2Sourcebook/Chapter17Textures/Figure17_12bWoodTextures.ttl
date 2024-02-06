@@ -1,0 +1,210 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_12bWoodTextures.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure17_12bWoodTextures.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 17.12b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch17/17fig12b.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '28 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Six different wood types created by coloring a grayscale wood texture.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_12bWoodTextures.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure17_12bWoodTextures.x3d" .
+:meta dcterms:creator "Figure 17.12b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch17/17fig12b.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "28 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "Six different wood types created by coloring a grayscale wood texture." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/Figure17_12bWoodTextures.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure17_12bWoodTextures.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Wood greyscale texture with different colors' ;
+  x3do:position ( 1.75 0 5 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5, :Transform_2_3_6 .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :SQUARE .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1 ;
+  x3do:hasTexture :WOOD .
+:Material_2_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:diffuseColor ( 1 0.35 0.23 ) .
+:WOOD a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:DEF 'WOOD' ;
+  x3do:url '"wood_g.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter17Textures/wood_g.jpg"' .
+:SQUARE a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasCoord :Coordinate_2_3_1_2_1 ;
+  x3do:DEF 'SQUARE' ;
+  x3do:coordIndex ( 0 1 2 3 ) .
+:Coordinate_2_3_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :SQUARE ;
+  x3do:point ( 0 1 0 0 0 0 1.1 0 0 1.1 1 0 ) .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_2_1 ;
+  x3do:translation ( 1.25 0 0 ) .
+:Shape_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasAppearance :Appearance_2_3_2_1_1 ;
+  x3do:hasGeometry :SQUARE-USE-1 .
+:Appearance_2_3_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasMaterial :Material_2_3_2_1_1_1 ;
+  x3do:hasTexture :WOOD-USE-1 .
+:Material_2_3_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1_1 ;
+  x3do:diffuseColor ( 1 0.45 0.23 ) .
+:WOOD-USE-1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_2_1_1 ;
+  owl:sameAs :WOOD . # DEF matching this USE
+:SQUARE-USE-1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  owl:sameAs :SQUARE . # DEF matching this USE
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_3_1 ;
+  x3do:translation ( 2.5 0 0 ) .
+:Shape_2_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:hasAppearance :Appearance_2_3_3_1_1 ;
+  x3do:hasGeometry :SQUARE-USE-2 .
+:Appearance_2_3_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:hasMaterial :Material_2_3_3_1_1_1 ;
+  x3do:hasTexture :WOOD-USE-2 .
+:Material_2_3_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_1_1 ;
+  x3do:diffuseColor ( 1 0.55 0.23 ) .
+:WOOD-USE-2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_3_1_1 ;
+  owl:sameAs :WOOD . # DEF matching this USE
+:SQUARE-USE-2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  owl:sameAs :SQUARE . # DEF matching this USE
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_4_1 ;
+  x3do:translation ( 0 -1.25 0 ) .
+:Shape_2_3_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:hasAppearance :Appearance_2_3_4_1_1 ;
+  x3do:hasGeometry :SQUARE-USE-3 .
+:Appearance_2_3_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasMaterial :Material_2_3_4_1_1_1 ;
+  x3do:hasTexture :WOOD-USE-3 .
+:Material_2_3_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_4_1_1 ;
+  x3do:diffuseColor ( 1 0.65 0.53 ) .
+:WOOD-USE-3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_4_1_1 ;
+  owl:sameAs :WOOD . # DEF matching this USE
+:SQUARE-USE-3 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  owl:sameAs :SQUARE . # DEF matching this USE
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_5_1 ;
+  x3do:translation ( 1.25 -1.25 0 ) .
+:Shape_2_3_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasAppearance :Appearance_2_3_5_1_1 ;
+  x3do:hasGeometry :SQUARE-USE-4 .
+:Appearance_2_3_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_1_1 ;
+  x3do:hasTexture :WOOD-USE-4 .
+:Material_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_1_1 ;
+  x3do:diffuseColor ( 1 0.55 0.43 ) .
+:WOOD-USE-4 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_5_1_1 ;
+  owl:sameAs :WOOD . # DEF matching this USE
+:SQUARE-USE-4 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  owl:sameAs :SQUARE . # DEF matching this USE
+:Transform_2_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_6_1 ;
+  x3do:translation ( 2.5 -1.25 0 ) .
+:Shape_2_3_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6 ;
+  x3do:hasAppearance :Appearance_2_3_6_1_1 ;
+  x3do:hasGeometry :SQUARE-USE-5 .
+:Appearance_2_3_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_1 ;
+  x3do:hasMaterial :Material_2_3_6_1_1_1 ;
+  x3do:hasTexture :WOOD-USE-5 .
+:Material_2_3_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_6_1_1 ;
+  x3do:diffuseColor ( 1 0.55 0.53 ) .
+:WOOD-USE-5 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_6_1_1 ;
+  owl:sameAs :WOOD . # DEF matching this USE
+:SQUARE-USE-5 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_6_1 ;
+  owl:sameAs :SQUARE . # DEF matching this USE

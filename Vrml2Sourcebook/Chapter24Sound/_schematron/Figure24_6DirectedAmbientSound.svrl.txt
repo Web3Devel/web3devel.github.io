@@ -1,0 +1,2 @@
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='8 1 0' which has Y-value height of 1[/X3D/Scene/Viewpoint[2], warning]
+<Sound DEF=''/> location='0 0 0' has height of sound ellipse centered on ground plane, consider changing location y-value to 1.6 in order to match typical avatar height (in meters) [/X3D/Scene/Group/Sound, warning]

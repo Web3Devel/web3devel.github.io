@@ -1,0 +1,226 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_17bSimpleWorldFakeShadows.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure20_17bSimpleWorldFakeShadows.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 20.17b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch20/20fig17b.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '10 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A simple world with fake shadows. Compare Figures 20.17a, 17b.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure20_17aSimpleWorldNoShadows.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_17bSimpleWorldFakeShadows.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure20_17bSimpleWorldFakeShadows.x3d" .
+:meta dcterms:creator "Figure 20.17b, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch20/20fig17b.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "10 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A simple world with fake shadows. Compare Figures 20.17a, 17b." .
+:meta dcterms:reference "Figure20_17aSimpleWorldNoShadows.x3d" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter20Lighting/Figure20_17bSimpleWorldFakeShadows.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Transform_2_2, :Transform_2_3, :NavigationInfo_2_4, :Group_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure20_17bSimpleWorldFakeShadows.x3d' .
+:Transform_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_2_1 ;
+  x3do:rotation ( 0 1 0 -0.758 ) .
+:Viewpoint_2_2_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:description 'Fake showdows in simple sphere scene' ;
+  x3do:orientation ( 1 0 0 -0.52 ) ;
+  x3do:position ( 0 8 12 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_3_1 ;
+  x3do:rotation ( 0 1 0 1.57 ) .
+:Viewpoint_2_3_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:description 'Simple sphere scene seen from +X axis' ;
+  x3do:orientation ( 1 0 0 -0.52 ) ;
+  x3do:position ( 0 8 12 ) .
+:NavigationInfo_2_4 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false .
+:Group_2_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :DirectionalLight_2_5_1, :Shape_2_5_2, :Transform_2_5_3, :Transform_2_5_4, :Transform_2_5_5 .
+:DirectionalLight_2_5_1 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:direction ( 0 -1 0 ) ;
+  x3do:intensity 0.7 .
+:Shape_2_5_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasGeometry :Box_2_5_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_2_2 .
+:Box_2_5_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_2 ;
+  x3do:size ( 10 0.01 10 ) .
+:Appearance_2_5_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2 ;
+  x3do:hasMaterial :Material_2_5_2_2_1 .
+:Material_2_5_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2_2 ;
+  x3do:diffuseColor ( 0.9 0.9 0.9 ) .
+:Transform_2_5_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Shape_2_5_3_1, :Transform_2_5_3_2 ;
+  x3do:translation ( 0 4 2 ) .
+:Shape_2_5_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_3 ;
+  x3do:hasGeometry :Sphere_2_5_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_3_1_2 .
+:Sphere_2_5_3_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_3_1 .
+:Appearance_2_5_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_1 ;
+  x3do:hasMaterial :Material_2_5_3_1_2_1 .
+:Material_2_5_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_3_1_2 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:Transform_2_5_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_3 ;
+  x3do:hasChildren :Shape_2_5_3_2_1 ;
+  x3do:translation ( 0 -4 0 ) .
+:Shape_2_5_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_3_2 ;
+  x3do:hasGeometry :Cylinder_2_5_3_2_1_1 ;
+  x3do:hasAppearance :ShadowAppearance .
+:Cylinder_2_5_3_2_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_3_2_1 ;
+  x3do:bottom false ;
+  x3do:height 0.05 ;
+  x3do:side false .
+:ShadowAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3_2_1 ;
+  x3do:hasMaterial :Material_2_5_3_2_1_2_1 ;
+  x3do:DEF 'ShadowAppearance' .
+:Material_2_5_3_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ShadowAppearance ;
+  x3do:diffuseColor ( 0 0 0 ) ;
+  x3do:transparency 0.5 .
+:Transform_2_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Shape_2_5_4_1, :Transform_2_5_4_2 ;
+  x3do:translation ( 2 2 -2 ) .
+:Shape_2_5_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_4 ;
+  x3do:hasGeometry :Sphere_2_5_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_4_1_2 .
+:Sphere_2_5_4_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_4_1 ;
+  x3do:radius 2 .
+:Appearance_2_5_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_1 ;
+  x3do:hasMaterial :Material_2_5_4_1_2_1 .
+:Material_2_5_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_4_1_2 ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:Transform_2_5_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_4 ;
+  x3do:hasChildren :Shape_2_5_4_2_1 ;
+  x3do:translation ( 0 -2 0 ) .
+:Shape_2_5_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_4_2 ;
+  x3do:hasGeometry :Cylinder_2_5_4_2_1_1 ;
+  x3do:hasAppearance :ShadowAppearance-USE-1 .
+:Cylinder_2_5_4_2_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_4_2_1 ;
+  x3do:bottom false ;
+  x3do:height 0.05 ;
+  x3do:radius 2 ;
+  x3do:side false .
+:ShadowAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4_2_1 ;
+  owl:sameAs :ShadowAppearance . # DEF matching this USE
+:Transform_2_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Shape_2_5_5_1, :Transform_2_5_5_2 ;
+  x3do:translation ( -2 2.5 0 ) .
+:Shape_2_5_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasGeometry :Sphere_2_5_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_5_1_2 .
+:Sphere_2_5_5_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_5_1 ;
+  x3do:radius 0.75 .
+:Appearance_2_5_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_1 ;
+  x3do:hasMaterial :Material_2_5_5_1_2_1 .
+:Material_2_5_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_5_1_2 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:Transform_2_5_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_5 ;
+  x3do:hasChildren :Shape_2_5_5_2_1 ;
+  x3do:translation ( 0 -2.5 0 ) .
+:Shape_2_5_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_5_2 ;
+  x3do:hasGeometry :Cylinder_2_5_5_2_1_1 ;
+  x3do:hasAppearance :ShadowAppearance-USE-2 .
+:Cylinder_2_5_5_2_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_5_2_1 ;
+  x3do:bottom false ;
+  x3do:height 0.05 ;
+  x3do:radius 0.75 ;
+  x3do:side false .
+:ShadowAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_5_2_1 ;
+  owl:sameAs :ShadowAppearance . # DEF matching this USE

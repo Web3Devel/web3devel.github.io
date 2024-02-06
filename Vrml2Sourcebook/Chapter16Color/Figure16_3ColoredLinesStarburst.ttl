@@ -1,0 +1,150 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_3ColoredLinesStarburst.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure16_3ColoredLinesStarburst.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 16.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch16/16fig03.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A star burst of lines colored using colors from a Color node, select second viewpoint for animation.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_3ColoredLinesStarburst.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure16_3ColoredLinesStarburst.x3d" .
+:meta dcterms:creator "Figure 16.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch16/16fig03.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "25 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A star burst of lines colored using colors from a Color node, select second viewpoint for animation." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_3ColoredLinesStarburst.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :SPINNING_VIEWPOINT_PARENT_TRANSFORM, :Group_2_4, :TIMER, :SPINNER ;
+  x3do:hasROUTE :ROUTE_2_7, :ROUTE_2_8 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure16_3ColoredLinesStarburst.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Starburst lines' ;
+  x3do:position ( 0 0 4 ) .
+:SPINNING_VIEWPOINT_PARENT_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_3_1 ;
+  x3do:DEF 'SPINNING_VIEWPOINT_PARENT_TRANSFORM' .
+:Viewpoint_2_3_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :SPINNING_VIEWPOINT_PARENT_TRANSFORM ;
+  x3do:description 'Spinning viewpoint' ;
+  x3do:position ( 0 0 4 ) .
+:Group_2_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Burst, :Transform_2_4_2, :Transform_2_4_3, :Transform_2_4_4 .
+:Burst a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasGeometry :IndexedLineSet_2_4_1_1 ;
+  x3do:DEF 'Burst' .
+:IndexedLineSet_2_4_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Burst ;
+  x3do:hasCoord :Coordinate_2_4_1_1_1 ;
+  x3do:hasColor :Color_2_4_1_1_2 ;
+  x3do:colorIndex ( 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 0 1 -1 ) ;
+  x3do:coordIndex ( 0 1 -1 0 2 -1 0 3 -1 0 4 -1 0 5 -1 0 6 -1 0 7 -1 0 8 -1 0 9 -1 0 10 -1 0 11 -1 0 12 -1 0 13 -1 0 14 -1 0 15 -1 0 16 -1 ) .
+:Coordinate_2_4_1_1_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_4_1_1 ;
+  x3do:point ( 0.00 0.00 0.00 1.00 0.00 0.00 0.92 0.38 0.00 0.71 0.71 0.00 0.38 0.92 0.00 0.00 1.00 0.00 -0.38 0.92 0.00 -0.71 0.71 0.00 -0.92 0.38 0.00 -1.00 0.00 0.00 -0.92 -0.38 0.00 -0.71 -0.71 0.00 -0.38 -0.92 0.00 0.00 -1.00 0.00 0.38 -0.92 0.00 0.71 -0.71 0.00 0.92 -0.38 0.00 ) .
+:Color_2_4_1_1_2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_4_1_1 ;
+  x3do:color ( 1 1 0 1 0.3 0.3 ) .
+:Transform_2_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Burst-USE-1 ;
+  x3do:rotation ( 0 1 0 0.785 ) .
+:Burst-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_2 ;
+  owl:sameAs :Burst . # DEF matching this USE
+:Transform_2_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Burst-USE-2 ;
+  x3do:rotation ( 0 1 0 1.571 ) .
+:Burst-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3 ;
+  owl:sameAs :Burst . # DEF matching this USE
+:Transform_2_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Burst-USE-3 ;
+  x3do:rotation ( 0 1 0 2.355 ) .
+:Burst-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_4 ;
+  owl:sameAs :Burst . # DEF matching this USE
+:TIMER a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'TIMER' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:SPINNER a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SPINNER' ;
+  x3do:key ( 0 .5 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 -3.1416 0 1 0 -6.2832 ) .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'TIMER' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SPINNER' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SPINNER' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'SPINNING_VIEWPOINT_PARENT_TRANSFORM' .

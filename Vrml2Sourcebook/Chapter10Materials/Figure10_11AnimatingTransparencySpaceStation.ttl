@@ -1,0 +1,145 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_11AnimatingTransparencySpaceStation.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure10_11AnimatingTransparencySpaceStation.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 10.11, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch10/10fig11.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'transcriber' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A simple space station with a central sphere whose transparency is animated using a ScalarInterpolator. Also see Figure03_10SpaceStation.x3d, Figure10_05MultiColoredSpaceStation.x3d, Figure10_06PulsatingSpaceStation.x3d and Figure10_10SemiTransparentSpaceStation.x3d' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_11AnimatingTransparencySpaceStation.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure10_11AnimatingTransparencySpaceStation.x3d" .
+:meta dcterms:creator "Figure 10.11, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch10/10fig11.htm" .
+:meta dcterms:created "13 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A simple space station with a central sphere whose transparency is animated using a ScalarInterpolator. Also see Figure03_10SpaceStation.x3d, Figure10_05MultiColoredSpaceStation.x3d, Figure10_06PulsatingSpaceStation.x3d and Figure10_10SemiTransparentSpaceStation.x3d" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter10Materials/Figure10_11AnimatingTransparencySpaceStation.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure10_11AnimatingTransparencySpaceStation.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '5m space station from 8m away' ;
+  x3do:position ( 0 0 8 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :Shape_2_3_2, :Shape_2_3_3, :CLOCK, :TRANSPARENCY_PATH .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_1_2 .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :BALL_MATERIAL .
+:BALL_MATERIAL a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:DEF 'BALL_MATERIAL' ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:Sphere_2_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_1 .
+:Shape_2_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_2_1 ;
+  x3do:hasGeometry :Cylinder_2_3_2_2 .
+:Appearance_2_3_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:hasMaterial :Material_2_3_2_1_1 .
+:Material_2_3_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1 ;
+  x3do:diffuseColor ( 0.5 0.25 1 ) .
+:Cylinder_2_3_2_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:height 0.05 ;
+  x3do:radius 2 .
+:Shape_2_3_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_3_1 ;
+  x3do:hasGeometry :Cylinder_2_3_3_2 .
+:Appearance_2_3_3_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3 ;
+  x3do:hasMaterial :Material_2_3_3_1_1 .
+:Material_2_3_3_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_1 ;
+  x3do:diffuseColor ( 0.75 0 1 ) .
+:Cylinder_2_3_3_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_3_3 ;
+  x3do:height 5 ;
+  x3do:radius 0.15 .
+:CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'CLOCK' ;
+  x3do:cycleInterval '10' ;
+  x3do:loop true .
+:TRANSPARENCY_PATH a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'TRANSPARENCY_PATH' ;
+  x3do:key ( 0 0.45 0.9 1 ) ;
+  x3do:keyValue ( 0 1 0 0 ) .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'TRANSPARENCY_PATH' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'TRANSPARENCY_PATH' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'BALL_MATERIAL' .

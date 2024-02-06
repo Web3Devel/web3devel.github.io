@@ -1,0 +1,1 @@
+<MovieTexture DEF=''/> is missing description which is important for accessibility and usability.  Example: description='MovieTexture video/sound of ___ is playing...' [/X3D/Scene/Group/Shape[3]/Appearance/MovieTexture, warning]

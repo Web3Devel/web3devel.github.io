@@ -1,0 +1,6 @@
+ERROR StatusLogger Reconfiguration failed: No configuration found for '70dea4e' at 'null' in 'null'
+-------------------------------------------------
+| WorldInfoNode   | title          | parentNode |
+=================================================
+| "WorldInfo_2_1" | "Hello World!" | "Scene"    |
+-------------------------------------------------

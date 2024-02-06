@@ -1,0 +1,2 @@
+Figure 10.12 bouncing box is essentially the same as 
+Figure8.3.PositionInterpolator.x3d

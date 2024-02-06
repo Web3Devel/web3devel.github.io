@@ -1,0 +1,131 @@
+@prefix :        <https://www.web3d.org/semantics/scenes/UnnamedX3dModel.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '4.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-4.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20, :meta_1_21, :meta_1_22 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter FileNameWithNoAbbreviations.x3d here*' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter description here, short-sentence summaries preferred*' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter name of original author here*' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*if manually translating VRML-to-X3D, enter name of person translating here*' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter date of initial version here*' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter date of translation here*' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '9 July 2023' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter version here, if any*' ;
+  x3do:name 'version' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter reference citation or relative/online url here*' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter additional url/bibliographic reference information here*' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter reference resource here if required to support function, delivery, or coherence of content*' ;
+  x3do:name 'requires' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2006 to present' ;
+  x3do:name 'rights' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter drawing filename/url here*' ;
+  x3do:name 'drawing' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter image filename/url here*' ;
+  x3do:name 'Image' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter movie filename/url here*' ;
+  x3do:name 'MovingImage' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter photo filename/url here*' ;
+  x3do:name 'photo' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter subject keywords here*' ;
+  x3do:name 'subject' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter permission statements or url here*' ;
+  x3do:name 'accessRights' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*insert any known warnings, bugs or errors here*' ;
+  x3do:name 'warning' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*' ;
+  x3do:name 'identifier' .
+:meta_1_21 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_22 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "*enter FileNameWithNoAbbreviations.x3d here*" .
+:meta dcterms:description "*enter description here, short-sentence summaries preferred*" .
+:meta dcterms:creator "*enter name of original author here*" .
+:meta dcterms:translator "*if manually translating VRML-to-X3D, enter name of person translating here*" .
+:meta dcterms:created "*enter date of initial version here*" .
+:meta dcterms:translated "*enter date of translation here*" .
+:meta dcterms:modified "9 July 2023" .
+:meta dcterms:version "*enter version here, if any*" .
+:meta dcterms:reference "*enter reference citation or relative/online url here*" .
+:meta dcterms:reference "*enter additional url/bibliographic reference information here*" .
+:meta dcterms:requires "*enter reference resource here if required to support function, delivery, or coherence of content*" .
+:meta dcterms:rights "*enter copyright information here* Example: Copyright (c) Web3D Consortium Inc. 2006 to present" .
+:meta dcterms:drawing "*enter drawing filename/url here*" .
+:meta dcterms:Image "*enter image filename/url here*" .
+:meta dcterms:MovingImage "*enter movie filename/url here*" .
+:meta dcterms:photo "*enter photo filename/url here*" .
+:meta dcterms:subject "*enter subject keywords here*" .
+:meta dcterms:accessRights "*enter permission statements or url here*" .
+:meta dcterms:warning "*insert any known warnings, bugs or errors here*" .
+:meta dcterms:identifier "*enter online Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) address for this file here*" .
+:meta dcterms:generator "X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D .

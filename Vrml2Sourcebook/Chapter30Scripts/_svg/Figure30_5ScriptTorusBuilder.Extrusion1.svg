@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC  "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="Figure30_5ScriptTorusBuilder.Extrusion1.svg"
+     width="900"
+     height="750">
+   <rect width="900" height="750" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+'/>
+-->
+   <!--
+			Min xPos = 100000
+			Max xPos = -100000			
+			Min yPos = 100000
+			Max yPos = -100000-->
+   <g transform="translate(450 375) scale(100 -100)">
+      <g style="fill:none;stroke:blue;stroke-width:0.04"/>
+      <g style="fill:red;stroke:red;stroke-width:0.001"/>
+   </g>
+   <g id="markerTexts"
+      transform="translate(450 375)"
+      style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none"/>
+   <g transform="translate(450 375) scale(100 -100)"
+      style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+      <line x1="0" y1="110000.00000000001" x2="0" y2="-110000.00000000001"/>
+      <line x1="110000.00000000001" y1="0" x2="-110000.00000000001" y2="0"/>
+      <g style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+   </g>
+</svg>

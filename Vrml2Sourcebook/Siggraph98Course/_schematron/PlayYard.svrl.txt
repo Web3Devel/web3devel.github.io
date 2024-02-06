@@ -1,0 +1,2 @@
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='0.0 1.6 0.0' which has Y-value height of 1.6[/X3D/Scene/Viewpoint[3], warning]
+<ImageTexture DEF=''/> url array address(es) duplicate the url definition found in a preceding node, consider DEF/USE to reduce download delays and memory requirements for url content (url='"ladrshad.png" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/ladrshad.png"') [/X3D/Scene/Transform[5]/Shape[2]/Appearance/ImageTexture, warning]

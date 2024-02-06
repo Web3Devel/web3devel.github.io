@@ -1,0 +1,4 @@
+<X3D profile='Interactive'> doesn't match contained nodes, increase profile or add needed <X3D><head><component> statements [/X3D, error]
+<X3D profile='Interactive'> is defined, but nodes in scene have actual profile='Immersive' [/X3D, info]
+<X3D profile='Interactive'> is defined, but nodes in scene have actual profile='Immersive', ensure <X3D><head><component> statements are sufficient to provide coverage [/X3D, info]
+<Shape DEF=''/> found without child geometry node [/X3D/Scene/Switch/Shape, warning]

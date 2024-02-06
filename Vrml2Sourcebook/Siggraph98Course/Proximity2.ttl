@@ -1,0 +1,534 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Proximity2.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Proximity2.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Proximity pillars example illustrates the use of proximity sensors to sense when the user gets close, and trigger animations or sounds.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/prox2.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0376.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Proximity2.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Proximity2.x3d" .
+:meta dcterms:description "Proximity pillars example illustrates the use of proximity sensors to sense when the user gets close, and trigger animations or sounds." .
+:meta dcterms:creator "David R. Nadeau" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/prox2.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0376.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Proximity2.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Background_2_4, :Fog_2_5, :DirectionalLight_2_6, :Shape_2_7, :Sound_2_8, :HitBar1, :ClockOnBar1, :ClockOffBar1, :OnBar1, :OffBar1, :HitBar2, :ClockOnBar2, :ClockOffBar2, :OnBar2, :OffBar2, :HitBar3, :ClockOnBar3, :ClockOffBar3, :OnBar3, :OffBar3, :HitBar4, :ClockOnBar4, :ClockOffBar4, :OnBar4, :OffBar4 ;
+  x3do:hasROUTE :ROUTE_2_14, :ROUTE_2_15, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_18, :ROUTE_2_19, :ROUTE_2_20, :ROUTE_2_26, :ROUTE_2_27, :ROUTE_2_28, :ROUTE_2_29, :ROUTE_2_30, :ROUTE_2_31, :ROUTE_2_32, :ROUTE_2_38, :ROUTE_2_39, :ROUTE_2_40, :ROUTE_2_41, :ROUTE_2_42, :ROUTE_2_43, :ROUTE_2_44, :ROUTE_2_50, :ROUTE_2_51, :ROUTE_2_52, :ROUTE_2_53, :ROUTE_2_54, :ROUTE_2_55, :ROUTE_2_56 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'Proximity pillars' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 0.0 1.0 0.0 0.785 ) ;
+  x3do:position ( 7.5 1.7 7.5 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false ;
+  x3do:speed 3.0 .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyAngle ( 1.57 1.87 ) ;
+  x3do:skyColor ( 0.0 0.0 0.0 0.0 0.0 0.0 1.0 1.0 1.0 ) .
+:Fog_2_5 a owl:NamedIndividual, x3do:Fog ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 0.1 0.1 0.1 ) ;
+  x3do:visibilityRange 18.0 .
+:DirectionalLight_2_6 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:direction ( -1.0 -0.5 -0.5 ) .
+:Shape_2_7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_7_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_7_2 .
+:Appearance_2_7_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7 ;
+  x3do:hasTextureTransform :TextureTransform_2_7_1_1 ;
+  x3do:hasTexture :ImageTexture_2_7_1_2 .
+:TextureTransform_2_7_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_7_1 ;
+  x3do:scale ( 16.0 16.0 ) .
+:ImageTexture_2_7_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_7_1 ;
+  x3do:url '"grill.png" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/grill.png"' .
+:IndexedFaceSet_2_7_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_7 ;
+  x3do:hasTexCoord :TextureCoordinate_2_7_2_1 ;
+  x3do:hasCoord :Coordinate_2_7_2_2 ;
+  x3do:coordIndex ( 0 1 2 3 ) ;
+  x3do:texCoordIndex ( 0 1 2 3 ) .
+:TextureCoordinate_2_7_2_1 a owl:NamedIndividual, x3do:TextureCoordinate ;
+  x3do:hasParent :IndexedFaceSet_2_7_2 ;
+  x3do:point ( 0.0 0.0 1.0 0.0 1.0 1.0 0.0 1.0 ) .
+:Coordinate_2_7_2_2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_7_2 ;
+  x3do:point ( -16.0 0.0 16.0 16.0 0.0 16.0 16.0 0.0 -16.0 -16.0 0.0 -16.0 ) .
+:Sound_2_8 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :Bonk ;
+  x3do:maxBack 100.0 ;
+  x3do:maxFront 100.0 ;
+  x3do:minBack 100.0 ;
+  x3do:minFront 100.0 .
+:Bonk a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_8 ;
+  x3do:DEF 'Bonk' ;
+  x3do:stopTime '1.0' ;
+  x3do:url '"dropbrk.wav" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/dropbrk.wav"' .
+:HitBar1 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_9_1 ;
+  x3do:DEF 'HitBar1' .
+:Transform_2_9_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HitBar1 ;
+  x3do:hasChildren :NearBar1, :Shape_2_9_1_2 ;
+  x3do:translation ( -2.0 0.0 2.0 ) .
+:NearBar1 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_9_1 ;
+  x3do:DEF 'NearBar1' ;
+  x3do:size ( 14.0 14.0 14.0 ) .
+:Shape_2_9_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_9_1 ;
+  x3do:hasAppearance :Appearance_2_9_1_2_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_9_1_2_2 .
+:Appearance_2_9_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_1_2 ;
+  x3do:hasMaterial :MaterialBar1 .
+:MaterialBar1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_9_1_2_1 ;
+  x3do:DEF 'MaterialBar1' ;
+  x3do:diffuseColor ( 0.0 0.3 1.0 ) ;
+  x3do:transparency 1.0 .
+:IndexedFaceSet_2_9_1_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_9_1_2 ;
+  x3do:hasCoord :Coordinate_2_9_1_2_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 1 2 6 5 -1 2 3 7 6 -1 3 0 4 7 -1 4 5 6 7 -1 ) .
+:Coordinate_2_9_1_2_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_9_1_2_2 ;
+  x3do:point ( -0.5 0.0 0.5 0.5 0.0 0.5 0.5 0.0 -0.5 -0.5 0.0 -0.5 -0.5 4.0 0.5 0.5 4.0 0.5 0.5 4.0 -0.5 -0.5 4.0 -0.5 ) .
+:ClockOnBar1 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOnBar1' ;
+  x3do:stopTime '1.0' .
+:ClockOffBar1 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOffBar1' ;
+  x3do:stopTime '1.0' .
+:OnBar1 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OnBar1' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 ) .
+:OffBar1 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OffBar1' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 ) .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'enterTime' ;
+  x3do:fromNode 'NearBar1' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOnBar1' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'exitTime' ;
+  x3do:fromNode 'NearBar1' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOffBar1' .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOnBar1' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OnBar1' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOffBar1' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OffBar1' .
+:ROUTE_2_18 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OnBar1' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar1' .
+:ROUTE_2_19 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OffBar1' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar1' .
+:ROUTE_2_20 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'HitBar1' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Bonk' .
+:HitBar2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_21_1 ;
+  x3do:DEF 'HitBar2' .
+:Transform_2_21_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HitBar2 ;
+  x3do:hasChildren :NearBar2, :Shape_2_21_1_2 ;
+  x3do:translation ( 4.0 0.0 0.0 ) .
+:NearBar2 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_21_1 ;
+  x3do:DEF 'NearBar2' ;
+  x3do:size ( 14.0 14.0 14.0 ) .
+:Shape_2_21_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_21_1 ;
+  x3do:hasAppearance :Appearance_2_21_1_2_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_21_1_2_2 .
+:Appearance_2_21_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_21_1_2 ;
+  x3do:hasMaterial :MaterialBar2 .
+:MaterialBar2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_21_1_2_1 ;
+  x3do:DEF 'MaterialBar2' ;
+  x3do:diffuseColor ( 0.0 1.0 0.0 ) ;
+  x3do:transparency 1.0 .
+:IndexedFaceSet_2_21_1_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_21_1_2 ;
+  x3do:hasCoord :Coordinate_2_21_1_2_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 1 2 6 5 -1 2 3 7 6 -1 3 0 4 7 -1 4 5 6 7 -1 ) .
+:Coordinate_2_21_1_2_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_21_1_2_2 ;
+  x3do:point ( -0.5 0.0 0.5 0.5 0.0 0.5 0.5 0.0 -0.5 -0.5 0.0 -0.5 -0.5 2.0 0.5 0.5 2.0 0.5 0.5 2.0 -0.5 -0.5 2.0 -0.5 ) .
+:ClockOnBar2 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOnBar2' ;
+  x3do:stopTime '1.0' .
+:ClockOffBar2 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOffBar2' ;
+  x3do:stopTime '1.0' .
+:OnBar2 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OnBar2' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 ) .
+:OffBar2 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OffBar2' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 ) .
+:ROUTE_2_26 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'enterTime' ;
+  x3do:fromNode 'NearBar2' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOnBar2' .
+:ROUTE_2_27 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'exitTime' ;
+  x3do:fromNode 'NearBar2' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOffBar2' .
+:ROUTE_2_28 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOnBar2' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OnBar2' .
+:ROUTE_2_29 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOffBar2' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OffBar2' .
+:ROUTE_2_30 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OnBar2' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar2' .
+:ROUTE_2_31 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OffBar2' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar2' .
+:ROUTE_2_32 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'HitBar2' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Bonk' .
+:HitBar3 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_33_1 ;
+  x3do:DEF 'HitBar3' .
+:Transform_2_33_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HitBar3 ;
+  x3do:hasChildren :NearBar3, :Shape_2_33_1_2 ;
+  x3do:translation ( -4.0 0.0 -4.0 ) .
+:NearBar3 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_33_1 ;
+  x3do:DEF 'NearBar3' ;
+  x3do:size ( 14.0 14.0 14.0 ) .
+:Shape_2_33_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_33_1 ;
+  x3do:hasAppearance :Appearance_2_33_1_2_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_33_1_2_2 .
+:Appearance_2_33_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_33_1_2 ;
+  x3do:hasMaterial :MaterialBar3 .
+:MaterialBar3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_33_1_2_1 ;
+  x3do:DEF 'MaterialBar3' ;
+  x3do:diffuseColor ( 1.0 1.0 0.0 ) ;
+  x3do:transparency 1.0 .
+:IndexedFaceSet_2_33_1_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_33_1_2 ;
+  x3do:hasCoord :Coordinate_2_33_1_2_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 1 2 6 5 -1 2 3 7 6 -1 3 0 4 7 -1 4 5 6 7 -1 ) .
+:Coordinate_2_33_1_2_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_33_1_2_2 ;
+  x3do:point ( -0.5 0.0 0.5 0.5 0.0 0.5 0.5 0.0 -0.5 -0.5 0.0 -0.5 -0.5 4.0 0.5 0.5 4.0 0.5 0.5 4.0 -0.5 -0.5 4.0 -0.5 ) .
+:ClockOnBar3 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOnBar3' ;
+  x3do:stopTime '1.0' .
+:ClockOffBar3 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOffBar3' ;
+  x3do:stopTime '1.0' .
+:OnBar3 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OnBar3' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 ) .
+:OffBar3 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OffBar3' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 ) .
+:ROUTE_2_38 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'enterTime' ;
+  x3do:fromNode 'NearBar3' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOnBar3' .
+:ROUTE_2_39 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'exitTime' ;
+  x3do:fromNode 'NearBar3' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOffBar3' .
+:ROUTE_2_40 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOnBar3' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OnBar3' .
+:ROUTE_2_41 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOffBar3' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OffBar3' .
+:ROUTE_2_42 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OnBar3' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar3' .
+:ROUTE_2_43 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OffBar3' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar3' .
+:ROUTE_2_44 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'HitBar3' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Bonk' .
+:HitBar4 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_45_1 ;
+  x3do:DEF 'HitBar4' .
+:Transform_2_45_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HitBar4 ;
+  x3do:hasChildren :NearBar4, :Shape_2_45_1_2 ;
+  x3do:translation ( 2.0 0.0 -2.0 ) .
+:NearBar4 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_45_1 ;
+  x3do:DEF 'NearBar4' ;
+  x3do:size ( 14.0 14.0 14.0 ) .
+:Shape_2_45_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_45_1 ;
+  x3do:hasAppearance :Appearance_2_45_1_2_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_45_1_2_2 .
+:Appearance_2_45_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_45_1_2 ;
+  x3do:hasMaterial :MaterialBar4 .
+:MaterialBar4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_45_1_2_1 ;
+  x3do:DEF 'MaterialBar4' ;
+  x3do:diffuseColor ( 1.0 0.0 0.0 ) ;
+  x3do:transparency 1.0 .
+:IndexedFaceSet_2_45_1_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_45_1_2 ;
+  x3do:hasCoord :Coordinate_2_45_1_2_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 1 2 6 5 -1 2 3 7 6 -1 3 0 4 7 -1 4 5 6 7 -1 ) .
+:Coordinate_2_45_1_2_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_45_1_2_2 ;
+  x3do:point ( -0.5 0.0 0.5 0.5 0.0 0.5 0.5 0.0 -0.5 -0.5 0.0 -0.5 -0.5 3.0 0.5 0.5 3.0 0.5 0.5 3.0 -0.5 -0.5 3.0 -0.5 ) .
+:ClockOnBar4 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOnBar4' ;
+  x3do:stopTime '1.0' .
+:ClockOffBar4 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ClockOffBar4' ;
+  x3do:stopTime '1.0' .
+:OnBar4 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OnBar4' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 ) .
+:OffBar4 a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OffBar4' ;
+  x3do:key ( 0.0 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 ) .
+:ROUTE_2_50 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'enterTime' ;
+  x3do:fromNode 'NearBar4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOnBar4' .
+:ROUTE_2_51 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'exitTime' ;
+  x3do:fromNode 'NearBar4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'ClockOffBar4' .
+:ROUTE_2_52 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOnBar4' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OnBar4' .
+:ROUTE_2_53 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ClockOffBar4' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OffBar4' .
+:ROUTE_2_54 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OnBar4' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar4' .
+:ROUTE_2_55 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OffBar4' ;
+  x3do:toField 'set_transparency' ;
+  x3do:toNode 'MaterialBar4' .
+:ROUTE_2_56 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'collideTime' ;
+  x3do:fromNode 'HitBar4' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'Bonk' .

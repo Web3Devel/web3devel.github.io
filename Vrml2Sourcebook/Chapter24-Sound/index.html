@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>VRML 2 Sourcebook X3D Examples Archive, Chapter 24 - Sound</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+            content="http://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="7 March 2017"/>
+   </head>
+   <body>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter23-Fog/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter25-LevelOfDetail/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 24 - Sound</h2>
+      <table align="center" width="85%" summary="" border="0" cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter24-Sound/package.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 24.1 Emitter Markers" title="Figure 24.1 Emitter Markers" hspace="10" 
+                          src="_viewpoints/Figure24.1EmitterMarkers.x3d._VP_9m_distance,_range_circles_at_5m_and_10m.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+                            Sounds can be triggered by viewer actions: clicks, horn honks, door latch noises, etc.
+                            Sounds can also be continuous in the background: wind, crowd noises, elevator music.
+                            Sounds emit from a location, in a direction, and within an ellipsoidal volume.
+                            A Sound node describes a sound emitter, where a source node provides the sound and range fields describe the sound region.
+                            An AudioClip node or a MovieTexture node describe a sound source, where a url points to the sound file.
+                            AudioClip also controls playback by start time, stop time, and (optionally) looping.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch24.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0333.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center" width="85%" summary="" border="1" cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;7 X3D Scenes</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scene Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.1EmitterMarkers"/>
+               <a href="Figure24.1EmitterMarkersIndex.html">
+                  <img src="_thumbnails/Figure24.1EmitterMarkersThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.1EmitterMarkersIndex.html">Figure 24.1 Emitter Markers</a>
+            </td>
+            <td>A silent set of emitter markers indicating emitter location, minimum-range ellipsoid, and maximum-range ellipsoid. Used by other Chapter 24 examples.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.2AmbientSoundEmitterMarkers"/>
+               <a href="Figure24.2AmbientSoundEmitterMarkersIndex.html">
+                  <img src="_thumbnails/Figure24.2AmbientSoundEmitterMarkersThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.2AmbientSoundEmitterMarkersIndex.html">Figure 24.2 Ambient Sound Emitter Markers</a>
+            </td>
+            <td>A world with ambient sound and a set of emitter markers.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.3TouchSensorTriggeredSound"/>
+               <a href="Figure24.3TouchSensorTriggeredSoundIndex.html">
+                  <img src="_thumbnails/Figure24.3TouchSensorTriggeredSoundThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.3TouchSensorTriggeredSoundIndex.html">Figure 24.3 Touch Sensor Triggered Sound</a>
+            </td>
+            <td>A world with sound triggered by touching a white ball, with an emitter marker marking the range of audible sound.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.4FourKeyKeyboard"/>
+               <a href="Figure24.4FourKeyKeyboardIndex.html">
+                  <img src="_thumbnails/Figure24.4FourKeyKeyboardThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.4FourKeyKeyboardIndex.html">Figure 24.4 Four Key Keyboard</a>
+            </td>
+            <td>Four keys in a keyboard, showing how pitch can vary a single sound source.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.5TwoAmbientCirclingSounds"/>
+               <a href="Figure24.5TwoAmbientCirclingSoundsIndex.html">
+                  <img src="_thumbnails/Figure24.5TwoAmbientCirclingSoundsThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.5TwoAmbientCirclingSoundsIndex.html">Figure 24.5 Two Ambient Circling Sounds</a>
+            </td>
+            <td>Two ambient sounds circling the origin.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.6DirectedAmbientSound"/>
+               <a href="Figure24.6DirectedAmbientSoundIndex.html">
+                  <img src="_thumbnails/Figure24.6DirectedAmbientSoundThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.6DirectedAmbientSoundIndex.html">Figure 24.6 Directed Ambient Sound</a>
+            </td>
+            <td>A time-varying ambient sound aimed to the right.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Figure24.7VirtualTV"/>
+               <a href="Figure24.7VirtualTVIndex.html">
+                  <img src="_thumbnails/Figure24.7VirtualTVThumbnail.png" height="48"/>
+               </a>
+            </td>
+            <td>
+               <a href="Figure24.7VirtualTVIndex.html">Figure 24.7 Virtual TV</a>
+            </td>
+            <td>A virtual television.</td>
+         </tr>
+      </table>
+      <p style="text-align:center">Online at <a href="http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24-Sound/index.html">http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24-Sound</a>
+      </p>
+      <p align="center">
+         <a href="http://validator.w3.org/check?uri=http://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24-Sound/index.html"
+            target="_blank">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1"
+                 alt="Validate XHTML 1.1"
+                 height="31"
+                 width="88"
+                 border="0"/>
+         </a>
+      </p>
+      <p style="text-align:center">Master source code archive is under subversion control at <br/>
+         <a href=" http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24-Sound/"
+            target="_blank"> http://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter24-Sound</a>
+      </p>
+      <table xmlns="" align="center" summary="navigation" border="1" cellpadding="2"
+             width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png" title="Table of Contents" alt="Table of Contents"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter23-Fog/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png" title="Previous Chapter Summary"
+                       alt="Previous Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg" title="Chapter Viewpoint Slideshow"
+                       alt="Chapter Viewpoint Slideshow"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter25-LevelOfDetail/index.html" target="_top">
+                  <img src="../images/NextChapter.png" title="Next Chapter Summary"
+                       alt="Next Chapter Summary"
+                       height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png" title="X3D Resources" alt="X3D Resources" height="32"
+                       width="32"
+                       style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <p xmlns="" align="center">
+Also available: current and archived <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook">nightly builds</a> and <a href="https://savage.nps.edu/jenkins/job/X3dExamplesVrml2Sourcebook/ws/">distributions</a> of these examples, all published under an <a href="../../license.html">Open-Source License</a>.</p>
+      <p xmlns="" align="center">
+The 
+<a href="../../X3dResources.html#Vrml2Sourcebook">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+   </body>
+</html>

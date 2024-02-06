@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Figure31.2MaterialPrototypesLibrary.x3d (X3dToHtml)</title>
+<meta name="generator"   content="X3dToHtml.xsl, http://www.web3d.org/TaskGroups/x3d/translation/X3dToHtml.xsl">
+</head>
+<body>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "http://www.web3d.org/TaskGroups/x3d/translation/x3d-compact.dtd"
+                     "/www.web3d.org/TaskGroups/x3d/translation/x3d-compact.dtd"&gt;
+</pre>
+&lt;<font color="navy">X3D</font>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">head</font>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">meta</font> <font color="green">name</font><b>='</b><font color="teal">filename</font><b>'</b> <font color="green">content</font><b>='</b><a href=Figure31.2MaterialPrototypesLibrary.x3d>Figure31.2MaterialPrototypesLibrary.x3d</a><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font>
+   <font color="green">name</font><b>='</b><font color="teal">author</font><b>'</b>
+   <font color="green">content</font><b>='</b><font color="teal">Figure 31.2, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font> <font color="green">name</font><b>='</b><font color="teal">translator</font><b>'</b> <font color="green">content</font><b>='</b><font color="teal">Don Brutzman</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font> <font color="green">name</font><b>='</b><font color="teal">created</font><b>'</b> <font color="green">content</font><b>='</b><font color="teal">27 September 2000</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font> <font color="green">name</font><b>='</b><font color="teal">revised</font><b>'</b> <font color="green">content</font><b>='</b><font color="teal">15 September 2002</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font>
+   <font color="green">name</font><b>='</b><font color="teal">description</font><b>'</b>
+   <font color="green">content</font><b>='</b><font color="teal">An external file containing a material library with the WallColor-node-type definition.</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font>
+   <font color="green">name</font><b>='</b><font color="teal">url</font><b>'</b>
+   <font color="green">content</font><b>='</b><a href=http://www.web3d.org/TaskGroups/x3d/translation/examples/Vrml2.0Sourcebook/Chapter31-Prototypes/Figure31.2MaterialPrototypesLibrary.x3d>http://www.web3d.org/TaskGroups/x3d/translation/examples/Vrml2.0Sourcebook/Chapter31-Prototypes/Figure31.2MaterialPrototypesLibrary.x3d</a><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">meta</font>
+   <font color="green">name</font><b>='</b><font color="teal">generator</font><b>'</b>
+   <font color="green">content</font><b>='</b>X3D-Edit, <a href="http://www.web3d.org/TaskGroups/x3d/translation/README.X3D-Edit.html" target="_blank">http://www.web3d.org/TaskGroups/x3d/translation/README.X3D-Edit.html</a><b>'</b>/&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">head</font>&gt;
+
+
+<br />
+&lt;!-- 
+<center>
+<hr width="100%"/>
+<i>Index&nbsp;for&nbsp;ProtoDeclares</i>:&nbsp;<a href="#ProtoDeclare_Aqua"><font color="purple">Aqua</font></a>,
+<a href="#ProtoDeclare_Gold"><font color="purple">Gold</font></a>,
+<a href="#ProtoDeclare_Aluminum"><font color="purple">Aluminum</font></a>,
+<a href="#ProtoDeclare_Copper"><font color="purple">Copper</font></a>.  
+<hr width="100%" />
+</center>
+--&gt;
+<br />
+
+&lt;<font color="navy">Scene</font>&gt;
+<div style="margin-left:25">
+&lt;<font color="purple">ProtoDeclare</font> <font color="green">name</font><b>='</b><a name="ProtoDeclare_Aqua"><font color="purple">Aqua</font></a><b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Material</font> <font color="green">diffuseColor</font><b>='</b><font color="teal">0 0.6 1</font><b>'</b>/&gt;
+<br>
+</div>
+&lt;/<font color="purple">ProtoDeclare</font>&gt;
+<br>
+&lt;<font color="purple">ProtoDeclare</font> <font color="green">name</font><b>='</b><a name="ProtoDeclare_Gold"><font color="purple">Gold</font></a><b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Material</font>
+   <font color="green">ambientIntensity</font><b>='</b><font color="teal">0.4</font><b>'</b>
+   <font color="green">diffuseColor</font><b>='</b><font color="teal">0.22 0.15 0</font><b>'</b>
+   <font color="green">shininess</font><b>='</b><font color="teal">0.16</font><b>'</b>
+   <font color="green">specularColor</font><b>='</b><font color="teal">0.71 0.70 0.56</font><b>'</b>/&gt;
+<br>
+</div>
+&lt;/<font color="purple">ProtoDeclare</font>&gt;
+<br>
+&lt;<font color="purple">ProtoDeclare</font> <font color="green">name</font><b>='</b><a name="ProtoDeclare_Aluminum"><font color="purple">Aluminum</font></a><b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Material</font>
+   <font color="green">ambientIntensity</font><b>='</b><font color="teal">0.3</font><b>'</b>
+   <font color="green">diffuseColor</font><b>='</b><font color="teal">0.3 0.3 0.5</font><b>'</b>
+   <font color="green">shininess</font><b>='</b><font color="teal">0.1</font><b>'</b>
+   <font color="green">specularColor</font><b>='</b><font color="teal">0.7 0.7 0.8</font><b>'</b>/&gt;
+<br>
+</div>
+&lt;/<font color="purple">ProtoDeclare</font>&gt;
+<br>
+&lt;<font color="purple">ProtoDeclare</font> <font color="green">name</font><b>='</b><a name="ProtoDeclare_Copper"><font color="purple">Copper</font></a><b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Material</font>
+   <font color="green">ambientIntensity</font><b>='</b><font color="teal">0.26</font><b>'</b>
+   <font color="green">diffuseColor</font><b>='</b><font color="teal">0.30 0.11 0</font><b>'</b>
+   <font color="green">shininess</font><b>='</b><font color="teal">0.08</font><b>'</b>
+   <font color="green">specularColor</font><b>='</b><font color="teal">0.75 0.33 0</font><b>'</b>/&gt;
+<br>
+</div>
+&lt;/<font color="purple">ProtoDeclare</font>&gt;
+<br>
+&lt;!-- It is a good practice to include default message linking to an example scene, in case a user tries to view this Prototype library directly. --&gt;
+<br>
+&lt;<font color="navy">NavigationInfo</font> <font color="green">type</font><b>='</b><font color="teal">EXAMINE ANY</font><b>'</b>/&gt;
+<br>
+&lt;<font color="navy">Anchor</font>
+   <font color="green">description</font><b>='</b><font color="teal">Figure31.3MaterialExternalPrototypes</font><b>'</b>
+   <font color="green">url</font><b>='</b>"<A href="Figure31.3MaterialExternalPrototypes.wrl">Figure31.3MaterialExternalPrototypes.wrl</A>"
+"<A href="http://www.web3d.org/TaskGroups/x3d/translation/examples/Vrml2.0Sourcebook/Chapter31-Prototypes/Figure31.3MaterialExternalPrototypes.wrl">http://www.web3d.org/TaskGroups/x3d/translation/examples/Vrml2.0Sourcebook/Chapter31-Prototypes/Figure31.3MaterialExternalPrototypes.wrl</A>"<b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Shape</font>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Text</font> <font color="green">string</font><b>='</b><font color="teal">"Figure31.2MaterialPrototypesLibrary" "contains prototype definitions" "" "Click on text to see these Materials in" "Figure31.3MaterialExternalPrototypes"</font><b>'</b>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">FontStyle</font> <font color="green">justify</font><b>='</b><font color="teal">MIDDLE MIDDLE</font><b>'</b> <font color="green">size</font><b>='</b><font color="teal">0.5</font><b>'</b>/&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">Text</font>&gt;
+<br>
+&lt;<font color="navy">Appearance</font>&gt;
+<div style="margin-left:25">
+&lt;<font color="navy">Material</font> <font color="green">diffuseColor</font><b>='</b><font color="teal">0 0.6 0.6</font><b>'</b>/&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">Appearance</font>&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">Shape</font>&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">Anchor</font>&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">Scene</font>&gt;
+<br>
+</div>
+
+&lt;/<font color="navy">X3D</font>&gt;
+
+
+<br />
+&lt;!-- 
+<center>
+<hr width="100%"/>
+<i>Index&nbsp;for&nbsp;ProtoDeclares</i>:&nbsp;<a href="#ProtoDeclare_Aqua"><font color="purple">Aqua</font></a>,
+<a href="#ProtoDeclare_Gold"><font color="purple">Gold</font></a>,
+<a href="#ProtoDeclare_Aluminum"><font color="purple">Aluminum</font></a>,
+<a href="#ProtoDeclare_Copper"><font color="purple">Copper</font></a>.  
+<hr width="100%" />
+</center>
+--&gt;
+<br />
+
+
+&lt;!-- Tag color codes:
+
+&lt;<font color="navy">NodeType</font><font color="green"> attribute</font>='<font color="teal">value</font>'/&gt;
+
+&lt;<font color="purple"> Prototype </font><font color="green"> name</font>='<font color="purple">ProtoName</font>'/&gt; &lt;<font color="purple">/Prototype </font>&gt; --&gt;
+</body>
+</html>

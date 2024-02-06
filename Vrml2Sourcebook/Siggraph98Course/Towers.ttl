@@ -1,0 +1,346 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Towers.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Towers.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'This world illustrates the use of translation, rotation, and scaling to build a multi-level tower.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David R. Nadeau, John L. Moreland, Michael M. Heck' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 July 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2014' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'originals/towers.wrl' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.siggraph.org/s98/conference/courses/18.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0051.htm' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Towers.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Towers.x3d" .
+:meta dcterms:description "This world illustrates the use of translation, rotation, and scaling to build a multi-level tower." .
+:meta dcterms:creator "David R. Nadeau, John L. Moreland, Michael M. Heck" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 July 1998" .
+:meta dcterms:translated "2 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "originals/towers.wrl" .
+:meta dcterms:reference "http://www.siggraph.org/s98" .
+:meta dcterms:reference "http://www.siggraph.org/s98/conference/courses/18.html" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0051.htm" .
+:meta dcterms:reference "http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/vrml97.htm" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/Towers.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:generator "X3D-Edit, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :NavigationInfo_2_3, :Background_2_4, :DirectionalLight_2_5, :DirectionalLight_2_6, :Transform_2_7, :Shape_2_8, :ThingTimer, :ThingSpinner ;
+  x3do:hasROUTE :ROUTE_2_11, :ROUTE_2_12 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"Copyright (c) 1997, David R. Nadeau"' ;
+  x3do:title 'The Tower' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view' ;
+  x3do:orientation ( 1.0 0.0 0.0 0.2 ) ;
+  x3do:position ( 0.0 1.6 20.0 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false ;
+  x3do:speed 2.0 .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyAngle ( 1.37 1.57 ) ;
+  x3do:skyColor ( 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5 0.0 ) .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:ambientIntensity 0.2 ;
+  x3do:direction ( 1.0 -0.5 -1.0 ) .
+:DirectionalLight_2_6 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene ;
+  x3do:ambientIntensity 0.2 ;
+  x3do:color ( 0.0 0.3 1.0 ) ;
+  x3do:direction ( -1.0 1.0 -1.0 ) ;
+  x3do:intensity 0.7 .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :OneLevel, :Shape_2_7_2, :Transform_2_7_3, :Transform_2_7_4, :Transform_2_7_5, :Thing ;
+  x3do:scale ( 0.4 0.4 0.4 ) .
+:OneLevel a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :HalfLevel, :Transform_2_7_1_2, :Transform_2_7_1_3 ;
+  x3do:DEF 'OneLevel' ;
+  x3do:scale ( 2.0 1.0 2.0 ) ;
+  x3do:translation ( 0.0 3.5 0.0 ) .
+:HalfLevel a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :OneLevel ;
+  x3do:hasChildren :Part, :Transform_2_7_1_1_2, :Transform_2_7_1_1_3, :Transform_2_7_1_1_4, :Transform_2_7_1_1_5, :Transform_2_7_1_1_6 ;
+  x3do:DEF 'HalfLevel' .
+:Part a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Inline_2_7_1_1_1_1 ;
+  x3do:DEF 'Part' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) ;
+  x3do:translation ( 0.0 0.0 7.73 ) .
+:Inline_2_7_1_1_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Part ;
+  x3do:url '"TowerPart.x3d" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TowerPart.x3d" "TowerPart.wrl" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/TowerPart.wrl"' .
+:Transform_2_7_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Part-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.52 ) .
+:Part-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1_1_2 ;
+  owl:sameAs :Part . # DEF matching this USE
+:Transform_2_7_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Part-USE-2 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.05 ) .
+:Part-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1_1_3 ;
+  owl:sameAs :Part . # DEF matching this USE
+:Transform_2_7_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Part-USE-3 ;
+  x3do:rotation ( 0.0 1.0 0.0 1.57 ) .
+:Part-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1_1_4 ;
+  owl:sameAs :Part . # DEF matching this USE
+:Transform_2_7_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Part-USE-4 ;
+  x3do:rotation ( 0.0 1.0 0.0 2.09 ) .
+:Part-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1_1_5 ;
+  owl:sameAs :Part . # DEF matching this USE
+:Transform_2_7_1_1_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :HalfLevel ;
+  x3do:hasChildren :Part-USE-5 ;
+  x3do:rotation ( 0.0 1.0 0.0 2.62 ) .
+:Part-USE-5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1_1_6 ;
+  owl:sameAs :Part . # DEF matching this USE
+:Transform_2_7_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OneLevel ;
+  x3do:hasChildren :HalfLevel-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 3.14 ) .
+:HalfLevel-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_7_1_2 ;
+  owl:sameAs :HalfLevel . # DEF matching this USE
+:Transform_2_7_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OneLevel ;
+  x3do:hasChildren :Shape_2_7_1_3_1 ;
+  x3do:translation ( 0.0 3.5 0.0 ) .
+:Shape_2_7_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_1_3 ;
+  x3do:hasAppearance :Appearance_2_7_1_3_1_1 ;
+  x3do:hasGeometry :Cylinder_2_7_1_3_1_2 .
+:Appearance_2_7_1_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1_3_1 ;
+  x3do:hasTextureTransform :TextureTransform_2_7_1_3_1_1_1 ;
+  x3do:hasMaterial :Material_2_7_1_3_1_1_2 ;
+  x3do:hasTexture :ImageTexture_2_7_1_3_1_1_3 .
+:TextureTransform_2_7_1_3_1_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_7_1_3_1_1 .
+:Material_2_7_1_3_1_1_2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_3_1_1 ;
+  x3do:ambientIntensity 0.6 .
+:ImageTexture_2_7_1_3_1_1_3 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_7_1_3_1_1 ;
+  x3do:url '"marble_g.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/marble_g.jpg"' .
+:Cylinder_2_7_1_3_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_7_1_3_1 ;
+  x3do:height 0.05 ;
+  x3do:radius 8.2 ;
+  x3do:side false .
+:Shape_2_7_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :Appearance_2_7_2_1 ;
+  x3do:hasGeometry :Cylinder_2_7_2_2 .
+:Appearance_2_7_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2 ;
+  x3do:hasMaterial :Material_2_7_2_1_1 .
+:Material_2_7_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_1 ;
+  x3do:diffuseColor ( 0.0 0.0 0.0 ) ;
+  x3do:transparency 0.25 .
+:Cylinder_2_7_2_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_7_2 ;
+  x3do:bottom false ;
+  x3do:height 0.05 ;
+  x3do:radius 16.4 ;
+  x3do:side false .
+:Transform_2_7_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :OneLevel-USE-1 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) ;
+  x3do:scale ( 0.8 0.9 0.8 ) ;
+  x3do:translation ( 0.0 7.0 0.0 ) .
+:OneLevel-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_3 ;
+  owl:sameAs :OneLevel . # DEF matching this USE
+:Transform_2_7_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :OneLevel-USE-2 ;
+  x3do:scale ( 0.6 0.8 0.6 ) ;
+  x3do:translation ( 0.0 13.3 0.0 ) .
+:OneLevel-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_4 ;
+  owl:sameAs :OneLevel . # DEF matching this USE
+:Transform_2_7_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :OneLevel-USE-3 ;
+  x3do:rotation ( 0.0 1.0 0.0 0.26 ) ;
+  x3do:scale ( 0.4 0.7 0.4 ) ;
+  x3do:translation ( 0.0 18.9 0.0 ) .
+:OneLevel-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_5 ;
+  owl:sameAs :OneLevel . # DEF matching this USE
+:Thing a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasChildren :Transform_2_7_6_1 ;
+  x3do:DEF 'Thing' ;
+  x3do:translation ( 0.0 31.0 0.0 ) .
+:Transform_2_7_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Thing ;
+  x3do:hasChildren :Shape_2_7_6_1_1 ;
+  x3do:rotation ( -1.0 1.0 1.0 0.785 ) .
+:Shape_2_7_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_6_1 ;
+  x3do:hasAppearance :Appearance_2_7_6_1_1_1 ;
+  x3do:hasGeometry :Box_2_7_6_1_1_2 .
+:Appearance_2_7_6_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_6_1_1 ;
+  x3do:hasMaterial :Material_2_7_6_1_1_1_1 ;
+  x3do:hasTexture :BlurImage .
+:Material_2_7_6_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_6_1_1_1 ;
+  x3do:ambientIntensity 1.0 ;
+  x3do:diffuseColor ( 0.0 1.0 0.0 ) .
+:BlurImage a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_7_6_1_1_1 ;
+  x3do:DEF 'BlurImage' ;
+  x3do:url '"fire_g.jpg" "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Siggraph98Course/fire_g.jpg"' .
+:Box_2_7_6_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_6_1_1 ;
+  x3do:size ( 3.0 3.0 3.0 ) .
+:Shape_2_8 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_8_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_8_2 .
+:Appearance_2_8_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8 ;
+  x3do:hasTextureTransform :TextureTransform_2_8_1_1 ;
+  x3do:hasMaterial :Material_2_8_1_2 ;
+  x3do:hasTexture :BlurImage-USE-1 .
+:TextureTransform_2_8_1_1 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_8_1 ;
+  x3do:scale ( 5.0 5.0 ) .
+:Material_2_8_1_2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1 ;
+  x3do:ambientIntensity 0.8 ;
+  x3do:diffuseColor ( 0.0 1.0 0.3 ) .
+:BlurImage-USE-1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_8_1 ;
+  owl:sameAs :BlurImage . # DEF matching this USE
+:IndexedFaceSet_2_8_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_8 ;
+  x3do:hasCoord :Coordinate_2_8_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 -1 ) .
+:Coordinate_2_8_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_8_2 ;
+  x3do:point ( -40.0 0.0 80.0 40.0 0.0 80.0 40.0 0.0 -40.0 -40.0 0.0 -40.0 ) .
+:ThingTimer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ThingTimer' ;
+  x3do:cycleInterval '4.0' ;
+  x3do:loop true ;
+  x3do:startTime '1.0' .
+:ThingSpinner a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ThingSpinner' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 3.14 0.0 1.0 0.0 6.28 ) .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ThingTimer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'ThingSpinner' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'ThingSpinner' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Thing' .

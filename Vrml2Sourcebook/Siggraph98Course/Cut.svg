@@ -1,0 +1,46 @@
+
+          
+ecmascript:
+    function initialize( ) {
+        texture_changed = textures[0];
+        Browser.println ('[Cut Selector] initialize(): textures.length=' + textures.length); // debug
+    }
+    function set_fraction( f, tm ) {
+        i = Math.floor(f * 10);
+        if ( i == 10 ) { i = 9; }
+        Browser.println ('[Cut Selector] set_fraction(): i=' + i); // debug
+        texture_changed = textures[i];
+    }
+
+        
+          
+ecmascript:
+        function translate( x ) {
+        // compute the fraction using the given X position
+            f = (x-minMaxX[0]) / (minMaxX[1] - minMaxX[0]);
+        // send a fraction event
+            fraction_changed = f;
+        // send a new label string with 1 digit after decimal
+            label_changed[0] = Math.floor(f*10.0)/10.0;
+        }
+
+        function initialize( ) {
+        // set the plane sensor bounds
+            minPosition_changed[0] = minMaxX[0];
+            minPosition_changed[1] = 0.0;
+            maxPosition_changed[0] = minMaxX[1];
+            maxPosition_changed[1] = 0.0;
+        // set the plane sensor initial position
+            offset_changed[0] = initialX;
+            offset_changed[1] = 0.0;
+            offset_changed[2] = 0.0;
+        // compute the initial values
+            translate( initialX );
+        }
+
+        function set_translation( t, tm ) {
+        // compute the new values
+            translate( t[0] );
+        }
+
+        

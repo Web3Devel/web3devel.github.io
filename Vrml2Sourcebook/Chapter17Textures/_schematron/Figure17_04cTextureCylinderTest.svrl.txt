@@ -1,0 +1,2 @@
+Based on file name, Figure17_04cTextureCylinderTest.x3d is considered a test model supporting X3D Quality Assurance (QA).
+  https://www.web3d.org/x3d/content/examples/X3dResources.html#QualityAssurance [/X3D/head, diagnostic]

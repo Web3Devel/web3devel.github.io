@@ -1,0 +1,1 @@
+<X3D profile='Immersive'> is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination [/X3D, info]

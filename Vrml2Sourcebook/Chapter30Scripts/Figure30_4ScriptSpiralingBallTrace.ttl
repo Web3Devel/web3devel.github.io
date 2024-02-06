@@ -1,0 +1,280 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_4ScriptSpiralingBallTrace.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure30_4ScriptSpiralingBallTrace.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 30.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig04.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 September 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A spiraling red sphere and a custom interpolation script.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_4ScriptSpiralingBallTrace.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure30_4ScriptSpiralingBallTrace.x3d" .
+:meta dcterms:creator "Figure 30.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch30/30fig04.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "2 September 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A spiraling red sphere and a custom interpolation script." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter30Scripts/Figure30_4ScriptSpiralingBallTrace.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Background_2_5, :Group_2_6 ;
+  x3do:hasROUTE :ROUTE_2_7, :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure30_4ScriptSpiralingBallTrace.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'spiraling ball' ;
+  x3do:orientation ( 1 0 0 -0.3 ) ;
+  x3do:position ( 0 3 8 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'view from above' ;
+  x3do:orientation ( 1 0 0 -1.57 ) ;
+  x3do:position ( 0 6 0 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'side view' ;
+  x3do:orientation ( 0 1 0 1.57 ) ;
+  x3do:position ( 6 1 0 ) .
+:Background_2_5 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:groundAngle ( 1.309 1.570796 ) ;
+  x3do:groundColor ( 0 0.1 0.3 0.3 0.3 0.6 0.4 0.4 0.6 ) ;
+  x3do:skyAngle ( 1.309 1.571 ) ;
+  x3do:skyColor ( 1 0 0.8 0.5 0 0.8 0 0 0.8 ) .
+:Group_2_6 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_6_1, :Transform_2_6_2, :Clock, :Mover, :Debug, :Transform_2_6_6, :Transform_2_6_7 .
+:Transform_2_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasChildren :Shape_2_6_1_1 ;
+  x3do:translation ( 0 -0.005 0 ) .
+:Shape_2_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:hasGeometry :Box_2_6_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_6_1_1_2 .
+:Box_2_6_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  x3do:size ( 2 0.01 4 ) .
+:Appearance_2_6_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_2_1 .
+:Material_2_6_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1_2 ;
+  x3do:diffuseColor ( 0.7 0.7 0.7 ) .
+:Transform_2_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasChildren :BallTransform ;
+  x3do:translation ( 0 1.1 0 ) .
+:BallTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6_2 ;
+  x3do:hasChildren :Shape_2_6_2_1_1 ;
+  x3do:DEF 'BallTransform' .
+:Shape_2_6_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BallTransform ;
+  x3do:hasAppearance :Appearance_2_6_2_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_2_1_1_2 .
+:Appearance_2_6_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2_1_1 ;
+  x3do:hasMaterial :Material_2_6_2_1_1_1_1 .
+:Material_2_6_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_2_1_1_1 ;
+  x3do:diffuseColor ( 1 0.3 0.3 ) .
+:Sphere_2_6_2_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_2_1_1 ;
+  x3do:radius 0.1 .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '10' ;
+  x3do:loop true .
+:Mover a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasField :field_2_6_4_1, :field_2_6_4_2, :field_2_6_4_3, :field_2_6_4_4 ;
+  x3do:DEF 'Mover' ;
+  x3do:sourceCode """
+ecmascript:
+
+function set_fraction ( fraction, eventTime ) {
+	value_changed[0] = radius * Math.sin( turns * fraction * 6.28 ); // x
+	value_changed[1] = radius * Math.cos( turns * fraction * 6.28 ); // y
+	value_changed[2] = turns * (fraction - 0.5);                     // z
+}
+""" .
+:field_2_6_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Mover ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:field_2_6_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Mover ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'value_changed' ;
+  x3do:type 'SFVec3f' .
+:field_2_6_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Mover ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'radius' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 1 .
+:field_2_6_4_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Mover ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'turns' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 4 .
+:Debug a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasField :field_2_6_5_1, :field_2_6_5_2, :field_2_6_5_3 ;
+  x3do:DEF 'Debug' ;
+  x3do:sourceCode """
+ecmascript:
+
+function initalize( )
+{
+	string_changed[0] = label + ':';
+}
+function set_float( value, timestamp )
+{
+	string_changed[0] = label + ': ' + Math.round (value * 100) / 100;
+}
+""" .
+:field_2_6_5_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Debug ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'label' ;
+  x3do:type 'SFString' ;
+  x3do:value 'fraction' .
+:field_2_6_5_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Debug ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_float' ;
+  x3do:type 'SFFloat' .
+:field_2_6_5_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Debug ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'string_changed' ;
+  x3do:type 'MFString' .
+:Transform_2_6_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasChildren :Billboard_2_6_6_1 ;
+  x3do:translation ( 0 0.5 0 ) .
+:Billboard_2_6_6_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_6_6 ;
+  x3do:hasChildren :Shape_2_6_6_1_1 ;
+  x3do:axisOfRotation ( 0 0 0 ) .
+:Shape_2_6_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_6_6_1 ;
+  x3do:hasGeometry :Message ;
+  x3do:hasAppearance :Appearance_2_6_6_1_1_2 .
+:Message a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_6_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_6_6_1_1_1_1 ;
+  x3do:DEF 'Message' .
+:FontStyle_2_6_6_1_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Message ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.3 .
+:Appearance_2_6_6_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_6_1_1 ;
+  x3do:hasMaterial :Material_2_6_6_1_1_2_1 .
+:Material_2_6_6_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_6_1_1_2 ;
+  x3do:diffuseColor ( 0 0 0 ) ;
+  x3do:emissiveColor ( 0 1 1 ) .
+:Transform_2_6_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_6 ;
+  x3do:hasChildren :Shape_2_6_7_1 ;
+  x3do:rotation ( 1 0 0 1.57079 ) ;
+  x3do:translation ( 0 1.1 0 ) .
+:Shape_2_6_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_7 ;
+  x3do:hasAppearance :Appearance_2_6_7_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_7_1_2 .
+:Appearance_2_6_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_7_1 ;
+  x3do:hasMaterial :Material_2_6_7_1_1_1 .
+:Material_2_6_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_7_1_1 ;
+  x3do:diffuseColor ( 0.5 0 0 ) ;
+  x3do:transparency 0.7 .
+:Cylinder_2_6_7_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_7_1 ;
+  x3do:height 4 .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Mover' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Mover' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'BallTransform' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_float' ;
+  x3do:toNode 'Debug' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'string_changed' ;
+  x3do:fromNode 'Debug' ;
+  x3do:toField 'set_string' ;
+  x3do:toNode 'Message' .

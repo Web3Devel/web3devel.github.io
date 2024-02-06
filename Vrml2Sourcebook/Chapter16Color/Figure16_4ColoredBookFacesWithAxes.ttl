@@ -1,0 +1,140 @@
+@prefix :        <https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_4ColoredBookFacesWithAxes.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure16_4ColoredBookFacesWithAxes.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Figure 16.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.wiley.com/legacy/compbooks/vrml2sbk/ch16/16fig04.htm' ;
+  x3do:name 'reference' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '26 August 2000' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A book with its faces individually colored using colors from a Color node.' ;
+  x3do:name 'description' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_4ColoredBookFacesWithAxes.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Figure16_4ColoredBookFacesWithAxes.x3d" .
+:meta dcterms:creator "Figure 16.4, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland" .
+:meta dcterms:reference "http://www.wiley.com/legacy/compbooks/vrml2sbk/ch16/16fig04.htm" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "26 August 2000" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "A book with its faces individually colored using colors from a Color node." .
+:meta dcterms:identifier "https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter16Color/Figure16_4ColoredBookFacesWithAxes.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :SPINNING_VIEWPOINT_PARENT_TRANSFORM, :Transform_2_4, :Transform_2_5, :TIMER, :SPINNER ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Figure16_4ColoredBookFacesWithAxes.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book' ;
+  x3do:orientation ( 1 0 0 1.4 ) ;
+  x3do:position ( 0 -1 0.3 ) .
+:SPINNING_VIEWPOINT_PARENT_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_3_1 ;
+  x3do:DEF 'SPINNING_VIEWPOINT_PARENT_TRANSFORM' .
+:Viewpoint_2_3_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :SPINNING_VIEWPOINT_PARENT_TRANSFORM ;
+  x3do:description 'Spinning viewpoint' ;
+  x3do:orientation ( 1 0 0 1.4 ) ;
+  x3do:position ( 0 -1 0.3 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:translation ( 0 0.115 0 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasGeometry :IndexedFaceSet_2_4_1_1 .
+:IndexedFaceSet_2_4_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasCoord :Coordinate_2_4_1_1_1 ;
+  x3do:hasColor :Color_2_4_1_1_2 ;
+  x3do:colorIndex ( 0 0 0 1 1 1 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 0 1 2 3 -1 7 6 5 4 -1 0 3 7 4 -1 0 4 5 1 -1 1 5 6 2 -1 2 6 7 3 ) .
+:Coordinate_2_4_1_1_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_4_1_1 ;
+  x3do:point ( -0.095 -0.115 0.04 0.095 -0.115 0.04 0.095 0.115 0.04 -0.095 0.115 0.04 -0.095 -0.115 0.00 0.095 -0.115 0.00 0.095 0.115 0.00 -0.095 0.115 0.00 ) .
+:Color_2_4_1_1_2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedFaceSet_2_4_1_1 ;
+  x3do:color ( 0.7 0.5 0.2 0.8 0.8 0.8 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :CoordinateAxes ;
+  x3do:scale ( 0.2 0.2 0.2 ) .
+:CoordinateAxes a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:DEF 'CoordinateAxes' ;
+  x3do:url '"../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d" "../../X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl"' .
+:TIMER a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'TIMER' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:SPINNER a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SPINNER' ;
+  x3do:key ( 0 .5 1 ) ;
+  x3do:keyValue ( 0 0 1 0 0 0 1 -3.1416 0 0 1 -6.2832 ) .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'TIMER' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SPINNER' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SPINNER' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'SPINNING_VIEWPOINT_PARENT_TRANSFORM' .

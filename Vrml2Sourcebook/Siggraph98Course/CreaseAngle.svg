@@ -1,0 +1,19 @@
+
+      
+ecmascript:
+        function set_translation( tran, et )
+        {
+            tempCA = tran[0] / 4.0;
+            if ( tempCA &lt; 0.00 ) tempCA = 0.0;
+            if ( tempCA &gt; 1.57 ) tempCA = 1.57;
+            fraction_changed = tempCA;
+            // Hacks to get truncation/formatting
+            tempCA = (Math.floor(tempCA*1000)/1000.0);
+            if ( (tempCA &gt; 0.1) &amp;&amp; (tempCA &lt; 1.0) )
+                tempCA = '0' + tempCA;
+            if ( tempCA &lt;= 0.0 )
+                tempCA = tempCA + '.' + '0';
+            label_changed[0] = tempCA;
+        }
+
+    

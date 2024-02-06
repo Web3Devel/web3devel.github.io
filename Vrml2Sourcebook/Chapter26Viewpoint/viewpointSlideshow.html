@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: VRML 2 Sourcebook X3D Examples Archive, Chapter 26 Viewpoint</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2024-01-01-08:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'Figure26_5DungeonViewpoint.x3d._VP_Corner_view.png': { 'caption': '[1] Figure26_5DungeonViewpoint.x3d Corner view' },
+      'Figure26_5DungeonViewpoint.x3d._VP_Default_viewpoint.png': { 'caption': '[2] Figure26_5DungeonViewpoint.x3d (default X3D view from 0 0 10)' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Forward_view.png': { 'caption': '[3] Figure26_7DungeonViewpointsAndFieldsOfView.x3d Forward view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_10_degree_FOV_corner_view.png': { 'caption': '[4] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 10 degree FOV corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_20_degree_FOV_corner_view.png': { 'caption': '[5] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 20 degree FOV corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png': { 'caption': '[6] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 45 degree FOV (default value) corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_60_degree_FOV_corner_view.png': { 'caption': '[7] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 60 degree FOV corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_90_degree_FOV_corner_view.png': { 'caption': '[8] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 90 degree FOV corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_135_degree_FOV_corner_view.png': { 'caption': '[9] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 135 degree FOV corner view' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Click_door_for_next_dungeon_room.png': { 'caption': '[10] Figure26_7DungeonViewpointsAndFieldsOfView.x3d Click door for next dungeon room' },
+      'Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Default_viewpoint.png': { 'caption': '[11] Figure26_7DungeonViewpointsAndFieldsOfView.x3d (default X3D view)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter25LevelOfDetail/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter26Viewpoint/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter27SensingVisibilityProximityCollision/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>VRML 2 Sourcebook, Chapter 26 Viewpoint</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Corner_view.png"
+                  alt="[1] Figure26_5DungeonViewpoint.x3d Corner view"
+                  title="[1] Figure26_5DungeonViewpoint.x3d Corner view"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/Vrml2Sourcebook/Chapter26Viewpoint/package-catalog.html-->
+    
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="center" rowspan="2">
+                    
+                    <a href="index.html"><img border="0" alt="Figure 26.7 Dungeon Viewpoints And Fields Of View" title="Figure 26.7 Dungeon Viewpoints And Fields Of View" hspace="10" 
+                          src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png" width="156" height="89" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+
+                    <p>
+							Viewpoints are the primary way for an author to show users what is in a scene,
+							helping them navigate among objects of interest.
+                    </p>
+                    
+
+
+                    <p>
+                            Viewpoint nodes specify a desired location, an orientation, and a camera field-of-view lens angle.
+                            By default, the viewer enters a world at position (0, 0, 10) and is looking along the -Z axis towards the origin.
+                            You can provide your own preferred viewing locations and directions in Viewpoint nodes.
+                            The first Viewpoint in the scene is the initial entry Viewpoint.
+                    </p>
+                    
+
+
+                    <p>
+                           These X3D scenes are adapted directly from the
+                           <a href="http://www.wiley.com/legacy/compbooks/vrml2sbk/toc/ch26.htm" target="_Vrml2Sourcebook">original VRML 2.0 Sourcebook chapter examples</a>.
+                           Also available:
+                           <a href="http://www.sdsc.edu/~moreland/courses/Siggraph98/vrml97/slides/mt0352.htm" target="_Vrml2SourcebookCourse">Introduction to VRML97 SIGGRAPH98 course notes</a>.
+                    </p>
+                    
+
+    
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+2 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 11 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="Figure26_5DungeonViewpointIndex.html">
+                           <img src="_thumbnails/Figure26_5DungeonViewpointThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure26_5DungeonViewpoint"
+                                 title="X3D model Figure26_5DungeonViewpoint.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="Figure26_5DungeonViewpointIndex.html"
+                            title="X3D model Figure26_5DungeonViewpoint.x3d">Figure 26 5 Dungeon Viewpoint.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] Figure26_5DungeonViewpoint.x3d Corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_5DungeonViewpoint.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] Figure26_5DungeonViewpoint.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="9">
+                        <a href="Figure26_7DungeonViewpointsAndFieldsOfViewIndex.html">
+                           <img src="_thumbnails/Figure26_7DungeonViewpointsAndFieldsOfViewThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Figure26_7DungeonViewpointsAndFieldsOfView"
+                                 title="X3D model Figure26_7DungeonViewpointsAndFieldsOfView.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="9">
+                        <br/>
+                        <a href="Figure26_7DungeonViewpointsAndFieldsOfViewIndex.html"
+                            title="X3D model Figure26_7DungeonViewpointsAndFieldsOfView.x3d">Figure 26 7 Dungeon Viewpoints And Fields Of View.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Forward_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Forward_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Forward_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Figure26_7DungeonViewpointsAndFieldsOfView.x3d Forward view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_10_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_10_degree_FOV_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_10_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 10 degree FOV corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_20_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_20_degree_FOV_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_20_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 20 degree FOV corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_45_degree_FOV_(default_value)_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 45 degree FOV (default value) corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_60_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_60_degree_FOV_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_60_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 60 degree FOV corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_90_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_90_degree_FOV_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_90_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 90 degree FOV corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_135_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_135_degree_FOV_corner_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_135_degree_FOV_corner_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] Figure26_7DungeonViewpointsAndFieldsOfView.x3d 135 degree FOV corner view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Click_door_for_next_dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Click_door_for_next_dungeon_room.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Click_door_for_next_dungeon_room.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] Figure26_7DungeonViewpointsAndFieldsOfView.x3d Click door for next dungeon room</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Figure26_7DungeonViewpointsAndFieldsOfView.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] Figure26_7DungeonViewpointsAndFieldsOfView.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/viewpointSlideshow.html">https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/Vrml2Sourcebook/Chapter26Viewpoint/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter25LevelOfDetail/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?Vrml2Sourcebook/Chapter26Viewpoint/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter27SensingVisibilityProximityCollision/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
